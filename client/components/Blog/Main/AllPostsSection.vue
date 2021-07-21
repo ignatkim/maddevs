@@ -149,10 +149,12 @@ export default {
   &__list {
     display: flex;
     flex-flow: row nowrap;
+    justify-content: stretch;
   }
   &__item {
     &-wrapper {
-      width: calc(16.6666% - 16px);
+      width: 100%;
+      min-width: 148px;
       margin-right: 20px;
       &:last-child {
         margin-right: 0;
@@ -195,9 +197,7 @@ export default {
     }
 
     &__item {
-      width: 148px;
       &-wrapper {
-        width: auto;
         margin-right: 8px;
       }
       label {
