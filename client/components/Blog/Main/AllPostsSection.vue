@@ -4,7 +4,10 @@
     class="filtered-posts"
   >
     <div class="container">
-      <div class="posts-filter">
+      <div
+        v-if="categories.length"
+        class="posts-filter"
+      >
         <Simplebar>
           <ul class="posts-filter__list">
             <li
@@ -99,7 +102,11 @@ export default {
     },
 
     categories() {
-      return this.homePageContent.categories.filter(category => category.title !== 'Job Opening')
+      const { categories = [] } = this.homePageContent
+      if (Array.isArray(categories) && categories.length) {
+        return categories.filter(category => category.title !== 'Job Opening')
+      }
+      return []
     },
   },
 
