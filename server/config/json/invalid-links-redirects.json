@@ -2,5 +2,9 @@
   {
     "from": "/blog/tag/software-features",
     "to": "https://maddevs.io/blog/tag/software-development/"
+  },
+  {
+    "from": "/blog/devops-engineers-in-mad-devs",
+    "to": "https://maddevs.io/blog/devops-engineers-at-mad-devs/"
   }
 ]
