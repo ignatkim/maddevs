@@ -225,7 +225,7 @@ export default {
     top: 0;
     left: 0;
     z-index: 0;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.40);
     user-select: none;
     pointer-events: none;
   }
