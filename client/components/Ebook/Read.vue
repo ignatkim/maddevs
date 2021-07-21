@@ -23,7 +23,10 @@
       id="read-success-modal"
       ref="modalEbook"
     >
-      <SuccessMessage :message="successMessage" />
+      <SuccessMessage
+        title="Thank you!"
+        :message="successMessage"
+      />
     </Modal>
   </section>
 </template>
@@ -73,10 +76,7 @@ export default {
     },
 
     handleSendedForm(payload) {
-      this.successMessage = `
-        The letter with the PDF file was successfully sent to mail ${payload.email}.
-        <br><br> Please check your email.
-      `
+      this.successMessage = `The letter with the PDF file was successfully sent to mail ${payload.email}. <br><br> Please check your email.`
       this.$refs.modalEbook.show()
     },
   },

@@ -1,9 +1,9 @@
 <template>
   <div class="read-form">
     <img
-      width="145"
-      height="176"
-      src="@/assets/img/Ebook/book-rotated.png"
+      width="110"
+      height="155"
+      src="@/assets/img/Ebook/book.svg"
       alt="Pricing strategies"
     >
     <h4>Get your copy of  “Custom Software Development: Pricing Strategies”</h4>
@@ -124,7 +124,7 @@ export default {
             variables: {
               subject: 'Request a PDF file from the Ebook page',
               senderName: this.name,
-              emailTo: 'marketing@maddevs.io',
+              emailTo: process.env.emailMarketing,
             },
 
             attachment: null,
@@ -158,9 +158,9 @@ export default {
 
   > img {
     width: 100%;
-    max-width: 145px;
+    max-width: 110px;
     height: auto;
-    margin-left: -15px;
+    margin-bottom: 15px;
   }
 
   > h4 {

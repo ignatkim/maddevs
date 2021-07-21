@@ -14,8 +14,6 @@ exports[`Read component should render correctly with no data 1`] = `
       <readform-stub></readform-stub>
     </div>
   </div>
-  <modal-stub id="read-success-modal" modaltitle="">
-    <successmessage-stub title="Thanks for your <br> interest in Mad Devs"></successmessage-stub>
-  </modal-stub>
+  <div id="read-success-modal"></div>
 </section>
 `;

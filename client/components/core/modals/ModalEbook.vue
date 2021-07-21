@@ -11,6 +11,7 @@
     />
     <SuccessMessage
       v-else
+      title="Thank you!"
       :message="successMessage"
     />
   </Modal>

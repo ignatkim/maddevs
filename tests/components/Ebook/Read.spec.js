@@ -51,6 +51,14 @@ describe('Read component', () => {
     wrapper = shallowMount(Read, {
       store,
       localVue,
+      stubs: {
+        Modal: {
+          render(h) { return h('div') },
+          methods: {
+            show: jest.fn(),
+          },
+        },
+      },
     })
   })
 
@@ -79,5 +87,16 @@ describe('Read component', () => {
     })
     const { posts } = localWrapper.vm
     expect(posts).toHaveLength(0)
+  })
+
+  it('if call handleSendedForm that variable successMessage should with text', () => {
+    const { successMessage } = wrapper.vm
+    expect(successMessage).toBeNull()
+    const payload = {
+      email: 'test@test.test',
+    }
+    const result = 'The letter with the PDF file was successfully sent to mail test@test.test. <br><br> Please check your email.'
+    wrapper.vm.handleSendedForm(payload)
+    expect(wrapper.vm.successMessage).toEqual(result)
   })
 })
