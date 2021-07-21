@@ -1,4 +1,4 @@
-export const sendEmailWithBase64 = async (axios, payload) => {
+export const sendEmail = async (axios, payload) => {
   const formData = new FormData()
   formData.append('base64', payload.base64)
   formData.append('payload', JSON.stringify(payload.body))
