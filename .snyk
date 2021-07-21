@@ -1,6 +1,111 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
 version: v1.19.0
-ignore: {}
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  SNYK-JS-D3COLOR-1076592:
+    - '@maddevs/mad-radiator > vega > vega-functions > d3-color':
+        reason: non used on website
+        expires: '2021-08-20T10:03:40.285Z'
+    - '@maddevs/mad-radiator > vega > vega-geo > d3-color':
+        reason: non used on web
+        expires: '2021-08-20T10:03:40.285Z'
+    - '@maddevs/mad-radiator > vega > vega-scale > d3-interpolate > d3-color':
+        reason: non used on web
+        expires: '2021-08-20T10:03:40.285Z'
+    - '@maddevs/mad-radiator > vega > vega-encode > d3-interpolate > d3-color':
+        reason: non used on web
+        expires: '2021-08-20T10:03:40.285Z'
+    - '@maddevs/mad-radiator > vega > vega-parser > vega-functions > d3-color':
+        reason: non used on web
+        expires: '2021-08-20T10:03:40.285Z'
+    - '@maddevs/mad-radiator > vega > vega-view > vega-functions > d3-color':
+        reason: non used on web
+        expires: '2021-08-20T10:03:40.285Z'
+    - '@maddevs/mad-radiator > vega > vega-scale > d3-scale > d3-interpolate > d3-color':
+        reason: non used on web
+        expires: '2021-08-20T10:03:40.285Z'
+    - '@maddevs/mad-radiator > vega > vega-encode > vega-scale > d3-interpolate > d3-color':
+        reason: non used on web
+        expires: '2021-08-20T10:03:40.286Z'
+    - '@maddevs/mad-radiator > vega > vega-scenegraph > vega-scale > d3-interpolate > d3-color':
+        reason: non used on web
+        expires: '2021-08-20T10:03:40.286Z'
+    - '@maddevs/mad-radiator > vega > vega-functions > vega-scale > d3-interpolate > d3-color':
+        reason: non used on web
+        expires: '2021-08-20T10:03:40.286Z'
+    - '@maddevs/mad-radiator > vega > vega-parser > vega-scale > d3-interpolate > d3-color':
+        reason: non used on web
+        expires: '2021-08-20T10:03:40.286Z'
+    - '@maddevs/mad-radiator > vega > vega-wordcloud > vega-scale > d3-interpolate > d3-color':
+        reason: non used on web
+        expires: '2021-08-20T10:03:40.286Z'
+    - '@maddevs/mad-radiator > vega > vega-encode > vega-scale > d3-scale > d3-interpolate > d3-color':
+        reason: non used on web
+        expires: '2021-08-20T10:03:40.286Z'
+    - '@maddevs/mad-radiator > vega > vega-scenegraph > vega-scale > d3-scale > d3-interpolate > d3-color':
+        reason: non used on web
+        expires: '2021-08-20T10:03:40.286Z'
+    - '@maddevs/mad-radiator > vega > vega-functions > vega-scale > d3-scale > d3-interpolate > d3-color':
+        reason: non used on web
+        expires: '2021-08-20T10:03:40.286Z'
+    - '@maddevs/mad-radiator > vega > vega-parser > vega-scale > d3-scale > d3-interpolate > d3-color':
+        reason: non used on web
+        expires: '2021-08-20T10:03:40.286Z'
+    - '@maddevs/mad-radiator > vega > vega-wordcloud > vega-scale > d3-scale > d3-interpolate > d3-color':
+        reason: non used on web
+        expires: '2021-08-20T10:03:40.286Z'
+    - '@maddevs/mad-radiator > vega > vega-functions > vega-scenegraph > vega-scale > d3-interpolate > d3-color':
+        reason: non used on web
+        expires: '2021-08-20T10:03:40.286Z'
+    - '@maddevs/mad-radiator > vega > vega-label > vega-scenegraph > vega-scale > d3-interpolate > d3-color':
+        reason: non used on web
+        expires: '2021-08-20T10:03:40.286Z'
+    - '@maddevs/mad-radiator > vega > vega-view > vega-scenegraph > vega-scale > d3-interpolate > d3-color':
+        reason: non used on web
+        expires: '2021-08-20T10:03:40.286Z'
+    - '@maddevs/mad-radiator > vega > vega-view-transforms > vega-scenegraph > vega-scale > d3-interpolate > d3-color':
+        reason: non used on web
+        expires: '2021-08-20T10:03:40.286Z'
+    - '@maddevs/mad-radiator > vega > vega-parser > vega-functions > vega-scale > d3-interpolate > d3-color':
+        reason: non used on web
+        expires: '2021-08-20T10:03:40.286Z'
+    - '@maddevs/mad-radiator > vega > vega-view > vega-functions > vega-scale > d3-interpolate > d3-color':
+        reason: non used on web
+        expires: '2021-08-20T10:03:40.286Z'
+    - '@maddevs/mad-radiator > vega > vega-functions > vega-scenegraph > vega-scale > d3-scale > d3-interpolate > d3-color':
+        reason: non used on web
+        expires: '2021-08-20T10:03:40.286Z'
+    - '@maddevs/mad-radiator > vega > vega-label > vega-scenegraph > vega-scale > d3-scale > d3-interpolate > d3-color':
+        reason: non used on web
+        expires: '2021-08-20T10:03:40.286Z'
+    - '@maddevs/mad-radiator > vega > vega-view > vega-scenegraph > vega-scale > d3-scale > d3-interpolate > d3-color':
+        reason: non used on web
+        expires: '2021-08-20T10:03:40.286Z'
+    - '@maddevs/mad-radiator > vega > vega-view-transforms > vega-scenegraph > vega-scale > d3-scale > d3-interpolate > d3-color':
+        reason: non used on web
+        expires: '2021-08-20T10:03:40.286Z'
+    - '@maddevs/mad-radiator > vega > vega-parser > vega-functions > vega-scale > d3-scale > d3-interpolate > d3-color':
+        reason: non used on web
+        expires: '2021-08-20T10:03:40.286Z'
+    - '@maddevs/mad-radiator > vega > vega-view > vega-functions > vega-scale > d3-scale > d3-interpolate > d3-color':
+        reason: non used on web
+        expires: '2021-08-20T10:03:40.286Z'
+    - '@maddevs/mad-radiator > vega > vega-parser > vega-functions > vega-scenegraph > vega-scale > d3-interpolate > d3-color':
+        reason: non used on web
+        expires: '2021-08-20T10:03:40.286Z'
+    - '@maddevs/mad-radiator > vega > vega-view > vega-functions > vega-scenegraph > vega-scale > d3-interpolate > d3-color':
+        reason: non used on web
+        expires: '2021-08-20T10:03:40.286Z'
+    - '@maddevs/mad-radiator > vega > vega-parser > vega-functions > vega-scenegraph > vega-scale > d3-scale > d3-interpolate > d3-color':
+        reason: non used on web
+        expires: '2021-08-20T10:03:40.286Z'
+    - '@maddevs/mad-radiator > vega > vega-view > vega-functions > vega-scenegraph > vega-scale > d3-scale > d3-interpolate > d3-color':
+        reason: non used on web
+        expires: '2021-08-20T10:03:40.286Z'
+  SNYK-JS-GLOBPARENT-1016905:
+    - nuxt > @nuxt/builder > @nuxt/webpack > webpack > watchpack > watchpack-chokidar2 > chokidar > glob-parent:
+        reason: None given
+        expires: '2021-08-20T10:03:40.286Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   SNYK-JS-LODASH-450202:
