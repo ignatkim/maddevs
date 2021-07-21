@@ -1,7 +1,9 @@
 <template>
   <section class="ebook-learn">
     <div class="container">
-      <h2>From it, you will learn:</h2>
+      <h2>
+        From it, you will learn:
+      </h2>
 
       <div class="ebook-learn_cards">
         <LearnCard

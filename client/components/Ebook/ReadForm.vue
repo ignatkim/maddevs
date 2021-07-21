@@ -1,20 +1,31 @@
 <template>
   <div class="read-form">
     <img
-      src="@/assets/img/Ebook/book-rotated.svg"
+      width="110"
+      height="155"
+      src="@/assets/img/Ebook/book.svg"
       alt="Pricing strategies"
     >
     <h4>Get your copy of  “Custom Software Development: Pricing Strategies”</h4>
     <div class="read-form_fields">
-      <input
+      <BaseInput
         v-model="name"
+        name="name"
+        :show-label="false"
+        :required="true"
         placeholder="Your name"
-      >
-      <input
+        :validation="$v.name"
+      />
+      <BaseInput
         v-model="email"
+        name="email"
+        :show-label="false"
         placeholder="Email"
-      >
+        :required="true"
+        :validation="$v.email"
+      />
       <button
+        :class="{ 'read-form_btn--disabled': !isValid }"
         @click="submit"
       >
         Send me the ebook
@@ -25,8 +36,13 @@
 </template>
 
 <script>
+import { email, maxLength, required } from 'vuelidate/lib/validators'
+import BaseInput from '@/components/core/forms/BaseInput'
+import { sendEmail } from '@/api/email'
+
 export default {
   name: 'ReadForm',
+  components: { BaseInput },
   data() {
     return {
       name: '',
@@ -34,9 +50,92 @@ export default {
     }
   },
 
+  validations: {
+    email: {
+      required,
+      email,
+    },
+
+    name: {
+      required,
+      maxLength: maxLength(100),
+    },
+
+    validationGroup: ['email', 'name'],
+  },
+
+  computed: {
+    isValid() {
+      return !this.$v.validationGroup.$invalid
+    },
+  },
+
   methods: {
-    submit() {
-      this.$emit('submit', { name: this.name, email: this.email })
+    toBase64(file) {
+      if (!file) return null
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader()
+        reader.readAsDataURL(file)
+        reader.onload = () => resolve(reader.result)
+        reader.onerror = error => reject(error)
+      })
+    },
+
+    getAttachBase64() {
+      return new Promise((resolve, reject) => {
+        try {
+          const { origin } = window.location
+          const fileName = 'custom-software-development-pricing-strategies-ebook.pdf' // This file from /static folder
+          fetch(`${origin}/${fileName}`)
+            .then(file => file.blob())
+            .then(blob => this.toBase64(blob).then(base64 => resolve(base64)))
+            .catch(error => reject(error))
+        } catch (error) {
+          reject(error)
+        }
+      })
+    },
+
+    async submit() {
+      if (!this.isValid) return
+      const base64File = await this.getAttachBase64()
+      const requestSender = {
+        body: {
+          email: {
+            templateId: 348595, // Required
+            variables: {
+              subject: 'Your Pricing Strategies Ebook by Mad Devs',
+              emailTo: this.email,
+            },
+
+            attachment: {
+              base64: base64File.replace(/^data:(.*,)?/, ''),
+              name: 'pricing-strategies-ebook.pdf',
+            },
+          },
+        },
+
+        base64: base64File.replace(/^data:(.*,)?/, ''),
+      }
+      const requestMarketing = {
+        body: {
+          email: {
+            templateId: 624246, // Required
+            variables: {
+              subject: 'Request a PDF file from the Ebook page',
+              senderName: this.name,
+              emailTo: process.env.emailMarketing,
+            },
+
+            attachment: null,
+          },
+        },
+
+        base64: '',
+      }
+      sendEmail(this.$axios, requestSender) // Send email to sender
+      sendEmail(this.$axios, requestMarketing) // Send email to Mad Devs marketing
+      this.$emit('form-sended', { email: this.email, name: this.name })
     },
   },
 }
@@ -59,9 +158,9 @@ export default {
 
   > img {
     width: 100%;
-    max-width: 145px;
+    max-width: 110px;
     height: auto;
-    margin-left: -15px;
+    margin-bottom: 15px;
   }
 
   > h4 {
@@ -79,33 +178,56 @@ export default {
     align-items: flex-start;
     justify-content: flex-start;
 
-    input {
+    /deep/ .field-item {
       width: 100%;
-      padding: 12px 15px;
-      @include font('Inter', 16px, 400);
-      line-height: 24px;
-      letter-spacing: -0.4px;
-      color: #707072;
-      border-radius: 4px;
-      border: 1px solid #707072;
-      background-color: transparent;
-      margin-bottom: 16px;
-      box-sizing: border-box;
+
+      input {
+        width: 100%;
+        padding: 12px 15px;
+        @include font('Inter', 16px, 400);
+        color: #707072;
+        border-radius: 4px;
+        border: 1px solid #707072;
+        background-color: transparent;
+        box-sizing: border-box;
+      }
+
+      .v-placeholder-asterisk {
+        left: 17px !important;
+        top: 50% !important;
+        transform: translateY(-50%);
+        color: #707072;
+      }
     }
 
     button {
       width: auto;
       padding: 12px 15px;
-      @include font('Inter', 16px, 400);
+      @include font('Inter', 16px, 600);
       line-height: 20px;
       letter-spacing: -0.4px;
-      color: #707072;
+      color: #A0A0A1;
       border-radius: 4px;
       border: 1px solid #707072;
       background-color: transparent;
       cursor: pointer;
       margin-bottom: 16px;
       box-sizing: border-box;
+
+      &:active {
+        background-color: #eee;
+      }
+    }
+  }
+
+  &_btn {
+    &--disabled {
+      opacity: 0.7;
+      cursor: not-allowed !important;
+
+      &:active {
+        background-color: transparent !important;
+      }
     }
   }
 

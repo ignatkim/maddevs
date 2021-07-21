@@ -14,11 +14,12 @@
           <UIButton @click="showModalEbook">
             Download PDF
             <img
+              width="20"
+              height="20"
               src="@/assets/img/common/arrow-up-right.svg"
-              alt="arrow"
             >
           </UIButton>
-          <NuxtLink to="#read-online">
+          <NuxtLink to="#read-online-anchor">
             Read it online
           </NuxtLink>
         </div>
@@ -27,6 +28,8 @@
       <!-- Book -->
       <div class="ebook-banner_book">
         <img
+          width="392"
+          height="555"
           src="@/assets/img/Ebook/book.svg"
           alt="Ebook"
         >
@@ -175,6 +178,7 @@ export default {
     img {
       width: 100%;
       max-width: 395px;
+      height: auto;
 
       @media screen and (max-width: 768px) {
         width: 211px;

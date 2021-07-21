@@ -3,7 +3,9 @@
 exports[`Learn component should render correctly with no data 1`] = `
 <section class="ebook-learn">
   <div class="container">
-    <h2>From it, you will learn:</h2>
+    <h2>
+      From it, you will learn:
+    </h2>
     <div class="ebook-learn_cards">
       <learncard-stub icon="star.svg" title="How to evaluate proposals from potential contractors" description="More expensive doesn’t mean the best, and the cheapest option might turn out to be costly in the long run. Find out what discrepancies in pricing might be caused by and how to choose the optimal proposal.What pricing models are used in the industry"></learncard-stub>
       <learncard-stub icon="plus_minus.svg" title="What pricing models are used in the industry" description="Fixed, per-hour, time &amp; material, gain-sharing, or out staffing pricing model? Learn about the pros and cons of the available pricing models and find out which one is optimal for your case."></learncard-stub>
