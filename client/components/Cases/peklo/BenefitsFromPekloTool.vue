@@ -3,7 +3,11 @@
     <h2 class="case_title_h2 m-24_bottom">
       Who benefits from Peklo Tool
     </h2>
-    <div class="case_cards">
+    <div
+      class="case_cards"
+      data-aos="fade-up"
+      data-aos-anchor-placement="bottom"
+    >
       <div class="case_cards-group">
         <Card
           v-for="card in benefitsCards"

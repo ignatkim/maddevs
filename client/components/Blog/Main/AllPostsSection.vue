@@ -4,11 +4,14 @@
     class="filtered-posts"
   >
     <div class="container">
-      <div class="posts-filter">
+      <div
+        v-if="categories.length"
+        class="posts-filter"
+      >
         <Simplebar>
           <ul class="posts-filter__list">
             <li
-              v-for="(category, i) in homePageContent.categories"
+              v-for="(category, i) in categories"
               :key="i"
               class="posts-filter__item-wrapper"
             >
@@ -97,6 +100,14 @@ export default {
     totalPages() {
       return Math.ceil(this.filteredPosts.length / this.pageSize)
     },
+
+    categories() {
+      const { categories = [] } = this.homePageContent
+      if (Array.isArray(categories) && categories.length) {
+        return categories.filter(category => category.title !== 'Job Opening')
+      }
+      return []
+    },
   },
 
   watch: {
@@ -135,14 +146,15 @@ export default {
 .posts-filter {
   min-width: 150px;
   margin-bottom: 50px;
-
   &__list {
     display: flex;
-    justify-content: flex-start;
+    flex-flow: row nowrap;
+    justify-content: stretch;
   }
   &__item {
     &-wrapper {
-      width: calc(16.6666% - 16px);
+      width: 100%;
+      min-width: 148px;
       margin-right: 20px;
       &:last-child {
         margin-right: 0;
@@ -182,14 +194,10 @@ export default {
   @media screen and (max-width: 1200px) {
     &__list {
       margin: 0 -4px;
-      flex-wrap: nowrap;
-      justify-content: space-between;
     }
 
     &__item {
-      width: 148px;
       &-wrapper {
-        width: auto;
         margin-right: 8px;
       }
       label {

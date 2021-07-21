@@ -9,7 +9,11 @@
       </TextParagraph>
     </div>
     <div class="container_full background-color-silver m-48_bottom media-m-24_bottom p-48_top p-48_bottom media-p-24_top media-p-24_bottom">
-      <div class="container_regular">
+      <div
+        class="container_regular"
+        data-aos="fade-up"
+        data-aos-anchor-placement="bottom"
+      >
         <Lottie
           id="clusterisation-algorithm"
           :options="options"
@@ -29,7 +33,11 @@
         In clusterisation, Peklo Tool’s early version used the Aho–Corasick algorithm to find matches.
       </TextParagraph>
     </div>
-    <div class="container_middle m-48_bottom media-m-24_bottom slider">
+    <div
+      class="container_middle m-48_bottom media-m-24_bottom slider"
+      data-aos="fade-up"
+      data-aos-anchor-placement="bottom"
+    >
       <Swiper
         :components="slides"
         :safari-top-bar="false"
@@ -58,6 +66,8 @@
       <TextQuoteBox
         class="m-48_top m-48_bottom media-m-24_top media-m-24_bottom m-auto"
         author="Oleg Katkov, Software engineer at Mad Devs"
+        data-aos="fade-up"
+        data-aos-anchor-placement="bottom"
       >
         No ready-made solutions were available anywhere on the Internet, so we built the algorithm from scratch using dynamic programming. It turned out to be quite efficient. It produces impressive results with little resources.
       </TextQuoteBox>
@@ -68,27 +78,35 @@
         Peklo Tool then creates hundreds of ad texts within seconds:
       </h5>
     </div>
-    <div class="container_middle case_img-wrapper m-12_bottom media-m-8_bottom">
+    <div
+      class="container_middle case_img-wrapper"
+      data-aos="fade-up"
+      data-aos-anchor-placement="bottom"
+    >
       <Picture
         :width="1026"
         :height="517"
         file="generation-of-ad-texts"
         alt="Generation of ad texts"
         folder="peklo"
-        extension="jpg"
+        extension="png"
       />
-    </div>
-    <div class="container_regular">
       <TextParagraph
-        class="case_img-alt m-96_bottom media-m-48_bottom"
+        class="case_img-alt m-12_top media-m-8_top m-96_bottom media-m-48_bottom m-auto"
         color="#a4a8b4"
       >
         The structure of a contextual advertising campaign for a car repair business. Ad texts have been generated automatically based on keyword groups and unique selling propositions.
       </TextParagraph>
+    </div>
+    <div class="container_regular">
       <h3 class="case_title_h3 m-24_bottom media-m-12_bottom">
         Additional functions
       </h3>
-      <div class="case_cards">
+      <div
+        class="case_cards"
+        data-aos="fade-up"
+        data-aos-anchor-placement="bottom"
+      >
         <div class="case_cards-group">
           <Card class="background-color-black">
             <h4 class="case_title_h4 case_card-title m-8_bottom">
@@ -193,6 +211,7 @@ export default {
   }
 
   &_img-alt {
+    max-width: 606px;
     text-align: center;
     font-size: 13px;
     letter-spacing: -0.02em;
@@ -223,5 +242,14 @@ export default {
 
 /deep/ .list-item_dot {
   margin-bottom: 0;
+}
+
+/deep/ .swiper.gallery-thumbs .swiper-slide {
+  opacity: 0.6;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
+}
+
+/deep/ .swiper.gallery-thumbs .swiper-slide-active {
+  opacity: 1;
 }
 </style>

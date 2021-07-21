@@ -7,7 +7,11 @@
       <TextParagraph class="case_bold m-24_bottom">
         Peklo Tool’s architecture features three main components:
       </TextParagraph>
-      <div class="case_cards m-48_bottom media-m-38_bottom">
+      <div
+        class="case_cards m-48_bottom media-m-38_bottom"
+        data-aos="fade-up"
+        data-aos-anchor-placement="bottom"
+      >
         <div
           v-for="card in pekloToolUnderTheHoodCards"
           :key="card.title"

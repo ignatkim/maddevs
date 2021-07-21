@@ -8,7 +8,11 @@
         In digital marketing, “contextual advertising” refers to a method of targeting ads based on what content users access. Advertisers use keywords to make sure that the users who see certain ads can actually be interested in buying the product.
       </TextParagraph>
     </div>
-    <div class="case_iframe-wrapper m-48_bottom m-auto">
+    <div
+      class="case_iframe-wrapper m-48_bottom m-auto"
+      data-aos="fade-up"
+      data-aos-anchor-placement="bottom"
+    >
       <iframe
         src="https://www.youtube.com/embed/RYAUgOba-wg"
         title="YouTube video player"
@@ -22,7 +26,11 @@
       <h4 class="case_title_h4 m-24_bottom media-m-12_bottom">
         Here’s how Peklo Tool increases the efficacy of contextual advertising:
       </h4>
-      <div class="case_cards-list m-96_bottom media-m-48_bottom">
+      <div
+        class="case_cards-list m-96_bottom media-m-48_bottom"
+        data-aos="fade-up"
+        data-aos-anchor-placement="bottom"
+      >
         <Card
           v-for="card in howPekloToolWorksCards"
           :key="card.title"

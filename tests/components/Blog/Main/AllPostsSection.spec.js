@@ -71,6 +71,57 @@ describe('AllPostsSection component', () => {
     expect(screen.getAllByTestId('test-single-post')).toHaveLength(allPosts.length)
   })
 
+  it('categories() computed method should return array without \'Job Opening\' category', async () => {
+    const wrapper = shallowMount(AllPostsSection, {
+      localVue,
+      mocks,
+      stubs,
+      store: {
+        ...store,
+        getters: {
+          ...store.getters,
+          homePageContent: {
+            categories: [
+              {
+                title: 'Editors Pick',
+                tags: [],
+              },
+              {
+                title: 'Job Opening',
+                tags: [],
+              },
+            ],
+          },
+        },
+      },
+    })
+
+    const filteredCategories = [
+      {
+        title: 'Editors Pick',
+        tags: [],
+      },
+    ]
+    expect(wrapper.vm.categories).toEqual(filteredCategories)
+  })
+
+  it('categories() computed method with invalid homePageContent getter should return empty array', async () => {
+    const wrapper = shallowMount(AllPostsSection, {
+      localVue,
+      mocks,
+      stubs,
+      store: {
+        ...store,
+        getters: {
+          ...store.getters,
+          homePageContent: 'string',
+        },
+      },
+    })
+
+    expect(wrapper.vm.categories).toEqual([])
+  })
+
   it('should correct work change post category', async () => {
     render(AllPostsSection, {
       localVue,
