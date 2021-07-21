@@ -104,7 +104,7 @@ export default {
           email: {
             templateId: 348595, // Required
             variables: {
-              subject: 'Mad Devs | Pricing strategies ebook',
+              subject: 'Your Pricing Strategies Ebook by Mad Devs',
               senderName: this.name,
               emailTo: this.email,
             },
@@ -119,6 +119,7 @@ export default {
         base64: base64File.replace(/^data:(.*,)?/, ''),
       }
       sendEmailWithBase64(this.$axios, request)
+      this.$emit('form-sended', { email: this.email, name: this.name })
     },
   },
 }

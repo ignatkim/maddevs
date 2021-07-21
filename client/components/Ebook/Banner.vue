@@ -16,8 +16,7 @@
             <img
               width="20"
               height="20"
-              :data-src="require(`@/assets/img/common/arrow-up-right.svg`)"
-              class="media_lazy"
+              src="@/assets/img/common/arrow-up-right.svg"
             >
           </UIButton>
           <NuxtLink to="#read-online-anchor">

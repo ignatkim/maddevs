@@ -19,7 +19,7 @@ import animateOnScrollMixin from '@/mixins/animateOnScrollMixin'
 import featureFlag from '@/featureFlags/featureFlag'
 
 export default {
-  name: 'MainEbook',
+  name: 'MainEbooks',
   components: {
     Banner,
     Learn,

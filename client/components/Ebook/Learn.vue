@@ -5,10 +5,7 @@
         From it, you will learn:
       </h2>
 
-      <div
-        class="ebook-learn_cards"
-        data-aos="fade-up"
-      >
+      <div class="ebook-learn_cards">
         <LearnCard
           v-for="(card, i) of cards"
           :key="`card_${i}`"

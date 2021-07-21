@@ -14,9 +14,17 @@
       </div>
 
       <div class="ebook-read_form">
-        <ReadForm />
+        <ReadForm @form-sended="handleSendedForm" />
       </div>
     </div>
+
+    <!-- id is needed for google analytics, don't remove it -->
+    <Modal
+      id="read-success-modal"
+      ref="modalEbook"
+    >
+      <SuccessMessage :message="successMessage" />
+    </Modal>
   </section>
 </template>
 
@@ -24,10 +32,24 @@
 import { mapGetters, mapActions } from 'vuex'
 import ReadCard from '@/components/Ebook/ReadCard'
 import ReadForm from '@/components/Ebook/ReadForm'
+import Modal from '@/components/core/Modal'
+import SuccessMessage from '@/components/core/modals/SuccessMessage'
 
 export default {
   name: 'EbookRead',
-  components: { ReadCard, ReadForm },
+  components: {
+    ReadCard,
+    ReadForm,
+    Modal,
+    SuccessMessage,
+  },
+
+  data() {
+    return {
+      successMessage: null,
+    }
+  },
+
   computed: {
     ...mapGetters(['CUPosts']),
     posts() {
@@ -48,6 +70,14 @@ export default {
     sortedPosts(a, b) {
       return (Number(a.data.title[0].text.match(/(\d+)/g)[0])
         - Number((b.data.title[0].text.match(/(\d+)/g)[0])))
+    },
+
+    handleSendedForm(payload) {
+      this.successMessage = `
+        The letter with the PDF file was successfully sent to mail ${payload.email}.
+        <br><br> Please check your email.
+      `
+      this.$refs.modalEbook.show()
     },
   },
 }
