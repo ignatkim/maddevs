@@ -8,7 +8,7 @@
         <Simplebar>
           <ul class="posts-filter__list">
             <li
-              v-for="(category, i) in homePageContent.categories"
+              v-for="(category, i) in categories"
               :key="i"
               class="posts-filter__item-wrapper"
             >
@@ -97,6 +97,10 @@ export default {
     totalPages() {
       return Math.ceil(this.filteredPosts.length / this.pageSize)
     },
+
+    categories() {
+      return this.homePageContent.categories.filter(category => category.title !== 'Job Opening')
+    },
   },
 
   watch: {
@@ -135,10 +139,9 @@ export default {
 .posts-filter {
   min-width: 150px;
   margin-bottom: 50px;
-
   &__list {
     display: flex;
-    justify-content: flex-start;
+    flex-flow: row nowrap;
   }
   &__item {
     &-wrapper {
@@ -182,8 +185,6 @@ export default {
   @media screen and (max-width: 1200px) {
     &__list {
       margin: 0 -4px;
-      flex-wrap: nowrap;
-      justify-content: space-between;
     }
 
     &__item {
