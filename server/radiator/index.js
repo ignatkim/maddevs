@@ -54,6 +54,10 @@ function runRadiator() {
       time: 15 - 6, // heroku works with UTC timezone, so we need to calculate diff between Bishkek(UTC+6)
       weekDay: 5,
     },
+    chart: {
+      type: 'users',
+      period: 30,
+    },
   }
 
   const dailyConfig = {
@@ -62,6 +66,10 @@ function runRadiator() {
     schedule: {
       period: 'day',
       time: 9 - 6, // heroku works with UTC timezone, so we need to calculate diff between Bishkek(UTC+6)
+    },
+    chart: {
+      type: 'users',
+      period: 7,
     },
   }
 
