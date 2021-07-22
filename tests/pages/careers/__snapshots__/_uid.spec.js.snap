@@ -491,7 +491,7 @@ exports[`Careers _uid component should render correctly 1`] = `
                           </div>
                         </label>
                         
-            OR
+            AND
           
                       </li>
                        
@@ -516,7 +516,11 @@ exports[`Careers _uid component should render correctly 1`] = `
                             >
                               
     find attached my CV
-  
+                              <span
+                                class="red"
+                              >
+                                *
+                              </span>
                             </label>
                           </div>
                            

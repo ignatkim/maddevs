@@ -16,7 +16,7 @@ export const featuredProjectsList = [
       alt: 'Comedian',
     },
     title: 'Comedian',
-    description: 'A team management system that helps track performance and assists team members in daily remote stand-ups meetings.',
+    description: 'A team-management system leveraging Slack and Telegram bot functionalities to enable remote standups and track daily performance.',
     link: 'https://github.com/maddevsio/comedian/',
   },
   {
@@ -26,7 +26,7 @@ export const featuredProjectsList = [
       alt: 'Ariadna',
     },
     title: 'Ariadna',
-    description: 'Geocoder Ariadna on ElasticSearch with OpenStreetMap',
+    description: 'An open-source geocoder, built on top of ElasticSearch, for fast geocoding and better search for CIS countries.',
     link: 'https://github.com/maddevsio/ariadna/',
   },
   {
@@ -36,7 +36,7 @@ export const featuredProjectsList = [
       alt: 'Mad Devs',
     },
     title: 'Mad Devs website',
-    description: 'Mad Devs website source code',
+    description: 'Open source website code with coverage tests to make websites like maddevs.io',
     link: 'https://github.com/maddevsio/maddevs/',
   },
   {
@@ -46,7 +46,7 @@ export const featuredProjectsList = [
       alt: 'IDMatch',
     },
     title: 'IDMatch',
-    description: 'Match faces on id cards with OCR capabilities.',
+    description: 'An open source tool enabling ID cards recognition to ensure security on your premises.',
     link: 'https://github.com/maddevsio/idmatch/',
   },
   {
@@ -56,7 +56,7 @@ export const featuredProjectsList = [
       alt: 'YourcastTV',
     },
     title: 'YourcastTV',
-    description: 'A solution to create lists of Youtube videos and stream them online',
+    description: 'A solution to create lists of YouTube videos and stream them online in just a few seconds.',
     link: 'https://github.com/maddevsio/yourcast.tv/',
   },
 ]

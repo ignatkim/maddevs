@@ -24,18 +24,18 @@
               extension="png"
             />
           </div>
-          <h4 class="case_title_h4 case_card-title m-24_top m-8_bottom">
+          <h3 class="case_title_h4 case_card-title m-24_top m-8_bottom">
             {{ card.title }}
-          </h4>
+          </h3>
           <TextParagraph color="#ffffff">
             {{ card.description }}
           </TextParagraph>
         </Card>
       </div>
       <Card class="background-color-yellow m-96_bottom media-m-48_bottom">
-        <h4 class="case_title_h4 m-8_bottom">
+        <h3 class="case_title_h4 m-8_bottom">
           Entrepreneurs
-        </h4>
+        </h3>
         <TextParagraph>
           Subscription to Peklo Tool pays off after a single contextual advertising campaign. The money saved by automation can significantly exceed the service’s price.
         </TextParagraph>

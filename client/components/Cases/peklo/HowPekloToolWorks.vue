@@ -23,9 +23,9 @@
       />
     </div>
     <div class="container_regular">
-      <h4 class="case_title_h4 m-24_bottom media-m-12_bottom">
+      <h3 class="case_title_h4 m-24_bottom media-m-12_bottom">
         Here’s how Peklo Tool increases the efficacy of contextual advertising:
-      </h4>
+      </h3>
       <div
         class="case_cards-list m-96_bottom media-m-48_bottom"
         data-aos="fade-up"
@@ -36,9 +36,9 @@
           :key="card.title"
           :class="`case_card background-color-${card.color}`"
         >
-          <h5 class="case_title_h5 case_card-title">
+          <h4 class="case_title_h5 case_card-title">
             {{ card.title }}
-          </h5>
+          </h4>
           <TextParagraph class="case_card-description">
             {{ card.description }}
           </TextParagraph>

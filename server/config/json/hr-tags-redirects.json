@@ -50,5 +50,61 @@
   {
     "from": "/blog/tag/assistant-delivery-manager",
     "to": "https://maddevs.io/careers/#open-positions"
+  },
+  {
+    "from": "/blog/tag/job-opening",
+    "to": "https://maddevs.io/careers/#open-positions"
+  },
+  {
+    "from": "/blog/golang-middle-senior-developer-v-finteh-proekt",
+    "to": "https://maddevs.io/careers/#open-positions"
+  },
+  {
+    "from": "/blog/vue-vuetify-middle-v-saas-proekt",
+    "to": "https://maddevs.io/careers/#open-positions"
+  },
+  {
+    "from": "/blog/mad-devs-ishet-senior-python-developer-v-proekt-clutch",
+    "to": "https://maddevs.io/careers/#open-positions"
+  },
+  {
+    "from": "/blog/project-manager-v-finteh-proekt",
+    "to": "https://maddevs.io/careers/#open-positions"
+  },
+  {
+    "from": "/blog/it-recruiter-middle-maddevs",
+    "to": "https://maddevs.io/careers/#open-positions"
+  },
+  {
+    "from": "/blog/ios-middle-senior-developer-v-finteh-proekt",
+    "to": "https://maddevs.io/careers/#open-positions"
+  },
+  {
+    "from": "/blog/middle-python-developer",
+    "to": "https://maddevs.io/careers/#open-positions"
+  },
+  {
+    "from": "/blog/middle-android-developer",
+    "to": "https://maddevs.io/careers/#open-positions"
+  },
+  {
+    "from": "/blog/senior-android-developer",
+    "to": "https://maddevs.io/careers/#open-positions"
+  },
+  {
+    "from": "/blog/mad-devs-devops",
+    "to": "https://maddevs.io/careers/#open-positions"
+  },
+  {
+    "from": "/blog/middle-ios-developer",
+    "to": "https://maddevs.io/careers/#open-positions"
+  },
+  {
+    "from": "/blog/senior-ios-developer",
+    "to": "https://maddevs.io/careers/#open-positions"
+  },
+  {
+    "from": "/blog/mad-devs-ishet-golang-razrabotchika",
+    "to": "https://maddevs.io/careers/#open-positions"
   }
 ]

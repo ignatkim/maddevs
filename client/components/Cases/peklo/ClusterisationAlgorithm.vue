@@ -57,9 +57,9 @@
       <TextParagraph class="m-96_bottom media-m-48_bottom">
         It’s simpler, faster, and more cache-friendly than the Aho–Corasick algorithm. Most importantly, it’s sufficient for lists of keywords for a contextual advertising campaign.
       </TextParagraph>
-      <h4 class="case_title_h4 m-12_bottom">
+      <h3 class="case_title_h4 m-12_bottom">
         Generation of ad texts
-      </h4>
+      </h3>
       <TextParagraph>
         Another challenge was to automate the process of putting together different ad texts for each group of keywords. It’s an advanced combinatorial problem. We needed to implement an algorithm that would know how to write imperative sentences, what words to use in them, and how to connect those words.
       </TextParagraph>
@@ -74,9 +74,9 @@
       <TextParagraph class="m-24_bottom media-m-48_bottom">
         After collecting keywords and having them automatically grouped by Peklo Tool, the user can feed a few unique selling propositions to the ad text generation feature.
       </TextParagraph>
-      <h5 class="case_title_h5 m-12_bottom">
+      <h4 class="case_title_h5 m-12_bottom">
         Peklo Tool then creates hundreds of ad texts within seconds:
-      </h5>
+      </h4>
     </div>
     <div
       class="container_middle case_img-wrapper"

@@ -1,4 +1,4 @@
-import Customers from '@/components/Projects/Customers'
+import Customers from '@/components/Cases/Customers'
 import { render, screen } from '@testing-library/vue'
 
 const stubs = ['UICustomersList']

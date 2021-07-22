@@ -2,7 +2,7 @@ export const messengers = [
   {
     key: 'messenger',
     label: 'Messenger',
-    url: 'https://facebook.com/maddevsllc',
+    url: 'https://m.me/maddevsllc',
   },
   {
     key: 'whatsapp',

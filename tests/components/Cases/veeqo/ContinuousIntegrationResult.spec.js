@@ -7,6 +7,9 @@ describe('ContinuousIntegrationResult component', () => {
       mocks: {
         $getMediaFromS3: () => 'img.jpg',
       },
+      directives: {
+        prlx: () => {},
+      },
     })
 
     expect(screen.getByText('Result')).not.toBeNull()

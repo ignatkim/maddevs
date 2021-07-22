@@ -2,5 +2,25 @@
   {
     "from": "/blog/tag/software-features",
     "to": "https://maddevs.io/blog/tag/software-development/"
+  },
+  {
+    "from": "/blog/devops-engineers-in-mad-devs",
+    "to": "https://maddevs.io/blog/devops-engineers-at-mad-devs/"
+  },
+  {
+    "from": "/projects",
+    "to": "https://maddevs.io/case-studies/"
+  },
+  {
+    "from": "/projects/#case-studies",
+    "to": "https://maddevs.io/case-studies/"
+  },
+  {
+    "from": "/projects/#customers",
+    "to": "https://maddevs.io/case-studies/"
+  },
+  {
+    "from": "/projects/#open-source",
+    "to": "https://maddevs.io/open-source/"
   }
 ]

@@ -15,7 +15,7 @@ exports[`FeaturedProjectsList component should render correctly 1`] = `
         title="Mad Location Manager"
       />
       <featuredprojectslistitem-stub
-        description="A team management system that helps track performance and assists team members in daily remote stand-ups meetings."
+        description="A team-management system leveraging Slack and Telegram bot functionalities to enable remote standups and track daily performance."
         id="comedian"
         link="https://github.com/maddevsio/comedian/"
         logo="[object Object]"
@@ -23,7 +23,7 @@ exports[`FeaturedProjectsList component should render correctly 1`] = `
         title="Comedian"
       />
       <featuredprojectslistitem-stub
-        description="Geocoder Ariadna on ElasticSearch with OpenStreetMap"
+        description="An open-source geocoder, built on top of ElasticSearch, for fast geocoding and better search for CIS countries."
         id="ariadna"
         link="https://github.com/maddevsio/ariadna/"
         logo="[object Object]"
@@ -31,7 +31,7 @@ exports[`FeaturedProjectsList component should render correctly 1`] = `
         title="Ariadna"
       />
       <featuredprojectslistitem-stub
-        description="Mad Devs website source code"
+        description="Open source website code with coverage tests to make websites like maddevs.io"
         id="maddevs"
         link="https://github.com/maddevsio/maddevs/"
         logo="[object Object]"
@@ -39,7 +39,7 @@ exports[`FeaturedProjectsList component should render correctly 1`] = `
         title="Mad Devs website"
       />
       <featuredprojectslistitem-stub
-        description="Match faces on id cards with OCR capabilities."
+        description="An open source tool enabling ID cards recognition to ensure security on your premises."
         id="idmatch"
         link="https://github.com/maddevsio/idmatch/"
         logo="[object Object]"
@@ -47,7 +47,7 @@ exports[`FeaturedProjectsList component should render correctly 1`] = `
         title="IDMatch"
       />
       <featuredprojectslistitem-stub
-        description="A solution to create lists of Youtube videos and stream them online"
+        description="A solution to create lists of YouTube videos and stream them online in just a few seconds."
         id="yourcast"
         link="https://github.com/maddevsio/yourcast.tv/"
         logo="[object Object]"

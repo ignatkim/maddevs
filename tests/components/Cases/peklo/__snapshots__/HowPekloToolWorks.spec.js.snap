@@ -41,13 +41,13 @@ exports[`HowPekloToolWorks component should render correctly 1`] = `
     <div
       class="container_regular"
     >
-      <h4
+      <h3
         class="case_title_h4 m-24_bottom media-m-12_bottom"
       >
         
       Here’s how Peklo Tool increases the efficacy of contextual advertising:
     
-      </h4>
+      </h3>
        
       <div
         class="case_cards-list m-96_bottom media-m-48_bottom"
@@ -57,13 +57,13 @@ exports[`HowPekloToolWorks component should render correctly 1`] = `
         <div
           class="case_card case_card background-color-silver"
         >
-          <h5
+          <h4
             class="case_title_h5 case_card-title"
           >
             
           Algorithm
         
-          </h5>
+          </h4>
            
           <p
             class="case_paragraph case_card-description"
@@ -84,13 +84,13 @@ exports[`HowPekloToolWorks component should render correctly 1`] = `
         <div
           class="case_card case_card background-color-gray-darken"
         >
-          <h5
+          <h4
             class="case_title_h5 case_card-title"
           >
             
           Semantics
         
-          </h5>
+          </h4>
            
           <p
             class="case_paragraph case_card-description"
@@ -111,13 +111,13 @@ exports[`HowPekloToolWorks component should render correctly 1`] = `
         <div
           class="case_card case_card background-color-silver"
         >
-          <h5
+          <h4
             class="case_title_h5 case_card-title"
           >
             
           Texts
         
-          </h5>
+          </h4>
            
           <p
             class="case_paragraph case_card-description"
