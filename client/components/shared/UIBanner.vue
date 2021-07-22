@@ -207,13 +207,10 @@ export default {
     }
     @media screen and (max-width: 900px) {
       top: auto;
-      bottom: 20px;
-    }
-    @media screen and (max-width: 768px) {
-      top: auto;
-      bottom: 16px;
+      bottom: 0;
       right: 0;
-      line-height: 16px;
+      background-color: #f4f4f4;
+      padding: 5px;
     }
     span {
       display: block;
