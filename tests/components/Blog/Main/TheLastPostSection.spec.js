@@ -20,6 +20,7 @@ const store = {
   getters: {
     featuredPost: () => allPosts[0],
     postsLoaded: () => true,
+    allAuthors: jest.fn(),
   },
 }
 

@@ -16,40 +16,50 @@ const refs = {
 }
 
 describe('DevelopmentGoals component', () => {
+  let wrapper = null
+
+  beforeEach(() => {
+    wrapper = mount(DevelopmentGoals, {
+      directives: {
+        prlx: () => {},
+      },
+    })
+  })
+
+  afterEach(() => {
+    wrapper = null
+  })
+
   it('should render correctly', () => {
-    const { container } = render(DevelopmentGoals)
+    const { container } = render(DevelopmentGoals, {
+      directives: {
+        prlx: () => {},
+      },
+    })
 
     expect(container).toMatchSnapshot()
     expect(screen.getByText(/Development goals/i).className).toBeTruthy()
   })
 
   it('method should get number in string and return', () => {
-    const wrapper = mount(DevelopmentGoals)
-
     const result = wrapper.vm.getNumberFromString('string123')
 
     expect(result).toBe(123)
   })
 
   it('method should return zero if pass in params invalid value', () => {
-    const wrapper = mount(DevelopmentGoals)
-
     const result = wrapper.vm.getNumberFromString({})
 
     expect(result).toBe(0)
   })
 
   it('method should return zero if pass in params empty string', () => {
-    const wrapper = mount(DevelopmentGoals)
-
     const result = wrapper.vm.getNumberFromString('')
 
     expect(result).toBe(0)
   })
 
   it('method should set new marginBottom value for container', () => {
-    const wrapper = mount(DevelopmentGoals)
-
     wrapper.vm.$refs = refs
 
     wrapper.vm.scrollHandler()
