@@ -86,8 +86,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .boilerplates-list__item {
   background-color: $bgcolor--silver;
   border-radius: 4px;

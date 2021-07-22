@@ -29,8 +29,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .boilerplates-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

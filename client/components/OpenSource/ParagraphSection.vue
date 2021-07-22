@@ -19,8 +19,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .paragraph-section {
   padding-top: 134px;
   padding-bottom: 196px;

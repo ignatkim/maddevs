@@ -27,8 +27,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .ui-arrow-button {
   @include font('Inter', 16px, 400);
   padding: 0;

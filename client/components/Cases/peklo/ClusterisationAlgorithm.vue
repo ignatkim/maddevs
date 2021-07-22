@@ -181,9 +181,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-@import '@/assets/styles/cases/_mixins';
-
 .case {
   &_lottie  {
     max-width: 546px;

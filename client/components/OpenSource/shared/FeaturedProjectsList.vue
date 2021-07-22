@@ -38,8 +38,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .featured-projects-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

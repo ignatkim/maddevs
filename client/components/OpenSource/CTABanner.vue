@@ -42,8 +42,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .open-source-cta {
   padding-bottom: 107px;
   &__head {
