@@ -80,9 +80,17 @@ export default {
         padding: 0;
       }
 
+      &_head {
+        @media screen and (max-width: 640px) {
+          margin-top: 54px;
+        }
+      }
+
       &_container {
-        width: 498px;
-        max-width: 498px;
+        @media screen and (min-width: 640px) {
+          width: 498px;
+          max-width: 498px;
+        }
       }
 
       &_close {

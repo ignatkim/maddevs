@@ -54,13 +54,23 @@ export default {
     color: #fff;
     padding: 14px 24px;
 
+    @media screen and (max-width: 900px) {
+      padding: 12px;
+    }
+
     img {
       margin-left: 7px;
     }
   }
 
-  .cta-banner {
+  /deep/ .cta-banner {
     min-height: 543px;
+
+    &__man span br {
+      @media screen and (max-width: 900px) {
+        display: none;
+      }
+    }
   }
 }
 </style>
