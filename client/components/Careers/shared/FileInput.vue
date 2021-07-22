@@ -16,7 +16,7 @@
       class="file-input__cv"
       for="file"
     >
-      {{ selectedFilename }}
+      {{ selectedFilename }}<span class="red">*</span>
     </label>
   </div>
 </template>
@@ -58,6 +58,10 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/assets/styles/_vars.scss';
+
+.red {
+  color: #ec1c24;
+}
 
 .file-input {
   position: relative;
