@@ -1617,13 +1617,13 @@ exports[`ClusterisationAlgorithm component should render correctly 1`] = `
     
       </p>
        
-      <h4
+      <h3
         class="case_title_h4 m-12_bottom"
       >
         
       Generation of ad texts
     
-      </h4>
+      </h3>
        
       <p
         class="case_paragraph"
@@ -1663,13 +1663,13 @@ exports[`ClusterisationAlgorithm component should render correctly 1`] = `
     
       </p>
        
-      <h5
+      <h4
         class="case_title_h5 m-12_bottom"
       >
         
       Peklo Tool then creates hundreds of ad texts within seconds:
     
-      </h5>
+      </h4>
     </div>
      
     <div

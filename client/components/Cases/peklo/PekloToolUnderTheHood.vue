@@ -18,16 +18,16 @@
           class="case_card background-color-gray"
         >
           <div class="case_card-text-wrapper">
-            <h5
-              v-html="card.title"
+            <h3
               class="case_title_h5 case_card-title m-8_bottom"
+              v-html="card.title"
             >
               {{ card.title }}
-            </h5>
+            </h3>
             <TextParagraph
-              v-html="card.description"
               class="case_card-description"
               color="#cfcfd0"
+              v-html="card.description"
             >
               {{ card.description }}
             </TextParagraph>

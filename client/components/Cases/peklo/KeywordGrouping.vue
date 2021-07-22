@@ -38,17 +38,17 @@
       data-aos-anchor-placement="bottom"
     >
       <Card class="background-color-black-primary-bg">
-        <h4 class="case_title_h4 case_card-title m-8_bottom">
+        <h3 class="case_title_h4 case_card-title m-8_bottom">
           Problem
-        </h4>
+        </h3>
         <TextParagraph color="#ffffff">
           NLP could cope with grouping, but it would’ve taken several minutes to process a single file with keywords in it
         </TextParagraph>
       </Card>
       <Card class="background-color-gray">
-        <h4 class="case_title_h4 case_card-title m-8_bottom">
+        <h3 class="case_title_h4 case_card-title m-8_bottom">
           Solution
-        </h4>
+        </h3>
         <TextParagraph color="#ffffff">
           Integration with an extensive dictionary of contextual synonyms in a separate cache
         </TextParagraph>

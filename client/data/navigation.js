@@ -62,8 +62,8 @@ export const headerNavigation = [
     link: '/services/',
   },
   {
-    title: 'Projects',
-    link: '/projects/',
+    title: 'Case Studies',
+    link: '/case-studies/',
   },
   {
     title: 'Delivery models',
