@@ -102,7 +102,7 @@ export const meta = {
   ebook: {
     title: 'Software Industry Ebooks | Mad Devs Insights',
     description: 'How to build a successful product? Read Mad Devs Ebooks to understand the key aspects of software and mobile app development.',
-    url: 'https://maddevs.io/insights/ebooks/',
+    url: 'https://maddevs.io/insights/ebooks/pricing-strategies/',
     jsonLd: '',
   },
   peklo: {
