@@ -68,7 +68,6 @@ const getRoutes = async () => {
   const routes = [
     '/',
     '/services',
-    '/projects',
     '/careers',
     '/gdpr',
     '/nda',

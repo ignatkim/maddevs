@@ -10,7 +10,7 @@
 <script>
 import TitleDesc from '@/components/Cases/TitleDesc'
 import CasesList from '@/components/Cases/CasesList'
-import Customers from '@/components/Projects/Customers'
+import Customers from '@/components/Cases/Customers'
 import BuildDevTeam from '@/components/Cases/BuildDevTeam'
 import { getMetadata, buildHead } from '@/data/seo'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
