@@ -205,10 +205,10 @@
 
 // ----------- Modal window ----------- //
 .error-text {
+  @include font('Inter', 14px, 400);
   display: block;
   margin-top: 3px;
   color: $text-color--red;
-  @include font('Inter', 14px, 400);
 }
 
 .textarea {
