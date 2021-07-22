@@ -93,7 +93,7 @@ exports[`Footer component should render correctly 1`] = `
                 <li>
                   <a
                     class="footer-contacts__messenger-item-wrapper"
-                    href="https://facebook.com/maddevsllc"
+                    href="https://m.me/maddevsllc"
                     target="_blank"
                   >
                     <img
