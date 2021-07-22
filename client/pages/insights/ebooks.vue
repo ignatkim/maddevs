@@ -16,8 +16,6 @@ import { getMetadata, buildHead } from '@/data/seo'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 import animateOnScrollMixin from '@/mixins/animateOnScrollMixin'
 
-import featureFlag from '@/featureFlags/featureFlag'
-
 export default {
   name: 'MainEbooks',
   components: {
@@ -34,12 +32,6 @@ export default {
     duration: 1000,
     once: true,
   })],
-
-  // NOTE: Remove if need show this page on production
-  asyncData({ error }) {
-    if (!featureFlag('ebookPage')) return error({ statusCode: 404, message: 'Page not found' })
-    return {}
-  },
 
   head() {
     return buildHead(getMetadata('ebook'))
