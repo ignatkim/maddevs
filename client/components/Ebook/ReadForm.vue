@@ -72,34 +72,8 @@ export default {
   },
 
   methods: {
-    toBase64(file) {
-      if (!file) return null
-      return new Promise((resolve, reject) => {
-        const reader = new FileReader()
-        reader.readAsDataURL(file)
-        reader.onload = () => resolve(reader.result)
-        reader.onerror = error => reject(error)
-      })
-    },
-
-    getAttachBase64() {
-      return new Promise((resolve, reject) => {
-        try {
-          const { origin } = window.location
-          const fileName = 'custom-software-development-pricing-strategies-ebook.pdf' // This file from /static folder
-          fetch(`${origin}/${fileName}`)
-            .then(file => file.blob())
-            .then(blob => this.toBase64(blob).then(base64 => resolve(base64)))
-            .catch(error => reject(error))
-        } catch (error) {
-          reject(error)
-        }
-      })
-    },
-
     async submit() {
       if (!this.isValid) return
-      const base64File = await this.getAttachBase64()
       const requestSender = {
         body: {
           email: {
@@ -109,14 +83,11 @@ export default {
               emailTo: this.email,
             },
 
-            attachment: {
-              base64: base64File.replace(/^data:(.*,)?/, ''),
-              name: 'pricing-strategies-ebook.pdf',
-            },
+            attachment: null,
           },
         },
 
-        base64: base64File.replace(/^data:(.*,)?/, ''),
+        base64: null,
       }
       const requestMarketing = {
         body: {

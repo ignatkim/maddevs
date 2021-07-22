@@ -1,7 +1,10 @@
 <template>
-  <section class="ebook-read">
+  <section
+    id="read-online-anchor"
+    class="ebook-read"
+  >
     <div class="container">
-      <h2 id="read-online-anchor">
+      <h2>
         Read articles online
       </h2>
 
