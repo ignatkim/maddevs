@@ -9,6 +9,9 @@ describe('HighLevelOverview component', () => {
   it('should render correctly', () => {
     const { container } = render(HighLevelOverview, {
       mocks,
+      directives: {
+        prlx: () => {},
+      },
     })
 
     expect(screen.getByText('Veeqo high-level overview')).not.toBeNull()

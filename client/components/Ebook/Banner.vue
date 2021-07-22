@@ -4,7 +4,7 @@
       <!-- Info -->
       <div class="ebook-banner_info">
         <h1>Custom Software Development: Pricing Strategies</h1>
-        <h5>This e-book is for you if you:</h5>
+        <h2>This e-book is for you if you:</h2>
         <ul>
           <li>Are looking for software development services</li>
           <li>Are an aspiring IT company searching for useful information</li>
@@ -101,7 +101,7 @@ export default {
       }
     }
 
-    h5 {
+    h2 {
       @include font('Inter', 20px, 600);
       letter-spacing: -0.4px;
       line-height: 26px;

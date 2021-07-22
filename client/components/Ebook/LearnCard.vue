@@ -8,8 +8,23 @@
       alt="Icon"
       class="media_lazy"
     >
-    <h4>{{ title }}</h4>
-    <p>{{ description }}</p>
+    <p
+      v-if="title === 'And much more...'"
+      class="ebook-learn-card_title"
+    >
+      {{ title }}
+    </p>
+    <h3
+      v-else
+      class="ebook-learn-card_title"
+    >
+      {{ title }}
+    </h3>
+    <p
+      class="ebook-learn-card_desc"
+    >
+      {{ description }}
+    </p>
   </section>
 </template>
 
@@ -53,15 +68,16 @@ export default {
     margin-bottom: 27px;
   }
 
-  h4 {
+  &_title {
     @include font('Inter', 21px, 600);
     line-height: 24px;
     letter-spacing: -1px;
     color: #fff;
     margin-bottom: 21px;
+    padding: 0;
   }
 
-  p {
+  &_desc {
     @include font('Inter', 16px, 400);
     line-height: 24px;
     letter-spacing: -0.4px;;

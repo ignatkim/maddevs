@@ -6,7 +6,7 @@
       src="@/assets/img/Ebook/book.svg"
       alt="Pricing strategies"
     >
-    <h4>Get your copy of  “Custom Software Development: Pricing Strategies”</h4>
+    <h2>Get your copy of  “Custom Software Development: Pricing Strategies”</h2>
     <div class="read-form_fields">
       <BaseInput
         v-model="name"
@@ -25,7 +25,8 @@
         :validation="$v.email"
       />
       <button
-        :class="{ 'read-form_btn--disabled': !isValid }"
+        class="read-form_btn"
+        :class="{ 'read-form_btn--active': isValid }"
         @click="submit"
       >
         Send me the ebook
@@ -136,6 +137,13 @@ export default {
       sendEmail(this.$axios, requestSender) // Send email to sender
       sendEmail(this.$axios, requestMarketing) // Send email to Mad Devs marketing
       this.$emit('form-sended', { email: this.email, name: this.name })
+      this.resetForm()
+    },
+
+    resetForm() {
+      this.$v.$reset() // Reset validation form
+      this.name = ''
+      this.email = ''
     },
   },
 }
@@ -156,6 +164,14 @@ export default {
   border-radius: 4px;
   box-sizing: border-box;
 
+  @media screen and (max-width: 540px) {
+    padding: 32px 38px;
+  }
+
+  @media screen and (max-width: 376px) {
+    padding: 22px 28px;
+  }
+
   > img {
     width: 100%;
     max-width: 110px;
@@ -163,7 +179,7 @@ export default {
     margin-bottom: 15px;
   }
 
-  > h4 {
+  > h2 {
     @include font('Inter', 22px, 400);
     line-height: 30px;
     letter-spacing: -1px;
@@ -199,34 +215,37 @@ export default {
         color: #707072;
       }
     }
-
-    button {
-      width: auto;
-      padding: 12px 15px;
-      @include font('Inter', 16px, 600);
-      line-height: 20px;
-      letter-spacing: -0.4px;
-      color: #A0A0A1;
-      border-radius: 4px;
-      border: 1px solid #707072;
-      background-color: transparent;
-      cursor: pointer;
-      margin-bottom: 16px;
-      box-sizing: border-box;
-
-      &:active {
-        background-color: #eee;
-      }
-    }
   }
 
   &_btn {
-    &--disabled {
-      opacity: 0.7;
-      cursor: not-allowed !important;
+    width: auto;
+    padding: 12px 15px;
+    @include font('Inter', 16px, 600);
+    line-height: 20px;
+    letter-spacing: -0.4px;
+    color: #A0A0A1;
+    border-radius: 4px;
+    border: 1px solid #707072;
+    background-color: transparent;
+    cursor: pointer;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    cursor: not-allowed;
+    opacity: 0.7;
+
+    &--active {
+      background-color: #ec1c24;
+      border-color: #ec1c24;
+      color: #fff;
+      opacity: 1;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #d41e24;
+      }
 
       &:active {
-        background-color: transparent !important;
+        background-color: #c21c22;
       }
     }
   }

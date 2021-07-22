@@ -1,5 +1,5 @@
 import 'regenerator-runtime/runtime'
-import { mount } from '@vue/test-utils'
+import { shallowMount } from '@vue/test-utils'
 import Modal from '@/components/core/Modal.vue'
 
 describe('namba food', () => {
@@ -11,7 +11,7 @@ describe('namba food', () => {
         name: null,
       },
     }
-    wrapper = mount(Modal, {
+    wrapper = shallowMount(Modal, {
       stubs: ['ClientOnly', 'NuxtLink'],
       mocks: {
         $getMediaFromS3: () => 's3 image url',

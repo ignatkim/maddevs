@@ -12,6 +12,9 @@ describe('Challenges component', () => {
     const { container } = render(Challenges, {
       stubs,
       mocks,
+      directives: {
+        prlx: () => {},
+      },
     })
 
     expect(container).toMatchSnapshot()

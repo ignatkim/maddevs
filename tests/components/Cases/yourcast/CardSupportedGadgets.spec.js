@@ -1,5 +1,5 @@
+import { shallowMount } from '@vue/test-utils'
 import CardSupportedGadgets from '@/components/Cases/yourcast/CardSupportedGadgets'
-import { render, screen } from '@testing-library/vue'
 
 const props = {
   title: 'title',
@@ -11,22 +11,12 @@ const props = {
 
 describe('CardSupportedGadgets component', () => {
   it('should render correctly', () => {
-    const { container } = render(CardSupportedGadgets, {
+    const wrapper = shallowMount(CardSupportedGadgets, {
       props,
       mocks: {
         $getMediaFromS3: () => 'img.jpg',
       },
     })
-    expect(container).toMatchSnapshot()
-  })
-
-  it('title should include classname', () => {
-    render(CardSupportedGadgets, {
-      props,
-      mocks: {
-        $getMediaFromS3: () => 'img.jpg',
-      },
-    })
-    expect(screen.getByText(props.title).className).toContain('card-content_title case_title_h4')
+    expect(wrapper).toMatchSnapshot()
   })
 })
