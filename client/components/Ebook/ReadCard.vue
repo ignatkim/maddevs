@@ -9,7 +9,7 @@
       :src="img.url"
       :alt="img.alt"
     >
-    <h4>{{ title }}</h4>
+    <h3>{{ title }}</h3>
   </NuxtLink>
 </template>
 
@@ -60,7 +60,7 @@ export default {
     display: block;
   }
 
-  h4 {
+  h3 {
     @include font('Inter', 16px, 400);
     line-height: 24px;
     letter-spacing: -0.4px;

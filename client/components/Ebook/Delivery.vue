@@ -7,11 +7,13 @@
         :image="require('@/assets/img/DeliveryModels/png/Tamara.png')"
         image-alt-text="Tamara"
         man-name="Tamara Mun"
-        man-position="Delivery Manager"
+        man-position="Head of Delivery <br> Management"
       >
         <UIButton @click="goToDeliveryPage">
           Find out about Collaboration Approaches
           <img
+            width="20"
+            height="20"
             src="@/assets/img/common/arrow-up-right.svg"
             alt="arrow"
           >

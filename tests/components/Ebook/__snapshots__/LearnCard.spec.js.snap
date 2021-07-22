@@ -3,7 +3,11 @@
 exports[`LearnCard component should render correctly with no data 1`] = `
 <section class="ebook-learn-card">
   <!---->
-  <h4>Card title</h4>
-  <p>Card description</p>
+  <h3 class="ebook-learn-card_title">
+    Card title
+  </h3>
+  <p class="ebook-learn-card_desc">
+    Card description
+  </p>
 </section>
 `;
