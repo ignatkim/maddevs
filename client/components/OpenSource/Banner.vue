@@ -7,15 +7,15 @@
       <source
         :srcset="[$getMediaFromS3('/images/OpenSource/webp/banner.webp') + ' ', $getMediaFromS3('/images/OpenSource/webp/banner@2x.webp 2x')]"
         type="image/webp"
-        class="banner__image media_lazy"
+        class="banner__image"
       >
       <img
-        :srcset="$getMediaFromS3('/images/OpenSource/jpg/banner@2x.jpg')"
-        :src="$getMediaFromS3('/images/OpenSource/jpg/banner.jpg')"
+        :srcset="$getMediaFromS3('/images/OpenSource/png/banner@2x.png')"
+        :src="$getMediaFromS3('/images/OpenSource/png/banner.png')"
         width="1680"
         height="969"
-        class="banner__image media_lazy"
-        alt="Developer"
+        class="banner__image"
+        alt="Programmer"
       >
     </picture>
     <div class="container">
@@ -29,7 +29,8 @@
           The power <br> of open source
         </h1>
         <p class="banner__subtitle">
-          70+ of Mad Devs' open source projects have been shared with the community via GitHub.
+          While we love writing code, nothing excites us more than collaborating with other members of the tech community.
+          We love building with new and emerging technologies here at Mad Devs. Making the world a better place,one line of code at a time.
         </p>
       </div>
     </div>
@@ -42,6 +43,36 @@ import changeSectionTextOpacityMixin from '@/mixins/changeSectionTextOpacityMixi
 export default {
   name: 'Banner',
   mixins: [changeSectionTextOpacityMixin('sectionText')],
+
+  head() {
+    return {
+      link: [
+        {
+          rel: 'preload',
+          as: 'image',
+          href: this.$getMediaFromS3('/images/OpenSource/webp/banner.webp'),
+        },
+
+        {
+          rel: 'preload',
+          as: 'image',
+          href: this.$getMediaFromS3('/images/OpenSource/webp/banner@2x.webp'),
+        },
+
+        {
+          rel: 'preload',
+          as: 'image',
+          href: this.$getMediaFromS3('/images/OpenSource/png/banner.png'),
+        },
+
+        {
+          rel: 'preload',
+          as: 'image',
+          href: this.$getMediaFromS3('/images/OpenSource/png/banner@2x.png'),
+        },
+      ],
+    }
+  },
 }
 </script>
 
@@ -69,13 +100,12 @@ export default {
     height: calc(100% + 4px);
     object-fit: cover;
     object-position: top;
-    opacity: 0.39;
   }
   &__content {
     z-index: 2;
     display: block;
     margin: 0 auto;
-    max-width: 816px;
+    max-width: 1028px;
     text-align: center;
   }
   &__title {
@@ -93,6 +123,7 @@ export default {
   }
 
   @media screen and (max-width: 1024px) {
+    height: 85vh;
     &__title {
       font-size: 80px;
       line-height: 88px;

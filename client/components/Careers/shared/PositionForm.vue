@@ -89,7 +89,7 @@
                   class="position-form__input position-form__input-linkedin"
                 />
               </label>
-              OR
+              AND
             </li>
             <li>
               <label>

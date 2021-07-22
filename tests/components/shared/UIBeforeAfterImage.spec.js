@@ -35,24 +35,6 @@ describe('UIBeforeAfterImage component', () => {
     expect(screen.getByTestId('test-comparsion-track-line').style.opacity).toBe('0.25')
   })
 
-  it('should correctly change styles after 2500ms when mouseLeave', async () => {
-    render(BeforeAfterImage, {
-      stubs: ['NuxtLink', 'PrismicImage'],
-      mocks: {
-        $getMediaFromS3: () => 'img.jpg',
-      },
-    })
-
-    const hover = screen.getByTestId('track-img')
-    await fireEvent.mouseLeave(hover)
-    await new Promise(resolve => setTimeout(resolve, 2500))
-    expect(screen.getByTestId('test-comparsion-track-line').style.transition).toBe(
-      '0.3s ease-out left, 0.3s ease-in opacity',
-    )
-    expect(screen.getByTestId('test-comparsion-track-line').style.left).toBe('50%')
-    expect(screen.getByTestId('test-comparsion-track-line').style.opacity).toBe('1')
-  })
-
   it('should correctly change alt by properties', async () => {
     render(BeforeAfterImage, {
       props,

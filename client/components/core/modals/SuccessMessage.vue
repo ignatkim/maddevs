@@ -9,14 +9,17 @@
         alt="Hand"
       >
       <div class="success-message__text-content">
-        <div class="success-message__title">
-          Thanks for your <br>
-          interest in Mad Devs
-        </div>
-        <div class="success-message__info-text">
-          The form has been submitted. <br>
-          We will contact you as soon as possible.
-        </div>
+        <!-- Title -->
+        <div
+          class="success-message__title"
+          v-html="title"
+        />
+
+        <!-- Message -->
+        <div
+          class="success-message__info-text"
+          v-html="message"
+        />
       </div>
     </div>
   </section>
@@ -25,6 +28,17 @@
 <script>
 export default {
   name: 'SuccessMessage',
+  props: {
+    title: {
+      type: String,
+      default: 'Thanks for your <br> interest in Mad Devs',
+    },
+
+    message: {
+      type: String,
+      default: 'The form has been submitted. <br> We will contact you as soon as possible.',
+    },
+  },
 }
 </script>
 

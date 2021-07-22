@@ -7,6 +7,9 @@ describe('PhasInfrastructureAsCodeResult component', () => {
   it('should render correctly', () => {
     const { container } = render(PhasInfrastructureAsCodeResult, {
       stubs,
+      directives: {
+        prlx: () => {},
+      },
     })
 
     expect(screen.getByText('Key results')).not.toBeNull()

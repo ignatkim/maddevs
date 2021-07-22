@@ -3,21 +3,28 @@
 exports[`ParagraphSection component should render correctly 1`] = `
 <div>
   <div
-    class="container"
+    class="paragraph-section"
+    data-aos="fade-up"
   >
-    <p
-      class="paragraph-section"
+    <div
+      class="container"
     >
-      
-    While we love writing code, nothing excites us more than 
-      <span>
-        collaborating
-      </span>
-       with other members of the 
-      <span>
-        tech community.
-      </span>
-    </p>
+      <p
+        class="paragraph-section__text"
+      >
+        <span>
+          70+
+        </span>
+         of Mad Devs' 
+        <span>
+          open source projects
+        </span>
+         have been shared with the community via 
+        <span>
+          GitHub.
+        </span>
+      </p>
+    </div>
   </div>
 </div>
 `;

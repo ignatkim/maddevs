@@ -13,17 +13,17 @@ exports[`BoilerplatesList component should render correctly 1`] = `
         id="aws"
         link="https://github.com/maddevsio/aws-eks-base/"
         logo="[object Object]"
-        title="Aws–Eks–Base"
+        title="AWS–EKS–Base"
       />
       <boilerplateslistitem-stub
-        description="Vue Mad Boiler can take the hassle out of it by giving you a ready-made, set-up project."
+        description="A ready-made boilerplate to set up a Vue.JS project which includes the basic structure of styles, package of icons, configure the linter properly, etc."
         id="vue"
         link="https://github.com/maddevsio/vue-madboiler/"
         logo="[object Object]"
         title="Vue <br /> boilerplate"
       />
       <boilerplateslistitem-stub
-        description="Starter kit for quick development start, which allows you to save time on routine project setup and start developing right away."
+        description="The boilerplate includes everything you need to quick-start a new React project and describes some other useful things such as typescript and cypress."
         id="react"
         link="https://github.com/maddevsio/react-madboiler/"
         logo="[object Object]"

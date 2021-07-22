@@ -8,6 +8,13 @@
         <div class="cookie-notice__message">
           This site uses cookies to provide you with a great user experience.
           By using Mad Devs you accept our use of cookies.
+          <a
+            href="/gdpr"
+            target="_blank"
+            class="cookie-notice__message-link"
+          >
+            View GDPR Compliance Commitment
+          </a>
         </div>
         <UIButton
           class="cookie-notice__button"
@@ -50,7 +57,7 @@ export default {
   right: 0;
   z-index: 10000000000;
   background-color: #101113;
-  padding: 11px 20px;
+  padding: 25px 20px;
   @media screen and (max-width: 400px) {
     padding: 20px;
   }
@@ -69,6 +76,10 @@ export default {
   &__message {
     color: #fff;
     margin-right: 50px;
+    &-link {
+      color: #fff;
+      text-decoration: underline;
+    }
     @include font('Inter', 14px, 400);
     @media screen and (max-width: 400px) {
       margin-right: 10px;

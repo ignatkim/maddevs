@@ -6,6 +6,9 @@ const stubs = ['Picture']
 describe('InventoryChangeLog component', () => {
   it('should render correctly', () => {
     const { container } = render(InventoryChangeLog, {
+      directives: {
+        prlx: () => {},
+      },
       stubs,
     })
 

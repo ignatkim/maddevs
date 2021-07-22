@@ -41,23 +41,17 @@ exports[`ModalSuccess component should render correctly 1`] = `
               <div
                 class="success-message__title"
               >
-                
-        Thanks for your 
+                Thanks for your 
                 <br />
-                
-        interest in Mad Devs
-      
+                 interest in Mad Devs
               </div>
                
               <div
                 class="success-message__info-text"
               >
-                
-        The form has been submitted. 
+                The form has been submitted. 
                 <br />
-                
-        We will contact you as soon as possible.
-      
+                 We will contact you as soon as possible.
               </div>
             </div>
           </div>

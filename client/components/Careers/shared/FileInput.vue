@@ -16,7 +16,7 @@
       class="file-input__cv"
       for="file"
     >
-      {{ selectedFilename }}
+      {{ selectedFilename }}<span class="red">*</span>
     </label>
   </div>
 </template>

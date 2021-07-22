@@ -73,6 +73,13 @@ export default {
       modalWindowName: 'order-project-from-us-modal',
     }
   },
+
+  methods: {
+    show() {
+      if (!this.$refs?.modalOrderProjectFromUs?.show) return
+      this.$refs.modalOrderProjectFromUs.show()
+    },
+  },
 }
 </script>
 

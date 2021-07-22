@@ -39,6 +39,8 @@
           :height="logo.height"
           :src="$getMediaFromS3(`/images/Cases/${logo.folder}/svg/${logo.file}.svg`)"
           :alt="logo.alt"
+          :class="`cases-list_item-info-${logo.file}`"
+          class="cases-list_item-info-logo"
         >
         <span>{{ subtitle }}</span>
         <Component
@@ -221,7 +223,7 @@ export default {
     top: 0;
     left: 0;
     z-index: 0;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.40);
     user-select: none;
     pointer-events: none;
   }
@@ -242,10 +244,14 @@ export default {
       color: inherit;
     }
 
-    img {
+    &-logo {
       max-width: 105px;
       height: auto;
       margin-bottom: auto;
+    }
+
+    &-peklo-logo {
+      max-width: 80px;
     }
 
     > span {
