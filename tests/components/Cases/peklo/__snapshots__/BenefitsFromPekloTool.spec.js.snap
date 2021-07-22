@@ -38,13 +38,13 @@ exports[`BenefitsFromPekloTool component should render correctly 1`] = `
             />
           </div>
            
-          <h4
+          <h3
             class="case_title_h4 case_card-title m-24_top m-8_bottom"
           >
             
           Digital marketing specialists
         
-          </h4>
+          </h3>
            
           <p
             class="case_paragraph"
@@ -72,13 +72,13 @@ exports[`BenefitsFromPekloTool component should render correctly 1`] = `
             />
           </div>
            
-          <h4
+          <h3
             class="case_title_h4 case_card-title m-24_top m-8_bottom"
           >
             
           Promotion agencies
         
-          </h4>
+          </h3>
            
           <p
             class="case_paragraph"
@@ -94,13 +94,13 @@ exports[`BenefitsFromPekloTool component should render correctly 1`] = `
       <div
         class="case_card background-color-yellow m-96_bottom media-m-48_bottom"
       >
-        <h4
+        <h3
           class="case_title_h4 m-8_bottom"
         >
           
         Entrepreneurs
       
-        </h4>
+        </h3>
          
         <p
           class="case_paragraph"

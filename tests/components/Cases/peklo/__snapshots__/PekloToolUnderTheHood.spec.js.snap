@@ -35,11 +35,11 @@ exports[`PekloToolUnderTheHood component should render correctly 1`] = `
           <div
             class="case_card-text-wrapper"
           >
-            <h5
+            <h3
               class="case_title_h5 case_card-title m-8_bottom"
             >
               Go Service for campaign generation
-            </h5>
+            </h3>
              
             <p
               class="case_paragraph case_card-description"
@@ -67,11 +67,11 @@ exports[`PekloToolUnderTheHood component should render correctly 1`] = `
           <div
             class="case_card-text-wrapper"
           >
-            <h5
+            <h3
               class="case_title_h5 case_card-title m-8_bottom"
             >
               Ruby on Rails for backend
-            </h5>
+            </h3>
              
             <p
               class="case_paragraph case_card-description"
@@ -99,13 +99,13 @@ exports[`PekloToolUnderTheHood component should render correctly 1`] = `
           <div
             class="case_card-text-wrapper"
           >
-            <h5
+            <h3
               class="case_title_h5 case_card-title m-8_bottom"
             >
               Vue.js 
               <br />
                for frontend
-            </h5>
+            </h3>
              
             <p
               class="case_paragraph case_card-description"

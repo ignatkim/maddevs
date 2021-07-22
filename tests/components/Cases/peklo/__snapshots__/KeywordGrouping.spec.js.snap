@@ -65,13 +65,13 @@ exports[`KeywordGrouping component should render correctly 1`] = `
       <div
         class="case_card background-color-black-primary-bg"
       >
-        <h4
+        <h3
           class="case_title_h4 case_card-title m-8_bottom"
         >
           
         Problem
       
-        </h4>
+        </h3>
          
         <p
           class="case_paragraph"
@@ -86,13 +86,13 @@ exports[`KeywordGrouping component should render correctly 1`] = `
       <div
         class="case_card background-color-gray"
       >
-        <h4
+        <h3
           class="case_title_h4 case_card-title m-8_bottom"
         >
           
         Solution
       
-        </h4>
+        </h3>
          
         <p
           class="case_paragraph"
