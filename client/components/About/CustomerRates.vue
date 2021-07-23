@@ -14,11 +14,11 @@
           :key="item.percent"
           class="customer-rates__row-item"
         >
-          <div class="customer-rates__rates-block customer-rates__rates-block">
-            <p class="customer-rates__number-item customer-rates__number-item">
+          <div class="customer-rates__rates-block">
+            <p class="customer-rates__number-item">
               {{ item.percent }}%
             </p>
-            <p class="customer-rates__description customer-rates__description">
+            <p class="customer-rates__description">
               {{ item.description }}
               <br class="customer-rates__line-break">
               {{ item.descriptionSecond }}
@@ -35,11 +35,11 @@
           :key="metrick.number"
           class="customer-rates__row-item"
         >
-          <div class="customer-rates__rates-block customer-rates__rates-block">
-            <p class="customer-rates__number-item customer-rates__number-item">
+          <div class="customer-rates__rates-block">
+            <p class="customer-rates__number-item">
               {{ metrick.number }}
             </p>
-            <p class="customer-rates__description customer-rates__description">
+            <p class="customer-rates__description">
               {{ metrick.description }}
             </p>
           </div>
@@ -70,11 +70,6 @@ export default {
   margin: -1px 0;
   padding: 1px 0;
 
-  &__main-title-wrapper {
-    display: flex;
-    justify-content: center;
-  }
-
   &__main-title {
     @include h2-title;
   }
@@ -103,7 +98,6 @@ export default {
   &__row {
     display: grid;
     &--top {
-      //margin-right: 10px;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 20px;
       @media screen and (max-width: 768px) {
@@ -113,7 +107,6 @@ export default {
         &__rates-block {
           padding-top: 28px;
           padding-bottom: 40px;
-          line-height: 107px;
           color: #111213;
           @media  screen and (max-width: 1366px) {
             padding-left: 10px;
@@ -146,9 +139,12 @@ export default {
         &__description {
           font-size: 16px;
           line-height: 24px;
+          @media screen and (max-width: 834px) {
+            font-size: 12px;
+            line-height: 18px;
+          }
           @media screen and (max-width: 767px) {
             font-size: 14px;
-            line-height: 18px;
           }
         }
       }
@@ -160,7 +156,7 @@ export default {
       @media screen and (max-width: 1199px) {
         grid-template-columns: repeat(3, 1fr);
       }
-      @media screen and (max-width: 1199px) {
+      @media screen and (max-width: 767px) {
         grid-template-columns: repeat(2, 1fr);
       }
       .customer-rates {
@@ -197,8 +193,8 @@ export default {
             font-size: 13px;
           }
           @media screen and (max-width: 540px) {
-            font-size: 11px;
-            line-height: 17px;
+            font-size: 12px;
+            line-height: 18px;
           }
         }
       }
@@ -256,7 +252,6 @@ export default {
 
     @media screen and (max-width: 834px) {
       margin-left: 0;
-
       &::after {
         width: 103px;
         height: 50px;

@@ -2401,10 +2401,10 @@ exports[`index page renders correctly 1`] = `
           class="customer-rates__row-item"
         >
           <div
-            class="customer-rates__rates-block customer-rates__rates-block"
+            class="customer-rates__rates-block"
           >
             <p
-              class="customer-rates__number-item customer-rates__number-item"
+              class="customer-rates__number-item"
             >
               
             92%
@@ -2412,7 +2412,7 @@ exports[`index page renders correctly 1`] = `
             </p>
              
             <p
-              class="customer-rates__description customer-rates__description"
+              class="customer-rates__description"
             >
               
             recommend us
@@ -2430,10 +2430,10 @@ exports[`index page renders correctly 1`] = `
           class="customer-rates__row-item"
         >
           <div
-            class="customer-rates__rates-block customer-rates__rates-block"
+            class="customer-rates__rates-block"
           >
             <p
-              class="customer-rates__number-item customer-rates__number-item"
+              class="customer-rates__number-item"
             >
               
             87%
@@ -2441,7 +2441,7 @@ exports[`index page renders correctly 1`] = `
             </p>
              
             <p
-              class="customer-rates__description customer-rates__description"
+              class="customer-rates__description"
             >
               
             stay with us for
@@ -2459,10 +2459,10 @@ exports[`index page renders correctly 1`] = `
           class="customer-rates__row-item"
         >
           <div
-            class="customer-rates__rates-block customer-rates__rates-block"
+            class="customer-rates__rates-block"
           >
             <p
-              class="customer-rates__number-item customer-rates__number-item"
+              class="customer-rates__number-item"
             >
               
             98%
@@ -2470,7 +2470,7 @@ exports[`index page renders correctly 1`] = `
             </p>
              
             <p
-              class="customer-rates__description customer-rates__description"
+              class="customer-rates__description"
             >
               
             are satisfied with
@@ -2501,10 +2501,10 @@ exports[`index page renders correctly 1`] = `
           class="customer-rates__row-item"
         >
           <div
-            class="customer-rates__rates-block customer-rates__rates-block"
+            class="customer-rates__rates-block"
           >
             <p
-              class="customer-rates__number-item customer-rates__number-item"
+              class="customer-rates__number-item"
             >
               
             10M+
@@ -2512,7 +2512,7 @@ exports[`index page renders correctly 1`] = `
             </p>
              
             <p
-              class="customer-rates__description customer-rates__description"
+              class="customer-rates__description"
             >
               
             US dollars raised by 5 customer startups in 2019.
@@ -2524,10 +2524,10 @@ exports[`index page renders correctly 1`] = `
           class="customer-rates__row-item"
         >
           <div
-            class="customer-rates__rates-block customer-rates__rates-block"
+            class="customer-rates__rates-block"
           >
             <p
-              class="customer-rates__number-item customer-rates__number-item"
+              class="customer-rates__number-item"
             >
               
             75%
@@ -2535,7 +2535,7 @@ exports[`index page renders correctly 1`] = `
             </p>
              
             <p
-              class="customer-rates__description customer-rates__description"
+              class="customer-rates__description"
             >
               
             of customers are now paying 50% less for IT infrastructure.
@@ -2547,10 +2547,10 @@ exports[`index page renders correctly 1`] = `
           class="customer-rates__row-item"
         >
           <div
-            class="customer-rates__rates-block customer-rates__rates-block"
+            class="customer-rates__rates-block"
           >
             <p
-              class="customer-rates__number-item customer-rates__number-item"
+              class="customer-rates__number-item"
             >
               
             30+
@@ -2558,7 +2558,7 @@ exports[`index page renders correctly 1`] = `
             </p>
              
             <p
-              class="customer-rates__description customer-rates__description"
+              class="customer-rates__description"
             >
               
             tech bloggers and conference speakers in our team.
@@ -2570,10 +2570,10 @@ exports[`index page renders correctly 1`] = `
           class="customer-rates__row-item"
         >
           <div
-            class="customer-rates__rates-block customer-rates__rates-block"
+            class="customer-rates__rates-block"
           >
             <p
-              class="customer-rates__number-item customer-rates__number-item"
+              class="customer-rates__number-item"
             >
               
             50+
@@ -2581,7 +2581,7 @@ exports[`index page renders correctly 1`] = `
             </p>
              
             <p
-              class="customer-rates__description customer-rates__description"
+              class="customer-rates__description"
             >
               
             projects delivered to customers by our team.
@@ -2593,10 +2593,10 @@ exports[`index page renders correctly 1`] = `
           class="customer-rates__row-item"
         >
           <div
-            class="customer-rates__rates-block customer-rates__rates-block"
+            class="customer-rates__rates-block"
           >
             <p
-              class="customer-rates__number-item customer-rates__number-item"
+              class="customer-rates__number-item"
             >
               
             100+
@@ -2604,7 +2604,7 @@ exports[`index page renders correctly 1`] = `
             </p>
              
             <p
-              class="customer-rates__description customer-rates__description"
+              class="customer-rates__description"
             >
               
             staff members work for Mad Devs.
@@ -2616,10 +2616,10 @@ exports[`index page renders correctly 1`] = `
           class="customer-rates__row-item"
         >
           <div
-            class="customer-rates__rates-block customer-rates__rates-block"
+            class="customer-rates__rates-block"
           >
             <p
-              class="customer-rates__number-item customer-rates__number-item"
+              class="customer-rates__number-item"
             >
               
             70+
@@ -2627,7 +2627,7 @@ exports[`index page renders correctly 1`] = `
             </p>
              
             <p
-              class="customer-rates__description customer-rates__description"
+              class="customer-rates__description"
             >
               
             open-source projects on GitHub.

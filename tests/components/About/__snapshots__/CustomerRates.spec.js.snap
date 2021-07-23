@@ -33,10 +33,10 @@ exports[`CustomerRates should render correctly 1`] = `
           class="customer-rates__row-item"
         >
           <div
-            class="customer-rates__rates-block customer-rates__rates-block"
+            class="customer-rates__rates-block"
           >
             <p
-              class="customer-rates__number-item customer-rates__number-item"
+              class="customer-rates__number-item"
             >
               
             92%
@@ -44,7 +44,7 @@ exports[`CustomerRates should render correctly 1`] = `
             </p>
              
             <p
-              class="customer-rates__description customer-rates__description"
+              class="customer-rates__description"
             >
               
             recommend us
@@ -62,10 +62,10 @@ exports[`CustomerRates should render correctly 1`] = `
           class="customer-rates__row-item"
         >
           <div
-            class="customer-rates__rates-block customer-rates__rates-block"
+            class="customer-rates__rates-block"
           >
             <p
-              class="customer-rates__number-item customer-rates__number-item"
+              class="customer-rates__number-item"
             >
               
             87%
@@ -73,7 +73,7 @@ exports[`CustomerRates should render correctly 1`] = `
             </p>
              
             <p
-              class="customer-rates__description customer-rates__description"
+              class="customer-rates__description"
             >
               
             stay with us for
@@ -91,10 +91,10 @@ exports[`CustomerRates should render correctly 1`] = `
           class="customer-rates__row-item"
         >
           <div
-            class="customer-rates__rates-block customer-rates__rates-block"
+            class="customer-rates__rates-block"
           >
             <p
-              class="customer-rates__number-item customer-rates__number-item"
+              class="customer-rates__number-item"
             >
               
             98%
@@ -102,7 +102,7 @@ exports[`CustomerRates should render correctly 1`] = `
             </p>
              
             <p
-              class="customer-rates__description customer-rates__description"
+              class="customer-rates__description"
             >
               
             are satisfied with
@@ -133,10 +133,10 @@ exports[`CustomerRates should render correctly 1`] = `
           class="customer-rates__row-item"
         >
           <div
-            class="customer-rates__rates-block customer-rates__rates-block"
+            class="customer-rates__rates-block"
           >
             <p
-              class="customer-rates__number-item customer-rates__number-item"
+              class="customer-rates__number-item"
             >
               
             10M+
@@ -144,7 +144,7 @@ exports[`CustomerRates should render correctly 1`] = `
             </p>
              
             <p
-              class="customer-rates__description customer-rates__description"
+              class="customer-rates__description"
             >
               
             US dollars raised by 5 customer startups in 2019.
@@ -156,10 +156,10 @@ exports[`CustomerRates should render correctly 1`] = `
           class="customer-rates__row-item"
         >
           <div
-            class="customer-rates__rates-block customer-rates__rates-block"
+            class="customer-rates__rates-block"
           >
             <p
-              class="customer-rates__number-item customer-rates__number-item"
+              class="customer-rates__number-item"
             >
               
             75%
@@ -167,7 +167,7 @@ exports[`CustomerRates should render correctly 1`] = `
             </p>
              
             <p
-              class="customer-rates__description customer-rates__description"
+              class="customer-rates__description"
             >
               
             of customers are now paying 50% less for IT infrastructure.
@@ -179,10 +179,10 @@ exports[`CustomerRates should render correctly 1`] = `
           class="customer-rates__row-item"
         >
           <div
-            class="customer-rates__rates-block customer-rates__rates-block"
+            class="customer-rates__rates-block"
           >
             <p
-              class="customer-rates__number-item customer-rates__number-item"
+              class="customer-rates__number-item"
             >
               
             30+
@@ -190,7 +190,7 @@ exports[`CustomerRates should render correctly 1`] = `
             </p>
              
             <p
-              class="customer-rates__description customer-rates__description"
+              class="customer-rates__description"
             >
               
             tech bloggers and conference speakers in our team.
@@ -202,10 +202,10 @@ exports[`CustomerRates should render correctly 1`] = `
           class="customer-rates__row-item"
         >
           <div
-            class="customer-rates__rates-block customer-rates__rates-block"
+            class="customer-rates__rates-block"
           >
             <p
-              class="customer-rates__number-item customer-rates__number-item"
+              class="customer-rates__number-item"
             >
               
             50+
@@ -213,7 +213,7 @@ exports[`CustomerRates should render correctly 1`] = `
             </p>
              
             <p
-              class="customer-rates__description customer-rates__description"
+              class="customer-rates__description"
             >
               
             projects delivered to customers by our team.
@@ -225,10 +225,10 @@ exports[`CustomerRates should render correctly 1`] = `
           class="customer-rates__row-item"
         >
           <div
-            class="customer-rates__rates-block customer-rates__rates-block"
+            class="customer-rates__rates-block"
           >
             <p
-              class="customer-rates__number-item customer-rates__number-item"
+              class="customer-rates__number-item"
             >
               
             100+
@@ -236,7 +236,7 @@ exports[`CustomerRates should render correctly 1`] = `
             </p>
              
             <p
-              class="customer-rates__description customer-rates__description"
+              class="customer-rates__description"
             >
               
             staff members work for Mad Devs.
@@ -248,10 +248,10 @@ exports[`CustomerRates should render correctly 1`] = `
           class="customer-rates__row-item"
         >
           <div
-            class="customer-rates__rates-block customer-rates__rates-block"
+            class="customer-rates__rates-block"
           >
             <p
-              class="customer-rates__number-item customer-rates__number-item"
+              class="customer-rates__number-item"
             >
               
             70+
@@ -259,7 +259,7 @@ exports[`CustomerRates should render correctly 1`] = `
             </p>
              
             <p
-              class="customer-rates__description customer-rates__description"
+              class="customer-rates__description"
             >
               
             open-source projects on GitHub.
