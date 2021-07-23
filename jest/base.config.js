@@ -8,7 +8,7 @@ module.exports = {
     '^~~/(.*)$': '<rootDir>/client/$1',
     '^@/(.*)$': '<rootDir>/client/$1',
     '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga|css|less)$':
-      '<rootDir>/jest/assetsTransformer.js',
+      '<rootDir>/jest/utils/assetsTransformer.js',
   },
   transform: {
     // process js with `babel-jest`
@@ -16,7 +16,7 @@ module.exports = {
     // process `*.vue` files with `vue-jest`
     '.*\\.(vue)$': '<rootDir>/node_modules/vue-jest',
     // process `*.svg` files with `imgTransform.js`
-    '\\.(svg|png|webp|jpg|jpeg)$': '<rootDir>/jest/imgTransformer.js',
+    '\\.(svg|png|webp|jpg|jpeg)$': '<rootDir>/jest/utils/imgTransformer.js',
   },
   transformIgnorePatterns: ['/node_modules/(?!vue-lottie)'],
   snapshotSerializers: ['<rootDir>/node_modules/jest-serializer-vue'],
@@ -25,19 +25,10 @@ module.exports = {
     '<rootDir>/client/**/*.vue',
     '<rootDir>/client/**/*.js',
     '<rootDir>/server/**/*.js',
-    '<rootDir>/radiator/**/*.js',
   ],
-  coveragePathIgnorePatterns: ['<rootDir>/server/sentry', '<rootDir>/server/db', '<rootDir>/server/routes', '<rootDir>/server/index.js', '<rootDir>/radiator/index.js', '<rootDir>/client/mixins/createNewLeadMixin.js'],
-  coverageReporters: ['json-summary', 'text', 'lcov'],
+  coveragePathIgnorePatterns: ['<rootDir>/server/sentry', '<rootDir>/server/db', '<rootDir>/server/routes', '<rootDir>/server/index.js', '<rootDir>/client/mixins/createNewLeadMixin.js'],
+  coverageReporters: ['json'],
   setupFiles: ['jest-canvas-mock'],
-  coverageThreshold: {
-    global: {
-      branches: 69,
-      statements: 85,
-      functions: 81,
-      lines: 86,
-    },
-  },
   modulePathIgnorePatterns: [
     '<rootDir>/cypress/',
   ],

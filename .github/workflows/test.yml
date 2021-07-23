@@ -18,7 +18,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install
-    - run: npm run test:staging
+    - run: npm run test:unit:staging
       env:
         NODE_JEST_COVERAGE_SLACK_WEBHOOK_URL: ${{ secrets.JEST_COVERAGE_SLACK_WEBHOOK_URL }}
         NODE_CYPRESS_BASE_URL: http://maddevs.co/

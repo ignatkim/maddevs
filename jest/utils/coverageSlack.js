@@ -1,6 +1,6 @@
 const request = require('request')
 const { readFile } = require('fs')
-const { findArgument, getColor } = require('./utils')
+const { findArgument, getColor } = require('.')
 require('dotenv').config()
 
 const messages = {
