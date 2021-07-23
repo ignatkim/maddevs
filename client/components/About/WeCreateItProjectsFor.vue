@@ -61,49 +61,79 @@ export default {
 
 <style lang="scss" scoped>
 .we-create-it-projects {
+  @media screen and (max-width: 576px) {
+    background-color: $bgcolor--white;
+  }
+
   &__content-wrapper {
     padding: 0 45px 45px;
     text-align: center;
     background-color: $bgcolor--white;
+    @media screen and (max-width: 1040px) {
+      padding: 0 33px 45px;
+    }
+    @media screen and (max-width: 576px) {
+      padding-left: 0;
+      padding-right: 0;
+      text-align: left;
+    }
   }
 
   &__projects-list {
     margin: 0 0 63px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    @media screen and (max-width: 1200px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media screen and (max-width: 1040px) {
+      margin: 0 0 40px;
+    }
+    @media screen and (max-width: 576px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 26px;
+      margin: 0 0 27px;
+    }
   }
 
   &__project-item {
-    padding: 0;
-    flex: 0 0 auto;
-    width: 33%;
-    @media screen and (max-width: 576px) {
-      padding: 0;
-      flex: 0 0 auto;
-      width: 50%;
-      &:nth-child(2n) {
-        padding-left: 26px;
-        box-sizing: border-box;
-      }
-    }
+    width: 100%;
+    box-sizing: border-box;
   }
 
   &__flags-list {
     display: grid;
     grid-template-columns: repeat(22, max-content);
     justify-content: space-between;
+    @media screen and (max-width: 720px) {
+      grid-template-columns: repeat(11, max-content);
+      grid-row-gap: 19px;
+    }
   }
 
   &__flag-item {
     display: block;
     width: 32px;
     height: 23px;
-
     img {
       display: block;
       width: 32px;
       height: 23px;
       transition: opacity 0.3s ease-in;
+    }
+    @media screen and (max-width: 1040px) {
+      &,
+      img {
+        width: 21px;
+        height: 15px;
+      }
+    }
+    @media screen and (max-width: 576px) {
+      &,
+      img {
+        width: 23px;
+        height: 19px;
+      }
     }
   }
 
@@ -116,9 +146,27 @@ export default {
     @include h2-title;
     padding-top: 40px;
     margin-bottom: 23px;
-
     br {
       display: none;
+    }
+    @media screen and (max-width: 1024px) {
+      br {
+        display: block;
+      }
+    }
+    @media screen and (max-width: 834px) {
+      padding-top: 33px;
+      margin-bottom: 3px;
+      br {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 576px) {
+      padding-top: 34px;
+      margin-bottom: 1px;
+      br {
+        display: block;
+      }
     }
   }
 
@@ -126,118 +174,21 @@ export default {
     @include font('Inter', 18px, 400);
     letter-spacing: -0.02em;
     line-height: 34px;
-  }
-}
-
-@media only screen and (min-width: 1200px) and (max-width: 1270px) {
-  .we-create-it-projects__paragraph {
-    font-size: 16px;
-  }
-}
-
-@media only screen and (max-width: 1040px) {
-  .we-create-it-projects {
-    &__content-wrapper {
-      padding: 0 33px 45px;
+    @media (min-width: 1200px) and (max-width: 1270px) {
+      font-size: 16px;
     }
-
-    &__projects-type_list {
-      margin: 0 0 40px;
-    }
-
-    &__flag-item {
-      width: 21px;
-      height: 15px;
-
-      img {
-        width: 21px;
-        height: 15px;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .we-create-it-projects__main-title br {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 834px) {
-  .we-create-it-projects {
-    &__paragraph {
+    @media screen and (max-width: 834px) {
       font-size: 14px;
       line-height: 25px;
     }
-
-    &__main-title {
-      padding-top: 33px;
-      margin-bottom: 3px;
-
-      br {
-        display: none;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 720px) {
-  .we-create-it-projects__flags-list {
-    grid-template-columns: repeat(11, max-content);
-    grid-row-gap: 19px;
-  }
-}
-
-@media only screen and (max-width: 606px) {
-  .we-create-it-projects__main-title br {
-    display: block;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  .we-create-it-projects {
-    background-color: $bgcolor--white;
-
-    &__main-title {
-      padding-top: 34px;
-      margin-bottom: 1px;
-
-      br {
-        display: block;
-      }
-    }
-
-    &__content-wrapper {
-      padding-left: 0;
-      padding-right: 0;
-      text-align: left;
-    }
-
-    &__paragraph {
+    @media screen and (max-width: 576px) {
       font-size: 16px;
       line-height: 33px;
       letter-spacing: -0.02em;
     }
-
-    &__flag-item {
-      width: 23px;
-      height: 19px;
-
-      img {
-        width: 23px;
-        height: 19px;
-      }
+    @media screen and (max-width: 345px) {
+      font-size: 14px;
     }
-
-    &__projects-type_list {
-      margin: 0 0 27px;
-    }
-  }
-}
-
-@media only screen and (max-width: 345px) {
-  .we-create-it-projects__paragraph {
-    font-size: 14px;
   }
 }
 </style>
