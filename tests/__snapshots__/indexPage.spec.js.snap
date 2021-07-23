@@ -90,18 +90,18 @@ exports[`index page renders correctly 1`] = `
   </div>
    
   <section
-    class="weCreateItProject"
-    data-testid="test-weCreateItProject"
-    id="weCreateItProject"
+    class="we-create-it-projects"
+    data-testid="test-we-create-it-projects"
+    id="we-create-it-projects"
   >
     <div
       class="container"
     >
       <div
-        class="weCreateItProject__content-wrapper"
+        class="we-create-it-projects__content-wrapper"
       >
         <h2
-          class="weCreateItProject__main-title"
+          class="we-create-it-projects__main-title"
         >
           
         We create 
@@ -112,13 +112,13 @@ exports[`index page renders correctly 1`] = `
         </h2>
          
         <div
-          class="weCreateItProject__projects-list"
+          class="we-create-it-projects__projects-list"
         >
           <div
-            class="weCreateItProject__project-item"
+            class="we-create-it-projects__project-item"
           >
             <p
-              class="weCreateItProject__paragraph"
+              class="we-create-it-projects__paragraph"
             >
               
             Content Streaming
@@ -130,10 +130,10 @@ exports[`index page renders correctly 1`] = `
             </p>
           </div>
           <div
-            class="weCreateItProject__project-item"
+            class="we-create-it-projects__project-item"
           >
             <p
-              class="weCreateItProject__paragraph"
+              class="we-create-it-projects__paragraph"
             >
               
             HealthTech
@@ -145,10 +145,10 @@ exports[`index page renders correctly 1`] = `
             </p>
           </div>
           <div
-            class="weCreateItProject__project-item"
+            class="we-create-it-projects__project-item"
           >
             <p
-              class="weCreateItProject__paragraph"
+              class="we-create-it-projects__paragraph"
             >
               
             E-Commerce
@@ -160,10 +160,10 @@ exports[`index page renders correctly 1`] = `
             </p>
           </div>
           <div
-            class="weCreateItProject__project-item"
+            class="we-create-it-projects__project-item"
           >
             <p
-              class="weCreateItProject__paragraph"
+              class="we-create-it-projects__paragraph"
             >
               
             E-Learning
@@ -175,10 +175,10 @@ exports[`index page renders correctly 1`] = `
             </p>
           </div>
           <div
-            class="weCreateItProject__project-item"
+            class="we-create-it-projects__project-item"
           >
             <p
-              class="weCreateItProject__paragraph"
+              class="we-create-it-projects__paragraph"
             >
               
             Serverless
@@ -190,10 +190,10 @@ exports[`index page renders correctly 1`] = `
             </p>
           </div>
           <div
-            class="weCreateItProject__project-item"
+            class="we-create-it-projects__project-item"
           >
             <p
-              class="weCreateItProject__paragraph"
+              class="we-create-it-projects__paragraph"
             >
               
             Blockchain
@@ -207,10 +207,10 @@ exports[`index page renders correctly 1`] = `
         </div>
          
         <ul
-          class="weCreateItProject__flags-list"
+          class="we-create-it-projects__flags-list"
         >
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="usa"
@@ -221,7 +221,7 @@ exports[`index page renders correctly 1`] = `
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="australia"
@@ -232,7 +232,7 @@ exports[`index page renders correctly 1`] = `
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="vietnam"
@@ -243,7 +243,7 @@ exports[`index page renders correctly 1`] = `
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="france"
@@ -254,7 +254,7 @@ exports[`index page renders correctly 1`] = `
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="uk"
@@ -265,7 +265,7 @@ exports[`index page renders correctly 1`] = `
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="indonesia"
@@ -276,7 +276,7 @@ exports[`index page renders correctly 1`] = `
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="germany"
@@ -287,7 +287,7 @@ exports[`index page renders correctly 1`] = `
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="austria"
@@ -298,7 +298,7 @@ exports[`index page renders correctly 1`] = `
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="switzerland"
@@ -309,7 +309,7 @@ exports[`index page renders correctly 1`] = `
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="canada"
@@ -320,7 +320,7 @@ exports[`index page renders correctly 1`] = `
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="latvia"
@@ -331,7 +331,7 @@ exports[`index page renders correctly 1`] = `
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="kazakhstan"
@@ -342,7 +342,7 @@ exports[`index page renders correctly 1`] = `
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="sweden"
@@ -353,7 +353,7 @@ exports[`index page renders correctly 1`] = `
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="finland"
@@ -364,7 +364,7 @@ exports[`index page renders correctly 1`] = `
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="uae"
@@ -375,7 +375,7 @@ exports[`index page renders correctly 1`] = `
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="denmark"
@@ -386,7 +386,7 @@ exports[`index page renders correctly 1`] = `
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="japan"
@@ -397,7 +397,7 @@ exports[`index page renders correctly 1`] = `
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="norway"
@@ -408,7 +408,7 @@ exports[`index page renders correctly 1`] = `
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="portugal"
@@ -419,7 +419,7 @@ exports[`index page renders correctly 1`] = `
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="katar"
@@ -430,7 +430,7 @@ exports[`index page renders correctly 1`] = `
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="south_africa"
@@ -441,7 +441,7 @@ exports[`index page renders correctly 1`] = `
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="netherlands"

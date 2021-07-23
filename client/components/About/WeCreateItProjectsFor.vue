@@ -1,33 +1,33 @@
 <template>
   <section
-    id="weCreateItProject"
-    class="weCreateItProject"
-    data-testid="test-weCreateItProject"
+    id="we-create-it-projects"
+    class="we-create-it-projects"
+    data-testid="test-we-create-it-projects"
   >
     <div class="container">
-      <div class="weCreateItProject__content-wrapper">
-        <h2 class="weCreateItProject__main-title">
+      <div class="we-create-it-projects__content-wrapper">
+        <h2 class="we-create-it-projects__main-title">
           We create <br>
           IT projects for:
         </h2>
-        <div class="weCreateItProject__projects-list">
+        <div class="we-create-it-projects__projects-list">
           <div
             v-for="[first, second] in industriesEntries"
             :key="first"
-            class="weCreateItProject__project-item"
+            class="we-create-it-projects__project-item"
           >
-            <p class="weCreateItProject__paragraph">
+            <p class="we-create-it-projects__paragraph">
               {{ first }}
               <br>
               {{ second }}
             </p>
           </div>
         </div>
-        <ul class="weCreateItProject__flags-list">
+        <ul class="we-create-it-projects__flags-list">
           <li
             v-for="country in countries"
             :key="country"
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               :data-src="require(`@/assets/img/Home/flags/${country}.svg`)"
@@ -47,7 +47,7 @@
 import { countries, industriesEntries } from '@/data/projectsFor'
 
 export default {
-  name: 'WeCreateItProjectFor',
+  name: 'WeCreateItProjectsFor',
 
   data() {
     return {
@@ -60,7 +60,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.weCreateItProject {
+.we-create-it-projects {
   &__content-wrapper {
     padding: 0 45px 45px;
     text-align: center;
@@ -130,13 +130,13 @@ export default {
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1270px) {
-  .weCreateItProject__paragraph {
+  .we-create-it-projects__paragraph {
     font-size: 16px;
   }
 }
 
 @media only screen and (max-width: 1040px) {
-  .weCreateItProject {
+  .we-create-it-projects {
     &__content-wrapper {
       padding: 0 33px 45px;
     }
@@ -158,13 +158,13 @@ export default {
 }
 
 @media screen and (max-width: 1024px) {
-  .weCreateItProject__main-title br {
+  .we-create-it-projects__main-title br {
     display: block;
   }
 }
 
 @media screen and (max-width: 834px) {
-  .weCreateItProject {
+  .we-create-it-projects {
     &__paragraph {
       font-size: 14px;
       line-height: 25px;
@@ -182,20 +182,20 @@ export default {
 }
 
 @media only screen and (max-width: 720px) {
-  .weCreateItProject__flags-list {
+  .we-create-it-projects__flags-list {
     grid-template-columns: repeat(11, max-content);
     grid-row-gap: 19px;
   }
 }
 
 @media only screen and (max-width: 606px) {
-  .weCreateItProject__main-title br {
+  .we-create-it-projects__main-title br {
     display: block;
   }
 }
 
 @media only screen and (max-width: 576px) {
-  .weCreateItProject {
+  .we-create-it-projects {
     background-color: $bgcolor--white;
 
     &__main-title {
@@ -236,7 +236,7 @@ export default {
 }
 
 @media only screen and (max-width: 345px) {
-  .weCreateItProject__paragraph {
+  .we-create-it-projects__paragraph {
     font-size: 14px;
   }
 }
