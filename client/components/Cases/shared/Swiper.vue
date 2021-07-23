@@ -127,17 +127,23 @@ export default {
   },
 
   mounted() {
-    this.$nextTick(() => {
-      const swiperTop = this.$refs.swiperTop.$swiper
-      const swiperThumbs = this.$refs.swiperThumbs.$swiper
-      swiperTop.controller.control = swiperThumbs
-      swiperThumbs.controller.control = swiperTop
-    })
+    this.setConfig()
   },
 
   methods: {
     removeLazy() {
       this.lazy = false
+    },
+
+    setConfig() {
+      this.$nextTick(() => {
+        if (!this.$refs?.swiperTop?.$swiper
+          || !this.$refs?.swiperThumbs?.$swiper) return
+        const swiperTop = this.$refs.swiperTop.$swiper
+        const swiperThumbs = this.$refs.swiperThumbs.$swiper
+        swiperTop.controller.control = swiperThumbs
+        swiperThumbs.controller.control = swiperTop
+      })
     },
   },
 }

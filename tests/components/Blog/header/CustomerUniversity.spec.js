@@ -57,20 +57,8 @@ describe('customer university header component', () => {
       url:
         'https://images.prismic.io/superpupertest/82f90d05-8c22-49c1-bf1e-8721a0e3eda6_Constructing+a+Map+in+the+Mercator+Projection+for+Android.png?auto=compress,format',
     },
-    subtitle: [
-      {
-        spans: [],
-        text: 'adadadad',
-        type: 'heading1',
-      },
-    ],
-    title: [
-      {
-        spans: [],
-        text: 'adadadad',
-        type: 'heading1',
-      },
-    ],
+    subtitle: 'subtitle',
+    title: 'title',
     id: 'YAGi7REAACMAgV8d',
   }
 

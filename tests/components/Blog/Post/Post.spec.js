@@ -23,6 +23,16 @@ const props = {
   ],
   title: 'How to Handover a Software Project to Another Team | Mad Devs Blog',
   type: 'blog_post',
+  slice: {
+    primary: {
+      text: [
+        {
+          type: 'heading1',
+          text: 'sample text',
+        },
+      ],
+    },
+  },
 }
 
 Object.defineProperty(document, 'execCommand', { value: jest.fn() })
@@ -103,8 +113,8 @@ describe('Post component', () => {
       localVue,
       stubs,
       mocks,
-      propsData: props,
       store,
+      propsData: props,
     })
 
     expect(container).toMatchSnapshot()
@@ -129,13 +139,25 @@ describe('Post component', () => {
     expect(WINDOW_SCROLL_TO).toHaveBeenCalledTimes(1)
   })
 
-  it('setStylesForNavbar should call function if computed return true', () => {
+  it('setStylesForNavbar should call function handleNavbar if computed tableOfContentsSlice return slice', () => {
     wrapper = shallowMount(Post, {
       localVue,
       stubs,
+      mocks,
+      store,
+      propsData: props,
       computed: {
         tableOfContentsSlice() {
-          return true
+          return {
+            primary: {
+              text: [
+                {
+                  type: 'heading1',
+                  text: 'sample text',
+                },
+              ],
+            },
+          }
         },
       },
     })
@@ -150,6 +172,9 @@ describe('Post component', () => {
     wrapper = shallowMount(Post, {
       localVue,
       stubs,
+      mocks,
+      store,
+      propsData: props,
       computed: {
         tableOfContentsSlice() {
           return false

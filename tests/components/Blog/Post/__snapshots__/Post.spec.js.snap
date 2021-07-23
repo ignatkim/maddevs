@@ -7,6 +7,7 @@ exports[`Post component should render correctly with default props 1`] = `
     document="[object Object]"
     formatteddate="Apr 12, 2021"
     jsonld=""
+    slice="[object Object]"
   >
     <div
       class="blog-post__background"

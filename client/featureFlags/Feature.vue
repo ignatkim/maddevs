@@ -26,8 +26,6 @@ export default {
           return true
         }
         if (!process.env.ffEnvironment) {
-          console.log('CONFIG', config)
-          console.log('FLAG', this.flag)
           console.error('WARNING: FEATURE FLAGS. ffEnvironment variable is not provided! Feature flag will be ignored!')
           return true
         }
