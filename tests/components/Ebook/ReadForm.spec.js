@@ -21,6 +21,7 @@ describe('ReadForm component', () => {
       mocks: {
         $v: {
           name: '',
+          $reset: () => {},
         },
       },
     })

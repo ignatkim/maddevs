@@ -8,103 +8,105 @@ const toOneLine = text => text
   .replace(/>(.*?)</g, '><')
   .trim()
 
-describe('slice block component', () => {
-  const slices = [
-    {
-      primary: {
-        text: [
-          {
-            type: 'heading1',
-            text: 'sample text',
-          },
-        ],
-      },
-      slice_type: 'text',
-    },
-    {
-      primary: {
-        quotation_design: 'border',
-        quote: 'lorem ipsum dolor sit ame',
-        name_of_the_author: 'John Doe',
-        portrait_author: {
-          mobile: {},
-          url: '',
+const slices = [
+  {
+    primary: {
+      text: [
+        {
+          type: 'heading1',
+          text: 'sample text',
         },
-      },
-      slice_type: 'quote',
-    },
-    {
-      items: [{}],
-      primary: {
-        code: [
-          {
-            spans: [],
-            text:
-              'getAllHeadings() {\n  this.document.body.forEach(listItem => {\n    if(listItem.primary.text !== undefined) {\n      if(listItem.primary.text[0].type === \'heading1\') {\n        this.headingsList.push({\n          textContent: listItem.primary.text[0].text,\n          headingName: listItem.primary.text[0].text.toLowerCase().replace(/s/g , \'-\')\n        });\n      }\n    }\n  });',
-            type: 'paragraph',
-          },
-        ],
-        language: 'javascript',
-      },
-      slice_label: null,
-      slice_type: 'codeblock',
-    },
-    {
-      items: [{}],
-      primary: {
-        image: {
-          alt: 'alt text',
-          copyright: null,
-          dimensions: { height: 298, width: 1200 },
-          url:
-            'https://images.prismic.io/superpupertest/4b27a325-c48e-4f20-943d-e40537291055_2020-12-08_14-11.png?auto=compress,format&rect=0,0,1231,306&w=1200&h=298',
-        },
-        caption: 'caption',
-      },
-      slice_label: 'image-full-width',
-      slice_type: 'image_with_caption',
-    },
-    {
-      items: [{}],
-      primary: {
-        image: {
-          alt: 'alt text',
-          copyright: null,
-          dimensions: { height: 298, width: 1200 },
-          url:
-            'https://images.prismic.io/superpupertest/4b27a325-c48e-4f20-943d-e40537291055_2020-12-08_14-11.png?auto=compress,format&rect=0,0,1231,306&w=1200&h=298',
-        },
-        target: '_blank',
-        title: [
-          {
-            spans: [],
-            text: 'Tired banner',
-            type: 'paragraph',
-          },
-        ],
-        url: 'https://blog.maddevs.io',
-      },
-      slice_label: null,
-      slice_type: 'image_with_attributes',
-    },
-    {
-      items: [
-        { list_item: 'list item 1' },
-        { list_item: 'list item 2' },
-        { list_item: 'list item 3' },
-        { list_item: 'list item 4' },
-        { list_item: 'list item 5' },
       ],
-      primary: {
-        list_introduction: 'list introduction',
-      },
-      slice_type: 'ordered_list',
     },
-  ]
+    slice_type: 'text',
+  },
+  {
+    primary: {
+      quotation_design: 'border',
+      quote: 'lorem ipsum dolor sit ame',
+      name_of_the_author: 'John Doe',
+      portrait_author: {
+        mobile: {},
+        url: '',
+      },
+    },
+    slice_type: 'quote',
+  },
+  {
+    items: [{}],
+    primary: {
+      code: [
+        {
+          spans: [],
+          text:
+            'getAllHeadings() {\n  this.document.body.forEach(listItem => {\n    if(listItem.primary.text !== undefined) {\n      if(listItem.primary.text[0].type === \'heading1\') {\n        this.headingsList.push({\n          textContent: listItem.primary.text[0].text,\n          headingName: listItem.primary.text[0].text.toLowerCase().replace(/s/g , \'-\')\n        });\n      }\n    }\n  });',
+          type: 'paragraph',
+        },
+      ],
+      language: 'javascript',
+    },
+    slice_label: null,
+    slice_type: 'codeblock',
+  },
+  {
+    items: [{}],
+    primary: {
+      image: {
+        alt: 'alt text',
+        copyright: null,
+        dimensions: { height: 298, width: 1200 },
+        url:
+          'https://images.prismic.io/superpupertest/4b27a325-c48e-4f20-943d-e40537291055_2020-12-08_14-11.png?auto=compress,format&rect=0,0,1231,306&w=1200&h=298',
+      },
+      caption: 'caption',
+    },
+    slice_label: 'image-full-width',
+    slice_type: 'image_with_caption',
+  },
+  {
+    items: [{}],
+    primary: {
+      image: {
+        alt: 'alt text',
+        copyright: null,
+        dimensions: { height: 298, width: 1200 },
+        url:
+          'https://images.prismic.io/superpupertest/4b27a325-c48e-4f20-943d-e40537291055_2020-12-08_14-11.png?auto=compress,format&rect=0,0,1231,306&w=1200&h=298',
+      },
+      target: '_blank',
+      title: [
+        {
+          spans: [],
+          text: 'Tired banner',
+          type: 'paragraph',
+        },
+      ],
+      url: 'https://blog.maddevs.io',
+    },
+    slice_label: null,
+    slice_type: 'image_with_attributes',
+  },
+  {
+    items: [
+      { list_item: 'list item 1' },
+      { list_item: 'list item 2' },
+      { list_item: 'list item 3' },
+      { list_item: 'list item 4' },
+      { list_item: 'list item 5' },
+    ],
+    primary: {
+      list_introduction: 'list introduction',
+    },
+    slice_type: 'ordered_list',
+  },
+]
 
+describe('slice block component', () => {
   it('should render correctly', () => {
     const { container } = render(SlicesBlock, {
-      props: { slices },
+      propsData: {
+        slices,
+      },
       mocks: {
         $prismic: {
           asText: text => text,
@@ -119,6 +121,7 @@ describe('slice block component', () => {
 })
 
 describe('Post component copyAnchorLink', () => {
+  let wrapper = null
   const slice = {
     primary: {
       text: [
@@ -130,43 +133,50 @@ describe('Post component copyAnchorLink', () => {
     },
   }
 
-  const wrapper = shallowMount(SlicesBlock, {
-    stubs: ['PrismicRichText'],
-    propsData: {
-      slice,
-    },
-    mocks: {
-      $prismic: {
-        dom: {
-          Link: {
-            url: () => '',
-          },
-          RichText: {
-            Elements: {
-              em: 'em',
-              embed: 'embed',
-              heading1: 'heading1',
-              heading2: 'heading2',
-              heading3: 'heading3',
-              heading4: 'heading4',
-              heading5: 'heading5',
-              heading6: 'heading6',
-              hyperlink: 'hyperlink',
-              image: 'image',
-              label: 'label',
-              list: 'group-list-item',
-              listItem: 'list-item',
-              oList: 'group-o-list-item',
-              oListItem: 'o-list-item',
-              paragraph: 'paragraph',
-              preformatted: 'preformatted',
-              span: 'span',
-              strong: 'strong',
+  beforeEach(() => {
+    wrapper = shallowMount(SlicesBlock, {
+      stubs: ['PrismicRichText'],
+      propsData: {
+        slice,
+        slices,
+      },
+      mocks: {
+        $prismic: {
+          dom: {
+            Link: {
+              url: () => '',
+            },
+            RichText: {
+              Elements: {
+                em: 'em',
+                embed: 'embed',
+                heading1: 'heading1',
+                heading2: 'heading2',
+                heading3: 'heading3',
+                heading4: 'heading4',
+                heading5: 'heading5',
+                heading6: 'heading6',
+                hyperlink: 'hyperlink',
+                image: 'image',
+                label: 'label',
+                list: 'group-list-item',
+                listItem: 'list-item',
+                oList: 'group-o-list-item',
+                oListItem: 'o-list-item',
+                paragraph: 'paragraph',
+                preformatted: 'preformatted',
+                span: 'span',
+                strong: 'strong',
+              },
             },
           },
         },
       },
-    },
+    })
+  })
+
+  afterEach(() => {
+    wrapper = null
   })
 
   const headerHtml = tag => `
