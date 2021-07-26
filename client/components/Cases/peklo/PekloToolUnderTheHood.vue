@@ -80,9 +80,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/cases/_mixins';
-@import '@/assets/styles/_vars';
-
 .case {
   &_title,
   &_bold,

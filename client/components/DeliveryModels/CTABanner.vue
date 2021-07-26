@@ -43,8 +43,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .cta-banner_container {
   padding-bottom: 119px;
   @media screen and (max-width: 768px) {

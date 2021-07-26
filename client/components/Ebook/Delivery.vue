@@ -39,8 +39,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
-
 .ebook-delivery {
   background-color: #fff;
   padding-bottom: 50px;

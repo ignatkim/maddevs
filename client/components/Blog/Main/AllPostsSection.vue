@@ -141,8 +141,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/_vars';
-
 .posts-filter {
   min-width: 150px;
   margin-bottom: 50px;

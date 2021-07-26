@@ -87,9 +87,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
-@import '@/assets/styles/cases/_mixins';
-
 .ebook-read {
   padding: 96px 0 64px;
   background-color: #fff;

@@ -121,8 +121,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
-
 .read-form {
   width: 100%;
   max-width: 498px;

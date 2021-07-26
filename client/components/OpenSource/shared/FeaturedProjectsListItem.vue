@@ -60,8 +60,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .featured-projects-list__item {
   position: relative;
   display: block;

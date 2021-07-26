@@ -138,8 +138,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .cases-list_item {
   width: 100%;
   max-width: 100%;

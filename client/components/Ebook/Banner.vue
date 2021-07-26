@@ -60,8 +60,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
-
 .ebook-banner {
   padding-top: 207px;
 
