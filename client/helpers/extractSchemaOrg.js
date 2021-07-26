@@ -11,8 +11,6 @@ function extractSchemaOrg(schemaOrgSnippets) {
     schemaOrgSnippet = schemaOrgSnippet.substring(schemaOrgSnippet.indexOf('{'), schemaOrgSnippet.lastIndexOf('}') + 1)
     return schemaOrgSnippet
   }
-  // eslint-disable-next-line
-  console.warn('Schema.org is not defined');
   return schemaOrgSnippet
 }
 

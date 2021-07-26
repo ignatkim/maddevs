@@ -9,9 +9,12 @@ const props = {
   startAnimationOnScreenPercent: 23,
 }
 
+const stubs = ['NuxtLink']
+
 describe('ModelCard component', () => {
   it('should render correctly', () => {
     const { container } = render(ModelCard, {
+      stubs,
       props,
     })
 

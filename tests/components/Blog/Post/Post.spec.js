@@ -23,6 +23,16 @@ const props = {
   ],
   title: 'How to Handover a Software Project to Another Team | Mad Devs Blog',
   type: 'blog_post',
+  slice: {
+    primary: {
+      text: [
+        {
+          type: 'heading1',
+          text: 'sample text',
+        },
+      ],
+    },
+  },
 }
 
 Object.defineProperty(document, 'execCommand', { value: jest.fn() })
@@ -82,15 +92,29 @@ const WINDOW_SCROLL_TO = jest.fn()
 
 describe('Post component', () => {
   window.scrollTo = WINDOW_SCROLL_TO
-  it('should render correctly with default props', () => {
-    const { container } = render(Post, {
+  let wrapper = null
+
+  beforeEach(() => {
+    wrapper = shallowMount(Post, {
+      localVue,
       stubs,
       mocks,
-      props: {
-        document: blogDocument,
-        tags: [],
-      },
+      propsData: props,
       store,
+    })
+  })
+
+  afterEach(() => {
+    wrapper = null
+  })
+
+  it('should render correctly with default props', () => {
+    const { container } = render(Post, {
+      localVue,
+      stubs,
+      mocks,
+      store,
+      propsData: props,
     })
 
     expect(container).toMatchSnapshot()
@@ -99,10 +123,11 @@ describe('Post component', () => {
   it('should correct call scroll top', async () => {
     const SCROLL_Y = 100
     const { queryAllByTestId } = render(Post, {
+      localVue,
       stubs,
       mocks,
-      props,
       store,
+      propsData: props,
     })
 
     expect(queryAllByTestId('test-back-list')).toHaveLength(0)
@@ -114,47 +139,25 @@ describe('Post component', () => {
     expect(WINDOW_SCROLL_TO).toHaveBeenCalledTimes(1)
   })
 
-  describe('Post component copyAnchorLink', () => {
-    const wrapper = shallowMount(Post, {
+  it('setStylesForNavbar should call function handleNavbar if computed tableOfContentsSlice return slice', () => {
+    wrapper = shallowMount(Post, {
+      localVue,
       stubs,
       mocks,
-      props,
       store,
-      propsData: {
-        slice: {
-          items: [],
-        },
-      },
-    })
-
-    it('if has attr data-id in btn will return valid link', () => {
-      const event = {
-        target: {
-          getAttribute: () => 'blog-post-title',
-          nextElementSibling: document.createElement('div'),
-        },
-      }
-      const result = wrapper.vm.copyAnchorLink(event)
-      expect(result).toBe('http://localhost/blog-post-title#blog-post-title')
-    })
-
-    it('if not have attr data-id in btn will return null', () => {
-      const event = {
-        target: {
-          getAttribute: () => undefined,
-          nextElementSibling: document.createElement('div'),
-        },
-      }
-      const result = wrapper.vm.copyAnchorLink(event)
-      expect(result).toBeNull()
-    })
-  })
-
-  it('setStylesForNavbar should call function if computed return true', () => {
-    const wrapper = shallowMount(Post, {
+      propsData: props,
       computed: {
         tableOfContentsSlice() {
-          return true
+          return {
+            primary: {
+              text: [
+                {
+                  type: 'heading1',
+                  text: 'sample text',
+                },
+              ],
+            },
+          }
         },
       },
     })
@@ -166,7 +169,12 @@ describe('Post component', () => {
   })
 
   it('setStylesForNavbar should not call function if computed return false', () => {
-    const wrapper = shallowMount(Post, {
+    wrapper = shallowMount(Post, {
+      localVue,
+      stubs,
+      mocks,
+      store,
+      propsData: props,
       computed: {
         tableOfContentsSlice() {
           return false
@@ -182,7 +190,6 @@ describe('Post component', () => {
 
   it('data instance should contains html element', () => {
     document.body.innerHTML = '<div id="introduction-container"/><div id="header-container"/>'
-    const wrapper = shallowMount(Post)
     const introductionContainer = document.getElementById('introduction-container')
     const headerContainer = document.getElementById('header-container')
 
@@ -193,7 +200,6 @@ describe('Post component', () => {
   })
 
   it('getScrollStartPoint should return scroll start point count', () => {
-    const wrapper = shallowMount(Post)
     const state = { offsetHeight: 1 }
     const expectedResult = 2
 
@@ -207,7 +213,6 @@ describe('Post component', () => {
 
   it('getScrollEndPoint should return scroll end point count', () => {
     const expectedResult = 6810
-    const wrapper = shallowMount(Post)
     wrapper.vm.$refs = refs
 
     const result = wrapper.vm.getScrollEndPoint()
@@ -216,7 +221,6 @@ describe('Post component', () => {
   })
 
   it('setStateForCssVar should return scroll end point count', () => {
-    const wrapper = shallowMount(Post)
     const state = { offsetHeight: 1 }
     const setPropertySpy = jest.spyOn(document.documentElement.style, 'setProperty').mockImplementation(() => jest.fn())
 
@@ -228,7 +232,6 @@ describe('Post component', () => {
   })
 
   it('handleNavbar should call methods: getScrollStartPoint, getScrollEndPoint, setStateForCssVar', () => {
-    const wrapper = shallowMount(Post)
     const getScrollStartPointSpy = jest.spyOn(wrapper.vm, 'getScrollStartPoint').mockImplementation(() => jest.fn())
     const getScrollEndPointSpy = jest.spyOn(wrapper.vm, 'getScrollEndPoint').mockImplementation(() => jest.fn())
     const setStateForCssVarSpy = jest.spyOn(wrapper.vm, 'setStateForCssVar').mockImplementation(() => jest.fn())
@@ -241,7 +244,6 @@ describe('Post component', () => {
   })
 
   it('handleNavbar should set true for isFixed if window.pageYOffset more than scrollStartPoint', () => {
-    const wrapper = shallowMount(Post)
     jest.spyOn(wrapper.vm, 'getScrollStartPoint').mockImplementation(() => 100)
     jest.spyOn(wrapper.vm, 'getScrollEndPoint').mockImplementation(() => jest.fn())
     jest.spyOn(wrapper.vm, 'setStateForCssVar').mockImplementation(() => jest.fn())
@@ -252,7 +254,6 @@ describe('Post component', () => {
   })
 
   it('handleNavbar should set false for isFixed if window.pageYOffset less than scrollStartPoint', () => {
-    const wrapper = shallowMount(Post)
     jest.spyOn(wrapper.vm, 'getScrollStartPoint').mockImplementation(() => 300)
     jest.spyOn(wrapper.vm, 'getScrollEndPoint').mockImplementation(() => jest.fn())
     jest.spyOn(wrapper.vm, 'setStateForCssVar').mockImplementation(() => jest.fn())
@@ -263,7 +264,6 @@ describe('Post component', () => {
   })
 
   it('handleNavbar should set true for isBottom if window.pageYOffset more than scrollEndPoint', () => {
-    const wrapper = shallowMount(Post)
     jest.spyOn(wrapper.vm, 'getScrollEndPoint').mockImplementation(() => 100)
     jest.spyOn(wrapper.vm, 'getScrollStartPoint').mockImplementation(() => jest.fn())
     jest.spyOn(wrapper.vm, 'setStateForCssVar').mockImplementation(() => jest.fn())
@@ -274,7 +274,6 @@ describe('Post component', () => {
   })
 
   it('handleNavbar should set false for isBottom if window.pageYOffset less than scrollEndPoint', () => {
-    const wrapper = shallowMount(Post)
     jest.spyOn(wrapper.vm, 'getScrollEndPoint').mockImplementation(() => 300)
     jest.spyOn(wrapper.vm, 'getScrollStartPoint').mockImplementation(() => jest.fn())
     jest.spyOn(wrapper.vm, 'setStateForCssVar').mockImplementation(() => jest.fn())
@@ -282,5 +281,37 @@ describe('Post component', () => {
     wrapper.vm.handleNavbar()
 
     expect(wrapper.vm.isBottom).toBe(false)
+  })
+})
+
+describe('Post component copyAnchorLink', () => {
+  const wrapper = shallowMount(Post, {
+    localVue,
+    stubs,
+    mocks,
+    store,
+    propsData: props,
+  })
+
+  it('if has attr data-id in btn will return valid link', () => {
+    const event = {
+      target: {
+        getAttribute: () => 'blog-post-title',
+        nextElementSibling: document.createElement('div'),
+      },
+    }
+    const result = wrapper.vm.copyAnchorLink(event)
+    expect(result).toBe('http://localhost/blog-post-title#blog-post-title')
+  })
+
+  it('if not have attr data-id in btn will return null', () => {
+    const event = {
+      target: {
+        getAttribute: () => undefined,
+        nextElementSibling: document.createElement('div'),
+      },
+    }
+    const result = wrapper.vm.copyAnchorLink(event)
+    expect(result).toBeNull()
   })
 })

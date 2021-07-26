@@ -40,7 +40,7 @@ exports[`header Blog is a Vue instance 1`] = `
         
         </div>
          
-        <nuxtlink
+        <nuxtlink-stub
           class="post-tag post-tag--dark-theme"
           data-testid="test-tag"
           event="click"
@@ -49,7 +49,7 @@ exports[`header Blog is a Vue instance 1`] = `
           
   Project Management
 
-        </nuxtlink>
+        </nuxtlink-stub>
       </div>
     </div>
      

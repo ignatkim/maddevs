@@ -15,6 +15,8 @@ jest.mock('@/featureFlags/config', () => ({
   },
 }))
 
+jest.spyOn(console, 'error').mockImplementation()
+
 describe('Feature component', () => {
   const props = {
     flag: INCORRECT_FLAG,

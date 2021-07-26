@@ -7,6 +7,11 @@ describe('featured post component', () => {
     const { container } = render(FeaturedPost, {
       propsData: {
         post: blogPost,
+        author: {
+          image: '',
+          name: '',
+          position: '',
+        },
       },
       stubs: ['NuxtLink'],
       mocks: {

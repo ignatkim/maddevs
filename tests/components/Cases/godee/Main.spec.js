@@ -14,7 +14,7 @@ describe('Main component', () => {
   it('should render correctly', () => {
     const { container } = render(Main, {
       mocks,
-      stubs: ['ClientOnly', 'NuxtLink', 'Footer'],
+      stubs: ['ClientOnly', 'NuxtLink', 'Footer', 'DevelopmentGoals', 'ParallaxImage'],
       container: document.body.appendChild(containerToRender),
     })
 

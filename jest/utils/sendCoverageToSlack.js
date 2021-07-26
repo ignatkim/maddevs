@@ -1,6 +1,6 @@
 const request = require('request')
 const { readFile } = require('fs')
-const { findArgument, getColor } = require('./utils')
+const { findArgument, getColor } = require('.')
 require('dotenv').config()
 
 const messages = {
@@ -88,7 +88,7 @@ function readCoverageReport(data) {
   return results
 }
 
-function coverageSlack(testResults) {
+function sendCoverageToSlack(testResults) {
   const webhookUrl = process.env.NODE_JEST_COVERAGE_SLACK_WEBHOOK_URL
   if (!webhookUrl) throw new Error(messages.emptyEnv)
 
@@ -103,4 +103,4 @@ function coverageSlack(testResults) {
   return testResults
 }
 
-module.exports = coverageSlack
+module.exports = sendCoverageToSlack

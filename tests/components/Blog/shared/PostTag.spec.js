@@ -4,9 +4,12 @@ import PostTag from '@/components/Blog/shared/PostTag'
 const TAG_NAME = 'post-tag'
 const THEME_COLOR = 'very-dark'
 
+const stubs = ['NuxtLink']
+
 describe('post tag component', () => {
   it('is a Vue instance', () => {
     const { container, getByTestId } = render(PostTag, {
+      stubs,
       props: {
         tag: TAG_NAME,
       },
@@ -18,6 +21,7 @@ describe('post tag component', () => {
 
   it('to be render with dark theme', () => {
     const { html } = render(PostTag, {
+      stubs,
       props: {
         tag: TAG_NAME,
         theme: THEME_COLOR,

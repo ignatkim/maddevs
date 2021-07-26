@@ -10,9 +10,9 @@ exports[`Default layout renders correctly 1`] = `
     class="main-section"
   />
    
-  <clientonly>
+  <clientonly-stub>
     <cookienotice-stub />
-  </clientonly>
+  </clientonly-stub>
    
   <footer-stub />
 </div>

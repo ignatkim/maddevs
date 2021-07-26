@@ -9,6 +9,10 @@ const fileWithLongName = new File(
 const MAX_FILE_LENGTH = 25
 
 describe('FileInput component', () => {
+  beforeEach(() => {
+    jest.spyOn(console, 'warn').mockImplementation(() => {})
+  })
+
   it('should render correctly', () => {
     const { container } = render(FileInput)
 

@@ -21,8 +21,11 @@ describe('caseStudies component', () => {
     alt: 'GoDee Bus Transportation Services Logo.',
   }
 
+  const stubs = ['NuxtLink']
+
   beforeEach(() => {
     wrapper = mount(SingleProject, {
+      stubs,
       propsData: props,
     })
   })
@@ -42,6 +45,7 @@ describe('caseStudies component', () => {
     }
 
     wrapper = mount(SingleProject, {
+      stubs,
       propsData: props,
     })
 
@@ -56,6 +60,7 @@ describe('caseStudies component', () => {
     }
 
     wrapper = mount(SingleProject, {
+      stubs,
       propsData: props,
     })
 

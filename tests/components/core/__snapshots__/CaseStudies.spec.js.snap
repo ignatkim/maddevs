@@ -35,9 +35,9 @@ exports[`CaseStudies should render correctly 1`] = `
           class="cases-list_item cases-list_item--full cases-list_veeqo"
           data-testid="test-case-card"
         >
-          <nuxtlink
+          <nuxtlink-stub
             class="cases-list_item-link"
-            disabled="disabled"
+            disabled=""
             tag="a"
             to="/case-studies/veeqo/"
           >
@@ -81,23 +81,23 @@ exports[`CaseStudies should render correctly 1`] = `
                 Our DevOps team optimized the infrastructure for Veeqo, an inventory and shipping e-commerce platform, and made it highly efficient, smooth, and cost-effective for our partners.
               </p>
                
-              <nuxtlink
+              <nuxtlink-stub
                 to="/case-studies/veeqo/"
               >
                 
         Explore
       
-              </nuxtlink>
+              </nuxtlink-stub>
             </div>
-          </nuxtlink>
+          </nuxtlink-stub>
         </div>
         <div
           class="cases-list_item cases-list_item--big cases-list_itc"
           data-testid="test-case-card"
         >
-          <nuxtlink
+          <nuxtlink-stub
             class="cases-list_item-link"
-            disabled="disabled"
+            disabled=""
             tag="a"
             to="/case-studies/R4TCA-web-application/"
           >
@@ -141,23 +141,23 @@ exports[`CaseStudies should render correctly 1`] = `
                 A web app customized for the delivery of export management coaching missions that contributes to the development of intra-regional and international trade in Central Asia
               </p>
                
-              <nuxtlink
+              <nuxtlink-stub
                 to="/case-studies/R4TCA-web-application/"
               >
                 
         Explore
       
-              </nuxtlink>
+              </nuxtlink-stub>
             </div>
-          </nuxtlink>
+          </nuxtlink-stub>
         </div>
         <div
           class="cases-list_item cases-list_item--small cases-list_peklo"
           data-testid="test-case-card"
         >
-          <nuxtlink
+          <nuxtlink-stub
             class="cases-list_item-link"
-            disabled="disabled"
+            disabled=""
             tag="a"
             to="/case-studies/peklo/"
           >
@@ -201,23 +201,23 @@ exports[`CaseStudies should render correctly 1`] = `
                 Mad Devs developed parsing- and clusterisation-based software that automates keyword grouping and text generation, making the launch of contextual ads two times faster.
               </p>
                
-              <nuxtlink
+              <nuxtlink-stub
                 to="/case-studies/peklo/"
               >
                 
         Explore
       
-              </nuxtlink>
+              </nuxtlink-stub>
             </div>
-          </nuxtlink>
+          </nuxtlink-stub>
         </div>
         <div
           class="cases-list_item cases-list_item--full cases-list_sjmc"
           data-testid="test-case-card"
         >
-          <nuxtlink
+          <nuxtlink-stub
             class="cases-list_item-link"
-            disabled="disabled"
+            disabled=""
             tag="a"
             to="/case-studies/sir-john-monash-centre/"
           >
@@ -261,26 +261,26 @@ exports[`CaseStudies should render correctly 1`] = `
                 Mad Devs engineers helped Sir John Monash Centre to enhance and maintain the BYOD multimedia technology.
               </p>
                
-              <nuxtlink
+              <nuxtlink-stub
                 to="/case-studies/sir-john-monash-centre/"
               >
                 
         Explore
       
-              </nuxtlink>
+              </nuxtlink-stub>
             </div>
-          </nuxtlink>
+          </nuxtlink-stub>
         </div>
       </section>
        
-      <nuxtlink
+      <nuxtlink-stub
         class="cases-list_see-more"
         to="/case-studies/"
       >
         <span>
           See More
         </span>
-      </nuxtlink>
+      </nuxtlink-stub>
     </div>
   </section>
 </div>
@@ -323,9 +323,9 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
           class="cases-list_item cases-list_item--full cases-list_veeqo"
           data-testid="test-case-card"
         >
-          <nuxtlink
+          <nuxtlink-stub
             class="cases-list_item-link"
-            disabled="disabled"
+            disabled=""
             tag="a"
             to="/case-studies/veeqo/"
           >
@@ -369,23 +369,23 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
                 Our DevOps team optimized the infrastructure for Veeqo, an inventory and shipping e-commerce platform, and made it highly efficient, smooth, and cost-effective for our partners.
               </p>
                
-              <nuxtlink
+              <nuxtlink-stub
                 to="/case-studies/veeqo/"
               >
                 
         Explore
       
-              </nuxtlink>
+              </nuxtlink-stub>
             </div>
-          </nuxtlink>
+          </nuxtlink-stub>
         </div>
         <div
           class="cases-list_item cases-list_item--big cases-list_itc"
           data-testid="test-case-card"
         >
-          <nuxtlink
+          <nuxtlink-stub
             class="cases-list_item-link"
-            disabled="disabled"
+            disabled=""
             tag="a"
             to="/case-studies/R4TCA-web-application/"
           >
@@ -429,23 +429,23 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
                 A web app customized for the delivery of export management coaching missions that contributes to the development of intra-regional and international trade in Central Asia
               </p>
                
-              <nuxtlink
+              <nuxtlink-stub
                 to="/case-studies/R4TCA-web-application/"
               >
                 
         Explore
       
-              </nuxtlink>
+              </nuxtlink-stub>
             </div>
-          </nuxtlink>
+          </nuxtlink-stub>
         </div>
         <div
           class="cases-list_item cases-list_item--small cases-list_peklo"
           data-testid="test-case-card"
         >
-          <nuxtlink
+          <nuxtlink-stub
             class="cases-list_item-link"
-            disabled="disabled"
+            disabled=""
             tag="a"
             to="/case-studies/peklo/"
           >
@@ -489,23 +489,23 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
                 Mad Devs developed parsing- and clusterisation-based software that automates keyword grouping and text generation, making the launch of contextual ads two times faster.
               </p>
                
-              <nuxtlink
+              <nuxtlink-stub
                 to="/case-studies/peklo/"
               >
                 
         Explore
       
-              </nuxtlink>
+              </nuxtlink-stub>
             </div>
-          </nuxtlink>
+          </nuxtlink-stub>
         </div>
         <div
           class="cases-list_item cases-list_item--full cases-list_sjmc"
           data-testid="test-case-card"
         >
-          <nuxtlink
+          <nuxtlink-stub
             class="cases-list_item-link"
-            disabled="disabled"
+            disabled=""
             tag="a"
             to="/case-studies/sir-john-monash-centre/"
           >
@@ -549,26 +549,26 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
                 Mad Devs engineers helped Sir John Monash Centre to enhance and maintain the BYOD multimedia technology.
               </p>
                
-              <nuxtlink
+              <nuxtlink-stub
                 to="/case-studies/sir-john-monash-centre/"
               >
                 
         Explore
       
-              </nuxtlink>
+              </nuxtlink-stub>
             </div>
-          </nuxtlink>
+          </nuxtlink-stub>
         </div>
       </section>
        
-      <nuxtlink
+      <nuxtlink-stub
         class="cases-list_see-more"
         to="/case-studies/"
       >
         <span>
           See More
         </span>
-      </nuxtlink>
+      </nuxtlink-stub>
     </div>
   </section>
 </div>

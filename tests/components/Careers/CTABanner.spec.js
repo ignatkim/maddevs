@@ -7,6 +7,9 @@ describe('CTABanner component', () => {
   it('should render correctly', () => {
     const { container } = render(CTABanner, {
       stubs,
+      computed: {
+        image: () => 'image.png',
+      },
     })
 
     expect(container).toMatchSnapshot()

@@ -2,7 +2,9 @@
 
 exports[`VacancyText slice component is a Vue instance 1`] = `
 <div>
-  <div>
+  <div
+    stubs="PrismicRichText"
+  >
     <div
       class="vacancy-text-slice"
     >
@@ -19,7 +21,7 @@ exports[`VacancyText slice component is a Vue instance 1`] = `
     
       </h2>
        
-      <prismicrichtext
+      <prismicrichtext-stub
         class="vacancy-text-slice__content"
         field="Content"
         html-serializer="function htmlSerializer() {}"
