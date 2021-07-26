@@ -104,7 +104,7 @@ export default {
   &__content-list {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-gap: 80px;
+    grid-gap: 4%;
     @media screen and (max-width: 768px) {
       grid-template-columns: 1fr;
       grid-gap: 10px;
