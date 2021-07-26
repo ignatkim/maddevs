@@ -22,7 +22,7 @@
     "test:unit": "node ./jest && npm run generate:coverage-badges",
     "test:unit:node": "npm run test:unit -- --test=node",
     "test:unit:browser": "npm run test:unit -- --test=browser",
-    "test:unit:staging": "node ./jest && node ./jest/utils/sendCoverageToSlack.js && npm run test:e2e",
+    "test:staging": "node ./jest && node ./jest/utils/sendCoverageToSlack.js && npm run test:e2e",
     "test:e2e": "cypress run",
     "generate:coverage-badges": "node ./jest/utils/generateCoverageBadges.js -output './client/static'",
     "seo-analyze": "npm run generate && node ./SEOAnalyzer/index.js"
