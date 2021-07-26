@@ -337,7 +337,7 @@ exports[`Footer component should render correctly 1`] = `
             <div
               class="footer-navbar__nav-list"
             >
-              <nuxtlink
+              <nuxtlink-stub
                 class="footer-navbar__nav-item"
                 target="_blank"
                 to="/gdpr/"
@@ -345,8 +345,8 @@ exports[`Footer component should render correctly 1`] = `
                 
       GDPR Compliance Commitment
     
-              </nuxtlink>
-              <nuxtlink
+              </nuxtlink-stub>
+              <nuxtlink-stub
                 class="footer-navbar__nav-item"
                 target="_blank"
                 to="/nda/"
@@ -354,8 +354,8 @@ exports[`Footer component should render correctly 1`] = `
                 
       Non-Disclosure Agreement (NDA)
     
-              </nuxtlink>
-              <nuxtlink
+              </nuxtlink-stub>
+              <nuxtlink-stub
                 class="footer-navbar__nav-item"
                 target="_blank"
                 to="/privacy/"
@@ -363,8 +363,8 @@ exports[`Footer component should render correctly 1`] = `
                 
       Privacy Policy
     
-              </nuxtlink>
-              <nuxtlink
+              </nuxtlink-stub>
+              <nuxtlink-stub
                 class="footer-navbar__nav-item"
                 target="_blank"
                 to="/faq/"
@@ -372,7 +372,7 @@ exports[`Footer component should render correctly 1`] = `
                 
       FAQ
     
-              </nuxtlink>
+              </nuxtlink-stub>
             </div>
           </div>
         </div>
@@ -697,7 +697,7 @@ exports[`Footer component should render correctly 1`] = `
           <div
             class="footer-navbar-mobile__nav-list"
           >
-            <nuxtlink
+            <nuxtlink-stub
               class="footer-navbar-mobile__nav-link"
               target="_blank"
               to="/gdpr/"
@@ -705,8 +705,8 @@ exports[`Footer component should render correctly 1`] = `
               
       GDPR Compliance Commitment
     
-            </nuxtlink>
-            <nuxtlink
+            </nuxtlink-stub>
+            <nuxtlink-stub
               class="footer-navbar-mobile__nav-link"
               target="_blank"
               to="/nda/"
@@ -714,8 +714,8 @@ exports[`Footer component should render correctly 1`] = `
               
       Non-Disclosure Agreement (NDA)
     
-            </nuxtlink>
-            <nuxtlink
+            </nuxtlink-stub>
+            <nuxtlink-stub
               class="footer-navbar-mobile__nav-link"
               target="_blank"
               to="/privacy/"
@@ -723,8 +723,8 @@ exports[`Footer component should render correctly 1`] = `
               
       Privacy Policy
     
-            </nuxtlink>
-            <nuxtlink
+            </nuxtlink-stub>
+            <nuxtlink-stub
               class="footer-navbar-mobile__nav-link"
               target="_blank"
               to="/faq/"
@@ -732,7 +732,7 @@ exports[`Footer component should render correctly 1`] = `
               
       FAQ
     
-            </nuxtlink>
+            </nuxtlink-stub>
           </div>
         </div>
       </div>

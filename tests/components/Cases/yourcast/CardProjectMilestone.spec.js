@@ -11,7 +11,7 @@ describe('CardProjectMilestone component', () => {
   it('should render correctly', async () => {
     const { container } = render(CardProjectMilestone, {
       props,
-      methods: {
+      mocks: {
         play: jest.fn(),
       },
     })

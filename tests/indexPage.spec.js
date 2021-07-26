@@ -1,3 +1,4 @@
+import 'regenerator-runtime/runtime'
 import { mount, createLocalVue } from '@vue/test-utils'
 import IndexPage from '@/pages/index'
 import Vuelidate from 'vuelidate'

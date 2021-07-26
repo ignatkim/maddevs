@@ -4,7 +4,7 @@ import Default from '@/layouts/default.vue'
 
 jest.mock('@/helpers/intercom', () => jest.fn())
 
-const stubs = ['Header', 'Nuxt', 'Footer']
+const stubs = ['Header', 'Nuxt', 'Footer', 'ClientOnly']
 const mocks = {
   $nextTick: jest.fn(callback => {
     if (typeof callback === 'function') {

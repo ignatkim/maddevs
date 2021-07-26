@@ -2,7 +2,7 @@
 
 exports[`ScrollToPositionsLink component should render correctly 1`] = `
 <div>
-  <nuxtlink
+  <nuxtlink-stub
     class="scroll-to-positions scroll-to-positions--hidden"
     to="/careers/#open-positions"
   >
@@ -13,6 +13,6 @@ exports[`ScrollToPositionsLink component should render correctly 1`] = `
     See all 0 open positions
   
     </button>
-  </nuxtlink>
+  </nuxtlink-stub>
 </div>
 `;

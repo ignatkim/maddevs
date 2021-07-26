@@ -2,6 +2,58 @@
 
 exports[`TestimonialBlock component should render correctly 1`] = `
 <div>
-  <!---->
+  <div
+    class="testimonial-block"
+  >
+    <span
+      class="testimonial-block__mark"
+    >
+      “
+    </span>
+     
+    <div
+      class="testimonial-block__content"
+    >
+      <blockquote
+        class="testimonial-block__text"
+      >
+        
+      Testimonial text
+    
+      </blockquote>
+       
+      <div
+        class="testimonial-block__author"
+      >
+        <div
+          class="testimonial-block__author-image"
+        >
+          <img
+            alt="Photo"
+            class="img_lazy"
+            data-src="[object Object]"
+            height="42"
+            width="42"
+          />
+        </div>
+         
+        <div>
+          <p
+            class="testimonial-block__author-name"
+          >
+            
+          Ruslan
+        
+          </p>
+           
+          <span
+            class="testimonial-block__author-position"
+          >
+            CTO
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;

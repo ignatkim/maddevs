@@ -5,7 +5,7 @@
     <UIBanner
       title="Can’t find your <br /> next role?"
       text="If you don’t see a suitable vacancy, but are sure that we’re meant to be, drop us a line."
-      :image="require(`@/assets/img/Careers/Daria.png`)"
+      :image="image"
       image-alt-text="Daria"
       man-name="Daria Utesheva"
       man-position="Head of HR Departament"
@@ -65,6 +65,16 @@ export default {
   components: {
     UIBanner,
     UIButton,
+  },
+
+  computed: {
+    image() {
+      try {
+        return require('@/assets/img/Careers/Daria.png')
+      } catch (e) {
+        return ''
+      }
+    },
   },
 }
 </script>
