@@ -24,4 +24,11 @@ reporter.addAll(['json', 'lcov'])
 reporter.write(map)
 
 // eslint-disable-next-line no-console
-console.log(chalk.green('The consolidation of coverage reports is complete!\n'))
+console.log(chalk.green(`
+  Coverage summary:
+  
+  Lines: ${summary.lines.pct}%
+  Statements: ${summary.statements.pct}%
+  Branches: ${summary.branches.pct}%
+  Functions: ${summary.functions.pct}%\n
+`))
