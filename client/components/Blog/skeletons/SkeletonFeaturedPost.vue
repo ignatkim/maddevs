@@ -81,7 +81,7 @@ export default {
     display: grid;
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 991px) {
       grid-template-columns: 1fr;
     }
   }
@@ -94,15 +94,18 @@ export default {
     margin-bottom: 44px;
     height: 56px;
     border-radius: 7px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
   &__image-wrapper {
     text-align: right;
     margin-top: 0;
   }
   &__image {
-    width: 540px;
-    max-width: 100%;
+    width: 90%;
     height: 293px;
+    margin-left: auto;
     display: inline-block;
   }
 }

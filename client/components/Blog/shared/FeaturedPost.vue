@@ -140,7 +140,7 @@ export default {
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
-    @media only screen and (max-width: 992px) {
+    @media only screen and (max-width: 991px) {
       grid-template-columns: 1fr;
       grid-gap: 10px;
     }
@@ -188,6 +188,9 @@ export default {
     display: block;
     width: 90%;
     margin-left: auto;
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+    }
     img {
       display: block;
       width: 100%;
