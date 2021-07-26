@@ -8,8 +8,8 @@ const props = {
     url: 'url',
     alt: 'alt',
     dimensions: {
-      width: '200',
-      height: '300',
+      width: 200,
+      height: 300,
     },
   },
   tags: ['Project Management', 'Featured post'],
