@@ -346,8 +346,8 @@ export default {
     padding: 10px;
     cursor: pointer;
 
-    @media screen and (max-width: 1280px) {
-      margin-right: 10px;
+    @media screen and (max-width: 1340px) {
+      margin-right: 7px;
     }
 
     img {
@@ -396,6 +396,7 @@ export default {
 
   &__navigation-link,
   &__header-phone {
+    white-space: nowrap;
     color: $text-color--white;
   }
 
@@ -417,7 +418,7 @@ export default {
       content: '↓';
       color: transparent;
     }
-    @media screen and (max-width: 1320px) {
+    @media screen and (max-width: 1340px) {
       margin-right: 10px;
     }
   }
@@ -435,11 +436,7 @@ export default {
     align-items: center;
     margin-right: 40px;
 
-    @media screen and (max-width: 1320px) {
-      margin-right: 33px;
-    }
-
-    @media screen and (max-width: 1280px) {
+    @media screen and (max-width: 1340px) {
       margin-right: 20px;
     }
   }
@@ -493,7 +490,7 @@ export default {
   opacity: 0;
 }
 
-@media screen and (max-width: 1245px) {
+@media screen and (max-width: 1280px) {
   .header {
     max-height: 26px;
 
