@@ -189,7 +189,7 @@ export default {
   &__select {
     &-wrapper {
       width: 41%;
-      @media screen and (max-width: 1024px) {
+      @media screen and (max-width: 991px) {
         width: 100%;
       }
     }
@@ -268,7 +268,7 @@ export default {
     text-align: right;
     &-wrapper {
       width: 41%;
-      @media screen and (max-width: 1024px) {
+      @media screen and (max-width: 991px) {
         width: 100%;
       }
     }
@@ -345,8 +345,8 @@ export default {
 
     &__select {
       &-wrapper {
-        margin-bottom: 25px;
         padding: 0;
+        margin-bottom: 25px;
       }
     }
 
