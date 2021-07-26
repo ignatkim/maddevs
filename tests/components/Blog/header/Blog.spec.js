@@ -16,9 +16,12 @@ const props = {
   date: 'Mar 23, 2021',
 }
 
+const stubs = ['NuxtLink']
+
 describe('header Blog', () => {
   it('is a Vue instance', () => {
     const { container } = render(Blog, {
+      stubs,
       props,
       mocks: {
         $prismic: {

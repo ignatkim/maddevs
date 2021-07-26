@@ -13,9 +13,12 @@ const store = {
   },
 }
 
+const stubs = ['NuxtLink']
+
 describe('ScrollToPositionsLink component', () => {
   it('should render correctly', () => {
     const { container } = render(ScrollToPositionsLink, {
+      stubs,
       store,
     })
 

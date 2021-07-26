@@ -59,11 +59,11 @@ function createCommands(args, modArgs) {
   // Using `./node_modules/.bin/jest` so that people won't need to configure their own $PATH or mistakenly installing `jest` globally
   const pushTestNode = () => commands.push({
     id: 'node',
-    cmd: `./node_modules/.bin/jest --config jest/server.config.js ${joinedArgs}`,
+    cmd: `./node_modules/.bin/jest --config jest/configs/node.config.js ${joinedArgs}`,
   })
   const pushTestBrowser = () => commands.push({
     id: 'browser',
-    cmd: `./node_modules/.bin/jest --config jest/client.config.js ${joinedArgs}`,
+    cmd: `./node_modules/.bin/jest --config jest/configs/browser.config.js ${joinedArgs}`,
   })
 
   if (isTestNode || isTestBrowser) {
@@ -79,7 +79,7 @@ function createCommands(args, modArgs) {
   }
   commands.push({
     id: 'coverage',
-    cmd: 'node ./jest/map-coverage.js',
+    cmd: 'node ./jest/utils/map-coverage.js',
   })
   return commands
 }

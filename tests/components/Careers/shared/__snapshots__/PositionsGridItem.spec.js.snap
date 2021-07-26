@@ -5,7 +5,7 @@ exports[`PositionsGridItem component should render correctly 1`] = `
   <li
     class="positions-grid__item"
   >
-    <nuxtlink
+    <nuxtlink-stub
       class="positions-grid__item-link"
       to="/careers//"
     >
@@ -38,7 +38,7 @@ exports[`PositionsGridItem component should render correctly 1`] = `
       </p>
        
       <!---->
-    </nuxtlink>
+    </nuxtlink-stub>
   </li>
 </div>
 `;

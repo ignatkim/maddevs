@@ -1,6 +1,6 @@
 module.exports = {
   // tell Jest to handle `*.vue` files
-  rootDir: '../',
+  rootDir: '../../',
   moduleFileExtensions: ['js', 'json', 'vue'],
   watchman: true,
   moduleNameMapper: {

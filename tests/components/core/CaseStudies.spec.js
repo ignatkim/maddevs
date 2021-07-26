@@ -1,6 +1,8 @@
 import { render, screen } from '@testing-library/vue'
 import CaseStudies from '@/components/core/CaseStudies'
 
+const stubs = ['NuxtLink']
+
 describe('CaseStudies', () => {
   const props = {
     type: 'index',
@@ -8,6 +10,7 @@ describe('CaseStudies', () => {
 
   it('should render correctly', () => {
     const { container } = render(CaseStudies, {
+      stubs,
       props,
       mocks: {
         $getMediaFromS3: () => 'img.jpg',
@@ -21,6 +24,7 @@ describe('CaseStudies', () => {
   it('should render correctly with type=projects', () => {
     props.type = 'projects'
     const { container } = render(CaseStudies, {
+      stubs,
       props,
       mocks: {
         $getMediaFromS3: () => 'img.jpg',
