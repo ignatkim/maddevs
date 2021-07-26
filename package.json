@@ -20,6 +20,8 @@
     "prepare": "npm run snyk-protect",
     "test": "npm run test:unit && npm run test:e2e",
     "test:unit": "node ./jest",
+    "test:unit:node": "node ./jest -- --test=node",
+    "test:unit:browser": "node ./jest -- --test=browser",
     "test:unit:staging": "jest --config=./jest/configs/staging.config.js && npm run test:e2e",
     "test:e2e": "cypress run",
     "test:badges": "npm run test:unit && node ./jest/utils/coverageBadges.js -output './client/static'",
