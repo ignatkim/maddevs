@@ -1,6 +1,6 @@
 /*
 This will run jest in 2 different environments, node and browser.
-Then it will run `mapCoverage.js` to combine the coverage report.
+Then it will run `checkCoverage.js` to combine & check the coverage report.
 */
 const async = require('async')
 const chalk = require('chalk')
@@ -79,11 +79,6 @@ function createCommands(args, modArgs) {
     pushTestNode()
     pushTestBrowser()
   }
-  commands.push({
-    id: 'combining-coverage',
-    cmd: 'node ./jest/utils/mapCoverage.js',
-    message: 'Combining coverage reports',
-  })
   commands.push({
     id: 'check-coverage',
     cmd: 'node ./jest/utils/checkCoverage.js',
