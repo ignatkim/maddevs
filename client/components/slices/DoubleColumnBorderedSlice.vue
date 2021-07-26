@@ -33,7 +33,11 @@ export default {
 
   &__inner {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 20px;
+    @media screen and (max-width: 991px) {
+      grid-template-columns: 1fr;
+    }
     & > div {
       margin-top: 0;
     }
@@ -48,19 +52,16 @@ export default {
       margin-bottom: 6px;
       color: $text-color--grey-pale;
     }
-    @media screen and (min-width: 992px) and (max-width: 1200px) {
-      grid-template-columns: 3fr 1fr;
-    }
   }
 
   &__column {
     &--left {
-      @media only screen and (max-width: 1024px) {
+      @media only screen and (max-width: 991px) {
         order: 2;
       }
     }
     &--right {
-      @media only screen and (max-width: 1024px) {
+      @media only screen and (max-width: 991px) {
         order: 1;
       }
     }
