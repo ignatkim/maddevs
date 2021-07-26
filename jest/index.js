@@ -1,6 +1,6 @@
 /*
 This will run jest in 2 different environments, node and browser.
-Then it will run `map-coverage.js` to combine the coverage report.
+Then it will run `mapCoverage.js` to combine the coverage report.
 */
 const async = require('async')
 const chalk = require('chalk')
@@ -60,10 +60,12 @@ function createCommands(args, modArgs) {
   const pushTestNode = () => commands.push({
     id: 'node',
     cmd: `./node_modules/.bin/jest --config jest/configs/node.config.js ${joinedArgs}`,
+    message: 'Running Node tests',
   })
   const pushTestBrowser = () => commands.push({
     id: 'browser',
     cmd: `./node_modules/.bin/jest --config jest/configs/browser.config.js ${joinedArgs}`,
+    message: 'Running Browser tests',
   })
 
   if (isTestNode || isTestBrowser) {
@@ -78,8 +80,14 @@ function createCommands(args, modArgs) {
     pushTestBrowser()
   }
   commands.push({
-    id: 'coverage',
-    cmd: 'node ./jest/utils/map-coverage.js',
+    id: 'combining-coverage',
+    cmd: 'node ./jest/utils/mapCoverage.js',
+    message: 'Combining coverage reports',
+  })
+  commands.push({
+    id: 'check-coverage',
+    cmd: 'node ./jest/utils/checkCoverage.js',
+    message: 'Checking coverage',
   })
   return commands
 }
@@ -94,7 +102,7 @@ function runExec(cmd) {
     // eslint-disable-next-line no-console
     console.log([
       chalk.cyan(dashes),
-      chalk.cyan(cmd.cmd),
+      chalk.cyan(cmd.message),
       chalk.cyan(dashes),
       '',
     ].join('\n'))
