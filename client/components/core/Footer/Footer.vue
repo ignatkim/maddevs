@@ -99,26 +99,18 @@ export default {
       padding-right: 128px;
       box-sizing: border-box;
       @media only screen and (max-width: 1200px) {
-        padding-right: 40px;
+        padding-right: 60px;
       }
-      @media only screen and (max-width: 991px) {
-        padding-left: 0;
-        padding-right: 0;
+      @media only screen and (max-width: 1024px) {
+        padding-right: 40px;
       }
     }
     &-right {
       margin-top: 20px;
-      @media only screen and (max-width: 1200px) {
-        margin-top: 33px;
-      }
       @media only screen and (max-width: 991px) {
-        padding-left: 0;
-        padding-right: 0;
         margin-top: 10px;
-        margin-left: 30px;
       }
       @media only screen and (max-width: 768px) {
-        margin-left: 0;
         margin-top: 30px;
       }
     }
