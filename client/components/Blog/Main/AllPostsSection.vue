@@ -103,9 +103,7 @@ export default {
 
     categories() {
       const { categories = [] } = this.homePageContent
-      if (Array.isArray(categories) && categories.length) {
-        return categories.filter(category => category.title !== 'Job Opening')
-      }
+      if (Array.isArray(categories) && categories.length) return categories
       return []
     },
   },

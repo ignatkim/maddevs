@@ -71,7 +71,7 @@ describe('AllPostsSection component', () => {
     expect(screen.getAllByTestId('test-single-post')).toHaveLength(allPosts.length)
   })
 
-  it('categories() computed method should return array without \'Job Opening\' category', async () => {
+  it('categories() computed method should return correct array', async () => {
     const wrapper = shallowMount(AllPostsSection, {
       localVue,
       mocks,
@@ -87,7 +87,7 @@ describe('AllPostsSection component', () => {
                 tags: [],
               },
               {
-                title: 'Job Opening',
+                title: 'DevOps',
                 tags: [],
               },
             ],
@@ -99,6 +99,10 @@ describe('AllPostsSection component', () => {
     const filteredCategories = [
       {
         title: 'Editors Pick',
+        tags: [],
+      },
+      {
+        title: 'DevOps',
         tags: [],
       },
     ]
