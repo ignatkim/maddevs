@@ -32,9 +32,9 @@
               class="featured-post__image"
             >
               <img
+                v-lazy-load
                 :data-src="featuredCUPost.featured_image.url"
                 :alt="featuredCUPost.featured_image.alt"
-                class="img_lazy"
                 width="560"
                 height="347"
               >
@@ -52,9 +52,9 @@
             <div class="single-cluster">
               <div class="single-cluster__image">
                 <img
+                  v-lazy-load
                   :data-src="cluster.primary.cover_image.url"
                   :alt="cluster.primary.cover_image.alt"
-                  class="img_lazy"
                   width="295"
                   height="160"
                 >

@@ -51,6 +51,7 @@
     "mobile-device-detect": "^0.4.3",
     "multer": "^1.4.2",
     "nuxt": "^2.15.4",
+    "nuxt-lazy-load": "^1.2.6",
     "prismjs": "^1.24.0",
     "request": "^2.88.2",
     "sendpulse-api": "^1.1.4",

@@ -14,9 +14,10 @@
     </p>
     <div class="projects-countries_img-wrap">
       <img
+        v-lazy-load
         :data-src="$getMediaFromS3('/images/Careers/svg/map.svg')"
         alt="lobal projects in 20+ countries"
-        class="projects-countries_img media_lazy"
+        class="projects-countries_img"
         width="1240"
         height="558"
       >

@@ -20,12 +20,14 @@
       <!-- Video BG -->
       <video
         ref="video"
+        v-lazy-load
         muted="true"
         loop="true"
-        :poster="$getMediaFromS3(poster)"
-        class="cases-list_item-video media_lazy"
+        :data-poster="$getMediaFromS3(poster)"
+        class="cases-list_item-video"
       >
         <source
+          v-lazy-load
           :data-src="$getMediaFromS3(videoFileName)"
           type="video/mp4"
         >
@@ -35,9 +37,10 @@
       <!-- Card info -->
       <div class="cases-list_item-info">
         <img
+          v-lazy-load
           :width="logo.width"
           :height="logo.height"
-          :src="$getMediaFromS3(`/images/Cases/${logo.folder}/svg/${logo.file}.svg`)"
+          :data-src="$getMediaFromS3(`/images/Cases/${logo.folder}/svg/${logo.file}.svg`)"
           :alt="logo.alt"
           :class="`cases-list_item-info-${logo.file}`"
           class="cases-list_item-info-logo"

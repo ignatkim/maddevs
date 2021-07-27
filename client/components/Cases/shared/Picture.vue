@@ -1,13 +1,15 @@
 <template>
   <picture>
     <source
-      :class="{ 'box-shadow': shadow, 'border-radius': radius, 'grey-background': background, 'media_lazy': lazy }"
+      v-lazy-load
+      :class="{ 'box-shadow': shadow, 'border-radius': radius, 'grey-background': background }"
       v-bind="attrsSource"
       class="image"
       type="image/webp"
     >
     <img
-      :class="{ 'box-shadow': shadow, 'border-radius': radius, 'grey-background': background, 'media_lazy': lazy }"
+      v-lazy-load
+      :class="{ 'box-shadow': shadow, 'border-radius': radius, 'grey-background': background }"
       v-bind="attrsImg"
       :alt="alt"
       :width="width"

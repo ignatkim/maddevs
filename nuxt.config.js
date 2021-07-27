@@ -109,6 +109,7 @@ module.exports = {
     '@nuxtjs/sitemap',
     '@nuxtjs/gtm',
     '@nuxtjs/style-resources',
+    'nuxt-lazy-load',
   ],
   sitemap: {
     hostname: 'https://maddevs.io',

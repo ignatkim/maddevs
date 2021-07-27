@@ -16,11 +16,11 @@
       >
         <UIButton>
           <img
+            v-lazy-load
             :data-src="require(`@/assets/img/Careers/svg/telegram--white.svg`)"
             width="20"
             height="17"
             alt="Telegram"
-            class="img_lazy"
           >
           &nbsp;
           Telegram us

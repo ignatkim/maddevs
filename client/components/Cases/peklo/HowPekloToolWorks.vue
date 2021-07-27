@@ -43,11 +43,12 @@
             {{ card.description }}
           </TextParagraph>
           <img
+            v-lazy-load
             :width="card.iconWidth"
             :height="card.iconHeight"
             :data-src="$getMediaFromS3(`/images/Cases/peklo/svg/${card.icon}.svg`)"
             :alt="card.title"
-            class="case_card-icon media_lazy"
+            class="case_card-icon"
           >
         </Card>
       </div>

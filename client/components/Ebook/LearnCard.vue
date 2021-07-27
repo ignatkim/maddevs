@@ -2,11 +2,11 @@
   <section class="ebook-learn-card">
     <img
       v-if="icon"
+      v-lazy-load
       width="54"
       height="54"
       :data-src="require(`@/assets/img/Ebook/${icon}`)"
       alt="Icon"
-      class="media_lazy"
     >
     <p
       v-if="title === 'And much more...'"

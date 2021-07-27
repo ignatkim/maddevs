@@ -54,8 +54,9 @@
     <section class="container_full background-color-silver">
       <section class="container_middle">
         <img
+          v-lazy-load
           :data-src="$getMediaFromS3('/images/Cases/sjmc/gif/brix.gif')"
-          class="case_gif media_lazy"
+          class="case_gif"
           alt="Ultra-Compact Multimedia Computer - BRIX."
           :width="1026"
           :height="367"

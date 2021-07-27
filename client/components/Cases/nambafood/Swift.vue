@@ -96,13 +96,15 @@
         <video
           v-else
           id="map-video"
-          class="case_map-video media_lazy"
+          v-lazy-load
+          class="case_map-video"
           width="100%"
           height="100%"
           loop="true"
           muted="true"
         >
           <source
+            v-lazy-load
             :data-src="$getMediaFromS3('/videos/map.c41e893.mp4')"
             type="video/mp4"
           >

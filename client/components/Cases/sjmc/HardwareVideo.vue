@@ -22,6 +22,7 @@
       <video
         id="iphone-video"
         ref="video"
+        v-lazy-load
         data-testid="test-case_video"
         width="100%"
         height="100%"
@@ -29,10 +30,10 @@
         muted
         playsinline
         loop
-        class="media_lazy"
-        :poster="$getMediaFromS3('/images/Cases/sjmc/png/bluetooth-beacons-video-background.png')"
+        :data-poster="$getMediaFromS3('/images/Cases/sjmc/png/bluetooth-beacons-video-background.png')"
       >
         <source
+          v-lazy-load
           :data-src="$getMediaFromS3('/videos/bluetooth-beacons-video.9ca649c.mp4')"
           type="video/mp4"
         >

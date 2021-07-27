@@ -6,7 +6,6 @@
 
 <script>
 import Main from '@/components/DeliveryModels/Main'
-import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 import { getMetadata, buildHead } from '@/data/seo'
 
 export default {
@@ -15,14 +14,8 @@ export default {
     Main,
   },
 
-  mixins: [initLazyLoadMixin],
-
   head() {
     return buildHead(getMetadata('delivery-models'))
-  },
-
-  mounted() {
-    this.$lazyLoad.init()
   },
 }
 </script>

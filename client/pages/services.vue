@@ -15,7 +15,6 @@ import SoftwareDevelopment from '@/components/Services/SoftwareDevelopment'
 import InfrastructureOptimisation from '@/components/Services/InfrastructureOptimisation'
 import ItConsulting from '@/components/Services/ItСonsulting'
 import { getMetadata, buildHead } from '@/data/seo'
-import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
 export default {
   name: 'MainServices',
@@ -26,8 +25,6 @@ export default {
     InfrastructureOptimisation,
     ItConsulting,
   },
-
-  mixins: [initLazyLoadMixin],
 
   head() {
     return buildHead(getMetadata('services'))
