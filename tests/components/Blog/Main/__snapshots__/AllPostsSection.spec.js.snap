@@ -147,6 +147,27 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                           </label>
                         </div>
                       </li>
+                      <li
+                        class="posts-filter__item-wrapper"
+                      >
+                        <div
+                          class="posts-filter__item"
+                        >
+                          <input
+                            data-testid="test-post-input"
+                            id="Job Opening"
+                            name="Tag"
+                            type="radio"
+                            value="Job Opening"
+                          />
+                           
+                          <label
+                            for="Job Opening"
+                          >
+                            Job Opening
+                          </label>
+                        </div>
+                      </li>
                     </ul>
                   </div>
                 </div>
