@@ -96,7 +96,7 @@ describe('AllPostsSection component', () => {
       },
     })
 
-    const filteredCategories = [
+    const expectedCategories = [
       {
         title: 'Editors Pick',
         tags: [],
@@ -106,7 +106,7 @@ describe('AllPostsSection component', () => {
         tags: [],
       },
     ]
-    expect(wrapper.vm.categories).toEqual(filteredCategories)
+    expect(wrapper.vm.categories).toEqual(expectedCategories)
   })
 
   it('categories() computed method with invalid homePageContent getter should return empty array', async () => {
