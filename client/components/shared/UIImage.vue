@@ -1,6 +1,7 @@
 <template>
   <picture>
     <source
+      v-lazy-load
       :data-srcset="[
         require(`@/assets/img/Home/webp/experts/${fileName}.webp`) + ' ',
         require(`@/assets/img/Home/webp/experts/${fileNameRetina}.webp`) + ' 2x',

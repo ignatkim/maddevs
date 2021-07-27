@@ -23,11 +23,10 @@
         v-lazy-load
         muted="true"
         loop="true"
-        :data-poster="$getMediaFromS3(poster)"
+        :data-poster="$getMediaFromS3(posterLink)"
         class="cases-list_item-video"
       >
         <source
-          v-lazy-load
           :data-src="$getMediaFromS3(videoFileName)"
           type="video/mp4"
         >
@@ -114,7 +113,7 @@ export default {
       default: null,
     },
 
-    poster: {
+    posterLink: {
       type: String,
       default: null,
     },

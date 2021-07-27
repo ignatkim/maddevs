@@ -13,12 +13,13 @@
       <video
         v-if="!isIphone"
         id="yourcast-tv"
+        v-lazy-load
         loop="true"
         muted="true"
         class="case_yourcast-tv"
       >
         <source
-          :src="$getMediaFromS3('/videos/yourcast-tv.mp4')"
+          :data-src="$getMediaFromS3('/videos/yourcast-tv.mp4')"
           type="video/mp4"
         >
         Your browser does not support the video tag.

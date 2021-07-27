@@ -2,15 +2,21 @@
   <picture>
     <source
       v-lazy-load
+      v-bind="lazyDisabled"
       :class="{ 'box-shadow': shadow, 'border-radius': radius, 'grey-background': background }"
-      v-bind="attrsSource"
+      :data-srcset="[
+        $getMediaFromS3(`/images/Cases/${folder}/webp/${file}.webp`) + ' ',
+        $getMediaFromS3(`/images/Cases/${folder}/webp/${file}@2x.webp 2x`)]
+      "
       class="image"
       type="image/webp"
     >
     <img
       v-lazy-load
+      v-bind="lazyDisabled"
       :class="{ 'box-shadow': shadow, 'border-radius': radius, 'grey-background': background }"
-      v-bind="attrsImg"
+      :data-src="[$getMediaFromS3(`/images/Cases/${folder}/${extension}/${file}.${extension}`)]"
+      :data-srcset="[$getMediaFromS3(`/images/Cases/${folder}/${extension}/${file}.${extension}`)]"
       :alt="alt"
       :width="width"
       :height="height"
@@ -77,31 +83,9 @@ export default {
   },
 
   computed: {
-    attrsImg() {
-      const path = `/images/Cases/${this.folder}/${this.extension}/${this.file}.${this.extension}`
-      if (this.lazy) {
-        return {
-          'data-src': [this.$getMediaFromS3(path)],
-          'data-srcset': [this.$getMediaFromS3(path)],
-        }
-      }
-      return {
-        src: [this.$getMediaFromS3(path)],
-        srcset: [this.$getMediaFromS3(path)],
-      }
-    },
-
-    attrsSource() {
-      const path = `/images/Cases/${this.folder}/webp/${this.file}.webp `
-      const path2x = `/images/Cases/${this.folder}/webp/${this.file}@2x.webp 2x`
-      if (this.lazy) {
-        return {
-          'data-srcset': [this.$getMediaFromS3(path), this.$getMediaFromS3(path2x)],
-        }
-      }
-      return {
-        srcset: [this.$getMediaFromS3(path), this.$getMediaFromS3(path2x)],
-      }
+    lazyDisabled() {
+      if (!this.lazy) return { 'data-not-lazy': true }
+      return {}
     },
   },
 

@@ -29,7 +29,6 @@
           muted="true"
         >
           <source
-            v-lazy-load
             :data-src="$getMediaFromS3('/videos/mobile-applications-for-end-users.faaab2d.mp4')"
             type="video/mp4"
           >

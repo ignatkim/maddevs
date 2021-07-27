@@ -3,15 +3,13 @@
     id="transparent-header-area"
     class="banner"
   >
-    <picture>
+    <picture v-lazy-load>
       <source
-        v-lazy-load
         :data-srcset="[$getMediaFromS3('/images/DeliveryModels/webp/banner.webp') + ' ', $getMediaFromS3('/images/DeliveryModels/webp/banner@2x.webp 2x')]"
         type="image/webp"
         class="banner__image"
       >
       <img
-        v-lazy-load
         :data-srcset="$getMediaFromS3('/images/DeliveryModels/jpg/banner@2x.jpg')"
         :data-src="$getMediaFromS3('/images/DeliveryModels/jpg/banner.jpg')"
         width="1680"

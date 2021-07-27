@@ -12,15 +12,13 @@
     >
       <picture>
         <source
-          v-lazy-load
-          :data-srcset="[$getMediaFromS3('/images/Careers/webp/office.webp') + ' ', $getMediaFromS3('/images/Careers/webp/office@2x.webp 2x')]"
+          :srcset="[$getMediaFromS3('/images/Careers/webp/office.webp') + ' ', $getMediaFromS3('/images/Careers/webp/office@2x.webp 2x')]"
           type="image/webp"
           class="banner_img"
         >
         <img
-          v-lazy-load
-          :data-src="$getMediaFromS3('/images/Careers/png/office.png')"
-          :data-srcset="$getMediaFromS3('/images/Careers/png/office@2x.png')"
+          :src="$getMediaFromS3('/images/Careers/png/office.png')"
+          :srcset="$getMediaFromS3('/images/Careers/png/office@2x.png')"
           width="1239"
           height="606"
           class="banner_img"

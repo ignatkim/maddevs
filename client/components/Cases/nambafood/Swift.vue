@@ -104,7 +104,6 @@
           muted="true"
         >
           <source
-            v-lazy-load
             :data-src="$getMediaFromS3('/videos/map.c41e893.mp4')"
             type="video/mp4"
           >

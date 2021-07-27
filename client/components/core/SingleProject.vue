@@ -50,6 +50,7 @@
       >
         <picture>
           <source
+            v-lazy-load
             :data-srcset="[
               require(`@/assets/img/Studies/webp/${background}.webp`) + ' ',
               require(`@/assets/img/Studies/webp/${background}.webp`) + ' 2x',

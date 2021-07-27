@@ -4,9 +4,10 @@
     class="ebook-read-card"
   >
     <img
+      v-lazy-load
       width="288"
       height="178"
-      :src="img.url"
+      :data-src="img.url"
       :alt="img.alt"
     >
     <h3>{{ title }}</h3>
