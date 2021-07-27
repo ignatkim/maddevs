@@ -16,15 +16,15 @@
 </p>
 
 ## 🌎 Table of content
-* [Quick start](#-quick-development-start)
-* [Project overview](#-project-overview)
-* [Environment variables](#-environment-variables)
+* [Quick start](#%EF%B8%8F-quick-development-start)
+* [Project overview](#%EF%B8%8F-project-overview)
+* [Environment variables](#%EF%B8%8F-environment-variables)
 * [Deploy](#-deploy)
 * [Testing](#-testing)
 * [Linting](#-linting)
 * [Snyk](#-snyk)
 * [AWS S3](#-aws-s3)
-* [Feature Flags](#-feature-flags)
+* [Feature Flags](#%EF%B8%8F-feature-flags)
 * [SEO-Analyzer](#-seo-analyzer)
 * [Radiator](#-radiator)
 * [Additional docs](#-additional-docs)
