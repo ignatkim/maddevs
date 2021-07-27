@@ -19,7 +19,7 @@
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect",
     "test": "npm run test:unit && npm run test:e2e",
-    "test:unit": "node ./jest && npm run generate:coverage-badges",
+    "test:unit": "node ./jest",
     "test:unit:node": "node ./jest -- --test=node",
     "test:unit:browser": "node ./jest -- --test=browser",
     "test:staging": "node ./jest && node ./jest/utils/sendCoverageToSlack.js && npm run test:e2e",
