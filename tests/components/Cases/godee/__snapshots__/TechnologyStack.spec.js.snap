@@ -21,7 +21,7 @@ exports[`TechnologyStack component should render correctly 1`] = `
       >
         <img
           alt="Open Street Map"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__open-street-map open-street-map"
+          class="case_technologies-item__tech-icon case_technologies-item__open-street-map open-street-map"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -40,7 +40,7 @@ exports[`TechnologyStack component should render correctly 1`] = `
       >
         <img
           alt="Google Maps"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__google-maps google-maps"
+          class="case_technologies-item__tech-icon case_technologies-item__google-maps google-maps"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -59,7 +59,7 @@ exports[`TechnologyStack component should render correctly 1`] = `
       >
         <img
           alt="PostgreSQL"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__postgresql postgresql"
+          class="case_technologies-item__tech-icon case_technologies-item__postgresql postgresql"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -79,7 +79,7 @@ exports[`TechnologyStack component should render correctly 1`] = `
       >
         <img
           alt="Docker"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__docker docker"
+          class="case_technologies-item__tech-icon case_technologies-item__docker docker"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -98,7 +98,7 @@ exports[`TechnologyStack component should render correctly 1`] = `
       >
         <img
           alt="Nginx"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__nginx nginx"
+          class="case_technologies-item__tech-icon case_technologies-item__nginx nginx"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -117,7 +117,7 @@ exports[`TechnologyStack component should render correctly 1`] = `
       >
         <img
           alt="Redis"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__redis redis"
+          class="case_technologies-item__tech-icon case_technologies-item__redis redis"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -136,7 +136,7 @@ exports[`TechnologyStack component should render correctly 1`] = `
       >
         <img
           alt="Python (Django)"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__python python"
+          class="case_technologies-item__tech-icon case_technologies-item__python python"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -155,7 +155,7 @@ exports[`TechnologyStack component should render correctly 1`] = `
       >
         <img
           alt="Golang"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__go go"
+          class="case_technologies-item__tech-icon case_technologies-item__go go"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -174,7 +174,7 @@ exports[`TechnologyStack component should render correctly 1`] = `
       >
         <img
           alt="Kotlin"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__kotlin kotlin"
+          class="case_technologies-item__tech-icon case_technologies-item__kotlin kotlin"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -193,7 +193,7 @@ exports[`TechnologyStack component should render correctly 1`] = `
       >
         <img
           alt="Atlassian"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__atlassian atlassian"
+          class="case_technologies-item__tech-icon case_technologies-item__atlassian atlassian"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -212,7 +212,7 @@ exports[`TechnologyStack component should render correctly 1`] = `
       >
         <img
           alt="Swift"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__swift swift"
+          class="case_technologies-item__tech-icon case_technologies-item__swift swift"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -231,7 +231,7 @@ exports[`TechnologyStack component should render correctly 1`] = `
       >
         <img
           alt="Firebase"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__firebase firebase"
+          class="case_technologies-item__tech-icon case_technologies-item__firebase firebase"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -250,7 +250,7 @@ exports[`TechnologyStack component should render correctly 1`] = `
       >
         <img
           alt="TestFlight"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__test-flight test-flight"
+          class="case_technologies-item__tech-icon case_technologies-item__test-flight test-flight"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -269,7 +269,7 @@ exports[`TechnologyStack component should render correctly 1`] = `
       >
         <img
           alt="Datadog"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__datadog datadog"
+          class="case_technologies-item__tech-icon case_technologies-item__datadog datadog"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -288,7 +288,7 @@ exports[`TechnologyStack component should render correctly 1`] = `
       >
         <img
           alt="Android"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__android-black-text android-black-text"
+          class="case_technologies-item__tech-icon case_technologies-item__android-black-text android-black-text"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -307,7 +307,7 @@ exports[`TechnologyStack component should render correctly 1`] = `
       >
         <img
           alt="Suite"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__suite suite"
+          class="case_technologies-item__tech-icon case_technologies-item__suite suite"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -326,7 +326,7 @@ exports[`TechnologyStack component should render correctly 1`] = `
       >
         <img
           alt="Jira Software"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__jira-software jira-software"
+          class="case_technologies-item__tech-icon case_technologies-item__jira-software jira-software"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -346,7 +346,7 @@ exports[`TechnologyStack component should render correctly 1`] = `
       >
         <img
           alt="GRPC"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__grpc grpc"
+          class="case_technologies-item__tech-icon case_technologies-item__grpc grpc"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -365,7 +365,7 @@ exports[`TechnologyStack component should render correctly 1`] = `
       >
         <img
           alt="iOS"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__apple-black apple-black"
+          class="case_technologies-item__tech-icon case_technologies-item__apple-black apple-black"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -385,7 +385,7 @@ exports[`TechnologyStack component should render correctly 1`] = `
       >
         <img
           alt="UptimeRobot"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__uptime-robot uptime-robot"
+          class="case_technologies-item__tech-icon case_technologies-item__uptime-robot uptime-robot"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -404,7 +404,7 @@ exports[`TechnologyStack component should render correctly 1`] = `
       >
         <img
           alt="Mapbox"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__map-box map-box"
+          class="case_technologies-item__tech-icon case_technologies-item__map-box map-box"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -423,7 +423,7 @@ exports[`TechnologyStack component should render correctly 1`] = `
       >
         <img
           alt="Vue JS"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__vue vue"
+          class="case_technologies-item__tech-icon case_technologies-item__vue vue"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -442,7 +442,7 @@ exports[`TechnologyStack component should render correctly 1`] = `
       >
         <img
           alt="Sentry"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__sentry-black sentry-black"
+          class="case_technologies-item__tech-icon case_technologies-item__sentry-black sentry-black"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -461,7 +461,7 @@ exports[`TechnologyStack component should render correctly 1`] = `
       >
         <img
           alt="Here Traffic"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__here here"
+          class="case_technologies-item__tech-icon case_technologies-item__here here"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -480,7 +480,7 @@ exports[`TechnologyStack component should render correctly 1`] = `
       >
         <img
           alt="Basecamp"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__basecamp-transparent basecamp-transparent"
+          class="case_technologies-item__tech-icon case_technologies-item__basecamp-transparent basecamp-transparent"
           data-src="[object Object]"
           height="40"
           width="40"

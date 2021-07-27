@@ -16,7 +16,7 @@ exports[`CaseYourcast _uid component should render correctly 1`] = `
        
       <video
         autoplay="autoplay"
-        class="case_main-video media_lazy"
+        class="case_main-video"
         data-testid="test-case_main-video"
         loop="loop"
         muted="muted"
@@ -90,7 +90,7 @@ exports[`CaseYourcast _uid component should render correctly 1`] = `
     >
       <img
         alt="SJMC"
-        class="case_logotype-sjmc img_lazy"
+        class="case_logotype-sjmc"
         data-src="[object Object]"
         height="113"
         width="253"

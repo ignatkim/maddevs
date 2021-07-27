@@ -13,7 +13,6 @@ exports[`AuthorBanner component should render correctly 1`] = `
       >
         <img
           alt="alt"
-          class="img_lazy"
           data-src="someurl"
         />
       </div>

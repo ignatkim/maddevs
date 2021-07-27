@@ -30,7 +30,6 @@ exports[`TestimonialBlock component should render correctly 1`] = `
         >
           <img
             alt="Photo"
-            class="img_lazy"
             data-src="[object Object]"
             height="42"
             width="42"

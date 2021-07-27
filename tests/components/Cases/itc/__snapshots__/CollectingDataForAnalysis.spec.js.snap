@@ -38,14 +38,14 @@ exports[`CollectingDataForAnalysis component should render correctly 1`] = `
     >
       <picture>
         <source
-          class="image media_lazy"
+          class="image"
           data-srcset="img.jpg,img.jpg"
           type="image/webp"
         />
          
         <img
           alt="Collecting data for analysis"
-          class="image media_lazy"
+          class="image"
           data-src="img.jpg"
           data-srcset="img.jpg"
           data-testid="test-picture-img"
@@ -111,7 +111,7 @@ exports[`CollectingDataForAnalysis component should render correctly 1`] = `
       >
         <img
           alt="blockquote"
-          class="case_mark img_lazy"
+          class="case_mark"
           data-src="[object Object]"
           height="50"
           width="50"

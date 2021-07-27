@@ -26,7 +26,7 @@ exports[`ProjectsCountries component should render correctly 1`] = `
     >
       <img
         alt="lobal projects in 20+ countries"
-        class="projects-countries_img media_lazy"
+        class="projects-countries_img"
         data-src="img.jpg"
         height="558"
         width="1240"

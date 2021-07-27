@@ -10,7 +10,6 @@ exports[`HardwareVideoOnlyIos component should render correctly 1`] = `
       data-testid="test-case_sjmc-phone"
     >
       <video
-        class="media_lazy"
         data-testid="test-case_video"
         height="100%"
         playsinline=""

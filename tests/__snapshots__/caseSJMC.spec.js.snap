@@ -14,7 +14,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
      
     <video
       autoplay="autoplay"
-      class="case_main-video media_lazy"
+      class="case_main-video"
       data-testid="test-case_main-video"
       loop="loop"
       muted="muted"
@@ -72,7 +72,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
         >
           <img
             alt="Play"
-            class="case_play-icon img_lazy"
+            class="case_play-icon"
             data-src="[object Object]"
             height="14"
             width="14"
@@ -172,7 +172,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
         >
           <img
             alt="blockquote"
-            class="case_mark img_lazy"
+            class="case_mark"
             data-src="[object Object]"
             height="50"
             width="50"
@@ -253,14 +253,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
         >
           <picture>
             <source
-              class="image media_lazy"
+              class="image"
               data-srcset="s3 image url,s3 image url"
               type="image/webp"
             />
              
             <img
               alt="The Mad Devs team in Sir John Monash Centre."
-              class="image media_lazy"
+              class="image"
               data-src="s3 image url"
               data-srcset="s3 image url"
               data-testid="test-picture-img"
@@ -809,7 +809,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <img
               alt="blockquote"
-              class="case_mark img_lazy"
+              class="case_mark"
               data-src="[object Object]"
               height="50"
               width="50"
@@ -905,14 +905,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <picture>
               <source
-                class="image media_lazy"
+                class="image"
                 data-srcset="s3 image url,s3 image url"
                 type="image/webp"
               />
                
               <img
                 alt="The SJMC Mobile Applications."
-                class="image media_lazy"
+                class="image"
                 data-src="s3 image url"
                 data-srcset="s3 image url"
                 data-testid="test-picture-img"
@@ -976,14 +976,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
         >
           <picture>
             <source
-              class="image media_lazy"
+              class="image"
               data-srcset="s3 image url,s3 image url"
               type="image/webp"
             />
              
             <img
               alt="Sir Jonh Monash Centre Map."
-              class="image media_lazy"
+              class="image"
               data-src="s3 image url"
               data-srcset="s3 image url"
               data-testid="test-picture-img"
@@ -1029,14 +1029,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
         >
           <picture>
             <source
-              class="image media_lazy"
+              class="image"
               data-srcset="s3 image url,s3 image url"
               type="image/webp"
             />
              
             <img
               alt="The SJMC Immersive Gallery."
-              class="image media_lazy"
+              class="image"
               data-src="s3 image url"
               data-srcset="s3 image url"
               data-testid="test-picture-img"
@@ -1115,7 +1115,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <img
               alt="Ultra-Compact Multimedia Computer - BRIX."
-              class="case_gif media_lazy"
+              class="case_gif"
               data-src="s3 image url"
               height="367"
               width="1026"
@@ -1312,14 +1312,13 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               class="case_video-wrapper case_full-screen-video"
             >
               <video
-                class="media_lazy"
+                data-poster="s3 image url"
                 data-testid="test-case_video"
                 height="100%"
                 id="iphone-video"
                 loop="loop"
                 muted="muted"
                 playsinline=""
-                poster="s3 image url"
                 width="100%"
               >
                 <source
@@ -1492,7 +1491,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <img
               alt="Go"
-              class="img_lazy case_technologies-item__tech-icon case_technologies-item__go go"
+              class="case_technologies-item__tech-icon case_technologies-item__go go"
               data-src="[object Object]"
               height="40"
               width="40"
@@ -1511,7 +1510,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <img
               alt="Swift"
-              class="img_lazy case_technologies-item__tech-icon case_technologies-item__swift swift"
+              class="case_technologies-item__tech-icon case_technologies-item__swift swift"
               data-src="[object Object]"
               height="40"
               width="40"
@@ -1530,7 +1529,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <img
               alt="Java for Android"
-              class="img_lazy case_technologies-item__tech-icon case_technologies-item__java java"
+              class="case_technologies-item__tech-icon case_technologies-item__java java"
               data-src="[object Object]"
               height="40"
               width="40"
@@ -1549,7 +1548,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <img
               alt="Unity"
-              class="img_lazy case_technologies-item__tech-icon case_technologies-item__unity unity"
+              class="case_technologies-item__tech-icon case_technologies-item__unity unity"
               data-src="[object Object]"
               height="40"
               width="40"
@@ -1568,7 +1567,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <img
               alt="AWS"
-              class="img_lazy case_technologies-item__tech-icon case_technologies-item__aws aws"
+              class="case_technologies-item__tech-icon case_technologies-item__aws aws"
               data-src="[object Object]"
               height="40"
               width="40"
@@ -1587,7 +1586,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <img
               alt="CodeCommit"
-              class="img_lazy case_technologies-item__tech-icon case_technologies-item__codecommit codecommit"
+              class="case_technologies-item__tech-icon case_technologies-item__codecommit codecommit"
               data-src="[object Object]"
               height="40"
               width="40"
@@ -1606,7 +1605,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <img
               alt="Windows 10"
-              class="img_lazy case_technologies-item__tech-icon case_technologies-item__windows windows"
+              class="case_technologies-item__tech-icon case_technologies-item__windows windows"
               data-src="[object Object]"
               height="40"
               width="40"
@@ -1625,7 +1624,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <img
               alt="iOS"
-              class="img_lazy case_technologies-item__tech-icon case_technologies-item__apple-black apple-black"
+              class="case_technologies-item__tech-icon case_technologies-item__apple-black apple-black"
               data-src="[object Object]"
               height="40"
               width="40"
@@ -1644,7 +1643,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <img
               alt="Android"
-              class="img_lazy case_technologies-item__tech-icon case_technologies-item__android-black-text android-black-text"
+              class="case_technologies-item__tech-icon case_technologies-item__android-black-text android-black-text"
               data-src="[object Object]"
               height="40"
               width="40"
@@ -1663,7 +1662,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <img
               alt="Ubuntu"
-              class="img_lazy case_technologies-item__tech-icon case_technologies-item__ubuntu ubuntu"
+              class="case_technologies-item__tech-icon case_technologies-item__ubuntu ubuntu"
               data-src="[object Object]"
               height="40"
               width="40"
@@ -1682,7 +1681,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <img
               alt="Ansible"
-              class="img_lazy case_technologies-item__tech-icon case_technologies-item__ansible ansible"
+              class="case_technologies-item__tech-icon case_technologies-item__ansible ansible"
               data-src="[object Object]"
               height="40"
               width="40"
@@ -1701,7 +1700,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <img
               alt="Sentry"
-              class="img_lazy case_technologies-item__tech-icon case_technologies-item__sentry-black sentry-black"
+              class="case_technologies-item__tech-icon case_technologies-item__sentry-black sentry-black"
               data-src="[object Object]"
               height="40"
               width="40"
@@ -1720,7 +1719,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <img
               alt="Elasticsearch"
-              class="img_lazy case_technologies-item__tech-icon case_technologies-item__elastic elastic"
+              class="case_technologies-item__tech-icon case_technologies-item__elastic elastic"
               data-src="[object Object]"
               height="40"
               width="40"
@@ -1739,7 +1738,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <img
               alt="Logstash"
-              class="img_lazy case_technologies-item__tech-icon case_technologies-item__logstash logstash"
+              class="case_technologies-item__tech-icon case_technologies-item__logstash logstash"
               data-src="[object Object]"
               height="40"
               width="40"
@@ -1758,7 +1757,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <img
               alt="Kibana"
-              class="img_lazy case_technologies-item__tech-icon case_technologies-item__kibana kibana"
+              class="case_technologies-item__tech-icon case_technologies-item__kibana kibana"
               data-src="[object Object]"
               height="40"
               width="40"
@@ -1777,7 +1776,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <img
               alt="Prometheus"
-              class="img_lazy case_technologies-item__tech-icon case_technologies-item__prometheus prometheus"
+              class="case_technologies-item__tech-icon case_technologies-item__prometheus prometheus"
               data-src="[object Object]"
               height="40"
               width="40"
@@ -1851,14 +1850,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   >
                     <picture>
                       <source
-                        class="image media_lazy"
+                        class="image"
                         data-srcset="s3 image url,s3 image url"
                         type="image/webp"
                       />
                        
                       <img
                         alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                        class="image media_lazy"
+                        class="image"
                         data-src="s3 image url"
                         data-srcset="s3 image url"
                         data-testid="test-picture-img"
@@ -1872,14 +1871,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   >
                     <picture>
                       <source
-                        class="image media_lazy"
+                        class="image"
                         data-srcset="s3 image url,s3 image url"
                         type="image/webp"
                       />
                        
                       <img
                         alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                        class="image media_lazy"
+                        class="image"
                         data-src="s3 image url"
                         data-srcset="s3 image url"
                         data-testid="test-picture-img"
@@ -1893,14 +1892,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   >
                     <picture>
                       <source
-                        class="image media_lazy"
+                        class="image"
                         data-srcset="s3 image url,s3 image url"
                         type="image/webp"
                       />
                        
                       <img
                         alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                        class="image media_lazy"
+                        class="image"
                         data-src="s3 image url"
                         data-srcset="s3 image url"
                         data-testid="test-picture-img"
@@ -1914,14 +1913,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   >
                     <picture>
                       <source
-                        class="image media_lazy"
+                        class="image"
                         data-srcset="s3 image url,s3 image url"
                         type="image/webp"
                       />
                        
                       <img
                         alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                        class="image media_lazy"
+                        class="image"
                         data-src="s3 image url"
                         data-srcset="s3 image url"
                         data-testid="test-picture-img"
@@ -1935,14 +1934,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   >
                     <picture>
                       <source
-                        class="image media_lazy"
+                        class="image"
                         data-srcset="s3 image url,s3 image url"
                         type="image/webp"
                       />
                        
                       <img
                         alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                        class="image media_lazy"
+                        class="image"
                         data-src="s3 image url"
                         data-srcset="s3 image url"
                         data-testid="test-picture-img"
@@ -1974,14 +1973,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 >
                   <picture>
                     <source
-                      class="image media_lazy"
+                      class="image"
                       data-srcset="s3 image url,s3 image url"
                       type="image/webp"
                     />
                      
                     <img
                       alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                      class="image media_lazy"
+                      class="image"
                       data-src="s3 image url"
                       data-srcset="s3 image url"
                       data-testid="test-picture-img"
@@ -1995,14 +1994,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 >
                   <picture>
                     <source
-                      class="image media_lazy"
+                      class="image"
                       data-srcset="s3 image url,s3 image url"
                       type="image/webp"
                     />
                      
                     <img
                       alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                      class="image media_lazy"
+                      class="image"
                       data-src="s3 image url"
                       data-srcset="s3 image url"
                       data-testid="test-picture-img"
@@ -2016,14 +2015,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 >
                   <picture>
                     <source
-                      class="image media_lazy"
+                      class="image"
                       data-srcset="s3 image url,s3 image url"
                       type="image/webp"
                     />
                      
                     <img
                       alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                      class="image media_lazy"
+                      class="image"
                       data-src="s3 image url"
                       data-srcset="s3 image url"
                       data-testid="test-picture-img"
@@ -2037,14 +2036,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 >
                   <picture>
                     <source
-                      class="image media_lazy"
+                      class="image"
                       data-srcset="s3 image url,s3 image url"
                       type="image/webp"
                     />
                      
                     <img
                       alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                      class="image media_lazy"
+                      class="image"
                       data-src="s3 image url"
                       data-srcset="s3 image url"
                       data-testid="test-picture-img"
@@ -2058,14 +2057,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 >
                   <picture>
                     <source
-                      class="image media_lazy"
+                      class="image"
                       data-srcset="s3 image url,s3 image url"
                       type="image/webp"
                     />
                      
                     <img
                       alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                      class="image media_lazy"
+                      class="image"
                       data-src="s3 image url"
                       data-srcset="s3 image url"
                       data-testid="test-picture-img"
@@ -2168,14 +2167,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
         >
           <picture>
             <source
-              class="image box-shadow media_lazy"
+              class="image box-shadow"
               data-srcset="s3 image url,s3 image url"
               type="image/webp"
             />
              
             <img
               alt="Kibana Reports Which Help to Manage SJMC Hardware in a Single Dashboard."
-              class="image box-shadow media_lazy"
+              class="image box-shadow"
               data-src="s3 image url"
               data-srcset="s3 image url"
               data-testid="test-picture-img"
@@ -2277,7 +2276,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <img
               alt="blockquote"
-              class="case_mark img_lazy"
+              class="case_mark"
               data-src="[object Object]"
               height="50"
               width="50"
@@ -2324,14 +2323,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
             >
               <picture>
                 <source
-                  class="image media_lazy"
+                  class="image"
                   data-srcset="s3 image url,s3 image url"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Safari Top Bar."
-                  class="image media_lazy"
+                  class="image"
                   data-src="s3 image url"
                   data-srcset="s3 image url"
                   data-testid="test-picture-img"
@@ -2353,14 +2352,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   >
                     <picture>
                       <source
-                        class="image media_lazy"
+                        class="image"
                         data-srcset="s3 image url,s3 image url"
                         type="image/webp"
                       />
                        
                       <img
                         alt="SJMC System Monitoring."
-                        class="image media_lazy"
+                        class="image"
                         data-src="s3 image url"
                         data-srcset="s3 image url"
                         data-testid="test-picture-img"
@@ -2374,14 +2373,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   >
                     <picture>
                       <source
-                        class="image media_lazy"
+                        class="image"
                         data-srcset="s3 image url,s3 image url"
                         type="image/webp"
                       />
                        
                       <img
                         alt="SJMC System Monitoring."
-                        class="image media_lazy"
+                        class="image"
                         data-src="s3 image url"
                         data-srcset="s3 image url"
                         data-testid="test-picture-img"
@@ -2413,14 +2412,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 >
                   <picture>
                     <source
-                      class="image media_lazy"
+                      class="image"
                       data-srcset="s3 image url,s3 image url"
                       type="image/webp"
                     />
                      
                     <img
                       alt="SJMC System Monitoring."
-                      class="image media_lazy"
+                      class="image"
                       data-src="s3 image url"
                       data-srcset="s3 image url"
                       data-testid="test-picture-img"
@@ -2434,14 +2433,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 >
                   <picture>
                     <source
-                      class="image media_lazy"
+                      class="image"
                       data-srcset="s3 image url,s3 image url"
                       type="image/webp"
                     />
                      
                     <img
                       alt="SJMC System Monitoring."
-                      class="image media_lazy"
+                      class="image"
                       data-src="s3 image url"
                       data-srcset="s3 image url"
                       data-testid="test-picture-img"
@@ -2502,14 +2501,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
         >
           <picture>
             <source
-              class="image box-shadow media_lazy"
+              class="image box-shadow"
               data-srcset="s3 image url,s3 image url"
               type="image/webp"
             />
              
             <img
               alt="Kibana Reports Which Help to Manage SJMC Hardware in a Single Dashboard."
-              class="image box-shadow media_lazy"
+              class="image box-shadow"
               data-src="s3 image url"
               data-srcset="s3 image url"
               data-testid="test-picture-img"
@@ -2738,14 +2737,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   >
                     <picture>
                       <source
-                        class="image media_lazy"
+                        class="image"
                         data-srcset="s3 image url,s3 image url"
                         type="image/webp"
                       />
                        
                       <img
                         alt="Mad Devs’ Team Trip to the SJMC."
-                        class="image media_lazy"
+                        class="image"
                         data-src="s3 image url"
                         data-srcset="s3 image url"
                         data-testid="test-picture-img"
@@ -2759,14 +2758,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   >
                     <picture>
                       <source
-                        class="image media_lazy"
+                        class="image"
                         data-srcset="s3 image url,s3 image url"
                         type="image/webp"
                       />
                        
                       <img
                         alt="Mad Devs’ Team Trip to the SJMC."
-                        class="image media_lazy"
+                        class="image"
                         data-src="s3 image url"
                         data-srcset="s3 image url"
                         data-testid="test-picture-img"
@@ -2780,14 +2779,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   >
                     <picture>
                       <source
-                        class="image media_lazy"
+                        class="image"
                         data-srcset="s3 image url,s3 image url"
                         type="image/webp"
                       />
                        
                       <img
                         alt="Mad Devs’ Team Trip to the SJMC."
-                        class="image media_lazy"
+                        class="image"
                         data-src="s3 image url"
                         data-srcset="s3 image url"
                         data-testid="test-picture-img"
@@ -2801,14 +2800,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   >
                     <picture>
                       <source
-                        class="image media_lazy"
+                        class="image"
                         data-srcset="s3 image url,s3 image url"
                         type="image/webp"
                       />
                        
                       <img
                         alt="Mad Devs’ Team Trip to the SJMC."
-                        class="image media_lazy"
+                        class="image"
                         data-src="s3 image url"
                         data-srcset="s3 image url"
                         data-testid="test-picture-img"
@@ -2822,14 +2821,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   >
                     <picture>
                       <source
-                        class="image media_lazy"
+                        class="image"
                         data-srcset="s3 image url,s3 image url"
                         type="image/webp"
                       />
                        
                       <img
                         alt="Mad Devs’ Team Trip to the SJMC."
-                        class="image media_lazy"
+                        class="image"
                         data-src="s3 image url"
                         data-srcset="s3 image url"
                         data-testid="test-picture-img"
@@ -2861,14 +2860,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 >
                   <picture>
                     <source
-                      class="image media_lazy"
+                      class="image"
                       data-srcset="s3 image url,s3 image url"
                       type="image/webp"
                     />
                      
                     <img
                       alt="Mad Devs’ Team Trip to the SJMC."
-                      class="image media_lazy"
+                      class="image"
                       data-src="s3 image url"
                       data-srcset="s3 image url"
                       data-testid="test-picture-img"
@@ -2882,14 +2881,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 >
                   <picture>
                     <source
-                      class="image media_lazy"
+                      class="image"
                       data-srcset="s3 image url,s3 image url"
                       type="image/webp"
                     />
                      
                     <img
                       alt="Mad Devs’ Team Trip to the SJMC."
-                      class="image media_lazy"
+                      class="image"
                       data-src="s3 image url"
                       data-srcset="s3 image url"
                       data-testid="test-picture-img"
@@ -2903,14 +2902,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 >
                   <picture>
                     <source
-                      class="image media_lazy"
+                      class="image"
                       data-srcset="s3 image url,s3 image url"
                       type="image/webp"
                     />
                      
                     <img
                       alt="Mad Devs’ Team Trip to the SJMC."
-                      class="image media_lazy"
+                      class="image"
                       data-src="s3 image url"
                       data-srcset="s3 image url"
                       data-testid="test-picture-img"
@@ -2924,14 +2923,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 >
                   <picture>
                     <source
-                      class="image media_lazy"
+                      class="image"
                       data-srcset="s3 image url,s3 image url"
                       type="image/webp"
                     />
                      
                     <img
                       alt="Mad Devs’ Team Trip to the SJMC."
-                      class="image media_lazy"
+                      class="image"
                       data-src="s3 image url"
                       data-srcset="s3 image url"
                       data-testid="test-picture-img"
@@ -2945,14 +2944,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 >
                   <picture>
                     <source
-                      class="image media_lazy"
+                      class="image"
                       data-srcset="s3 image url,s3 image url"
                       type="image/webp"
                     />
                      
                     <img
                       alt="Mad Devs’ Team Trip to the SJMC."
-                      class="image media_lazy"
+                      class="image"
                       data-src="s3 image url"
                       data-srcset="s3 image url"
                       data-testid="test-picture-img"
@@ -3030,14 +3029,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 class="case_team-item__image"
               >
                 <source
-                  class="image grey-background media_lazy"
+                  class="image grey-background"
                   data-srcset="s3 image url,s3 image url"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Kirill Zinchenko"
-                  class="image grey-background media_lazy"
+                  class="image grey-background"
                   data-src="s3 image url"
                   data-srcset="s3 image url"
                   data-testid="test-picture-img"
@@ -3073,14 +3072,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 class="case_team-item__image"
               >
                 <source
-                  class="image grey-background media_lazy"
+                  class="image grey-background"
                   data-srcset="s3 image url,s3 image url"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Vlad Andreev"
-                  class="image grey-background media_lazy"
+                  class="image grey-background"
                   data-src="s3 image url"
                   data-srcset="s3 image url"
                   data-testid="test-picture-img"
@@ -3116,14 +3115,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 class="case_team-item__image"
               >
                 <source
-                  class="image grey-background media_lazy"
+                  class="image grey-background"
                   data-srcset="s3 image url,s3 image url"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Aleksandr Zhitov"
-                  class="image grey-background media_lazy"
+                  class="image grey-background"
                   data-src="s3 image url"
                   data-srcset="s3 image url"
                   data-testid="test-picture-img"
@@ -3159,14 +3158,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 class="case_team-item__image"
               >
                 <source
-                  class="image grey-background media_lazy"
+                  class="image grey-background"
                   data-srcset="s3 image url,s3 image url"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Sergey Boyko"
-                  class="image grey-background media_lazy"
+                  class="image grey-background"
                   data-src="s3 image url"
                   data-srcset="s3 image url"
                   data-testid="test-picture-img"
@@ -3202,14 +3201,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 class="case_team-item__image"
               >
                 <source
-                  class="image grey-background media_lazy"
+                  class="image grey-background"
                   data-srcset="s3 image url,s3 image url"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Andrew Minkin"
-                  class="image grey-background media_lazy"
+                  class="image grey-background"
                   data-src="s3 image url"
                   data-srcset="s3 image url"
                   data-testid="test-picture-img"
@@ -3245,14 +3244,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 class="case_team-item__image"
               >
                 <source
-                  class="image grey-background media_lazy"
+                  class="image grey-background"
                   data-srcset="s3 image url,s3 image url"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Dmitri Khalezin"
-                  class="image grey-background media_lazy"
+                  class="image grey-background"
                   data-src="s3 image url"
                   data-srcset="s3 image url"
                   data-testid="test-picture-img"
@@ -3288,14 +3287,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 class="case_team-item__image"
               >
                 <source
-                  class="image grey-background media_lazy"
+                  class="image grey-background"
                   data-srcset="s3 image url,s3 image url"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Kirill Avdeev"
-                  class="image grey-background media_lazy"
+                  class="image grey-background"
                   data-src="s3 image url"
                   data-srcset="s3 image url"
                   data-testid="test-picture-img"
@@ -3331,14 +3330,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 class="case_team-item__image"
               >
                 <source
-                  class="image grey-background media_lazy"
+                  class="image grey-background"
                   data-srcset="s3 image url,s3 image url"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Stanislav Shcherbinin"
-                  class="image grey-background media_lazy"
+                  class="image grey-background"
                   data-src="s3 image url"
                   data-srcset="s3 image url"
                   data-testid="test-picture-img"
@@ -3374,14 +3373,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 class="case_team-item__image"
               >
                 <source
-                  class="image grey-background media_lazy"
+                  class="image grey-background"
                   data-srcset="s3 image url,s3 image url"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Aleksandr Astashov"
-                  class="image grey-background media_lazy"
+                  class="image grey-background"
                   data-src="s3 image url"
                   data-srcset="s3 image url"
                   data-testid="test-picture-img"
@@ -3417,14 +3416,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 class="case_team-item__image"
               >
                 <source
-                  class="image grey-background media_lazy"
+                  class="image grey-background"
                   data-srcset="s3 image url,s3 image url"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Ruslan Kasymov"
-                  class="image grey-background media_lazy"
+                  class="image grey-background"
                   data-src="s3 image url"
                   data-srcset="s3 image url"
                   data-testid="test-picture-img"
@@ -3460,14 +3459,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 class="case_team-item__image"
               >
                 <source
-                  class="image grey-background media_lazy"
+                  class="image grey-background"
                   data-srcset="s3 image url,s3 image url"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Pavel Pushkarev"
-                  class="image grey-background media_lazy"
+                  class="image grey-background"
                   data-src="s3 image url"
                   data-srcset="s3 image url"
                   data-testid="test-picture-img"
@@ -3503,14 +3502,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 class="case_team-item__image"
               >
                 <source
-                  class="image grey-background media_lazy"
+                  class="image grey-background"
                   data-srcset="s3 image url,s3 image url"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Rustom Kulbatyrov"
-                  class="image grey-background media_lazy"
+                  class="image grey-background"
                   data-src="s3 image url"
                   data-srcset="s3 image url"
                   data-testid="test-picture-img"
@@ -3593,14 +3592,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
             >
               <picture>
                 <source
-                  class="image media_lazy"
+                  class="image"
                   data-srcset="s3 image url,s3 image url"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Wade Bartlett"
-                  class="image media_lazy"
+                  class="image"
                   data-src="s3 image url"
                   data-srcset="s3 image url"
                   data-testid="test-picture-img"
@@ -3635,7 +3634,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
     >
       <img
         alt="Namba Food"
-        class="case_logotype-namba-food img_lazy"
+        class="case_logotype-namba-food"
         data-src="[object Object]"
         height="63"
         width="200"

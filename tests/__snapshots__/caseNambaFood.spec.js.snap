@@ -14,7 +14,7 @@ exports[`namba food renders correctly 1`] = `
      
     <video
       autoplay="autoplay"
-      class="case_main-video media_lazy"
+      class="case_main-video"
       data-testid="test-case_main-video"
       loop="loop"
       muted="muted"
@@ -230,14 +230,14 @@ exports[`namba food renders correctly 1`] = `
           >
             <picture>
               <source
-                class="image media_lazy"
+                class="image"
                 data-srcset="s3 image url,s3 image url"
                 type="image/webp"
               />
                
               <img
                 alt="Namba Food: Food and Grocery Delivery Service Couriers."
-                class="image media_lazy"
+                class="image"
                 data-src="s3 image url"
                 data-srcset="s3 image url"
                 data-testid="test-picture-img"
@@ -1611,7 +1611,7 @@ exports[`namba food renders correctly 1`] = `
           class="case_full-screen-phone-video-wrapper"
         >
           <video
-            class="case_full-screen-video media_lazy"
+            class="case_full-screen-video"
             height="100%"
             id="iphone-silver-video"
             loop="loop"
@@ -1758,14 +1758,14 @@ exports[`namba food renders correctly 1`] = `
         >
           <picture>
             <source
-              class="image media_lazy"
+              class="image"
               data-srcset="s3 image url,s3 image url"
               type="image/webp"
             />
              
             <img
               alt="Namba Food: Courier App for Android."
-              class="image media_lazy"
+              class="image"
               data-src="s3 image url"
               data-srcset="s3 image url"
               data-testid="test-picture-img"
@@ -1823,14 +1823,14 @@ exports[`namba food renders correctly 1`] = `
       >
         <picture>
           <source
-            class="image box-shadow media_lazy"
+            class="image box-shadow"
             data-srcset="s3 image url,s3 image url"
             type="image/webp"
           />
            
           <img
             alt="Namba Food: Admin Panel Which Help to Manage Food and Grocery Delivery."
-            class="image box-shadow media_lazy"
+            class="image box-shadow"
             data-src="s3 image url"
             data-srcset="s3 image url"
             data-testid="test-picture-img"
@@ -1859,7 +1859,7 @@ exports[`namba food renders correctly 1`] = `
       >
         <img
           alt="blockquote"
-          class="case_mark img_lazy"
+          class="case_mark"
           data-src="[object Object]"
           height="50"
           width="50"
@@ -2023,14 +2023,14 @@ exports[`namba food renders correctly 1`] = `
           >
             <picture>
               <source
-                class="image media_lazy"
+                class="image"
                 data-srcset="s3 image url,s3 image url"
                 type="image/webp"
               />
                
               <img
                 alt="Namba Food: Food and Grocery Delivery Service Website Header."
-                class="image media_lazy"
+                class="image"
                 data-src="s3 image url"
                 data-srcset="s3 image url"
                 data-testid="test-picture-img"
@@ -2052,14 +2052,14 @@ exports[`namba food renders correctly 1`] = `
                 >
                   <picture>
                     <source
-                      class="image media_lazy"
+                      class="image"
                       data-srcset="s3 image url,s3 image url"
                       type="image/webp"
                     />
                      
                     <img
                       alt="Namba Food: Swift microservice-based admin panel which help to control food and grocery delivery."
-                      class="image media_lazy"
+                      class="image"
                       data-src="s3 image url"
                       data-srcset="s3 image url"
                       data-testid="test-picture-img"
@@ -2073,14 +2073,14 @@ exports[`namba food renders correctly 1`] = `
                 >
                   <picture>
                     <source
-                      class="image media_lazy"
+                      class="image"
                       data-srcset="s3 image url,s3 image url"
                       type="image/webp"
                     />
                      
                     <img
                       alt="Namba Food Delivery Control Dashboard."
-                      class="image media_lazy"
+                      class="image"
                       data-src="s3 image url"
                       data-srcset="s3 image url"
                       data-testid="test-picture-img"
@@ -2112,14 +2112,14 @@ exports[`namba food renders correctly 1`] = `
               >
                 <picture>
                   <source
-                    class="image media_lazy"
+                    class="image"
                     data-srcset="s3 image url,s3 image url"
                     type="image/webp"
                   />
                    
                   <img
                     alt="Namba Food: Swift microservice-based admin panel which help to control food and grocery delivery."
-                    class="image media_lazy"
+                    class="image"
                     data-src="s3 image url"
                     data-srcset="s3 image url"
                     data-testid="test-picture-img"
@@ -2133,14 +2133,14 @@ exports[`namba food renders correctly 1`] = `
               >
                 <picture>
                   <source
-                    class="image media_lazy"
+                    class="image"
                     data-srcset="s3 image url,s3 image url"
                     type="image/webp"
                   />
                    
                   <img
                     alt="Namba Food Delivery Control Dashboard."
-                    class="image media_lazy"
+                    class="image"
                     data-src="s3 image url"
                     data-srcset="s3 image url"
                     data-testid="test-picture-img"
@@ -2347,7 +2347,7 @@ exports[`namba food renders correctly 1`] = `
           class="case_map-video-wrapper case_box-shadow"
         >
           <video
-            class="case_map-video media_lazy"
+            class="case_map-video"
             height="100%"
             id="map-video"
             loop="loop"
@@ -2394,14 +2394,14 @@ exports[`namba food renders correctly 1`] = `
       >
         <picture>
           <source
-            class="image box-shadow media_lazy"
+            class="image box-shadow"
             data-srcset="s3 image url,s3 image url"
             type="image/webp"
           />
            
           <img
             alt="Namba Food: Software Stability Monitoring with Grafana."
-            class="image box-shadow media_lazy"
+            class="image box-shadow"
             data-src="s3 image url"
             data-srcset="s3 image url"
             data-testid="test-picture-img"
@@ -2440,7 +2440,7 @@ exports[`namba food renders correctly 1`] = `
         >
           <img
             alt="MySQL"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__mysql mysql"
+            class="case_technologies-item__tech-icon case_technologies-item__mysql mysql"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -2459,7 +2459,7 @@ exports[`namba food renders correctly 1`] = `
         >
           <img
             alt="PHP Symfony2"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__symfony symfony"
+            class="case_technologies-item__tech-icon case_technologies-item__symfony symfony"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -2478,7 +2478,7 @@ exports[`namba food renders correctly 1`] = `
         >
           <img
             alt="Laravel"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__laravel laravel"
+            class="case_technologies-item__tech-icon case_technologies-item__laravel laravel"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -2498,7 +2498,7 @@ exports[`namba food renders correctly 1`] = `
         >
           <img
             alt="Docker"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__docker docker"
+            class="case_technologies-item__tech-icon case_technologies-item__docker docker"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -2517,7 +2517,7 @@ exports[`namba food renders correctly 1`] = `
         >
           <img
             alt="Nginx"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__nginx nginx"
+            class="case_technologies-item__tech-icon case_technologies-item__nginx nginx"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -2536,7 +2536,7 @@ exports[`namba food renders correctly 1`] = `
         >
           <img
             alt="Redis"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__redis redis"
+            class="case_technologies-item__tech-icon case_technologies-item__redis redis"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -2555,7 +2555,7 @@ exports[`namba food renders correctly 1`] = `
         >
           <img
             alt="Python (Django)"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__python python"
+            class="case_technologies-item__tech-icon case_technologies-item__python python"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -2574,7 +2574,7 @@ exports[`namba food renders correctly 1`] = `
         >
           <img
             alt="Golang"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__go go"
+            class="case_technologies-item__tech-icon case_technologies-item__go go"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -2593,7 +2593,7 @@ exports[`namba food renders correctly 1`] = `
         >
           <img
             alt="Kotlin"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__kotlin kotlin"
+            class="case_technologies-item__tech-icon case_technologies-item__kotlin kotlin"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -2612,7 +2612,7 @@ exports[`namba food renders correctly 1`] = `
         >
           <img
             alt="Java"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__java java"
+            class="case_technologies-item__tech-icon case_technologies-item__java java"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -2631,7 +2631,7 @@ exports[`namba food renders correctly 1`] = `
         >
           <img
             alt="Swift"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__swift swift"
+            class="case_technologies-item__tech-icon case_technologies-item__swift swift"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -2650,7 +2650,7 @@ exports[`namba food renders correctly 1`] = `
         >
           <img
             alt="Firebase"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__firebase firebase"
+            class="case_technologies-item__tech-icon case_technologies-item__firebase firebase"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -2669,7 +2669,7 @@ exports[`namba food renders correctly 1`] = `
         >
           <img
             alt="TestFlight"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__test-flight test-flight"
+            class="case_technologies-item__tech-icon case_technologies-item__test-flight test-flight"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -2688,7 +2688,7 @@ exports[`namba food renders correctly 1`] = `
         >
           <img
             alt="OpenStreetMap"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__open-street-map open-street-map"
+            class="case_technologies-item__tech-icon case_technologies-item__open-street-map open-street-map"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -2707,7 +2707,7 @@ exports[`namba food renders correctly 1`] = `
         >
           <img
             alt="PHP"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__php php"
+            class="case_technologies-item__tech-icon case_technologies-item__php php"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -2726,7 +2726,7 @@ exports[`namba food renders correctly 1`] = `
         >
           <img
             alt="Jira Assistant"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__jira-assistant-blue jira-assistant-blue"
+            class="case_technologies-item__tech-icon case_technologies-item__jira-assistant-blue jira-assistant-blue"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -2745,7 +2745,7 @@ exports[`namba food renders correctly 1`] = `
         >
           <img
             alt="Grafana"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__grafana grafana"
+            class="case_technologies-item__tech-icon case_technologies-item__grafana grafana"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -2764,7 +2764,7 @@ exports[`namba food renders correctly 1`] = `
         >
           <img
             alt="Sentry"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__sentry-black sentry-black"
+            class="case_technologies-item__tech-icon case_technologies-item__sentry-black sentry-black"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -3382,14 +3382,14 @@ exports[`namba food renders correctly 1`] = `
         >
           <picture>
             <source
-              class="image media_lazy"
+              class="image"
               data-srcset="s3 image url,s3 image url"
               type="image/webp"
             />
              
             <img
               alt="Namba Food: Automated Deployment Stage Scheme."
-              class="image media_lazy"
+              class="image"
               data-src="s3 image url"
               data-srcset="s3 image url"
               data-testid="test-picture-img"
@@ -3408,14 +3408,14 @@ exports[`namba food renders correctly 1`] = `
         >
           <picture>
             <source
-              class="image media_lazy"
+              class="image"
               data-srcset="s3 image url,s3 image url"
               type="image/webp"
             />
              
             <img
               alt="Namba Food: Automated Deployment Stage Scheme."
-              class="image media_lazy"
+              class="image"
               data-src="s3 image url"
               data-srcset="s3 image url"
               data-testid="test-picture-img"
@@ -3458,14 +3458,14 @@ exports[`namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-srcset="s3 image url,s3 image url"
               type="image/webp"
             />
              
             <img
               alt="Vlad Andreev"
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-src="s3 image url"
               data-srcset="s3 image url"
               data-testid="test-picture-img"
@@ -3501,14 +3501,14 @@ exports[`namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-srcset="s3 image url,s3 image url"
               type="image/webp"
             />
              
             <img
               alt="Gulbustan Baudunova"
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-src="s3 image url"
               data-srcset="s3 image url"
               data-testid="test-picture-img"
@@ -3544,14 +3544,14 @@ exports[`namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-srcset="s3 image url,s3 image url"
               type="image/webp"
             />
              
             <img
               alt="Tamara Mun"
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-src="s3 image url"
               data-srcset="s3 image url"
               data-testid="test-picture-img"
@@ -3587,14 +3587,14 @@ exports[`namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-srcset="s3 image url,s3 image url"
               type="image/webp"
             />
              
             <img
               alt="Aidai Atakulova"
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-src="s3 image url"
               data-srcset="s3 image url"
               data-testid="test-picture-img"
@@ -3630,14 +3630,14 @@ exports[`namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-srcset="s3 image url,s3 image url"
               type="image/webp"
             />
              
             <img
               alt="Baurzhan Omuraliev"
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-src="s3 image url"
               data-srcset="s3 image url"
               data-testid="test-picture-img"
@@ -3673,14 +3673,14 @@ exports[`namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-srcset="s3 image url,s3 image url"
               type="image/webp"
             />
              
             <img
               alt="Nakylai Taiirova"
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-src="s3 image url"
               data-srcset="s3 image url"
               data-testid="test-picture-img"
@@ -3716,14 +3716,14 @@ exports[`namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-srcset="s3 image url,s3 image url"
               type="image/webp"
             />
              
             <img
               alt="Akylbek Djumaliev"
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-src="s3 image url"
               data-srcset="s3 image url"
               data-testid="test-picture-img"
@@ -3759,14 +3759,14 @@ exports[`namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-srcset="s3 image url,s3 image url"
               type="image/webp"
             />
              
             <img
               alt="Stanislav Shcherbinin"
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-src="s3 image url"
               data-srcset="s3 image url"
               data-testid="test-picture-img"
@@ -3802,14 +3802,14 @@ exports[`namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-srcset="s3 image url,s3 image url"
               type="image/webp"
             />
              
             <img
               alt="Eldar Akkozov"
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-src="s3 image url"
               data-srcset="s3 image url"
               data-testid="test-picture-img"
@@ -3845,14 +3845,14 @@ exports[`namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-srcset="s3 image url,s3 image url"
               type="image/webp"
             />
              
             <img
               alt="Altynai Toktomuratova"
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-src="s3 image url"
               data-srcset="s3 image url"
               data-testid="test-picture-img"
@@ -3888,14 +3888,14 @@ exports[`namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-srcset="s3 image url,s3 image url"
               type="image/webp"
             />
              
             <img
               alt="Dmitrii Khalezin"
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-src="s3 image url"
               data-srcset="s3 image url"
               data-testid="test-picture-img"
@@ -3931,14 +3931,14 @@ exports[`namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-srcset="s3 image url,s3 image url"
               type="image/webp"
             />
              
             <img
               alt="Belek Abylov"
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-src="s3 image url"
               data-srcset="s3 image url"
               data-testid="test-picture-img"
@@ -4088,7 +4088,7 @@ exports[`namba food renders correctly 1`] = `
                  
                 <img
                   alt="Yearly increase"
-                  class="card-content_chart card-content_yearly-increase img_lazy"
+                  class="card-content_chart card-content_yearly-increase"
                   data-src="[object Object]"
                   height="120"
                   width="191"
@@ -4096,7 +4096,7 @@ exports[`namba food renders correctly 1`] = `
                  
                 <img
                   alt="Yearly increase"
-                  class="card-content_chart card-content_yearly-increase--mobile img_lazy"
+                  class="card-content_chart card-content_yearly-increase--mobile"
                   data-src="[object Object]"
                   height="120"
                   width="332"
@@ -4116,7 +4116,7 @@ exports[`namba food renders correctly 1`] = `
                  
                 <img
                   alt="Increase in sales"
-                  class="card-content_chart card-content_increase-in-sales img_lazy"
+                  class="card-content_chart card-content_increase-in-sales"
                   data-src="[object Object]"
                   height="120"
                   width="191"
@@ -4124,7 +4124,7 @@ exports[`namba food renders correctly 1`] = `
                  
                 <img
                   alt="Increase in sales"
-                  class="card-content_chart card-content_increase-in-sales--mobile img_lazy"
+                  class="card-content_chart card-content_increase-in-sales--mobile"
                   data-src="[object Object]"
                   height="120"
                   width="332"
@@ -4319,14 +4319,14 @@ exports[`namba food renders correctly 1`] = `
           >
             <picture>
               <source
-                class="image media_lazy"
+                class="image"
                 data-srcset="s3 image url,s3 image url"
                 type="image/webp"
               />
                
               <img
                 alt="Aziza Anarbekova"
-                class="image media_lazy"
+                class="image"
                 data-src="s3 image url"
                 data-srcset="s3 image url"
                 data-testid="test-picture-img"
@@ -4361,7 +4361,7 @@ exports[`namba food renders correctly 1`] = `
   >
     <img
       alt="SJMC"
-      class="case_logotype-sjmc img_lazy"
+      class="case_logotype-sjmc"
       data-src="[object Object]"
       height="113"
       width="253"

@@ -54,7 +54,7 @@ exports[`PekloToolUnderTheHood component should render correctly 1`] = `
           >
             <img
               alt="Go Service for campaign generation"
-              class="case_card-icon media_lazy case_card-icon-go"
+              class="case_card-icon case_card-icon-go"
               data-src="s3 image url"
               height="112"
               width="221"
@@ -86,7 +86,7 @@ exports[`PekloToolUnderTheHood component should render correctly 1`] = `
           >
             <img
               alt="Ruby on Rails for backend"
-              class="case_card-icon media_lazy case_card-icon-ruby"
+              class="case_card-icon case_card-icon-ruby"
               data-src="s3 image url"
               height="133"
               width="133"
@@ -122,7 +122,7 @@ exports[`PekloToolUnderTheHood component should render correctly 1`] = `
           >
             <img
               alt="Vue.js <br> for frontend"
-              class="case_card-icon media_lazy case_card-icon-vue"
+              class="case_card-icon case_card-icon-vue"
               data-src="s3 image url"
               height="110"
               width="211"
@@ -142,7 +142,7 @@ exports[`PekloToolUnderTheHood component should render correctly 1`] = `
        
       <img
         alt="Peklo Tool’s architecture"
-        class="case_architecture-img media_lazy"
+        class="case_architecture-img"
         data-src="s3 image url"
         height="408"
         width="816"

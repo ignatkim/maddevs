@@ -32,7 +32,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
              
             <img
               alt="Marat Bediev - Senior DevOps Engineer at Mad Devs Software and Mobile App Development Company."
-              class="multi-image img_lazy"
+              class="multi-image"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
               data-testid="test-multi-image"
@@ -67,7 +67,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
            
           <img
             alt="Linkedin"
-            class="meet-our-experts__expert-linkedin-link img_lazy"
+            class="meet-our-experts__expert-linkedin-link"
             data-src="[object Object]"
             height="24"
             width="24"
@@ -91,7 +91,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
              
             <img
               alt="Tamara Mun - Head of Delivery Management at Mad Devs Software and Mobile App Development Company."
-              class="multi-image img_lazy"
+              class="multi-image"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
               data-testid="test-multi-image"
@@ -126,7 +126,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
            
           <img
             alt="Linkedin"
-            class="meet-our-experts__expert-linkedin-link img_lazy"
+            class="meet-our-experts__expert-linkedin-link"
             data-src="[object Object]"
             height="24"
             width="24"
@@ -150,7 +150,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
              
             <img
               alt="Andrew \\"Сhuck\\" Minkin - CTO and Co-Founder at Mad Devs Software and Mobile App Development Company."
-              class="multi-image img_lazy"
+              class="multi-image"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
               data-testid="test-multi-image"
@@ -185,7 +185,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
            
           <img
             alt="Linkedin"
-            class="meet-our-experts__expert-linkedin-link img_lazy"
+            class="meet-our-experts__expert-linkedin-link"
             data-src="[object Object]"
             height="24"
             width="24"
@@ -209,7 +209,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
              
             <img
               alt="Nakylai Taiirova - Senior Full-Stack Developer at Mad Devs Software and Mobile App Development Company."
-              class="multi-image img_lazy"
+              class="multi-image"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
               data-testid="test-multi-image"
@@ -244,7 +244,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
            
           <img
             alt="Linkedin"
-            class="meet-our-experts__expert-linkedin-link img_lazy"
+            class="meet-our-experts__expert-linkedin-link"
             data-src="[object Object]"
             height="24"
             width="24"
@@ -268,7 +268,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
              
             <img
               alt="Daria Utesheva - Head of HR Department at Mad Devs Software and Mobile App Development Company."
-              class="multi-image img_lazy"
+              class="multi-image"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
               data-testid="test-multi-image"
@@ -303,7 +303,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
            
           <img
             alt="Linkedin"
-            class="meet-our-experts__expert-linkedin-link img_lazy"
+            class="meet-our-experts__expert-linkedin-link"
             data-src="[object Object]"
             height="24"
             width="24"
@@ -327,7 +327,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
              
             <img
               alt="Nuradil Alymkulov - Senior Full-Stack Developer at Mad Devs Software and Mobile App Development Company."
-              class="multi-image img_lazy"
+              class="multi-image"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
               data-testid="test-multi-image"
@@ -362,7 +362,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
            
           <img
             alt="Linkedin"
-            class="meet-our-experts__expert-linkedin-link img_lazy"
+            class="meet-our-experts__expert-linkedin-link"
             data-src="[object Object]"
             height="24"
             width="24"
@@ -386,7 +386,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
              
             <img
               alt="Alice Jang - Project Manager at Mad Devs Software and Mobile App Development Company."
-              class="multi-image img_lazy"
+              class="multi-image"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
               data-testid="test-multi-image"
@@ -421,7 +421,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
            
           <img
             alt="Linkedin"
-            class="meet-our-experts__expert-linkedin-link img_lazy"
+            class="meet-our-experts__expert-linkedin-link"
             data-src="[object Object]"
             height="24"
             width="24"
@@ -445,7 +445,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
              
             <img
               alt="Arthur Elizavetnikov - Project Manager at Mad Devs Software and Mobile App Development Company."
-              class="multi-image img_lazy"
+              class="multi-image"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
               data-testid="test-multi-image"
@@ -480,7 +480,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
            
           <img
             alt="Linkedin"
-            class="meet-our-experts__expert-linkedin-link img_lazy"
+            class="meet-our-experts__expert-linkedin-link"
             data-src="[object Object]"
             height="24"
             width="24"

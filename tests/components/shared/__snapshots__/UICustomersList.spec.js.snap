@@ -12,7 +12,7 @@ exports[`UICustomersList should render correctly 1`] = `
     >
       <img
         alt="topica"
-        class="icon-wrapper__icon media_lazy"
+        class="icon-wrapper__icon"
         data-src="[object Object]"
         data-testid="customer-icon"
         height="64"

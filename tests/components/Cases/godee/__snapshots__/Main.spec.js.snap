@@ -19,7 +19,7 @@ exports[`Main component should render correctly 1`] = `
        
       <video
         autoplay="autoplay"
-        class="case_main-video media_lazy"
+        class="case_main-video"
         data-testid="test-case_main-video"
         loop="loop"
         muted="muted"
@@ -101,7 +101,7 @@ exports[`Main component should render correctly 1`] = `
       >
         <img
           alt="blockquote"
-          class="case_mark img_lazy"
+          class="case_mark"
           data-src="[object Object]"
           height="50"
           width="50"
@@ -477,7 +477,7 @@ exports[`Main component should render correctly 1`] = `
           >
             <img
               alt="live-chat"
-              class="card-content_icon img_lazy"
+              class="card-content_icon"
               data-src="[object Object]"
               height="51.94"
               width="51.94"
@@ -510,7 +510,7 @@ exports[`Main component should render correctly 1`] = `
           >
             <img
               alt="trip-request"
-              class="card-content_icon img_lazy"
+              class="card-content_icon"
               data-src="[object Object]"
               height="51.94"
               width="51.94"
@@ -2134,14 +2134,14 @@ exports[`Main component should render correctly 1`] = `
           >
             <picture>
               <source
-                class="image grey-background media_lazy"
+                class="image grey-background"
                 data-srcset="/images/Cases/common/webp/safari-top-bar-white.webp ,/images/Cases/common/webp/safari-top-bar-white@2x.webp 2x"
                 type="image/webp"
               />
                
               <img
                 alt="GoDee: Safari Browser Top Bar White."
-                class="image grey-background media_lazy"
+                class="image grey-background"
                 data-src="/images/Cases/common/jpg/safari-top-bar-white.jpg"
                 data-srcset="/images/Cases/common/jpg/safari-top-bar-white.jpg"
                 data-testid="test-picture-img"
@@ -2204,14 +2204,14 @@ exports[`Main component should render correctly 1`] = `
           >
             <picture>
               <source
-                class="image grey-background media_lazy"
+                class="image grey-background"
                 data-srcset="/images/Cases/common/webp/safari-top-bar-white.webp ,/images/Cases/common/webp/safari-top-bar-white@2x.webp 2x"
                 type="image/webp"
               />
                
               <img
                 alt="GoDee: Safari Browser Top Bar White."
-                class="image grey-background media_lazy"
+                class="image grey-background"
                 data-src="/images/Cases/common/jpg/safari-top-bar-white.jpg"
                 data-srcset="/images/Cases/common/jpg/safari-top-bar-white.jpg"
                 data-testid="test-picture-img"
@@ -2324,14 +2324,14 @@ exports[`Main component should render correctly 1`] = `
           >
             <picture>
               <source
-                class="image grey-background media_lazy"
+                class="image grey-background"
                 data-srcset="/images/Cases/common/webp/safari-top-bar-white.webp ,/images/Cases/common/webp/safari-top-bar-white@2x.webp 2x"
                 type="image/webp"
               />
                
               <img
                 alt="GoDee: Safari Browser Top Bar White."
-                class="image grey-background media_lazy"
+                class="image grey-background"
                 data-src="/images/Cases/common/jpg/safari-top-bar-white.jpg"
                 data-srcset="/images/Cases/common/jpg/safari-top-bar-white.jpg"
                 data-testid="test-picture-img"
@@ -2458,14 +2458,14 @@ exports[`Main component should render correctly 1`] = `
         >
           <picture>
             <source
-              class="image media_lazy"
+              class="image"
               data-srcset="/images/Cases/godee/webp/real-time-eta-phone.webp ,/images/Cases/godee/webp/real-time-eta-phone@2x.webp 2x"
               type="image/webp"
             />
              
             <img
               alt="GoDee: Bus Transit App in Vietnam."
-              class="image media_lazy"
+              class="image"
               data-src="/images/Cases/godee/png/real-time-eta-phone.png"
               data-srcset="/images/Cases/godee/png/real-time-eta-phone.png"
               data-testid="test-picture-img"
@@ -3353,7 +3353,7 @@ exports[`Main component should render correctly 1`] = `
         >
           <img
             alt="Open Street Map"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__open-street-map open-street-map"
+            class="case_technologies-item__tech-icon case_technologies-item__open-street-map open-street-map"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -3372,7 +3372,7 @@ exports[`Main component should render correctly 1`] = `
         >
           <img
             alt="Google Maps"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__google-maps google-maps"
+            class="case_technologies-item__tech-icon case_technologies-item__google-maps google-maps"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -3391,7 +3391,7 @@ exports[`Main component should render correctly 1`] = `
         >
           <img
             alt="PostgreSQL"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__postgresql postgresql"
+            class="case_technologies-item__tech-icon case_technologies-item__postgresql postgresql"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -3411,7 +3411,7 @@ exports[`Main component should render correctly 1`] = `
         >
           <img
             alt="Docker"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__docker docker"
+            class="case_technologies-item__tech-icon case_technologies-item__docker docker"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -3430,7 +3430,7 @@ exports[`Main component should render correctly 1`] = `
         >
           <img
             alt="Nginx"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__nginx nginx"
+            class="case_technologies-item__tech-icon case_technologies-item__nginx nginx"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -3449,7 +3449,7 @@ exports[`Main component should render correctly 1`] = `
         >
           <img
             alt="Redis"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__redis redis"
+            class="case_technologies-item__tech-icon case_technologies-item__redis redis"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -3468,7 +3468,7 @@ exports[`Main component should render correctly 1`] = `
         >
           <img
             alt="Python (Django)"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__python python"
+            class="case_technologies-item__tech-icon case_technologies-item__python python"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -3487,7 +3487,7 @@ exports[`Main component should render correctly 1`] = `
         >
           <img
             alt="Golang"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__go go"
+            class="case_technologies-item__tech-icon case_technologies-item__go go"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -3506,7 +3506,7 @@ exports[`Main component should render correctly 1`] = `
         >
           <img
             alt="Kotlin"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__kotlin kotlin"
+            class="case_technologies-item__tech-icon case_technologies-item__kotlin kotlin"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -3525,7 +3525,7 @@ exports[`Main component should render correctly 1`] = `
         >
           <img
             alt="Atlassian"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__atlassian atlassian"
+            class="case_technologies-item__tech-icon case_technologies-item__atlassian atlassian"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -3544,7 +3544,7 @@ exports[`Main component should render correctly 1`] = `
         >
           <img
             alt="Swift"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__swift swift"
+            class="case_technologies-item__tech-icon case_technologies-item__swift swift"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -3563,7 +3563,7 @@ exports[`Main component should render correctly 1`] = `
         >
           <img
             alt="Firebase"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__firebase firebase"
+            class="case_technologies-item__tech-icon case_technologies-item__firebase firebase"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -3582,7 +3582,7 @@ exports[`Main component should render correctly 1`] = `
         >
           <img
             alt="TestFlight"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__test-flight test-flight"
+            class="case_technologies-item__tech-icon case_technologies-item__test-flight test-flight"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -3601,7 +3601,7 @@ exports[`Main component should render correctly 1`] = `
         >
           <img
             alt="Datadog"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__datadog datadog"
+            class="case_technologies-item__tech-icon case_technologies-item__datadog datadog"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -3620,7 +3620,7 @@ exports[`Main component should render correctly 1`] = `
         >
           <img
             alt="Android"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__android-black-text android-black-text"
+            class="case_technologies-item__tech-icon case_technologies-item__android-black-text android-black-text"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -3639,7 +3639,7 @@ exports[`Main component should render correctly 1`] = `
         >
           <img
             alt="Suite"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__suite suite"
+            class="case_technologies-item__tech-icon case_technologies-item__suite suite"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -3658,7 +3658,7 @@ exports[`Main component should render correctly 1`] = `
         >
           <img
             alt="Jira Software"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__jira-software jira-software"
+            class="case_technologies-item__tech-icon case_technologies-item__jira-software jira-software"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -3678,7 +3678,7 @@ exports[`Main component should render correctly 1`] = `
         >
           <img
             alt="GRPC"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__grpc grpc"
+            class="case_technologies-item__tech-icon case_technologies-item__grpc grpc"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -3697,7 +3697,7 @@ exports[`Main component should render correctly 1`] = `
         >
           <img
             alt="iOS"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__apple-black apple-black"
+            class="case_technologies-item__tech-icon case_technologies-item__apple-black apple-black"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -3717,7 +3717,7 @@ exports[`Main component should render correctly 1`] = `
         >
           <img
             alt="UptimeRobot"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__uptime-robot uptime-robot"
+            class="case_technologies-item__tech-icon case_technologies-item__uptime-robot uptime-robot"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -3736,7 +3736,7 @@ exports[`Main component should render correctly 1`] = `
         >
           <img
             alt="Mapbox"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__map-box map-box"
+            class="case_technologies-item__tech-icon case_technologies-item__map-box map-box"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -3755,7 +3755,7 @@ exports[`Main component should render correctly 1`] = `
         >
           <img
             alt="Vue JS"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__vue vue"
+            class="case_technologies-item__tech-icon case_technologies-item__vue vue"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -3774,7 +3774,7 @@ exports[`Main component should render correctly 1`] = `
         >
           <img
             alt="Sentry"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__sentry-black sentry-black"
+            class="case_technologies-item__tech-icon case_technologies-item__sentry-black sentry-black"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -3793,7 +3793,7 @@ exports[`Main component should render correctly 1`] = `
         >
           <img
             alt="Here Traffic"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__here here"
+            class="case_technologies-item__tech-icon case_technologies-item__here here"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -3812,7 +3812,7 @@ exports[`Main component should render correctly 1`] = `
         >
           <img
             alt="Basecamp"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__basecamp-transparent basecamp-transparent"
+            class="case_technologies-item__tech-icon case_technologies-item__basecamp-transparent basecamp-transparent"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -3864,14 +3864,14 @@ exports[`Main component should render correctly 1`] = `
       >
         <picture>
           <source
-            class="image box-shadow grey-background media_lazy"
+            class="image box-shadow grey-background"
             data-srcset="/images/Cases/godee/webp/datadog.webp ,/images/Cases/godee/webp/datadog@2x.webp 2x"
             type="image/webp"
           />
            
           <img
             alt="GoDee: Monitoring Configuration for Transportation App."
-            class="image box-shadow grey-background media_lazy"
+            class="image box-shadow grey-background"
             data-src="/images/Cases/godee/jpg/datadog.jpg"
             data-srcset="/images/Cases/godee/jpg/datadog.jpg"
             data-testid="test-picture-img"
@@ -4026,14 +4026,14 @@ exports[`Main component should render correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-srcset="/images/Cases/common/webp/oleg-puzanov.webp ,/images/Cases/common/webp/oleg-puzanov@2x.webp 2x"
               type="image/webp"
             />
              
             <img
               alt="Oleg Puzanov"
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-src="/images/Cases/common/png/oleg-puzanov.png"
               data-srcset="/images/Cases/common/png/oleg-puzanov.png"
               data-testid="test-picture-img"
@@ -4069,14 +4069,14 @@ exports[`Main component should render correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-srcset="/images/Cases/common/webp/kasymov.webp ,/images/Cases/common/webp/kasymov@2x.webp 2x"
               type="image/webp"
             />
              
             <img
               alt="Ruslan Kasymov"
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-src="/images/Cases/common/png/kasymov.png"
               data-srcset="/images/Cases/common/png/kasymov.png"
               data-testid="test-picture-img"
@@ -4112,14 +4112,14 @@ exports[`Main component should render correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-srcset="/images/Cases/common/webp/kulbatyrov.webp ,/images/Cases/common/webp/kulbatyrov@2x.webp 2x"
               type="image/webp"
             />
              
             <img
               alt="Rustom Kulbatyrov"
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-src="/images/Cases/common/png/kulbatyrov.png"
               data-srcset="/images/Cases/common/png/kulbatyrov.png"
               data-testid="test-picture-img"
@@ -4155,14 +4155,14 @@ exports[`Main component should render correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-srcset="/images/Cases/common/webp/vladimir-pan.webp ,/images/Cases/common/webp/vladimir-pan@2x.webp 2x"
               type="image/webp"
             />
              
             <img
               alt="Vladimir Pan"
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-src="/images/Cases/common/png/vladimir-pan.png"
               data-srcset="/images/Cases/common/png/vladimir-pan.png"
               data-testid="test-picture-img"
@@ -4198,14 +4198,14 @@ exports[`Main component should render correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-srcset="/images/Cases/common/webp/belek-abylov.webp ,/images/Cases/common/webp/belek-abylov@2x.webp 2x"
               type="image/webp"
             />
              
             <img
               alt="Belek Abylov"
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-src="/images/Cases/common/png/belek-abylov.png"
               data-srcset="/images/Cases/common/png/belek-abylov.png"
               data-testid="test-picture-img"
@@ -4241,14 +4241,14 @@ exports[`Main component should render correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-srcset="/images/Cases/common/webp/bakhtiyar-ganyev.webp ,/images/Cases/common/webp/bakhtiyar-ganyev@2x.webp 2x"
               type="image/webp"
             />
              
             <img
               alt="Bakhtiyar Ganyev"
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-src="/images/Cases/common/png/bakhtiyar-ganyev.png"
               data-srcset="/images/Cases/common/png/bakhtiyar-ganyev.png"
               data-testid="test-picture-img"
@@ -4284,14 +4284,14 @@ exports[`Main component should render correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-srcset="/images/Cases/common/webp/gennady-karev.webp ,/images/Cases/common/webp/gennady-karev@2x.webp 2x"
               type="image/webp"
             />
              
             <img
               alt="Gennady Karev"
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-src="/images/Cases/common/png/gennady-karev.png"
               data-srcset="/images/Cases/common/png/gennady-karev.png"
               data-testid="test-picture-img"
@@ -4327,14 +4327,14 @@ exports[`Main component should render correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-srcset="/images/Cases/common/webp/aleksandr-krivov.webp ,/images/Cases/common/webp/aleksandr-krivov@2x.webp 2x"
               type="image/webp"
             />
              
             <img
               alt="Aleksandr Krivov"
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-src="/images/Cases/common/png/aleksandr-krivov.png"
               data-srcset="/images/Cases/common/png/aleksandr-krivov.png"
               data-testid="test-picture-img"
@@ -4370,14 +4370,14 @@ exports[`Main component should render correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-srcset="/images/Cases/common/webp/vlada-arevkova.webp ,/images/Cases/common/webp/vlada-arevkova@2x.webp 2x"
               type="image/webp"
             />
              
             <img
               alt="Vlada Arevkova"
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-src="/images/Cases/common/png/vlada-arevkova.png"
               data-srcset="/images/Cases/common/png/vlada-arevkova.png"
               data-testid="test-picture-img"
@@ -4413,14 +4413,14 @@ exports[`Main component should render correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-srcset="/images/Cases/common/webp/erik-sultanaliev.webp ,/images/Cases/common/webp/erik-sultanaliev@2x.webp 2x"
               type="image/webp"
             />
              
             <img
               alt="Erik Sultanaliev"
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-src="/images/Cases/common/png/erik-sultanaliev.png"
               data-srcset="/images/Cases/common/png/erik-sultanaliev.png"
               data-testid="test-picture-img"
@@ -4456,14 +4456,14 @@ exports[`Main component should render correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-srcset="/images/Cases/common/webp/myrzabek-kylychev.webp ,/images/Cases/common/webp/myrzabek-kylychev@2x.webp 2x"
               type="image/webp"
             />
              
             <img
               alt="Myrzabek Kylychev"
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-src="/images/Cases/common/png/myrzabek-kylychev.png"
               data-srcset="/images/Cases/common/png/myrzabek-kylychev.png"
               data-testid="test-picture-img"
@@ -4499,14 +4499,14 @@ exports[`Main component should render correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-srcset="/images/Cases/common/webp/pushkarev.webp ,/images/Cases/common/webp/pushkarev@2x.webp 2x"
               type="image/webp"
             />
              
             <img
               alt="Pavel Pushkarev"
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-src="/images/Cases/common/png/pushkarev.png"
               data-srcset="/images/Cases/common/png/pushkarev.png"
               data-testid="test-picture-img"
@@ -4554,14 +4554,14 @@ exports[`Main component should render correctly 1`] = `
           >
             <picture>
               <source
-                class="image media_lazy"
+                class="image"
                 data-srcset="/images/Cases/godee/webp/ruslan-karabukaev.webp ,/images/Cases/godee/webp/ruslan-karabukaev@2x.webp 2x"
                 type="image/webp"
               />
                
               <img
                 alt="Ruslan Karabukaev"
-                class="image media_lazy"
+                class="image"
                 data-src="/images/Cases/godee/png/ruslan-karabukaev.png"
                 data-srcset="/images/Cases/godee/png/ruslan-karabukaev.png"
                 data-testid="test-picture-img"
@@ -4595,7 +4595,7 @@ exports[`Main component should render correctly 1`] = `
     >
       <img
         alt="Namba Food"
-        class="case_logotype-namba-food img_lazy"
+        class="case_logotype-namba-food"
         data-src="[object Object]"
         height="63"
         width="200"

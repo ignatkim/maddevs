@@ -30,14 +30,14 @@ exports[`Grafana component should render correctly 1`] = `
     >
       <picture>
         <source
-          class="image box-shadow media_lazy"
+          class="image box-shadow"
           data-srcset="img.jpg,img.jpg"
           type="image/webp"
         />
          
         <img
           alt="Namba Food: Software Stability Monitoring with Grafana."
-          class="image box-shadow media_lazy"
+          class="image box-shadow"
           data-src="img.jpg"
           data-srcset="img.jpg"
           data-testid="test-picture-img"

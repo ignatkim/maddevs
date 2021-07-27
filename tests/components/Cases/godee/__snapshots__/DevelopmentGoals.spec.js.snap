@@ -27,7 +27,7 @@ exports[`DevelopmentGoals component should render correctly 1`] = `
           >
             <img
               alt="gps"
-              class="card-content_icon img_lazy"
+              class="card-content_icon"
               data-src="[object Object]"
               height="51.94"
               width="51.94"
@@ -58,7 +58,7 @@ exports[`DevelopmentGoals component should render correctly 1`] = `
           >
             <img
               alt="payment-method"
-              class="card-content_icon img_lazy"
+              class="card-content_icon"
               data-src="[object Object]"
               height="51.94"
               width="51.94"
@@ -101,7 +101,7 @@ exports[`DevelopmentGoals component should render correctly 1`] = `
           >
             <img
               alt="live-location-tacking"
-              class="card-content_icon img_lazy"
+              class="card-content_icon"
               data-src="[object Object]"
               height="51.94"
               width="51.94"
@@ -132,7 +132,7 @@ exports[`DevelopmentGoals component should render correctly 1`] = `
           >
             <img
               alt="referrals"
-              class="card-content_icon img_lazy"
+              class="card-content_icon"
               data-src="[object Object]"
               height="51.94"
               width="51.94"
@@ -163,7 +163,7 @@ exports[`DevelopmentGoals component should render correctly 1`] = `
           >
             <img
               alt="possible-routes"
-              class="card-content_icon img_lazy"
+              class="card-content_icon"
               data-src="[object Object]"
               height="51.94"
               width="51.94"

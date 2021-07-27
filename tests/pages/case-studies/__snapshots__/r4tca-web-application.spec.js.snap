@@ -16,7 +16,7 @@ exports[`InternationalTradeCenter root component should render correctly 1`] = `
        
       <video
         autoplay="autoplay"
-        class="case_main-video media_lazy"
+        class="case_main-video"
         data-testid="test-case_main-video"
         loop="loop"
         muted="muted"
@@ -93,7 +93,7 @@ exports[`InternationalTradeCenter root component should render correctly 1`] = `
     >
       <img
         alt="Optimization for Veeqo"
-        class="case_logotype-veeqo img_lazy"
+        class="case_logotype-veeqo"
         data-src="[object Object]"
         height="72"
         width="195"

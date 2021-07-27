@@ -42,10 +42,10 @@ exports[`CaseStudies should render correctly 1`] = `
             to="/case-studies/veeqo/"
           >
             <video
-              class="cases-list_item-video media_lazy"
+              class="cases-list_item-video"
+              data-poster="img.jpg"
               loop="loop"
               muted="muted"
-              poster="img.jpg"
             >
               <source
                 data-src="img.jpg"
@@ -62,8 +62,8 @@ exports[`CaseStudies should render correctly 1`] = `
               <img
                 alt="Veeqo logo"
                 class="cases-list_item-info-logo cases-list_item-info-veeqo-logotype"
+                data-src="img.jpg"
                 height="23"
-                src="img.jpg"
                 width="105"
               />
                
@@ -102,10 +102,10 @@ exports[`CaseStudies should render correctly 1`] = `
             to="/case-studies/R4TCA-web-application/"
           >
             <video
-              class="cases-list_item-video media_lazy"
+              class="cases-list_item-video"
+              data-poster="img.jpg"
               loop="loop"
               muted="muted"
-              poster="img.jpg"
             >
               <source
                 data-src="img.jpg"
@@ -122,8 +122,8 @@ exports[`CaseStudies should render correctly 1`] = `
               <img
                 alt="ITC logo"
                 class="cases-list_item-info-logo cases-list_item-info-itc-logo"
+                data-src="img.jpg"
                 height="23"
-                src="img.jpg"
                 width="105"
               />
                
@@ -162,10 +162,10 @@ exports[`CaseStudies should render correctly 1`] = `
             to="/case-studies/peklo/"
           >
             <video
-              class="cases-list_item-video media_lazy"
+              class="cases-list_item-video"
+              data-poster="img.jpg"
               loop="loop"
               muted="muted"
-              poster="img.jpg"
             >
               <source
                 data-src="img.jpg"
@@ -182,8 +182,8 @@ exports[`CaseStudies should render correctly 1`] = `
               <img
                 alt="Peklo Tool for search ad campaigns"
                 class="cases-list_item-info-logo cases-list_item-info-peklo-logo"
+                data-src="img.jpg"
                 height="80"
-                src="img.jpg"
                 width="120"
               />
                
@@ -222,10 +222,10 @@ exports[`CaseStudies should render correctly 1`] = `
             to="/case-studies/sir-john-monash-centre/"
           >
             <video
-              class="cases-list_item-video media_lazy"
+              class="cases-list_item-video"
+              data-poster="img.jpg"
               loop="loop"
               muted="muted"
-              poster="img.jpg"
             >
               <source
                 data-src="img.jpg"
@@ -242,8 +242,8 @@ exports[`CaseStudies should render correctly 1`] = `
               <img
                 alt="SJMC logo"
                 class="cases-list_item-info-logo cases-list_item-info-sjmc-logo"
+                data-src="img.jpg"
                 height="60"
-                src="img.jpg"
                 width="133"
               />
                
@@ -330,10 +330,10 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
             to="/case-studies/veeqo/"
           >
             <video
-              class="cases-list_item-video media_lazy"
+              class="cases-list_item-video"
+              data-poster="img.jpg"
               loop="loop"
               muted="muted"
-              poster="img.jpg"
             >
               <source
                 data-src="img.jpg"
@@ -350,8 +350,8 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
               <img
                 alt="Veeqo logo"
                 class="cases-list_item-info-logo cases-list_item-info-veeqo-logotype"
+                data-src="img.jpg"
                 height="23"
-                src="img.jpg"
                 width="105"
               />
                
@@ -390,10 +390,10 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
             to="/case-studies/R4TCA-web-application/"
           >
             <video
-              class="cases-list_item-video media_lazy"
+              class="cases-list_item-video"
+              data-poster="img.jpg"
               loop="loop"
               muted="muted"
-              poster="img.jpg"
             >
               <source
                 data-src="img.jpg"
@@ -410,8 +410,8 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
               <img
                 alt="ITC logo"
                 class="cases-list_item-info-logo cases-list_item-info-itc-logo"
+                data-src="img.jpg"
                 height="23"
-                src="img.jpg"
                 width="105"
               />
                
@@ -450,10 +450,10 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
             to="/case-studies/peklo/"
           >
             <video
-              class="cases-list_item-video media_lazy"
+              class="cases-list_item-video"
+              data-poster="img.jpg"
               loop="loop"
               muted="muted"
-              poster="img.jpg"
             >
               <source
                 data-src="img.jpg"
@@ -470,8 +470,8 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
               <img
                 alt="Peklo Tool for search ad campaigns"
                 class="cases-list_item-info-logo cases-list_item-info-peklo-logo"
+                data-src="img.jpg"
                 height="80"
-                src="img.jpg"
                 width="120"
               />
                
@@ -510,10 +510,10 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
             to="/case-studies/sir-john-monash-centre/"
           >
             <video
-              class="cases-list_item-video media_lazy"
+              class="cases-list_item-video"
+              data-poster="img.jpg"
               loop="loop"
               muted="muted"
-              poster="img.jpg"
             >
               <source
                 data-src="img.jpg"
@@ -530,8 +530,8 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
               <img
                 alt="SJMC logo"
                 class="cases-list_item-info-logo cases-list_item-info-sjmc-logo"
+                data-src="img.jpg"
                 height="60"
-                src="img.jpg"
                 width="133"
               />
                

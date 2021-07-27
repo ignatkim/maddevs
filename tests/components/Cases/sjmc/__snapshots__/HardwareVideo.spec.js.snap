@@ -158,14 +158,13 @@ exports[`HardwareVideo component should render correctly 1`] = `
       class="case_video-wrapper case_full-screen-video"
     >
       <video
-        class="media_lazy"
+        data-poster="/images/Cases/sjmc/png/bluetooth-beacons-video-background.png"
         data-testid="test-case_video"
         height="100%"
         id="iphone-video"
         loop="loop"
         muted="muted"
         playsinline=""
-        poster="/images/Cases/sjmc/png/bluetooth-beacons-video-background.png"
         width="100%"
       >
         <source

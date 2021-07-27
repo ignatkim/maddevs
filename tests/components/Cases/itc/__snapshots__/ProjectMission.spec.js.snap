@@ -30,7 +30,7 @@ exports[`ProjectMission component should render correctly 1`] = `
     >
       <img
         alt="Project mission"
-        class="case_project-mission media_lazy"
+        class="case_project-mission"
         data-src="[object Object]"
         height="540"
         width="1440"

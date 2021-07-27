@@ -23,14 +23,14 @@ exports[`Team component should render correctly 1`] = `
           class="case_team-item__image"
         >
           <source
-            class="image grey-background media_lazy"
+            class="image grey-background"
             data-srcset="img.jpg,img.jpg"
             type="image/webp"
           />
            
           <img
             alt="Kirill Zinchenko"
-            class="image grey-background media_lazy"
+            class="image grey-background"
             data-src="img.jpg"
             data-srcset="img.jpg"
             data-testid="test-picture-img"
@@ -66,14 +66,14 @@ exports[`Team component should render correctly 1`] = `
           class="case_team-item__image"
         >
           <source
-            class="image grey-background media_lazy"
+            class="image grey-background"
             data-srcset="img.jpg,img.jpg"
             type="image/webp"
           />
            
           <img
             alt="Oleg Glazyrin"
-            class="image grey-background media_lazy"
+            class="image grey-background"
             data-src="img.jpg"
             data-srcset="img.jpg"
             data-testid="test-picture-img"
@@ -109,14 +109,14 @@ exports[`Team component should render correctly 1`] = `
           class="case_team-item__image"
         >
           <source
-            class="image grey-background media_lazy"
+            class="image grey-background"
             data-srcset="img.jpg,img.jpg"
             type="image/webp"
           />
            
           <img
             alt="Andrew Gubskii"
-            class="image grey-background media_lazy"
+            class="image grey-background"
             data-src="img.jpg"
             data-srcset="img.jpg"
             data-testid="test-picture-img"
@@ -152,14 +152,14 @@ exports[`Team component should render correctly 1`] = `
           class="case_team-item__image"
         >
           <source
-            class="image grey-background media_lazy"
+            class="image grey-background"
             data-srcset="img.jpg,img.jpg"
             type="image/webp"
           />
            
           <img
             alt="Dmitrii Khalezin"
-            class="image grey-background media_lazy"
+            class="image grey-background"
             data-src="img.jpg"
             data-srcset="img.jpg"
             data-testid="test-picture-img"

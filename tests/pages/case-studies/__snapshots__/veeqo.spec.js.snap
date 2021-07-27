@@ -16,7 +16,7 @@ exports[`Veeqo root component should render correctly 1`] = `
        
       <video
         autoplay="autoplay"
-        class="case_main-video media_lazy"
+        class="case_main-video"
         data-testid="test-case_main-video"
         loop="loop"
         muted="muted"
@@ -93,7 +93,7 @@ exports[`Veeqo root component should render correctly 1`] = `
     >
       <img
         alt="The Evolution of Yourcast.TV"
-        class="case_logotype-yourcast img_lazy"
+        class="case_logotype-yourcast"
         data-src="[object Object]"
         height="57"
         width="270"

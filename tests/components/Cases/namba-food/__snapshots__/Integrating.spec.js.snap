@@ -20,7 +20,7 @@ exports[`Integrating component should render correctly 1`] = `
     >
       <img
         alt="blockquote"
-        class="case_mark img_lazy"
+        class="case_mark"
         data-src="[object Object]"
         height="50"
         width="50"

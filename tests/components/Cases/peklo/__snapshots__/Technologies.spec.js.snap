@@ -21,7 +21,7 @@ exports[`Technologies component should render correctly 1`] = `
       >
         <img
           alt="Golang"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__go go"
+          class="case_technologies-item__tech-icon case_technologies-item__go go"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -40,7 +40,7 @@ exports[`Technologies component should render correctly 1`] = `
       >
         <img
           alt="PostgreSQL"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__postgresql postgresql"
+          class="case_technologies-item__tech-icon case_technologies-item__postgresql postgresql"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -59,7 +59,7 @@ exports[`Technologies component should render correctly 1`] = `
       >
         <img
           alt="Docker"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__docker docker"
+          class="case_technologies-item__tech-icon case_technologies-item__docker docker"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -78,7 +78,7 @@ exports[`Technologies component should render correctly 1`] = `
       >
         <img
           alt="Gitlab"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__gitlab gitlab"
+          class="case_technologies-item__tech-icon case_technologies-item__gitlab gitlab"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -97,7 +97,7 @@ exports[`Technologies component should render correctly 1`] = `
       >
         <img
           alt="Ruby"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__ruby ruby"
+          class="case_technologies-item__tech-icon case_technologies-item__ruby ruby"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -116,7 +116,7 @@ exports[`Technologies component should render correctly 1`] = `
       >
         <img
           alt="Vue.js"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__vue vue"
+          class="case_technologies-item__tech-icon case_technologies-item__vue vue"
           data-src="[object Object]"
           height="40"
           width="40"

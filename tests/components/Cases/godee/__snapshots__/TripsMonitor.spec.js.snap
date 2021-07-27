@@ -36,14 +36,14 @@ exports[`TripsMonitor component should render correctly 1`] = `
         >
           <picture>
             <source
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-srcset="img.jpg,img.jpg"
               type="image/webp"
             />
              
             <img
               alt="GoDee: Safari Browser Top Bar White."
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-src="img.jpg"
               data-srcset="img.jpg"
               data-testid="test-picture-img"

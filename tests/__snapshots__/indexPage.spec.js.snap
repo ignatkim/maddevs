@@ -214,7 +214,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="usa"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -225,7 +224,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="australia"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -236,7 +234,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="vietnam"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -247,7 +244,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="france"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -258,7 +254,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="uk"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -269,7 +264,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="indonesia"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -280,7 +274,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="germany"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -291,7 +284,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="austria"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -302,7 +294,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="switzerland"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -313,7 +304,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="canada"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -324,7 +314,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="latvia"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -335,7 +324,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="kazakhstan"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -346,7 +334,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="sweden"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -357,7 +344,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="finland"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -368,7 +354,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="uae"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -379,7 +364,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="denmark"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -390,7 +374,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="japan"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -401,7 +384,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="norway"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -412,7 +394,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="portugal"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -423,7 +404,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="katar"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -434,7 +414,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="south_africa"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -445,7 +424,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="netherlands"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -557,7 +535,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Ansible"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -572,7 +549,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Terraform"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -587,7 +563,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="CloudFormation"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -602,7 +577,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Jenkins"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -617,7 +591,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Bamboo"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -632,7 +605,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="GitlabCI"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -647,7 +619,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="TravisCI"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -662,7 +633,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="ELK"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -677,7 +647,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="CircleCI"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -692,7 +661,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Sentry"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -707,7 +675,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="CloudWatch"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -722,7 +689,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Prometheus"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -737,7 +703,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="AWS"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -752,7 +717,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="GCP"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -767,7 +731,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Digital Ocean"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -782,7 +745,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Azure"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -797,7 +759,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="CloudNative"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -812,7 +773,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Heroku"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -827,7 +787,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Netlify"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -842,7 +801,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="CloudFlare"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -857,7 +815,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Kotlin"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -872,7 +829,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Java"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -887,7 +843,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Objective-C"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -902,7 +857,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Swift"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -917,7 +871,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="IOS"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -932,7 +885,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Android"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -947,7 +899,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Jira"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -962,7 +913,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Slack"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -977,7 +927,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Meet"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -992,7 +941,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Zoom"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1007,7 +955,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Miro"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1022,7 +969,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Trello"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1037,7 +983,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Loom"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1052,7 +997,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Jira Assistant"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1067,7 +1011,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Service Desk"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1082,7 +1025,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Basecamp"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1097,7 +1039,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Notion"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1112,7 +1053,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Zapier"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1127,7 +1067,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Python"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1142,7 +1081,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Go"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1157,7 +1095,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Node.js"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1172,7 +1109,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="JavaScript"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1187,7 +1123,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="TypeScript"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1202,7 +1137,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="PHP"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1217,7 +1151,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Ruby"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1232,7 +1165,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="C"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1247,7 +1179,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="C++"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1262,7 +1193,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Figma"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1277,7 +1207,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Adobe Suite"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1292,7 +1221,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Sketch"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1307,7 +1235,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="InVision"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1322,7 +1249,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Zeplin"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1337,7 +1263,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Balsamic"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1352,7 +1277,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Principle"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1367,7 +1291,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="PostCSS"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1382,7 +1305,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="TypeScript"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1397,7 +1319,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Angular"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1412,7 +1333,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Webpack"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1427,7 +1347,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Next.js"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1442,7 +1361,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Nuxt.js"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1457,7 +1375,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="JavaScript"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1472,7 +1389,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="React"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1487,7 +1403,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Babel"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1502,7 +1417,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Vue"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1517,7 +1431,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="SASS"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1532,7 +1445,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Jasmine"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1547,7 +1459,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Selenoid"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1562,7 +1473,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Appium"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1577,7 +1487,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Cucumber"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1592,7 +1501,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="PyTest"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1607,7 +1515,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Selenium"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1622,7 +1529,6 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="Selenium Grid"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1677,10 +1583,10 @@ exports[`index page renders correctly 1`] = `
             to="/case-studies/veeqo/"
           >
             <video
-              class="cases-list_item-video media_lazy"
+              class="cases-list_item-video"
+              data-poster="img.jpg"
               loop="loop"
               muted="muted"
-              poster="img.jpg"
             >
               <source
                 data-src="img.jpg"
@@ -1697,8 +1603,8 @@ exports[`index page renders correctly 1`] = `
               <img
                 alt="Veeqo logo"
                 class="cases-list_item-info-logo cases-list_item-info-veeqo-logotype"
+                data-src="img.jpg"
                 height="23"
-                src="img.jpg"
                 width="105"
               />
                
@@ -1737,10 +1643,10 @@ exports[`index page renders correctly 1`] = `
             to="/case-studies/R4TCA-web-application/"
           >
             <video
-              class="cases-list_item-video media_lazy"
+              class="cases-list_item-video"
+              data-poster="img.jpg"
               loop="loop"
               muted="muted"
-              poster="img.jpg"
             >
               <source
                 data-src="img.jpg"
@@ -1757,8 +1663,8 @@ exports[`index page renders correctly 1`] = `
               <img
                 alt="ITC logo"
                 class="cases-list_item-info-logo cases-list_item-info-itc-logo"
+                data-src="img.jpg"
                 height="23"
-                src="img.jpg"
                 width="105"
               />
                
@@ -1797,10 +1703,10 @@ exports[`index page renders correctly 1`] = `
             to="/case-studies/peklo/"
           >
             <video
-              class="cases-list_item-video media_lazy"
+              class="cases-list_item-video"
+              data-poster="img.jpg"
               loop="loop"
               muted="muted"
-              poster="img.jpg"
             >
               <source
                 data-src="img.jpg"
@@ -1817,8 +1723,8 @@ exports[`index page renders correctly 1`] = `
               <img
                 alt="Peklo Tool for search ad campaigns"
                 class="cases-list_item-info-logo cases-list_item-info-peklo-logo"
+                data-src="img.jpg"
                 height="80"
-                src="img.jpg"
                 width="120"
               />
                
@@ -1857,10 +1763,10 @@ exports[`index page renders correctly 1`] = `
             to="/case-studies/sir-john-monash-centre/"
           >
             <video
-              class="cases-list_item-video media_lazy"
+              class="cases-list_item-video"
+              data-poster="img.jpg"
               loop="loop"
               muted="muted"
-              poster="img.jpg"
             >
               <source
                 data-src="img.jpg"
@@ -1877,8 +1783,8 @@ exports[`index page renders correctly 1`] = `
               <img
                 alt="SJMC logo"
                 class="cases-list_item-info-logo cases-list_item-info-sjmc-logo"
+                data-src="img.jpg"
                 height="60"
-                src="img.jpg"
                 width="133"
               />
                
@@ -1945,7 +1851,7 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="contact"
-              class="quick-project-start__main-icon img_lazy"
+              class="quick-project-start__main-icon"
               data-src="[object Object]"
               height="73"
               width="52"
@@ -1953,7 +1859,7 @@ exports[`index page renders correctly 1`] = `
              
             <img
               alt="Arrow"
-              class="quick-project-start__arrow-icon img_lazy"
+              class="quick-project-start__arrow-icon"
               data-src="[object Object]"
               height="65"
               width="165"
@@ -1988,7 +1894,7 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="analysis"
-              class="quick-project-start__main-icon img_lazy"
+              class="quick-project-start__main-icon"
               data-src="[object Object]"
               height="73"
               width="52"
@@ -1996,7 +1902,7 @@ exports[`index page renders correctly 1`] = `
              
             <img
               alt="Arrow"
-              class="quick-project-start__arrow-icon img_lazy"
+              class="quick-project-start__arrow-icon"
               data-src="[object Object]"
               height="65"
               width="165"
@@ -2031,7 +1937,7 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="proposal"
-              class="quick-project-start__main-icon img_lazy"
+              class="quick-project-start__main-icon"
               data-src="[object Object]"
               height="73"
               width="52"
@@ -2039,7 +1945,7 @@ exports[`index page renders correctly 1`] = `
              
             <img
               alt="Arrow"
-              class="quick-project-start__arrow-icon img_lazy"
+              class="quick-project-start__arrow-icon"
               data-src="[object Object]"
               height="65"
               width="165"
@@ -2074,7 +1980,7 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="team"
-              class="quick-project-start__main-icon img_lazy"
+              class="quick-project-start__main-icon"
               data-src="[object Object]"
               height="73"
               width="52"
@@ -2082,7 +1988,7 @@ exports[`index page renders correctly 1`] = `
              
             <img
               alt="Arrow"
-              class="quick-project-start__arrow-icon img_lazy"
+              class="quick-project-start__arrow-icon"
               data-src="[object Object]"
               height="65"
               width="165"
@@ -2117,7 +2023,7 @@ exports[`index page renders correctly 1`] = `
           >
             <img
               alt="start"
-              class="quick-project-start__main-icon img_lazy"
+              class="quick-project-start__main-icon"
               data-src="[object Object]"
               height="73"
               width="52"
@@ -2224,7 +2130,7 @@ exports[`index page renders correctly 1`] = `
               >
                 <img
                   alt="Atif Mahmood - CEO and Founder at Teacherly."
-                  class="customer-testimonials__customer-image img_lazy"
+                  class="customer-testimonials__customer-image"
                   data-src="[object Object]"
                   height="42"
                   width="42"
@@ -2251,7 +2157,7 @@ exports[`index page renders correctly 1`] = `
                 >
                   <img
                     alt="Atif Mahmood - CEO and Founder at Teacherly."
-                    class="img_lazy single-project__logo customer-testimonials__teacherly"
+                    class="single-project__logo customer-testimonials__teacherly"
                     data-src="[object Object]"
                     height="31"
                     width="91"
@@ -2279,7 +2185,7 @@ exports[`index page renders correctly 1`] = `
               >
                 <img
                   alt="Daniel Vartanov - CTO at Veeqo.com."
-                  class="customer-testimonials__customer-image img_lazy"
+                  class="customer-testimonials__customer-image"
                   data-src="[object Object]"
                   height="42"
                   width="42"
@@ -2306,7 +2212,7 @@ exports[`index page renders correctly 1`] = `
                 >
                   <img
                     alt="Daniel Vartanov - CTO at Veeqo.com."
-                    class="img_lazy single-project__logo customer-testimonials__veeqo"
+                    class="single-project__logo customer-testimonials__veeqo"
                     data-src="[object Object]"
                     height="31"
                     width="83"
@@ -2334,7 +2240,7 @@ exports[`index page renders correctly 1`] = `
               >
                 <img
                   alt="Stefan Streichsbier - CEO and Founder at GuardRails.io."
-                  class="customer-testimonials__customer-image img_lazy"
+                  class="customer-testimonials__customer-image"
                   data-src="[object Object]"
                   height="42"
                   width="42"
@@ -2361,7 +2267,7 @@ exports[`index page renders correctly 1`] = `
                 >
                   <img
                     alt="Stefan Streichsbier - CEO and Founder at GuardRails.io."
-                    class="img_lazy single-project__logo customer-testimonials__guardrails"
+                    class="single-project__logo customer-testimonials__guardrails"
                     data-src="[object Object]"
                     height="31"
                     width="160"
@@ -2674,7 +2580,7 @@ exports[`index page renders correctly 1`] = `
              
             <img
               alt="Marat Bediev - Senior DevOps Engineer at Mad Devs Software and Mobile App Development Company."
-              class="multi-image img_lazy"
+              class="multi-image"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
               data-testid="test-multi-image"
@@ -2709,7 +2615,7 @@ exports[`index page renders correctly 1`] = `
            
           <img
             alt="Linkedin"
-            class="meet-our-experts__expert-linkedin-link img_lazy"
+            class="meet-our-experts__expert-linkedin-link"
             data-src="[object Object]"
             height="24"
             width="24"
@@ -2733,7 +2639,7 @@ exports[`index page renders correctly 1`] = `
              
             <img
               alt="Tamara Mun - Head of Delivery Management at Mad Devs Software and Mobile App Development Company."
-              class="multi-image img_lazy"
+              class="multi-image"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
               data-testid="test-multi-image"
@@ -2768,7 +2674,7 @@ exports[`index page renders correctly 1`] = `
            
           <img
             alt="Linkedin"
-            class="meet-our-experts__expert-linkedin-link img_lazy"
+            class="meet-our-experts__expert-linkedin-link"
             data-src="[object Object]"
             height="24"
             width="24"
@@ -2792,7 +2698,7 @@ exports[`index page renders correctly 1`] = `
              
             <img
               alt="Andrew \\"Сhuck\\" Minkin - CTO and Co-Founder at Mad Devs Software and Mobile App Development Company."
-              class="multi-image img_lazy"
+              class="multi-image"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
               data-testid="test-multi-image"
@@ -2827,7 +2733,7 @@ exports[`index page renders correctly 1`] = `
            
           <img
             alt="Linkedin"
-            class="meet-our-experts__expert-linkedin-link img_lazy"
+            class="meet-our-experts__expert-linkedin-link"
             data-src="[object Object]"
             height="24"
             width="24"
@@ -2851,7 +2757,7 @@ exports[`index page renders correctly 1`] = `
              
             <img
               alt="Nakylai Taiirova - Senior Full-Stack Developer at Mad Devs Software and Mobile App Development Company."
-              class="multi-image img_lazy"
+              class="multi-image"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
               data-testid="test-multi-image"
@@ -2886,7 +2792,7 @@ exports[`index page renders correctly 1`] = `
            
           <img
             alt="Linkedin"
-            class="meet-our-experts__expert-linkedin-link img_lazy"
+            class="meet-our-experts__expert-linkedin-link"
             data-src="[object Object]"
             height="24"
             width="24"
@@ -2910,7 +2816,7 @@ exports[`index page renders correctly 1`] = `
              
             <img
               alt="Daria Utesheva - Head of HR Department at Mad Devs Software and Mobile App Development Company."
-              class="multi-image img_lazy"
+              class="multi-image"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
               data-testid="test-multi-image"
@@ -2945,7 +2851,7 @@ exports[`index page renders correctly 1`] = `
            
           <img
             alt="Linkedin"
-            class="meet-our-experts__expert-linkedin-link img_lazy"
+            class="meet-our-experts__expert-linkedin-link"
             data-src="[object Object]"
             height="24"
             width="24"
@@ -2969,7 +2875,7 @@ exports[`index page renders correctly 1`] = `
              
             <img
               alt="Nuradil Alymkulov - Senior Full-Stack Developer at Mad Devs Software and Mobile App Development Company."
-              class="multi-image img_lazy"
+              class="multi-image"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
               data-testid="test-multi-image"
@@ -3004,7 +2910,7 @@ exports[`index page renders correctly 1`] = `
            
           <img
             alt="Linkedin"
-            class="meet-our-experts__expert-linkedin-link img_lazy"
+            class="meet-our-experts__expert-linkedin-link"
             data-src="[object Object]"
             height="24"
             width="24"
@@ -3028,7 +2934,7 @@ exports[`index page renders correctly 1`] = `
              
             <img
               alt="Alice Jang - Project Manager at Mad Devs Software and Mobile App Development Company."
-              class="multi-image img_lazy"
+              class="multi-image"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
               data-testid="test-multi-image"
@@ -3063,7 +2969,7 @@ exports[`index page renders correctly 1`] = `
            
           <img
             alt="Linkedin"
-            class="meet-our-experts__expert-linkedin-link img_lazy"
+            class="meet-our-experts__expert-linkedin-link"
             data-src="[object Object]"
             height="24"
             width="24"
@@ -3087,7 +2993,7 @@ exports[`index page renders correctly 1`] = `
              
             <img
               alt="Arthur Elizavetnikov - Project Manager at Mad Devs Software and Mobile App Development Company."
-              class="multi-image img_lazy"
+              class="multi-image"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
               data-testid="test-multi-image"
@@ -3122,7 +3028,7 @@ exports[`index page renders correctly 1`] = `
            
           <img
             alt="Linkedin"
-            class="meet-our-experts__expert-linkedin-link img_lazy"
+            class="meet-our-experts__expert-linkedin-link"
             data-src="[object Object]"
             height="24"
             width="24"

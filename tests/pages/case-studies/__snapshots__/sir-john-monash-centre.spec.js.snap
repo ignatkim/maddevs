@@ -16,7 +16,7 @@ exports[`SirJohnMonashCentre _uid component should render correctly 1`] = `
        
       <video
         autoplay="autoplay"
-        class="case_main-video media_lazy"
+        class="case_main-video"
         data-testid="test-case_main-video"
         loop="loop"
         muted="muted"
@@ -74,7 +74,7 @@ exports[`SirJohnMonashCentre _uid component should render correctly 1`] = `
           >
             <img
               alt="Play"
-              class="case_play-icon img_lazy"
+              class="case_play-icon"
               data-src="[object Object]"
               height="14"
               width="14"
@@ -137,7 +137,7 @@ exports[`SirJohnMonashCentre _uid component should render correctly 1`] = `
       >
         <img
           alt="Namba Food"
-          class="case_logotype-namba-food img_lazy"
+          class="case_logotype-namba-food"
           data-src="[object Object]"
           height="63"
           width="200"

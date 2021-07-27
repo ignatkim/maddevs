@@ -61,7 +61,7 @@ exports[`CustomerTestimonials should render correctly 1`] = `
               >
                 <img
                   alt="Atif Mahmood - CEO and Founder at Teacherly."
-                  class="customer-testimonials__customer-image img_lazy"
+                  class="customer-testimonials__customer-image"
                   data-src="[object Object]"
                   height="42"
                   width="42"
@@ -88,7 +88,7 @@ exports[`CustomerTestimonials should render correctly 1`] = `
                 >
                   <img
                     alt="Atif Mahmood - CEO and Founder at Teacherly."
-                    class="img_lazy single-project__logo customer-testimonials__teacherly"
+                    class="single-project__logo customer-testimonials__teacherly"
                     data-src="[object Object]"
                     height="31"
                     width="91"
@@ -116,7 +116,7 @@ exports[`CustomerTestimonials should render correctly 1`] = `
               >
                 <img
                   alt="Daniel Vartanov - CTO at Veeqo.com."
-                  class="customer-testimonials__customer-image img_lazy"
+                  class="customer-testimonials__customer-image"
                   data-src="[object Object]"
                   height="42"
                   width="42"
@@ -143,7 +143,7 @@ exports[`CustomerTestimonials should render correctly 1`] = `
                 >
                   <img
                     alt="Daniel Vartanov - CTO at Veeqo.com."
-                    class="img_lazy single-project__logo customer-testimonials__veeqo"
+                    class="single-project__logo customer-testimonials__veeqo"
                     data-src="[object Object]"
                     height="31"
                     width="83"
@@ -171,7 +171,7 @@ exports[`CustomerTestimonials should render correctly 1`] = `
               >
                 <img
                   alt="Stefan Streichsbier - CEO and Founder at GuardRails.io."
-                  class="customer-testimonials__customer-image img_lazy"
+                  class="customer-testimonials__customer-image"
                   data-src="[object Object]"
                   height="42"
                   width="42"
@@ -198,7 +198,7 @@ exports[`CustomerTestimonials should render correctly 1`] = `
                 >
                   <img
                     alt="Stefan Streichsbier - CEO and Founder at GuardRails.io."
-                    class="img_lazy single-project__logo customer-testimonials__guardrails"
+                    class="single-project__logo customer-testimonials__guardrails"
                     data-src="[object Object]"
                     height="31"
                     width="160"

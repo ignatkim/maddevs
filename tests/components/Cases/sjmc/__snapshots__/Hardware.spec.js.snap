@@ -29,14 +29,14 @@ exports[`Hardware component should render correctly 1`] = `
     >
       <picture>
         <source
-          class="image media_lazy"
+          class="image"
           data-srcset="/images/Cases/sjmc/webp/immersive-gallery.webp ,/images/Cases/sjmc/webp/immersive-gallery@2x.webp 2x"
           type="image/webp"
         />
          
         <img
           alt="The SJMC Immersive Gallery."
-          class="image media_lazy"
+          class="image"
           data-src="/images/Cases/sjmc/jpg/immersive-gallery.jpg"
           data-srcset="/images/Cases/sjmc/jpg/immersive-gallery.jpg"
           data-testid="test-picture-img"
@@ -115,7 +115,7 @@ exports[`Hardware component should render correctly 1`] = `
       >
         <img
           alt="Ultra-Compact Multimedia Computer - BRIX."
-          class="case_gif media_lazy"
+          class="case_gif"
           data-src="/images/Cases/sjmc/gif/brix.gif"
           height="367"
           width="1026"
@@ -312,14 +312,13 @@ exports[`Hardware component should render correctly 1`] = `
           class="case_video-wrapper case_full-screen-video"
         >
           <video
-            class="media_lazy"
+            data-poster="/images/Cases/sjmc/png/bluetooth-beacons-video-background.png"
             data-testid="test-case_video"
             height="100%"
             id="iphone-video"
             loop="loop"
             muted="muted"
             playsinline=""
-            poster="/images/Cases/sjmc/png/bluetooth-beacons-video-background.png"
             width="100%"
           >
             <source

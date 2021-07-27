@@ -110,7 +110,6 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
               >
                 <img
                   alt="Application Design Proccess."
-                  class="img_lazy"
                   data-src="https://images.prismic.io/superpupertest/93d447b6-2865-4da7-ad2c-5cd07c98d4e3_8.jpeg?auto=compress,format&rect=0,1,1400,759&w=983&h=533"
                   height="533"
                   width="983"
@@ -137,7 +136,6 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
             >
               <img
                 alt="Application Design Proccess."
-                class="img_lazy"
                 data-src="https://images.prismic.io/superpupertest/93d447b6-2865-4da7-ad2c-5cd07c98d4e3_8.jpeg?auto=compress,format&rect=0,1,1400,759&w=983&h=533"
                 height="217"
                 width="400"
@@ -253,7 +251,6 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
             >
               <img
                 alt="How to Make Three Paid ETA Services One Free."
-                class="img_lazy"
                 data-src="https://images.prismic.io/superpupertest/7b3c67c5-b80e-488d-ad0e-e90745ede392_1_q9EOHqrYhaLpY1ZIL0C4Qw.jpeg?auto=compress,format&rect=0,1,1260,683&w=983&h=533"
                 height="217"
                 width="400"
@@ -369,7 +366,6 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
             >
               <img
                 alt="Glitch.com + Node.js."
-                class="img_lazy"
                 data-src="https://images.prismic.io/superpupertest/1642c64c-6482-41c1-9a2e-c76c1040caa4_Glitch2.png?auto=compress,format&rect=0,5,680,369&w=983&h=533"
                 height="217"
                 width="400"
@@ -485,7 +481,6 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
             >
               <img
                 alt="From Total Mess to Order in Several Steps."
-                class="img_lazy"
                 data-src="https://images.prismic.io/superpupertest/d9fd1cce-d1a8-44fa-b90c-11fa2834c824_1_vlNV_wVecX-_9r55T7E2-w.jpeg?auto=compress,format&rect=0,1,1400,759&w=983&h=533"
                 height="217"
                 width="400"
@@ -601,7 +596,6 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
             >
               <img
                 alt="Running Geo Django on ElasticBeanstalk."
-                class="img_lazy"
                 data-src="https://images.prismic.io/superpupertest/638ccb04-1340-4efc-9a7d-7ba9812f6929_1*BmpD-5oBin9o583biKxvCQ.jpeg?auto=compress,format&rect=0,1,1400,759&w=983&h=533"
                 height="217"
                 width="400"
@@ -717,7 +711,6 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
             >
               <img
                 alt="GRPC Streams."
-                class="img_lazy"
                 data-src="https://images.prismic.io/superpupertest/ffcc13e7-abed-4806-ac94-ec0f95bb88ee_1_hwJDs4aWX8ioOeHmWG13lw.png?auto=compress,format&rect=0,1,2000,1084&w=983&h=533"
                 height="217"
                 width="400"
@@ -833,7 +826,6 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
             >
               <img
                 alt="Go projects."
-                class="img_lazy"
                 data-src="https://images.prismic.io/superpupertest/2767800e-7419-4f93-a9d2-cabde13b22b8_1_6mY93Z3wBTUpcRdEvhIBeg.jpeg?auto=compress,format&rect=0,1,1400,759&w=983&h=533"
                 height="217"
                 width="400"
@@ -949,7 +941,6 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
             >
               <img
                 alt="Raspberry Pi with Qt."
-                class="img_lazy"
                 data-src="https://images.prismic.io/superpupertest/e4a2fb29-2906-479e-a875-0dd278f4bc08_Raspberry+Pi+with+Qt.png?auto=compress,format&rect=0,1,1400,759&w=983&h=533"
                 height="217"
                 width="400"
@@ -1065,7 +1056,6 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
             >
               <img
                 alt="A Bit about Event Delegation in Pure JS."
-                class="img_lazy"
                 data-src="https://images.prismic.io/superpupertest/ee76dea8-07c8-4c08-ab9f-5f337a1fd0b0_1_d28fyQqH7yGrZ6NvNpm2jA.png?auto=compress,format&rect=31,0,738,400&w=983&h=533"
                 height="217"
                 width="400"
@@ -1181,7 +1171,6 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
             >
               <img
                 alt="Event Delegation in React."
-                class="img_lazy"
                 data-src="https://images.prismic.io/superpupertest/83f9d80e-d90e-4694-bfca-9633adf0bb76_1_wcAi1bMW4Xrj57-rbiE7hg.png?auto=compress,format&rect=31,0,738,400&w=983&h=533"
                 height="217"
                 width="400"
@@ -1297,7 +1286,6 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
             >
               <img
                 alt="Top 3 Best CI for Your JS Projects with Puppeteer Tests."
-                class="img_lazy"
                 data-src="https://images.prismic.io/superpupertest/f0ac1d09-037c-4d09-8599-13dd754d2b13_1_MccluIYzshmdLz4cM_HsEg.png?auto=compress,format&rect=109,0,950,515&w=983&h=533"
                 height="217"
                 width="400"
@@ -1413,7 +1401,6 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
             >
               <img
                 alt="Mad Fake Slack."
-                class="img_lazy"
                 data-src="https://images.prismic.io/superpupertest/dd6df0bd-221c-4392-9eb1-4d782d6e2ddd_1_Kw5pRjj9dpQIDye2-0sjAQ.jpeg?auto=compress,format&rect=0,1,1400,759&w=983&h=533"
                 height="217"
                 width="400"
@@ -1529,7 +1516,6 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
             >
               <img
                 alt="Standup."
-                class="img_lazy"
                 data-src="https://images.prismic.io/superpupertest/d765c67a-821c-4f88-abf7-7a6822df8ede_1_bNuvXMgfV9hkVO-U-gQQ2g.png?auto=compress,format&rect=0,1,1400,759&w=983&h=533"
                 height="217"
                 width="400"

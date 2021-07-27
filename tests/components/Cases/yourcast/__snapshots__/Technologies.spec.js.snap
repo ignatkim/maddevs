@@ -21,7 +21,7 @@ exports[`Technologies component should render correctly 1`] = `
       >
         <img
           alt="Golang"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__go go"
+          class="case_technologies-item__tech-icon case_technologies-item__go go"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -40,7 +40,7 @@ exports[`Technologies component should render correctly 1`] = `
       >
         <img
           alt="Django"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__django django"
+          class="case_technologies-item__tech-icon case_technologies-item__django django"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -59,7 +59,7 @@ exports[`Technologies component should render correctly 1`] = `
       >
         <img
           alt="PostgreSQL"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__postgresql postgresql"
+          class="case_technologies-item__tech-icon case_technologies-item__postgresql postgresql"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -78,7 +78,7 @@ exports[`Technologies component should render correctly 1`] = `
       >
         <img
           alt="Nimble Streamer"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__nimble nimble"
+          class="case_technologies-item__tech-icon case_technologies-item__nimble nimble"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -97,7 +97,7 @@ exports[`Technologies component should render correctly 1`] = `
       >
         <img
           alt="Plex Media Server"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__plex plex"
+          class="case_technologies-item__tech-icon case_technologies-item__plex plex"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -116,7 +116,7 @@ exports[`Technologies component should render correctly 1`] = `
       >
         <img
           alt="jQuery"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__jquery jquery"
+          class="case_technologies-item__tech-icon case_technologies-item__jquery jquery"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -135,7 +135,7 @@ exports[`Technologies component should render correctly 1`] = `
       >
         <img
           alt="Video.js"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__video-js video-js"
+          class="case_technologies-item__tech-icon case_technologies-item__video-js video-js"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -154,7 +154,7 @@ exports[`Technologies component should render correctly 1`] = `
       >
         <img
           alt="Nginx"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__nginx-txt nginx-txt"
+          class="case_technologies-item__tech-icon case_technologies-item__nginx-txt nginx-txt"
           data-src="[object Object]"
           height="40"
           width="40"

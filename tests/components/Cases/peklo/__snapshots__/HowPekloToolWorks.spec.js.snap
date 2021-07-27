@@ -75,7 +75,7 @@ exports[`HowPekloToolWorks component should render correctly 1`] = `
            
           <img
             alt="Algorithm"
-            class="case_card-icon media_lazy"
+            class="case_card-icon"
             data-src="s3 image url"
             height="123.85"
             width="133.39"
@@ -102,7 +102,7 @@ exports[`HowPekloToolWorks component should render correctly 1`] = `
            
           <img
             alt="Semantics"
-            class="case_card-icon media_lazy"
+            class="case_card-icon"
             data-src="s3 image url"
             height="127.79"
             width="127.79"
@@ -129,7 +129,7 @@ exports[`HowPekloToolWorks component should render correctly 1`] = `
            
           <img
             alt="Texts"
-            class="case_card-icon media_lazy"
+            class="case_card-icon"
             data-src="s3 image url"
             height="121.25"
             width="150.93"

@@ -42,7 +42,7 @@ exports[`Main component should render correctly 1`] = `
       >
         <img
           alt="blockquote"
-          class="case_mark img_lazy"
+          class="case_mark"
           data-src="[object Object]"
           height="50"
           width="50"
@@ -226,14 +226,14 @@ exports[`Main component should render correctly 1`] = `
                 class="card-content_picture"
               >
                 <source
-                  class="image media_lazy"
+                  class="image"
                   data-srcset="img.jpg,img.jpg"
                   type="image/webp"
                 />
                  
                 <img
                   alt="OTT-like Online Video Streaming Platform on MacBook Pro Laptop."
-                  class="image media_lazy"
+                  class="image"
                   data-src="img.jpg"
                   data-srcset="img.jpg"
                   data-testid="test-picture-img"
@@ -248,14 +248,14 @@ exports[`Main component should render correctly 1`] = `
             >
               <picture>
                 <source
-                  class="image media_lazy"
+                  class="image"
                   data-srcset="img.jpg,img.jpg"
                   type="image/webp"
                 />
                  
                 <img
                   alt="OTT-like Online Video Streaming Platform on MacBook Pro Laptop."
-                  class="image media_lazy"
+                  class="image"
                   data-src="img.jpg"
                   data-srcset="img.jpg"
                   data-testid="test-picture-img"
@@ -287,14 +287,14 @@ exports[`Main component should render correctly 1`] = `
                 class="card-content_picture"
               >
                 <source
-                  class="image media_lazy"
+                  class="image"
                   data-srcset="img.jpg,img.jpg"
                   type="image/webp"
                 />
                  
                 <img
                   alt="OTT-like Online Video Streaming Platform on IPhone X Smartphone."
-                  class="image media_lazy"
+                  class="image"
                   data-src="img.jpg"
                   data-srcset="img.jpg"
                   data-testid="test-picture-img"
@@ -309,14 +309,14 @@ exports[`Main component should render correctly 1`] = `
             >
               <picture>
                 <source
-                  class="image media_lazy"
+                  class="image"
                   data-srcset="img.jpg,img.jpg"
                   type="image/webp"
                 />
                  
                 <img
                   alt="OTT-like Online Video Streaming Platform on IPhone X Smartphone."
-                  class="image media_lazy"
+                  class="image"
                   data-src="img.jpg"
                   data-srcset="img.jpg"
                   data-testid="test-picture-img"
@@ -348,14 +348,14 @@ exports[`Main component should render correctly 1`] = `
                 class="card-content_picture"
               >
                 <source
-                  class="image media_lazy"
+                  class="image"
                   data-srcset="img.jpg,img.jpg"
                   type="image/webp"
                 />
                  
                 <img
                   alt="OTT-like Online Video Streaming Platform on IPad Tablet."
-                  class="image media_lazy"
+                  class="image"
                   data-src="img.jpg"
                   data-srcset="img.jpg"
                   data-testid="test-picture-img"
@@ -370,14 +370,14 @@ exports[`Main component should render correctly 1`] = `
             >
               <picture>
                 <source
-                  class="image media_lazy"
+                  class="image"
                   data-srcset="img.jpg,img.jpg"
                   type="image/webp"
                 />
                  
                 <img
                   alt="OTT-like Online Video Streaming Platform on IPad Tablet."
-                  class="image media_lazy"
+                  class="image"
                   data-src="img.jpg"
                   data-srcset="img.jpg"
                   data-testid="test-picture-img"
@@ -410,7 +410,7 @@ exports[`Main component should render correctly 1`] = `
         >
           <img
             alt="Golang"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__go go"
+            class="case_technologies-item__tech-icon case_technologies-item__go go"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -429,7 +429,7 @@ exports[`Main component should render correctly 1`] = `
         >
           <img
             alt="Django"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__django django"
+            class="case_technologies-item__tech-icon case_technologies-item__django django"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -448,7 +448,7 @@ exports[`Main component should render correctly 1`] = `
         >
           <img
             alt="PostgreSQL"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__postgresql postgresql"
+            class="case_technologies-item__tech-icon case_technologies-item__postgresql postgresql"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -467,7 +467,7 @@ exports[`Main component should render correctly 1`] = `
         >
           <img
             alt="Nimble Streamer"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__nimble nimble"
+            class="case_technologies-item__tech-icon case_technologies-item__nimble nimble"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -486,7 +486,7 @@ exports[`Main component should render correctly 1`] = `
         >
           <img
             alt="Plex Media Server"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__plex plex"
+            class="case_technologies-item__tech-icon case_technologies-item__plex plex"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -505,7 +505,7 @@ exports[`Main component should render correctly 1`] = `
         >
           <img
             alt="jQuery"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__jquery jquery"
+            class="case_technologies-item__tech-icon case_technologies-item__jquery jquery"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -524,7 +524,7 @@ exports[`Main component should render correctly 1`] = `
         >
           <img
             alt="Video.js"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__video-js video-js"
+            class="case_technologies-item__tech-icon case_technologies-item__video-js video-js"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -543,7 +543,7 @@ exports[`Main component should render correctly 1`] = `
         >
           <img
             alt="Nginx"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__nginx-txt nginx-txt"
+            class="case_technologies-item__tech-icon case_technologies-item__nginx-txt nginx-txt"
             data-src="[object Object]"
             height="40"
             width="40"
@@ -2120,7 +2120,7 @@ exports[`Main component should render correctly 1`] = `
         >
           <img
             alt="blockquote"
-            class="case_mark img_lazy"
+            class="case_mark"
             data-src="[object Object]"
             height="50"
             width="50"
@@ -3650,14 +3650,14 @@ exports[`Main component should render correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-srcset="img.jpg,img.jpg"
               type="image/webp"
             />
              
             <img
               alt="Rinat Shcherba"
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-src="img.jpg"
               data-srcset="img.jpg"
               data-testid="test-picture-img"
@@ -3693,14 +3693,14 @@ exports[`Main component should render correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-srcset="img.jpg,img.jpg"
               type="image/webp"
             />
              
             <img
               alt="Daniyar Chambylov"
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-src="img.jpg"
               data-srcset="img.jpg"
               data-testid="test-picture-img"
@@ -3736,14 +3736,14 @@ exports[`Main component should render correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-srcset="img.jpg,img.jpg"
               type="image/webp"
             />
              
             <img
               alt="Vladimir Shebarshov"
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-src="img.jpg"
               data-srcset="img.jpg"
               data-testid="test-picture-img"
@@ -3779,14 +3779,14 @@ exports[`Main component should render correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-srcset="img.jpg,img.jpg"
               type="image/webp"
             />
              
             <img
               alt="Andrew Minkin"
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-src="img.jpg"
               data-srcset="img.jpg"
               data-testid="test-picture-img"
@@ -3822,14 +3822,14 @@ exports[`Main component should render correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-srcset="img.jpg,img.jpg"
               type="image/webp"
             />
              
             <img
               alt="Erik Sultanaliev"
-              class="image grey-background media_lazy"
+              class="image grey-background"
               data-src="img.jpg"
               data-srcset="img.jpg"
               data-testid="test-picture-img"
@@ -3878,14 +3878,14 @@ exports[`Main component should render correctly 1`] = `
           >
             <picture>
               <source
-                class="image media_lazy"
+                class="image"
                 data-srcset="img.jpg,img.jpg"
                 type="image/webp"
               />
                
               <img
                 alt="Andrew Minkin"
-                class="image media_lazy"
+                class="image"
                 data-src="img.jpg"
                 data-srcset="img.jpg"
                 data-testid="test-picture-img"

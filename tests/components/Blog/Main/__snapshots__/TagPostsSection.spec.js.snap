@@ -68,7 +68,6 @@ exports[`TagPostsSection component should render correctly 1`] = `
             >
               <img
                 alt="How to Configure SSG and SSR on Nuxt."
-                class="img_lazy"
                 data-src="https://images.prismic.io/superpupertest/60f7cc05-4f36-4e26-82a9-69bd3370cceb_SSRonNuxten.jpg?auto=compress,format&rect=0,1,2000,1084&w=983&h=533"
                 height="217"
                 width="400"
@@ -154,7 +153,6 @@ exports[`TagPostsSection component should render correctly 1`] = `
             >
               <img
                 alt="React Boilerplate."
-                class="img_lazy"
                 data-src="https://images.prismic.io/superpupertest/9c72c729-40ce-498f-aa2f-483962a72413_boilerplate-react.jpg?auto=compress,format&rect=1,0,1997,1086&w=980&h=533"
                 height="217"
                 width="400"
@@ -240,7 +238,6 @@ exports[`TagPostsSection component should render correctly 1`] = `
             >
               <img
                 alt="Vue Boilerplate."
-                class="img_lazy"
                 data-src="https://images.prismic.io/superpupertest/e6da4751-a91e-49fb-a5f1-10cc4c6974e4_boilerplate-vue.jpg?auto=compress,format&rect=0,1,2000,1084&w=983&h=533"
                 height="217"
                 width="400"

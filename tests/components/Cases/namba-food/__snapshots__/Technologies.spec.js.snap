@@ -30,7 +30,7 @@ exports[`Technologies component should render correctly 1`] = `
       >
         <img
           alt="MySQL"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__mysql mysql"
+          class="case_technologies-item__tech-icon case_technologies-item__mysql mysql"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -49,7 +49,7 @@ exports[`Technologies component should render correctly 1`] = `
       >
         <img
           alt="PHP Symfony2"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__symfony symfony"
+          class="case_technologies-item__tech-icon case_technologies-item__symfony symfony"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -68,7 +68,7 @@ exports[`Technologies component should render correctly 1`] = `
       >
         <img
           alt="Laravel"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__laravel laravel"
+          class="case_technologies-item__tech-icon case_technologies-item__laravel laravel"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -88,7 +88,7 @@ exports[`Technologies component should render correctly 1`] = `
       >
         <img
           alt="Docker"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__docker docker"
+          class="case_technologies-item__tech-icon case_technologies-item__docker docker"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -107,7 +107,7 @@ exports[`Technologies component should render correctly 1`] = `
       >
         <img
           alt="Nginx"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__nginx nginx"
+          class="case_technologies-item__tech-icon case_technologies-item__nginx nginx"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -126,7 +126,7 @@ exports[`Technologies component should render correctly 1`] = `
       >
         <img
           alt="Redis"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__redis redis"
+          class="case_technologies-item__tech-icon case_technologies-item__redis redis"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -145,7 +145,7 @@ exports[`Technologies component should render correctly 1`] = `
       >
         <img
           alt="Python (Django)"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__python python"
+          class="case_technologies-item__tech-icon case_technologies-item__python python"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -164,7 +164,7 @@ exports[`Technologies component should render correctly 1`] = `
       >
         <img
           alt="Golang"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__go go"
+          class="case_technologies-item__tech-icon case_technologies-item__go go"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -183,7 +183,7 @@ exports[`Technologies component should render correctly 1`] = `
       >
         <img
           alt="Kotlin"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__kotlin kotlin"
+          class="case_technologies-item__tech-icon case_technologies-item__kotlin kotlin"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -202,7 +202,7 @@ exports[`Technologies component should render correctly 1`] = `
       >
         <img
           alt="Java"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__java java"
+          class="case_technologies-item__tech-icon case_technologies-item__java java"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -221,7 +221,7 @@ exports[`Technologies component should render correctly 1`] = `
       >
         <img
           alt="Swift"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__swift swift"
+          class="case_technologies-item__tech-icon case_technologies-item__swift swift"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -240,7 +240,7 @@ exports[`Technologies component should render correctly 1`] = `
       >
         <img
           alt="Firebase"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__firebase firebase"
+          class="case_technologies-item__tech-icon case_technologies-item__firebase firebase"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -259,7 +259,7 @@ exports[`Technologies component should render correctly 1`] = `
       >
         <img
           alt="TestFlight"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__test-flight test-flight"
+          class="case_technologies-item__tech-icon case_technologies-item__test-flight test-flight"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -278,7 +278,7 @@ exports[`Technologies component should render correctly 1`] = `
       >
         <img
           alt="OpenStreetMap"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__open-street-map open-street-map"
+          class="case_technologies-item__tech-icon case_technologies-item__open-street-map open-street-map"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -297,7 +297,7 @@ exports[`Technologies component should render correctly 1`] = `
       >
         <img
           alt="PHP"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__php php"
+          class="case_technologies-item__tech-icon case_technologies-item__php php"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -316,7 +316,7 @@ exports[`Technologies component should render correctly 1`] = `
       >
         <img
           alt="Jira Assistant"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__jira-assistant-blue jira-assistant-blue"
+          class="case_technologies-item__tech-icon case_technologies-item__jira-assistant-blue jira-assistant-blue"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -335,7 +335,7 @@ exports[`Technologies component should render correctly 1`] = `
       >
         <img
           alt="Grafana"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__grafana grafana"
+          class="case_technologies-item__tech-icon case_technologies-item__grafana grafana"
           data-src="[object Object]"
           height="40"
           width="40"
@@ -354,7 +354,7 @@ exports[`Technologies component should render correctly 1`] = `
       >
         <img
           alt="Sentry"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__sentry-black sentry-black"
+          class="case_technologies-item__tech-icon case_technologies-item__sentry-black sentry-black"
           data-src="[object Object]"
           height="40"
           width="40"

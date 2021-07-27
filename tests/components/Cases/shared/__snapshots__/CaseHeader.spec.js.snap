@@ -18,7 +18,7 @@ exports[`CaseHeader component should render correctly 1`] = `
      
     <video
       autoplay="autoplay"
-      class="case_main-video media_lazy"
+      class="case_main-video"
       data-testid="test-case_main-video"
       loop="loop"
       muted="muted"

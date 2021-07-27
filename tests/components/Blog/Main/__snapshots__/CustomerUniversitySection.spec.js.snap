@@ -63,7 +63,6 @@ exports[`CustomerUniversitySection component should render correctly 1`] = `
               to="/customer-university/uid/"
             >
               <img
-                class="img_lazy"
                 data-src=""
                 height="347"
                 width="560"

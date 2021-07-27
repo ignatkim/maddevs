@@ -15,7 +15,6 @@ exports[`FooterSocialNetworks component should render correctly 1`] = `
       >
         <img
           alt="Github"
-          class="img_lazy"
           data-src="[object Object]"
           height="42"
           width="42"
@@ -32,7 +31,6 @@ exports[`FooterSocialNetworks component should render correctly 1`] = `
       >
         <img
           alt="Facebook"
-          class="img_lazy"
           data-src="[object Object]"
           height="42"
           width="42"
@@ -49,7 +47,6 @@ exports[`FooterSocialNetworks component should render correctly 1`] = `
       >
         <img
           alt="Twitter"
-          class="img_lazy"
           data-src="[object Object]"
           height="42"
           width="42"
@@ -66,7 +63,6 @@ exports[`FooterSocialNetworks component should render correctly 1`] = `
       >
         <img
           alt="Linkedin"
-          class="img_lazy"
           data-src="[object Object]"
           height="42"
           width="42"
@@ -83,7 +79,6 @@ exports[`FooterSocialNetworks component should render correctly 1`] = `
       >
         <img
           alt="Instagram"
-          class="img_lazy"
           data-src="[object Object]"
           height="42"
           width="42"
@@ -100,7 +95,6 @@ exports[`FooterSocialNetworks component should render correctly 1`] = `
       >
         <img
           alt="Medium"
-          class="img_lazy"
           data-src="[object Object]"
           height="42"
           width="42"
@@ -117,7 +111,6 @@ exports[`FooterSocialNetworks component should render correctly 1`] = `
       >
         <img
           alt="Behance"
-          class="img_lazy"
           data-src="[object Object]"
           height="42"
           width="42"
@@ -134,7 +127,6 @@ exports[`FooterSocialNetworks component should render correctly 1`] = `
       >
         <img
           alt="DEV"
-          class="img_lazy"
           data-src="[object Object]"
           height="42"
           width="42"

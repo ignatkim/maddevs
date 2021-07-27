@@ -10,14 +10,14 @@ exports[`Swiper component should render correctly 1`] = `
     >
       <picture>
         <source
-          class="image media_lazy"
+          class="image"
           data-srcset="img.jpg,img.jpg"
           type="image/webp"
         />
          
         <img
           alt=""
-          class="image media_lazy"
+          class="image"
           data-src="img.jpg"
           data-srcset="img.jpg"
           data-testid="test-picture-img"
@@ -39,14 +39,14 @@ exports[`Swiper component should render correctly 1`] = `
           >
             <picture>
               <source
-                class="image media_lazy"
+                class="image"
                 data-srcset="img.jpg,img.jpg"
                 type="image/webp"
               />
                
               <img
                 alt=""
-                class="image media_lazy"
+                class="image"
                 data-src="img.jpg"
                 data-srcset="img.jpg"
                 data-testid="test-picture-img"
@@ -60,14 +60,14 @@ exports[`Swiper component should render correctly 1`] = `
           >
             <picture>
               <source
-                class="image media_lazy"
+                class="image"
                 data-srcset="img.jpg,img.jpg"
                 type="image/webp"
               />
                
               <img
                 alt=""
-                class="image media_lazy"
+                class="image"
                 data-src="img.jpg"
                 data-srcset="img.jpg"
                 data-testid="test-picture-img"
@@ -105,14 +105,14 @@ exports[`Swiper component should render correctly 1`] = `
         >
           <picture>
             <source
-              class="image media_lazy"
+              class="image"
               data-srcset="img.jpg,img.jpg"
               type="image/webp"
             />
              
             <img
               alt=""
-              class="image media_lazy"
+              class="image"
               data-src="img.jpg"
               data-srcset="img.jpg"
               data-testid="test-picture-img"
@@ -126,14 +126,14 @@ exports[`Swiper component should render correctly 1`] = `
         >
           <picture>
             <source
-              class="image media_lazy"
+              class="image"
               data-srcset="img.jpg,img.jpg"
               type="image/webp"
             />
              
             <img
               alt=""
-              class="image media_lazy"
+              class="image"
               data-src="img.jpg"
               data-srcset="img.jpg"
               data-testid="test-picture-img"
