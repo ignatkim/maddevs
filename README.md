@@ -15,7 +15,7 @@
   <img src="https://img.shields.io/github/package-json/dependency-version/maddevsio/maddevs/nuxt?color=%2341b883&style=for-the-badge" alt="Nuxt">
 </p>
 
-## 🌎 Table of content
+## 🌎 Table of contents
 * [Quick start](#%EF%B8%8F-quick-development-start)
 * [Project overview](#%EF%B8%8F-project-overview)
 * [Environment variables](#%EF%B8%8F-environment-variables)
