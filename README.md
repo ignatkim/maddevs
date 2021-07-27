@@ -4,18 +4,30 @@
   <br/>
   <span>Official Website Repository</span>
 </h1>
-<blockquote align="center">
+<p align="center">
   Mad Devs develops enterprise-level custom software solutions & mobile apps for finance, transportation, logistics, security, edtech, cloudtech & advertising industries.
-</blockquote>
+</p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/commit-activity/m/maddevsio/maddevs?color=%23F01716&label=COMMITS&style=for-the-badge" alt="Commits activity">
+  <img src="https://img.shields.io/github/commit-activity/y/maddevsio/maddevs?color=%23F01716&label=COMMITS&style=for-the-badge" alt="Commits activity">
   <img src="https://img.shields.io/website?down_color=%23F01716&down_message=DOWN&label=Status&style=for-the-badge&up_color=%42ba96&up_message=UP&url=https%3A%2F%2Fmaddevs.io" alt="Website status">
   <img src="https://img.shields.io/github/languages/top/maddevsio/maddevs?color=%23f0db4f&style=for-the-badge" alt="Javascript">
   <img src="https://img.shields.io/github/package-json/dependency-version/maddevsio/maddevs/nuxt?color=%2341b883&style=for-the-badge" alt="Nuxt">
 </p>
 
 ## 🌎 Table of content
+* [Quick start](#-quick-development-start)
+* [Project overview](#-project-overview)
+* [Environment variables](#-environment-variables)
+* [Deploy](#-deploy)
+* [Testing](#-testing)
+* [Linting](#-linting)
+* [Snyk](#-snyk)
+* [AWS S3](#-aws-s3)
+* [Feature Flags](#-feature-flags)
+* [SEO-Analyzer](#-seo-analyzer)
+* [Radiator](#-radiator)
+* [Additional docs](#-additional-docs)
 
 ## ⚡️ Quick development start
 To start the project you need to do the following steps:
@@ -38,7 +50,7 @@ For detailed explanation on how things work, checkout the [Nuxt.js docs](https:/
 
 #### Main technologies
 
->A list of main technologies that we use for build our application
+A list of main technologies that we use for build our application
 
 | Technology  	| Version	| Description |
 |---	|---	|--- |
@@ -52,7 +64,7 @@ For detailed explanation on how things work, checkout the [Nuxt.js docs](https:/
 
 #### Additional tools
 
->A list of additional tools that we use for make our codebase better
+A list of additional tools that we use for make our codebase better
 
 | Technology  	| Version	| Description |
 |---	|---	|--- |
@@ -111,7 +123,7 @@ For detailed explanation on how things work, checkout the [Nuxt.js docs](https:/
 
 ## 💼️ Environment variables
 
->A list of environment variables that needed to start the project(required)
+A list of environment variables that needed to start the project(required)
 
 | NAME  	                                | DESCRIPTION  	|
 |---	                                    |---	|
@@ -138,10 +150,11 @@ For detailed explanation on how things work, checkout the [Nuxt.js docs](https:/
 | NODE_AWS_URL  	                        | AWS url  	  	          	          	          	    |
 | NODE_S3_PUBLIC_URL  	                  | S3 url  	  	          	          	          	    |
 
->All of these variables must be added to the Heroku hosting
+All of these variables must be added to the Heroku hosting
 
 ### For radiator
-> Not required in dev mode
+
+Not required in dev mode
 
 | NAME  	                                | DESCRIPTION  	    |
 |---	                                    |---	              |
@@ -163,11 +176,11 @@ For detailed explanation on how things work, checkout the [Nuxt.js docs](https:/
 
 ### Staging
 
-> To send changes to the staging server, you should merge your branch to the **develop** branch
+To send changes to the staging server, you should merge your branch to the **develop** branch
 
 ### Production
 
-> To send changes to the staging server, you should merge **develop** branch into **master** branch
+To send changes to the staging server, you should merge **develop** branch into **master** branch
 
 ## 🚓 Testing
 
@@ -189,8 +202,9 @@ For detailed explanation on how things work, checkout the [Nuxt.js docs](https:/
 | `npm run test:e2e`   	                 | Run e2e tests 	  	        	  	   |
 | `npm run generate:coverage-badges`	   | Generate coverage badges    	       |
 
-## Linting
-> We're using some tools for linting our code - ESLint, Sass-Lint
+## ✨ Linting
+
+We're using some tools for linting our code - ESLint, Sass-Lint
 
 ### Commands
 | COMMAND  	                     | DESCRIPTION  	      	      	     |
@@ -200,14 +214,14 @@ For detailed explanation on how things work, checkout the [Nuxt.js docs](https:/
 | `npm run lint-vue-scss`  	     | Run only vue-scss lint              |
 | `npm run lint-scss`  	         | Run only core scss lint  	         |
 
-## Snyk
-> Snyk is a tool for find and fix security vulnerabilities
+## 🐺 Snyk
+
+Snyk is a tool for find and fix security vulnerabilities
 
 ### Commands
 | COMMAND  	                     | DESCRIPTION  	      	      	     |
 |---	                           |---	                	      	       |
 | `npm run snyk-protect` 	       | Run snyk checking  	  	  	  	   |
-
 
 ## 😎 AWS S3
 
@@ -286,7 +300,7 @@ This variable must contain the url, which will be used to access s3 files.
 
 ## 🏳️ Feature flags
 
-> We're used feature-flags for display/hide some features on different environments.
+We're used feature-flags for display/hide some features on different environments.
 
 ### Create flag
 
@@ -342,7 +356,7 @@ or in the component's code:
 
 ## 🔥 SEO-Analyzer
 
-> Github action for checks for errors in the html DOM
+Github action for checks for errors in the html DOM
 
 ### Running
 
@@ -369,7 +383,7 @@ Otherwise, you should get success result:
 ```
 
 ## 📻 Radiator
-> Advanced tool for collect core metrics from analytics and pagespeed and send it to our slack/telegram channels.
+Advanced tool for collect core metrics from analytics and pagespeed and send it to our slack/telegram channels.
 
 ### Configure
 For configure a radiator you need to go to the `server/radiator/index.js` file and change some configurations or create your own.
