@@ -3,15 +3,15 @@
     id="transparent-header-area"
     class="banner"
   >
-    <picture v-lazy-load>
+    <picture>
       <source
-        :data-srcset="[$getMediaFromS3('/images/DeliveryModels/webp/banner.webp') + ' ', $getMediaFromS3('/images/DeliveryModels/webp/banner@2x.webp 2x')]"
+        :srcset="[$getMediaFromS3('/images/DeliveryModels/webp/banner.webp') + ' ', $getMediaFromS3('/images/DeliveryModels/webp/banner@2x.webp 2x')]"
         type="image/webp"
         class="banner__image"
       >
       <img
-        :data-srcset="$getMediaFromS3('/images/DeliveryModels/jpg/banner@2x.jpg')"
-        :data-src="$getMediaFromS3('/images/DeliveryModels/jpg/banner.jpg')"
+        :srcset="$getMediaFromS3('/images/DeliveryModels/jpg/banner@2x.jpg')"
+        :src="$getMediaFromS3('/images/DeliveryModels/jpg/banner.jpg')"
         width="1680"
         height="827"
         class="banner__image"

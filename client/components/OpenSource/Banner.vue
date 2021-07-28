@@ -3,9 +3,9 @@
     id="transparent-header-area"
     class="banner"
   >
-    <picture v-lazy-load>
+    <picture>
       <source
-        :data-srcset="[
+        :srcset="[
           $getMediaFromS3('/images/OpenSource/webp/programmer.webp') + ' ',
           $getMediaFromS3('/images/OpenSource/webp/programmer@2x.webp') + ' 2x'
         ]"
@@ -13,8 +13,8 @@
         class="banner__image"
       >
       <img
-        :data-src="$getMediaFromS3('/images/OpenSource/png/programmer.png')"
-        :data-srcset="$getMediaFromS3('/images/OpenSource/png/programmer@2x.png') + ' 2x'"
+        :src="$getMediaFromS3('/images/OpenSource/png/programmer.png')"
+        :srcset="$getMediaFromS3('/images/OpenSource/png/programmer@2x.png') + ' 2x'"
         width="1680"
         height="969"
         class="banner__image"

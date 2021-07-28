@@ -9,7 +9,7 @@ exports[`Banner component should render correctly 1`] = `
     <picture>
       <source
         class="banner__image"
-        data-srcset="img.jpg ,img.jpg 2x"
+        srcset="img.jpg ,img.jpg 2x"
         type="image/webp"
       />
        
@@ -17,8 +17,8 @@ exports[`Banner component should render correctly 1`] = `
         alt="Programmer"
         class="banner__image"
         height="969"
-        data-src="img.jpg"
-        data-srcset="img.jpg 2x"
+        src="img.jpg"
+        srcset="img.jpg 2x"
         width="1680"
       />
     </picture>
