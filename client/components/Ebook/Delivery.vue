@@ -4,7 +4,7 @@
       <UIBanner
         title="Build your product <br /> with Mad Devs"
         text="Together we build solutions that bring digital innovation."
-        :image="require('@/assets/img/DeliveryModels/png/Tamara.png')"
+        :image="$getMediaFromS3(`/images/CTABanner/Tamara.png`)"
         image-alt-text="Tamara"
         man-name="Tamara Mun"
         man-position="Head of Delivery <br> Management"
