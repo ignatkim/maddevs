@@ -21,7 +21,8 @@
         <video
           v-else
           id="iphone-silver-video"
-          class="case_full-screen-video media_lazy"
+          v-lazy-load
+          class="case_full-screen-video"
           width="100%"
           height="100%"
           loop="true"

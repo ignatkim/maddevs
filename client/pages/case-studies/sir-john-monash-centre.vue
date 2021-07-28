@@ -28,11 +28,12 @@
         @click="openFullscreen()"
       >
         <img
+          v-lazy-load
           :data-src="require(`@/assets/img/Studies/svg/play-icon.svg`)"
           width="14"
           height="14"
           alt="Play"
-          class="case_play-icon img_lazy"
+          class="case_play-icon"
         >
         View video about SJMC
       </button>
@@ -46,11 +47,12 @@
       >
         <img
           slot="icon"
+          v-lazy-load
           :data-src="require(`@/assets/img/Studies/svg/nambafood-footer.svg`)"
           width="200"
           height="63"
           alt="Namba Food"
-          class="case_logotype-namba-food img_lazy"
+          class="case_logotype-namba-food"
         >
         Namba Food <br>
         Top Delivery Service in <br class="case_mobile-break-namba-food">
@@ -67,7 +69,6 @@ import CaseFooter from '@/components/Cases/shared/CaseFooter'
 import SJMCVideo from '@/components/Cases/sjmc/SJMCVideo'
 import { getMetadata, buildHead } from '@/data/seo'
 import { getPageScripts } from '@/data/pageScripts'
-import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
 export default {
   name: 'SirJohnMonashCentre',
@@ -77,8 +78,6 @@ export default {
     CaseFooter,
     SJMCVideo,
   },
-
-  mixins: [initLazyLoadMixin],
 
   data() {
     return {
@@ -94,10 +93,6 @@ export default {
 
   head() {
     return buildHead({ ...getMetadata('sjmc'), image: 'https://maddevs.io/sjmc-case.png' }, getPageScripts('sjmc'))
-  },
-
-  mounted() {
-    this.$lazyLoad.init()
   },
 
   methods: {

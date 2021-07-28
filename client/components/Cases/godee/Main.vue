@@ -54,11 +54,12 @@
     >
       <img
         slot="icon"
+        v-lazy-load
         :data-src="require(`@/assets/img/Studies/svg/nambafood-footer.svg`)"
         width="200"
         height="63"
         alt="Namba Food"
-        class="case_logotype-namba-food img_lazy"
+        class="case_logotype-namba-food"
       >
       Namba Food <br>
       Top Delivery Service in <br class="case_mobile-break-namba-food">

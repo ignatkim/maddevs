@@ -7,6 +7,7 @@ describe('CardsBusinessModelsGrid component', () => {
       mocks: {
         $getMediaFromS3: () => 'img.jpg',
       },
+      stubs: ['Picture'],
     })
 
     expect(screen.getAllByText(/Personal courier/i)).toHaveLength(2)

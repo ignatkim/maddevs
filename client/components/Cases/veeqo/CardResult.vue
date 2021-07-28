@@ -8,11 +8,12 @@
     </TextParagraphUppercase>
     <img
       v-if="icon"
+      v-lazy-load
       :data-src="$getMediaFromS3(`/images/Cases/veeqo/svg/${icon}.svg`)"
       :alt="alt"
       width="66"
       height="66"
-      class="card_icon media_lazy"
+      class="card_icon"
       :class="`card_icon_${icon}`"
     >
     <div class="card_text-content">

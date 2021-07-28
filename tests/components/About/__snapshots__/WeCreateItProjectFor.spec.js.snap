@@ -127,7 +127,6 @@ exports[`WeCreateItProjectsFor should render correctly 1`] = `
           >
             <img
               alt="usa"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -138,7 +137,6 @@ exports[`WeCreateItProjectsFor should render correctly 1`] = `
           >
             <img
               alt="australia"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -149,7 +147,6 @@ exports[`WeCreateItProjectsFor should render correctly 1`] = `
           >
             <img
               alt="vietnam"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -160,7 +157,6 @@ exports[`WeCreateItProjectsFor should render correctly 1`] = `
           >
             <img
               alt="france"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -171,7 +167,6 @@ exports[`WeCreateItProjectsFor should render correctly 1`] = `
           >
             <img
               alt="uk"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -182,7 +177,6 @@ exports[`WeCreateItProjectsFor should render correctly 1`] = `
           >
             <img
               alt="indonesia"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -193,7 +187,6 @@ exports[`WeCreateItProjectsFor should render correctly 1`] = `
           >
             <img
               alt="germany"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -204,7 +197,6 @@ exports[`WeCreateItProjectsFor should render correctly 1`] = `
           >
             <img
               alt="austria"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -215,7 +207,6 @@ exports[`WeCreateItProjectsFor should render correctly 1`] = `
           >
             <img
               alt="switzerland"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -226,7 +217,6 @@ exports[`WeCreateItProjectsFor should render correctly 1`] = `
           >
             <img
               alt="canada"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -237,7 +227,6 @@ exports[`WeCreateItProjectsFor should render correctly 1`] = `
           >
             <img
               alt="latvia"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -248,7 +237,6 @@ exports[`WeCreateItProjectsFor should render correctly 1`] = `
           >
             <img
               alt="kazakhstan"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -259,7 +247,6 @@ exports[`WeCreateItProjectsFor should render correctly 1`] = `
           >
             <img
               alt="sweden"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -270,7 +257,6 @@ exports[`WeCreateItProjectsFor should render correctly 1`] = `
           >
             <img
               alt="finland"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -281,7 +267,6 @@ exports[`WeCreateItProjectsFor should render correctly 1`] = `
           >
             <img
               alt="uae"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -292,7 +277,6 @@ exports[`WeCreateItProjectsFor should render correctly 1`] = `
           >
             <img
               alt="denmark"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -303,7 +287,6 @@ exports[`WeCreateItProjectsFor should render correctly 1`] = `
           >
             <img
               alt="japan"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -314,7 +297,6 @@ exports[`WeCreateItProjectsFor should render correctly 1`] = `
           >
             <img
               alt="norway"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -325,7 +307,6 @@ exports[`WeCreateItProjectsFor should render correctly 1`] = `
           >
             <img
               alt="portugal"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -336,7 +317,6 @@ exports[`WeCreateItProjectsFor should render correctly 1`] = `
           >
             <img
               alt="katar"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -347,7 +327,6 @@ exports[`WeCreateItProjectsFor should render correctly 1`] = `
           >
             <img
               alt="south_africa"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
@@ -358,7 +337,6 @@ exports[`WeCreateItProjectsFor should render correctly 1`] = `
           >
             <img
               alt="netherlands"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"

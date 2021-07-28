@@ -96,7 +96,8 @@
         <video
           v-else
           id="map-video"
-          class="case_map-video media_lazy"
+          v-lazy-load
+          class="case_map-video"
           width="100%"
           height="100%"
           loop="true"

@@ -11,16 +11,12 @@ import AuthorBanner from '@/components/Blog/Main/AuthorBanner'
 import AuthorPostsSection from '@/components/Blog/Main/AuthorPostsSection'
 import { buildHead } from '@/data/seo'
 
-import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
-
 export default {
   name: 'Author',
   components: {
     AuthorBanner,
     AuthorPostsSection,
   },
-
-  mixins: [initLazyLoadMixin],
 
   beforeRouteEnter(to, from, next) {
     next(vm => {

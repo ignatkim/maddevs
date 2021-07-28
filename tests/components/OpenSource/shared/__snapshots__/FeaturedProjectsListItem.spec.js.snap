@@ -15,7 +15,6 @@ exports[`FeaturedProjectsListItem component should render correctly 1`] = `
       >
         <img
           alt="alt text"
-          class="media_lazy"
           data-src="img.jpg"
           height="62"
           width="62"

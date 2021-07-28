@@ -11,7 +11,7 @@ const mocks = {
   },
 }
 
-const stubs = ['NuxtLink', 'Main']
+const stubs = ['NuxtLink', 'Main', 'CaseHeader', 'CaseITC']
 
 const META_DATA = {
   description: DESCRIPTION,
@@ -31,11 +31,16 @@ const META_DATA = {
   jsonLd: '{"@context": "https://schema.org", "@type": "WebPage", "name": "Mad Devs Case Study: the International Trade Centre (ITC)", "description": "Digital Transformation Case Study: How to implement digital transformation? Read an ITC\'s story of improving the reports and the coaches\' coordination with a convenient web app.", "publisher": {"@type": "ProfilePage", "name": "Mad Devs Group Limited"}}',
 }
 
+const directives = {
+  'lazy-load': () => {},
+}
+
 describe('InternationalTradeCenter root component', () => {
   it('should render correctly', () => {
     const { container } = render(InternationalTradeCenter, {
       mocks,
       stubs,
+      directives,
     })
 
     expect(container).toMatchSnapshot()
@@ -44,6 +49,8 @@ describe('InternationalTradeCenter root component', () => {
   it('should correct work head method', () => {
     const wrapper = shallowMount(InternationalTradeCenter, {
       mocks,
+      stubs,
+      directives,
     })
 
     const actual = wrapper.vm.$options.head.call(wrapper.vm)

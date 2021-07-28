@@ -33,13 +33,18 @@ const META_DATA = {
   image: 'https://maddevs.io/blog.png',
 }
 
-const stubs = ['NuxtLink', 'Main']
+const stubs = ['NuxtLink', 'Main', 'CaseVeeqo', 'CaseHeader']
+
+const directives = {
+  'lazy-load': () => {},
+}
 
 describe('Veeqo root component', () => {
   it('should render correctly', () => {
     const { container } = render(Veeqo, {
       mocks,
       stubs,
+      directives,
     })
 
     expect(screen.getByText('Optimization for Veeqo')).not.toBeNull()
@@ -49,6 +54,8 @@ describe('Veeqo root component', () => {
   it('should correct work head method', () => {
     const wrapper = shallowMount(Veeqo, {
       mocks,
+      stubs,
+      directives,
     })
 
     const actual = wrapper.vm.$options.head.call(wrapper.vm)

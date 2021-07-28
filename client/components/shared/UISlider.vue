@@ -10,13 +10,15 @@
       >
         <picture>
           <source
-            :srcset="[$getMediaFromS3(`/images/${slide.page}/webp/${slide.file}.webp`) + ' ', $getMediaFromS3(`/images/${slide.page}/webp/${slide.file}@2x.webp 2x`)]"
+            v-lazy-load
+            :data-srcset="[$getMediaFromS3(`/images/${slide.page}/webp/${slide.file}.webp`) + ' ', $getMediaFromS3(`/images/${slide.page}/webp/${slide.file}@2x.webp 2x`)]"
             type="image/webp"
             class="ui-slider_slider-img"
           >
           <img
-            :src="$getMediaFromS3(`/images/${slide.page}/${slide.extension}/${slide.file}.${slide.extension}`)"
-            :srcset="$getMediaFromS3(`/images/${slide.page}/${slide.extension}/${slide.file}@2x.${slide.extension}`)"
+            v-lazy-load
+            :data-src="$getMediaFromS3(`/images/${slide.page}/${slide.extension}/${slide.file}.${slide.extension}`)"
+            :data-srcset="$getMediaFromS3(`/images/${slide.page}/${slide.extension}/${slide.file}@2x.${slide.extension}`)"
             :width="slide.width"
             :height="slide.height"
             :alt="slide.alt"

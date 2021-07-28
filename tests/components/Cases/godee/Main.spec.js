@@ -10,12 +10,33 @@ const mocks = {
   $getMediaFromS3: img => img,
 }
 
+const stubs = [
+  'ClientOnly',
+  'NuxtLink',
+  'Footer',
+  'DevelopmentGoals',
+  'ParallaxImage',
+  'CaseHeader',
+  'Picture',
+  'TextQuote',
+  'IntellegentManagementPanel',
+  'ListTechnologiesItem',
+  'CardGoDeeFeature',
+  'TripsMonitor',
+  'RouteOptimisation',
+]
+
+const directives = {
+  'lazy-load': () => {},
+}
+
 describe('Main component', () => {
   it('should render correctly', () => {
     const { container } = render(Main, {
       mocks,
-      stubs: ['ClientOnly', 'NuxtLink', 'Footer', 'DevelopmentGoals', 'ParallaxImage'],
+      stubs,
       container: document.body.appendChild(containerToRender),
+      directives,
     })
 
     expect(container).toMatchSnapshot()

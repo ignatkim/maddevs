@@ -1,7 +1,7 @@
 import KeywordGrouping from '@/components/Cases/peklo/KeywordGrouping'
 import { render } from '@testing-library/vue'
 
-const stubs = ['Picture']
+const stubs = ['Picture', 'TextQuote']
 
 describe('KeywordGrouping component', () => {
   it('should render correctly', () => {

@@ -27,11 +27,16 @@ const mocks = {
   },
 }
 
+const directives = {
+  'lazy-load': () => {},
+}
+
 describe('Index page', () => {
   it('should render correctly', () => {
     const { container } = render(Index, {
       stubs,
       mocks,
+      directives,
     })
 
     expect(container).toMatchSnapshot()
@@ -41,6 +46,7 @@ describe('Index page', () => {
     const wrapper = shallowMount(Index, {
       stubs,
       mocks,
+      directives,
     })
 
     const actual = wrapper.vm.$options.head.call(wrapper.vm)

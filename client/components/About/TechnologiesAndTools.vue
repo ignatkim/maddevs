@@ -34,11 +34,11 @@
             class="tech_item"
           >
             <img
+              v-lazy-load
               :data-src="require(`@/assets/img/Home/svg/technologies/${technology.value}.svg`)"
               :alt="technology.title"
               width="26"
               height="26"
-              class="img_lazy"
             >
             <span>{{ technology.title }}</span>
           </div>

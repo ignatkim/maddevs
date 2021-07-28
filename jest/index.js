@@ -105,7 +105,13 @@ function runExec(cmd) {
     const spawnedProcess = spawn(splitCmd[0], splitCmd.slice(1), {
       stdio: 'inherit',
     })
-    spawnedProcess.on('close', callback)
+    spawnedProcess.on('close', code => {
+      // Stop next process if current process is exited with code 1
+      if (code === 1) process.exit(code)
+
+      // Run next process
+      callback()
+    })
   }
 }
 

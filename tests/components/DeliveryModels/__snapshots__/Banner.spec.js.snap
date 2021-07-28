@@ -8,14 +8,14 @@ exports[`Banner component should render correctly 1`] = `
   >
     <picture>
       <source
-        class="banner__image media_lazy"
+        class="banner__image"
         srcset="img.jpg ,img.jpg"
         type="image/webp"
       />
        
       <img
         alt="Team"
-        class="banner__image media_lazy"
+        class="banner__image"
         height="827"
         src="img.jpg"
         srcset="img.jpg"

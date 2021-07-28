@@ -37,6 +37,9 @@ describe('image attribute slice component', () => {
           asText: name => name,
         },
       },
+      directives: {
+        'lazy-load': () => {},
+      },
     })
 
     expect(container).toMatchSnapshot()

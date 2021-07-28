@@ -7,7 +7,6 @@
 <script>
 import Main from '@/components/OpenSource/Main'
 import { getMetadata, buildHead } from '@/data/seo'
-import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 import animateOnScrollMixin from '@/mixins/animateOnScrollMixin'
 
 export default {
@@ -16,7 +15,7 @@ export default {
     Main,
   },
 
-  mixins: [initLazyLoadMixin, animateOnScrollMixin({
+  mixins: [animateOnScrollMixin({
     offset: 200,
     delay: 50,
     anchorPlacement: 'top-center',
@@ -26,10 +25,6 @@ export default {
 
   head() {
     return buildHead(getMetadata('openSource'))
-  },
-
-  mounted() {
-    this.$lazyLoad.init()
   },
 }
 </script>

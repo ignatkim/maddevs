@@ -30,11 +30,11 @@
             class="we-create-it-projects__flag-item"
           >
             <img
+              v-lazy-load
               :data-src="require(`@/assets/img/Home/flags/${country}.svg`)"
               :alt="country"
               width="32"
               height="32"
-              class="img_lazy"
             >
           </li>
         </ul>

@@ -21,7 +21,7 @@ const GODEE_MOCK = {
   },
 }
 
-const stubs = ['NuxtLink']
+const stubs = ['NuxtLink', 'FooterContacts']
 
 const setDefaultStateForHeader = jest.fn()
 

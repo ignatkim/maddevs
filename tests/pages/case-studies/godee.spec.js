@@ -49,6 +49,10 @@ const mocks = {
 
 const stubs = ['NuxtLink', 'Main']
 
+const directives = {
+  'lazy-load': () => {},
+}
+
 describe('GoDeeCase _uid component', () => {
   global.$nuxt = {
     $route: {
@@ -61,6 +65,7 @@ describe('GoDeeCase _uid component', () => {
       store,
       mocks,
       stubs,
+      directives,
     })
 
     expect(container).toMatchSnapshot()
@@ -71,6 +76,7 @@ describe('GoDeeCase _uid component', () => {
       store,
       mocks,
       stubs,
+      directives,
     })
 
     const actual = wrapper.vm.$options.head.call(wrapper.vm)

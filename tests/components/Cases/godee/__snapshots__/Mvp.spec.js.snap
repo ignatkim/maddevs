@@ -49,25 +49,10 @@ exports[`Mvp component should render correctly 1`] = `
       <div
         class="case_card background-color-silver"
       >
-        <div
-          class="card-content"
+        <cardgodeefeature-stub
+          iconname="live-chat"
+          title="Live chat feature"
         >
-          <img
-            alt="live-chat"
-            class="card-content_icon img_lazy"
-            data-src="[object Object]"
-            height="51.94"
-            width="51.94"
-          />
-           
-          <h4
-            class="case_title_h4 card-content_title"
-          >
-            
-    Live chat feature
-  
-          </h4>
-           
           <p
             class="case_paragraph"
           >
@@ -76,31 +61,16 @@ exports[`Mvp component should render correctly 1`] = `
           from users to make white-collar workers’ commutes easier.
         
           </p>
-        </div>
+        </cardgodeefeature-stub>
       </div>
        
       <div
         class="case_card background-color-silver"
       >
-        <div
-          class="card-content"
+        <cardgodeefeature-stub
+          iconname="trip-request"
+          title="Trip request"
         >
-          <img
-            alt="trip-request"
-            class="card-content_icon img_lazy"
-            data-src="[object Object]"
-            height="51.94"
-            width="51.94"
-          />
-           
-          <h4
-            class="case_title_h4 card-content_title"
-          >
-            
-    Trip request
-  
-          </h4>
-           
           <p
             class="case_paragraph"
           >
@@ -109,7 +79,7 @@ exports[`Mvp component should render correctly 1`] = `
           districts.
         
           </p>
-        </div>
+        </cardgodeefeature-stub>
       </div>
     </div>
   </section>

@@ -21,7 +21,6 @@ import CustomerTestimonials from '@/components/About/CustomerTestimonials'
 import CustomerRates from '@/components/About/CustomerRates'
 import MeetOurExperts from '@/components/About/MeetOurExperts'
 import { getMetadata, buildHead } from '@/data/seo'
-import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
 export default {
   name: 'About',
@@ -36,14 +35,8 @@ export default {
     MeetOurExperts,
   },
 
-  mixins: [initLazyLoadMixin],
-
   head() {
     return buildHead(getMetadata('index'))
-  },
-
-  mounted() {
-    this.$lazyLoad.init()
   },
 }
 </script>

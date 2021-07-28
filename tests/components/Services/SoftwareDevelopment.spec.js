@@ -19,7 +19,7 @@ describe('SoftwareDevelopment component', () => {
 
   it('should render correctly', () => {
     const { container } = render(SoftwareDevelopment, {
-      stubs: ['ClientOnly'],
+      stubs: ['ClientOnly', 'SoftwareDevelopmentIcons'],
     })
 
     expect(container).toMatchSnapshot()
@@ -38,6 +38,9 @@ describe('SoftwareDevelopment component', () => {
           methods: {
             show: mockShow,
           },
+        },
+        SoftwareDevelopmentIcons: {
+          render(h) { return h('div') },
         },
       },
     })

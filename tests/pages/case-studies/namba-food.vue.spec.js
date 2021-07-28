@@ -47,7 +47,11 @@ const mocks = {
   },
 }
 
-const stubs = ['NuxtLink', 'Main']
+const stubs = ['NuxtLink', 'Main', 'CaseHeader', 'NambaFood']
+
+const directives = {
+  'lazy-load': () => {},
+}
 
 describe('NambaFood _uid component', () => {
   global.$nuxt = {
@@ -61,6 +65,7 @@ describe('NambaFood _uid component', () => {
       store,
       mocks,
       stubs,
+      directives,
     })
 
     expect(container).toMatchSnapshot()
@@ -71,6 +76,7 @@ describe('NambaFood _uid component', () => {
       store,
       mocks,
       stubs,
+      directives,
     })
 
     const actual = wrapper.vm.$options.head.call(wrapper.vm)

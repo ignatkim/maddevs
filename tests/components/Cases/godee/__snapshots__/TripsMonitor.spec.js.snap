@@ -34,23 +34,16 @@ exports[`TripsMonitor component should render correctly 1`] = `
           class="case_video-flex-wrapper"
           data-testid="test-case_video-flex-wrapper"
         >
-          <picture>
-            <source
-              class="image grey-background media_lazy"
-              data-srcset="img.jpg,img.jpg"
-              type="image/webp"
-            />
-             
-            <img
-              alt="GoDee: Safari Browser Top Bar White."
-              class="image grey-background media_lazy"
-              data-src="img.jpg"
-              data-srcset="img.jpg"
-              data-testid="test-picture-img"
-              height="16.45"
-              width="1026"
-            />
-          </picture>
+          <picture-stub
+            alt="GoDee: Safari Browser Top Bar White."
+            background="true"
+            extension="jpg"
+            file="safari-top-bar-white"
+            folder="common"
+            height="16.45"
+            lazy="true"
+            width="1026"
+          />
            
           <img
             alt="Trip Monitor"

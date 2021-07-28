@@ -14,11 +14,14 @@ const slots = {
   default: 'Main Content',
 }
 
+const stubs = ['Picture']
+
 describe('TextQuoteAuthor component', () => {
   it('should render correctly', () => {
     const { container } = render(TextQuoteAuthor, {
       slots,
       props,
+      stubs,
       mocks: {
         $getMediaFromS3: () => 'img.jpg',
       },
@@ -31,6 +34,7 @@ describe('TextQuoteAuthor component', () => {
     const { html } = render(TextQuoteAuthor, {
       slots,
       props,
+      stubs,
       mocks: {
         $getMediaFromS3: () => 'img.jpg',
       },

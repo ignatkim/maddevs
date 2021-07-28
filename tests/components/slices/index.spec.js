@@ -113,7 +113,7 @@ describe('slice block component', () => {
           asHtml: html => `<p>${html}</p>`,
         },
       },
-      stubs: ['PrismicImage', 'PrismicRichText'],
+      stubs: ['PrismicImage', 'PrismicRichText', 'ImageAttributesSlice', 'ImageCaptionSlice'],
     })
 
     expect(container).toMatchSnapshot()
@@ -135,7 +135,7 @@ describe('Post component copyAnchorLink', () => {
 
   beforeEach(() => {
     wrapper = shallowMount(SlicesBlock, {
-      stubs: ['PrismicRichText'],
+      stubs: ['PrismicRichText', 'ImageAttributesSlice', 'ImageCaptionSlice'],
       propsData: {
         slice,
         slices,

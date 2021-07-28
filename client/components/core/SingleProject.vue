@@ -11,11 +11,12 @@
     >
       <div class="single-project__content-wrap">
         <img
+          v-lazy-load
           :width="logoWidth"
           :data-src="require(`@/assets/img/Home/svg/caseIcons/${logo}.svg`)"
           :alt="alt"
           height="41"
-          class="img_lazy single-project__logo"
+          class="single-project__logo"
         >
         <h3
           class="single-project__sub-title"
@@ -28,10 +29,11 @@
         </p>
         <div class="contribution-widget">
           <img
+            v-lazy-load
             :data-src="require(`@/assets/img/Home/svg/caseIcons/${mdLogo}.svg`)"
             width="20"
             height="18"
-            class="contribution-widget__img img_lazy"
+            class="contribution-widget__img"
             alt="Mad Devs logo"
           >
           <span
@@ -48,6 +50,7 @@
       >
         <picture>
           <source
+            v-lazy-load
             :data-srcset="[
               require(`@/assets/img/Studies/webp/${background}.webp`) + ' ',
               require(`@/assets/img/Studies/webp/${background}.webp`) + ' 2x',
@@ -56,10 +59,10 @@
             type="image/webp"
           >
           <img
+            v-lazy-load
             :data-src="[require(`@/assets/img/Studies/${extension}/${background}.${extension}`)]"
             :data-srcset="[require(`@/assets/img/Studies/${extension}/${background}.${extension}`) + ' 2x']"
             :alt="alt"
-            class="img_lazy"
             width="610"
             height="294"
           >

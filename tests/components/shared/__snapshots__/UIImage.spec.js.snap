@@ -11,7 +11,7 @@ exports[`UIImage should render correctly 1`] = `
      
     <img
       alt="marat"
-      class="multi-image img_lazy"
+      class="multi-image"
       data-src="[object Object]"
       data-srcset="[object Object] 2x"
       data-testid="test-multi-image"

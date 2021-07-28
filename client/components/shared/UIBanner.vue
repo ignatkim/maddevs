@@ -8,9 +8,10 @@
       <!-- Child elements end -->
     </div>
     <img
+      v-lazy-load
       width="395"
       height="490"
-      class="cta-banner__image media_lazy"
+      class="cta-banner__image"
       :data-src="image"
       :alt="imageAltText"
     >

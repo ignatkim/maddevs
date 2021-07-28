@@ -9,6 +9,7 @@ describe('PreviewCards component', () => {
   it('should render correctly', () => {
     const { container } = render(PreviewCards, {
       mocks,
+      stubs: ['Picture'],
     })
 
     expect(container).toMatchSnapshot()

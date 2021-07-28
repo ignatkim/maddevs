@@ -26,11 +26,12 @@
     >
       <img
         slot="icon"
+        v-lazy-load
         :data-src="require(`@/assets/img/Studies/svg/yourcast-logo.svg`)"
         width="270"
         height="57"
         alt="The Evolution of Yourcast.TV"
-        class="case_logotype-yourcast img_lazy"
+        class="case_logotype-yourcast"
       >
       The Evolution of Yourcast.TV
     </Footer>
@@ -41,7 +42,6 @@
 import CaseHeader from '@/components/Cases/shared/CaseHeader'
 import Footer from '@/components/Cases/shared/CaseFooter'
 import Main from '@/components/Cases/veeqo/Main'
-import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 import { getMetadata, buildHead } from '@/data/seo'
 
 export default {
@@ -51,8 +51,6 @@ export default {
     Footer,
     Main,
   },
-
-  mixins: [initLazyLoadMixin],
 
   data() {
     return {
@@ -71,10 +69,6 @@ export default {
       ...getMetadata('veeqo'),
       image: 'https://maddevs.io/veeqo-case.jpg',
     })
-  },
-
-  mounted() {
-    this.$lazyLoad.init()
   },
 }
 </script>

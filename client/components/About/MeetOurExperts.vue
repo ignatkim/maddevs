@@ -31,11 +31,12 @@
             </div>
           </div>
           <img
+            v-lazy-load
             :data-src="require(`@/assets/img/Home/svg/team/linkedin.svg`)"
             width="24"
             height="24"
             alt="Linkedin"
-            class="meet-our-experts__expert-linkedin-link img_lazy"
+            class="meet-our-experts__expert-linkedin-link"
           >
           <a
             :href="expert.linkedin"

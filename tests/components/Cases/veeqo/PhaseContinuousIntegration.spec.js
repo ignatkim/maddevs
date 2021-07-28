@@ -1,7 +1,7 @@
 import PhaseContinuousIntegration from '@/components/Cases/veeqo/PhaseContinuousIntegration'
 import { render, screen } from '@testing-library/vue'
 
-const stubs = ['Picture']
+const stubs = ['Picture', 'TextQuote']
 
 describe('PhaseContinuousIntegration component', () => {
   it('should render correctly', () => {

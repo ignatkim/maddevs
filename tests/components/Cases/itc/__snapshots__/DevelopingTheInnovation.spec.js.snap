@@ -143,23 +143,15 @@ exports[`DevelopingTheInnovation component should render correctly 1`] = `
     <div
       class="container_middle case_img-wrap m-96_bottom media-m-48_bottom"
     >
-      <picture>
-        <source
-          class="image media_lazy"
-          data-srcset="img.jpg,img.jpg"
-          type="image/webp"
-        />
-         
-        <img
-          alt="Infrastructure"
-          class="image media_lazy"
-          data-src="img.jpg"
-          data-srcset="img.jpg"
-          data-testid="test-picture-img"
-          height="582"
-          width="1026"
-        />
-      </picture>
+      <picture-stub
+        alt="Infrastructure"
+        extension="png"
+        file="infrastructure"
+        folder="itc"
+        height="582"
+        lazy="true"
+        width="1026"
+      />
     </div>
      
     <div
@@ -299,23 +291,15 @@ exports[`DevelopingTheInnovation component should render correctly 1`] = `
     <div
       class="case_full-screen-image case_architecture-img m-72_bottom media-m-48_bottom m-auto"
     >
-      <picture>
-        <source
-          class="image media_lazy"
-          data-srcset="img.jpg,img.jpg"
-          type="image/webp"
-        />
-         
-        <img
-          alt="Architecture"
-          class="image media_lazy"
-          data-src="img.jpg"
-          data-srcset="img.jpg"
-          data-testid="test-picture-img"
-          height="644"
-          width="1440"
-        />
-      </picture>
+      <picture-stub
+        alt="Architecture"
+        extension="jpg"
+        file="architecture"
+        folder="itc"
+        height="644"
+        lazy="true"
+        width="1440"
+      />
     </div>
   </section>
 </div>

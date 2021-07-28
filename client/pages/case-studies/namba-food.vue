@@ -27,11 +27,12 @@
     >
       <img
         slot="icon"
+        v-lazy-load
         :data-src="require(`@/assets/img/Studies/svg/sjmc-footer.svg`)"
         width="253"
         height="113"
         alt="SJMC"
-        class="case_logotype-sjmc img_lazy"
+        class="case_logotype-sjmc"
       >
       The maintenance <br class="case_mobile-break-sjmc">
       of memory: <br>
@@ -46,7 +47,6 @@ import CaseHeader from '@/components/Cases/shared/CaseHeader'
 import Main from '@/components/Cases/nambafood/Main'
 import Footer from '@/components/Cases/shared/CaseFooter'
 import { getMetadata, buildHead } from '@/data/seo'
-import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
 export default {
   name: 'NambaFood',
@@ -55,8 +55,6 @@ export default {
     Main,
     Footer,
   },
-
-  mixins: [initLazyLoadMixin],
 
   data() {
     return {
@@ -75,10 +73,6 @@ export default {
       ...getMetadata('nambafood'),
       image: 'https://maddevs.io/namba-food.png',
     })
-  },
-
-  mounted() {
-    this.$lazyLoad.init()
   },
 }
 </script>

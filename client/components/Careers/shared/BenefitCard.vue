@@ -2,11 +2,12 @@
   <div class="benefit-card">
     <div class="benefit-card__icon-wrapper">
       <img
+        v-lazy-load
         :data-src="$getMediaFromS3(`/images/Careers/svg/${icon.name}.svg`)"
         :width="icon.width"
         :height="icon.height"
         :alt="icon.alt"
-        class="benefit-card__icon media_lazy"
+        class="benefit-card__icon"
       >
     </div>
     <p

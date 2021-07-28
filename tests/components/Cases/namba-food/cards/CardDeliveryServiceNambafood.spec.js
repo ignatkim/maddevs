@@ -3,7 +3,11 @@ import { render, screen } from '@testing-library/vue'
 
 describe('CardDeliveryServiceNambafood component', () => {
   it('should render correctly', () => {
-    const { container } = render(CardDeliveryServiceNambafood)
+    const { container } = render(CardDeliveryServiceNambafood, {
+      directives: {
+        'lazy-load': () => {},
+      },
+    })
 
     expect(screen.getByText(/Yearly increase in orders:/i)).toBeTruthy()
     expect(container).toMatchSnapshot()
