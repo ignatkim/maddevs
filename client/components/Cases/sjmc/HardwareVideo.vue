@@ -70,9 +70,13 @@ export default {
     return {
       animation: null,
       options: {
+        renderer: 'svg',
         animationData,
         autoplay: false,
         loop: false,
+        rendererSettings: {
+          progressiveLoad: true,
+        },
       },
     }
   },

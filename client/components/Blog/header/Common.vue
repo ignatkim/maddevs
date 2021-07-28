@@ -71,6 +71,18 @@ export default {
     },
   },
 
+  head() {
+    return {
+      link: [
+        {
+          rel: 'preload',
+          as: 'image',
+          href: this.compressedImage,
+        },
+      ],
+    }
+  },
+
   computed: {
     compressedImage() {
       const imageWithoutCrop = this.coverImageUrl.split('?auto')[0] // get image without crop and default compress params
@@ -83,18 +95,6 @@ export default {
       const extension = extractFileExtension(this.coverImageUrl)
       return allowedExtensions.includes(extension) ? 'blog-post__introduction-image--with-background' : ''
     },
-  },
-
-  head() {
-    return {
-      link: [
-        {
-          rel: 'preload',
-          as: 'image',
-          href: this.compressedImage,
-        },
-      ],
-    }
   },
 }
 </script>
