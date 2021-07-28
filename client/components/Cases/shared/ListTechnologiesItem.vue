@@ -2,11 +2,12 @@
   <li class="case_technologies-item">
     <img
       v-if="name"
+      v-lazy-load
       :data-src="require(`@/assets/img/Home/svg/technologies/${name}.svg`)"
       :alt="imgAlt || alt"
       width="40"
       height="40"
-      class="img_lazy case_technologies-item__tech-icon"
+      class="case_technologies-item__tech-icon"
       :class="`case_technologies-item__${name} ${name}`"
     >
     <p

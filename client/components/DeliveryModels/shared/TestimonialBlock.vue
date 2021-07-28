@@ -12,11 +12,11 @@
       <div class="testimonial-block__author">
         <div class="testimonial-block__author-image">
           <img
+            v-lazy-load
             :data-src="require(`@/assets/img/DeliveryModels/png/customers/${author.image}.png`)"
             width="42"
             height="42"
             alt="Photo"
-            class="img_lazy"
           >
         </div>
         <div>

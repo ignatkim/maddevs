@@ -74,7 +74,8 @@
             alt="GoDee: Safari Browser Top Bar White."
           />
           <img
-            :src="$getMediaFromS3('/images/Cases/godee/jpg/trip-request-map.jpg')"
+            v-lazy-load
+            :data-src="$getMediaFromS3('/images/Cases/godee/jpg/trip-request-map.jpg')"
             class="case_img"
             alt="Trip Request Map"
             loading="lazy"
@@ -99,6 +100,7 @@
           />
           <video
             id="trip-request-map"
+            v-lazy-load
             class="case_html-video case_trip-request-video"
             width="100%"
             height="100%"
@@ -106,7 +108,7 @@
             muted="true"
           >
             <source
-              :src="$getMediaFromS3('/videos/map-stops.mp4')"
+              :data-src="$getMediaFromS3('/videos/map-stops.mp4')"
               type="video/mp4"
             >
             Your browser does not support the video tag.

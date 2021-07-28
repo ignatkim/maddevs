@@ -7,8 +7,8 @@
     >
       <div class="featured-projects-list__item-info">
         <img
+          v-lazy-load
           :data-src="$getMediaFromS3(`/images/OpenSource/svg/${logo.name}.svg`)"
-          class="media_lazy"
           width="62"
           height="62"
           :alt="logo.alt"

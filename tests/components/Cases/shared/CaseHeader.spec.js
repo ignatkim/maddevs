@@ -21,6 +21,10 @@ const mocks = {
   $getMediaFromS3: img => img,
 }
 
+const directives = {
+  'lazy-load': () => {},
+}
+
 describe('CaseHeader component', () => {
   beforeEach(() => {
     jest.clearAllMocks()
@@ -30,6 +34,7 @@ describe('CaseHeader component', () => {
     const { container } = render(CaseHeader, {
       props,
       mocks,
+      directives,
     })
 
     expect(container).toMatchSnapshot()
@@ -42,6 +47,7 @@ describe('CaseHeader component', () => {
     await render(CaseHeader, {
       props,
       mocks,
+      directives,
     })
 
     expect(screen.queryAllByTestId('test-case_main-video')).toHaveLength(0)

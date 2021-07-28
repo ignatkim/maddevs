@@ -87,41 +87,24 @@ exports[`IntellegentManagementPanel component should render correctly 1`] = `
       <div
         class="case_image-wrapper m-48_top media-m-24_top m-60_bottom media-m-24_bottom case_box-shadow"
       >
-        <picture>
-          <source
-            class="image grey-background"
-            srcset="img.jpg,img.jpg"
-            type="image/webp"
-          />
-           
-          <img
-            alt="GoDee: Safari Browser Top Bar White."
-            class="image grey-background"
-            data-testid="test-picture-img"
-            height="16.45"
-            src="img.jpg"
-            srcset="img.jpg"
-            width="1026"
-          />
-        </picture>
+        <picture-stub
+          alt="GoDee: Safari Browser Top Bar White."
+          background="true"
+          extension="jpg"
+          file="safari-top-bar-white"
+          folder="common"
+          height="16.45"
+          width="1026"
+        />
          
-        <picture>
-          <source
-            class="image"
-            srcset="img.jpg,img.jpg"
-            type="image/webp"
-          />
-           
-          <img
-            alt="GoDee: Bus Transit App Admin Panel."
-            class="image"
-            data-testid="test-picture-img"
-            height="672"
-            src="img.jpg"
-            srcset="img.jpg"
-            width="1026"
-          />
-        </picture>
+        <picture-stub
+          alt="GoDee: Bus Transit App Admin Panel."
+          extension="jpg"
+          file="godee-admin-panel"
+          folder="godee"
+          height="672"
+          width="1026"
+        />
       </div>
        
       <div
@@ -1343,23 +1326,16 @@ exports[`IntellegentManagementPanel component should render correctly 1`] = `
         <div
           class="case_video-flex-wrapper"
         >
-          <picture>
-            <source
-              class="image grey-background media_lazy"
-              data-srcset="img.jpg,img.jpg"
-              type="image/webp"
-            />
-             
-            <img
-              alt="GoDee: Safari Browser Top Bar White."
-              class="image grey-background media_lazy"
-              data-src="img.jpg"
-              data-srcset="img.jpg"
-              data-testid="test-picture-img"
-              height="16.45"
-              width="1026"
-            />
-          </picture>
+          <picture-stub
+            alt="GoDee: Safari Browser Top Bar White."
+            background="true"
+            extension="jpg"
+            file="safari-top-bar-white"
+            folder="common"
+            height="16.45"
+            lazy="true"
+            width="1026"
+          />
            
           <video
             class="case_html-video case_trip-request-video"
@@ -1370,7 +1346,7 @@ exports[`IntellegentManagementPanel component should render correctly 1`] = `
             width="100%"
           >
             <source
-              src="img.jpg"
+              data-src="img.jpg"
               type="video/mp4"
             />
             

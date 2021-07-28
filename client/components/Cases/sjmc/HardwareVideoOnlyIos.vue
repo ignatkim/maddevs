@@ -8,11 +8,11 @@
     >
       <video
         ref="video"
+        v-lazy-load
         data-testid="test-case_video"
         width="100%"
         height="100%"
         playsinline
-        class="media_lazy"
       >
         <source
           :data-src="$getMediaFromS3('/videos/bluetooth-beacons-video.9ca649c.mp4')"

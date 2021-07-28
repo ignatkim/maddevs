@@ -16,484 +16,134 @@ exports[`TechnologyStack component should render correctly 1`] = `
     <ul
       class="case_list-technologies m-96_bottom media-m-48_bottom case_list-technologies-godee"
     >
-      <li
-        class="case_technologies-item"
-      >
-        <img
-          alt="Open Street Map"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__open-street-map open-street-map"
-          data-src="[object Object]"
-          height="40"
-          width="40"
-        />
-         
-        <p
-          class="case_technologies-item__tech-name"
-        >
-          
-    Open Street Map
-  
-        </p>
-      </li>
-      <li
-        class="case_technologies-item"
-      >
-        <img
-          alt="Google Maps"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__google-maps google-maps"
-          data-src="[object Object]"
-          height="40"
-          width="40"
-        />
-         
-        <p
-          class="case_technologies-item__tech-name"
-        >
-          
-    Google Maps
-  
-        </p>
-      </li>
-      <li
-        class="case_technologies-item"
-      >
-        <img
-          alt="PostgreSQL"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__postgresql postgresql"
-          data-src="[object Object]"
-          height="40"
-          width="40"
-        />
-         
-        <p
-          class="case_technologies-item__tech-name"
-        >
-          
-    PostgreSQL
-  
-        </p>
-      </li>
-      <li
-        class="case_technologies-item"
+      <listtechnologiesitem-stub
+        alt="Open Street Map"
+        imgalt=""
+        name="open-street-map"
+      />
+      <listtechnologiesitem-stub
+        alt="Google Maps"
+        imgalt=""
+        name="google-maps"
+      />
+      <listtechnologiesitem-stub
+        alt="PostgreSQL"
+        imgalt=""
+        name="postgresql"
+      />
+      <listtechnologiesitem-stub
+        alt="Docker"
         classname="case_technologies-item__docker"
-      >
-        <img
-          alt="Docker"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__docker docker"
-          data-src="[object Object]"
-          height="40"
-          width="40"
-        />
-         
-        <p
-          class="case_technologies-item__tech-name"
-        >
-          
-    Docker
-  
-        </p>
-      </li>
-      <li
-        class="case_technologies-item"
-      >
-        <img
-          alt="Nginx"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__nginx nginx"
-          data-src="[object Object]"
-          height="40"
-          width="40"
-        />
-         
-        <p
-          class="case_technologies-item__tech-name"
-        >
-          
-    Nginx
-  
-        </p>
-      </li>
-      <li
-        class="case_technologies-item"
-      >
-        <img
-          alt="Redis"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__redis redis"
-          data-src="[object Object]"
-          height="40"
-          width="40"
-        />
-         
-        <p
-          class="case_technologies-item__tech-name"
-        >
-          
-    Redis
-  
-        </p>
-      </li>
-      <li
-        class="case_technologies-item"
-      >
-        <img
-          alt="Python (Django)"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__python python"
-          data-src="[object Object]"
-          height="40"
-          width="40"
-        />
-         
-        <p
-          class="case_technologies-item__tech-name"
-        >
-          
-    Python (Django)
-  
-        </p>
-      </li>
-      <li
-        class="case_technologies-item"
-      >
-        <img
-          alt="Golang"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__go go"
-          data-src="[object Object]"
-          height="40"
-          width="40"
-        />
-         
-        <p
-          class="case_technologies-item__tech-name"
-        >
-          
-    Golang
-  
-        </p>
-      </li>
-      <li
-        class="case_technologies-item"
-      >
-        <img
-          alt="Kotlin"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__kotlin kotlin"
-          data-src="[object Object]"
-          height="40"
-          width="40"
-        />
-         
-        <p
-          class="case_technologies-item__tech-name"
-        >
-          
-    Kotlin
-  
-        </p>
-      </li>
-      <li
-        class="case_technologies-item"
-      >
-        <img
-          alt="Atlassian"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__atlassian atlassian"
-          data-src="[object Object]"
-          height="40"
-          width="40"
-        />
-         
-        <p
-          class="case_technologies-item__tech-name"
-        >
-          
-    Atlassian
-  
-        </p>
-      </li>
-      <li
-        class="case_technologies-item"
-      >
-        <img
-          alt="Swift"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__swift swift"
-          data-src="[object Object]"
-          height="40"
-          width="40"
-        />
-         
-        <p
-          class="case_technologies-item__tech-name"
-        >
-          
-    Swift
-  
-        </p>
-      </li>
-      <li
-        class="case_technologies-item"
-      >
-        <img
-          alt="Firebase"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__firebase firebase"
-          data-src="[object Object]"
-          height="40"
-          width="40"
-        />
-         
-        <p
-          class="case_technologies-item__tech-name"
-        >
-          
-    Firebase
-  
-        </p>
-      </li>
-      <li
-        class="case_technologies-item"
-      >
-        <img
-          alt="TestFlight"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__test-flight test-flight"
-          data-src="[object Object]"
-          height="40"
-          width="40"
-        />
-         
-        <p
-          class="case_technologies-item__tech-name"
-        >
-          
-    TestFlight
-  
-        </p>
-      </li>
-      <li
-        class="case_technologies-item"
-      >
-        <img
-          alt="Datadog"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__datadog datadog"
-          data-src="[object Object]"
-          height="40"
-          width="40"
-        />
-         
-        <p
-          class="case_technologies-item__tech-name"
-        >
-          
-    Datadog
-  
-        </p>
-      </li>
-      <li
-        class="case_technologies-item"
-      >
-        <img
-          alt="Android"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__android-black-text android-black-text"
-          data-src="[object Object]"
-          height="40"
-          width="40"
-        />
-         
-        <p
-          class="case_technologies-item__tech-name"
-        >
-          
-    Android
-  
-        </p>
-      </li>
-      <li
-        class="case_technologies-item"
-      >
-        <img
-          alt="Suite"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__suite suite"
-          data-src="[object Object]"
-          height="40"
-          width="40"
-        />
-         
-        <p
-          class="case_technologies-item__tech-name"
-        >
-          
-    Suite
-  
-        </p>
-      </li>
-      <li
-        class="case_technologies-item"
-      >
-        <img
-          alt="Jira Software"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__jira-software jira-software"
-          data-src="[object Object]"
-          height="40"
-          width="40"
-        />
-         
-        <p
-          class="case_technologies-item__tech-name"
-        >
-          
-    Jira Software
-  
-        </p>
-      </li>
-      <li
-        class="case_technologies-item"
+        imgalt=""
+        name="docker"
+      />
+      <listtechnologiesitem-stub
+        alt="Nginx"
+        imgalt=""
+        name="nginx"
+      />
+      <listtechnologiesitem-stub
+        alt="Redis"
+        imgalt=""
+        name="redis"
+      />
+      <listtechnologiesitem-stub
+        alt="Python (Django)"
+        imgalt=""
+        name="python"
+      />
+      <listtechnologiesitem-stub
+        alt="Golang"
+        imgalt=""
+        name="go"
+      />
+      <listtechnologiesitem-stub
+        alt="Kotlin"
+        imgalt=""
+        name="kotlin"
+      />
+      <listtechnologiesitem-stub
+        alt="Atlassian"
+        imgalt=""
+        name="atlassian"
+      />
+      <listtechnologiesitem-stub
+        alt="Swift"
+        imgalt=""
+        name="swift"
+      />
+      <listtechnologiesitem-stub
+        alt="Firebase"
+        imgalt=""
+        name="firebase"
+      />
+      <listtechnologiesitem-stub
+        alt="TestFlight"
+        imgalt=""
+        name="test-flight"
+      />
+      <listtechnologiesitem-stub
+        alt="Datadog"
+        imgalt=""
+        name="datadog"
+      />
+      <listtechnologiesitem-stub
+        alt="Android"
+        imgalt=""
+        name="android-black-text"
+      />
+      <listtechnologiesitem-stub
+        alt="Suite"
+        imgalt=""
+        name="suite"
+      />
+      <listtechnologiesitem-stub
+        alt="Jira Software"
+        imgalt=""
+        name="jira-software"
+      />
+      <listtechnologiesitem-stub
+        alt="GRPC"
         classname="case_technologies-item__grpc"
-      >
-        <img
-          alt="GRPC"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__grpc grpc"
-          data-src="[object Object]"
-          height="40"
-          width="40"
-        />
-         
-        <p
-          class="case_technologies-item__tech-name"
-        >
-          
-    GRPC
-  
-        </p>
-      </li>
-      <li
-        class="case_technologies-item"
-      >
-        <img
-          alt="iOS"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__apple-black apple-black"
-          data-src="[object Object]"
-          height="40"
-          width="40"
-        />
-         
-        <p
-          class="case_technologies-item__tech-name"
-        >
-          
-    iOS
-  
-        </p>
-      </li>
-      <li
-        class="case_technologies-item"
+        imgalt=""
+        name="grpc"
+      />
+      <listtechnologiesitem-stub
+        alt="iOS"
+        imgalt=""
+        name="apple-black"
+      />
+      <listtechnologiesitem-stub
+        alt="UptimeRobot"
         classname="case_technologies-item__uptime-robot"
-      >
-        <img
-          alt="UptimeRobot"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__uptime-robot uptime-robot"
-          data-src="[object Object]"
-          height="40"
-          width="40"
-        />
-         
-        <p
-          class="case_technologies-item__tech-name"
-        >
-          
-    UptimeRobot
-  
-        </p>
-      </li>
-      <li
-        class="case_technologies-item"
-      >
-        <img
-          alt="Mapbox"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__map-box map-box"
-          data-src="[object Object]"
-          height="40"
-          width="40"
-        />
-         
-        <p
-          class="case_technologies-item__tech-name"
-        >
-          
-    Mapbox
-  
-        </p>
-      </li>
-      <li
-        class="case_technologies-item"
-      >
-        <img
-          alt="Vue JS"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__vue vue"
-          data-src="[object Object]"
-          height="40"
-          width="40"
-        />
-         
-        <p
-          class="case_technologies-item__tech-name"
-        >
-          
-    Vue JS
-  
-        </p>
-      </li>
-      <li
-        class="case_technologies-item"
-      >
-        <img
-          alt="Sentry"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__sentry-black sentry-black"
-          data-src="[object Object]"
-          height="40"
-          width="40"
-        />
-         
-        <p
-          class="case_technologies-item__tech-name"
-        >
-          
-    Sentry
-  
-        </p>
-      </li>
-      <li
-        class="case_technologies-item"
-      >
-        <img
-          alt="Here Traffic"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__here here"
-          data-src="[object Object]"
-          height="40"
-          width="40"
-        />
-         
-        <p
-          class="case_technologies-item__tech-name"
-        >
-          
-    Here Traffic
-  
-        </p>
-      </li>
-      <li
-        class="case_technologies-item"
-      >
-        <img
-          alt="Basecamp"
-          class="img_lazy case_technologies-item__tech-icon case_technologies-item__basecamp-transparent basecamp-transparent"
-          data-src="[object Object]"
-          height="40"
-          width="40"
-        />
-         
-        <p
-          class="case_technologies-item__tech-name"
-        >
-          
-    Basecamp
-  
-        </p>
-      </li>
+        imgalt=""
+        name="uptime-robot"
+      />
+      <listtechnologiesitem-stub
+        alt="Mapbox"
+        imgalt=""
+        name="map-box"
+      />
+      <listtechnologiesitem-stub
+        alt="Vue JS"
+        imgalt=""
+        name="vue"
+      />
+      <listtechnologiesitem-stub
+        alt="Sentry"
+        imgalt=""
+        name="sentry-black"
+      />
+      <listtechnologiesitem-stub
+        alt="Here Traffic"
+        imgalt=""
+        name="here"
+      />
+      <listtechnologiesitem-stub
+        alt="Basecamp"
+        imgalt=""
+        name="basecamp-transparent"
+      />
     </ul>
   </section>
 </div>

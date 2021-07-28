@@ -12,7 +12,8 @@
     <!-- End Image placeholder fallback for Video -->
     <video
       v-if="!isIphone"
-      class="case_main-video media_lazy"
+      v-lazy-load
+      class="case_main-video"
       data-testid="test-case_main-video"
       loop="true"
       muted="true"
@@ -55,7 +56,7 @@
 import changeSectionTextOpacityMixin from '@/mixins/changeSectionTextOpacityMixin'
 
 export default {
-  name: 'Header',
+  name: 'CaseHeader',
 
   mixins: [changeSectionTextOpacityMixin('sectionText')],
 

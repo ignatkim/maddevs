@@ -15,6 +15,8 @@ const props = {
   height: 50,
 }
 
+const stubs = ['Picture']
+
 describe('CardGoDeePreview component', () => {
   it('should render correctly', () => {
     const { container } = render(CardGoDeePreview, {
@@ -22,6 +24,7 @@ describe('CardGoDeePreview component', () => {
       mocks: {
         $getMediaFromS3: () => 'img.jpg',
       },
+      stubs,
     })
 
     expect(container).toMatchSnapshot()
@@ -33,6 +36,7 @@ describe('CardGoDeePreview component', () => {
       mocks: {
         $getMediaFromS3: () => 'img.jpg',
       },
+      stubs,
     })
 
     expect(screen.getByText(props.title)).toBeTruthy()

@@ -53,6 +53,7 @@
           />
           <video
             id="trip-monitor"
+            v-lazy-load
             class="case_html-video"
             width="100%"
             height="100%"
@@ -60,7 +61,7 @@
             muted="true"
           >
             <source
-              :src="$getMediaFromS3('/videos/trip-monitor.f4a33e6.mp4')"
+              :data-src="$getMediaFromS3('/videos/trip-monitor.f4a33e6.mp4')"
               type="video/mp4"
             >
             Your browser does not support the video tag.

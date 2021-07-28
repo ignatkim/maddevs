@@ -5,11 +5,13 @@ const mocks = {
   $getMediaFromS3: () => 'img.jpg',
 }
 
+const stubs = ['ClientOnly', 'Picture']
+
 describe('UsageScenarios component', () => {
   it('should render correctly', () => {
     const { container } = render(UsageScenarios, {
       mocks,
-      stubs: ['ClientOnly'],
+      stubs,
     })
 
     expect(container).toMatchSnapshot()
@@ -18,7 +20,7 @@ describe('UsageScenarios component', () => {
   it('should render with text', () => {
     render(UsageScenarios, {
       mocks,
-      stubs: ['ClientOnly'],
+      stubs,
     })
 
     expect(screen.getByText(/Typical usage scenarios and user roles/i).className).toContain('case_title_h2')

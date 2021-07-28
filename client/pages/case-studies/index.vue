@@ -13,7 +13,6 @@ import CasesList from '@/components/Cases/CasesList'
 import Customers from '@/components/Cases/Customers'
 import BuildDevTeam from '@/components/Cases/BuildDevTeam'
 import { getMetadata, buildHead } from '@/data/seo'
-import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
 export default {
   name: 'MainCaseStudies',
@@ -24,14 +23,8 @@ export default {
     BuildDevTeam,
   },
 
-  mixins: [initLazyLoadMixin],
-
   head() {
     return buildHead(getMetadata('caseStudies'))
-  },
-
-  mounted() {
-    this.$lazyLoad.init()
   },
 }
 </script>

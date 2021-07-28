@@ -2,11 +2,12 @@
   <Card class="card-content background-color-silver">
     <img
       v-if="icon"
+      v-lazy-load
       :data-src="$getMediaFromS3(`/images/Cases/${folder}/svg/${icon}.svg`)"
       :alt="alt"
       width="51.94"
       height="51.94"
-      class="card-content_icon img_lazy"
+      class="card-content_icon"
     >
     <TextParagraph>
       {{ description }}

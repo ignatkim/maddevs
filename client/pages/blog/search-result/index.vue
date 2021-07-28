@@ -11,16 +11,12 @@ import { mapGetters, mapActions } from 'vuex'
 import SearchResultBanner from '@/components/Blog/Main/SearchResultBanner'
 import PostsSection from '@/components/Blog/Main/PostsSection'
 
-import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
-
 export default {
   name: 'SearchResult',
   components: {
     SearchResultBanner,
     PostsSection,
   },
-
-  mixins: [initLazyLoadMixin],
 
   head() {
     return buildHead({

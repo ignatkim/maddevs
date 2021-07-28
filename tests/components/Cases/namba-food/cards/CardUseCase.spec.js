@@ -10,11 +10,13 @@ const props = {
   alt: 'alt',
 }
 
+const stubs = ['Picture', 'ClientOnly']
+
 describe('CardUseCase component', () => {
   it('should render correctly', () => {
     const { container } = render(CardUseCase, {
       props,
-      stubs: ['ClientOnly'],
+      stubs,
       mocks: {
         $getMediaFromS3: () => 'img.jpg',
       },
@@ -32,7 +34,7 @@ describe('CardUseCase component', () => {
         ...props,
         classList,
       },
-      stubs: ['ClientOnly'],
+      stubs,
       mocks: {
         $getMediaFromS3: () => 'img.jpg',
       },

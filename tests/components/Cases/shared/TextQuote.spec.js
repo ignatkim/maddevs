@@ -9,11 +9,16 @@ const props = {
   author: 'Andrew Sapozhnikov, Head of DevOps at Mad Devs',
 }
 
+const directives = {
+  'lazy-load': () => {},
+}
+
 describe('TextQuote', () => {
   it('should render correctly', () => {
     const { container } = render(TextQuote, {
       slots,
       props,
+      directives,
     })
 
     expect(container).toMatchSnapshot()
@@ -23,6 +28,7 @@ describe('TextQuote', () => {
     const { html } = render(TextQuote, {
       slots,
       props,
+      directives,
     })
 
     expect(html()).toContain(slots.default)
@@ -32,6 +38,7 @@ describe('TextQuote', () => {
     render(TextQuote, {
       slots,
       props,
+      directives,
     })
 
     expect(screen.queryByText(props.author)).toBeTruthy()
@@ -40,6 +47,7 @@ describe('TextQuote', () => {
   it('should render without author block', () => {
     render(TextQuote, {
       slots,
+      directives,
     })
 
     expect(screen.queryByText(props.author)).toBeFalsy()

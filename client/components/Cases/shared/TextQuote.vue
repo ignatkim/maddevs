@@ -1,11 +1,12 @@
 <template>
   <div class="case_quote-wrap">
     <img
+      v-lazy-load
       :data-src="require('@/assets/img/Studies/svg/qmark.svg')"
       width="50"
       height="50"
       alt="blockquote"
-      class="case_mark img_lazy"
+      class="case_mark"
     >
     <blockquote class="case_blockquote">
       <slot />

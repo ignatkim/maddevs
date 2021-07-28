@@ -19,7 +19,7 @@ const mocks = {
   getBlogAuthors: jest.fn(),
 }
 
-const stubs = ['NuxtLink', 'FeaturedPost', 'CustomerUniversitySection']
+const stubs = ['NuxtLink', 'FeaturedPost', 'CustomerUniversitySection', 'PostCard']
 
 const store = {
   getters: {

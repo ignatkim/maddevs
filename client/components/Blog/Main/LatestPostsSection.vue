@@ -16,9 +16,9 @@
               class="latest-posts__banner"
             >
               <img
+                v-lazy-load
                 width="390"
                 height="516"
-                class="img_lazy"
                 :data-src="post.banner.url"
                 :alt="post.id"
               >

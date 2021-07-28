@@ -7,10 +7,15 @@ const mocks = {
   $getMediaFromS3: image => image,
 }
 
+const directives = {
+  'lazy-load': () => {},
+}
+
 describe('HardwareVideo component', () => {
   it('should render correctly', () => {
     const { container } = render(HardwareVideo, {
       mocks,
+      directives,
     })
 
     expect(container).toMatchSnapshot()
@@ -19,6 +24,7 @@ describe('HardwareVideo component', () => {
   it('should toggle video muted value', async () => {
     render(HardwareVideo, {
       mocks,
+      directives,
     })
 
     const video = screen.getByTestId('test-case_video')

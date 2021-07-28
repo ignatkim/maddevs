@@ -43,25 +43,15 @@ exports[`PreviewCards component should render correctly 1`] = `
               <div
                 class="card-content_image-wrapper card-content_image-wrapper-application-for-passengers"
               >
-                <picture
+                <picture-stub
+                  alt="GoDee: Bus Transit App for Passengers."
                   class=""
-                >
-                  <source
-                    class="image"
-                    srcset="img.jpg,img.jpg"
-                    type="image/webp"
-                  />
-                   
-                  <img
-                    alt="GoDee: Bus Transit App for Passengers."
-                    class="image"
-                    data-testid="test-picture-img"
-                    height="211"
-                    src="img.jpg"
-                    srcset="img.jpg"
-                    width="334"
-                  />
-                </picture>
+                  extension="png"
+                  file="application-for-passengers-card"
+                  folder="godee"
+                  height="211"
+                  width="334"
+                />
                  
                 <!---->
               </div>
@@ -97,25 +87,15 @@ exports[`PreviewCards component should render correctly 1`] = `
               <div
                 class="card-content_image-wrapper card-content_image-wrapper-application-for-drivers"
               >
-                <picture
+                <picture-stub
+                  alt="GoDee: Bus Drivers App."
                   class=""
-                >
-                  <source
-                    class="image"
-                    srcset="img.jpg,img.jpg"
-                    type="image/webp"
-                  />
-                   
-                  <img
-                    alt="GoDee: Bus Drivers App."
-                    class="image"
-                    data-testid="test-picture-img"
-                    height="280"
-                    src="img.jpg"
-                    srcset="img.jpg"
-                    width="313"
-                  />
-                </picture>
+                  extension="png"
+                  file="application-for-drivers-card"
+                  folder="godee"
+                  height="280"
+                  width="313"
+                />
                  
                 <!---->
               </div>
@@ -152,45 +132,25 @@ exports[`PreviewCards component should render correctly 1`] = `
             <div
               class="card-content_image-wrapper card-content_image-wrapper-godee-admin-panel"
             >
-              <picture
+              <picture-stub
+                alt="GoDee: Bus App Management System."
                 class="card-content_desktop-image"
-              >
-                <source
-                  class="image"
-                  srcset="img.jpg,img.jpg"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="GoDee: Bus App Management System."
-                  class="image"
-                  data-testid="test-picture-img"
-                  height="219"
-                  src="img.jpg"
-                  srcset="img.jpg"
-                  width="695"
-                />
-              </picture>
+                extension="png"
+                file="godee-admin-panel-card"
+                folder="godee"
+                height="219"
+                width="695"
+              />
                
-              <picture
+              <picture-stub
+                alt="GoDee: bus app management control panel"
                 class="card-content_mobile-image"
-              >
-                <source
-                  class="image"
-                  srcset="img.jpg,img.jpg"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="GoDee: bus app management control panel"
-                  class="image"
-                  data-testid="test-picture-img"
-                  height="160"
-                  src="img.jpg"
-                  srcset="img.jpg"
-                  width="307"
-                />
-              </picture>
+                extension="png"
+                file="godee-admin-panel-card-mobile"
+                folder="godee"
+                height="160"
+                width="307"
+              />
             </div>
           </div>
         </div>

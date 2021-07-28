@@ -2,7 +2,7 @@ import DevelopingTheInnovation from '@/components/Cases/itc/DevelopingTheInnovat
 import { render } from '@testing-library/vue'
 import '../../../__mocks__/intersectionObserverMock'
 
-const stubs = ['Lottie']
+const stubs = ['Lottie', 'Picture']
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

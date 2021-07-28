@@ -5,11 +5,13 @@ const mocks = {
   $getMediaFromS3: () => 'img.jpg',
 }
 
+const stubs = ['NuxtLink', 'CardGoDeeFeature']
+
 describe('Mvp component', () => {
   it('should render correctly', () => {
     const { container } = render(Mvp, {
       mocks,
-      stubs: ['NuxtLink'],
+      stubs,
     })
 
     expect(container).toMatchSnapshot()
@@ -18,7 +20,7 @@ describe('Mvp component', () => {
   it('should correctly display title', () => {
     render(Mvp, {
       mocks,
-      stubs: ['NuxtLink'],
+      stubs,
     })
 
     expect(screen.getByText(/Minimum viable product MVP/i).className).toContain('case_title_h3')

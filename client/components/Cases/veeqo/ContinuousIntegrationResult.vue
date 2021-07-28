@@ -10,11 +10,12 @@
       <div class="case_cards-container">
         <div class="case_card">
           <img
+            v-lazy-load
             :data-src="$getMediaFromS3(`/images/Cases/veeqo/svg/time.svg`)"
             alt="Significantly Reduced Test Time."
             width="66"
             height="66"
-            class="case_card-icon case_time-icon media_lazy"
+            class="case_card-icon case_time-icon"
           >
           <h4 class="case_title_h4 case_card-title">
             Significantly reduced test time
@@ -25,11 +26,12 @@
           class="case_card case_card-anim"
         >
           <img
+            v-lazy-load
             :data-src="$getMediaFromS3(`/images/Cases/veeqo/svg/dollar.svg`)"
             alt="Decreased Cost of CI Maintenance."
             width="66"
             height="66"
-            class="case_card-icon case_dollar-icon media_lazy"
+            class="case_card-icon case_dollar-icon"
           >
           <h4 class="case_title_h4 case_card-title">
             Decreased cost of CI maintenance

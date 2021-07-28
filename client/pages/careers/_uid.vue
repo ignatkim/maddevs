@@ -54,7 +54,6 @@ import SlicesBlock from '@/components/slices'
 import BenefitCard from '@/components/Careers/shared/BenefitCard'
 import HRContactCard from '@/components/Careers/shared/HRContactCard'
 import PositionForm from '@/components/Careers/shared/PositionForm'
-import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 import { buildHead } from '@/data/seo'
 import { employeesBenefits as benefits } from '@/data/benefits'
 
@@ -67,8 +66,6 @@ export default {
     HRContactCard,
     PositionForm,
   },
-
-  mixins: [initLazyLoadMixin],
 
   async asyncData({ store, params, error }) {
     const openGraphUrl = `${process.env.domain}/careers/${params.uid}/`
@@ -105,10 +102,6 @@ export default {
 
   computed: {
     ...mapGetters(['vacancy']),
-  },
-
-  mounted() {
-    this.$lazyLoad.init()
   },
 }
 </script>

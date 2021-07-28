@@ -9,11 +9,19 @@ const props = {
   isIphone: false,
 }
 
+const stubs = ['Picture']
+
+const directives = {
+  'lazy-load': () => {},
+}
+
 describe('IntellegentManagementPanel component', () => {
   it('should render correctly', () => {
     const { container } = render(IntellegentManagementPanel, {
       props,
       mocks,
+      stubs,
+      directives,
     })
 
     expect(container).toMatchSnapshot()
@@ -23,6 +31,8 @@ describe('IntellegentManagementPanel component', () => {
     render(IntellegentManagementPanel, {
       props,
       mocks,
+      stubs,
+      directives,
     })
 
     expect(screen.getByText(/Intelligent management panel/i).className).toContain('case_title_h2')
@@ -33,6 +43,8 @@ describe('IntellegentManagementPanel component', () => {
     render(IntellegentManagementPanel, {
       props,
       mocks,
+      stubs,
+      directives,
     })
 
     const element = screen.getByTestId('test-video-flex-wrapper')

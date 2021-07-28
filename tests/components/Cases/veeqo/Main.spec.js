@@ -13,6 +13,11 @@ const stubs = [
   'PhasInfrastructureAsCodeResult',
   'InventoryChangeLog',
   'PhaseElasticsearchResult',
+  'TextQuote',
+  'CardTechSolution',
+  'Picture',
+  'PhaseFixingDatabaseOutages',
+  'ListTechnologiesItem',
 ]
 
 describe('Main component', () => {

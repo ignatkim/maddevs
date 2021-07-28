@@ -15,6 +15,8 @@ const refs = {
   },
 }
 
+const stubs = ['CardGoDeeFeature']
+
 describe('DevelopmentGoals component', () => {
   let wrapper = null
 
@@ -25,6 +27,7 @@ describe('DevelopmentGoals component', () => {
           inserted: () => {},
         },
       },
+      stubs,
     })
   })
 
@@ -39,6 +42,7 @@ describe('DevelopmentGoals component', () => {
           inserted: () => {},
         },
       },
+      stubs,
     })
 
     expect(container).toMatchSnapshot()

@@ -6,7 +6,7 @@
         class="block-img"
       >
         <img
-          class="img_lazy"
+          v-lazy-load
           :class="{ 'block-img-zoom': zoomEnabled }"
           :data-src="img.url"
           :alt="img.alt"

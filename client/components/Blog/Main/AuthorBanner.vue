@@ -3,9 +3,9 @@
     <div class="current-author">
       <div class="current-author__image">
         <img
+          v-lazy-load
           :data-src="blogAuthor.image.url"
           :alt="blogAuthor.image.alt"
-          class="img_lazy"
         >
       </div>
       <h1 class="current-author__name">

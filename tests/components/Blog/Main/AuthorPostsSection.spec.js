@@ -24,7 +24,7 @@ const store = {
   },
 }
 
-const stubs = ['PrismicImage', 'NuxtLink']
+const stubs = ['PrismicImage', 'NuxtLink', 'FeaturedPost', 'PostCard']
 
 describe('AuthorPostsSection component', () => {
   it('should render correctly', () => {

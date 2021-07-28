@@ -16,10 +16,10 @@
         <div class="footer-contacts__contact-title-wrapper">
           <div class="footer-contacts__contact-title-flag">
             <img
+              v-lazy-load
               :data-src="require(`@/assets/img/Home/flags/uk.svg`)"
               width="19"
               height="14"
-              class="img_lazy"
               alt="United Kingdom"
             >
           </div>
@@ -45,10 +45,10 @@
             class="footer-contacts__messenger-item-wrapper"
           >
             <img
+              v-lazy-load
               :data-src="require(`@/assets/img/Footer/svg/${messenger.key}.svg`)"
               width="42"
               height="42"
-              class="img_lazy"
               :alt="messenger.label"
             >
             <p class="footer-contacts__messenger-name">{{ messenger.label }}</p>

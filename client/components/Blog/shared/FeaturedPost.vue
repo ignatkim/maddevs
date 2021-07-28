@@ -41,11 +41,11 @@
           class="featured-post__image"
         >
           <img
+            v-lazy-load
             :data-src="post.data.featured_image.url"
             :alt="post.data.featured_image.alt"
             :width="post.data.featured_image.dimensions.width"
             :height="post.data.featured_image.dimensions.height"
-            class="img_lazy"
           >
         </NuxtLink>
       </div>

@@ -98,23 +98,14 @@ exports[`Challenges component should render correctly 1`] = `
         <div
           class="case_image-wrap"
         >
-          <picture>
-            <source
-              class="image"
-              srcset="img.jpg,img.jpg"
-              type="image/webp"
-            />
-             
-            <img
-              alt="How our product solves the challenges"
-              class="image"
-              data-testid="test-picture-img"
-              height="440"
-              src="img.jpg"
-              srcset="img.jpg"
-              width="1440"
-            />
-          </picture>
+          <picture-stub
+            alt="How our product solves the challenges"
+            extension="png"
+            file="solves-the-challenges"
+            folder="itc"
+            height="440"
+            width="1440"
+          />
         </div>
       </div>
     </div>

@@ -15,7 +15,7 @@ exports[`caseStudies component renders correctly 1`] = `
     >
       <img
         alt="GoDee Bus Transportation Services Logo."
-        class="img_lazy single-project__logo"
+        class="single-project__logo"
         data-src="[object Object]"
         height="41"
         width="121"
@@ -40,7 +40,7 @@ exports[`caseStudies component renders correctly 1`] = `
       >
         <img
           alt="Mad Devs logo"
-          class="contribution-widget__img img_lazy"
+          class="contribution-widget__img"
           data-src="[object Object]"
           height="18"
           width="20"
@@ -68,7 +68,6 @@ exports[`caseStudies component renders correctly 1`] = `
          
         <img
           alt="GoDee Bus Transportation Services Logo."
-          class="img_lazy"
           data-src="[object Object]"
           data-srcset="[object Object] 2x"
           height="294"

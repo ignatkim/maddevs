@@ -13,7 +13,8 @@
         :desc="item.desc"
         :width="item.width"
         :link="item.link"
-        :poster="item.poster"
+        :poster-link="item.poster"
+        :item="item"
         :class="`cases-list_${item.id}`"
         data-testid="test-case-card"
       />

@@ -33,28 +33,15 @@ exports[`AboutYourcast component should render correctly 1`] = `
   
     </p>
      
-    <div
-      class="case_quote-wrap m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
+    <textquote-stub
+      author=""
+      class="m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
     >
-      <img
-        alt="blockquote"
-        class="case_mark img_lazy"
-        data-src="[object Object]"
-        height="50"
-        width="50"
-      />
-       
-      <blockquote
-        class="case_blockquote"
-      >
-        
+      
     We respect the customer’s request to keep this project under the NDA and will not disclose the project name while
     sharing its details.
   
-      </blockquote>
-       
-      <!---->
-    </div>
+    </textquote-stub>
   </section>
 </div>
 `;

@@ -28,45 +28,25 @@ exports[`CardGoDeePreview component should render correctly 1`] = `
     <div
       class="card-content_image-wrapper card-content_image-wrapper-some-class"
     >
-      <picture
+      <picture-stub
+        alt="godee"
         class="card-content_desktop-image"
-      >
-        <source
-          class="image"
-          srcset="img.jpg,img.jpg"
-          type="image/webp"
-        />
-         
-        <img
-          alt="godee"
-          class="image"
-          data-testid="test-picture-img"
-          height="50"
-          src="img.jpg"
-          srcset="img.jpg"
-          width="50"
-        />
-      </picture>
+        extension="png"
+        file="some-filename"
+        folder=""
+        height="50"
+        width="50"
+      />
        
-      <picture
+      <picture-stub
+        alt="GoDee: bus app management control panel"
         class="card-content_mobile-image"
-      >
-        <source
-          class="image"
-          srcset="img.jpg,img.jpg"
-          type="image/webp"
-        />
-         
-        <img
-          alt="GoDee: bus app management control panel"
-          class="image"
-          data-testid="test-picture-img"
-          height="160"
-          src="img.jpg"
-          srcset="img.jpg"
-          width="307"
-        />
-      </picture>
+        extension="png"
+        file="mobile-image"
+        folder=""
+        height="160"
+        width="307"
+      />
     </div>
   </div>
 </div>

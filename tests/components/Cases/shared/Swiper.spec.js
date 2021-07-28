@@ -22,14 +22,18 @@ const props = {
   safariTopBarAlt: '',
 }
 
+const stubs = ['Picture']
+
 describe('Swiper component', () => {
   const wrapper = shallowMount(Swiper, {
     props,
+    stubs,
   })
 
   it('should render correctly', () => {
     const { container } = render(Swiper, {
       props,
+      stubs,
       mocks: {
         $getMediaFromS3: () => 'img.jpg',
       },
@@ -40,6 +44,7 @@ describe('Swiper component', () => {
   it('Should correct display description', () => {
     const { html } = render(Swiper, {
       props,
+      stubs,
       mocks: {
         $getMediaFromS3: () => 'img.jpg',
       },

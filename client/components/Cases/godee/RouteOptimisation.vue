@@ -49,6 +49,7 @@
           />
           <video
             id="route-optimization"
+            v-lazy-load
             class="case_html-video"
             width="100%"
             height="100%"
@@ -56,7 +57,7 @@
             muted="true"
           >
             <source
-              :src="$getMediaFromS3('/videos/route-optimization.f5a2ff0.mp4')"
+              :data-src="$getMediaFromS3('/videos/route-optimization.f5a2ff0.mp4')"
               type="video/mp4"
             >
             Your browser does not support the video tag.

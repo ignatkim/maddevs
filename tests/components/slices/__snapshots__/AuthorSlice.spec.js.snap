@@ -13,7 +13,6 @@ exports[`AuthorSlice component should render correctly 1`] = `
       >
         <img
           alt="alt"
-          class="img_lazy"
           data-src="someurl"
           height="64"
           width="64"
@@ -50,7 +49,6 @@ exports[`AuthorSlice component should render correctly 1`] = `
             >
               <img
                 alt="facebook"
-                class="img_lazy"
                 data-src="[object Object]"
                 height="22"
                 width="22"
@@ -67,7 +65,6 @@ exports[`AuthorSlice component should render correctly 1`] = `
             >
               <img
                 alt="instagram"
-                class="img_lazy"
                 data-src="[object Object]"
                 height="22"
                 width="22"
@@ -95,7 +92,6 @@ exports[`AuthorSlice component should render correctly 1`] = `
           data-testid="test-contributors"
         >
           <img
-            class="img_lazy"
             data-src="some-url"
             height="26"
             width="26"

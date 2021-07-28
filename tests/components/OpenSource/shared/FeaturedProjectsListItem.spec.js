@@ -16,11 +16,16 @@ const props = {
   link: 'link',
 }
 
+const directives = {
+  'lazy-load': () => {},
+}
+
 describe('FeaturedProjectsListItem component', () => {
   it('should render correctly', () => {
     const { container } = render(FeaturedProjectsListItem, {
       mocks,
       props,
+      directives,
     })
 
     expect(container).toMatchSnapshot()

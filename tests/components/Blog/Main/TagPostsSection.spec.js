@@ -33,7 +33,7 @@ const store = {
   },
 }
 
-const stubs = ['FeaturedPost', 'NuxtLink']
+const stubs = ['FeaturedPost', 'NuxtLink', 'PostCard']
 
 describe('TagPostsSection component', () => {
   it('should render correctly', () => {
