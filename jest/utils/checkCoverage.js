@@ -57,7 +57,7 @@ checkCoverage.run(cfg, options, err => {
   if (err) {
     // eslint-disable-next-line no-console
     console.log(chalk.red(err))
-    process.exit(0)
+    process.exit(1)
   }
   // eslint-disable-next-line no-console
   console.log(chalk.green('Coverage check passed!\n'))
