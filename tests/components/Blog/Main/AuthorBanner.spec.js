@@ -20,11 +20,16 @@ const store = {
   },
 }
 
+const directives = {
+  'lazy-load': () => {},
+}
+
 describe('AuthorBanner component', () => {
   it('should render correctly', () => {
     const { container } = render(AuthorBanner, {
       mocks,
       store,
+      directives,
     })
 
     expect(container).toMatchSnapshot()

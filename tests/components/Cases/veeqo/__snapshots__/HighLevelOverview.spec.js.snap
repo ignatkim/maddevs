@@ -73,23 +73,14 @@ exports[`HighLevelOverview component should render correctly 1`] = `
       <div
         class="case_image-wrapp"
       >
-        <picture>
-          <source
-            class="image"
-            srcset="img.jpg,img.jpg"
-            type="image/webp"
-          />
-           
-          <img
-            alt="Veeqo High Level Overview."
-            class="image"
-            data-testid="test-picture-img"
-            height="335"
-            src="img.jpg"
-            srcset="img.jpg"
-            width="1440"
-          />
-        </picture>
+        <picture-stub
+          alt="Veeqo High Level Overview."
+          extension="png"
+          file="high-level"
+          folder="veeqo"
+          height="335"
+          width="1440"
+        />
       </div>
     </div>
   </div>

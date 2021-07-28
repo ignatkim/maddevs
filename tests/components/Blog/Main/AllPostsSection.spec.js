@@ -20,7 +20,7 @@ const mocks = {
   },
 }
 
-const stubs = ['NuxtLink']
+const stubs = ['NuxtLink', 'PostCard']
 
 const store = {
   getters: {

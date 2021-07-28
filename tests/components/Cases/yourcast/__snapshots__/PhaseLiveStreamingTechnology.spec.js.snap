@@ -36,7 +36,7 @@ exports[`PhaseLiveStreamingTechnology component should render correctly 1`] = `
         muted="muted"
       >
         <source
-          src="img.jpg"
+          data-src="img.jpg"
           type="video/mp4"
         />
         

@@ -1,7 +1,7 @@
-import { render, screen } from '@testing-library/vue'
+import { render } from '@testing-library/vue'
 import CaseStudies from '@/components/core/CaseStudies'
 
-const stubs = ['NuxtLink']
+const stubs = ['NuxtLink', 'CasesListItem']
 
 describe('CaseStudies', () => {
   const props = {
@@ -9,20 +9,6 @@ describe('CaseStudies', () => {
   }
 
   it('should render correctly', () => {
-    const { container } = render(CaseStudies, {
-      stubs,
-      props,
-      mocks: {
-        $getMediaFromS3: () => 'img.jpg',
-      },
-    })
-
-    expect(screen.getByText('Sir John Monash Centre')).not.toBeNull()
-    expect(container).toMatchSnapshot()
-  })
-
-  it('should render correctly with type=projects', () => {
-    props.type = 'projects'
     const { container } = render(CaseStudies, {
       stubs,
       props,

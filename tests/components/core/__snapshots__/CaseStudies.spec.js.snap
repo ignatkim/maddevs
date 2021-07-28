@@ -31,534 +31,62 @@ exports[`CaseStudies should render correctly 1`] = `
       <section
         class="cases-list"
       >
-        <div
-          class="cases-list_item cases-list_item--full cases-list_veeqo"
+        <caseslistitem-stub
+          class="cases-list_veeqo"
           data-testid="test-case-card"
-        >
-          <nuxtlink-stub
-            class="cases-list_item-link"
-            disabled=""
-            tag="a"
-            to="/case-studies/veeqo/"
-          >
-            <video
-              class="cases-list_item-video"
-              data-poster="img.jpg"
-              loop="loop"
-              muted="muted"
-            >
-              <source
-                data-src="img.jpg"
-                type="video/mp4"
-              />
-              
-      Your browser does not support the video tag.
-    
-            </video>
-             
-            <div
-              class="cases-list_item-info"
-            >
-              <img
-                alt="Veeqo logo"
-                class="cases-list_item-info-logo cases-list_item-info-veeqo-logotype"
-                data-src="img.jpg"
-                height="23"
-                width="105"
-              />
-               
-              <span>
-                Logistics
-              </span>
-               
-              <h3>
-                
-        Optimization for Veeqo
-      
-              </h3>
-               
-              <p>
-                Our DevOps team optimized the infrastructure for Veeqo, an inventory and shipping e-commerce platform, and made it highly efficient, smooth, and cost-effective for our partners.
-              </p>
-               
-              <nuxtlink-stub
-                to="/case-studies/veeqo/"
-              >
-                
-        Explore
-      
-              </nuxtlink-stub>
-            </div>
-          </nuxtlink-stub>
-        </div>
-        <div
-          class="cases-list_item cases-list_item--big cases-list_itc"
-          data-testid="test-case-card"
-        >
-          <nuxtlink-stub
-            class="cases-list_item-link"
-            disabled=""
-            tag="a"
-            to="/case-studies/R4TCA-web-application/"
-          >
-            <video
-              class="cases-list_item-video"
-              data-poster="img.jpg"
-              loop="loop"
-              muted="muted"
-            >
-              <source
-                data-src="img.jpg"
-                type="video/mp4"
-              />
-              
-      Your browser does not support the video tag.
-    
-            </video>
-             
-            <div
-              class="cases-list_item-info"
-            >
-              <img
-                alt="ITC logo"
-                class="cases-list_item-info-logo cases-list_item-info-itc-logo"
-                data-src="img.jpg"
-                height="23"
-                width="105"
-              />
-               
-              <span>
-                Digital transformation
-              </span>
-               
-              <h3>
-                
-        Ready4Trade Central Asia
-      
-              </h3>
-               
-              <p>
-                A web app customized for the delivery of export management coaching missions that contributes to the development of intra-regional and international trade in Central Asia
-              </p>
-               
-              <nuxtlink-stub
-                to="/case-studies/R4TCA-web-application/"
-              >
-                
-        Explore
-      
-              </nuxtlink-stub>
-            </div>
-          </nuxtlink-stub>
-        </div>
-        <div
-          class="cases-list_item cases-list_item--small cases-list_peklo"
-          data-testid="test-case-card"
-        >
-          <nuxtlink-stub
-            class="cases-list_item-link"
-            disabled=""
-            tag="a"
-            to="/case-studies/peklo/"
-          >
-            <video
-              class="cases-list_item-video"
-              data-poster="img.jpg"
-              loop="loop"
-              muted="muted"
-            >
-              <source
-                data-src="img.jpg"
-                type="video/mp4"
-              />
-              
-      Your browser does not support the video tag.
-    
-            </video>
-             
-            <div
-              class="cases-list_item-info"
-            >
-              <img
-                alt="Peklo Tool for search ad campaigns"
-                class="cases-list_item-info-logo cases-list_item-info-peklo-logo"
-                data-src="img.jpg"
-                height="80"
-                width="120"
-              />
-               
-              <span>
-                Contextual ad launcher
-              </span>
-               
-              <h3>
-                
-        Peklo Tool for better ad campaigns
-      
-              </h3>
-               
-              <p>
-                Mad Devs developed parsing- and clusterisation-based software that automates keyword grouping and text generation, making the launch of contextual ads two times faster.
-              </p>
-               
-              <nuxtlink-stub
-                to="/case-studies/peklo/"
-              >
-                
-        Explore
-      
-              </nuxtlink-stub>
-            </div>
-          </nuxtlink-stub>
-        </div>
-        <div
-          class="cases-list_item cases-list_item--full cases-list_sjmc"
-          data-testid="test-case-card"
-        >
-          <nuxtlink-stub
-            class="cases-list_item-link"
-            disabled=""
-            tag="a"
-            to="/case-studies/sir-john-monash-centre/"
-          >
-            <video
-              class="cases-list_item-video"
-              data-poster="img.jpg"
-              loop="loop"
-              muted="muted"
-            >
-              <source
-                data-src="img.jpg"
-                type="video/mp4"
-              />
-              
-      Your browser does not support the video tag.
-    
-            </video>
-             
-            <div
-              class="cases-list_item-info"
-            >
-              <img
-                alt="SJMC logo"
-                class="cases-list_item-info-logo cases-list_item-info-sjmc-logo"
-                data-src="img.jpg"
-                height="60"
-                width="133"
-              />
-               
-              <span>
-                BYOD
-              </span>
-               
-              <h3>
-                
-        Sir John Monash Centre
-      
-              </h3>
-               
-              <p>
-                Mad Devs engineers helped Sir John Monash Centre to enhance and maintain the BYOD multimedia technology.
-              </p>
-               
-              <nuxtlink-stub
-                to="/case-studies/sir-john-monash-centre/"
-              >
-                
-        Explore
-      
-              </nuxtlink-stub>
-            </div>
-          </nuxtlink-stub>
-        </div>
-      </section>
-       
-      <nuxtlink-stub
-        class="cases-list_see-more"
-        to="/case-studies/"
-      >
-        <span>
-          See More
-        </span>
-      </nuxtlink-stub>
-    </div>
-  </section>
-</div>
-`;
-
-exports[`CaseStudies should render correctly with type=projects 1`] = `
-<div>
-  <section
-    class="case-studies case-studies--projects"
-    id="case-studies"
-  >
-    <div
-      class="container"
-    >
-      <div>
-        <h2
-          class="case-studies__main-title case-studies__main-title-projects"
-        >
-          
-        Case 
-          <br />
-          
-        Studies
-      
-        </h2>
-         
-        <div
-          class="case-studies__fire-icon"
+          desc="Our DevOps team optimized the infrastructure for Veeqo, an inventory and shipping e-commerce platform, and made it highly efficient, smooth, and cost-effective for our partners."
+          item="[object Object]"
+          link="/case-studies/veeqo/"
+          logo="[object Object]"
+          poster-link="/images/Cases/veeqo/svg/veeqo-banner-bg.svg"
+          subtitle="Logistics"
+          title="Optimization for Veeqo"
+          title-tag="h3"
+          video-file-name="/videos/veeqo-banner.mp4#t=1"
+          width="full"
         />
-      </div>
-    </div>
-     
-    <div
-      class="container"
-    >
-      <section
-        class="cases-list"
-      >
-        <div
-          class="cases-list_item cases-list_item--full cases-list_veeqo"
+        <caseslistitem-stub
+          class="cases-list_itc"
           data-testid="test-case-card"
-        >
-          <nuxtlink-stub
-            class="cases-list_item-link"
-            disabled=""
-            tag="a"
-            to="/case-studies/veeqo/"
-          >
-            <video
-              class="cases-list_item-video"
-              data-poster="img.jpg"
-              loop="loop"
-              muted="muted"
-            >
-              <source
-                data-src="img.jpg"
-                type="video/mp4"
-              />
-              
-      Your browser does not support the video tag.
-    
-            </video>
-             
-            <div
-              class="cases-list_item-info"
-            >
-              <img
-                alt="Veeqo logo"
-                class="cases-list_item-info-logo cases-list_item-info-veeqo-logotype"
-                data-src="img.jpg"
-                height="23"
-                width="105"
-              />
-               
-              <span>
-                Logistics
-              </span>
-               
-              <h3>
-                
-        Optimization for Veeqo
-      
-              </h3>
-               
-              <p>
-                Our DevOps team optimized the infrastructure for Veeqo, an inventory and shipping e-commerce platform, and made it highly efficient, smooth, and cost-effective for our partners.
-              </p>
-               
-              <nuxtlink-stub
-                to="/case-studies/veeqo/"
-              >
-                
-        Explore
-      
-              </nuxtlink-stub>
-            </div>
-          </nuxtlink-stub>
-        </div>
-        <div
-          class="cases-list_item cases-list_item--big cases-list_itc"
+          desc="A web app customized for the delivery of export management coaching missions that contributes to the development of intra-regional and international trade in Central Asia"
+          item="[object Object]"
+          link="/case-studies/R4TCA-web-application/"
+          logo="[object Object]"
+          poster-link="/images/Cases/itc/jpg/itc-banner.jpg"
+          subtitle="Digital transformation"
+          title="Ready4Trade Central Asia"
+          title-tag="h3"
+          video-file-name="/videos/itc-banner.mp4#t=1"
+          width="big"
+        />
+        <caseslistitem-stub
+          class="cases-list_peklo"
           data-testid="test-case-card"
-        >
-          <nuxtlink-stub
-            class="cases-list_item-link"
-            disabled=""
-            tag="a"
-            to="/case-studies/R4TCA-web-application/"
-          >
-            <video
-              class="cases-list_item-video"
-              data-poster="img.jpg"
-              loop="loop"
-              muted="muted"
-            >
-              <source
-                data-src="img.jpg"
-                type="video/mp4"
-              />
-              
-      Your browser does not support the video tag.
-    
-            </video>
-             
-            <div
-              class="cases-list_item-info"
-            >
-              <img
-                alt="ITC logo"
-                class="cases-list_item-info-logo cases-list_item-info-itc-logo"
-                data-src="img.jpg"
-                height="23"
-                width="105"
-              />
-               
-              <span>
-                Digital transformation
-              </span>
-               
-              <h3>
-                
-        Ready4Trade Central Asia
-      
-              </h3>
-               
-              <p>
-                A web app customized for the delivery of export management coaching missions that contributes to the development of intra-regional and international trade in Central Asia
-              </p>
-               
-              <nuxtlink-stub
-                to="/case-studies/R4TCA-web-application/"
-              >
-                
-        Explore
-      
-              </nuxtlink-stub>
-            </div>
-          </nuxtlink-stub>
-        </div>
-        <div
-          class="cases-list_item cases-list_item--small cases-list_peklo"
+          desc="Mad Devs developed parsing- and clusterisation-based software that automates keyword grouping and text generation, making the launch of contextual ads two times faster."
+          item="[object Object]"
+          link="/case-studies/peklo/"
+          logo="[object Object]"
+          poster-link="/images/Cases/peklo/jpg/peklo-banner.jpg"
+          subtitle="Contextual ad launcher"
+          title="Peklo Tool for better ad campaigns"
+          title-tag="h3"
+          video-file-name="/videos/peklo-banner.mp4#t=1"
+          width="small"
+        />
+        <caseslistitem-stub
+          class="cases-list_sjmc"
           data-testid="test-case-card"
-        >
-          <nuxtlink-stub
-            class="cases-list_item-link"
-            disabled=""
-            tag="a"
-            to="/case-studies/peklo/"
-          >
-            <video
-              class="cases-list_item-video"
-              data-poster="img.jpg"
-              loop="loop"
-              muted="muted"
-            >
-              <source
-                data-src="img.jpg"
-                type="video/mp4"
-              />
-              
-      Your browser does not support the video tag.
-    
-            </video>
-             
-            <div
-              class="cases-list_item-info"
-            >
-              <img
-                alt="Peklo Tool for search ad campaigns"
-                class="cases-list_item-info-logo cases-list_item-info-peklo-logo"
-                data-src="img.jpg"
-                height="80"
-                width="120"
-              />
-               
-              <span>
-                Contextual ad launcher
-              </span>
-               
-              <h3>
-                
-        Peklo Tool for better ad campaigns
-      
-              </h3>
-               
-              <p>
-                Mad Devs developed parsing- and clusterisation-based software that automates keyword grouping and text generation, making the launch of contextual ads two times faster.
-              </p>
-               
-              <nuxtlink-stub
-                to="/case-studies/peklo/"
-              >
-                
-        Explore
-      
-              </nuxtlink-stub>
-            </div>
-          </nuxtlink-stub>
-        </div>
-        <div
-          class="cases-list_item cases-list_item--full cases-list_sjmc"
-          data-testid="test-case-card"
-        >
-          <nuxtlink-stub
-            class="cases-list_item-link"
-            disabled=""
-            tag="a"
-            to="/case-studies/sir-john-monash-centre/"
-          >
-            <video
-              class="cases-list_item-video"
-              data-poster="img.jpg"
-              loop="loop"
-              muted="muted"
-            >
-              <source
-                data-src="img.jpg"
-                type="video/mp4"
-              />
-              
-      Your browser does not support the video tag.
-    
-            </video>
-             
-            <div
-              class="cases-list_item-info"
-            >
-              <img
-                alt="SJMC logo"
-                class="cases-list_item-info-logo cases-list_item-info-sjmc-logo"
-                data-src="img.jpg"
-                height="60"
-                width="133"
-              />
-               
-              <span>
-                BYOD
-              </span>
-               
-              <h3>
-                
-        Sir John Monash Centre
-      
-              </h3>
-               
-              <p>
-                Mad Devs engineers helped Sir John Monash Centre to enhance and maintain the BYOD multimedia technology.
-              </p>
-               
-              <nuxtlink-stub
-                to="/case-studies/sir-john-monash-centre/"
-              >
-                
-        Explore
-      
-              </nuxtlink-stub>
-            </div>
-          </nuxtlink-stub>
-        </div>
+          desc="Mad Devs engineers helped Sir John Monash Centre to enhance and maintain the BYOD multimedia technology."
+          item="[object Object]"
+          link="/case-studies/sir-john-monash-centre/"
+          logo="[object Object]"
+          poster-link="/images/Cases/sjmc/jpg/sjmc-poster.jpg"
+          subtitle="BYOD"
+          title="Sir John Monash Centre"
+          title-tag="h3"
+          video-file-name="/videos/sjmc/sjmc-main-video.b35a387.mp4#t=2"
+          width="full"
+        />
       </section>
        
       <nuxtlink-stub

@@ -21,16 +21,16 @@ exports[`Banner component should render correctly 1`] = `
       <picture>
         <source
           class="banner_img"
-          data-srcset="img.jpg ,img.jpg"
+          srcset="img.jpg ,img.jpg"
           type="image/webp"
         />
          
         <img
           alt="Office"
           class="banner_img"
-          data-src="img.jpg"
-          data-srcset="img.jpg"
           height="606"
+          src="img.jpg"
+          srcset="img.jpg"
           width="1239"
         />
       </picture>

@@ -23,10 +23,15 @@ describe('caseStudies component', () => {
 
   const stubs = ['NuxtLink']
 
+  const directives = {
+    'lazy-load': () => {},
+  }
+
   beforeEach(() => {
     wrapper = mount(SingleProject, {
       stubs,
       propsData: props,
+      directives,
     })
   })
 
@@ -47,6 +52,7 @@ describe('caseStudies component', () => {
     wrapper = mount(SingleProject, {
       stubs,
       propsData: props,
+      directives,
     })
 
     const container = wrapper.findAll('.single-project__container').at(0)
@@ -62,6 +68,7 @@ describe('caseStudies component', () => {
     wrapper = mount(SingleProject, {
       stubs,
       propsData: props,
+      directives,
     })
 
     const container = wrapper.findAll('.single-project__container').at(0)

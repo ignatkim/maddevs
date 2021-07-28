@@ -16,7 +16,7 @@ const ROUTE = {
 const TEST_ID = 'test-footer'
 const updateClassName = jest.fn()
 
-const stubs = ['NuxtLink']
+const stubs = ['NuxtLink', 'FooterContacts', 'FooterSocialNetworks']
 
 describe('Footer component', () => {
   global.$nuxt = {

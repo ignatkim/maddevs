@@ -24,7 +24,17 @@ describe('index page', () => {
           init: () => {},
         },
       },
-      stubs: ['ClientOnly', 'NuxtLink'],
+      stubs: [
+        'ClientOnly',
+        'NuxtLink',
+        'WeCreateItProjectsFor',
+        'TechnologiesAndTools',
+        'CustomerTestimonials',
+        'QuickProjectStart',
+        'MeetOurExperts',
+        'ImageComponent',
+        'CasesListItem',
+      ],
     })
   })
 

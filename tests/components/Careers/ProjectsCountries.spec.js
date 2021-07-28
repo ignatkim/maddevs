@@ -7,11 +7,16 @@ const mocks = {
 
 const stubs = ['UICustomersList', 'UILinkButton']
 
+const directives = {
+  'lazy-load': () => {},
+}
+
 describe('ProjectsCountries component', () => {
   it('should render correctly', () => {
     const { container } = render(ProjectsCountries, {
       mocks,
       stubs,
+      directives,
     })
 
     expect(screen.getByText('Global projects in 20+ countries')).not.toBeNull()

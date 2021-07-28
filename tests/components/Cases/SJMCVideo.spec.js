@@ -38,6 +38,10 @@ const stubs = {
   SJMCVideo: VueVideoStub,
 }
 
+const directives = {
+  'lazy-load': () => {},
+}
+
 describe('SJMCVideo component', () => {
   let wrapper
 
@@ -45,6 +49,7 @@ describe('SJMCVideo component', () => {
     wrapper = shallowMount(SJMCVideo, {
       mocks,
       stubs,
+      directives,
     })
     wrapper.vm.$refs = MOCK_REFS
     jest.spyOn(global.document, 'exitFullscreen').mockImplementation()
@@ -101,6 +106,7 @@ describe('SJMCVideo component', () => {
     shallowMount(SJMCVideo, {
       mocks,
       stubs,
+      directives,
     })
 
     expect(EVENT_LISTENER).toHaveBeenCalledTimes(1)

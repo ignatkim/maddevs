@@ -5,25 +5,17 @@ exports[`ListTeamItem component should render correctly 1`] = `
   <li
     class="case_team-item"
   >
-    <picture
+    <picture-stub
+      alt="some-name"
+      background="true"
       class="case_team-item__image"
-    >
-      <source
-        class="image grey-background"
-        data-srcset="img.jpg,img.jpg"
-        type="image/webp"
-      />
-       
-      <img
-        alt="some-name"
-        class="image grey-background"
-        data-src="img.jpg"
-        data-srcset="img.jpg"
-        data-testid="test-picture-img"
-        height="50"
-        width="50"
-      />
-    </picture>
+      extension="png"
+      file=""
+      folder="common"
+      height="50"
+      lazy="true"
+      width="50"
+    />
      
     <div
       class="case_team-item__info"

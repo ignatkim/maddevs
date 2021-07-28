@@ -56,7 +56,7 @@
 import changeSectionTextOpacityMixin from '@/mixins/changeSectionTextOpacityMixin'
 
 export default {
-  name: 'Header',
+  name: 'CaseHeader',
 
   mixins: [changeSectionTextOpacityMixin('sectionText')],
 

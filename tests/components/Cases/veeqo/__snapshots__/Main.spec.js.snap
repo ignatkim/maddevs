@@ -24,27 +24,13 @@ exports[`Main component should render correctly 1`] = `
   
       </p>
        
-      <div
-        class="case_quote-wrap m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
+      <textquote-stub
+        class="m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
       >
-        <img
-          alt="blockquote"
-          class="case_mark"
-          data-src="[object Object]"
-          height="50"
-          width="50"
-        />
-         
-        <blockquote
-          class="case_blockquote"
-        >
-          
+        
     Veeqo is a single platform that gives users complete control of their entire inventory. It enables businesses to quickly bulk ship orders from any sales channel, automate repetitive shipping tasks, and track every delivery in one place.
   
-        </blockquote>
-         
-        <!---->
-      </div>
+      </textquote-stub>
        
       <p
         class="case_paragraph case_text-align-center m-48_bottom"
@@ -185,279 +171,7 @@ exports[`Main component should render correctly 1`] = `
       </p>
     </section>
      
-    <section
-      class="container_regular"
-    >
-      <h2
-        class="case_title_h2 m-24_bottom"
-      >
-        
-    Phase 1: Fixing database outages
-  
-      </h2>
-       
-      <div
-        class="case_cards-container"
-      >
-        <div
-          class="case_card background-color-silver"
-        >
-          <p
-            class="case_paragraph-uppercase case_card-name m-10_bottom media-m-8_bottom"
-          >
-            
-        Challenge
-      
-          </p>
-           
-          <h3
-            class="case_title_h4 m-10_bottom media-m-8_bottom"
-          >
-            
-        Regular outage
-      
-          </h3>
-           
-          <p
-            class="case_paragraph"
-          >
-            
-        Without any detectable load spikes, the database would often reach maximum processor performance and deny service as the queries piled up in the query queue. To get the system up and running again, workers had to be manually restarted every time.
-      
-          </p>
-        </div>
-         
-        <div
-          class="case_card background-color-blue-light"
-        >
-          <p
-            class="case_paragraph-uppercase case_card-name m-10_bottom media-m-8_bottom"
-          >
-            
-        Effect on users
-      
-          </p>
-           
-          <h3
-            class="case_title_h4 m-10_bottom media-m-8_bottom"
-          >
-            
-        Degraded user services
-      
-          </h3>
-           
-          <p
-            class="case_paragraph"
-          >
-            
-        Users had limited access to services: they couldn't view contents, place orders, or manage their settings.
-      
-          </p>
-        </div>
-      </div>
-       
-      <div
-        class="case_quote-wrap m-48_top m-96_bottom media-m-24_top media-m-72_bottom m-auto"
-      >
-        <blockquote
-          class="case_blockquote-box m-auto"
-        >
-          
-    “We needed better monitoring and metrics collection to detect the true reason for the outage. We don’t sweep these things under the rug. We go for root causes.”
-  
-        </blockquote>
-         
-        <p
-          class="case_quote-author"
-        >
-          
-    Andrew Sapozhnikov, Head of DevOps at Mad Devs
-  
-        </p>
-      </div>
-       
-      <h3
-        class="case_title_h3 m-24_bottom media-m-12_bottom"
-      >
-        
-    Solution
-  
-      </h3>
-       
-      <div
-        class="case_solution-cards"
-      >
-        <div
-          class="case_card card-content background-color-silver"
-        >
-          <img
-            alt="CloudWatch Logo."
-            class="card-content_icon"
-            data-src="img.jpg"
-            height="51.94"
-            width="51.94"
-          />
-           
-          <p
-            class="case_paragraph"
-          >
-            
-    Collecting host metrics (CloudWatch and okmeter showed consequences, not causes).
-  
-          </p>
-        </div>
-        <div
-          class="case_card card-content background-color-silver"
-        >
-          <img
-            alt="RAM Icon."
-            class="card-content_icon"
-            data-src="img.jpg"
-            height="51.94"
-            width="51.94"
-          />
-           
-          <p
-            class="case_paragraph"
-          >
-            
-    Analyzing the true RAM use and identifying 1,200-1,500 worker connections taking up about 40 GB of RAM.
-  
-          </p>
-        </div>
-        <div
-          class="case_card card-content background-color-silver"
-        >
-          <img
-            alt="PgBouncers Icon."
-            class="card-content_icon"
-            data-src="img.jpg"
-            height="51.94"
-            width="51.94"
-          />
-           
-          <p
-            class="case_paragraph"
-          >
-            
-    Adding PgBouncers to reduce the load on the database.
-  
-          </p>
-        </div>
-        <div
-          class="case_card card-content background-color-silver"
-        >
-          <img
-            alt="Speed Icon."
-            class="card-content_icon"
-            data-src="img.jpg"
-            height="51.94"
-            width="51.94"
-          />
-           
-          <p
-            class="case_paragraph"
-          >
-            
-    Stabilizing connection pooling by applying ELB and thus distributing traffic more evenly to decrease the number of SPOFs.
-  
-          </p>
-        </div>
-      </div>
-       
-      <p
-        class="case_paragraph m-48_top m-48_bottom media-m-24_bottom"
-      >
-        
-    As a result, we spent $180 on launching PgBouncers on two c4.large instances behind NLB and saved about 10X  the sum in the customer’s monthly costs by: Freeing up about 40 GB of RAM, Postponing the need to upgrade the RDS instance until about 6 months later.
-  
-      </p>
-       
-      <img
-        alt="PgBouncers Diagram."
-        class="case_pg-bouncer-diagram m-48_bottom"
-        data-src="img.jpg"
-        height="560"
-        width="818"
-      />
-       
-      <h3
-        class="case_title_h2 case_title-result m-48_bottom media-m-41_bottom"
-      >
-        
-    Result
-  
-      </h3>
-       
-      <div
-        class="case_result-container m-96_bottom media-m-48_bottom"
-      >
-        <div
-          class="case_result-item"
-        >
-          <h4
-            class="case_result-item_title"
-          >
-            
-      ReadIOPS
-    
-          </h4>
-           
-          <p
-            class="case_paragraph"
-            style="color: rgb(64, 65, 67);"
-          >
-            
-      halved for better instance performance
-    
-          </p>
-        </div>
-         
-        <div
-          class="case_result-item"
-        >
-          <h4
-            class="case_result-item_title"
-          >
-            
-      CPU
-    
-          </h4>
-           
-          <p
-            class="case_paragraph"
-            style="color: rgb(64, 65, 67);"
-          >
-            
-      load: reduced due to extra RAM
-    
-          </p>
-        </div>
-         
-        <div
-          class="case_result-item"
-        >
-          <h4
-            class="case_result-item_title"
-          >
-            
-      TPS
-    
-          </h4>
-           
-          <p
-            class="case_paragraph"
-            style="color: rgb(64, 65, 67);"
-          >
-            
-      increased 
-            <br />
-             by 50%
-    
-          </p>
-        </div>
-      </div>
-    </section>
+    <phasefixingdatabaseoutages-stub />
      
     <section
       class="container_regular"
@@ -577,23 +291,14 @@ exports[`Main component should render correctly 1`] = `
       <div
         class="case_ci-panel m-96_bottom media-m-48_bottom"
       >
-        <picture>
-          <source
-            class="image"
-            data-srcset="img.jpg,img.jpg"
-            type="image/webp"
-          />
-           
-          <img
-            alt="CI Panel."
-            class="image"
-            data-src="img.jpg"
-            data-srcset="img.jpg"
-            data-testid="test-picture-img"
-            height="440"
-            width="818"
-          />
-        </picture>
+        <picture-stub
+          alt="CI Panel."
+          extension="png"
+          file="ci-panel"
+          folder="veeqo"
+          height="440"
+          width="818"
+        />
       </div>
        
       <h3
@@ -642,33 +347,14 @@ exports[`Main component should render correctly 1`] = `
         </li>
       </ul>
        
-      <div
-        class="case_quote-wrap m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
+      <textquote-stub
+        author="Maxim Glotov, DevOps Engineer at Mad Devs"
+        class="m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
       >
-        <img
-          alt="blockquote"
-          class="case_mark"
-          data-src="[object Object]"
-          height="50"
-          width="50"
-        />
-         
-        <blockquote
-          class="case_blockquote"
-        >
-          
+        
     Everything down to the last comma is now written in the form of code. Even if we took Jenkins down completely and had to build it from scratch again, it’d take us no more than 10 minutes.
   
-        </blockquote>
-         
-        <p
-          class="case_quote-author m-8_top"
-        >
-          
-    Maxim Glotov, DevOps Engineer at Mad Devs
-  
-        </p>
-      </div>
+      </textquote-stub>
     </section>
      
     <continuousintegrationresult-stub />
@@ -1026,27 +712,13 @@ exports[`Main component should render correctly 1`] = `
         </li>
       </ol>
        
-      <div
-        class="case_quote-wrap m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
+      <textquote-stub
+        class="m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
       >
-        <img
-          alt="blockquote"
-          class="case_mark"
-          data-src="[object Object]"
-          height="50"
-          width="50"
-        />
-         
-        <blockquote
-          class="case_blockquote"
-        >
-          
+        
     We are proud of our work with Veeqo and eager to share our successes. As our partnership continues, we’re constantly looking for new ways to meet Veeqo’s business needs and make its users’ experience better.
   
-        </blockquote>
-         
-        <!---->
-      </div>
+      </textquote-stub>
     </div>
      
     <phasinfrastructureascoderesult-stub />
@@ -1065,367 +737,101 @@ exports[`Main component should render correctly 1`] = `
       <ul
         class="case_list-technologies m-96_bottom media-m-48_bottom"
       >
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Ruby Programming Language Logo."
-            class="case_technologies-item__tech-icon case_technologies-item__ruby ruby"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Ruby
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="NodeJS Logo"
-            class="case_technologies-item__tech-icon case_technologies-item__node node"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    NodeJS
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Elasticsearch Logo."
-            class="case_technologies-item__tech-icon case_technologies-item__elastic elastic"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Elasticsearch
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="PostgreSQL Database Management System Logo."
-            class="case_technologies-item__tech-icon case_technologies-item__postgresql postgresql"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    PostgreSQL
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="RebbitMQ Message Broker Software Logo."
-            class="case_technologies-item__tech-icon case_technologies-item__rebbit-mq rebbit-mq"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    RebbitMQ
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Redis Data Structure Store Logo."
-            class="case_technologies-item__tech-icon case_technologies-item__redis redis"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Redis
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Memcached Memory Caching System Logo."
-            class="case_technologies-item__tech-icon case_technologies-item__memcached memcached"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Memcached
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Cloudwatch Logo."
-            class="case_technologies-item__tech-icon case_technologies-item__cloud-watch cloud-watch"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Cloudwatch
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Prometheus Logo."
-            class="case_technologies-item__tech-icon case_technologies-item__prometheus prometheus"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Prometheus
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Grafana Software Application Logo."
-            class="case_technologies-item__tech-icon case_technologies-item__grafana grafana"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Grafana
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Sentry Error Tracking System Logo."
-            class="case_technologies-item__tech-icon case_technologies-item__sentry-black sentry-black"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Sentry
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Heroku Cloud Platform Logo."
-            class="case_technologies-item__tech-icon case_technologies-item__heroku heroku"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Heroku
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="AWS Cloud Computing Platforms Logo."
-            class="case_technologies-item__tech-icon case_technologies-item__aws aws"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    AWS
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Kubernetes Container Orchestration System Logo."
-            class="case_technologies-item__tech-icon case_technologies-item__kubernetes kubernetes"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Kubernetes
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Terraform Infrastructure as Code Software Tool Logo."
-            class="case_technologies-item__tech-icon case_technologies-item__terraform terraform"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Terraform
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Travis CI Logo."
-            class="case_technologies-item__tech-icon case_technologies-item__travis-ci travis-ci"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Travis CI
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Jenkins Logo."
-            class="case_technologies-item__tech-icon case_technologies-item__jenkins jenkins"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Jenkins
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Docker Logo."
-            class="case_technologies-item__tech-icon case_technologies-item__docker docker"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Docker
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Helm Logo."
-            class="case_technologies-item__tech-icon case_technologies-item__helm helm"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Helm
-  
-          </p>
-        </li>
+        <listtechnologiesitem-stub
+          alt="Ruby"
+          imgalt="Ruby Programming Language Logo."
+          name="ruby"
+        />
+        <listtechnologiesitem-stub
+          alt="NodeJS"
+          imgalt="NodeJS Logo"
+          name="node"
+        />
+        <listtechnologiesitem-stub
+          alt="Elasticsearch"
+          imgalt="Elasticsearch Logo."
+          name="elastic"
+        />
+        <listtechnologiesitem-stub
+          alt="PostgreSQL"
+          imgalt="PostgreSQL Database Management System Logo."
+          name="postgresql"
+        />
+        <listtechnologiesitem-stub
+          alt="RebbitMQ"
+          imgalt="RebbitMQ Message Broker Software Logo."
+          name="rebbit-mq"
+        />
+        <listtechnologiesitem-stub
+          alt="Redis"
+          imgalt="Redis Data Structure Store Logo."
+          name="redis"
+        />
+        <listtechnologiesitem-stub
+          alt="Memcached"
+          imgalt="Memcached Memory Caching System Logo."
+          name="memcached"
+        />
+        <listtechnologiesitem-stub
+          alt="Cloudwatch"
+          imgalt="Cloudwatch Logo."
+          name="cloud-watch"
+        />
+        <listtechnologiesitem-stub
+          alt="Prometheus"
+          imgalt="Prometheus Logo."
+          name="prometheus"
+        />
+        <listtechnologiesitem-stub
+          alt="Grafana"
+          imgalt="Grafana Software Application Logo."
+          name="grafana"
+        />
+        <listtechnologiesitem-stub
+          alt="Sentry"
+          imgalt="Sentry Error Tracking System Logo."
+          name="sentry-black"
+        />
+        <listtechnologiesitem-stub
+          alt="Heroku"
+          imgalt="Heroku Cloud Platform Logo."
+          name="heroku"
+        />
+        <listtechnologiesitem-stub
+          alt="AWS"
+          imgalt="AWS Cloud Computing Platforms Logo."
+          name="aws"
+        />
+        <listtechnologiesitem-stub
+          alt="Kubernetes"
+          imgalt="Kubernetes Container Orchestration System Logo."
+          name="kubernetes"
+        />
+        <listtechnologiesitem-stub
+          alt="Terraform"
+          imgalt="Terraform Infrastructure as Code Software Tool Logo."
+          name="terraform"
+        />
+        <listtechnologiesitem-stub
+          alt="Travis CI"
+          imgalt="Travis CI Logo."
+          name="travis-ci"
+        />
+        <listtechnologiesitem-stub
+          alt="Jenkins"
+          imgalt="Jenkins Logo."
+          name="jenkins"
+        />
+        <listtechnologiesitem-stub
+          alt="Docker"
+          imgalt="Docker Logo."
+          name="docker"
+        />
+        <listtechnologiesitem-stub
+          alt="Helm"
+          imgalt="Helm Logo."
+          name="helm"
+        />
       </ul>
     </section>
      
@@ -1446,25 +852,16 @@ exports[`Main component should render correctly 1`] = `
         <li
           class="case_team-item"
         >
-          <picture
+          <picture-stub
+            alt="Maxim Glotov"
+            background="true"
             class="case_team-item__image"
-          >
-            <source
-              class="image grey-background"
-              data-srcset="img.jpg,img.jpg"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Maxim Glotov"
-              class="image grey-background"
-              data-src="img.jpg"
-              data-srcset="img.jpg"
-              data-testid="test-picture-img"
-              height="50"
-              width="50"
-            />
-          </picture>
+            extension="png"
+            file="maxim-glotov"
+            folder="common"
+            height="50"
+            width="50"
+          />
            
           <div
             class="case_team-item__info"
@@ -1489,25 +886,16 @@ exports[`Main component should render correctly 1`] = `
         <li
           class="case_team-item"
         >
-          <picture
+          <picture-stub
+            alt="Andrew Sapozhnikov"
+            background="true"
             class="case_team-item__image"
-          >
-            <source
-              class="image grey-background"
-              data-srcset="img.jpg,img.jpg"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Andrew Sapozhnikov"
-              class="image grey-background"
-              data-src="img.jpg"
-              data-srcset="img.jpg"
-              data-testid="test-picture-img"
-              height="50"
-              width="50"
-            />
-          </picture>
+            extension="png"
+            file="andrew-sapozhnikov"
+            folder="common"
+            height="50"
+            width="50"
+          />
            
           <div
             class="case_team-item__info"
@@ -1544,23 +932,14 @@ exports[`Main component should render correctly 1`] = `
           <div
             class="case_blockquote-author__photo m-auto"
           >
-            <picture>
-              <source
-                class="image"
-                data-srcset="img.jpg,img.jpg"
-                type="image/webp"
-              />
-               
-              <img
-                alt="Daniel Vartanov"
-                class="image"
-                data-src="img.jpg"
-                data-srcset="img.jpg"
-                data-testid="test-picture-img"
-                height="71"
-                width="71"
-              />
-            </picture>
+            <picture-stub
+              alt="Daniel Vartanov"
+              extension="png"
+              file="daniel-vartanov"
+              folder="veeqo"
+              height="71"
+              width="71"
+            />
           </div>
            
           <p

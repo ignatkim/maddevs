@@ -227,7 +227,7 @@ exports[`Main component should render correctly 1`] = `
               >
                 <source
                   class="image"
-                  data-srcset="img.jpg,img.jpg"
+                  data-srcset="img.jpg ,img.jpg"
                   type="image/webp"
                 />
                  
@@ -249,7 +249,7 @@ exports[`Main component should render correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  data-srcset="img.jpg,img.jpg"
+                  data-srcset="img.jpg ,img.jpg"
                   type="image/webp"
                 />
                  
@@ -288,7 +288,7 @@ exports[`Main component should render correctly 1`] = `
               >
                 <source
                   class="image"
-                  data-srcset="img.jpg,img.jpg"
+                  data-srcset="img.jpg ,img.jpg"
                   type="image/webp"
                 />
                  
@@ -310,7 +310,7 @@ exports[`Main component should render correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  data-srcset="img.jpg,img.jpg"
+                  data-srcset="img.jpg ,img.jpg"
                   type="image/webp"
                 />
                  
@@ -349,7 +349,7 @@ exports[`Main component should render correctly 1`] = `
               >
                 <source
                   class="image"
-                  data-srcset="img.jpg,img.jpg"
+                  data-srcset="img.jpg ,img.jpg"
                   type="image/webp"
                 />
                  
@@ -371,7 +371,7 @@ exports[`Main component should render correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  data-srcset="img.jpg,img.jpg"
+                  data-srcset="img.jpg ,img.jpg"
                   type="image/webp"
                 />
                  
@@ -2192,7 +2192,7 @@ exports[`Main component should render correctly 1`] = `
           muted="muted"
         >
           <source
-            src="img.jpg"
+            data-src="img.jpg"
             type="video/mp4"
           />
           
@@ -3579,17 +3579,19 @@ exports[`Main component should render correctly 1`] = `
         <picture>
           <source
             class="image"
-            srcset="img.jpg,img.jpg"
+            data-not-lazy="true"
+            data-srcset="img.jpg ,img.jpg"
             type="image/webp"
           />
            
           <img
             alt="OTT-like Online Video Streaming Platform App."
             class="image"
+            data-not-lazy="true"
+            data-src="img.jpg"
+            data-srcset="img.jpg"
             data-testid="test-picture-img"
             height="609.19"
-            src="img.jpg"
-            srcset="img.jpg"
             width="305"
           />
         </picture>
@@ -3651,7 +3653,7 @@ exports[`Main component should render correctly 1`] = `
           >
             <source
               class="image grey-background"
-              data-srcset="img.jpg,img.jpg"
+              data-srcset="img.jpg ,img.jpg"
               type="image/webp"
             />
              
@@ -3694,7 +3696,7 @@ exports[`Main component should render correctly 1`] = `
           >
             <source
               class="image grey-background"
-              data-srcset="img.jpg,img.jpg"
+              data-srcset="img.jpg ,img.jpg"
               type="image/webp"
             />
              
@@ -3737,7 +3739,7 @@ exports[`Main component should render correctly 1`] = `
           >
             <source
               class="image grey-background"
-              data-srcset="img.jpg,img.jpg"
+              data-srcset="img.jpg ,img.jpg"
               type="image/webp"
             />
              
@@ -3780,7 +3782,7 @@ exports[`Main component should render correctly 1`] = `
           >
             <source
               class="image grey-background"
-              data-srcset="img.jpg,img.jpg"
+              data-srcset="img.jpg ,img.jpg"
               type="image/webp"
             />
              
@@ -3823,7 +3825,7 @@ exports[`Main component should render correctly 1`] = `
           >
             <source
               class="image grey-background"
-              data-srcset="img.jpg,img.jpg"
+              data-srcset="img.jpg ,img.jpg"
               type="image/webp"
             />
              
@@ -3879,7 +3881,7 @@ exports[`Main component should render correctly 1`] = `
             <picture>
               <source
                 class="image"
-                data-srcset="img.jpg,img.jpg"
+                data-srcset="img.jpg ,img.jpg"
                 type="image/webp"
               />
                

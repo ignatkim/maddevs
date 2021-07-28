@@ -17,15 +17,29 @@ describe('post card component', () => {
 
   const stubs = ['NuxtLink']
 
+  const directives = {
+    'lazy-load': () => {},
+  }
+
   it('should render correctly with slot', () => {
-    const { container } = render(PostCard, { mocks, props, stubs })
+    const { container } = render(PostCard, {
+      mocks,
+      props,
+      stubs,
+      directives,
+    })
 
     expect(container).toMatchSnapshot()
   })
 
   it('render with very long title', () => {
     props.post = blogPostWithLongTitle
-    const { container } = render(PostCard, { mocks, props, stubs })
+    const { container } = render(PostCard, {
+      mocks,
+      props,
+      stubs,
+      directives,
+    })
 
     expect(container).toMatchSnapshot()
   })

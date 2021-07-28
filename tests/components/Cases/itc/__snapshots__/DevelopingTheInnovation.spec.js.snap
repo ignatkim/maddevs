@@ -146,7 +146,7 @@ exports[`DevelopingTheInnovation component should render correctly 1`] = `
       <picture>
         <source
           class="image"
-          data-srcset="img.jpg,img.jpg"
+          data-srcset="img.jpg ,img.jpg"
           type="image/webp"
         />
          
@@ -302,7 +302,7 @@ exports[`DevelopingTheInnovation component should render correctly 1`] = `
       <picture>
         <source
           class="image"
-          data-srcset="img.jpg,img.jpg"
+          data-srcset="img.jpg ,img.jpg"
           type="image/webp"
         />
          
