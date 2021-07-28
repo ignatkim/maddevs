@@ -10,8 +10,8 @@
     <img
       width="395"
       height="490"
-      class="cta-banner__image"
-      :src="image"
+      class="cta-banner__image media_lazy"
+      :data-src="image"
       :alt="imageAltText"
     >
     <div class="cta-banner__man">
