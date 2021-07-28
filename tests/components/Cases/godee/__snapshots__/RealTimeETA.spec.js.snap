@@ -61,23 +61,15 @@ exports[`RealTimeETA component should render correctly 1`] = `
       <div
         class="case_phone-wrapper-eta-section"
       >
-        <picture>
-          <source
-            class="image"
-            data-srcset="img.jpg,img.jpg"
-            type="image/webp"
-          />
-           
-          <img
-            alt="GoDee: Bus Transit App in Vietnam."
-            class="image"
-            data-src="img.jpg"
-            data-srcset="img.jpg"
-            data-testid="test-picture-img"
-            height="694.62"
-            width="358.96"
-          />
-        </picture>
+        <picture-stub
+          alt="GoDee: Bus Transit App in Vietnam."
+          extension="png"
+          file="real-time-eta-phone"
+          folder="godee"
+          height="694.62"
+          lazy="true"
+          width="358.96"
+        />
       </div>
     </section>
   </section>

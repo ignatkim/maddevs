@@ -8,80 +8,34 @@ exports[`Main component should render correctly 1`] = `
   <main
     class="case"
   >
-    <section
-      class="case_header case_header-godee"
-      id="transparent-header-area"
+    <caseheader-stub
+      logo="[object Object]"
+      project="godee"
+      videofallbackpath="/images/Cases/godee/jpg/godee-case-preview.jpg"
+      videoname="/videos/godee-case-main-video.mp4"
     >
-      <div
-        class="case_main-video_fallback"
-        style="background-image: url(/images/Cases/godee/jpg/godee-case-preview.jpg);"
-      />
-       
-      <video
-        autoplay="autoplay"
-        class="case_main-video"
-        data-testid="test-case_main-video"
-        loop="loop"
-        muted="muted"
+      <h1
+        class="case_header-title"
       >
-        <source
-          data-src="/videos/godee-case-main-video.mp4"
-          type="video/mp4"
-        />
         
-    Your browser does not support the video tag.
-  
-      </video>
-       
-      <div
-        class="case_header-content"
-      >
-        <div
-          class="case_header-text"
-          style="opacity: 1;"
-        >
-          <div
-            class="case_case-study-item"
-          >
-            
-        Case Study
-      
-          </div>
-           
-          <h1
-            class="case_header-title"
-          >
-            
       Convenient shuttle 
-            <br />
-            
+        <br />
+        
       bus service
     
-          </h1>
-           
-          <p
-            class="case_header-description"
-          >
-            
+      </h1>
+       
+      <p
+        class="case_header-description"
+      >
+        
       Mad Devs helped GoDee with developing feature-rich software to re-invent 
-            <br />
-            
+        <br />
+        
       public mobility by building new smart ways of a daily commute.
     
-          </p>
-           
-        </div>
-         
-        <img
-          alt="Godee Logo"
-          class="case_header-logo case_godee-logo"
-          height="130"
-          src="/images/Cases/godee/svg/godee-logo.svg"
-          style="opacity: 1;"
-          width="293"
-        />
-      </div>
-    </section>
+      </p>
+    </caseheader-stub>
      
     <section
       class="container_regular"
@@ -96,27 +50,13 @@ exports[`Main component should render correctly 1`] = `
   
       </p>
        
-      <div
-        class="case_quote-wrap m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
+      <textquote-stub
+        class="m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
       >
-        <img
-          alt="blockquote"
-          class="case_mark"
-          data-src="[object Object]"
-          height="50"
-          width="50"
-        />
-         
-        <blockquote
-          class="case_blockquote"
-        >
-          
+        
     The app-based system allows users to find a route, select the time, book a seat and pay for the ride online.
   
-        </blockquote>
-         
-        <!---->
-      </div>
+      </textquote-stub>
     </section>
      
     <section
@@ -472,25 +412,10 @@ exports[`Main component should render correctly 1`] = `
         <div
           class="case_card background-color-silver"
         >
-          <div
-            class="card-content"
+          <cardgodeefeature-stub
+            icon-name="live-chat"
+            title="Live chat feature"
           >
-            <img
-              alt="live-chat"
-              class="card-content_icon"
-              data-src="[object Object]"
-              height="51.94"
-              width="51.94"
-            />
-             
-            <h4
-              class="case_title_h4 card-content_title"
-            >
-              
-    Live chat feature
-  
-            </h4>
-             
             <p
               class="case_paragraph"
             >
@@ -499,31 +424,16 @@ exports[`Main component should render correctly 1`] = `
           from users to make white-collar workers’ commutes easier.
         
             </p>
-          </div>
+          </cardgodeefeature-stub>
         </div>
          
         <div
           class="case_card background-color-silver"
         >
-          <div
-            class="card-content"
+          <cardgodeefeature-stub
+            icon-name="trip-request"
+            title="Trip request"
           >
-            <img
-              alt="trip-request"
-              class="card-content_icon"
-              data-src="[object Object]"
-              height="51.94"
-              width="51.94"
-            />
-             
-            <h4
-              class="case_title_h4 card-content_title"
-            >
-              
-    Trip request
-  
-            </h4>
-             
             <p
               class="case_paragraph"
             >
@@ -532,7 +442,7 @@ exports[`Main component should render correctly 1`] = `
           districts.
         
             </p>
-          </div>
+          </cardgodeefeature-stub>
         </div>
       </div>
     </section>
@@ -636,25 +546,15 @@ exports[`Main component should render correctly 1`] = `
                 <div
                   class="card-content_image-wrapper card-content_image-wrapper-application-for-passengers"
                 >
-                  <picture
+                  <picture-stub
+                    alt="GoDee: Bus Transit App for Passengers."
                     class=""
-                  >
-                    <source
-                      class="image"
-                      srcset="/images/Cases/godee/webp/application-for-passengers-card.webp ,/images/Cases/godee/webp/application-for-passengers-card@2x.webp 2x"
-                      type="image/webp"
-                    />
-                     
-                    <img
-                      alt="GoDee: Bus Transit App for Passengers."
-                      class="image"
-                      data-testid="test-picture-img"
-                      height="211"
-                      src="/images/Cases/godee/png/application-for-passengers-card.png"
-                      srcset="/images/Cases/godee/png/application-for-passengers-card.png"
-                      width="334"
-                    />
-                  </picture>
+                    extension="png"
+                    file="application-for-passengers-card"
+                    folder="godee"
+                    height="211"
+                    width="334"
+                  />
                    
                   <!---->
                 </div>
@@ -690,25 +590,15 @@ exports[`Main component should render correctly 1`] = `
                 <div
                   class="card-content_image-wrapper card-content_image-wrapper-application-for-drivers"
                 >
-                  <picture
+                  <picture-stub
+                    alt="GoDee: Bus Drivers App."
                     class=""
-                  >
-                    <source
-                      class="image"
-                      srcset="/images/Cases/godee/webp/application-for-drivers-card.webp ,/images/Cases/godee/webp/application-for-drivers-card@2x.webp 2x"
-                      type="image/webp"
-                    />
-                     
-                    <img
-                      alt="GoDee: Bus Drivers App."
-                      class="image"
-                      data-testid="test-picture-img"
-                      height="280"
-                      src="/images/Cases/godee/png/application-for-drivers-card.png"
-                      srcset="/images/Cases/godee/png/application-for-drivers-card.png"
-                      width="313"
-                    />
-                  </picture>
+                    extension="png"
+                    file="application-for-drivers-card"
+                    folder="godee"
+                    height="280"
+                    width="313"
+                  />
                    
                   <!---->
                 </div>
@@ -745,45 +635,25 @@ exports[`Main component should render correctly 1`] = `
               <div
                 class="card-content_image-wrapper card-content_image-wrapper-godee-admin-panel"
               >
-                <picture
+                <picture-stub
+                  alt="GoDee: Bus App Management System."
                   class="card-content_desktop-image"
-                >
-                  <source
-                    class="image"
-                    srcset="/images/Cases/godee/webp/godee-admin-panel-card.webp ,/images/Cases/godee/webp/godee-admin-panel-card@2x.webp 2x"
-                    type="image/webp"
-                  />
-                   
-                  <img
-                    alt="GoDee: Bus App Management System."
-                    class="image"
-                    data-testid="test-picture-img"
-                    height="219"
-                    src="/images/Cases/godee/png/godee-admin-panel-card.png"
-                    srcset="/images/Cases/godee/png/godee-admin-panel-card.png"
-                    width="695"
-                  />
-                </picture>
+                  extension="png"
+                  file="godee-admin-panel-card"
+                  folder="godee"
+                  height="219"
+                  width="695"
+                />
                  
-                <picture
+                <picture-stub
+                  alt="GoDee: bus app management control panel"
                   class="card-content_mobile-image"
-                >
-                  <source
-                    class="image"
-                    srcset="/images/Cases/godee/webp/godee-admin-panel-card-mobile.webp ,/images/Cases/godee/webp/godee-admin-panel-card-mobile@2x.webp 2x"
-                    type="image/webp"
-                  />
-                   
-                  <img
-                    alt="GoDee: bus app management control panel"
-                    class="image"
-                    data-testid="test-picture-img"
-                    height="160"
-                    src="/images/Cases/godee/png/godee-admin-panel-card-mobile.png"
-                    srcset="/images/Cases/godee/png/godee-admin-panel-card-mobile.png"
-                    width="307"
-                  />
-                </picture>
+                  extension="png"
+                  file="godee-admin-panel-card-mobile"
+                  folder="godee"
+                  height="160"
+                  width="307"
+                />
               </div>
             </div>
           </div>
@@ -791,1611 +661,11 @@ exports[`Main component should render correctly 1`] = `
       </div>
     </section>
      
-    <section>
-      <section
-        class="container_regular"
-      >
-        <h3
-          class="case_title_h2 m-96_top media-m-48_top m-12_bottom"
-        >
-          
-      Intelligent management panel
-    
-        </h3>
-         
-        <p
-          class="case_paragraph"
-        >
-          
-      GoDee's rapid growth since its early stages required easy-to-scale business processes and automated route
-      management. Although, in theory, everything can be done with an army of sales representatives and route
-      operators, GoDee wanted to automate routine operations so it could expand to other cities and countries.
-    
-        </p>
-         
-        <div
-          class="case_quote-wrap m-48_top m-48_bottom media-m-24_top media-m-24_bottom m-auto"
-        >
-          <blockquote
-            class="case_blockquote-box m-auto"
-          >
-            
-      One manager and one customer support representative can manage more than ~2500 trip requests per month and
-      ~25,000 passengers per month.
-    
-          </blockquote>
-           
-          <!---->
-        </div>
-         
-        <h3
-          class="case_title_h3 m-12_bottom"
-        >
-          
-      Smart route planning
-    
-        </h3>
-         
-        <p
-          class="case_paragraph case_paragraph--bold"
-        >
-          
-      How can we create profitable yet convenient user routes?
-    
-        </p>
-         
-        <p
-          class="case_paragraph m-24_bottom media-m-12_bottom"
-        >
-          
-      Let users send 
-          <span
-            class="case_red-text"
-          >
-            trip requests
-          </span>
-           and tell you what works for them. This
-      feature was available initially through the MVP phase, and it enables GoDee route managers to build
-      effective routes by understanding real commuter demand.
-    
-        </p>
-         
-        <p
-          class="case_paragraph"
-        >
-          
-      Inside the transportation application, users can submit a trip request with pick-up and drop-off locations
-      at the desired time. The request is added to the list on the managers' dashboard.
-    
-        </p>
-      </section>
-       
-      <section
-        class="container_middle"
-      >
-        <div
-          class="case_image-wrapper m-48_top media-m-24_top m-60_bottom media-m-24_bottom case_box-shadow"
-        >
-          <picture>
-            <source
-              class="image grey-background"
-              srcset="/images/Cases/common/webp/safari-top-bar-white.webp ,/images/Cases/common/webp/safari-top-bar-white@2x.webp 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="GoDee: Safari Browser Top Bar White."
-              class="image grey-background"
-              data-testid="test-picture-img"
-              height="16.45"
-              src="/images/Cases/common/jpg/safari-top-bar-white.jpg"
-              srcset="/images/Cases/common/jpg/safari-top-bar-white.jpg"
-              width="1026"
-            />
-          </picture>
-           
-          <picture>
-            <source
-              class="image"
-              srcset="/images/Cases/godee/webp/godee-admin-panel.webp ,/images/Cases/godee/webp/godee-admin-panel@2x.webp 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="GoDee: Bus Transit App Admin Panel."
-              class="image"
-              data-testid="test-picture-img"
-              height="672"
-              src="/images/Cases/godee/jpg/godee-admin-panel.jpg"
-              srcset="/images/Cases/godee/jpg/godee-admin-panel.jpg"
-              width="1026"
-            />
-          </picture>
-        </div>
-         
-        <div
-          class="card-content background-color-silver m-48_bottom media-m-24_bottom"
-        >
-          <div
-            class="card-content_left-item"
-          >
-            <h4
-              class="case_title_h4 m-12_bottom card-content_description-title"
-            >
-              
-      Prim's algorithm
-    
-            </h4>
-             
-            <p
-              class="case_paragraph"
-            >
-              
-      Prim's algorithm is used to effectively connect the dots on a map. This is how a trip request list is
-      transformed into a map, where new potential routes are displayed for easier overview. The algorithm connects the
-      dots and the map’s possible routes. Our aim is to connect as many dots as possible while keeping the longevity
-      under 20 km.
-    
-            </p>
-          </div>
-           
-          <div
-            class="card-content_right-item"
-          >
-            <div
-              style="width: 100%; height: 100%; overflow: hidden; margin: 0px auto;"
-            >
-              <svg
-                height="900"
-                preserveAspectRatio="xMidYMid meet"
-                style="width: 100%; height: 100%; transform: translate3d(0,0,0);"
-                viewBox="0 0 900 900"
-                width="900"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <defs>
-                  <clippath
-                    id="__lottie_element_2"
-                  >
-                    <rect
-                      height="900"
-                      width="900"
-                      x="0"
-                      y="0"
-                    />
-                  </clippath>
-                </defs>
-                <g
-                  clip-path="url(#__lottie_element_2)"
-                >
-                  <g
-                    opacity="1"
-                    style="display: block;"
-                    transform="matrix(1,0,0,1,57.811004638671875,51.208984375)"
-                  >
-                    <g
-                      opacity="1"
-                      transform="matrix(1,0,0,1,165.79299926757812,23.16699981689453)"
-                    >
-                      <path
-                        d=" M15.666999816894531,0 C15.666999816894531,8.652999877929688 8.652000427246094,15.666999816894531 -0.0010000000474974513,15.666999816894531 C-8.652999877929688,15.666999816894531 -15.666999816894531,8.652999877929688 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652999877929688,-15.666999816894531 -0.0010000000474974513,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
-                        fill-opacity="0"
-                        stroke="rgb(56,56,56)"
-                        stroke-linecap="butt"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                        stroke-opacity="1"
-                        stroke-width="3"
-                      />
-                    </g>
-                    <g
-                      opacity="1"
-                      transform="matrix(1,0,0,1,142.2449951171875,56.29499816894531)"
-                    >
-                      <path
-                        d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 -0.0010000000474974513,15.666999816894531 C-8.652999877929688,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652999877929688,-15.666999816894531 -0.0010000000474974513,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
-                        fill-opacity="0"
-                        stroke="rgb(56,56,56)"
-                        stroke-linecap="butt"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                        stroke-opacity="1"
-                        stroke-width="3"
-                      />
-                    </g>
-                    <g
-                      opacity="1"
-                      transform="matrix(1,0,0,1,192.26699829101562,153.6199951171875)"
-                    >
-                      <path
-                        d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 -0.0010000000474974513,15.666999816894531 C-8.652999877929688,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652999877929688 -8.652999877929688,-15.666999816894531 -0.0010000000474974513,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652999877929688 15.666999816894531,0z"
-                        fill-opacity="0"
-                        stroke="rgb(56,56,56)"
-                        stroke-linecap="butt"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                        stroke-opacity="1"
-                        stroke-width="3"
-                      />
-                    </g>
-                    <g
-                      opacity="1"
-                      transform="matrix(1,0,0,1,281.5780029296875,234.96200561523438)"
-                    >
-                      <path
-                        d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 -0.0010000000474974513,15.666999816894531 C-8.652999877929688,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652999877929688,-15.666999816894531 -0.0010000000474974513,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
-                        fill-opacity="0"
-                        stroke="rgb(56,56,56)"
-                        stroke-linecap="butt"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                        stroke-opacity="1"
-                        stroke-width="3"
-                      />
-                    </g>
-                    <g
-                      opacity="1"
-                      transform="matrix(1,0,0,1,250.24400329589844,313.64599609375)"
-                    >
-                      <path
-                        d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 -0.0010000000474974513,15.666999816894531 C-8.652999877929688,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652999877929688,-15.666999816894531 -0.0010000000474974513,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
-                        fill-opacity="0"
-                        stroke="rgb(56,56,56)"
-                        stroke-linecap="butt"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                        stroke-opacity="1"
-                        stroke-width="3"
-                      />
-                    </g>
-                    <g
-                      opacity="1"
-                      transform="matrix(1,0,0,1,373.6830139160156,273.0610046386719)"
-                    >
-                      <path
-                        d=" M15.666999816894531,0 C15.666999816894531,8.652999877929688 8.652000427246094,15.666999816894531 -0.0010000000474974513,15.666999816894531 C-8.652999877929688,15.666999816894531 -15.666999816894531,8.652999877929688 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652999877929688,-15.666999816894531 -0.0010000000474974513,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
-                        fill-opacity="0"
-                        stroke="rgb(56,56,56)"
-                        stroke-linecap="butt"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                        stroke-opacity="1"
-                        stroke-width="3"
-                      />
-                    </g>
-                    <g
-                      opacity="1"
-                      transform="matrix(1,0,0,1,503.56298828125,227.0469970703125)"
-                    >
-                      <path
-                        d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 0,15.666999816894531 C-8.652000427246094,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652000427246094,-15.666999816894531 0,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
-                        fill-opacity="0"
-                        stroke="rgb(56,56,56)"
-                        stroke-linecap="butt"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                        stroke-opacity="1"
-                        stroke-width="3"
-                      />
-                    </g>
-                    <g
-                      opacity="1"
-                      transform="matrix(1,0,0,1,494.2300109863281,125.0469970703125)"
-                    >
-                      <path
-                        d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 0,15.666999816894531 C-8.652000427246094,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652000427246094,-15.666999816894531 0,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
-                        fill-opacity="0"
-                        stroke="rgb(56,56,56)"
-                        stroke-linecap="butt"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                        stroke-opacity="1"
-                        stroke-width="3"
-                      />
-                    </g>
-                    <g
-                      opacity="1"
-                      transform="matrix(1,0,0,1,467.56298828125,40.62900161743164)"
-                    >
-                      <path
-                        d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 0,15.666999816894531 C-8.652000427246094,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652000427246094,-15.666999816894531 0,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
-                        fill-opacity="0"
-                        stroke="rgb(56,56,56)"
-                        stroke-linecap="butt"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                        stroke-opacity="1"
-                        stroke-width="3"
-                      />
-                    </g>
-                    <g
-                      opacity="1"
-                      transform="matrix(1,0,0,1,451.8970031738281,79.94400024414062)"
-                    >
-                      <path
-                        d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.651000022888184,15.666999816894531 -0.0010000000474974513,15.666999816894531 C-8.652999877929688,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652999877929688,-15.666999816894531 -0.0010000000474974513,-15.666999816894531 C8.651000022888184,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
-                        fill-opacity="0"
-                        stroke="rgb(56,56,56)"
-                        stroke-linecap="butt"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                        stroke-opacity="1"
-                        stroke-width="3"
-                      />
-                    </g>
-                    <g
-                      opacity="1"
-                      transform="matrix(1,0,0,1,632.0880126953125,24.961999893188477)"
-                    >
-                      <path
-                        d=" M15.666999816894531,0 C15.666999816894531,8.652999877929688 8.652999877929688,15.666999816894531 0,15.666999816894531 C-8.652000427246094,15.666999816894531 -15.666999816894531,8.652999877929688 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652000427246094,-15.666999816894531 0,-15.666999816894531 C8.652999877929688,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
-                        fill-opacity="0"
-                        stroke="rgb(56,56,56)"
-                        stroke-linecap="butt"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                        stroke-opacity="1"
-                        stroke-width="3"
-                      />
-                    </g>
-                    <g
-                      opacity="1"
-                      transform="matrix(1,0,0,1,590.9409790039062,90.2750015258789)"
-                    >
-                      <path
-                        d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 0,15.666999816894531 C-8.652999877929688,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652999877929688 -8.652999877929688,-15.666999816894531 0,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652999877929688 15.666999816894531,0z"
-                        fill-opacity="0"
-                        stroke="rgb(56,56,56)"
-                        stroke-linecap="butt"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                        stroke-opacity="1"
-                        stroke-width="3"
-                      />
-                    </g>
-                    <g
-                      opacity="1"
-                      transform="matrix(1,0,0,1,612.1950073242188,257.3949890136719)"
-                    >
-                      <path
-                        d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 0,15.666999816894531 C-8.652000427246094,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652000427246094,-15.666999816894531 0,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
-                        fill-opacity="0"
-                        stroke="rgb(56,56,56)"
-                        stroke-linecap="butt"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                        stroke-opacity="1"
-                        stroke-width="3"
-                      />
-                    </g>
-                    <g
-                      opacity="1"
-                      transform="matrix(1,0,0,1,537.864013671875,307.48699951171875)"
-                    >
-                      <path
-                        d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 0,15.666999816894531 C-8.652000427246094,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652000427246094,-15.666999816894531 0,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
-                        fill-opacity="0"
-                        stroke="rgb(56,56,56)"
-                        stroke-linecap="butt"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                        stroke-opacity="1"
-                        stroke-width="3"
-                      />
-                    </g>
-                    <g
-                      opacity="1"
-                      transform="matrix(1,0,0,1,695.4749755859375,391.8169860839844)"
-                    >
-                      <path
-                        d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 0,15.666999816894531 C-8.652000427246094,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652999877929688 -8.652000427246094,-15.666999816894531 0,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652999877929688 15.666999816894531,0z"
-                        fill-opacity="0"
-                        stroke="rgb(56,56,56)"
-                        stroke-linecap="butt"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                        stroke-opacity="1"
-                        stroke-width="3"
-                      />
-                    </g>
-                    <g
-                      opacity="1"
-                      transform="matrix(1,0,0,1,622.2739868164062,429.8169860839844)"
-                    >
-                      <path
-                        d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 0,15.666999816894531 C-8.652000427246094,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652000427246094,-15.666999816894531 0,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
-                        fill-opacity="0"
-                        stroke="rgb(56,56,56)"
-                        stroke-linecap="butt"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                        stroke-opacity="1"
-                        stroke-width="3"
-                      />
-                    </g>
-                    <g
-                      opacity="1"
-                      transform="matrix(1,0,0,1,773.6430053710938,567.3770141601562)"
-                    >
-                      <path
-                        d=" M15.666999816894531,-0.0010000000474974513 C15.666999816894531,8.651000022888184 8.652000427246094,15.666999816894531 0,15.666999816894531 C-8.652000427246094,15.666999816894531 -15.666999816894531,8.651000022888184 -15.666999816894531,-0.0010000000474974513 C-15.666999816894531,-8.652999877929688 -8.652000427246094,-15.666999816894531 0,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652999877929688 15.666999816894531,-0.0010000000474974513z"
-                        fill-opacity="0"
-                        stroke="rgb(56,56,56)"
-                        stroke-linecap="butt"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                        stroke-opacity="1"
-                        stroke-width="3"
-                      />
-                    </g>
-                    <g
-                      opacity="1"
-                      transform="matrix(1,0,0,1,622.2739868164062,551.708984375)"
-                    >
-                      <path
-                        d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 0,15.666999816894531 C-8.652000427246094,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652000427246094,-15.666999816894531 0,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
-                        fill-opacity="0"
-                        stroke="rgb(56,56,56)"
-                        stroke-linecap="butt"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                        stroke-opacity="1"
-                        stroke-width="3"
-                      />
-                    </g>
-                    <g
-                      opacity="1"
-                      transform="matrix(1,0,0,1,542.0170288085938,589.3820190429688)"
-                    >
-                      <path
-                        d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 0,15.666999816894531 C-8.652000427246094,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652000427246094,-15.666999816894531 0,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
-                        fill-opacity="0"
-                        stroke="rgb(56,56,56)"
-                        stroke-linecap="butt"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                        stroke-opacity="1"
-                        stroke-width="3"
-                      />
-                    </g>
-                    <g
-                      opacity="1"
-                      transform="matrix(1,0,0,1,456.0169982910156,478.0480041503906)"
-                    >
-                      <path
-                        d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 0,15.666999816894531 C-8.652000427246094,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652000427246094,-15.666999816894531 0,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
-                        fill-opacity="0"
-                        stroke="rgb(56,56,56)"
-                        stroke-linecap="butt"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                        stroke-opacity="1"
-                        stroke-width="3"
-                      />
-                    </g>
-                    <g
-                      opacity="1"
-                      transform="matrix(1,0,0,1,420.2879943847656,509.3819885253906)"
-                    >
-                      <path
-                        d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.651000022888184,15.666999816894531 -0.0010000000474974513,15.666999816894531 C-8.652999877929688,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652999877929688,-15.666999816894531 -0.0010000000474974513,-15.666999816894531 C8.651000022888184,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
-                        fill-opacity="0"
-                        stroke="rgb(56,56,56)"
-                        stroke-linecap="butt"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                        stroke-opacity="1"
-                        stroke-width="3"
-                      />
-                    </g>
-                    <g
-                      opacity="1"
-                      transform="matrix(1,0,0,1,260.4590148925781,551.708984375)"
-                    >
-                      <path
-                        d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 -0.0010000000474974513,15.666999816894531 C-8.652999877929688,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652999877929688,-15.666999816894531 -0.0010000000474974513,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
-                        fill-opacity="0"
-                        stroke="rgb(56,56,56)"
-                        stroke-linecap="butt"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                        stroke-opacity="1"
-                        stroke-width="3"
-                      />
-                    </g>
-                    <g
-                      opacity="1"
-                      transform="matrix(1,0,0,1,244.79299926757812,592.5419921875)"
-                    >
-                      <path
-                        d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 -0.0010000000474974513,15.666999816894531 C-8.652999877929688,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652999877929688,-15.666999816894531 -0.0010000000474974513,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
-                        fill-opacity="0"
-                        stroke="rgb(56,56,56)"
-                        stroke-linecap="butt"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                        stroke-opacity="1"
-                        stroke-width="3"
-                      />
-                    </g>
-                    <g
-                      opacity="1"
-                      transform="matrix(1,0,0,1,213.45899963378906,620.7150268554688)"
-                    >
-                      <path
-                        d=" M15.666999816894531,-0.0010000000474974513 C15.666999816894531,8.651000022888184 8.652000427246094,15.666999816894531 -0.0010000000474974513,15.666999816894531 C-8.652999877929688,15.666999816894531 -15.666999816894531,8.651000022888184 -15.666999816894531,-0.0010000000474974513 C-15.666999816894531,-8.652999877929688 -8.652999877929688,-15.666999816894531 -0.0010000000474974513,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652999877929688 15.666999816894531,-0.0010000000474974513z"
-                        fill-opacity="0"
-                        stroke="rgb(56,56,56)"
-                        stroke-linecap="butt"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                        stroke-opacity="1"
-                        stroke-width="3"
-                      />
-                    </g>
-                    <g
-                      opacity="1"
-                      transform="matrix(1,0,0,1,61.93199920654297,450.6619873046875)"
-                    >
-                      <path
-                        d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 -0.0010000000474974513,15.666999816894531 C-8.652999877929688,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652999877929688 -8.652999877929688,-15.666999816894531 -0.0010000000474974513,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652999877929688 15.666999816894531,0z"
-                        fill-opacity="0"
-                        stroke="rgb(56,56,56)"
-                        stroke-linecap="butt"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                        stroke-opacity="1"
-                        stroke-width="3"
-                      />
-                    </g>
-                    <g
-                      opacity="1"
-                      transform="matrix(1,0,0,1,23.16699981689453,466.3290100097656)"
-                    >
-                      <path
-                        d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 -0.0010000000474974513,15.666999816894531 C-8.652999877929688,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652999877929688,-15.666999816894531 -0.0010000000474974513,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
-                        fill-opacity="0"
-                        stroke="rgb(56,56,56)"
-                        stroke-linecap="butt"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                        stroke-opacity="1"
-                        stroke-width="3"
-                      />
-                    </g>
-                    <g
-                      opacity="1"
-                      transform="matrix(1,0,0,1,54.5,513.2009887695312)"
-                    >
-                      <path
-                        d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 -0.0010000000474974513,15.666999816894531 C-8.652999877929688,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652999877929688,-15.666999816894531 -0.0010000000474974513,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
-                        fill-opacity="0"
-                        stroke="rgb(56,56,56)"
-                        stroke-linecap="butt"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                        stroke-opacity="1"
-                        stroke-width="3"
-                      />
-                    </g>
-                    <g
-                      opacity="1"
-                      transform="matrix(1,0,0,1,161.62399291992188,681.843994140625)"
-                    >
-                      <path
-                        d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666000366210938 -0.0010000000474974513,15.666000366210938 C-8.652999877929688,15.666000366210938 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652999877929688 -8.652999877929688,-15.666999816894531 -0.0010000000474974513,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652999877929688 15.666999816894531,0z"
-                        fill-opacity="0"
-                        stroke="rgb(56,56,56)"
-                        stroke-linecap="butt"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                        stroke-opacity="1"
-                        stroke-width="3"
-                      />
-                    </g>
-                    <g
-                      opacity="1"
-                      transform="matrix(1,0,0,1,242.0500030517578,789.7739868164062)"
-                    >
-                      <path
-                        d=" M15.666999816894531,-0.0010000000474974513 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 -0.0010000000474974513,15.666999816894531 C-8.652999877929688,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,-0.0010000000474974513 C-15.666999816894531,-8.652999877929688 -8.652999877929688,-15.666999816894531 -0.0010000000474974513,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652999877929688 15.666999816894531,-0.0010000000474974513z"
-                        fill-opacity="0"
-                        stroke="rgb(56,56,56)"
-                        stroke-linecap="butt"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                        stroke-opacity="1"
-                        stroke-width="3"
-                      />
-                    </g>
-                    <g
-                      opacity="1"
-                      transform="matrix(1,0,0,1,547.5250244140625,701.2470092773438)"
-                    >
-                      <path
-                        d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 0,15.666999816894531 C-8.652000427246094,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652000427246094,-15.666999816894531 0,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
-                        fill-opacity="0"
-                        stroke="rgb(56,56,56)"
-                        stroke-linecap="butt"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                        stroke-opacity="1"
-                        stroke-width="3"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path
-                        fill-opacity="0"
-                        stroke-linecap="round"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                      />
-                    </g>
-                  </g>
-                </g>
-              </svg>
-            </div>
-          </div>
-        </div>
-         
-        <div
-          class="case_html-video-wrapper m-48_top media-m-24_top m-60_bottom media-m-24_bottom case_box-shadow"
-        >
-          <div
-            class="case_video-flex-wrapper"
-          >
-            <picture>
-              <source
-                class="image grey-background"
-                data-srcset="/images/Cases/common/webp/safari-top-bar-white.webp ,/images/Cases/common/webp/safari-top-bar-white@2x.webp 2x"
-                type="image/webp"
-              />
-               
-              <img
-                alt="GoDee: Safari Browser Top Bar White."
-                class="image grey-background"
-                data-src="/images/Cases/common/jpg/safari-top-bar-white.jpg"
-                data-srcset="/images/Cases/common/jpg/safari-top-bar-white.jpg"
-                data-testid="test-picture-img"
-                height="16.45"
-                width="1026"
-              />
-            </picture>
-             
-            <video
-              class="case_html-video case_trip-request-video"
-              height="100%"
-              id="trip-request-map"
-              loop="loop"
-              muted="muted"
-              width="100%"
-            >
-              <source
-                src="/videos/map-stops.mp4"
-                type="video/mp4"
-              />
-              
-          Your browser does not support the video tag.
-        
-            </video>
-          </div>
-        </div>
-      </section>
-    </section>
+    <intellegentmanagementpanel-stub />
      
-    <section>
-      <section
-        class="container_regular"
-      >
-        <h3
-          class="case_title_h3 m-12_bottom"
-        >
-          
-      Trips Monitor
-    
-        </h3>
-         
-        <p
-          class="case_paragraph"
-        >
-          
-      The Trips Monitor feature enables operators to track every bus in real time and collect data on late or
-      early arrivals. More importantly, the operator can contact drivers or passengers quickly if necessary.
-    
-        </p>
-      </section>
-       
-      <section
-        class="container_middle m-48_top media-m-24_top m-48_bottom media-m-24_bottom"
-      >
-        <div
-          class="case_html-video-wrapper case_box-shadow"
-        >
-          <div
-            class="case_video-flex-wrapper"
-          >
-            <picture>
-              <source
-                class="image grey-background"
-                data-srcset="/images/Cases/common/webp/safari-top-bar-white.webp ,/images/Cases/common/webp/safari-top-bar-white@2x.webp 2x"
-                type="image/webp"
-              />
-               
-              <img
-                alt="GoDee: Safari Browser Top Bar White."
-                class="image grey-background"
-                data-src="/images/Cases/common/jpg/safari-top-bar-white.jpg"
-                data-srcset="/images/Cases/common/jpg/safari-top-bar-white.jpg"
-                data-testid="test-picture-img"
-                height="16.45"
-                width="1026"
-              />
-            </picture>
-             
-            <video
-              class="case_html-video"
-              height="100%"
-              id="trip-monitor"
-              loop="loop"
-              muted="muted"
-              width="100%"
-            >
-              <source
-                src="/videos/trip-monitor.f4a33e6.mp4"
-                type="video/mp4"
-              />
-              
-          Your browser does not support the video tag.
-        
-            </video>
-          </div>
-        </div>
-      </section>
-       
-      <section
-        class="container_regular"
-      >
-        <p
-          class="case_paragraph m-12_bottom"
-        >
-          
-      The Trips Monitor dashboard displays the following information:
-    
-        </p>
-         
-        <ol
-          class="case-list_numbered m-96_bottom media-m-48_bottom"
-        >
-          <li
-            class="case_list-numbered_item"
-          >
-            
-        Drivers' locations on mini map in real-time
-      
-          </li>
-          <li
-            class="case_list-numbered_item"
-          >
-            
-        Late and early departures of buses
-      
-          </li>
-          <li
-            class="case_list-numbered_item"
-          >
-            
-        Complete bus schedule weeks in advance
-      
-          </li>
-          <li
-            class="case_list-numbered_item"
-          >
-            
-        Notice to driver that a GoDee client has not been picked up at a bus stop
-      
-          </li>
-          <li
-            class="case_list-numbered_item"
-          >
-            
-        Number of passengers assigned to each stop and driver
-      
-          </li>
-          <li
-            class="case_list-numbered_item"
-          >
-            
-        Historical information through filters
-      
-          </li>
-        </ol>
-      </section>
-    </section>
+    <tripsmonitor-stub />
      
-    <section>
-      <section
-        class="container_regular"
-      >
-        <h3
-          class="case_title_h3"
-        >
-          
-      Route optimization
-    
-        </h3>
-      </section>
-       
-      <section
-        class="container_middle m-24_top media-m-12_top m-48_bottom media-m-24_bottom"
-      >
-        <div
-          class="case_html-video-wrapper case_box-shadow"
-        >
-          <div
-            class="case_video-flex-wrapper"
-          >
-            <picture>
-              <source
-                class="image grey-background"
-                data-srcset="/images/Cases/common/webp/safari-top-bar-white.webp ,/images/Cases/common/webp/safari-top-bar-white@2x.webp 2x"
-                type="image/webp"
-              />
-               
-              <img
-                alt="GoDee: Safari Browser Top Bar White."
-                class="image grey-background"
-                data-src="/images/Cases/common/jpg/safari-top-bar-white.jpg"
-                data-srcset="/images/Cases/common/jpg/safari-top-bar-white.jpg"
-                data-testid="test-picture-img"
-                height="16.45"
-                width="1026"
-              />
-            </picture>
-             
-            <video
-              class="case_html-video"
-              height="100%"
-              id="route-optimization"
-              loop="loop"
-              muted="muted"
-              width="100%"
-            >
-              <source
-                src="/videos/route-optimization.f5a2ff0.mp4"
-                type="video/mp4"
-              />
-              
-          Your browser does not support the video tag.
-        
-            </video>
-          </div>
-        </div>
-      </section>
-       
-      <section
-        class="container_regular"
-      >
-        <p
-          class="case_paragraph"
-        >
-          
-      With the help of detailed drivers' performance data, Mad Devs’ Pifia microservice enables route managers to
-      optimize ETA (estimated time of arrival). Pifia shows more accurate arrival and departure times with just
-      one click.
-    
-        </p>
-         
-        <div
-          class="case_quote-wrap m-48_top m-96_bottom media-m-24_top media-m-72_bottom m-auto"
-        >
-          <blockquote
-            class="case_blockquote-box m-auto"
-          >
-            <span
-              class="case_text-quote-break m-24_bottom media-m-12_bottom"
-            >
-              Examples of early and late departure times:
-            </span>
-             
-            <span>
-              If Pifia determines that a minibus is usually late due to increased traffic at 5:35 pm and not 5:30 pm,
-        it alerts the route manager to shift the arrival time to 5:35 pm. Five minutes might sound minor, but
-        these small optimizations add up.
-            </span>
-          </blockquote>
-           
-          <!---->
-        </div>
-      </section>
-    </section>
+    <routeoptimisation-stub />
      
     <section
       class="container_full p-104_top p-100_bottom media-p-41_top media-p-24_bottom background-color-black-primary-bg"
@@ -2456,23 +726,14 @@ exports[`Main component should render correctly 1`] = `
         <div
           class="case_phone-wrapper-eta-section"
         >
-          <picture>
-            <source
-              class="image"
-              data-srcset="/images/Cases/godee/webp/real-time-eta-phone.webp ,/images/Cases/godee/webp/real-time-eta-phone@2x.webp 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="GoDee: Bus Transit App in Vietnam."
-              class="image"
-              data-src="/images/Cases/godee/png/real-time-eta-phone.png"
-              data-srcset="/images/Cases/godee/png/real-time-eta-phone.png"
-              data-testid="test-picture-img"
-              height="694.62"
-              width="358.96"
-            />
-          </picture>
+          <picture-stub
+            alt="GoDee: Bus Transit App in Vietnam."
+            extension="png"
+            file="real-time-eta-phone"
+            folder="godee"
+            height="694.62"
+            width="358.96"
+          />
         </div>
       </section>
     </section>
@@ -2507,7 +768,7 @@ exports[`Main component should render correctly 1`] = `
             >
               <defs>
                 <clippath
-                  id="__lottie_element_181"
+                  id="__lottie_element_2"
                 >
                   <rect
                     height="774"
@@ -2517,7 +778,7 @@ exports[`Main component should render correctly 1`] = `
                   />
                 </clippath>
                 <clippath
-                  id="__lottie_element_183"
+                  id="__lottie_element_4"
                 >
                   <path
                     d="M0,0 L645,0 L645,775 L0,775z"
@@ -2525,10 +786,10 @@ exports[`Main component should render correctly 1`] = `
                 </clippath>
               </defs>
               <g
-                clip-path="url(#__lottie_element_181)"
+                clip-path="url(#__lottie_element_2)"
               >
                 <g
-                  clip-path="url(#__lottie_element_183)"
+                  clip-path="url(#__lottie_element_4)"
                   opacity="1"
                   style="display: block;"
                   transform="matrix(1,0,0,1,-1,-0.5)"
@@ -3348,484 +1609,109 @@ exports[`Main component should render correctly 1`] = `
       <ul
         class="case_list-technologies m-96_bottom media-m-48_bottom case_list-technologies-godee"
       >
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Open Street Map"
-            class="case_technologies-item__tech-icon case_technologies-item__open-street-map open-street-map"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Open Street Map
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Google Maps"
-            class="case_technologies-item__tech-icon case_technologies-item__google-maps google-maps"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Google Maps
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="PostgreSQL"
-            class="case_technologies-item__tech-icon case_technologies-item__postgresql postgresql"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    PostgreSQL
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
+        <listtechnologiesitem-stub
+          alt="Open Street Map"
+          name="open-street-map"
+        />
+        <listtechnologiesitem-stub
+          alt="Google Maps"
+          name="google-maps"
+        />
+        <listtechnologiesitem-stub
+          alt="PostgreSQL"
+          name="postgresql"
+        />
+        <listtechnologiesitem-stub
+          alt="Docker"
           classname="case_technologies-item__docker"
-        >
-          <img
-            alt="Docker"
-            class="case_technologies-item__tech-icon case_technologies-item__docker docker"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Docker
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Nginx"
-            class="case_technologies-item__tech-icon case_technologies-item__nginx nginx"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Nginx
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Redis"
-            class="case_technologies-item__tech-icon case_technologies-item__redis redis"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Redis
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Python (Django)"
-            class="case_technologies-item__tech-icon case_technologies-item__python python"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Python (Django)
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Golang"
-            class="case_technologies-item__tech-icon case_technologies-item__go go"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Golang
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Kotlin"
-            class="case_technologies-item__tech-icon case_technologies-item__kotlin kotlin"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Kotlin
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Atlassian"
-            class="case_technologies-item__tech-icon case_technologies-item__atlassian atlassian"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Atlassian
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Swift"
-            class="case_technologies-item__tech-icon case_technologies-item__swift swift"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Swift
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Firebase"
-            class="case_technologies-item__tech-icon case_technologies-item__firebase firebase"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Firebase
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="TestFlight"
-            class="case_technologies-item__tech-icon case_technologies-item__test-flight test-flight"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    TestFlight
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Datadog"
-            class="case_technologies-item__tech-icon case_technologies-item__datadog datadog"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Datadog
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Android"
-            class="case_technologies-item__tech-icon case_technologies-item__android-black-text android-black-text"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Android
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Suite"
-            class="case_technologies-item__tech-icon case_technologies-item__suite suite"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Suite
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Jira Software"
-            class="case_technologies-item__tech-icon case_technologies-item__jira-software jira-software"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Jira Software
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
+          name="docker"
+        />
+        <listtechnologiesitem-stub
+          alt="Nginx"
+          name="nginx"
+        />
+        <listtechnologiesitem-stub
+          alt="Redis"
+          name="redis"
+        />
+        <listtechnologiesitem-stub
+          alt="Python (Django)"
+          name="python"
+        />
+        <listtechnologiesitem-stub
+          alt="Golang"
+          name="go"
+        />
+        <listtechnologiesitem-stub
+          alt="Kotlin"
+          name="kotlin"
+        />
+        <listtechnologiesitem-stub
+          alt="Atlassian"
+          name="atlassian"
+        />
+        <listtechnologiesitem-stub
+          alt="Swift"
+          name="swift"
+        />
+        <listtechnologiesitem-stub
+          alt="Firebase"
+          name="firebase"
+        />
+        <listtechnologiesitem-stub
+          alt="TestFlight"
+          name="test-flight"
+        />
+        <listtechnologiesitem-stub
+          alt="Datadog"
+          name="datadog"
+        />
+        <listtechnologiesitem-stub
+          alt="Android"
+          name="android-black-text"
+        />
+        <listtechnologiesitem-stub
+          alt="Suite"
+          name="suite"
+        />
+        <listtechnologiesitem-stub
+          alt="Jira Software"
+          name="jira-software"
+        />
+        <listtechnologiesitem-stub
+          alt="GRPC"
           classname="case_technologies-item__grpc"
-        >
-          <img
-            alt="GRPC"
-            class="case_technologies-item__tech-icon case_technologies-item__grpc grpc"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    GRPC
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="iOS"
-            class="case_technologies-item__tech-icon case_technologies-item__apple-black apple-black"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    iOS
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
+          name="grpc"
+        />
+        <listtechnologiesitem-stub
+          alt="iOS"
+          name="apple-black"
+        />
+        <listtechnologiesitem-stub
+          alt="UptimeRobot"
           classname="case_technologies-item__uptime-robot"
-        >
-          <img
-            alt="UptimeRobot"
-            class="case_technologies-item__tech-icon case_technologies-item__uptime-robot uptime-robot"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    UptimeRobot
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Mapbox"
-            class="case_technologies-item__tech-icon case_technologies-item__map-box map-box"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Mapbox
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Vue JS"
-            class="case_technologies-item__tech-icon case_technologies-item__vue vue"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Vue JS
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Sentry"
-            class="case_technologies-item__tech-icon case_technologies-item__sentry-black sentry-black"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Sentry
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Here Traffic"
-            class="case_technologies-item__tech-icon case_technologies-item__here here"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Here Traffic
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Basecamp"
-            class="case_technologies-item__tech-icon case_technologies-item__basecamp-transparent basecamp-transparent"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Basecamp
-  
-          </p>
-        </li>
+          name="uptime-robot"
+        />
+        <listtechnologiesitem-stub
+          alt="Mapbox"
+          name="map-box"
+        />
+        <listtechnologiesitem-stub
+          alt="Vue JS"
+          name="vue"
+        />
+        <listtechnologiesitem-stub
+          alt="Sentry"
+          name="sentry-black"
+        />
+        <listtechnologiesitem-stub
+          alt="Here Traffic"
+          name="here"
+        />
+        <listtechnologiesitem-stub
+          alt="Basecamp"
+          name="basecamp-transparent"
+        />
       </ul>
     </section>
      
@@ -3862,23 +1748,16 @@ exports[`Main component should render correctly 1`] = `
       <section
         class="container_middle m-96_bottom media-m-48_bottom"
       >
-        <picture>
-          <source
-            class="image box-shadow grey-background"
-            data-srcset="/images/Cases/godee/webp/datadog.webp ,/images/Cases/godee/webp/datadog@2x.webp 2x"
-            type="image/webp"
-          />
-           
-          <img
-            alt="GoDee: Monitoring Configuration for Transportation App."
-            class="image box-shadow grey-background"
-            data-src="/images/Cases/godee/jpg/datadog.jpg"
-            data-srcset="/images/Cases/godee/jpg/datadog.jpg"
-            data-testid="test-picture-img"
-            height="463"
-            width="1028"
-          />
-        </picture>
+        <picture-stub
+          alt="GoDee: Monitoring Configuration for Transportation App."
+          background="true"
+          extension="jpg"
+          file="datadog"
+          folder="godee"
+          height="463"
+          shadow="true"
+          width="1028"
+        />
       </section>
     </section>
      
@@ -4022,25 +1901,16 @@ exports[`Main component should render correctly 1`] = `
         <li
           class="case_team-item"
         >
-          <picture
+          <picture-stub
+            alt="Oleg Puzanov"
+            background="true"
             class="case_team-item__image"
-          >
-            <source
-              class="image grey-background"
-              data-srcset="/images/Cases/common/webp/oleg-puzanov.webp ,/images/Cases/common/webp/oleg-puzanov@2x.webp 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Oleg Puzanov"
-              class="image grey-background"
-              data-src="/images/Cases/common/png/oleg-puzanov.png"
-              data-srcset="/images/Cases/common/png/oleg-puzanov.png"
-              data-testid="test-picture-img"
-              height="50"
-              width="50"
-            />
-          </picture>
+            extension="png"
+            file="oleg-puzanov"
+            folder="common"
+            height="50"
+            width="50"
+          />
            
           <div
             class="case_team-item__info"
@@ -4065,25 +1935,16 @@ exports[`Main component should render correctly 1`] = `
         <li
           class="case_team-item"
         >
-          <picture
+          <picture-stub
+            alt="Ruslan Kasymov"
+            background="true"
             class="case_team-item__image"
-          >
-            <source
-              class="image grey-background"
-              data-srcset="/images/Cases/common/webp/kasymov.webp ,/images/Cases/common/webp/kasymov@2x.webp 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Ruslan Kasymov"
-              class="image grey-background"
-              data-src="/images/Cases/common/png/kasymov.png"
-              data-srcset="/images/Cases/common/png/kasymov.png"
-              data-testid="test-picture-img"
-              height="50"
-              width="50"
-            />
-          </picture>
+            extension="png"
+            file="kasymov"
+            folder="common"
+            height="50"
+            width="50"
+          />
            
           <div
             class="case_team-item__info"
@@ -4108,25 +1969,16 @@ exports[`Main component should render correctly 1`] = `
         <li
           class="case_team-item"
         >
-          <picture
+          <picture-stub
+            alt="Rustom Kulbatyrov"
+            background="true"
             class="case_team-item__image"
-          >
-            <source
-              class="image grey-background"
-              data-srcset="/images/Cases/common/webp/kulbatyrov.webp ,/images/Cases/common/webp/kulbatyrov@2x.webp 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Rustom Kulbatyrov"
-              class="image grey-background"
-              data-src="/images/Cases/common/png/kulbatyrov.png"
-              data-srcset="/images/Cases/common/png/kulbatyrov.png"
-              data-testid="test-picture-img"
-              height="50"
-              width="50"
-            />
-          </picture>
+            extension="png"
+            file="kulbatyrov"
+            folder="common"
+            height="50"
+            width="50"
+          />
            
           <div
             class="case_team-item__info"
@@ -4151,25 +2003,16 @@ exports[`Main component should render correctly 1`] = `
         <li
           class="case_team-item"
         >
-          <picture
+          <picture-stub
+            alt="Vladimir Pan"
+            background="true"
             class="case_team-item__image"
-          >
-            <source
-              class="image grey-background"
-              data-srcset="/images/Cases/common/webp/vladimir-pan.webp ,/images/Cases/common/webp/vladimir-pan@2x.webp 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Vladimir Pan"
-              class="image grey-background"
-              data-src="/images/Cases/common/png/vladimir-pan.png"
-              data-srcset="/images/Cases/common/png/vladimir-pan.png"
-              data-testid="test-picture-img"
-              height="50"
-              width="50"
-            />
-          </picture>
+            extension="png"
+            file="vladimir-pan"
+            folder="common"
+            height="50"
+            width="50"
+          />
            
           <div
             class="case_team-item__info"
@@ -4194,25 +2037,16 @@ exports[`Main component should render correctly 1`] = `
         <li
           class="case_team-item"
         >
-          <picture
+          <picture-stub
+            alt="Belek Abylov"
+            background="true"
             class="case_team-item__image"
-          >
-            <source
-              class="image grey-background"
-              data-srcset="/images/Cases/common/webp/belek-abylov.webp ,/images/Cases/common/webp/belek-abylov@2x.webp 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Belek Abylov"
-              class="image grey-background"
-              data-src="/images/Cases/common/png/belek-abylov.png"
-              data-srcset="/images/Cases/common/png/belek-abylov.png"
-              data-testid="test-picture-img"
-              height="50"
-              width="50"
-            />
-          </picture>
+            extension="png"
+            file="belek-abylov"
+            folder="common"
+            height="50"
+            width="50"
+          />
            
           <div
             class="case_team-item__info"
@@ -4237,25 +2071,16 @@ exports[`Main component should render correctly 1`] = `
         <li
           class="case_team-item"
         >
-          <picture
+          <picture-stub
+            alt="Bakhtiyar Ganyev"
+            background="true"
             class="case_team-item__image"
-          >
-            <source
-              class="image grey-background"
-              data-srcset="/images/Cases/common/webp/bakhtiyar-ganyev.webp ,/images/Cases/common/webp/bakhtiyar-ganyev@2x.webp 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Bakhtiyar Ganyev"
-              class="image grey-background"
-              data-src="/images/Cases/common/png/bakhtiyar-ganyev.png"
-              data-srcset="/images/Cases/common/png/bakhtiyar-ganyev.png"
-              data-testid="test-picture-img"
-              height="50"
-              width="50"
-            />
-          </picture>
+            extension="png"
+            file="bakhtiyar-ganyev"
+            folder="common"
+            height="50"
+            width="50"
+          />
            
           <div
             class="case_team-item__info"
@@ -4280,25 +2105,16 @@ exports[`Main component should render correctly 1`] = `
         <li
           class="case_team-item"
         >
-          <picture
+          <picture-stub
+            alt="Gennady Karev"
+            background="true"
             class="case_team-item__image"
-          >
-            <source
-              class="image grey-background"
-              data-srcset="/images/Cases/common/webp/gennady-karev.webp ,/images/Cases/common/webp/gennady-karev@2x.webp 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Gennady Karev"
-              class="image grey-background"
-              data-src="/images/Cases/common/png/gennady-karev.png"
-              data-srcset="/images/Cases/common/png/gennady-karev.png"
-              data-testid="test-picture-img"
-              height="50"
-              width="50"
-            />
-          </picture>
+            extension="png"
+            file="gennady-karev"
+            folder="common"
+            height="50"
+            width="50"
+          />
            
           <div
             class="case_team-item__info"
@@ -4323,25 +2139,16 @@ exports[`Main component should render correctly 1`] = `
         <li
           class="case_team-item"
         >
-          <picture
+          <picture-stub
+            alt="Aleksandr Krivov"
+            background="true"
             class="case_team-item__image"
-          >
-            <source
-              class="image grey-background"
-              data-srcset="/images/Cases/common/webp/aleksandr-krivov.webp ,/images/Cases/common/webp/aleksandr-krivov@2x.webp 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Aleksandr Krivov"
-              class="image grey-background"
-              data-src="/images/Cases/common/png/aleksandr-krivov.png"
-              data-srcset="/images/Cases/common/png/aleksandr-krivov.png"
-              data-testid="test-picture-img"
-              height="50"
-              width="50"
-            />
-          </picture>
+            extension="png"
+            file="aleksandr-krivov"
+            folder="common"
+            height="50"
+            width="50"
+          />
            
           <div
             class="case_team-item__info"
@@ -4366,25 +2173,16 @@ exports[`Main component should render correctly 1`] = `
         <li
           class="case_team-item"
         >
-          <picture
+          <picture-stub
+            alt="Vlada Arevkova"
+            background="true"
             class="case_team-item__image"
-          >
-            <source
-              class="image grey-background"
-              data-srcset="/images/Cases/common/webp/vlada-arevkova.webp ,/images/Cases/common/webp/vlada-arevkova@2x.webp 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Vlada Arevkova"
-              class="image grey-background"
-              data-src="/images/Cases/common/png/vlada-arevkova.png"
-              data-srcset="/images/Cases/common/png/vlada-arevkova.png"
-              data-testid="test-picture-img"
-              height="50"
-              width="50"
-            />
-          </picture>
+            extension="png"
+            file="vlada-arevkova"
+            folder="common"
+            height="50"
+            width="50"
+          />
            
           <div
             class="case_team-item__info"
@@ -4409,25 +2207,16 @@ exports[`Main component should render correctly 1`] = `
         <li
           class="case_team-item"
         >
-          <picture
+          <picture-stub
+            alt="Erik Sultanaliev"
+            background="true"
             class="case_team-item__image"
-          >
-            <source
-              class="image grey-background"
-              data-srcset="/images/Cases/common/webp/erik-sultanaliev.webp ,/images/Cases/common/webp/erik-sultanaliev@2x.webp 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Erik Sultanaliev"
-              class="image grey-background"
-              data-src="/images/Cases/common/png/erik-sultanaliev.png"
-              data-srcset="/images/Cases/common/png/erik-sultanaliev.png"
-              data-testid="test-picture-img"
-              height="50"
-              width="50"
-            />
-          </picture>
+            extension="png"
+            file="erik-sultanaliev"
+            folder="common"
+            height="50"
+            width="50"
+          />
            
           <div
             class="case_team-item__info"
@@ -4452,25 +2241,16 @@ exports[`Main component should render correctly 1`] = `
         <li
           class="case_team-item"
         >
-          <picture
+          <picture-stub
+            alt="Myrzabek Kylychev"
+            background="true"
             class="case_team-item__image"
-          >
-            <source
-              class="image grey-background"
-              data-srcset="/images/Cases/common/webp/myrzabek-kylychev.webp ,/images/Cases/common/webp/myrzabek-kylychev@2x.webp 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Myrzabek Kylychev"
-              class="image grey-background"
-              data-src="/images/Cases/common/png/myrzabek-kylychev.png"
-              data-srcset="/images/Cases/common/png/myrzabek-kylychev.png"
-              data-testid="test-picture-img"
-              height="50"
-              width="50"
-            />
-          </picture>
+            extension="png"
+            file="myrzabek-kylychev"
+            folder="common"
+            height="50"
+            width="50"
+          />
            
           <div
             class="case_team-item__info"
@@ -4495,25 +2275,16 @@ exports[`Main component should render correctly 1`] = `
         <li
           class="case_team-item"
         >
-          <picture
+          <picture-stub
+            alt="Pavel Pushkarev"
+            background="true"
             class="case_team-item__image"
-          >
-            <source
-              class="image grey-background"
-              data-srcset="/images/Cases/common/webp/pushkarev.webp ,/images/Cases/common/webp/pushkarev@2x.webp 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Pavel Pushkarev"
-              class="image grey-background"
-              data-src="/images/Cases/common/png/pushkarev.png"
-              data-srcset="/images/Cases/common/png/pushkarev.png"
-              data-testid="test-picture-img"
-              height="50"
-              width="50"
-            />
-          </picture>
+            extension="png"
+            file="pushkarev"
+            folder="common"
+            height="50"
+            width="50"
+          />
            
           <div
             class="case_team-item__info"
@@ -4552,23 +2323,14 @@ exports[`Main component should render correctly 1`] = `
           <div
             class="case_blockquote-author__photo m-auto"
           >
-            <picture>
-              <source
-                class="image"
-                data-srcset="/images/Cases/godee/webp/ruslan-karabukaev.webp ,/images/Cases/godee/webp/ruslan-karabukaev@2x.webp 2x"
-                type="image/webp"
-              />
-               
-              <img
-                alt="Ruslan Karabukaev"
-                class="image"
-                data-src="/images/Cases/godee/png/ruslan-karabukaev.png"
-                data-srcset="/images/Cases/godee/png/ruslan-karabukaev.png"
-                data-testid="test-picture-img"
-                height="71"
-                width="71"
-              />
-            </picture>
+            <picture-stub
+              alt="Ruslan Karabukaev"
+              extension="png"
+              file="ruslan-karabukaev"
+              folder="godee"
+              height="71"
+              width="71"
+            />
           </div>
            
           <p

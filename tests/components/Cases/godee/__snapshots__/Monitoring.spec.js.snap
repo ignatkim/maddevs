@@ -35,23 +35,17 @@ exports[`Monitoring component should render correctly 1`] = `
     <section
       class="container_middle m-96_bottom media-m-48_bottom"
     >
-      <picture>
-        <source
-          class="image box-shadow grey-background"
-          data-srcset="img.jpg,img.jpg"
-          type="image/webp"
-        />
-         
-        <img
-          alt="GoDee: Monitoring Configuration for Transportation App."
-          class="image box-shadow grey-background"
-          data-src="img.jpg"
-          data-srcset="img.jpg"
-          data-testid="test-picture-img"
-          height="463"
-          width="1028"
-        />
-      </picture>
+      <picture-stub
+        alt="GoDee: Monitoring Configuration for Transportation App."
+        background="true"
+        extension="jpg"
+        file="datadog"
+        folder="godee"
+        height="463"
+        lazy="true"
+        shadow="true"
+        width="1028"
+      />
     </section>
   </section>
 </div>

@@ -86,190 +86,38 @@ exports[`Careers _uid component should render correctly 1`] = `
             <div
               class="careers-position__benefits-grid"
             >
-              <div
-                class="benefit-card"
-              >
-                <div
-                  class="benefit-card__icon-wrapper"
-                >
-                  <img
-                    alt="Hours Icon."
-                    class="benefit-card__icon"
-                    data-src="img.jpg"
-                    height="30"
-                    width="31"
-                  />
-                </div>
-                 
-                <p
-                  class="benefit-card__title"
-                >
-                  Flexible working 
-                  <br />
-                   hours
-                </p>
-              </div>
-              <div
-                class="benefit-card"
-              >
-                <div
-                  class="benefit-card__icon-wrapper"
-                >
-                  <img
-                    alt="Trips Icon."
-                    class="benefit-card__icon"
-                    data-src="img.jpg"
-                    height="32"
-                    width="28"
-                  />
-                </div>
-                 
-                <p
-                  class="benefit-card__title"
-                >
-                  Onsite business 
-                  <br />
-                   trips
-                </p>
-              </div>
-              <div
-                class="benefit-card"
-              >
-                <div
-                  class="benefit-card__icon-wrapper"
-                >
-                  <img
-                    alt="Lessons Icon."
-                    class="benefit-card__icon"
-                    data-src="img.jpg"
-                    height="31"
-                    width="36"
-                  />
-                </div>
-                 
-                <p
-                  class="benefit-card__title"
-                >
-                  English 
-                  <br />
-                   lessons
-                </p>
-              </div>
-              <div
-                class="benefit-card"
-              >
-                <div
-                  class="benefit-card__icon-wrapper"
-                >
-                  <img
-                    alt="Training Icon."
-                    class="benefit-card__icon"
-                    data-src="img.jpg"
-                    height="24"
-                    width="39"
-                  />
-                </div>
-                 
-                <p
-                  class="benefit-card__title"
-                >
-                  Training 
-                  <br />
-                   budget
-                </p>
-              </div>
-              <div
-                class="benefit-card"
-              >
-                <div
-                  class="benefit-card__icon-wrapper"
-                >
-                  <img
-                    alt="Culture Icon."
-                    class="benefit-card__icon"
-                    data-src="img.jpg"
-                    height="31"
-                    width="24"
-                  />
-                </div>
-                 
-                <p
-                  class="benefit-card__title"
-                >
-                  Remote-first 
-                  <br />
-                   culture
-                </p>
-              </div>
-              <div
-                class="benefit-card"
-              >
-                <div
-                  class="benefit-card__icon-wrapper"
-                >
-                  <img
-                    alt="Docs Icon."
-                    class="benefit-card__icon"
-                    data-src="img.jpg"
-                    height="30"
-                    width="26"
-                  />
-                </div>
-                 
-                <p
-                  class="benefit-card__title"
-                >
-                  Long-term 
-                  <br />
-                   projects
-                </p>
-              </div>
-              <div
-                class="benefit-card"
-              >
-                <div
-                  class="benefit-card__icon-wrapper"
-                >
-                  <img
-                    alt="Microphone Icon."
-                    class="benefit-card__icon"
-                    data-src="img.jpg"
-                    height="33"
-                    width="20"
-                  />
-                </div>
-                 
-                <p
-                  class="benefit-card__title"
-                >
-                  Paid 
-                  <br />
-                   conferences
-                </p>
-              </div>
-              <div
-                class="benefit-card"
-              >
-                <div
-                  class="benefit-card__icon-wrapper"
-                >
-                  <img
-                    alt="Cocktail Glass Icon."
-                    class="benefit-card__icon"
-                    data-src="img.jpg"
-                    height="36"
-                    width="31"
-                  />
-                </div>
-                 
-                <p
-                  class="benefit-card__title"
-                >
-                  Team 
-                  <br />
-                   parties
-                </p>
-              </div>
+              <benefitcard-stub
+                icon="[object Object]"
+                title="Flexible working <br> hours"
+              />
+              <benefitcard-stub
+                icon="[object Object]"
+                title="Onsite business <br> trips"
+              />
+              <benefitcard-stub
+                icon="[object Object]"
+                title="English <br> lessons"
+              />
+              <benefitcard-stub
+                icon="[object Object]"
+                title="Training <br> budget"
+              />
+              <benefitcard-stub
+                icon="[object Object]"
+                title="Remote-first <br> culture"
+              />
+              <benefitcard-stub
+                icon="[object Object]"
+                title="Long-term <br> projects"
+              />
+              <benefitcard-stub
+                icon="[object Object]"
+                title="Paid <br> conferences"
+              />
+              <benefitcard-stub
+                icon="[object Object]"
+                title="Team <br> parties"
+              />
             </div>
           </div>
         </div>
@@ -278,54 +126,7 @@ exports[`Careers _uid component should render correctly 1`] = `
           class="careers-position__contacts"
           id="careers-position-form"
         >
-          <div
-            class="hr-contact"
-          >
-            <div
-              class="hr-contact__image"
-            >
-              <img
-                alt="Diana"
-                data-src="img.jpg"
-              />
-            </div>
-             
-            <div
-              class="hr-contact__info"
-            >
-              <p
-                class="hr-contact__title"
-              >
-                
-      Hi, I'm Diana.
-    
-              </p>
-               
-              <p
-                class="hr-contact__description"
-              >
-                
-      Applying for jobs should be easy.
-      I am here to simplify the hiring process and set you up for success.
-      Feel free to send me a message on Telegram.
-      
-                <a
-                  href="https://t.me/DianaHRDigital"
-                  target="_blank"
-                >
-                  <img
-                    data-src="img.jpg"
-                    height="17"
-                    width="20"
-                  />
-                   
-                  <span>
-                    @DianaHRDigital
-                  </span>
-                </a>
-              </p>
-            </div>
-          </div>
+          <hrcontactcard-stub />
            
           <div
             class="careers-position__form"

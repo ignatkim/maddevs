@@ -3,7 +3,9 @@ import { render } from '@testing-library/vue'
 
 describe('About component', () => {
   it('should render correctly', () => {
-    const { container } = render(About)
+    const { container } = render(About, {
+      stubs: ['TextQuote'],
+    })
 
     expect(container).toMatchSnapshot()
   })

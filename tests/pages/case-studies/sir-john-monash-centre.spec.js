@@ -45,7 +45,18 @@ const mocks = {
   },
 }
 
-const stubs = ['NuxtLink', 'Main']
+const stubs = [
+  'NuxtLink',
+  'Main',
+  'CaseHeader',
+  'SirJohnMonashCentre',
+  'SJMCVideo',
+  'CaseITC',
+]
+
+const directives = {
+  'lazy-load': () => {},
+}
 
 describe('SirJohnMonashCentre _uid component', () => {
   global.$nuxt = {
@@ -59,6 +70,7 @@ describe('SirJohnMonashCentre _uid component', () => {
       store,
       mocks,
       stubs,
+      directives,
     })
 
     expect(container).toMatchSnapshot()
@@ -69,6 +81,7 @@ describe('SirJohnMonashCentre _uid component', () => {
       store,
       mocks,
       stubs,
+      directives,
     })
 
     const actual = wrapper.vm.$options.head.call(wrapper.vm)
@@ -83,6 +96,7 @@ describe('SirJohnMonashCentre _uid component', () => {
       store,
       mocks,
       stubs,
+      directives,
     })
 
     const button = screen.getByTestId('test-play-button')

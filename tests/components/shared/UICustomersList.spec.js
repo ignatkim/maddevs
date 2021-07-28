@@ -7,10 +7,15 @@ const props = {
   iconBackground: 'rgb(255, 255, 255)',
 }
 
+const directives = {
+  'lazy-load': () => {},
+}
+
 describe('UICustomersList', () => {
   it('should render correctly', () => {
     const { container } = render(UICustomersList, {
       props,
+      directives,
     })
     const iconWrapper = screen.getByTestId('icon-wrapper')
 

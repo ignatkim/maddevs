@@ -19,12 +19,17 @@ describe('ReadCard component', () => {
     },
   }
 
+  const directives = {
+    'lazy-load': () => {},
+  }
+
   beforeEach(() => {
     wrapper = shallowMount(ReadCard, {
       propsData: {
         post,
       },
       stubs: ['NuxtLink'],
+      directives,
     })
   })
 

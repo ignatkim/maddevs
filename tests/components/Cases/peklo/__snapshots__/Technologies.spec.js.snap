@@ -16,120 +16,36 @@ exports[`Technologies component should render correctly 1`] = `
     <ul
       class="case_list-technologies m-96_bottom media-m-48_bottom"
     >
-      <li
-        class="case_technologies-item"
-      >
-        <img
-          alt="Golang"
-          class="case_technologies-item__tech-icon case_technologies-item__go go"
-          data-src="[object Object]"
-          height="40"
-          width="40"
-        />
-         
-        <p
-          class="case_technologies-item__tech-name"
-        >
-          
-    Golang
-  
-        </p>
-      </li>
-      <li
-        class="case_technologies-item"
-      >
-        <img
-          alt="PostgreSQL"
-          class="case_technologies-item__tech-icon case_technologies-item__postgresql postgresql"
-          data-src="[object Object]"
-          height="40"
-          width="40"
-        />
-         
-        <p
-          class="case_technologies-item__tech-name"
-        >
-          
-    PostgreSQL
-  
-        </p>
-      </li>
-      <li
-        class="case_technologies-item"
-      >
-        <img
-          alt="Docker"
-          class="case_technologies-item__tech-icon case_technologies-item__docker docker"
-          data-src="[object Object]"
-          height="40"
-          width="40"
-        />
-         
-        <p
-          class="case_technologies-item__tech-name"
-        >
-          
-    Docker
-  
-        </p>
-      </li>
-      <li
-        class="case_technologies-item"
-      >
-        <img
-          alt="Gitlab"
-          class="case_technologies-item__tech-icon case_technologies-item__gitlab gitlab"
-          data-src="[object Object]"
-          height="40"
-          width="40"
-        />
-         
-        <p
-          class="case_technologies-item__tech-name"
-        >
-          
-    Gitlab
-  
-        </p>
-      </li>
-      <li
-        class="case_technologies-item"
-      >
-        <img
-          alt="Ruby"
-          class="case_technologies-item__tech-icon case_technologies-item__ruby ruby"
-          data-src="[object Object]"
-          height="40"
-          width="40"
-        />
-         
-        <p
-          class="case_technologies-item__tech-name"
-        >
-          
-    Ruby
-  
-        </p>
-      </li>
-      <li
-        class="case_technologies-item"
-      >
-        <img
-          alt="Vue.js"
-          class="case_technologies-item__tech-icon case_technologies-item__vue vue"
-          data-src="[object Object]"
-          height="40"
-          width="40"
-        />
-         
-        <p
-          class="case_technologies-item__tech-name"
-        >
-          
-    Vue.js
-  
-        </p>
-      </li>
+      <listtechnologiesitem-stub
+        alt="Golang"
+        imgalt="Golang"
+        name="go"
+      />
+      <listtechnologiesitem-stub
+        alt="PostgreSQL"
+        imgalt="PostgreSQL"
+        name="postgresql"
+      />
+      <listtechnologiesitem-stub
+        alt="Docker"
+        imgalt="Docker"
+        name="docker"
+      />
+      <listtechnologiesitem-stub
+        alt="Gitlab"
+        imgalt="Gitlab"
+        name="gitlab"
+      />
+      <listtechnologiesitem-stub
+        alt="Ruby"
+        imgalt="Ruby"
+        name="ruby"
+      />
+      <listtechnologiesitem-stub
+        alt="Vue.js"
+        imgalt="Vue.js"
+        name="vue"
+      />
     </ul>
   </section>
 </div>

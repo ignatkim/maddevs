@@ -54,6 +54,8 @@ const mocks = {
   featureFlag: jest.fn(),
 }
 
+const stubs = ['BenefitCard', 'HRContactCard']
+
 const localVue = createLocalVue()
 
 localVue.use(Vuelidate)
@@ -63,6 +65,7 @@ describe('Careers _uid component', () => {
     const { container } = render(Vacancy, {
       mocks,
       store,
+      stubs,
     })
 
     expect(container).toMatchSnapshot()

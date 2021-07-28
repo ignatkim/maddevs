@@ -5,83 +5,37 @@ exports[`CaseYourcast _uid component should render correctly 1`] = `
   <main
     class="case case--yourcast"
   >
-    <section
-      class="case_header case_header-yourcast"
-      id="transparent-header-area"
+    <caseheader-stub
+      logo="[object Object]"
+      project="yourcast"
+      videofallbackpath="/images/Cases/yourcast/png/banner-bg.png"
+      videoname="/videos/yourcast-banner.mp4"
     >
-      <div
-        class="case_main-video_fallback"
-        style="background-image: url(img.jpg);"
-      />
-       
-      <video
-        autoplay="autoplay"
-        class="case_main-video"
-        data-testid="test-case_main-video"
-        loop="loop"
-        muted="muted"
+      <h1
+        class="case_header-title"
       >
-        <source
-          data-src="img.jpg"
-          type="video/mp4"
-        />
         
-    Your browser does not support the video tag.
-  
-      </video>
-       
-      <div
-        class="case_header-content"
-      >
-        <div
-          class="case_header-text"
-          style="opacity: 1;"
-        >
-          <div
-            class="case_case-study-item"
-          >
-            
-        Case Study
-      
-          </div>
-           
-          <h1
-            class="case_header-title"
-          >
-            
       The Evolution 
-            <br />
-            
+        <br />
+        
       of Yourcast.TV
     
-          </h1>
-           
-          <p
-            class="case_header-description"
-          >
-            
+      </h1>
+       
+      <p
+        class="case_header-description"
+      >
+        
       Mad Devs developed a secure and private video streaming service and live 
-            <br />
-            
+        <br />
+        
       video broadcasting cinema to provide entertainment experience to isolated 
-            <br />
-            
+        <br />
+        
       groups feeling homesick.
     
-          </p>
-           
-        </div>
-         
-        <img
-          alt="YourcastTV - Video Streaming Platform Logo."
-          class="case_header-logo case_yourcast-logo"
-          height="81.23"
-          src="img.jpg"
-          style="opacity: 1;"
-          width="387"
-        />
-      </div>
-    </section>
+      </p>
+    </caseheader-stub>
      
     <main-stub />
      

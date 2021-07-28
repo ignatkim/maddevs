@@ -23,23 +23,13 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
         <div
           class="meet-our-experts__expert-item"
         >
-          <picture>
-            <source
-              class="multi-image"
-              data-srcset="[object Object] ,[object Object] 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Marat Bediev - Senior DevOps Engineer at Mad Devs Software and Mobile App Development Company."
-              class="multi-image"
-              data-src="[object Object]"
-              data-srcset="[object Object] 2x"
-              data-testid="test-multi-image"
-              height="401"
-              width="295"
-            />
-          </picture>
+          <uiimage-stub
+            alt="Marat Bediev - Senior DevOps Engineer at Mad Devs Software and Mobile App Development Company."
+            filename="Marat"
+            filenameretina="Marat@2x"
+            height="401"
+            width="295"
+          />
            
           <div
             class="meet-our-experts__expert-bottom_content"
@@ -82,23 +72,13 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
         <div
           class="meet-our-experts__expert-item"
         >
-          <picture>
-            <source
-              class="multi-image"
-              data-srcset="[object Object] ,[object Object] 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Tamara Mun - Head of Delivery Management at Mad Devs Software and Mobile App Development Company."
-              class="multi-image"
-              data-src="[object Object]"
-              data-srcset="[object Object] 2x"
-              data-testid="test-multi-image"
-              height="401"
-              width="295"
-            />
-          </picture>
+          <uiimage-stub
+            alt="Tamara Mun - Head of Delivery Management at Mad Devs Software and Mobile App Development Company."
+            filename="Tamara"
+            filenameretina="Tamara@2x"
+            height="401"
+            width="295"
+          />
            
           <div
             class="meet-our-experts__expert-bottom_content"
@@ -141,23 +121,13 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
         <div
           class="meet-our-experts__expert-item"
         >
-          <picture>
-            <source
-              class="multi-image"
-              data-srcset="[object Object] ,[object Object] 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Andrew \\"Сhuck\\" Minkin - CTO and Co-Founder at Mad Devs Software and Mobile App Development Company."
-              class="multi-image"
-              data-src="[object Object]"
-              data-srcset="[object Object] 2x"
-              data-testid="test-multi-image"
-              height="401"
-              width="295"
-            />
-          </picture>
+          <uiimage-stub
+            alt="Andrew \\"Сhuck\\" Minkin - CTO and Co-Founder at Mad Devs Software and Mobile App Development Company."
+            filename="Chuck"
+            filenameretina="Chuck@2x"
+            height="401"
+            width="295"
+          />
            
           <div
             class="meet-our-experts__expert-bottom_content"
@@ -200,23 +170,13 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
         <div
           class="meet-our-experts__expert-item"
         >
-          <picture>
-            <source
-              class="multi-image"
-              data-srcset="[object Object] ,[object Object] 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Nakylai Taiirova - Senior Full-Stack Developer at Mad Devs Software and Mobile App Development Company."
-              class="multi-image"
-              data-src="[object Object]"
-              data-srcset="[object Object] 2x"
-              data-testid="test-multi-image"
-              height="401"
-              width="295"
-            />
-          </picture>
+          <uiimage-stub
+            alt="Nakylai Taiirova - Senior Full-Stack Developer at Mad Devs Software and Mobile App Development Company."
+            filename="Nakylai"
+            filenameretina="Nakylai@2x"
+            height="401"
+            width="295"
+          />
            
           <div
             class="meet-our-experts__expert-bottom_content"
@@ -259,23 +219,13 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
         <div
           class="meet-our-experts__expert-item"
         >
-          <picture>
-            <source
-              class="multi-image"
-              data-srcset="[object Object] ,[object Object] 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Daria Utesheva - Head of HR Department at Mad Devs Software and Mobile App Development Company."
-              class="multi-image"
-              data-src="[object Object]"
-              data-srcset="[object Object] 2x"
-              data-testid="test-multi-image"
-              height="401"
-              width="295"
-            />
-          </picture>
+          <uiimage-stub
+            alt="Daria Utesheva - Head of HR Department at Mad Devs Software and Mobile App Development Company."
+            filename="Daria"
+            filenameretina="Daria@2x"
+            height="401"
+            width="295"
+          />
            
           <div
             class="meet-our-experts__expert-bottom_content"
@@ -318,23 +268,13 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
         <div
           class="meet-our-experts__expert-item"
         >
-          <picture>
-            <source
-              class="multi-image"
-              data-srcset="[object Object] ,[object Object] 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Nuradil Alymkulov - Senior Full-Stack Developer at Mad Devs Software and Mobile App Development Company."
-              class="multi-image"
-              data-src="[object Object]"
-              data-srcset="[object Object] 2x"
-              data-testid="test-multi-image"
-              height="401"
-              width="295"
-            />
-          </picture>
+          <uiimage-stub
+            alt="Nuradil Alymkulov - Senior Full-Stack Developer at Mad Devs Software and Mobile App Development Company."
+            filename="Nuradil"
+            filenameretina="Nuradil@2x"
+            height="401"
+            width="295"
+          />
            
           <div
             class="meet-our-experts__expert-bottom_content"
@@ -377,23 +317,13 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
         <div
           class="meet-our-experts__expert-item"
         >
-          <picture>
-            <source
-              class="multi-image"
-              data-srcset="[object Object] ,[object Object] 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Alice Jang - Project Manager at Mad Devs Software and Mobile App Development Company."
-              class="multi-image"
-              data-src="[object Object]"
-              data-srcset="[object Object] 2x"
-              data-testid="test-multi-image"
-              height="401"
-              width="295"
-            />
-          </picture>
+          <uiimage-stub
+            alt="Alice Jang - Project Manager at Mad Devs Software and Mobile App Development Company."
+            filename="Alice"
+            filenameretina="Alice@2x"
+            height="401"
+            width="295"
+          />
            
           <div
             class="meet-our-experts__expert-bottom_content"
@@ -436,23 +366,13 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
         <div
           class="meet-our-experts__expert-item"
         >
-          <picture>
-            <source
-              class="multi-image"
-              data-srcset="[object Object] ,[object Object] 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Arthur Elizavetnikov - Project Manager at Mad Devs Software and Mobile App Development Company."
-              class="multi-image"
-              data-src="[object Object]"
-              data-srcset="[object Object] 2x"
-              data-testid="test-multi-image"
-              height="401"
-              width="295"
-            />
-          </picture>
+          <uiimage-stub
+            alt="Arthur Elizavetnikov - Project Manager at Mad Devs Software and Mobile App Development Company."
+            filename="Arthur"
+            filenameretina="Arthur@2x"
+            height="401"
+            width="295"
+          />
            
           <div
             class="meet-our-experts__expert-bottom_content"

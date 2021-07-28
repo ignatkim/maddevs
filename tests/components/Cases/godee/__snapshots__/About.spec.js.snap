@@ -15,27 +15,14 @@ exports[`About component should render correctly 1`] = `
   
     </p>
      
-    <div
-      class="case_quote-wrap m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
+    <textquote-stub
+      author=""
+      class="m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
     >
-      <img
-        alt="blockquote"
-        class="case_mark"
-        data-src="[object Object]"
-        height="50"
-        width="50"
-      />
-       
-      <blockquote
-        class="case_blockquote"
-      >
-        
+      
     The app-based system allows users to find a route, select the time, book a seat and pay for the ride online.
   
-      </blockquote>
-       
-      <!---->
-    </div>
+    </textquote-stub>
   </section>
 </div>
 `;

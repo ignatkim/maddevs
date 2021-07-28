@@ -29,25 +29,16 @@ exports[`Team component should render correctly 1`] = `
       <li
         class="case_team-item"
       >
-        <picture
+        <picture-stub
+          alt="Vlad Andreev"
+          background="true"
           class="case_team-item__image"
-        >
-          <source
-            class="image grey-background"
-            data-srcset="img.jpg,img.jpg"
-            type="image/webp"
-          />
-           
-          <img
-            alt="Vlad Andreev"
-            class="image grey-background"
-            data-src="img.jpg"
-            data-srcset="img.jpg"
-            data-testid="test-picture-img"
-            height="50"
-            width="50"
-          />
-        </picture>
+          extension="png"
+          file="vlad-andreev"
+          folder="common"
+          height="50"
+          width="50"
+        />
          
         <div
           class="case_team-item__info"
@@ -72,25 +63,16 @@ exports[`Team component should render correctly 1`] = `
       <li
         class="case_team-item"
       >
-        <picture
+        <picture-stub
+          alt="Gulbustan Baudunova"
+          background="true"
           class="case_team-item__image"
-        >
-          <source
-            class="image grey-background"
-            data-srcset="img.jpg,img.jpg"
-            type="image/webp"
-          />
-           
-          <img
-            alt="Gulbustan Baudunova"
-            class="image grey-background"
-            data-src="img.jpg"
-            data-srcset="img.jpg"
-            data-testid="test-picture-img"
-            height="50"
-            width="50"
-          />
-        </picture>
+          extension="png"
+          file="gulbustan-baudunova"
+          folder="common"
+          height="50"
+          width="50"
+        />
          
         <div
           class="case_team-item__info"
@@ -115,25 +97,16 @@ exports[`Team component should render correctly 1`] = `
       <li
         class="case_team-item"
       >
-        <picture
+        <picture-stub
+          alt="Tamara Mun"
+          background="true"
           class="case_team-item__image"
-        >
-          <source
-            class="image grey-background"
-            data-srcset="img.jpg,img.jpg"
-            type="image/webp"
-          />
-           
-          <img
-            alt="Tamara Mun"
-            class="image grey-background"
-            data-src="img.jpg"
-            data-srcset="img.jpg"
-            data-testid="test-picture-img"
-            height="50"
-            width="50"
-          />
-        </picture>
+          extension="png"
+          file="tamara-mun"
+          folder="common"
+          height="50"
+          width="50"
+        />
          
         <div
           class="case_team-item__info"
@@ -158,25 +131,16 @@ exports[`Team component should render correctly 1`] = `
       <li
         class="case_team-item"
       >
-        <picture
+        <picture-stub
+          alt="Aidai Atakulova"
+          background="true"
           class="case_team-item__image"
-        >
-          <source
-            class="image grey-background"
-            data-srcset="img.jpg,img.jpg"
-            type="image/webp"
-          />
-           
-          <img
-            alt="Aidai Atakulova"
-            class="image grey-background"
-            data-src="img.jpg"
-            data-srcset="img.jpg"
-            data-testid="test-picture-img"
-            height="50"
-            width="50"
-          />
-        </picture>
+          extension="png"
+          file="aidai-atakulova"
+          folder="common"
+          height="50"
+          width="50"
+        />
          
         <div
           class="case_team-item__info"
@@ -201,25 +165,16 @@ exports[`Team component should render correctly 1`] = `
       <li
         class="case_team-item"
       >
-        <picture
+        <picture-stub
+          alt="Baurzhan Omuraliev"
+          background="true"
           class="case_team-item__image"
-        >
-          <source
-            class="image grey-background"
-            data-srcset="img.jpg,img.jpg"
-            type="image/webp"
-          />
-           
-          <img
-            alt="Baurzhan Omuraliev"
-            class="image grey-background"
-            data-src="img.jpg"
-            data-srcset="img.jpg"
-            data-testid="test-picture-img"
-            height="50"
-            width="50"
-          />
-        </picture>
+          extension="png"
+          file="baurzhan-omuraliev"
+          folder="common"
+          height="50"
+          width="50"
+        />
          
         <div
           class="case_team-item__info"
@@ -244,25 +199,16 @@ exports[`Team component should render correctly 1`] = `
       <li
         class="case_team-item"
       >
-        <picture
+        <picture-stub
+          alt="Nakylai Taiirova"
+          background="true"
           class="case_team-item__image"
-        >
-          <source
-            class="image grey-background"
-            data-srcset="img.jpg,img.jpg"
-            type="image/webp"
-          />
-           
-          <img
-            alt="Nakylai Taiirova"
-            class="image grey-background"
-            data-src="img.jpg"
-            data-srcset="img.jpg"
-            data-testid="test-picture-img"
-            height="50"
-            width="50"
-          />
-        </picture>
+          extension="png"
+          file="nakylai-taiirova"
+          folder="common"
+          height="50"
+          width="50"
+        />
          
         <div
           class="case_team-item__info"
@@ -287,25 +233,16 @@ exports[`Team component should render correctly 1`] = `
       <li
         class="case_team-item"
       >
-        <picture
+        <picture-stub
+          alt="Akylbek Djumaliev"
+          background="true"
           class="case_team-item__image"
-        >
-          <source
-            class="image grey-background"
-            data-srcset="img.jpg,img.jpg"
-            type="image/webp"
-          />
-           
-          <img
-            alt="Akylbek Djumaliev"
-            class="image grey-background"
-            data-src="img.jpg"
-            data-srcset="img.jpg"
-            data-testid="test-picture-img"
-            height="50"
-            width="50"
-          />
-        </picture>
+          extension="png"
+          file="akylbek-djumaliev"
+          folder="common"
+          height="50"
+          width="50"
+        />
          
         <div
           class="case_team-item__info"
@@ -330,25 +267,16 @@ exports[`Team component should render correctly 1`] = `
       <li
         class="case_team-item"
       >
-        <picture
+        <picture-stub
+          alt="Stanislav Shcherbinin"
+          background="true"
           class="case_team-item__image"
-        >
-          <source
-            class="image grey-background"
-            data-srcset="img.jpg,img.jpg"
-            type="image/webp"
-          />
-           
-          <img
-            alt="Stanislav Shcherbinin"
-            class="image grey-background"
-            data-src="img.jpg"
-            data-srcset="img.jpg"
-            data-testid="test-picture-img"
-            height="50"
-            width="50"
-          />
-        </picture>
+          extension="png"
+          file="stanislav-shcherbinin"
+          folder="common"
+          height="50"
+          width="50"
+        />
          
         <div
           class="case_team-item__info"
@@ -373,25 +301,16 @@ exports[`Team component should render correctly 1`] = `
       <li
         class="case_team-item"
       >
-        <picture
+        <picture-stub
+          alt="Eldar Akkozov"
+          background="true"
           class="case_team-item__image"
-        >
-          <source
-            class="image grey-background"
-            data-srcset="img.jpg,img.jpg"
-            type="image/webp"
-          />
-           
-          <img
-            alt="Eldar Akkozov"
-            class="image grey-background"
-            data-src="img.jpg"
-            data-srcset="img.jpg"
-            data-testid="test-picture-img"
-            height="50"
-            width="50"
-          />
-        </picture>
+          extension="png"
+          file="eldar-akkozov"
+          folder="common"
+          height="50"
+          width="50"
+        />
          
         <div
           class="case_team-item__info"
@@ -416,25 +335,16 @@ exports[`Team component should render correctly 1`] = `
       <li
         class="case_team-item"
       >
-        <picture
+        <picture-stub
+          alt="Altynai Toktomuratova"
+          background="true"
           class="case_team-item__image"
-        >
-          <source
-            class="image grey-background"
-            data-srcset="img.jpg,img.jpg"
-            type="image/webp"
-          />
-           
-          <img
-            alt="Altynai Toktomuratova"
-            class="image grey-background"
-            data-src="img.jpg"
-            data-srcset="img.jpg"
-            data-testid="test-picture-img"
-            height="50"
-            width="50"
-          />
-        </picture>
+          extension="png"
+          file="altynai-toktomuratova"
+          folder="common"
+          height="50"
+          width="50"
+        />
          
         <div
           class="case_team-item__info"
@@ -459,25 +369,16 @@ exports[`Team component should render correctly 1`] = `
       <li
         class="case_team-item"
       >
-        <picture
+        <picture-stub
+          alt="Dmitrii Khalezin"
+          background="true"
           class="case_team-item__image"
-        >
-          <source
-            class="image grey-background"
-            data-srcset="img.jpg,img.jpg"
-            type="image/webp"
-          />
-           
-          <img
-            alt="Dmitrii Khalezin"
-            class="image grey-background"
-            data-src="img.jpg"
-            data-srcset="img.jpg"
-            data-testid="test-picture-img"
-            height="50"
-            width="50"
-          />
-        </picture>
+          extension="png"
+          file="dmitrii-khalezin"
+          folder="common"
+          height="50"
+          width="50"
+        />
          
         <div
           class="case_team-item__info"
@@ -502,25 +403,16 @@ exports[`Team component should render correctly 1`] = `
       <li
         class="case_team-item"
       >
-        <picture
+        <picture-stub
+          alt="Belek Abylov"
+          background="true"
           class="case_team-item__image"
-        >
-          <source
-            class="image grey-background"
-            data-srcset="img.jpg,img.jpg"
-            type="image/webp"
-          />
-           
-          <img
-            alt="Belek Abylov"
-            class="image grey-background"
-            data-src="img.jpg"
-            data-srcset="img.jpg"
-            data-testid="test-picture-img"
-            height="50"
-            width="50"
-          />
-        </picture>
+          extension="png"
+          file="belek-abylov"
+          folder="common"
+          height="50"
+          width="50"
+        />
          
         <div
           class="case_team-item__info"

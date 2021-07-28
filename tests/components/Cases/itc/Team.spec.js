@@ -9,6 +9,7 @@ describe('Team component', () => {
   it('should render correctly', () => {
     const { container } = render(Team, {
       mocks,
+      stubs: ['Picture'],
     })
 
     expect(screen.getByText('Meet the team')).not.toBeNull()

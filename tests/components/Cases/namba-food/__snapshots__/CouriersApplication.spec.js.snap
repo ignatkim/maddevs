@@ -36,23 +36,15 @@ exports[`CouriersApplication component should render correctly 1`] = `
       <section
         class="container_middle case_couriers-android-app-wrapper"
       >
-        <picture>
-          <source
-            class="image"
-            data-srcset="img.jpg,img.jpg"
-            type="image/webp"
-          />
-           
-          <img
-            alt="Namba Food: Courier App for Android."
-            class="image"
-            data-src="img.jpg"
-            data-srcset="img.jpg"
-            data-testid="test-picture-img"
-            height="771"
-            width="1230"
-          />
-        </picture>
+        <picture-stub
+          alt="Namba Food: Courier App for Android."
+          extension="png"
+          file="couriers-android-app"
+          folder="nambafood"
+          height="771"
+          lazy="true"
+          width="1230"
+        />
       </section>
        
       <div

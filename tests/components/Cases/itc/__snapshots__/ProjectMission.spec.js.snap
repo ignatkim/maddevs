@@ -81,49 +81,27 @@ exports[`ProjectMission component should render correctly 1`] = `
           <div
             class="card_image-wrapper"
           >
-            <picture>
-              <source
-                class="image"
-                data-not-lazy="true"
-                data-srcset="img.jpg ,img.jpg"
-                type="image/webp"
-              />
-               
-              <img
-                alt="Export planning and pro forma invoicing"
-                class="image"
-                data-not-lazy="true"
-                data-src="img.jpg"
-                data-srcset="img.jpg"
-                data-testid="test-picture-img"
-                height="302"
-                width="160"
-              />
-            </picture>
+            <picture-stub
+              alt="Export planning and pro forma invoicing"
+              extension="png"
+              file="export-desktop"
+              folder="itc"
+              height="302"
+              width="160"
+            />
           </div>
            
           <div
             class="card_image-wrapper-mobile"
           >
-            <picture>
-              <source
-                class="image"
-                data-not-lazy="true"
-                data-srcset="img.jpg ,img.jpg"
-                type="image/webp"
-              />
-               
-              <img
-                alt="Export planning and pro forma invoicing"
-                class="image"
-                data-not-lazy="true"
-                data-src="img.jpg"
-                data-srcset="img.jpg"
-                data-testid="test-picture-img"
-                height="201"
-                width="295"
-              />
-            </picture>
+            <picture-stub
+              alt="Export planning and pro forma invoicing"
+              extension="png"
+              file="export-mobile"
+              folder="itc"
+              height="201"
+              width="295"
+            />
           </div>
         </div>
         <div
@@ -140,49 +118,27 @@ exports[`ProjectMission component should render correctly 1`] = `
           <div
             class="card_image-wrapper"
           >
-            <picture>
-              <source
-                class="image"
-                data-not-lazy="true"
-                data-srcset="img.jpg ,img.jpg"
-                type="image/webp"
-              />
-               
-              <img
-                alt="Mandatory certifications, registrations and buyer standards"
-                class="image"
-                data-not-lazy="true"
-                data-src="img.jpg"
-                data-srcset="img.jpg"
-                data-testid="test-picture-img"
-                height="302"
-                width="160"
-              />
-            </picture>
+            <picture-stub
+              alt="Mandatory certifications, registrations and buyer standards"
+              extension="png"
+              file="certifications-desktop"
+              folder="itc"
+              height="302"
+              width="160"
+            />
           </div>
            
           <div
             class="card_image-wrapper-mobile"
           >
-            <picture>
-              <source
-                class="image"
-                data-not-lazy="true"
-                data-srcset="img.jpg ,img.jpg"
-                type="image/webp"
-              />
-               
-              <img
-                alt="Mandatory certifications, registrations and buyer standards"
-                class="image"
-                data-not-lazy="true"
-                data-src="img.jpg"
-                data-srcset="img.jpg"
-                data-testid="test-picture-img"
-                height="201"
-                width="295"
-              />
-            </picture>
+            <picture-stub
+              alt="Mandatory certifications, registrations and buyer standards"
+              extension="png"
+              file="certifications-mobile"
+              folder="itc"
+              height="201"
+              width="295"
+            />
           </div>
         </div>
         <div
@@ -199,49 +155,27 @@ exports[`ProjectMission component should render correctly 1`] = `
           <div
             class="card_image-wrapper"
           >
-            <picture>
-              <source
-                class="image"
-                data-not-lazy="true"
-                data-srcset="img.jpg ,img.jpg"
-                type="image/webp"
-              />
-               
-              <img
-                alt="International shipping by sea and air freight"
-                class="image"
-                data-not-lazy="true"
-                data-src="img.jpg"
-                data-srcset="img.jpg"
-                data-testid="test-picture-img"
-                height="302"
-                width="160"
-              />
-            </picture>
+            <picture-stub
+              alt="International shipping by sea and air freight"
+              extension="png"
+              file="air-transportation-desktop"
+              folder="itc"
+              height="302"
+              width="160"
+            />
           </div>
            
           <div
             class="card_image-wrapper-mobile"
           >
-            <picture>
-              <source
-                class="image"
-                data-not-lazy="true"
-                data-srcset="img.jpg ,img.jpg"
-                type="image/webp"
-              />
-               
-              <img
-                alt="International shipping by sea and air freight"
-                class="image"
-                data-not-lazy="true"
-                data-src="img.jpg"
-                data-srcset="img.jpg"
-                data-testid="test-picture-img"
-                height="201"
-                width="295"
-              />
-            </picture>
+            <picture-stub
+              alt="International shipping by sea and air freight"
+              extension="png"
+              file="air-transportation-mobile"
+              folder="itc"
+              height="201"
+              width="295"
+            />
           </div>
         </div>
          

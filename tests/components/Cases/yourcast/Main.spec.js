@@ -8,7 +8,13 @@ describe('Main component', () => {
       mocks: {
         $getMediaFromS3: () => 'img.jpg',
       },
-      stubs: ['NuxtLink'],
+      stubs: [
+        'NuxtLink',
+        'TextQuote',
+        'Picture',
+        'ListTechnologiesItem',
+        'PhaseLiveStreamingTechnology',
+      ],
     })
     expect(container).toMatchSnapshot()
   })

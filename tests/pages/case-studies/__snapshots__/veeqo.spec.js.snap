@@ -5,86 +5,40 @@ exports[`Veeqo root component should render correctly 1`] = `
   <main
     class="case case--veeqo"
   >
-    <section
-      class="case_header case_header-veeqo"
-      id="transparent-header-area"
+    <caseheader-stub
+      logo="[object Object]"
+      project="veeqo"
+      videofallbackpath="/images/Cases/veeqo/svg/veeqo-banner-bg.svg"
+      videoname="/videos/veeqo-banner.mp4"
     >
-      <div
-        class="case_main-video_fallback"
-        style="background-image: url(img.jpg);"
-      />
-       
-      <video
-        autoplay="autoplay"
-        class="case_main-video"
-        data-testid="test-case_main-video"
-        loop="loop"
-        muted="muted"
+      <h1
+        class="case_header-title"
       >
-        <source
-          data-src="img.jpg"
-          type="video/mp4"
-        />
         
-    Your browser does not support the video tag.
-  
-      </video>
-       
-      <div
-        class="case_header-content"
-      >
-        <div
-          class="case_header-text"
-          style="opacity: 1;"
-        >
-          <div
-            class="case_case-study-item"
-          >
-            
-        Case Study
-      
-          </div>
-           
-          <h1
-            class="case_header-title"
-          >
-            
       Optimization 
-            <br />
-             for Veeqo
+        <br />
+         for Veeqo
     
-          </h1>
-           
-          <p
-            class="case_header-description"
-          >
-            
+      </h1>
+       
+      <p
+        class="case_header-description"
+      >
+        
       Our DevOps team optimized the infrastructure for Veeqo, an inventory 
-            <br />
-             and shipping 
-            <span
-              class="case_nowrap"
-            >
-              e-commerce
-            </span>
-             platform, and made it highly efficient, smooth, 
-            <br />
-             and cost-effective for our partners.
+        <br />
+         and shipping 
+        <span
+          class="case_nowrap"
+        >
+          e-commerce
+        </span>
+         platform, and made it highly efficient, smooth, 
+        <br />
+         and cost-effective for our partners.
     
-          </p>
-           
-        </div>
-         
-        <img
-          alt="Veeqo an Inventory Management Platform’s Logo."
-          class="case_header-logo case_veeqo-logotype"
-          height="114"
-          src="img.jpg"
-          style="opacity: 1;"
-          width="309"
-        />
-      </div>
-    </section>
+      </p>
+    </caseheader-stub>
      
     <main-stub />
      
