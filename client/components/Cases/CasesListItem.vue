@@ -17,13 +17,17 @@
       :tag="isMobile ? 'button' : 'a'"
       class="cases-list_item-link"
     >
+      <!-- Video BG poster -->
+      <div
+        class="cases-list_item-video_poster"
+        :lazy-background="$getMediaFromS3(posterLink)"
+      />
       <!-- Video BG -->
       <video
         ref="video"
         v-lazy-load
         muted="true"
         loop="true"
-        :data-poster="$getMediaFromS3(posterLink)"
         class="cases-list_item-video"
       >
         <source
@@ -205,7 +209,7 @@ export default {
     grid-column: auto / span 4 !important;
   }
 
-  video {
+  &-video {
     position: absolute;
     top: 0;
     left: 0;
@@ -215,6 +219,18 @@ export default {
     object-fit: cover;
     background-position: center;
     background-size: cover;
+
+    &_poster {
+      width: calc(100% + 2px);
+      height: calc(100% + 2px);
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-size: cover;
+      background-position: center;
+      z-index: -1;
+      margin: -1px;
+    }
   }
 
   &::before {
