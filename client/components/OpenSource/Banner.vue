@@ -5,13 +5,16 @@
   >
     <picture>
       <source
-        :srcset="[$getMediaFromS3('/images/OpenSource/webp/banner.webp') + ' ', $getMediaFromS3('/images/OpenSource/webp/banner@2x.webp 2x')]"
+        :srcset="[
+          $getMediaFromS3('/images/OpenSource/webp/programmer.webp') + ' ',
+          $getMediaFromS3('/images/OpenSource/webp/programmer@2x.webp') + ' 2x'
+        ]"
         type="image/webp"
         class="banner__image"
       >
       <img
-        :srcset="$getMediaFromS3('/images/OpenSource/png/banner@2x.png')"
-        :src="$getMediaFromS3('/images/OpenSource/png/banner.png')"
+        :src="$getMediaFromS3('/images/OpenSource/png/programmer.png')"
+        :srcset="$getMediaFromS3('/images/OpenSource/png/programmer@2x.png') + ' 2x'"
         width="1680"
         height="969"
         class="banner__image"
@@ -50,25 +53,14 @@ export default {
         {
           rel: 'preload',
           as: 'image',
-          href: this.$getMediaFromS3('/images/OpenSource/webp/banner.webp'),
+          imagesrcset:
+            `${this.$getMediaFromS3('/images/OpenSource/webp/programmer.webp')}, ${this.$getMediaFromS3('/images/OpenSource/webp/programmer@2x.webp')} 2x`,
         },
-
         {
           rel: 'preload',
           as: 'image',
-          href: this.$getMediaFromS3('/images/OpenSource/webp/banner@2x.webp'),
-        },
-
-        {
-          rel: 'preload',
-          as: 'image',
-          href: this.$getMediaFromS3('/images/OpenSource/png/banner.png'),
-        },
-
-        {
-          rel: 'preload',
-          as: 'image',
-          href: this.$getMediaFromS3('/images/OpenSource/png/banner@2x.png'),
+          imagesrcset:
+            `${this.$getMediaFromS3('/images/OpenSource/png/programmer.png')}, ${this.$getMediaFromS3('/images/OpenSource/png/programmer@2x.png')} 2x`,
         },
       ],
     }
