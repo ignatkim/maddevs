@@ -8,7 +8,7 @@ exports[`BuildDevTeam renders correctly 1`] = `
     class="container"
   >
     <div
-      image="img.jpg"
+      image="img.png"
       image-alt-text="Chuk"
       man-name="Andrew “Chuck” Minkin"
       man-position="CTO, Co-Founder"

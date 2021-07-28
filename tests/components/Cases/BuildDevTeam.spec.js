@@ -3,7 +3,7 @@ import { mount, shallowMount } from '@vue/test-utils'
 import BuildDevTeam from '@/components/Cases/BuildDevTeam'
 
 const mocks = {
-  $getMediaFromS3: () => 'img.jpg',
+  $getMediaFromS3: () => 'img.png',
 }
 
 describe('BuildDevTeam', () => {
