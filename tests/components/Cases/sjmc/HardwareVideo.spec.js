@@ -7,6 +7,10 @@ const mocks = {
   $getMediaFromS3: image => image,
 }
 
+const data = () => ({
+  loaded: true,
+})
+
 const directives = {
   'lazy-load': () => {},
 }
@@ -14,6 +18,7 @@ const directives = {
 describe('HardwareVideo component', () => {
   it('should render correctly', () => {
     const { container } = render(HardwareVideo, {
+      data,
       mocks,
       directives,
     })
@@ -23,6 +28,7 @@ describe('HardwareVideo component', () => {
 
   it('should toggle video muted value', async () => {
     render(HardwareVideo, {
+      data,
       mocks,
       directives,
     })

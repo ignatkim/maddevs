@@ -109,7 +109,7 @@ module.exports = {
     '@nuxtjs/gtm',
     '@nuxtjs/style-resources',
     ['nuxt-lazy-load', {
-      defaultImage: '/fallback-img.svg',
+      defaultImage: '/DoNotRemove/nuxt-lazy-load-fallback.svg',
       directiveOnly: true,
     }],
   ],

@@ -20,6 +20,7 @@
     </div>
     <div class="case_video-wrapper case_full-screen-video">
       <video
+        v-if="loaded"
         id="iphone-video"
         ref="video"
         v-lazy-load
@@ -27,6 +28,7 @@
         width="100%"
         height="100%"
         :controls="false"
+        autoplay="true"
         muted
         playsinline
         loop
@@ -69,6 +71,7 @@ export default {
   data() {
     return {
       animation: null,
+      loaded: false,
       options: {
         renderer: 'svg',
         animationData,
@@ -79,6 +82,12 @@ export default {
         },
       },
     }
+  },
+
+  mounted() {
+    this.$nextTick(() => {
+      this.loaded = true
+    })
   },
 
   methods: {

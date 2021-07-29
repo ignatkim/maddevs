@@ -2,7 +2,6 @@
   <picture>
     <source
       v-lazy-load
-      v-bind="lazyDisabled"
       :class="{ 'box-shadow': shadow, 'border-radius': radius, 'grey-background': background }"
       :data-srcset="[
         $getMediaFromS3(`/images/Cases/${folder}/webp/${file}.webp`) + ' ',
@@ -13,7 +12,6 @@
     >
     <img
       v-lazy-load
-      v-bind="lazyDisabled"
       :class="{ 'box-shadow': shadow, 'border-radius': radius, 'grey-background': background }"
       :data-src="[$getMediaFromS3(`/images/Cases/${folder}/${extension}/${file}.${extension}`)]"
       :data-srcset="[$getMediaFromS3(`/images/Cases/${folder}/${extension}/${file}.${extension}`)]"
@@ -79,13 +77,6 @@ export default {
     background: {
       type: Boolean,
       default: false,
-    },
-  },
-
-  computed: {
-    lazyDisabled() {
-      if (!this.lazy) return { 'data-not-lazy': true }
-      return {}
     },
   },
 

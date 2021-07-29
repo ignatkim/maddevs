@@ -47,7 +47,8 @@ exports[`Swift component should render correctly 1`] = `
                   extension="jpg"
                   file="admin"
                   folder="nambafood"
-                  lazy="true"
+                  height="525"
+                  width="1026"
                 />
               </div>
               <div
@@ -58,7 +59,8 @@ exports[`Swift component should render correctly 1`] = `
                   extension="jpg"
                   file="dashboard"
                   folder="nambafood"
-                  lazy="true"
+                  height="525"
+                  width="1026"
                 />
               </div>
             </div>

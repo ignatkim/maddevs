@@ -103,4 +103,4 @@ function sendCoverageToSlack(testResults) {
   return testResults
 }
 
-module.exports = sendCoverageToSlack
+sendCoverageToSlack()

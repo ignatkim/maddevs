@@ -52,6 +52,7 @@
             alt="GoDee: Safari Browser Top Bar White."
           />
           <video
+            v-if="loaded"
             id="trip-monitor"
             v-lazy-load
             class="case_html-video"
@@ -59,6 +60,7 @@
             height="100%"
             loop="true"
             muted="true"
+            autoplay="true"
           >
             <source
               :data-src="$getMediaFromS3('/videos/trip-monitor.f4a33e6.mp4')"
@@ -111,7 +113,14 @@ export default {
   data() {
     return {
       tripsMonitorInfo,
+      loaded: false,
     }
+  },
+
+  mounted() {
+    this.$nextTick(() => {
+      this.loaded = true
+    })
   },
 }
 </script>
