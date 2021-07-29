@@ -2,6 +2,10 @@ import 'regenerator-runtime'
 import { mount, shallowMount } from '@vue/test-utils'
 import BuildDevTeam from '@/components/Cases/BuildDevTeam'
 
+const mocks = {
+  $getMediaFromS3: () => 'img.png',
+}
+
 describe('BuildDevTeam', () => {
   let wrapper = null
   let mockShow = null
@@ -13,6 +17,7 @@ describe('BuildDevTeam', () => {
           render(h) { return h('div') },
         },
       },
+      mocks,
     })
     mockShow = jest.fn()
   })
@@ -50,6 +55,7 @@ describe('BuildDevTeam', () => {
           },
         },
       },
+      mocks,
     })
     wrapper.vm.show()
     expect(mockShow).toHaveBeenCalledTimes(1)
