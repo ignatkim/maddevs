@@ -231,7 +231,7 @@ export default {
     },
 
     setDefaultStateForHeader() {
-      const pagesWithTransparentHeaderArea = ['delivery-models', 'open-source']
+      const pagesWithTransparentHeaderArea = ['delivery-models', 'open-source', 'blog']
       const { name: routeName } = this.$nuxt.$route
       if (routeName) this.hasTransparentHeaderArea = routeName.includes('case-studies-') || pagesWithTransparentHeaderArea.includes(routeName)
     },

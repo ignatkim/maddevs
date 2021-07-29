@@ -5,53 +5,75 @@ exports[`Main component should render correctly 1`] = `
   <main
     class="home"
   >
-    <div
-      class="container"
+    <section
+      class="blog-header"
     >
       <div
-        class="last-post"
+        class="blog-header_bg"
       >
+        <img
+          alt="Team"
+          height="741"
+          width="1440"
+        />
+      </div>
+       
+      <div
+        class="container"
+      >
+        <h1>
+          IT Blog
+        </h1>
+         
+        <p>
+          Here we share our processes, best practices, achievements, and knowledge with you based on our extensive experience working on various IT projects.
+        </p>
+         
         <div
-          class="featured-post dark"
+          class="blog-header_last-post"
         >
           <div
-            class="featured-post__wrapper"
+            class="featured-post dark"
           >
             <div
-              class="featured-post__main"
+              class="featured-post__wrapper"
             >
-              <h2
-                class="featured-post__title background-grey animated dark"
-              />
-               
-              <p
-                class="featured-post__paragraph background-grey animated dark"
-              />
-               
               <div
-                class="featured-post__data d-flex justify-content-between"
+                class="featured-post__main"
               >
+                <h2
+                  class="featured-post__title background-grey animated dark"
+                />
+                 
+                <p
+                  class="featured-post__paragraph background-grey animated dark"
+                />
+                 
                 <div
-                  class="featured-post__meta"
+                  class="featured-post__data d-flex justify-content-between"
                 >
-                  <span
-                    class="created-at"
-                  />
+                  <div
+                    class="featured-post__meta"
+                  >
+                    <span
+                      class="created-at"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
-             
-            <div
-              class="featured-post__image-wrapper"
-            >
+               
               <div
-                class="featured-post__image background-grey animated dark"
-              />
+                class="featured-post__image-wrapper"
+              >
+                <div
+                  class="featured-post__image background-grey animated dark"
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
      
     <div
       class="latest-posts"

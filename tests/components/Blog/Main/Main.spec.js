@@ -17,6 +17,7 @@ const mocks = {
     },
   },
   getBlogAuthors: jest.fn(),
+  $getMediaFromS3: () => {},
 }
 
 const stubs = ['NuxtLink', 'FeaturedPost', 'CustomerUniversitySection', 'PostCard']

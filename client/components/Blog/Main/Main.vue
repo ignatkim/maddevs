@@ -1,6 +1,6 @@
 <template>
   <main class="home">
-    <TheLastPostSection />
+    <BlogHeader />
     <LatestPostsSection />
     <CustomerUniversitySection />
     <AllPostsSection />
@@ -9,7 +9,7 @@
 
 <script>
 import { mapActions, mapGetters } from 'vuex'
-import TheLastPostSection from '@/components/Blog/Main/TheLastPostSection'
+import BlogHeader from '@/components/Blog/Main/BlogHeader'
 import LatestPostsSection from '@/components/Blog/Main/LatestPostsSection'
 import CustomerUniversitySection from '@/components/Blog/Main/CustomerUniversitySection'
 import AllPostsSection from '@/components/Blog/Main/AllPostsSection'
@@ -17,7 +17,7 @@ import AllPostsSection from '@/components/Blog/Main/AllPostsSection'
 export default {
   name: 'Main',
   components: {
-    TheLastPostSection,
+    BlogHeader,
     LatestPostsSection,
     CustomerUniversitySection,
     AllPostsSection,
@@ -54,9 +54,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss" scoped>
-.home {
-  padding-top: 100px;
-}
-</style>
