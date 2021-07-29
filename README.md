@@ -19,6 +19,7 @@
 * [⚡️ Quick start](#%EF%B8%8F-quick-development-start)
 * [⚙️ Project overview](#%EF%B8%8F-project-overview)
 * [💼️ Environment variables](#%EF%B8%8F-environment-variables)
+* [✍️ Code review](#%EF%B8%8F-environment-variables)
 * [🚀 Deploy](#-deploy)
 * [🚓 Testing](#-testing)
 * [✨ Linting](#-linting)
@@ -171,6 +172,14 @@ Not required in dev mode
 | RADIATOR_WEBHOOK_URL  	                | Slack webhook url |
 | RADIATOR_GOOGLEAPIS_KEY  	              | Googleapis key  	|
 | RADIATOR_TELEGRAM_TOKEN  	              | Telegram token    |
+
+## ✍️ Code review
+We're have a special "Code Review Regulation" document that help us to review our code more better and professional. 
+Before start working with our team you need to read the document.
+
+* ["Code review regulation"- english version](docs/CodeReviewRegulation_en.md)
+* ["Code review regulation"- russian version](docs/CodeReviewRegulation_ru.md)
+
 
 ## 🚀 Deploy
 
@@ -396,4 +405,4 @@ node server/radiator
 ```
 
 ## 👐 Additional docs
-[How to remove link from sitemap.xml](./docs/how_to_remove_link_from_sitemap_xml.md)
+[How to remove link from sitemap.xml](docs/HowToRemoveLinkFromSitemap.md)
