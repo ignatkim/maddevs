@@ -1337,22 +1337,7 @@ exports[`IntellegentManagementPanel component should render correctly 1`] = `
             width="1026"
           />
            
-          <video
-            class="case_html-video case_trip-request-video"
-            height="100%"
-            id="trip-request-map"
-            loop="loop"
-            muted="muted"
-            width="100%"
-          >
-            <source
-              data-src="img.jpg"
-              type="video/mp4"
-            />
-            
-          Your browser does not support the video tag.
-        
-          </video>
+          <!---->
         </div>
       </div>
     </section>

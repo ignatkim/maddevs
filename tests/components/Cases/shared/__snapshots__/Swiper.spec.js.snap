@@ -34,9 +34,8 @@ exports[`Swiper component should render correctly 1`] = `
               extension="jpg"
               file="admin"
               folder="nambafood"
-              height="0"
-              lazy="true"
-              width="0"
+              height="525"
+              width="1026"
             />
           </div>
           <div
@@ -47,9 +46,8 @@ exports[`Swiper component should render correctly 1`] = `
               extension="jpg"
               file="dashboard"
               folder="nambafood"
-              height="0"
-              lazy="true"
-              width="0"
+              height="525"
+              width="1026"
             />
           </div>
         </div>
