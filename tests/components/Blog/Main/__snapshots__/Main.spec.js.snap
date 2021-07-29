@@ -7,6 +7,7 @@ exports[`Main component should render correctly 1`] = `
   >
     <section
       class="blog-header"
+      id="transparent-header-area"
     >
       <div
         class="blog-header_bg"
@@ -21,13 +22,18 @@ exports[`Main component should render correctly 1`] = `
       <div
         class="container"
       >
-        <h1>
-          IT Blog
-        </h1>
-         
-        <p>
-          Here we share our processes, best practices, achievements, and knowledge with you based on our extensive experience working on various IT projects.
-        </p>
+        <div
+          class="blog-header_info"
+          style="opacity: 1;"
+        >
+          <h1>
+            IT Blog
+          </h1>
+           
+          <p>
+            Here we share our processes, best practices, achievements, and knowledge with you based on our extensive experience working on various IT projects.
+          </p>
+        </div>
          
         <div
           class="blog-header_last-post"

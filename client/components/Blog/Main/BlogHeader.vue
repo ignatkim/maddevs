@@ -1,5 +1,8 @@
 <template>
-  <section class="blog-header">
+  <section
+    id="transparent-header-area"
+    class="blog-header"
+  >
     <div class="blog-header_bg">
       <img
         :src="$getMediaFromS3('/images/Blog/blog-header-bg.png')"
@@ -9,8 +12,14 @@
       >
     </div>
     <div class="container">
-      <h1>IT Blog</h1>
-      <p>Here we share our processes, best practices, achievements, and knowledge with you based on our extensive experience working on various IT projects.</p>
+      <div
+        ref="sectionText"
+        :style="{opacity: sectionTextOpacity}"
+        class="blog-header_info"
+      >
+        <h1>IT Blog</h1>
+        <p>Here we share our processes, best practices, achievements, and knowledge with you based on our extensive experience working on various IT projects.</p>
+      </div>
       <!-- The New Post -->
       <div class="blog-header_last-post">
         <FeaturedPost
@@ -33,6 +42,7 @@ import FeaturedPost from '@/components/Blog/shared/FeaturedPost'
 import SkeletonFeaturedPost from '@/components/Blog/skeletons/SkeletonFeaturedPost'
 
 import findPostAuthorMixin from '@/mixins/findPostAuthorMixin'
+import changeSectionTextOpacityMixin from '@/mixins/changeSectionTextOpacityMixin'
 
 export default {
   name: 'BlogHeader',
@@ -41,7 +51,10 @@ export default {
     SkeletonFeaturedPost,
   },
 
-  mixins: [findPostAuthorMixin],
+  mixins: [
+    findPostAuthorMixin,
+    changeSectionTextOpacityMixin('sectionText'),
+  ],
 
   computed: {
     ...mapGetters(['featuredPost', 'postsLoaded', 'allAuthors']),
@@ -121,43 +134,47 @@ export default {
     }
   }
 
-  h1 {
+  &_info {
     width: 100%;
-    @include font('Inter', 68px, 700);
-    line-height: 72px;
-    color: #fff;
-    text-align: center;
-    letter-spacing: -2px;
-    margin-top: 135px;
 
-    @media screen and (max-width: 560px) {
-      @include font('Inter', 42px, 700);
-      line-height: 48px;
-      margin-top: 98px;
-    }
-  }
+    h1 {
+      width: 100%;
+      @include font('Inter', 68px, 700);
+      line-height: 72px;
+      color: #fff;
+      text-align: center;
+      letter-spacing: -2px;
+      margin-top: 135px;
 
-  p {
-    width: 100%;
-    max-width: 815px;
-    @include font('Inter', 26px, 400);
-    line-height: 34px;
-    color: #F4F4F4;
-    text-align: center;
-    letter-spacing: -1px;
-    margin: 32px auto auto;
-
-    @media screen and (max-width: 1024px) {
-      margin-bottom: 124px;
+      @media screen and (max-width: 560px) {
+        @include font('Inter', 42px, 700);
+        line-height: 48px;
+        margin-top: 98px;
+      }
     }
 
-    @media screen and (max-width: 768px) {
-      margin-bottom: 64px;
-    }
+    p {
+      width: 100%;
+      max-width: 815px;
+      @include font('Inter', 26px, 400);
+      line-height: 34px;
+      color: #F4F4F4;
+      text-align: center;
+      letter-spacing: -1px;
+      margin: 32px auto auto;
 
-    @media screen and (max-width: 560px) {
-      @include font('Inter', 21px, 400);
-      line-height: 30px;
+      @media screen and (max-width: 1024px) {
+        margin-bottom: 124px;
+      }
+
+      @media screen and (max-width: 768px) {
+        margin-bottom: 64px;
+      }
+
+      @media screen and (max-width: 560px) {
+        @include font('Inter', 21px, 400);
+        line-height: 30px;
+      }
     }
   }
 
