@@ -34,9 +34,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
-@import '@/assets/styles/cases/_mixins';
-
 .ebook-learn {
   padding-top: 130px;
   padding-bottom: 96px;

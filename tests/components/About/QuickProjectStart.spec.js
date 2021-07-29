@@ -2,12 +2,18 @@ import 'regenerator-runtime'
 import { mount, shallowMount } from '@vue/test-utils'
 import QuickProjectStart from '@/components/About/QuickProjectStart'
 
+const directives = {
+  'lazy-load': () => {},
+}
+
 describe('QuickProjectStart', () => {
   let wrapper = null
   let mockShow = null
 
   beforeEach(() => {
-    wrapper = mount(QuickProjectStart)
+    wrapper = mount(QuickProjectStart, {
+      directives,
+    })
     mockShow = jest.fn()
   })
 
@@ -17,7 +23,7 @@ describe('QuickProjectStart', () => {
   })
 
   it('correctly length of elements in DOM', () => {
-    const contentItems = wrapper.findAll('.quickProjectStart__list-item')
+    const contentItems = wrapper.findAll('.quick-project-start__list-item')
     expect(contentItems).toHaveLength(5)
   })
 
@@ -46,6 +52,7 @@ describe('QuickProjectStart', () => {
           },
         },
       },
+      directives,
     })
     wrapper.vm.show()
     expect(mockShow).toHaveBeenCalledTimes(1)

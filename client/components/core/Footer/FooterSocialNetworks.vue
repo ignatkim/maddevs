@@ -11,11 +11,11 @@
         target="_blank"
       >
         <img
+          v-lazy-load
           :data-src="require(`@/assets/img/Footer/svg/${network.key}.svg`)"
           :alt="network.title"
           width="42"
           height="42"
-          class="img_lazy"
         >
       </a>
     </li>
@@ -36,8 +36,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/vars';
-
 @mixin social-network-list-grid {
   .footerSocialNetworkList {
     display: grid;

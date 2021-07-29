@@ -34,12 +34,13 @@
           </div>
           <div class="case_icon-wrapper">
             <img
+              v-lazy-load
               :data-src="$getMediaFromS3(`/images/Cases/peklo/svg/${card.icon}.svg`)"
               :alt="card.title"
               :width="card.iconWidth"
               :height="card.iconHeight"
               :class="`case_card-icon-${card.icon}`"
-              class="case_card-icon media_lazy"
+              class="case_card-icon"
             >
           </div>
         </div>
@@ -51,11 +52,12 @@
         Other components deal with payments, file and data storage, and load. Structurally, Peklo Tool’s architecture looks like this:
       </TextParagraph>
       <img
+        v-lazy-load
         :data-src="$getMediaFromS3(`/images/Cases/peklo/svg/peklo-tool-under-the-hood.svg`)"
         alt="Peklo Tool’s architecture"
         width="816"
         height="408"
-        class="case_architecture-img media_lazy"
+        class="case_architecture-img"
       >
     </div>
   </section>
@@ -80,9 +82,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/cases/_mixins';
-@import '@/assets/styles/_vars';
-
 .case {
   &_title,
   &_bold,

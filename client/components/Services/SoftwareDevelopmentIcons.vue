@@ -7,11 +7,11 @@
       class="icons-list__icon-item"
     >
       <img
+        v-lazy-load
         :data-src="require(`@/assets/img/Home/svg/technologies/${icon.name}.svg`)"
         :alt="icon.alt"
         width="26"
         height="26"
-        class="img_lazy"
       >
       <span>{{ icon.alt }}</span>
     </li>
@@ -31,8 +31,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .icons-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

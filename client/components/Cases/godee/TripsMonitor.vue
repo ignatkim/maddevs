@@ -52,15 +52,18 @@
             alt="GoDee: Safari Browser Top Bar White."
           />
           <video
+            v-if="loaded"
             id="trip-monitor"
+            v-lazy-load
             class="case_html-video"
             width="100%"
             height="100%"
             loop="true"
             muted="true"
+            autoplay="true"
           >
             <source
-              :src="$getMediaFromS3('/videos/trip-monitor.f4a33e6.mp4')"
+              :data-src="$getMediaFromS3('/videos/trip-monitor.f4a33e6.mp4')"
               type="video/mp4"
             >
             Your browser does not support the video tag.
@@ -110,7 +113,14 @@ export default {
   data() {
     return {
       tripsMonitorInfo,
+      loaded: false,
     }
+  },
+
+  mounted() {
+    this.$nextTick(() => {
+      this.loaded = true
+    })
   },
 }
 </script>

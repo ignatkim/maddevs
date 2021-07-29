@@ -24,23 +24,12 @@ exports[`Swift component should render correctly 1`] = `
         <div
           class="swiper-container thumb-example box-shadow"
         >
-          <picture>
-            <source
-              class="image media_lazy"
-              data-srcset="img.jpg,img.jpg"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Namba Food: Food and Grocery Delivery Service Website Header."
-              class="image media_lazy"
-              data-src="img.jpg"
-              data-srcset="img.jpg"
-              data-testid="test-picture-img"
-              height="0"
-              width="0"
-            />
-          </picture>
+          <picture-stub
+            alt="Namba Food: Food and Grocery Delivery Service Website Header."
+            extension="jpg"
+            file="swiper-frame"
+            folder="common"
+          />
            
           <div
             class="swiper-container swiper gallery-top swiper-container-initialized swiper-container-horizontal"
@@ -53,44 +42,26 @@ exports[`Swift component should render correctly 1`] = `
               <div
                 class="swiper-slide"
               >
-                <picture>
-                  <source
-                    class="image media_lazy"
-                    data-srcset="img.jpg,img.jpg"
-                    type="image/webp"
-                  />
-                   
-                  <img
-                    alt="Namba Food: Swift microservice-based admin panel which help to control food and grocery delivery."
-                    class="image media_lazy"
-                    data-src="img.jpg"
-                    data-srcset="img.jpg"
-                    data-testid="test-picture-img"
-                    height="0"
-                    width="0"
-                  />
-                </picture>
+                <picture-stub
+                  alt="Namba Food: Swift microservice-based admin panel which help to control food and grocery delivery."
+                  extension="jpg"
+                  file="admin"
+                  folder="nambafood"
+                  height="525"
+                  width="1026"
+                />
               </div>
               <div
                 class="swiper-slide"
               >
-                <picture>
-                  <source
-                    class="image media_lazy"
-                    data-srcset="img.jpg,img.jpg"
-                    type="image/webp"
-                  />
-                   
-                  <img
-                    alt="Namba Food Delivery Control Dashboard."
-                    class="image media_lazy"
-                    data-src="img.jpg"
-                    data-srcset="img.jpg"
-                    data-testid="test-picture-img"
-                    height="0"
-                    width="0"
-                  />
-                </picture>
+                <picture-stub
+                  alt="Namba Food Delivery Control Dashboard."
+                  extension="jpg"
+                  file="dashboard"
+                  folder="nambafood"
+                  height="525"
+                  width="1026"
+                />
               </div>
             </div>
             <span
@@ -113,44 +84,22 @@ exports[`Swift component should render correctly 1`] = `
             <div
               class="swiper-slide"
             >
-              <picture>
-                <source
-                  class="image media_lazy"
-                  data-srcset="img.jpg,img.jpg"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="Namba Food: Swift microservice-based admin panel which help to control food and grocery delivery."
-                  class="image media_lazy"
-                  data-src="img.jpg"
-                  data-srcset="img.jpg"
-                  data-testid="test-picture-img"
-                  height="0"
-                  width="0"
-                />
-              </picture>
+              <picture-stub
+                alt="Namba Food: Swift microservice-based admin panel which help to control food and grocery delivery."
+                extension="jpg"
+                file="admin"
+                folder="nambafood"
+              />
             </div>
             <div
               class="swiper-slide"
             >
-              <picture>
-                <source
-                  class="image media_lazy"
-                  data-srcset="img.jpg,img.jpg"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="Namba Food Delivery Control Dashboard."
-                  class="image media_lazy"
-                  data-src="img.jpg"
-                  data-srcset="img.jpg"
-                  data-testid="test-picture-img"
-                  height="0"
-                  width="0"
-                />
-              </picture>
+              <picture-stub
+                alt="Namba Food Delivery Control Dashboard."
+                extension="jpg"
+                file="dashboard"
+                folder="nambafood"
+              />
             </div>
           </div>
           <span

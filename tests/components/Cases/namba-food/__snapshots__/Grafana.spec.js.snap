@@ -28,23 +28,16 @@ exports[`Grafana component should render correctly 1`] = `
     <section
       class="container_middle"
     >
-      <picture>
-        <source
-          class="image box-shadow media_lazy"
-          data-srcset="img.jpg,img.jpg"
-          type="image/webp"
-        />
-         
-        <img
-          alt="Namba Food: Software Stability Monitoring with Grafana."
-          class="image box-shadow media_lazy"
-          data-src="img.jpg"
-          data-srcset="img.jpg"
-          data-testid="test-picture-img"
-          height="593"
-          width="1026"
-        />
-      </picture>
+      <picture-stub
+        alt="Namba Food: Software Stability Monitoring with Grafana."
+        extension="jpg"
+        file="grafana"
+        folder="nambafood"
+        height="593"
+        lazy="true"
+        shadow="true"
+        width="1026"
+      />
     </section>
   </section>
 </div>

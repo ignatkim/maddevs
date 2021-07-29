@@ -9,7 +9,6 @@
 
 <script>
 import Model from '@/components/DeliveryModels/Model'
-import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 import { deliveryModels } from '@/data/deliveryModels'
 import { buildHead, getMetadata } from '@/data/seo'
 
@@ -18,8 +17,6 @@ export default {
   components: {
     Model,
   },
-
-  mixins: [initLazyLoadMixin],
 
   asyncData({ params, error }) {
     const model = deliveryModels[params.uid]
@@ -35,10 +32,6 @@ export default {
 
   head() {
     return buildHead(getMetadata(this.uid))
-  },
-
-  mounted() {
-    this.$lazyLoad.init()
   },
 }
 </script>

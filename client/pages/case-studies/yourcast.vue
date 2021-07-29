@@ -29,11 +29,12 @@
     >
       <img
         slot="icon"
+        v-lazy-load
         :data-src="require(`@/assets/img/Studies/svg/sjmc-footer.svg`)"
         width="253"
         height="113"
         alt="SJMC"
-        class="case_logotype-sjmc img_lazy"
+        class="case_logotype-sjmc"
       >
       The maintenance <br class="case_mobile-break-sjmc">
       of memory: <br>
@@ -47,7 +48,6 @@
 import CaseHeader from '@/components/Cases/shared/CaseHeader'
 import Footer from '@/components/Cases/shared/CaseFooter'
 import Main from '@/components/Cases/yourcast/Main'
-import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 import { getMetadata, buildHead } from '@/data/seo'
 
 export default {
@@ -57,8 +57,6 @@ export default {
     Footer,
     Main,
   },
-
-  mixins: [initLazyLoadMixin],
 
   data() {
     return {
@@ -78,16 +76,11 @@ export default {
       image: 'https://maddevs.io/yourcast.jpg',
     })
   },
-
-  mounted() {
-    this.$lazyLoad.init()
-  },
 }
 </script>
 
 <style lang="scss">
 @import '../../assets/styles/cases/base';
-@import '../../assets/styles/cases/mixins';
 @import '../../assets/styles/cases/components';
 @import '../../assets/styles/cases/yourcast/styles';
 @import '../../assets/styles/cases/media';

@@ -105,35 +105,16 @@ exports[`KeywordGrouping component should render correctly 1`] = `
       </div>
     </div>
      
-    <div
-      class="case_quote-wrap m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
+    <textquote-stub
+      author="Oleg Katkov, Software engineer at Mad Devs"
+      class="m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
       data-aos="fade-up"
       data-aos-anchor-placement="bottom"
     >
-      <img
-        alt="blockquote"
-        class="case_mark img_lazy"
-        data-src="[object Object]"
-        height="50"
-        width="50"
-      />
-       
-      <blockquote
-        class="case_blockquote"
-      >
-        
+      
     Speed was a priority. We wanted to create a tool that could impress the user by grouping keywords instantly. By integrating the dictionaries, we achieved it. The grouping process takes Peklo Tool only a few seconds.
   
-      </blockquote>
-       
-      <p
-        class="case_quote-author m-8_top"
-      >
-        
-    Oleg Katkov, Software engineer at Mad Devs
-  
-      </p>
-    </div>
+    </textquote-stub>
   </section>
 </div>
 `;

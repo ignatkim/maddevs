@@ -17,8 +17,16 @@ const props = {
   videoName: 'video-name',
 }
 
+const data = () => ({
+  loaded: true,
+})
+
 const mocks = {
   $getMediaFromS3: img => img,
+}
+
+const directives = {
+  'lazy-load': () => {},
 }
 
 describe('CaseHeader component', () => {
@@ -28,8 +36,10 @@ describe('CaseHeader component', () => {
 
   it('should render correctly', () => {
     const { container } = render(CaseHeader, {
+      data,
       props,
       mocks,
+      directives,
     })
 
     expect(container).toMatchSnapshot()
@@ -40,8 +50,10 @@ describe('CaseHeader component', () => {
     await Object.defineProperty(global.navigator, 'userAgent', { value: 'iPhone' })
 
     await render(CaseHeader, {
+      data,
       props,
       mocks,
+      directives,
     })
 
     expect(screen.queryAllByTestId('test-case_main-video')).toHaveLength(0)

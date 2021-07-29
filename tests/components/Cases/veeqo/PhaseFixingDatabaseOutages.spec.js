@@ -3,6 +3,10 @@ import { render, screen } from '@testing-library/vue'
 
 const stubs = ['FixingDatabaseOutagesResult', 'CardTechSolution']
 
+const directives = {
+  'lazy-load': () => {},
+}
+
 describe('PhaseFixingDatabaseOutages component', () => {
   it('should render correctly', () => {
     const { container } = render(PhaseFixingDatabaseOutages, {
@@ -10,6 +14,7 @@ describe('PhaseFixingDatabaseOutages component', () => {
       mocks: {
         $getMediaFromS3: () => 'img.jpg',
       },
+      directives,
     })
 
     expect(screen.getByText('Phase 1: Fixing database outages')).not.toBeNull()

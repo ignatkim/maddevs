@@ -2,6 +2,10 @@ import { shallowMount } from '@vue/test-utils'
 import { render } from '@testing-library/vue'
 import CTABanner from '@/components/DeliveryModels/CTABanner'
 
+const mocks = {
+  $getMediaFromS3: () => 'img.png',
+}
+
 describe('CTABanner component', () => {
   let wrapper = null
   let mockShow = null
@@ -13,6 +17,7 @@ describe('CTABanner component', () => {
           render(h) { return h('div') },
         },
       },
+      mocks,
     })
     mockShow = jest.fn()
   })
@@ -32,6 +37,7 @@ describe('CTABanner component', () => {
           render(h) { return h('div') },
         },
       },
+      mocks,
     })
 
     expect(container).toMatchSnapshot()
@@ -55,6 +61,7 @@ describe('CTABanner component', () => {
           },
         },
       },
+      mocks,
     })
     wrapper.vm.show()
     expect(mockShow).toHaveBeenCalledTimes(1)

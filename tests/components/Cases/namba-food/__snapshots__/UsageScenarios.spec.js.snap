@@ -55,45 +55,23 @@ exports[`UsageScenarios component should render correctly 1`] = `
             <div
               class="card-use-case__desktop-picture card-use-case__red-card-picture"
             >
-              <picture>
-                <source
-                  class="image"
-                  srcset="img.jpg,img.jpg"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="Namba Food: Food and Grocery Delivery App for Iphone."
-                  class="image"
-                  data-testid="test-picture-img"
-                  height="0"
-                  src="img.jpg"
-                  srcset="img.jpg"
-                  width="0"
-                />
-              </picture>
+              <picture-stub
+                alt="Namba Food: Food and Grocery Delivery App for Iphone."
+                extension="png"
+                file="apple-iphone-xr-silver"
+                folder="nambafood"
+              />
             </div>
              
             <div
               class="card-use-case__mobile-picture card-use-case__red-card-mobile-picture"
             >
-              <picture>
-                <source
-                  class="image"
-                  srcset="img.jpg,img.jpg"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="Namba Food: Food and Grocery Delivery App for Iphone."
-                  class="image"
-                  data-testid="test-picture-img"
-                  height="0"
-                  src="img.jpg"
-                  srcset="img.jpg"
-                  width="0"
-                />
-              </picture>
+              <picture-stub
+                alt="Namba Food: Food and Grocery Delivery App for Iphone."
+                extension="png"
+                file="apple-iphone-xr-silver-mobile"
+                folder="nambafood"
+              />
             </div>
           </div>
         </div>
@@ -128,45 +106,23 @@ exports[`UsageScenarios component should render correctly 1`] = `
             <div
               class="card-use-case__desktop-picture card-use-case__black-card-picture"
             >
-              <picture>
-                <source
-                  class="image"
-                  srcset="img.jpg,img.jpg"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="Namba Food: Courier App for Android."
-                  class="image"
-                  data-testid="test-picture-img"
-                  height="0"
-                  src="img.jpg"
-                  srcset="img.jpg"
-                  width="0"
-                />
-              </picture>
+              <picture-stub
+                alt="Namba Food: Courier App for Android."
+                extension="png"
+                file="samsung-galaxy-s20-cosmic-gray"
+                folder="nambafood"
+              />
             </div>
              
             <div
               class="card-use-case__mobile-picture card-use-case__black-card-mobile-picture"
             >
-              <picture>
-                <source
-                  class="image"
-                  srcset="img.jpg,img.jpg"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="Namba Food: Courier App for Android."
-                  class="image"
-                  data-testid="test-picture-img"
-                  height="0"
-                  src="img.jpg"
-                  srcset="img.jpg"
-                  width="0"
-                />
-              </picture>
+              <picture-stub
+                alt="Namba Food: Courier App for Android."
+                extension="png"
+                file="samsung-galaxy-s20-cosmic-gray-mobile"
+                folder="nambafood"
+              />
             </div>
           </div>
         </div>
@@ -199,45 +155,23 @@ exports[`UsageScenarios component should render correctly 1`] = `
             <div
               class="card-use-case__desktop-picture card-use-case__turquoise-card-picture"
             >
-              <picture>
-                <source
-                  class="image"
-                  srcset="img.jpg,img.jpg"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="Namba Food: Admin Panel Which Help to Control and Track Food and Grocery Delivery."
-                  class="image"
-                  data-testid="test-picture-img"
-                  height="0"
-                  src="img.jpg"
-                  srcset="img.jpg"
-                  width="0"
-                />
-              </picture>
+              <picture-stub
+                alt="Namba Food: Admin Panel Which Help to Control and Track Food and Grocery Delivery."
+                extension="png"
+                file="system-for-call-center"
+                folder="nambafood"
+              />
             </div>
              
             <div
               class="card-use-case__mobile-picture card-use-case__turquoise-card-mobile-picture"
             >
-              <picture>
-                <source
-                  class="image"
-                  srcset="img.jpg,img.jpg"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="Namba Food: Admin Panel Which Help to Control and Track Food and Grocery Delivery."
-                  class="image"
-                  data-testid="test-picture-img"
-                  height="0"
-                  src="img.jpg"
-                  srcset="img.jpg"
-                  width="0"
-                />
-              </picture>
+              <picture-stub
+                alt="Namba Food: Admin Panel Which Help to Control and Track Food and Grocery Delivery."
+                extension="png"
+                file="system-for-call-center-mobile"
+                folder="nambafood"
+              />
             </div>
           </div>
         </div>
@@ -272,45 +206,23 @@ exports[`UsageScenarios component should render correctly 1`] = `
             <div
               class="card-use-case__desktop-picture card-use-case__white-card-picture"
             >
-              <picture>
-                <source
-                  class="image"
-                  srcset="img.jpg,img.jpg"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="Namba Food: Admin Panel Which Help to Manage Food and Grocery Delivery."
-                  class="image"
-                  data-testid="test-picture-img"
-                  height="0"
-                  src="img.jpg"
-                  srcset="img.jpg"
-                  width="0"
-                />
-              </picture>
+              <picture-stub
+                alt="Namba Food: Admin Panel Which Help to Manage Food and Grocery Delivery."
+                extension="png"
+                file="sjms-analytics-mini"
+                folder="nambafood"
+              />
             </div>
              
             <div
               class="card-use-case__mobile-picture card-use-case__white-card-mobile-picture"
             >
-              <picture>
-                <source
-                  class="image"
-                  srcset="img.jpg,img.jpg"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="Namba Food: Admin Panel Which Help to Manage Food and Grocery Delivery."
-                  class="image"
-                  data-testid="test-picture-img"
-                  height="0"
-                  src="img.jpg"
-                  srcset="img.jpg"
-                  width="0"
-                />
-              </picture>
+              <picture-stub
+                alt="Namba Food: Admin Panel Which Help to Manage Food and Grocery Delivery."
+                extension="png"
+                file="sjms-analytics-mini-mobile"
+                folder="nambafood"
+              />
             </div>
           </div>
         </div>

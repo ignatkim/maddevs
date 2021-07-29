@@ -8,17 +8,20 @@ const props = {
     url: 'url',
     alt: 'alt',
     dimensions: {
-      width: '200',
-      height: '300',
+      width: 200,
+      height: 300,
     },
   },
   tags: ['Project Management', 'Featured post'],
   date: 'Mar 23, 2021',
 }
 
+const stubs = ['NuxtLink']
+
 describe('header Blog', () => {
   it('is a Vue instance', () => {
     const { container } = render(Blog, {
+      stubs,
       props,
       mocks: {
         $prismic: {

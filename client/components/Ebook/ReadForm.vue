@@ -1,9 +1,10 @@
 <template>
   <div class="read-form">
     <img
+      v-lazy-load
       width="110"
       height="155"
-      src="@/assets/img/Ebook/book.svg"
+      data-src="@/assets/img/Ebook/book.svg"
       alt="Pricing strategies"
     >
     <h2>Get your copy of  “Custom Software Development: Pricing Strategies”</h2>
@@ -121,8 +122,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
-
 .read-form {
   width: 100%;
   max-width: 498px;

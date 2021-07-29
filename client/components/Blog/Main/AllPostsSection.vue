@@ -12,7 +12,7 @@
           <ul class="posts-filter__list">
             <li
               v-for="(category, i) in categories"
-              :key="i"
+              :key="`posts-filter__item-${i}`"
               class="posts-filter__item-wrapper"
             >
               <div class="posts-filter__item">
@@ -36,8 +36,8 @@
         class="filtered-posts__list"
       >
         <section
-          v-for="(post) in filteredPostsToShow"
-          :key="post.id"
+          v-for="(post, i) in filteredPostsToShow"
+          :key="`filtered-posts__item-${i}`"
           :post="post"
           class="filtered-posts__list-item"
           data-testid="test-single-post"
@@ -103,9 +103,7 @@ export default {
 
     categories() {
       const { categories = [] } = this.homePageContent
-      if (Array.isArray(categories) && categories.length) {
-        return categories.filter(category => category.title !== 'Job Opening')
-      }
+      if (Array.isArray(categories) && categories.length) return categories
       return []
     },
   },
@@ -141,8 +139,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/_vars';
-
 .posts-filter {
   min-width: 150px;
   margin-bottom: 50px;

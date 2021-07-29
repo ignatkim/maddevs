@@ -2,8 +2,8 @@
   <div class="hr-contact">
     <div class="hr-contact__image">
       <img
+        v-lazy-load
         :data-src="$getMediaFromS3(`/images/Careers/jpg/dianaHR.jpeg`)"
-        class="img_lazy"
         alt="Diana"
       >
     </div>
@@ -20,10 +20,10 @@
           target="_blank"
         >
           <img
+            v-lazy-load
             :data-src="$getMediaFromS3(`/images/Careers/svg/telegram.svg`)"
             width="20"
             height="17"
-            class="img_lazy"
           >
           <span>@DianaHRDigital</span>
         </a>
@@ -40,8 +40,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars.scss';
-
 .hr-contact {
   display: flex;
   color: $text-color--black-oil;

@@ -103,7 +103,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Ansible"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -118,7 +117,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Terraform"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -133,7 +131,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="CloudFormation"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -148,7 +145,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Jenkins"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -163,7 +159,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Bamboo"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -178,7 +173,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="GitlabCI"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -193,7 +187,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="TravisCI"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -208,7 +201,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="ELK"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -223,7 +215,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="CircleCI"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -238,7 +229,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Sentry"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -253,7 +243,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="CloudWatch"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -268,7 +257,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Prometheus"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -283,7 +271,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="AWS"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -298,7 +285,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="GCP"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -313,7 +299,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Digital Ocean"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -328,7 +313,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Azure"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -343,7 +327,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="CloudNative"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -358,7 +341,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Heroku"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -373,7 +355,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Netlify"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -388,7 +369,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="CloudFlare"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -403,7 +383,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Kotlin"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -418,7 +397,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Java"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -433,7 +411,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Objective-C"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -448,7 +425,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Swift"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -463,7 +439,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="IOS"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -478,7 +453,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Android"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -493,7 +467,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Jira"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -508,7 +481,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Slack"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -523,7 +495,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Meet"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -538,7 +509,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Zoom"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -553,7 +523,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Miro"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -568,7 +537,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Trello"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -583,7 +551,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Loom"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -598,7 +565,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Jira Assistant"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -613,7 +579,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Service Desk"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -628,7 +593,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Basecamp"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -643,7 +607,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Notion"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -658,7 +621,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Zapier"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -673,7 +635,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Python"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -688,7 +649,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Go"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -703,7 +663,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Node.js"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -718,7 +677,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="JavaScript"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -733,7 +691,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="TypeScript"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -748,7 +705,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="PHP"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -763,7 +719,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Ruby"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -778,7 +733,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="C"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -793,7 +747,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="C++"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -808,7 +761,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Figma"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -823,7 +775,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Adobe Suite"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -838,7 +789,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Sketch"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -853,7 +803,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="InVision"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -868,7 +817,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Zeplin"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -883,7 +831,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Balsamic"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -898,7 +845,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Principle"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -913,7 +859,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="PostCSS"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -928,7 +873,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="TypeScript"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -943,7 +887,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Angular"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -958,7 +901,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Webpack"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -973,7 +915,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Next.js"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -988,7 +929,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Nuxt.js"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1003,7 +943,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="JavaScript"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1018,7 +957,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="React"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1033,7 +971,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Babel"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1048,7 +985,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Vue"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1063,7 +999,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="SASS"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1078,7 +1013,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Jasmine"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1093,7 +1027,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Selenoid"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1108,7 +1041,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Appium"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1123,7 +1055,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Cucumber"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1138,7 +1069,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="PyTest"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1153,7 +1083,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Selenium"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"
@@ -1168,7 +1097,6 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
           >
             <img
               alt="Selenium Grid"
-              class="img_lazy"
               data-src="[object Object]"
               height="26"
               width="26"

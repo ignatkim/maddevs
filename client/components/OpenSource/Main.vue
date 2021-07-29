@@ -30,8 +30,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .open-source {
   color: $text-color--white-primary;
   &--bg-white {

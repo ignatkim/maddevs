@@ -22,14 +22,13 @@
 import Lottie from 'vue-lottie/src/lottie.vue'
 import animationData from '@/assets/lottie/error/404.json'
 import playLottieMixin from '@/mixins/playLottieMixin'
-import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
 export default {
   components: {
     Lottie,
   },
 
-  mixins: [initLazyLoadMixin, playLottieMixin('404-code', {
+  mixins: [playLottieMixin('404-code', {
     animationData,
     autoplay: true,
   })],
@@ -39,7 +38,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/styles/_vars';
 .error-page {
   display: flex;
   flex-direction: column;

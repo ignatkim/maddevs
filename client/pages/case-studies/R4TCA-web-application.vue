@@ -26,11 +26,12 @@
     >
       <img
         slot="icon"
+        v-lazy-load
         :data-src="require(`@/assets/img/Studies/svg/veeqo.svg`)"
         width="195"
         height="72"
         alt="Optimization for Veeqo"
-        class="case_logotype-veeqo img_lazy"
+        class="case_logotype-veeqo"
       >
       Optimization for Veeqo
     </Footer>
@@ -41,7 +42,6 @@
 import CaseHeader from '@/components/Cases/shared/CaseHeader'
 import Footer from '@/components/Cases/shared/CaseFooter'
 import Main from '@/components/Cases/itc/Main'
-import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 import { getMetadata, buildHead } from '@/data/seo'
 
 export default {
@@ -51,8 +51,6 @@ export default {
     Footer,
     Main,
   },
-
-  mixins: [initLazyLoadMixin],
 
   data() {
     return {
@@ -72,16 +70,11 @@ export default {
       image: 'https://maddevs.io/itc-case.jpg',
     })
   },
-
-  mounted() {
-    this.$lazyLoad.init()
-  },
 }
 </script>
 
 <style lang="scss">
 @import '@/assets/styles/cases/_base';
-@import '@/assets/styles/cases/_mixins';
 @import '@/assets/styles/cases/_components';
 @import '@/assets/styles/cases/_media';
 

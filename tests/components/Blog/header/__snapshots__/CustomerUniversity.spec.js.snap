@@ -6,11 +6,11 @@ exports[`customer university header component should render correctly with defau
     coverimageheight="452"
     coverimageurl="https://images.prismic.io/superpupertest/82f90d05-8c22-49c1-bf1e-8721a0e3eda6_Constructing+a+Map+in+the+Mercator+Projection+for+Android.png?auto=compress,format"
     coverimagewidth="780"
-    subtitle="[object Object]"
-    title="[object Object]"
+    subtitle="subtitle"
+    title="title"
   >
     <div
-      class="row cluster-navigation"
+      class="cluster-navigation"
     >
       <div
         class="cluster-navigation__name"
@@ -21,7 +21,7 @@ exports[`customer university header component should render correctly with defau
       </div>
        
       <div
-        class="col-12 col-lg-5 mt-0 cluster-navigation__select-wrapper"
+        class="cluster-navigation__select-wrapper"
       >
         <div
           class="v-select cluster-navigation__select vs--single vs--unsearchable"
@@ -117,7 +117,7 @@ exports[`customer university header component should render correctly with defau
       </div>
        
       <div
-        class="col-12 col-lg-7 mt-0 cluster-navigation__buttons-wrapper"
+        class="cluster-navigation__buttons-wrapper"
       >
         <div
           class="cluster-navigation__buttons"

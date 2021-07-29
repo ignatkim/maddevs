@@ -12,11 +12,11 @@
       <div class="testimonial-block__author">
         <div class="testimonial-block__author-image">
           <img
+            v-lazy-load
             :data-src="require(`@/assets/img/DeliveryModels/png/customers/${author.image}.png`)"
             width="42"
             height="42"
             alt="Photo"
-            class="img_lazy"
           >
         </div>
         <div>
@@ -53,8 +53,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .testimonial-block {
   display: flex;
   &--featured {

@@ -2,11 +2,12 @@
   <li class="case_technologies-item">
     <img
       v-if="name"
+      v-lazy-load
       :data-src="require(`@/assets/img/Home/svg/technologies/${name}.svg`)"
       :alt="imgAlt || alt"
       width="40"
       height="40"
-      class="img_lazy case_technologies-item__tech-icon"
+      class="case_technologies-item__tech-icon"
       :class="`case_technologies-item__${name} ${name}`"
     >
     <p
@@ -41,8 +42,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '@/assets/styles/cases/_mixins';
-
 .case_technologies-item {
   display: flex;
   flex-direction: column;
@@ -56,7 +55,7 @@ export default {
   }
 
   &__tech-name {
-    @include default_text($text-color--tech-label-black, 14px, 171%, -0.035em, normal);
+    @include default-text($text-color--tech-label-black, 14px, 171%, -0.035em, normal);
   }
 
   &__docker,
@@ -114,7 +113,7 @@ export default {
     }
 
     &__tech-name {
-      @include default_text($text-color--tech-label-black, 8px, 163%, -0.02em, normal);
+      @include default-text($text-color--tech-label-black, 8px, 163%, -0.02em, normal);
       width: 40px;
       display: block;
       overflow: hidden;

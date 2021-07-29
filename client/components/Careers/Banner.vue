@@ -14,14 +14,14 @@
         <source
           :srcset="[$getMediaFromS3('/images/Careers/webp/office.webp') + ' ', $getMediaFromS3('/images/Careers/webp/office@2x.webp 2x')]"
           type="image/webp"
-          class="banner_img media_lazy"
+          class="banner_img"
         >
         <img
           :src="$getMediaFromS3('/images/Careers/png/office.png')"
           :srcset="$getMediaFromS3('/images/Careers/png/office@2x.png')"
           width="1239"
           height="606"
-          class="banner_img media_lazy"
+          class="banner_img"
           alt="Office"
         >
       </picture>
@@ -41,8 +41,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .banner {
   margin-bottom: 210px;
 

@@ -9,9 +9,19 @@ const props = {
   isIphone: true,
 }
 
+const data = () => ({
+  loaded: true,
+})
+
+const directives = {
+  'lazy-load': () => {},
+}
+
 describe('Applications component', () => {
   it('should render correctly', () => {
     const { container } = render(Applications, {
+      directives,
+      data,
       mocks,
       props,
     })
@@ -23,8 +33,10 @@ describe('Applications component', () => {
     render(Applications, {
       mocks,
       props,
+      directives,
+      data,
     })
 
-    expect(screen.getByTestId('test-case_phone-ios-image').src).toBe(global.location.href + mocks.$getMediaFromS3())
+    expect(screen.getByTestId('test-case_phone-ios-image').getAttribute('data-src')).toBe(mocks.$getMediaFromS3())
   })
 })

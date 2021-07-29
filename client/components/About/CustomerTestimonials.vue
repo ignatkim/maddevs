@@ -35,9 +35,10 @@
             <div class="customer-testimonials__customer-info">
               <div class="customer-testimonials__profile">
                 <img
+                  v-lazy-load
                   :data-src="require(`@/assets/img/Home/png/customers/${testimonial.customerImageName}.png`)"
                   :alt="testimonial.alt"
-                  class="customer-testimonials__customer-image img_lazy"
+                  class="customer-testimonials__customer-image"
                   width="42"
                   height="42"
                 >
@@ -52,12 +53,13 @@
                   rel="nofollow"
                 >
                   <img
+                    v-lazy-load
                     :data-src="require(`@/assets/img/Home/svg/testimonials/${testimonial.customerProject}.svg`)"
                     :class="`customer-testimonials__${testimonial.customerProject}`"
                     :alt="testimonial.alt"
                     :width="testimonial.logoWidth"
                     height="31"
-                    class="img_lazy single-project__logo"
+                    class="single-project__logo"
                   >
                 </a>
               </div>
@@ -102,13 +104,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
-
 .customer-testimonials {
   background-color: #f5f7f9;
 
   &__title {
-    @include h2_title;
+    @include h2-title;
   }
 
   &__content-wrap {

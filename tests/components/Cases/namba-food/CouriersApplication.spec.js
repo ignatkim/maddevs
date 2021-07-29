@@ -5,10 +5,13 @@ const mocks = {
   $getMediaFromS3: () => 'img.jpg',
 }
 
+const stubs = ['Picture']
+
 describe('CouriersApplication component', () => {
   it('should render correctly', () => {
     const { container } = render(CouriersApplication, {
       mocks,
+      stubs,
     })
 
     expect(container).toMatchSnapshot()
@@ -17,6 +20,7 @@ describe('CouriersApplication component', () => {
   it('should render with text', () => {
     render(CouriersApplication, {
       mocks,
+      stubs,
     })
 
     expect(screen.getByText(/Android application for couriers/i).className).toBeTruthy()

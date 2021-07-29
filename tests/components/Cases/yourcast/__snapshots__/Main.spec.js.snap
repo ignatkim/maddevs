@@ -37,28 +37,14 @@ exports[`Main component should render correctly 1`] = `
   
       </p>
        
-      <div
-        class="case_quote-wrap m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
+      <textquote-stub
+        class="m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
       >
-        <img
-          alt="blockquote"
-          class="case_mark img_lazy"
-          data-src="[object Object]"
-          height="50"
-          width="50"
-        />
-         
-        <blockquote
-          class="case_blockquote"
-        >
-          
+        
     We respect the customer’s request to keep this project under the NDA and will not disclose the project name while
     sharing its details.
   
-        </blockquote>
-         
-        <!---->
-      </div>
+      </textquote-stub>
     </section>
      
     <section
@@ -222,47 +208,28 @@ exports[`Main component should render correctly 1`] = `
             <div
               class="card-content_gadget-picture-wrapp card-content_gadget-picture-wrapp-macbook-pro-card"
             >
-              <picture
+              <picture-stub
+                alt="OTT-like Online Video Streaming Platform on MacBook Pro Laptop."
                 class="card-content_picture"
-              >
-                <source
-                  class="image media_lazy"
-                  data-srcset="img.jpg,img.jpg"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="OTT-like Online Video Streaming Platform on MacBook Pro Laptop."
-                  class="image media_lazy"
-                  data-src="img.jpg"
-                  data-srcset="img.jpg"
-                  data-testid="test-picture-img"
-                  height="449"
-                  width="735"
-                />
-              </picture>
+                extension="png"
+                file="macbook-pro-card"
+                folder="yourcast"
+                height="449"
+                width="735"
+              />
             </div>
              
             <div
               class="card-content_gadget-picture-wrapp-mobile card-content_gadget-picture-wrapp-mobile-macbook-pro"
             >
-              <picture>
-                <source
-                  class="image media_lazy"
-                  data-srcset="img.jpg,img.jpg"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="OTT-like Online Video Streaming Platform on MacBook Pro Laptop."
-                  class="image media_lazy"
-                  data-src="img.jpg"
-                  data-srcset="img.jpg"
-                  data-testid="test-picture-img"
-                  height="449"
-                  width="735"
-                />
-              </picture>
+              <picture-stub
+                alt="OTT-like Online Video Streaming Platform on MacBook Pro Laptop."
+                extension="png"
+                file="macbook-pro"
+                folder="yourcast"
+                height="449"
+                width="735"
+              />
             </div>
           </div>
         </div>
@@ -283,47 +250,28 @@ exports[`Main component should render correctly 1`] = `
             <div
               class="card-content_gadget-picture-wrapp card-content_gadget-picture-wrapp-iphonex-card"
             >
-              <picture
+              <picture-stub
+                alt="OTT-like Online Video Streaming Platform on IPhone X Smartphone."
                 class="card-content_picture"
-              >
-                <source
-                  class="image media_lazy"
-                  data-srcset="img.jpg,img.jpg"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="OTT-like Online Video Streaming Platform on IPhone X Smartphone."
-                  class="image media_lazy"
-                  data-src="img.jpg"
-                  data-srcset="img.jpg"
-                  data-testid="test-picture-img"
-                  height="627"
-                  width="312"
-                />
-              </picture>
+                extension="png"
+                file="iphonex-card"
+                folder="yourcast"
+                height="627"
+                width="312"
+              />
             </div>
              
             <div
               class="card-content_gadget-picture-wrapp-mobile card-content_gadget-picture-wrapp-mobile-iphonex"
             >
-              <picture>
-                <source
-                  class="image media_lazy"
-                  data-srcset="img.jpg,img.jpg"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="OTT-like Online Video Streaming Platform on IPhone X Smartphone."
-                  class="image media_lazy"
-                  data-src="img.jpg"
-                  data-srcset="img.jpg"
-                  data-testid="test-picture-img"
-                  height="627"
-                  width="312"
-                />
-              </picture>
+              <picture-stub
+                alt="OTT-like Online Video Streaming Platform on IPhone X Smartphone."
+                extension="png"
+                file="iphonex"
+                folder="yourcast"
+                height="627"
+                width="312"
+              />
             </div>
           </div>
         </div>
@@ -344,47 +292,28 @@ exports[`Main component should render correctly 1`] = `
             <div
               class="card-content_gadget-picture-wrapp card-content_gadget-picture-wrapp-ipad-pro-card"
             >
-              <picture
+              <picture-stub
+                alt="OTT-like Online Video Streaming Platform on IPad Tablet."
                 class="card-content_picture"
-              >
-                <source
-                  class="image media_lazy"
-                  data-srcset="img.jpg,img.jpg"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="OTT-like Online Video Streaming Platform on IPad Tablet."
-                  class="image media_lazy"
-                  data-src="img.jpg"
-                  data-srcset="img.jpg"
-                  data-testid="test-picture-img"
-                  height="374"
-                  width="518"
-                />
-              </picture>
+                extension="png"
+                file="ipad-pro-card"
+                folder="yourcast"
+                height="374"
+                width="518"
+              />
             </div>
              
             <div
               class="card-content_gadget-picture-wrapp-mobile card-content_gadget-picture-wrapp-mobile-ipad-pro"
             >
-              <picture>
-                <source
-                  class="image media_lazy"
-                  data-srcset="img.jpg,img.jpg"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="OTT-like Online Video Streaming Platform on IPad Tablet."
-                  class="image media_lazy"
-                  data-src="img.jpg"
-                  data-srcset="img.jpg"
-                  data-testid="test-picture-img"
-                  height="374"
-                  width="518"
-                />
-              </picture>
+              <picture-stub
+                alt="OTT-like Online Video Streaming Platform on IPad Tablet."
+                extension="png"
+                file="ipad-pro"
+                folder="yourcast"
+                height="374"
+                width="518"
+              />
             </div>
           </div>
         </div>
@@ -405,158 +334,38 @@ exports[`Main component should render correctly 1`] = `
       <ul
         class="case_list-technologies m-96_bottom media-m-48_bottom"
       >
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Golang"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__go go"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Golang
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Django"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__django django"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Django
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="PostgreSQL"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__postgresql postgresql"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    PostgreSQL
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Nimble Streamer"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__nimble nimble"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Nimble Streamer
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Plex Media Server"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__plex plex"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Plex Media Server
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="jQuery"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__jquery jquery"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    jQuery
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Video.js"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__video-js video-js"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Video.js
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <img
-            alt="Nginx"
-            class="img_lazy case_technologies-item__tech-icon case_technologies-item__nginx-txt nginx-txt"
-            data-src="[object Object]"
-            height="40"
-            width="40"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Nginx
-  
-          </p>
-        </li>
+        <listtechnologiesitem-stub
+          alt="Golang"
+          name="go"
+        />
+        <listtechnologiesitem-stub
+          alt="Django"
+          name="django"
+        />
+        <listtechnologiesitem-stub
+          alt="PostgreSQL"
+          name="postgresql"
+        />
+        <listtechnologiesitem-stub
+          alt="Nimble Streamer"
+          name="nimble"
+        />
+        <listtechnologiesitem-stub
+          alt="Plex Media Server"
+          name="plex"
+        />
+        <listtechnologiesitem-stub
+          alt="jQuery"
+          name="jquery"
+        />
+        <listtechnologiesitem-stub
+          alt="Video.js"
+          name="video-js"
+        />
+        <listtechnologiesitem-stub
+          alt="Nginx"
+          name="nginx-txt"
+        />
       </ul>
     </section>
      
@@ -2115,27 +1924,13 @@ exports[`Main component should render correctly 1`] = `
       <div
         class="container_regular"
       >
-        <div
-          class="case_quote-wrap m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
+        <textquote-stub
+          class="m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
         >
-          <img
-            alt="blockquote"
-            class="case_mark img_lazy"
-            data-src="[object Object]"
-            height="50"
-            width="50"
-          />
-           
-          <blockquote
-            class="case_blockquote"
-          >
-            
+          
       Mad Devs integrated the platform with Plex Media Server, which provides free movie descriptions via an API.
     
-          </blockquote>
-           
-          <!---->
-        </div>
+        </textquote-stub>
          
         <h4
           class="case_title_h3 m-12_bottom"
@@ -2158,569 +1953,7 @@ exports[`Main component should render correctly 1`] = `
       </div>
     </section>
      
-    <section
-      class="live-streaming-technology"
-    >
-      <div
-        class="container_regular"
-      >
-        <h3
-          class="case_title_h2 m-24_bottom media-m-20_bottom"
-        >
-          
-      Phase 2: Live streaming technology
-    
-        </h3>
-         
-        <p
-          class="case_paragraph m-48_bottom media-m-20_bottom"
-        >
-          
-      To provide viewers with access to their favourite TV channels, the platform needed to emulate the TV experience.
-      To add live-streaming technology, Mad Devs leveraged its existing open-source project, Yourcast.tv.
-    
-        </p>
-      </div>
-       
-      <div
-        class="container_full background-color-black-primary case_video-wrapp"
-      >
-        <video
-          class="case_yourcast-tv"
-          id="yourcast-tv"
-          loop="loop"
-          muted="muted"
-        >
-          <source
-            src="img.jpg"
-            type="video/mp4"
-          />
-          
-      Your browser does not support the video tag.
-    
-        </video>
-      </div>
-       
-      <div
-        class="container_regular case_posters-wrapp m-60_bottom media-m-48_bottom"
-      >
-        <ul
-          class="case_posters"
-        >
-          <p
-            class="case_posters-title"
-          >
-            
-        Posters:
-      
-          </p>
-           
-          <li
-            class="case_poster"
-          >
-            <a
-              class="case_poster-link"
-              href="https://commons.wikimedia.org/wiki/File:African_Apocalypse_Poster.jpg"
-              target="_blank"
-            >
-              
-          African Apocalypse,
-        
-            </a>
-          </li>
-          <li
-            class="case_poster"
-          >
-            <a
-              class="case_poster-link"
-              href="https://commons.wikimedia.org/wiki/File:Gasmann_-_Plakat_.jpg"
-              target="_blank"
-            >
-              
-          Gasman,
-        
-            </a>
-          </li>
-          <li
-            class="case_poster"
-          >
-            <a
-              class="case_poster-link"
-              href="https://commons.wikimedia.org/wiki/File:Help2021_poster.jpg"
-              target="_blank"
-            >
-              
-          Help,
-        
-            </a>
-          </li>
-          <li
-            class="case_poster"
-          >
-            <a
-              class="case_poster-link"
-              href="https://commons.wikimedia.org/wiki/File:GENESIS_2.0.jpg"
-              target="_blank"
-            >
-              
-          Genesis 2.0,
-        
-            </a>
-          </li>
-          <li
-            class="case_poster"
-          >
-            <a
-              class="case_poster-link"
-              href="https://commons.wikimedia.org/wiki/File:Alberto_and_the_Concrete_Jungle_retro_travel_poster.jpg"
-              target="_blank"
-            >
-              
-          Alberto and the Concrete Jungle,
-        
-            </a>
-          </li>
-          <li
-            class="case_poster"
-          >
-            <a
-              class="case_poster-link"
-              href="https://commons.wikimedia.org/wiki/File:Black_Ruby_Poster.jpg"
-              target="_blank"
-            >
-              
-          Black Ruby,
-        
-            </a>
-          </li>
-          <li
-            class="case_poster"
-          >
-            <a
-              class="case_poster-link"
-              href="hhttps://commons.wikimedia.org/wiki/File:Creditors_Film_Poster.png"
-              target="_blank"
-            >
-              
-          Creditors Film,
-        
-            </a>
-          </li>
-          <li
-            class="case_poster"
-          >
-            <a
-              class="case_poster-link"
-              href="https://commons.wikimedia.org/wiki/File:FINAL_LEGIONARIOsmall.jpg"
-              target="_blank"
-            >
-              
-          FINAL LEGIONARIO
-        
-            </a>
-          </li>
-        </ul>
-      </div>
-       
-      <div
-        class="container_regular"
-      >
-        <h4
-          class="case_title_h3"
-        >
-          
-      What is Yourcast.tv?
-    
-        </h4>
-         
-        <div
-          class="case_quote-wrap m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom"
-        >
-          <blockquote
-            class="case_blockquote-box m-auto"
-          >
-            
-      Yourcast.tv by Mad Devs is used to create TV-like streams using YouTube video content. All you need is to create a
-      list of YouTube videos that you want to stream. The streaming starts a few seconds after you save your list of
-      videos.
-      
-            <span
-              class="case_blockquote-box_text-modificator"
-            >
-               Read more about Yourcast.TV. 
-            </span>
-          </blockquote>
-           
-          <!---->
-        </div>
-         
-        <p
-          class="case_paragraph m-24_bottom media-m-12_bottom"
-        >
-          
-      The customer purchased access to several popular TV channels streamed online, and Mad Devs added additional code
-      to start re-streaming the channels using Yourcast.TV. As a result, the platform’s viewers received a selection of
-      TV channel streams on their devices. HBO, Showtime and other TV channels were seamlessly added to the list of
-      available options.
-    
-        </p>
-         
-        <p
-          class="case_paragraph m-48_bottom"
-        >
-          
-      Technically, Django was used for storing stream entries for the Live TV service. The admin created the entries
-      that the platform’s Live TV service then pulled down from Django.
-    
-        </p>
-      </div>
-       
-      <div
-        class="container_full background-color-silver m-96_bottom media-m-48_bottom"
-      >
-        <div
-          class="container_regular"
-        >
-          <div
-            class="case_lottie"
-            id="streaming-technology"
-            style="width: 100%; height: 100%; overflow: hidden; margin: 0px auto;"
-          >
-            <svg
-              height="448"
-              preserveAspectRatio="xMidYMid meet"
-              style="width: 100%; height: 100%; transform: translate3d(0,0,0);"
-              viewBox="0 0 519 448"
-              width="519"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <defs>
-                <clippath
-                  id="__lottie_element_147"
-                >
-                  <rect
-                    height="448"
-                    width="519"
-                    x="0"
-                    y="0"
-                  />
-                </clippath>
-                <clippath
-                  id="__lottie_element_182"
-                >
-                  <path
-                    d="M0,0 L519,0 L519,448 L0,448z"
-                  />
-                </clippath>
-                <clippath
-                  id="__lottie_element_225"
-                >
-                  <path
-                    d="M0,0 L519,0 L519,448 L0,448z"
-                  />
-                </clippath>
-              </defs>
-              <g
-                clip-path="url(#__lottie_element_147)"
-              >
-                <g
-                  opacity="1"
-                  style="display: block;"
-                  transform="matrix(1,0,0,1,-0.75,-0.75)"
-                >
-                  <g
-                    opacity="1"
-                    transform="matrix(1,0,0,1,113.75,62.25)"
-                  >
-                    <path
-                      d="M0 0"
-                      fill-opacity="0"
-                      stroke="rgb(115,48,197)"
-                      stroke-linecap="butt"
-                      stroke-linejoin="miter"
-                      stroke-miterlimit="4"
-                      stroke-opacity="1"
-                      stroke-width="1.5"
-                    />
-                  </g>
-                </g>
-                <g
-                  clip-path="url(#__lottie_element_225)"
-                  style="display: none;"
-                >
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path />
-                    </g>
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path />
-                  </g>
-                </g>
-                <g
-                  opacity="1"
-                  style="display: block;"
-                  transform="matrix(1,0,0,1,292.25,-0.75)"
-                >
-                  <g
-                    opacity="1"
-                    transform="matrix(1,0,0,1,113.75,62.25)"
-                  >
-                    <path
-                      d="M0 0"
-                      fill-opacity="0"
-                      stroke="rgb(115,48,197)"
-                      stroke-linecap="butt"
-                      stroke-linejoin="miter"
-                      stroke-miterlimit="4"
-                      stroke-opacity="1"
-                      stroke-width="1.5"
-                    />
-                  </g>
-                </g>
-                <g
-                  clip-path="url(#__lottie_element_182)"
-                  style="display: none;"
-                >
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path />
-                    </g>
-                  </g>
-                  <g
-                    style="display: none;"
-                  >
-                    <g>
-                      <path />
-                    </g>
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="butt"
-                      stroke-linejoin="miter"
-                      stroke-miterlimit="4"
-                    />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="butt"
-                      stroke-linejoin="miter"
-                      stroke-miterlimit="4"
-                    />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="butt"
-                      stroke-linejoin="miter"
-                      stroke-miterlimit="4"
-                    />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="butt"
-                      stroke-linejoin="miter"
-                      stroke-miterlimit="4"
-                    />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="butt"
-                      stroke-linejoin="miter"
-                      stroke-miterlimit="4"
-                    />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path />
-                  </g>
-                </g>
-              </g>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </section>
+    <phaselivestreamingtechnology-stub />
      
     <section
       class="case_redesign-and-optimisations"
@@ -2779,7 +2012,7 @@ exports[`Main component should render correctly 1`] = `
             >
               <defs>
                 <clippath
-                  id="__lottie_element_250"
+                  id="__lottie_element_147"
                 >
                   <rect
                     height="570"
@@ -2789,7 +2022,7 @@ exports[`Main component should render correctly 1`] = `
                   />
                 </clippath>
                 <clippath
-                  id="__lottie_element_252"
+                  id="__lottie_element_149"
                 >
                   <path
                     d="M0,0 L463,0 L463,570 L0,570z"
@@ -2797,10 +2030,10 @@ exports[`Main component should render correctly 1`] = `
                 </clippath>
               </defs>
               <g
-                clip-path="url(#__lottie_element_250)"
+                clip-path="url(#__lottie_element_147)"
               >
                 <g
-                  clip-path="url(#__lottie_element_252)"
+                  clip-path="url(#__lottie_element_149)"
                   opacity="1"
                   style="display: block;"
                   transform="matrix(1,0,0,1,0,0)"
@@ -3238,7 +2471,7 @@ exports[`Main component should render correctly 1`] = `
             >
               <defs>
                 <clippath
-                  id="__lottie_element_334"
+                  id="__lottie_element_231"
                 >
                   <rect
                     height="448"
@@ -3248,7 +2481,7 @@ exports[`Main component should render correctly 1`] = `
                   />
                 </clippath>
                 <clippath
-                  id="__lottie_element_336"
+                  id="__lottie_element_233"
                 >
                   <path
                     d="M0,0 L462,0 L462,448 L0,448z"
@@ -3256,10 +2489,10 @@ exports[`Main component should render correctly 1`] = `
                 </clippath>
               </defs>
               <g
-                clip-path="url(#__lottie_element_334)"
+                clip-path="url(#__lottie_element_231)"
               >
                 <g
-                  clip-path="url(#__lottie_element_336)"
+                  clip-path="url(#__lottie_element_233)"
                   opacity="1"
                   style="display: block;"
                   transform="matrix(1,0,0,1,0,0)"
@@ -3576,23 +2809,14 @@ exports[`Main component should render correctly 1`] = `
       <div
         class="case_image-wrapp"
       >
-        <picture>
-          <source
-            class="image"
-            srcset="img.jpg,img.jpg"
-            type="image/webp"
-          />
-           
-          <img
-            alt="OTT-like Online Video Streaming Platform App."
-            class="image"
-            data-testid="test-picture-img"
-            height="609.19"
-            src="img.jpg"
-            srcset="img.jpg"
-            width="305"
-          />
-        </picture>
+        <picture-stub
+          alt="OTT-like Online Video Streaming Platform App."
+          extension="png"
+          file="iphone-xs-max"
+          folder="yourcast"
+          height="609.19"
+          width="305"
+        />
       </div>
     </section>
      
@@ -3646,25 +2870,16 @@ exports[`Main component should render correctly 1`] = `
         <li
           class="case_team-item"
         >
-          <picture
+          <picture-stub
+            alt="Rinat Shcherba"
+            background="true"
             class="case_team-item__image"
-          >
-            <source
-              class="image grey-background media_lazy"
-              data-srcset="img.jpg,img.jpg"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Rinat Shcherba"
-              class="image grey-background media_lazy"
-              data-src="img.jpg"
-              data-srcset="img.jpg"
-              data-testid="test-picture-img"
-              height="50"
-              width="50"
-            />
-          </picture>
+            extension="png"
+            file="rinat-shcherba"
+            folder="common"
+            height="50"
+            width="50"
+          />
            
           <div
             class="case_team-item__info"
@@ -3689,25 +2904,16 @@ exports[`Main component should render correctly 1`] = `
         <li
           class="case_team-item"
         >
-          <picture
+          <picture-stub
+            alt="Daniyar Chambylov"
+            background="true"
             class="case_team-item__image"
-          >
-            <source
-              class="image grey-background media_lazy"
-              data-srcset="img.jpg,img.jpg"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Daniyar Chambylov"
-              class="image grey-background media_lazy"
-              data-src="img.jpg"
-              data-srcset="img.jpg"
-              data-testid="test-picture-img"
-              height="50"
-              width="50"
-            />
-          </picture>
+            extension="png"
+            file="daniyar-chambylov"
+            folder="common"
+            height="50"
+            width="50"
+          />
            
           <div
             class="case_team-item__info"
@@ -3732,25 +2938,16 @@ exports[`Main component should render correctly 1`] = `
         <li
           class="case_team-item"
         >
-          <picture
+          <picture-stub
+            alt="Vladimir Shebarshov"
+            background="true"
             class="case_team-item__image"
-          >
-            <source
-              class="image grey-background media_lazy"
-              data-srcset="img.jpg,img.jpg"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Vladimir Shebarshov"
-              class="image grey-background media_lazy"
-              data-src="img.jpg"
-              data-srcset="img.jpg"
-              data-testid="test-picture-img"
-              height="50"
-              width="50"
-            />
-          </picture>
+            extension="png"
+            file="vladimir-shebarshov"
+            folder="common"
+            height="50"
+            width="50"
+          />
            
           <div
             class="case_team-item__info"
@@ -3775,25 +2972,16 @@ exports[`Main component should render correctly 1`] = `
         <li
           class="case_team-item"
         >
-          <picture
+          <picture-stub
+            alt="Andrew Minkin"
+            background="true"
             class="case_team-item__image"
-          >
-            <source
-              class="image grey-background media_lazy"
-              data-srcset="img.jpg,img.jpg"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Andrew Minkin"
-              class="image grey-background media_lazy"
-              data-src="img.jpg"
-              data-srcset="img.jpg"
-              data-testid="test-picture-img"
-              height="50"
-              width="50"
-            />
-          </picture>
+            extension="png"
+            file="andrew-minkin"
+            folder="common"
+            height="50"
+            width="50"
+          />
            
           <div
             class="case_team-item__info"
@@ -3818,25 +3006,16 @@ exports[`Main component should render correctly 1`] = `
         <li
           class="case_team-item"
         >
-          <picture
+          <picture-stub
+            alt="Erik Sultanaliev"
+            background="true"
             class="case_team-item__image"
-          >
-            <source
-              class="image grey-background media_lazy"
-              data-srcset="img.jpg,img.jpg"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Erik Sultanaliev"
-              class="image grey-background media_lazy"
-              data-src="img.jpg"
-              data-srcset="img.jpg"
-              data-testid="test-picture-img"
-              height="50"
-              width="50"
-            />
-          </picture>
+            extension="png"
+            file="erik-sultanaliev"
+            folder="common"
+            height="50"
+            width="50"
+          />
            
           <div
             class="case_team-item__info"
@@ -3876,23 +3055,14 @@ exports[`Main component should render correctly 1`] = `
           <div
             class="case_blockquote-author__photo m-auto"
           >
-            <picture>
-              <source
-                class="image media_lazy"
-                data-srcset="img.jpg,img.jpg"
-                type="image/webp"
-              />
-               
-              <img
-                alt="Andrew Minkin"
-                class="image media_lazy"
-                data-src="img.jpg"
-                data-srcset="img.jpg"
-                data-testid="test-picture-img"
-                height="71"
-                width="71"
-              />
-            </picture>
+            <picture-stub
+              alt="Andrew Minkin"
+              extension="png"
+              file="andrew-minkin"
+              folder="common"
+              height="71"
+              width="71"
+            />
           </div>
            
           <p

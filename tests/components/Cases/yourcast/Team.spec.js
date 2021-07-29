@@ -1,12 +1,15 @@
 import Team from '@/components/Cases/yourcast/Team'
 import { render, screen } from '@testing-library/vue'
 
+const stubs = ['Picture']
+
 describe('Team component', () => {
   it('should render correctly', () => {
     const { container } = render(Team, {
       mocks: {
         $getMediaFromS3: () => 'img.jpg',
       },
+      stubs,
     })
     expect(container).toMatchSnapshot()
   })
@@ -16,6 +19,7 @@ describe('Team component', () => {
       mocks: {
         $getMediaFromS3: () => 'img.jpg',
       },
+      stubs,
     })
     expect(screen.getByText(/Meet the team/i).className).toContain('case_title_h2')
   })

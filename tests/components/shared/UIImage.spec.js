@@ -2,6 +2,10 @@ import { render } from '@testing-library/vue'
 
 import UIImage from '@/components/shared/UIImage'
 
+const directives = {
+  'lazy-load': () => {},
+}
+
 describe('UIImage', () => {
   const props = {
     fileName: 'Marat',
@@ -15,6 +19,7 @@ describe('UIImage', () => {
     const { container } = render(UIImage, {
       props,
       stubs: ['PrismicImage'],
+      directives,
     })
 
     expect(container).toMatchSnapshot()
@@ -24,6 +29,7 @@ describe('UIImage', () => {
     const { getByTestId } = render(UIImage, {
       props,
       stubs: ['PrismicImage'],
+      directives,
     })
     const result = getByTestId('test-multi-image')
     expect(result.width).toBe(Number(props.width))
@@ -35,6 +41,7 @@ describe('UIImage', () => {
     const { container } = render(UIImage, {
       props,
       stubs: ['PrismicImage'],
+      directives,
     })
     expect(container.getElementsByTagName('picture')).toBeTruthy()
   })

@@ -19,7 +19,17 @@ const META_DATA = {
   'twitter:url': 'https://maddevs.io/',
 }
 
-const stubs = ['client-only', 'NuxtLink']
+const stubs = [
+  'ClientOnly',
+  'NuxtLink',
+  'WeCreateItProjectsFor',
+  'TechnologiesAndTools',
+  'CustomerTestimonials',
+  'QuickProjectStart',
+  'MeetOurExperts',
+  'ImageComponent',
+  'CasesListItem',
+]
 
 describe('About page', () => {
   global.$nuxt = {

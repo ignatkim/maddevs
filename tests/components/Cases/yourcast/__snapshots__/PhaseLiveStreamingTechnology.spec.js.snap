@@ -29,20 +29,19 @@ exports[`PhaseLiveStreamingTechnology component should render correctly 1`] = `
     <div
       class="container_full background-color-black-primary case_video-wrapp"
     >
-      <video
-        class="case_yourcast-tv"
-        id="yourcast-tv"
-        loop="loop"
-        muted="muted"
+      <div
+        class="case_yourcast-tv-fallback"
       >
-        <source
-          src="img.jpg"
-          type="video/mp4"
+        <picture-stub
+          alt="OTT-like Online Video Streaming Platform on MacBook Pro Laptop."
+          extension="png"
+          file="macbook-pro"
+          folder="yourcast"
+          height="449"
+          shadow="true"
+          width="735"
         />
-        
-      Your browser does not support the video tag.
-    
-      </video>
+      </div>
     </div>
      
     <div

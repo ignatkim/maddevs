@@ -16,9 +16,9 @@
               class="latest-posts__banner"
             >
               <img
+                v-lazy-load
                 width="390"
                 height="516"
-                class="img_lazy"
                 :data-src="post.banner.url"
                 :alt="post.id"
               >
@@ -67,8 +67,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/_vars';
-
 .latest-posts {
   background-color: $bgcolor--white-primary;
   padding: 96px 0 80px;

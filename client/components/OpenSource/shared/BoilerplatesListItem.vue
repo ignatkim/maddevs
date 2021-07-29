@@ -22,7 +22,8 @@
         />
       </div>
       <img
-        class="boilerplates-list__item-logo media_lazy"
+        v-lazy-load
+        class="boilerplates-list__item-logo"
         :data-src="$getMediaFromS3(`/images/OpenSource/svg/${logo.name}.svg`)"
         :alt="logo.alt"
         :width="logo.width"
@@ -86,8 +87,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .boilerplates-list__item {
   background-color: $bgcolor--silver;
   border-radius: 4px;

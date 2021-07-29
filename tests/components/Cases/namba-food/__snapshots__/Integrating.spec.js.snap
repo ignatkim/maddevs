@@ -15,28 +15,15 @@ exports[`Integrating component should render correctly 1`] = `
   
     </p>
      
-    <div
-      class="case_quote-wrap m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
+    <textquote-stub
+      author=""
+      class="m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
     >
-      <img
-        alt="blockquote"
-        class="case_mark img_lazy"
-        data-src="[object Object]"
-        height="50"
-        width="50"
-      />
-       
-      <blockquote
-        class="case_blockquote"
-      >
-        
+      
     Namba Food automatically categorises data inside the managers' dashboard panel. More than 4000 products can be
     catalogued in a few clicks.
   
-      </blockquote>
-       
-      <!---->
-    </div>
+    </textquote-stub>
      
     <h3
       class="case_title_h3 m-12_bottom"

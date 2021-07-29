@@ -11,14 +11,16 @@
     </div>
     <div class="container_full background-color-black-primary case_video-wrapp">
       <video
-        v-if="!isIphone"
+        v-if="!isIphone && loaded"
         id="yourcast-tv"
+        v-lazy-load
         loop="true"
         muted="true"
+        autoplay="true"
         class="case_yourcast-tv"
       >
         <source
-          :src="$getMediaFromS3('/videos/yourcast-tv.mp4')"
+          :data-src="$getMediaFromS3('/videos/yourcast-tv.mp4')"
           type="video/mp4"
         >
         Your browser does not support the video tag.
@@ -123,14 +125,19 @@ export default {
   data() {
     return {
       posters,
+      loaded: false,
     }
+  },
+
+  mounted() {
+    this.$nextTick(() => {
+      this.loaded = true
+    })
   },
 }
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/vars';
-
 .case {
   &_lottie {
     max-width: 562px;

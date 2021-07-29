@@ -70,8 +70,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
-
 .infrastructure-optimisation {
   padding-top: 96px;
 
@@ -92,7 +90,7 @@ export default {
   }
 
   &__main-title {
-    @include h2_title;
+    @include h2-title;
     width: max-content;
     margin: auto;
     padding-top: 0 !important;

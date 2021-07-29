@@ -26,11 +26,12 @@
     >
       <img
         slot="icon"
+        v-lazy-load
         :data-src="require(`@/assets/img/Studies/svg/itc.svg`)"
         width="195"
         height="72"
         alt="Ready4Trade Central Asiao"
-        class="case_logotype-itc img_lazy"
+        class="case_logotype-itc"
       >
       Ready4Trade Central Asia
     </Footer>
@@ -41,7 +42,6 @@
 import CaseHeader from '@/components/Cases/shared/CaseHeader'
 import Footer from '@/components/Cases/shared/CaseFooter'
 import Main from '@/components/Cases/peklo/Main'
-import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 import { getMetadata, buildHead } from '@/data/seo'
 import animateOnScrollMixin from '@/mixins/animateOnScrollMixin'
 
@@ -53,7 +53,7 @@ export default {
     Main,
   },
 
-  mixins: [initLazyLoadMixin, animateOnScrollMixin({
+  mixins: [animateOnScrollMixin({
     offset: 200,
     delay: 50,
     anchorPlacement: 'top-center',
@@ -79,16 +79,11 @@ export default {
       image: 'https://maddevs.io/peklo.jpg',
     })
   },
-
-  mounted() {
-    this.$lazyLoad.init()
-  },
 }
 </script>
 
 <style lang="scss">
 @import '@/assets/styles/cases/_base';
-@import '@/assets/styles/cases/_mixins';
 @import '@/assets/styles/cases/_components';
 @import '@/assets/styles/cases/_media';
 

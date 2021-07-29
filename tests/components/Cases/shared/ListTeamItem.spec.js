@@ -20,6 +20,7 @@ describe('ListTeamItem component', () => {
       mocks: {
         $getMediaFromS3: () => 'img.jpg',
       },
+      stubs: ['Picture'],
     })
 
     expect(screen.getByText(props.name).className).toBe('case_team-item__name')

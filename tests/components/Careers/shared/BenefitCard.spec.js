@@ -14,11 +14,16 @@ const props = {
   title: 'Onsite business trips',
 }
 
+const directives = {
+  'lazy-load': () => {},
+}
+
 describe('BenefitCard', () => {
   it('is a Vue instance', () => {
     const { container } = render(BenefitCard, {
       mocks,
       props,
+      directives,
     })
 
     expect(screen.getByText(props.title)).not.toBeNull()

@@ -7,14 +7,14 @@
       <source
         :srcset="[$getMediaFromS3('/images/DeliveryModels/webp/banner.webp') + ' ', $getMediaFromS3('/images/DeliveryModels/webp/banner@2x.webp 2x')]"
         type="image/webp"
-        class="banner__image media_lazy"
+        class="banner__image"
       >
       <img
         :srcset="$getMediaFromS3('/images/DeliveryModels/jpg/banner@2x.jpg')"
         :src="$getMediaFromS3('/images/DeliveryModels/jpg/banner.jpg')"
         width="1680"
         height="827"
-        class="banner__image media_lazy"
+        class="banner__image"
         alt="Team"
       >
     </picture>
@@ -46,8 +46,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .banner {
   position: relative;
   display: flex;

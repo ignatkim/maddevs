@@ -5,7 +5,7 @@ exports[`ModelCard component should render correctly 1`] = `
   <div
     class="model-card model-card--"
   >
-    <nuxtlink
+    <nuxtlink-stub
       class="model-card__link"
       to="/delivery-models/uid/"
     >
@@ -125,7 +125,7 @@ exports[`ModelCard component should render correctly 1`] = `
           </span>
         </button>
       </div>
-    </nuxtlink>
+    </nuxtlink-stub>
   </div>
 </div>
 `;

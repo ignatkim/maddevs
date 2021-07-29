@@ -5,10 +5,13 @@ const mocks = {
   $getMediaFromS3: () => 'img.jpg',
 }
 
+const stubs = ['Picture']
+
 describe('Pipelines component', () => {
   it('should render correctly', () => {
     const { container } = render(Pipelines, {
       mocks,
+      stubs,
     })
 
     expect(container).toMatchSnapshot()
@@ -17,6 +20,7 @@ describe('Pipelines component', () => {
   it('should render with text', () => {
     render(Pipelines, {
       mocks,
+      stubs,
     })
 
     expect(screen.getByText(/^[P]ipelines/i).className).toContain('case_title_h3')

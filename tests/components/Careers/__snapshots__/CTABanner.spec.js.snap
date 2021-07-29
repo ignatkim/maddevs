@@ -6,7 +6,7 @@ exports[`CTABanner component should render correctly 1`] = `
     class="careers-cta-banner_container container"
   >
     <uibanner-stub
-      image="[object Object]"
+      image="img.png"
       imagealttext="Daria"
       manname="Daria Utesheva"
       manposition="Head of HR Departament"
@@ -20,7 +20,6 @@ exports[`CTABanner component should render correctly 1`] = `
         <uibutton-stub>
           <img
             alt="Telegram"
-            class="img_lazy"
             data-src="[object Object]"
             height="17"
             width="20"

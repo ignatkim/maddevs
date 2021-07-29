@@ -6,7 +6,7 @@
         class="block-img"
       >
         <img
-          class="img_lazy"
+          v-lazy-load
           :class="{ 'block-img-zoom': zoomEnabled }"
           :data-src="img.url"
           :alt="img.alt"
@@ -79,8 +79,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars.scss';
-
 .block-img {
   margin-bottom: 10px;
   text-align: center;

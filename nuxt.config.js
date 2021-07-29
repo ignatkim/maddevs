@@ -95,7 +95,6 @@ module.exports = {
     '~/plugins/feature-flags.js',
     '~/plugins/vue-prlx.js',
     { src: '~/plugins/sentry.js', mode: 'client' },
-    { src: '~/plugins/lazy-load.js', mode: 'client' },
     { src: '~/plugins/pure-counter.js', mode: 'client' },
     { src: '~/plugins/vue-parallax', mode: 'client' },
   ],
@@ -108,6 +107,11 @@ module.exports = {
     '@nuxtjs/prismic',
     '@nuxtjs/sitemap',
     '@nuxtjs/gtm',
+    '@nuxtjs/style-resources',
+    ['nuxt-lazy-load', {
+      defaultImage: '/DoNotRemove/nuxt-lazy-load-fallback.svg',
+      directiveOnly: true,
+    }],
   ],
   sitemap: {
     hostname: 'https://maddevs.io',
@@ -148,5 +152,11 @@ module.exports = {
   },
   router: {
     trailingSlash: true,
+  },
+  styleResources: {
+    scss: [
+      '~/assets/styles/_vars.scss',
+      '~/assets/styles/_mixins.scss',
+    ],
   },
 }

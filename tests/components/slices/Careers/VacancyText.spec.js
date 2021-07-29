@@ -1,8 +1,11 @@
 import VacancyText from '@/components/slices/Careers/VacancyText'
 import { render } from '@testing-library/vue'
 
+const stubs = ['PrismicRichText']
+
 describe('VacancyText slice component', () => {
   const props = {
+    stubs,
     slice: {
       items: [
         {
@@ -18,6 +21,7 @@ describe('VacancyText slice component', () => {
 
   it('is a Vue instance', () => {
     const { container } = render(VacancyText, {
+      stubs,
       props,
     })
 

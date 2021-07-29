@@ -1,14 +1,20 @@
 <template>
   <picture>
     <source
-      :class="{ 'box-shadow': shadow, 'border-radius': radius, 'grey-background': background, 'media_lazy': lazy }"
-      v-bind="attrsSource"
+      v-lazy-load
+      :class="{ 'box-shadow': shadow, 'border-radius': radius, 'grey-background': background }"
+      :data-srcset="[
+        $getMediaFromS3(`/images/Cases/${folder}/webp/${file}.webp`) + ' ',
+        $getMediaFromS3(`/images/Cases/${folder}/webp/${file}@2x.webp 2x`)]
+      "
       class="image"
       type="image/webp"
     >
     <img
-      :class="{ 'box-shadow': shadow, 'border-radius': radius, 'grey-background': background, 'media_lazy': lazy }"
-      v-bind="attrsImg"
+      v-lazy-load
+      :class="{ 'box-shadow': shadow, 'border-radius': radius, 'grey-background': background }"
+      :data-src="[$getMediaFromS3(`/images/Cases/${folder}/${extension}/${file}.${extension}`)]"
+      :data-srcset="[$getMediaFromS3(`/images/Cases/${folder}/${extension}/${file}.${extension}`)]"
       :alt="alt"
       :width="width"
       :height="height"
@@ -74,35 +80,6 @@ export default {
     },
   },
 
-  computed: {
-    attrsImg() {
-      const path = `/images/Cases/${this.folder}/${this.extension}/${this.file}.${this.extension}`
-      if (this.lazy) {
-        return {
-          'data-src': [this.$getMediaFromS3(path)],
-          'data-srcset': [this.$getMediaFromS3(path)],
-        }
-      }
-      return {
-        src: [this.$getMediaFromS3(path)],
-        srcset: [this.$getMediaFromS3(path)],
-      }
-    },
-
-    attrsSource() {
-      const path = `/images/Cases/${this.folder}/webp/${this.file}.webp `
-      const path2x = `/images/Cases/${this.folder}/webp/${this.file}@2x.webp 2x`
-      if (this.lazy) {
-        return {
-          'data-srcset': [this.$getMediaFromS3(path), this.$getMediaFromS3(path2x)],
-        }
-      }
-      return {
-        srcset: [this.$getMediaFromS3(path), this.$getMediaFromS3(path2x)],
-      }
-    },
-  },
-
   methods: {
     onImageLoad(event) {
       if (event.target.classList.contains('grey-background')) {
@@ -113,8 +90,6 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import '../../../assets/styles/_vars';
-
 .image {
   width: 100%;
   height: auto;

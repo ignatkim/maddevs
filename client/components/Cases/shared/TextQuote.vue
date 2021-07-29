@@ -1,11 +1,12 @@
 <template>
   <div class="case_quote-wrap">
     <img
+      v-lazy-load
       :data-src="require('@/assets/img/Studies/svg/qmark.svg')"
       width="50"
       height="50"
       alt="blockquote"
-      class="case_mark img_lazy"
+      class="case_mark"
     >
     <blockquote class="case_blockquote">
       <slot />
@@ -32,8 +33,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/cases/_mixins';
-
 .case {
   &_quote-wrap {
     display: flex;
@@ -44,11 +43,11 @@ export default {
 
   &_blockquote {
     margin: 0;
-    @include default_text($text-color--black-oil, 30px, 166%, -0.02em, normal);
+    @include default-text($text-color--black-oil, 30px, 166%, -0.02em, normal);
   }
 
   &_quote-author {
-    @include italic_text($text-color--grey-opacity-40-percent, 16px, 166%, -0.035em);
+    @include italic-text($text-color--grey-opacity-40-percent, 16px, 166%, -0.035em);
   }
 
   &_mark {
@@ -66,11 +65,11 @@ export default {
     }
 
     &_blockquote {
-      @include default_text($text-color--black-oil, 24px, 150%, -0.02em, normal);
+      @include default-text($text-color--black-oil, 24px, 150%, -0.02em, normal);
     }
 
     &_quote-author {
-      @include italic_text($text-color--grey-opacity-40-percent, 13px, 166%, -0.02em);
+      @include italic-text($text-color--grey-opacity-40-percent, 13px, 166%, -0.02em);
     }
 
     &_mark {

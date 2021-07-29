@@ -32,9 +32,9 @@
               class="featured-post__image"
             >
               <img
+                v-lazy-load
                 :data-src="featuredCUPost.featured_image.url"
                 :alt="featuredCUPost.featured_image.alt"
-                class="img_lazy"
                 width="560"
                 height="347"
               >
@@ -52,9 +52,9 @@
             <div class="single-cluster">
               <div class="single-cluster__image">
                 <img
+                  v-lazy-load
                   :data-src="cluster.primary.cover_image.url"
                   :alt="cluster.primary.cover_image.alt"
-                  class="img_lazy"
                   width="295"
                   height="160"
                 >
@@ -133,8 +133,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../assets/styles/vars';
-
 @mixin label {
   @include font('Inter', 13px, 400);
   color: $text-color--grey-opacity-40-percent;

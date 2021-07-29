@@ -2,11 +2,12 @@
   <div class="card-content">
     <img
       v-if="iconName"
+      v-lazy-load
       :data-src="require(`@/assets/img/Studies/svg/${iconName}.svg`)"
       :alt="iconName"
       width="51.94"
       height="51.94"
-      class="card-content_icon img_lazy"
+      class="card-content_icon"
     >
     <h4 class="case_title_h4 card-content_title">
       {{ title }}
@@ -33,8 +34,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../../assets/styles/cases/_mixins';
-
 .card-content {
   &_title {
     margin-bottom: 10px;

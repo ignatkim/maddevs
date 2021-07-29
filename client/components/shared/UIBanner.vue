@@ -8,10 +8,11 @@
       <!-- Child elements end -->
     </div>
     <img
+      v-lazy-load
       width="395"
       height="490"
       class="cta-banner__image"
-      :src="image"
+      :data-src="image"
       :alt="imageAltText"
     >
     <div class="cta-banner__man">
@@ -71,8 +72,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .cta-banner {
   box-sizing: border-box;
   display: flex;

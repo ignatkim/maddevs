@@ -22,11 +22,13 @@
           :key="element.fileName"
         >
           <Picture
+            :width="1026"
+            :height="525"
             :folder="element.pictureFolder"
             :file="element.fileName"
             :extension="element.fileExtension"
             :alt="element.alt"
-            :lazy="lazy"
+            :lazy="false"
           />
         </swiper-slide>
       </swiper>
@@ -127,26 +129,29 @@ export default {
   },
 
   mounted() {
-    this.$nextTick(() => {
-      const swiperTop = this.$refs.swiperTop.$swiper
-      const swiperThumbs = this.$refs.swiperThumbs.$swiper
-      swiperTop.controller.control = swiperThumbs
-      swiperThumbs.controller.control = swiperTop
-    })
+    this.setConfig()
   },
 
   methods: {
     removeLazy() {
       this.lazy = false
     },
+
+    setConfig() {
+      this.$nextTick(() => {
+        if (!this.$refs?.swiperTop?.$swiper
+          || !this.$refs?.swiperThumbs?.$swiper) return
+        const swiperTop = this.$refs.swiperTop.$swiper
+        const swiperThumbs = this.$refs.swiperThumbs.$swiper
+        swiperTop.controller.control = swiperThumbs
+        swiperThumbs.controller.control = swiperTop
+      })
+    },
   },
 }
 </script>
 
 <style lang="scss">
-@import '../../../assets/styles/cases/mixins';
-@import '../../../assets/styles/vars';
-
 .thumb-example {
   img {
     display: block;
@@ -179,6 +184,6 @@ export default {
   margin: 9px 0;
   padding: 0 24px;
   text-align: center;
-  @include default_text($text-color--grey-img-description, 13px, 21.58px, -0.02em, normal);
+  @include default-text($text-color--grey-img-description, 13px, 21.58px, -0.02em, normal);
 }
 </style>

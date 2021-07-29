@@ -19,11 +19,16 @@ const props = {
   link: 'link',
 }
 
+const directives = {
+  'lazy-load': () => {},
+}
+
 describe('BoilerplatesListItem component', () => {
   it('should render correctly', () => {
     const { container } = render(BoilerplatesListItem, {
       mocks,
       props,
+      directives,
     })
 
     expect(container).toMatchSnapshot()

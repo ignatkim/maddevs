@@ -10,7 +10,7 @@
       <UIBanner
         title="Develop with <br /> Mad Devs"
         text="Showcase your work, give feedback <br /> to others, and learn from each other."
-        :image="$getMediaFromS3('/images/OpenSource/png/team.png')"
+        :image="$getMediaFromS3('/images/CTABanner/team.png')"
         image-alt-text="Team"
       >
         <a
@@ -42,8 +42,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .open-source-cta {
   padding-bottom: 107px;
   &__head {

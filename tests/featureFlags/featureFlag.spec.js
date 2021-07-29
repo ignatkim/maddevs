@@ -15,13 +15,24 @@ jest.mock('@/featureFlags/config', () => ({
   },
 }))
 
+jest.spyOn(console, 'error').mockImplementation()
+
 describe('Feature flag function', () => {
+  beforeEach(() => {
+    // eslint-disable-next-line no-console
+    console.error.mockClear()
+  })
+
   it('should return true and print error if flag is empty', () => {
     expect(featureFlag()).toBeTruthy()
+    // eslint-disable-next-line no-console
+    expect(console.error).toHaveBeenCalledTimes(1)
   })
 
   it('should return true and print error if config not include flag', () => {
     expect(featureFlag(INCORRECT_FLAG)).toBeTruthy()
+    // eslint-disable-next-line no-console
+    expect(console.error).toHaveBeenCalledTimes(1)
   })
 
   it('should return true if config include flag but ffEnvironment is empty', () => {

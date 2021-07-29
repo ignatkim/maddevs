@@ -13,8 +13,6 @@ import TheLastPostSection from '@/components/Blog/Main/TheLastPostSection'
 import LatestPostsSection from '@/components/Blog/Main/LatestPostsSection'
 import CustomerUniversitySection from '@/components/Blog/Main/CustomerUniversitySection'
 import AllPostsSection from '@/components/Blog/Main/AllPostsSection'
-import initializeLazyLoad from '@/helpers/lazyLoad'
-import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
 export default {
   name: 'Main',
@@ -24,8 +22,6 @@ export default {
     CustomerUniversitySection,
     AllPostsSection,
   },
-
-  mixins: [initLazyLoadMixin],
 
   data() {
     return {
@@ -41,10 +37,6 @@ export default {
 
   created() {
     this.getContent()
-  },
-
-  updated() {
-    this.$nextTick(() => initializeLazyLoad())
   },
 
   methods: {
@@ -64,8 +56,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/_vars';
-
 .home {
   padding-top: 100px;
 }

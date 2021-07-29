@@ -8,9 +8,10 @@
       data-testid="icon-wrapper"
     >
       <img
+        v-lazy-load
         width="143"
         height="64"
-        class="icon-wrapper__icon media_lazy"
+        class="icon-wrapper__icon"
         :data-src="fileName(customer)"
         :alt="customer"
         data-testid="customer-icon"
@@ -57,8 +58,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .customers {
   &__customers-list {
     display: grid;

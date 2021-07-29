@@ -83,9 +83,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/cases/_mixins';
-@import '@/assets/styles/_vars';
-
 .case {
   &_img-wrapper {
     filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));

@@ -1,6 +1,6 @@
 import DevelopmentGoals from '@/components/Cases/godee/DevelopmentGoals.vue'
 import { render, screen } from '@testing-library/vue'
-import { mount } from '@vue/test-utils'
+import { shallowMount } from '@vue/test-utils'
 
 const refs = {
   container: {
@@ -15,14 +15,19 @@ const refs = {
   },
 }
 
+const stubs = ['CardGoDeeFeature']
+
 describe('DevelopmentGoals component', () => {
   let wrapper = null
 
   beforeEach(() => {
-    wrapper = mount(DevelopmentGoals, {
+    wrapper = shallowMount(DevelopmentGoals, {
       directives: {
-        prlx: () => {},
+        prlx: {
+          inserted: () => {},
+        },
       },
+      stubs,
     })
   })
 
@@ -33,8 +38,11 @@ describe('DevelopmentGoals component', () => {
   it('should render correctly', () => {
     const { container } = render(DevelopmentGoals, {
       directives: {
-        prlx: () => {},
+        prlx: {
+          inserted: () => {},
+        },
       },
+      stubs,
     })
 
     expect(container).toMatchSnapshot()

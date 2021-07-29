@@ -3,8 +3,11 @@
 exports[`Post component should render correctly with default props 1`] = `
 <div>
   <main
-    class="blog-post"
+    class="blog-post with-recommended"
     document="[object Object]"
+    formatteddate="Apr 12, 2021"
+    jsonld=""
+    slice="[object Object]"
   >
     <div
       class="blog-post__background"
@@ -18,21 +21,57 @@ exports[`Post component should render correctly with default props 1`] = `
       <blogheader-stub
         date=""
         subtitle=""
-        tags=""
-        title=""
+        tags="Project Management,Featured post"
+        title="How to Handover a Software Project to Another Team | Mad Devs Blog"
       />
        
       <div
         class="blog-post__main-content"
       >
-        <section
+        <slicesblock-stub
           class="blog-post__text-container"
+          slices="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+          slicestype="blog_post"
         />
       </div>
     </div>
      
     <div>
-      <!---->
+      <div
+        class="blog-post__recommended-posts"
+      >
+        <div
+          class="blog-post__recommended-posts-list container"
+        >
+          <section
+            class="blog-post__recommended-post"
+            data-testid="test-recommended-post"
+            post="[object Object]"
+          >
+            <postcard-stub
+              post="[object Object]"
+            />
+          </section>
+          <section
+            class="blog-post__recommended-post"
+            data-testid="test-recommended-post"
+            post="[object Object]"
+          >
+            <postcard-stub
+              post="[object Object]"
+            />
+          </section>
+          <section
+            class="blog-post__recommended-post"
+            data-testid="test-recommended-post"
+            post="[object Object]"
+          >
+            <postcard-stub
+              post="[object Object]"
+            />
+          </section>
+        </div>
+      </div>
        
       <!---->
     </div>

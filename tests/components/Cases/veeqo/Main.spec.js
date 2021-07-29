@@ -5,7 +5,20 @@ const mocks = {
   $getMediaFromS3: () => 'img.jpg',
 }
 
-const stubs = ['PhaseCuttingTheCosts']
+const stubs = [
+  'PhaseCuttingTheCosts',
+  'HighLevelOverview',
+  'ContinuousIntegrationResult',
+  'ContinuousIntegrationResult',
+  'PhasInfrastructureAsCodeResult',
+  'InventoryChangeLog',
+  'PhaseElasticsearchResult',
+  'TextQuote',
+  'CardTechSolution',
+  'Picture',
+  'PhaseFixingDatabaseOutages',
+  'ListTechnologiesItem',
+]
 
 describe('Main component', () => {
   it('should render correctly', () => {

@@ -12,9 +12,10 @@
     <template v-if="slice.items[0].embed.type === 'link'">
       <div class="embed__image-wrapper">
         <img
+          v-lazy-load
           width="150"
           height="126"
-          class="embed__image img_lazy"
+          class="embed__image"
           :data-src="slice.items[0].embed.thumbnail_url"
         >
       </div>
@@ -87,8 +88,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars.scss';
-
 .embed {
   /deep/ iframe {
     max-width: 100%;

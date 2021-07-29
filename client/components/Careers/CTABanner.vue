@@ -5,7 +5,7 @@
     <UIBanner
       title="Can’t find your <br /> next role?"
       text="If you don’t see a suitable vacancy, but are sure that we’re meant to be, drop us a line."
-      :image="require(`@/assets/img/Careers/Daria.png`)"
+      :image="$getMediaFromS3(`/images/CTABanner/Daria.png`)"
       image-alt-text="Daria"
       man-name="Daria Utesheva"
       man-position="Head of HR Departament"
@@ -16,11 +16,11 @@
       >
         <UIButton>
           <img
+            v-lazy-load
             :data-src="require(`@/assets/img/Careers/svg/telegram--white.svg`)"
             width="20"
             height="17"
             alt="Telegram"
-            class="img_lazy"
           >
           &nbsp;
           Telegram us
@@ -70,8 +70,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .careers-cta-banner {
   &_container {
     padding-bottom: 100px;

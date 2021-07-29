@@ -11,21 +11,27 @@
       </TextParagraph>
     </section>
     <section class="container_full background-color-silver p-75_top p-75_bottom media-p-16_top media-p-16_bottom">
-      <div class="case_full-screen-phone-video-wrapper">
+      <div
+        v-if="loaded"
+        class="case_full-screen-phone-video-wrapper"
+      >
         <img
           v-if="isIphone"
-          :src="$getMediaFromS3('/images/Cases/nambafood/png/iphone-video-preview.png')"
+          v-lazy-load
+          :data-src="$getMediaFromS3('/images/Cases/nambafood/png/iphone-video-preview.png')"
           class="case_phone-ios-image"
           data-testid="test-case_phone-ios-image"
         >
         <video
           v-else
           id="iphone-silver-video"
-          class="case_full-screen-video media_lazy"
+          v-lazy-load
+          class="case_full-screen-video"
           width="100%"
           height="100%"
           loop="true"
           muted="true"
+          autoplay="true"
         >
           <source
             :data-src="$getMediaFromS3('/videos/mobile-applications-for-end-users.faaab2d.mp4')"
@@ -53,6 +59,18 @@ export default {
       type: Boolean,
       default: false,
     },
+  },
+
+  data() {
+    return {
+      loaded: false,
+    }
+  },
+
+  mounted() {
+    this.$nextTick(() => {
+      this.loaded = true
+    })
   },
 }
 </script>

@@ -19,25 +19,16 @@ exports[`Team component should render correctly 1`] = `
       <li
         class="case_team-item"
       >
-        <picture
+        <picture-stub
+          alt="Oleg Katkov"
+          background="true"
           class="case_team-item__image"
-        >
-          <source
-            class="image grey-background media_lazy"
-            data-srcset="img.jpg,img.jpg"
-            type="image/webp"
-          />
-           
-          <img
-            alt="Oleg Katkov"
-            class="image grey-background media_lazy"
-            data-src="img.jpg"
-            data-srcset="img.jpg"
-            data-testid="test-picture-img"
-            height="50"
-            width="50"
-          />
-        </picture>
+          extension="png"
+          file="oleg-katkov"
+          folder="common"
+          height="50"
+          width="50"
+        />
          
         <div
           class="case_team-item__info"
@@ -62,25 +53,16 @@ exports[`Team component should render correctly 1`] = `
       <li
         class="case_team-item"
       >
-        <picture
+        <picture-stub
+          alt="Pavel Kalashnikov"
+          background="true"
           class="case_team-item__image"
-        >
-          <source
-            class="image grey-background media_lazy"
-            data-srcset="img.jpg,img.jpg"
-            type="image/webp"
-          />
-           
-          <img
-            alt="Pavel Kalashnikov"
-            class="image grey-background media_lazy"
-            data-src="img.jpg"
-            data-srcset="img.jpg"
-            data-testid="test-picture-img"
-            height="50"
-            width="50"
-          />
-        </picture>
+          extension="png"
+          file="pavel-kalashnikov"
+          folder="common"
+          height="50"
+          width="50"
+        />
          
         <div
           class="case_team-item__info"
@@ -105,25 +87,16 @@ exports[`Team component should render correctly 1`] = `
       <li
         class="case_team-item"
       >
-        <picture
+        <picture-stub
+          alt="Meder Akkozov"
+          background="true"
           class="case_team-item__image"
-        >
-          <source
-            class="image grey-background media_lazy"
-            data-srcset="img.jpg,img.jpg"
-            type="image/webp"
-          />
-           
-          <img
-            alt="Meder Akkozov"
-            class="image grey-background media_lazy"
-            data-src="img.jpg"
-            data-srcset="img.jpg"
-            data-testid="test-picture-img"
-            height="50"
-            width="50"
-          />
-        </picture>
+          extension="png"
+          file="meder-akkozov"
+          folder="common"
+          height="50"
+          width="50"
+        />
          
         <div
           class="case_team-item__info"
@@ -148,25 +121,16 @@ exports[`Team component should render correctly 1`] = `
       <li
         class="case_team-item"
       >
-        <picture
+        <picture-stub
+          alt="Alisa Manakova"
+          background="true"
           class="case_team-item__image"
-        >
-          <source
-            class="image grey-background media_lazy"
-            data-srcset="img.jpg,img.jpg"
-            type="image/webp"
-          />
-           
-          <img
-            alt="Alisa Manakova"
-            class="image grey-background media_lazy"
-            data-src="img.jpg"
-            data-srcset="img.jpg"
-            data-testid="test-picture-img"
-            height="50"
-            width="50"
-          />
-        </picture>
+          extension="png"
+          file="alisa-manakova"
+          folder="common"
+          height="50"
+          width="50"
+        />
          
         <div
           class="case_team-item__info"
@@ -191,25 +155,16 @@ exports[`Team component should render correctly 1`] = `
       <li
         class="case_team-item"
       >
-        <picture
+        <picture-stub
+          alt="Denis Grushkin"
+          background="true"
           class="case_team-item__image"
-        >
-          <source
-            class="image grey-background media_lazy"
-            data-srcset="img.jpg,img.jpg"
-            type="image/webp"
-          />
-           
-          <img
-            alt="Denis Grushkin"
-            class="image grey-background media_lazy"
-            data-src="img.jpg"
-            data-srcset="img.jpg"
-            data-testid="test-picture-img"
-            height="50"
-            width="50"
-          />
-        </picture>
+          extension="png"
+          file="denis-grushkin"
+          folder="common"
+          height="50"
+          width="50"
+        />
          
         <div
           class="case_team-item__info"
@@ -234,25 +189,16 @@ exports[`Team component should render correctly 1`] = `
       <li
         class="case_team-item"
       >
-        <picture
+        <picture-stub
+          alt="Anton Grushkin"
+          background="true"
           class="case_team-item__image"
-        >
-          <source
-            class="image grey-background media_lazy"
-            data-srcset="img.jpg,img.jpg"
-            type="image/webp"
-          />
-           
-          <img
-            alt="Anton Grushkin"
-            class="image grey-background media_lazy"
-            data-src="img.jpg"
-            data-srcset="img.jpg"
-            data-testid="test-picture-img"
-            height="50"
-            width="50"
-          />
-        </picture>
+          extension="png"
+          file="anton-grushkin"
+          folder="common"
+          height="50"
+          width="50"
+        />
          
         <div
           class="case_team-item__info"
@@ -277,25 +223,16 @@ exports[`Team component should render correctly 1`] = `
       <li
         class="case_team-item"
       >
-        <picture
+        <picture-stub
+          alt="Dmitrii Khalezin"
+          background="true"
           class="case_team-item__image"
-        >
-          <source
-            class="image grey-background media_lazy"
-            data-srcset="img.jpg,img.jpg"
-            type="image/webp"
-          />
-           
-          <img
-            alt="Dmitrii Khalezin"
-            class="image grey-background media_lazy"
-            data-src="img.jpg"
-            data-srcset="img.jpg"
-            data-testid="test-picture-img"
-            height="50"
-            width="50"
-          />
-        </picture>
+          extension="png"
+          file="dmitrii-khalezin"
+          folder="common"
+          height="50"
+          width="50"
+        />
          
         <div
           class="case_team-item__info"
@@ -320,25 +257,16 @@ exports[`Team component should render correctly 1`] = `
       <li
         class="case_team-item"
       >
-        <picture
+        <picture-stub
+          alt="Vladimir Shebarshov"
+          background="true"
           class="case_team-item__image"
-        >
-          <source
-            class="image grey-background media_lazy"
-            data-srcset="img.jpg,img.jpg"
-            type="image/webp"
-          />
-           
-          <img
-            alt="Vladimir Shebarshov"
-            class="image grey-background media_lazy"
-            data-src="img.jpg"
-            data-srcset="img.jpg"
-            data-testid="test-picture-img"
-            height="50"
-            width="50"
-          />
-        </picture>
+          extension="png"
+          file="vladimir-shebarshov"
+          folder="common"
+          height="50"
+          width="50"
+        />
          
         <div
           class="case_team-item__info"
@@ -377,23 +305,14 @@ exports[`Team component should render correctly 1`] = `
         <div
           class="case_blockquote-author__photo m-auto"
         >
-          <picture>
-            <source
-              class="image media_lazy"
-              data-srcset="img.jpg,img.jpg"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Roman Leonov"
-              class="image media_lazy"
-              data-src="img.jpg"
-              data-srcset="img.jpg"
-              data-testid="test-picture-img"
-              height="71"
-              width="71"
-            />
-          </picture>
+          <picture-stub
+            alt="Roman Leonov"
+            extension="png"
+            file="roman-leonov"
+            folder="peklo"
+            height="71"
+            width="71"
+          />
         </div>
          
         <p

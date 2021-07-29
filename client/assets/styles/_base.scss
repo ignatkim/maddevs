@@ -51,18 +51,13 @@ main {
   }
 }
 
-.img_lazy {
+// ------------ Styles for Lazy Load ------------- //
+.lazyLoad {
   opacity: 0;
-}
-
-.img_lazy-fade {
   transition: opacity 0.3s ease-in;
 }
 
-.media_lazy {
-  opacity: 0;
+.isLoaded {
+  opacity: 1;
 }
-
-.media_lazy-fade {
-  transition: opacity 0.3s ease-in;
-}
+// ------------ END Styles for Lazy Load ------------- //

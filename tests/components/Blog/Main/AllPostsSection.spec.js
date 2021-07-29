@@ -20,7 +20,7 @@ const mocks = {
   },
 }
 
-const stubs = ['NuxtLink']
+const stubs = ['NuxtLink', 'PostCard']
 
 const store = {
   getters: {
@@ -71,7 +71,7 @@ describe('AllPostsSection component', () => {
     expect(screen.getAllByTestId('test-single-post')).toHaveLength(allPosts.length)
   })
 
-  it('categories() computed method should return array without \'Job Opening\' category', async () => {
+  it('categories() computed method should return correct array', async () => {
     const wrapper = shallowMount(AllPostsSection, {
       localVue,
       mocks,
@@ -87,7 +87,7 @@ describe('AllPostsSection component', () => {
                 tags: [],
               },
               {
-                title: 'Job Opening',
+                title: 'DevOps',
                 tags: [],
               },
             ],
@@ -96,13 +96,17 @@ describe('AllPostsSection component', () => {
       },
     })
 
-    const filteredCategories = [
+    const expectedCategories = [
       {
         title: 'Editors Pick',
         tags: [],
       },
+      {
+        title: 'DevOps',
+        tags: [],
+      },
     ]
-    expect(wrapper.vm.categories).toEqual(filteredCategories)
+    expect(wrapper.vm.categories).toEqual(expectedCategories)
   })
 
   it('categories() computed method with invalid homePageContent getter should return empty array', async () => {

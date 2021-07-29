@@ -10,6 +10,7 @@ describe('PhaseElasticsearchResult component', () => {
       directives: {
         prlx: () => {},
       },
+      stubs: ['CardResult'],
     })
 
     expect(screen.getByText('Result')).not.toBeNull()

@@ -84,6 +84,7 @@
     </section>
     <section class="container_middle">
       <div
+        v-if="loaded"
         :class="{ 'case_box-shadow': !isIphone }"
         class="case_map-video-wrapper"
       >
@@ -96,11 +97,13 @@
         <video
           v-else
           id="map-video"
-          class="case_map-video media_lazy"
+          v-lazy-load
+          class="case_map-video"
           width="100%"
           height="100%"
           loop="true"
           muted="true"
+          autoplay="true"
         >
           <source
             :data-src="$getMediaFromS3('/videos/map.c41e893.mp4')"
@@ -142,7 +145,14 @@ export default {
   data() {
     return {
       adminPanel,
+      loaded: false,
     }
+  },
+
+  mounted() {
+    this.$nextTick(() => {
+      this.loaded = true
+    })
   },
 }
 </script>

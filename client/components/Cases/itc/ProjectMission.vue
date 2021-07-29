@@ -10,10 +10,11 @@
     </div>
     <div class="case_full-screen-image background-color-silver m-48_bottom media-m-24_bottom m-auto">
       <img
+        v-lazy-load
         width="1440"
         height="540"
         :data-src="require(`@/assets/img/Studies/svg/project-mission.svg`)"
-        class="case_project-mission media_lazy"
+        class="case_project-mission"
         alt="Project mission"
       >
     </div>
@@ -142,9 +143,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-@import '@/assets/styles/cases/_mixins';
-
 .case {
   &_statistics-container {
     @include grid(repeat(3, 1fr), auto, 0, 0);

@@ -16,6 +16,7 @@ describe('Delivery component', () => {
         $router: {
           push: jest.fn(),
         },
+        $getMediaFromS3: () => 'img.png',
       },
     })
   })

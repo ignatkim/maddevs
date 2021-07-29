@@ -47,7 +47,7 @@ exports[`RealTimeETA component should render correctly 1`] = `
       
         </p>
          
-        <nuxtlink
+        <nuxtlink-stub
           class="case_real-time-eta-more-button"
           target="_blank"
           to="/blog/how-to-make-three-paid-eta-services-one-free/"
@@ -55,29 +55,21 @@ exports[`RealTimeETA component should render correctly 1`] = `
           
         Find out more
       
-        </nuxtlink>
+        </nuxtlink-stub>
       </div>
        
       <div
         class="case_phone-wrapper-eta-section"
       >
-        <picture>
-          <source
-            class="image media_lazy"
-            data-srcset="img.jpg,img.jpg"
-            type="image/webp"
-          />
-           
-          <img
-            alt="GoDee: Bus Transit App in Vietnam."
-            class="image media_lazy"
-            data-src="img.jpg"
-            data-srcset="img.jpg"
-            data-testid="test-picture-img"
-            height="694.62"
-            width="358.96"
-          />
-        </picture>
+        <picture-stub
+          alt="GoDee: Bus Transit App in Vietnam."
+          extension="png"
+          file="real-time-eta-phone"
+          folder="godee"
+          height="694.62"
+          lazy="true"
+          width="358.96"
+        />
       </div>
     </section>
   </section>

@@ -10,10 +10,11 @@ exports[`SJMCVideo component renders correctly 1`] = `
     <!---->
      
     <video
+      autoplay="autoplay"
       class="main-video"
     >
       <source
-        src="s3 image url"
+        data-src="s3 image url"
         type="video/mp4"
       />
       

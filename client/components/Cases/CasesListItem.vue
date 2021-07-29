@@ -17,13 +17,18 @@
       :tag="isMobile ? 'button' : 'a'"
       class="cases-list_item-link"
     >
+      <!-- Video BG poster -->
+      <div
+        class="cases-list_item-video_poster"
+        :lazy-background="$getMediaFromS3(posterLink)"
+      />
       <!-- Video BG -->
       <video
         ref="video"
+        v-lazy-load
         muted="true"
         loop="true"
-        :poster="$getMediaFromS3(poster)"
-        class="cases-list_item-video media_lazy"
+        class="cases-list_item-video"
       >
         <source
           :data-src="$getMediaFromS3(videoFileName)"
@@ -35,9 +40,10 @@
       <!-- Card info -->
       <div class="cases-list_item-info">
         <img
+          v-lazy-load
           :width="logo.width"
           :height="logo.height"
-          :src="$getMediaFromS3(`/images/Cases/${logo.folder}/svg/${logo.file}.svg`)"
+          :data-src="$getMediaFromS3(`/images/Cases/${logo.folder}/svg/${logo.file}.svg`)"
           :alt="logo.alt"
           :class="`cases-list_item-info-${logo.file}`"
           class="cases-list_item-info-logo"
@@ -111,7 +117,7 @@ export default {
       default: null,
     },
 
-    poster: {
+    posterLink: {
       type: String,
       default: null,
     },
@@ -138,8 +144,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .cases-list_item {
   width: 100%;
   max-width: 100%;
@@ -205,7 +209,7 @@ export default {
     grid-column: auto / span 4 !important;
   }
 
-  video {
+  &-video {
     position: absolute;
     top: 0;
     left: 0;
@@ -215,6 +219,18 @@ export default {
     object-fit: cover;
     background-position: center;
     background-size: cover;
+
+    &_poster {
+      width: calc(100% + 2px);
+      height: calc(100% + 2px);
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-size: cover;
+      background-position: center;
+      z-index: -1;
+      margin: -1px;
+    }
   }
 
   &::before {

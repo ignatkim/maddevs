@@ -8,23 +8,15 @@ exports[`Swiper component should render correctly 1`] = `
     <div
       class="swiper-container thumb-example box-shadow"
     >
-      <picture>
-        <source
-          class="image media_lazy"
-          data-srcset="img.jpg,img.jpg"
-          type="image/webp"
-        />
-         
-        <img
-          alt=""
-          class="image media_lazy"
-          data-src="img.jpg"
-          data-srcset="img.jpg"
-          data-testid="test-picture-img"
-          height="0"
-          width="0"
-        />
-      </picture>
+      <picture-stub
+        alt=""
+        extension="jpg"
+        file=""
+        folder="common"
+        height="0"
+        lazy="true"
+        width="0"
+      />
        
       <div
         class="swiper-container swiper gallery-top swiper-container-initialized swiper-container-horizontal"
@@ -37,44 +29,26 @@ exports[`Swiper component should render correctly 1`] = `
           <div
             class="swiper-slide"
           >
-            <picture>
-              <source
-                class="image media_lazy"
-                data-srcset="img.jpg,img.jpg"
-                type="image/webp"
-              />
-               
-              <img
-                alt=""
-                class="image media_lazy"
-                data-src="img.jpg"
-                data-srcset="img.jpg"
-                data-testid="test-picture-img"
-                height="0"
-                width="0"
-              />
-            </picture>
+            <picture-stub
+              alt=""
+              extension="jpg"
+              file="admin"
+              folder="nambafood"
+              height="525"
+              width="1026"
+            />
           </div>
           <div
             class="swiper-slide"
           >
-            <picture>
-              <source
-                class="image media_lazy"
-                data-srcset="img.jpg,img.jpg"
-                type="image/webp"
-              />
-               
-              <img
-                alt=""
-                class="image media_lazy"
-                data-src="img.jpg"
-                data-srcset="img.jpg"
-                data-testid="test-picture-img"
-                height="0"
-                width="0"
-              />
-            </picture>
+            <picture-stub
+              alt=""
+              extension="jpg"
+              file="dashboard"
+              folder="nambafood"
+              height="525"
+              width="1026"
+            />
           </div>
         </div>
         <span
@@ -103,44 +77,28 @@ exports[`Swiper component should render correctly 1`] = `
         <div
           class="swiper-slide"
         >
-          <picture>
-            <source
-              class="image media_lazy"
-              data-srcset="img.jpg,img.jpg"
-              type="image/webp"
-            />
-             
-            <img
-              alt=""
-              class="image media_lazy"
-              data-src="img.jpg"
-              data-srcset="img.jpg"
-              data-testid="test-picture-img"
-              height="0"
-              width="0"
-            />
-          </picture>
+          <picture-stub
+            alt=""
+            extension="jpg"
+            file="admin"
+            folder="nambafood"
+            height="0"
+            lazy="true"
+            width="0"
+          />
         </div>
         <div
           class="swiper-slide"
         >
-          <picture>
-            <source
-              class="image media_lazy"
-              data-srcset="img.jpg,img.jpg"
-              type="image/webp"
-            />
-             
-            <img
-              alt=""
-              class="image media_lazy"
-              data-src="img.jpg"
-              data-srcset="img.jpg"
-              data-testid="test-picture-img"
-              height="0"
-              width="0"
-            />
-          </picture>
+          <picture-stub
+            alt=""
+            extension="jpg"
+            file="dashboard"
+            folder="nambafood"
+            height="0"
+            lazy="true"
+            width="0"
+          />
         </div>
       </div>
       <span

@@ -49,6 +49,9 @@ describe('ImageCaptionSlice component', () => {
       props,
       stubs,
       mocks,
+      directives: {
+        'lazy-load': () => {},
+      },
     })
 
     expect(container).toMatchSnapshot()
@@ -59,6 +62,9 @@ describe('ImageCaptionSlice component', () => {
       props,
       stubs,
       mocks,
+      directives: {
+        'lazy-load': () => {},
+      },
     })
     expect(screen.getByTestId('test-image-label').outerHTML).toContain(slice.primary.caption)
   })
@@ -69,6 +75,9 @@ describe('ImageCaptionSlice component', () => {
       props,
       stubs,
       mocks,
+      directives: {
+        'lazy-load': () => {},
+      },
     })
 
     expect(html()).toContain('block-img-zoom')
@@ -80,6 +89,9 @@ describe('ImageCaptionSlice component', () => {
       propsData: props,
       stubs,
       mocks,
+      directives: {
+        'lazy-load': () => {},
+      },
     })
 
     wrapper.vm.$options.methods.openModal.call(callObject)
@@ -93,6 +105,9 @@ describe('ImageCaptionSlice component', () => {
       propsData: props,
       stubs,
       mocks,
+      directives: {
+        'lazy-load': () => {},
+      },
     })
 
     wrapper.vm.$options.methods.openModal.call(callObject)

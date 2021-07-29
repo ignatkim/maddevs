@@ -4,7 +4,7 @@
       <UIBanner
         title="Let’s build or scale up your development team?"
         text="Book a call with us and we’ll guide you through a structured process to assess the right solution for your business. You'll be talking to technical experts, not account managers."
-        :image="require('@/assets/img/Cases/Chuk.png')"
+        :image="$getMediaFromS3(`/images/CTABanner/Chuk.png`)"
         image-alt-text="Chuk"
         man-name="Andrew “Chuck” Minkin"
         man-position="CTO, Co-Founder"
@@ -48,8 +48,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .build-dev-team {
   &_wrapper {
     background-color: #fff;

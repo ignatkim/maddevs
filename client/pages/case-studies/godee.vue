@@ -7,7 +7,6 @@
 <script>
 import Main from '@/components/Cases/godee/Main'
 import { getMetadata, buildHead } from '@/data/seo'
-import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
 export default {
   name: 'GoDeeCase',
@@ -15,24 +14,17 @@ export default {
     Main,
   },
 
-  mixins: [initLazyLoadMixin],
-
   head() {
     return buildHead({
       ...getMetadata('godee'),
       image: 'https://maddevs.io/godee.png',
     })
   },
-
-  mounted() {
-    this.$lazyLoad.init()
-  },
 }
 </script>
 
 <style lang="scss">
 @import '../../assets/styles/cases/base';
-@import '../../assets/styles/cases/mixins';
 @import '../../assets/styles/cases/components';
 @import '../../assets/styles/cases/godee/styles';
 @import '../../assets/styles/cases/media';

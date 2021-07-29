@@ -12,18 +12,20 @@
           Yearly increase in orders:
         </TextParagraph>
         <img
+          v-lazy-load
           :data-src="require(`@/assets/img/Studies/svg/yearly-increase.svg`)"
           width="191"
           height="120"
           alt="Yearly increase"
-          class="card-content_chart card-content_yearly-increase img_lazy"
+          class="card-content_chart card-content_yearly-increase"
         >
         <img
+          v-lazy-load
           :data-src="require(`@/assets/img/Studies/svg/yearly-increase--mobile.svg`)"
           width="332"
           height="120"
           alt="Yearly increase"
-          class="card-content_chart card-content_yearly-increase--mobile img_lazy"
+          class="card-content_chart card-content_yearly-increase--mobile"
         >
       </div>
       <div class="card-content_row">
@@ -31,18 +33,20 @@
           Increase in sales:
         </TextParagraph>
         <img
+          v-lazy-load
           :data-src="require(`@/assets/img/Studies/svg/increase-in-sales.svg`)"
           width="191"
           height="120"
           alt="Increase in sales"
-          class="card-content_chart card-content_increase-in-sales img_lazy"
+          class="card-content_chart card-content_increase-in-sales"
         >
         <img
+          v-lazy-load
           :data-src="require(`@/assets/img/Studies/svg/increase-in-sales--mobile.svg`)"
           alt="Increase in sales"
           width="332"
           height="120"
-          class="card-content_chart card-content_increase-in-sales--mobile img_lazy"
+          class="card-content_chart card-content_increase-in-sales--mobile"
         >
       </div>
     </div>
@@ -61,8 +65,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../../assets/styles/cases/_mixins';
-
 .card-content {
   &_title {
     margin-bottom: 4px;
@@ -70,7 +72,7 @@ export default {
   }
 
   &_paragraph {
-    @include default_text($text-color--black-lighter, 13px, 166%, -0.02em, normal);
+    @include default-text($text-color--black-lighter, 13px, 166%, -0.02em, normal);
 
     &--bold {
       margin-bottom: 10px;
@@ -109,10 +111,10 @@ export default {
 
   @media screen and (max-width: 768px) {
     &_paragraph {
-      @include default_text($text-color--black-lighter, 16px, 150%, -0.02em, normal);
+      @include default-text($text-color--black-lighter, 16px, 150%, -0.02em, normal);
 
       &--bold {
-        @include default_text($text-color--black-lighter, 13px, 166%, -0.02em, bold);
+        @include default-text($text-color--black-lighter, 13px, 166%, -0.02em, bold);
       }
     }
   }

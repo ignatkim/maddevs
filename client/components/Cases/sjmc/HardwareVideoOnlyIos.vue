@@ -7,12 +7,14 @@
       @click="toggleVideoState"
     >
       <video
+        v-if="loaded"
         ref="video"
+        v-lazy-load
         data-testid="test-case_video"
         width="100%"
         height="100%"
         playsinline
-        class="media_lazy"
+        autoplay="true"
       >
         <source
           :data-src="$getMediaFromS3('/videos/bluetooth-beacons-video.9ca649c.mp4')"
@@ -30,8 +32,20 @@ import mainMixins from '@/mixins/mainMixins'
 export default {
   name: 'HardwareVideoOnlyIos',
   mixins: [mainMixins],
+
+  data() {
+    return {
+      loaded: false,
+    }
+  },
+
   mounted() {
-    this.$refs.video.addEventListener('ended', this.onEndedHandler)
+    this.$nextTick(() => {
+      this.loaded = true
+      if (this.$$refs?.video) {
+        this.$refs.video.addEventListener('ended', this.onEndedHandler)
+      }
+    })
   },
 
   beforeDestroy() {
@@ -57,8 +71,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../../../assets/styles/vars';
-
   .case {
     &_video-wrapper {
       width: 23%;

@@ -54,12 +54,17 @@ const store = {
 
 const stubs = ['PrismicImage', 'NuxtLink']
 
+const directives = {
+  'lazy-load': () => {},
+}
+
 describe('CustomerUniversitySection component', () => {
   it('should render correctly', () => {
     const { container } = render(CustomerUniversitySection, {
       stubs,
       mocks,
       store,
+      directives,
     })
 
     expect(container).toMatchSnapshot()

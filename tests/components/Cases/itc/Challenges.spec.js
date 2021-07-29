@@ -1,7 +1,7 @@
 import Challenges from '@/components/Cases/itc/Challenges'
 import { render } from '@testing-library/vue'
 
-const stubs = ['CardTechSolution']
+const stubs = ['CardTechSolution', 'Picture']
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

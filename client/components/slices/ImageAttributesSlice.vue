@@ -8,7 +8,7 @@
           class="block-img"
         >
           <img
-            class="img_lazy"
+            v-lazy-load
             :data-src="img.url"
             :alt="img.alt"
             width="632"
@@ -21,7 +21,7 @@
       <div class="post-part single">
         <div class="block-img">
           <img
-            class="img_lazy"
+            v-lazy-load
             :data-src="img.url"
             :alt="img.alt"
             width="680"

@@ -6,11 +6,11 @@
     <div class="author-slice__info">
       <div class="author-slice__image">
         <img
+          v-lazy-load
           width="64"
           height="64"
           :data-src="blogAuthor.image.url"
           :alt="blogAuthor.image.alt"
-          class="img_lazy"
         >
       </div>
       <div>
@@ -36,11 +36,11 @@
               :target="network.link.target"
             >
               <img
+                v-lazy-load
                 :data-src="require(`@/assets/img/AuthorSlice/svg/${network.key}.svg`)"
                 :alt="network.title"
                 width="22"
                 height="22"
-                class="img_lazy"
               >
             </a>
           </li>
@@ -65,20 +65,20 @@
             :target="contributor.link.target"
           >
             <img
+              v-lazy-load
               :data-src="contributor.image.url"
               :alt="contributor.image.alt"
               width="26"
               height="26"
-              class="img_lazy"
             >
           </a>
           <img
             v-else
+            v-lazy-load
             :data-src="contributor.image.url"
             :alt="contributor.image.alt"
             width="26"
             height="26"
-            class="img_lazy"
           >
         </li>
       </ul>
@@ -115,8 +115,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '@/assets/styles/_vars.scss';
-
 .author-slice {
   display: flex;
   justify-content: space-between;

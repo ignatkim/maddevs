@@ -71,6 +71,18 @@ export default {
     },
   },
 
+  head() {
+    return {
+      link: [
+        {
+          rel: 'preload',
+          as: 'image',
+          href: this.compressedImage,
+        },
+      ],
+    }
+  },
+
   computed: {
     compressedImage() {
       const imageWithoutCrop = this.coverImageUrl.split('?auto')[0] // get image without crop and default compress params
@@ -84,24 +96,10 @@ export default {
       return allowedExtensions.includes(extension) ? 'blog-post__introduction-image--with-background' : ''
     },
   },
-
-  head() {
-    return {
-      link: [
-        {
-          rel: 'preload',
-          as: 'image',
-          href: this.compressedImage,
-        },
-      ],
-    }
-  },
 }
 </script>
 
 <style scoped lang="scss">
-@import '../../../assets/styles/vars';
-
 .blog-post {
   &__blog-title {
     @include font('Poppins', 52px, 400);
@@ -128,6 +126,7 @@ export default {
     img {
       width: 100%;
       height: auto;
+      max-height: 534px;
       display: block;
       vertical-align: middle;
     }

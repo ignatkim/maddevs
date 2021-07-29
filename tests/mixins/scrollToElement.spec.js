@@ -13,7 +13,7 @@ const store = {
   },
 }
 
-const stubs = ['UnderlinedButton']
+const stubs = ['UnderlinedButton', 'NuxtLink']
 
 const WINDOW_SCROLL_TO = jest.fn()
 

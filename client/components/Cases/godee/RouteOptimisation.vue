@@ -48,15 +48,18 @@
             alt="GoDee: Safari Browser Top Bar White."
           />
           <video
+            v-if="loaded"
             id="route-optimization"
+            v-lazy-load
             class="case_html-video"
             width="100%"
             height="100%"
             loop="true"
             muted="true"
+            autoplay="true"
           >
             <source
-              :src="$getMediaFromS3('/videos/route-optimization.f5a2ff0.mp4')"
+              :data-src="$getMediaFromS3('/videos/route-optimization.f5a2ff0.mp4')"
               type="video/mp4"
             >
             Your browser does not support the video tag.
@@ -100,6 +103,18 @@ export default {
       type: Boolean,
       required: true,
     },
+  },
+
+  data() {
+    return {
+      loaded: false,
+    }
+  },
+
+  mounted() {
+    this.$nextTick(() => {
+      this.loaded = true
+    })
   },
 }
 </script>

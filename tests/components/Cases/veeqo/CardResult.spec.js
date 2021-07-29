@@ -1,6 +1,10 @@
 import CardResult from '@/components/Cases/veeqo/CardResult'
 import { render, screen } from '@testing-library/vue'
 
+const directives = {
+  'lazy-load': () => {},
+}
+
 describe('CardResult component', () => {
   const props = {
     icon: 'gears-card',
@@ -14,6 +18,7 @@ describe('CardResult component', () => {
       mocks: {
         $getMediaFromS3: () => 'img.jpg',
       },
+      directives,
     })
 
     expect(screen.getByText(props.title)).not.toBeNull()

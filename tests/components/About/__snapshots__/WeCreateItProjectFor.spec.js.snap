@@ -3,18 +3,18 @@
 exports[`WeCreateItProjectsFor should render correctly 1`] = `
 <div>
   <section
-    class="weCreateItProject"
-    data-testid="test-weCreateItProject"
-    id="weCreateItProject"
+    class="we-create-it-projects"
+    data-testid="test-we-create-it-projects"
+    id="we-create-it-projects"
   >
     <div
       class="container"
     >
       <div
-        class="weCreateItProject__content-wrapper"
+        class="we-create-it-projects__content-wrapper"
       >
         <h2
-          class="weCreateItProject__main-title"
+          class="we-create-it-projects__main-title"
         >
           
         We create 
@@ -25,13 +25,13 @@ exports[`WeCreateItProjectsFor should render correctly 1`] = `
         </h2>
          
         <div
-          class="weCreateItProject__projects-type_list row gy-0"
+          class="we-create-it-projects__projects-list"
         >
           <div
-            class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+            class="we-create-it-projects__project-item"
           >
             <p
-              class="weCreateItProject__paragraph"
+              class="we-create-it-projects__paragraph"
             >
               
             Content Streaming
@@ -43,10 +43,10 @@ exports[`WeCreateItProjectsFor should render correctly 1`] = `
             </p>
           </div>
           <div
-            class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+            class="we-create-it-projects__project-item"
           >
             <p
-              class="weCreateItProject__paragraph"
+              class="we-create-it-projects__paragraph"
             >
               
             HealthTech
@@ -58,10 +58,10 @@ exports[`WeCreateItProjectsFor should render correctly 1`] = `
             </p>
           </div>
           <div
-            class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+            class="we-create-it-projects__project-item"
           >
             <p
-              class="weCreateItProject__paragraph"
+              class="we-create-it-projects__paragraph"
             >
               
             E-Commerce
@@ -73,10 +73,10 @@ exports[`WeCreateItProjectsFor should render correctly 1`] = `
             </p>
           </div>
           <div
-            class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+            class="we-create-it-projects__project-item"
           >
             <p
-              class="weCreateItProject__paragraph"
+              class="we-create-it-projects__paragraph"
             >
               
             E-Learning
@@ -88,10 +88,10 @@ exports[`WeCreateItProjectsFor should render correctly 1`] = `
             </p>
           </div>
           <div
-            class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+            class="we-create-it-projects__project-item"
           >
             <p
-              class="weCreateItProject__paragraph"
+              class="we-create-it-projects__paragraph"
             >
               
             Serverless
@@ -103,10 +103,10 @@ exports[`WeCreateItProjectsFor should render correctly 1`] = `
             </p>
           </div>
           <div
-            class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+            class="we-create-it-projects__project-item"
           >
             <p
-              class="weCreateItProject__paragraph"
+              class="we-create-it-projects__paragraph"
             >
               
             Blockchain
@@ -120,245 +120,223 @@ exports[`WeCreateItProjectsFor should render correctly 1`] = `
         </div>
          
         <ul
-          class="weCreateItProject__flags-list"
+          class="we-create-it-projects__flags-list"
         >
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="usa"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="australia"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="vietnam"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="france"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="uk"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="indonesia"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="germany"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="austria"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="switzerland"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="canada"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="latvia"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="kazakhstan"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="sweden"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="finland"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="uae"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="denmark"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="japan"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="norway"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="portugal"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="katar"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="south_africa"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"
             />
           </li>
           <li
-            class="weCreateItProject__flag-item"
+            class="we-create-it-projects__flag-item"
           >
             <img
               alt="netherlands"
-              class="img_lazy"
               data-src="[object Object]"
               height="32"
               width="32"

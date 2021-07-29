@@ -3,9 +3,9 @@
     <div class="current-author">
       <div class="current-author__image">
         <img
+          v-lazy-load
           :data-src="blogAuthor.image.url"
           :alt="blogAuthor.image.alt"
-          class="img_lazy"
         >
       </div>
       <h1 class="current-author__name">
@@ -31,8 +31,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../../../assets/styles/_vars';
-
   .current-author {
     padding-top: 82px;
     padding-bottom: 55px;

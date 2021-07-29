@@ -8,10 +8,20 @@ const mocks = {
   $getMediaFromS3: image => image,
 }
 
+const data = () => ({
+  loaded: true,
+})
+
+const directives = {
+  'lazy-load': () => {},
+}
+
 describe('HardwareVideoOnlyIos component', () => {
   it('should render correctly', () => {
     const { container } = render(HardwareVideoOnlyIos, {
+      data,
       mocks,
+      directives,
     })
 
     expect(container).toMatchSnapshot()
@@ -19,7 +29,9 @@ describe('HardwareVideoOnlyIos component', () => {
 
   it('should work click pause handler', async () => {
     const { html } = render(HardwareVideoOnlyIos, {
+      data,
       mocks,
+      directives,
     })
 
     expect(html()).toContain('case_video-wrapper--paused')
@@ -41,7 +53,9 @@ describe('HardwareVideoOnlyIos component', () => {
     }
 
     const wrapper = shallowMount(HardwareVideoOnlyIos, {
+      data,
       mocks,
+      directives,
     })
 
     wrapper.vm.$options.methods.onEndedHandler.call(callObject)
@@ -64,7 +78,9 @@ describe('HardwareVideoOnlyIos component', () => {
     }
 
     const wrapper = shallowMount(HardwareVideoOnlyIos, {
+      data,
       mocks,
+      directives,
     })
 
     wrapper.vm.$options.methods.toggleVideoState.call(callObject)

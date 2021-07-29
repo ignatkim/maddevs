@@ -5,9 +5,9 @@
       class="post-card__image"
     >
       <img
+        v-lazy-load
         :data-src="post.data.featured_image.url"
         :alt="post.data.featured_image.alt"
-        class="img_lazy"
         width="400"
         height="217"
       >
@@ -129,8 +129,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/_vars';
-
 .post-card {
   width: 100%;
   height: 100%;

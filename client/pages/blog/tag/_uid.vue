@@ -11,16 +11,12 @@ import TagBanner from '@/components/Blog/Main/TagBanner'
 import TagPostsSection from '@/components/Blog/Main/TagPostsSection'
 import { buildHead, getMetadata } from '@/data/seo'
 
-import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
-
 export default {
   name: 'Tag',
   components: {
     TagBanner,
     TagPostsSection,
   },
-
-  mixins: [initLazyLoadMixin],
 
   async asyncData({ store, params, error }) {
     try {

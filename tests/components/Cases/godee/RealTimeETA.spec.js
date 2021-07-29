@@ -5,9 +5,12 @@ const mocks = {
   $getMediaFromS3: () => 'img.jpg',
 }
 
+const stubs = ['NuxtLink', 'Picture']
+
 describe('RealTimeETA component', () => {
   it('should render correctly', () => {
     const { container } = render(RealTimeETA, {
+      stubs,
       mocks,
     })
 
@@ -16,6 +19,7 @@ describe('RealTimeETA component', () => {
 
   it('should correctly display title', () => {
     render(RealTimeETA, {
+      stubs,
       mocks,
     })
 

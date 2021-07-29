@@ -115,11 +115,9 @@ import BlogHeader from '@/components/Blog/header/Blog'
 import CustomerUniversityHeader from '@/components/Blog/header/CustomerUniversity'
 import CustomerUniversityNavigation from '@/components/Blog/Post/CustomerUniversityNavigation'
 import PostCard from '@/components/Blog/shared/PostCard'
-import initializeLazyLoad from '@/helpers/lazyLoad'
 import copyToClipboard from '@/helpers/copyToClipboard'
 
 import findPostAuthorMixin from '@/mixins/findPostAuthorMixin'
-import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
 export default {
   name: 'PostView',
@@ -132,7 +130,7 @@ export default {
     CustomerUniversityNavigation,
   },
 
-  mixins: [initLazyLoadMixin, findPostAuthorMixin],
+  mixins: [findPostAuthorMixin],
 
   props: {
     type: {
@@ -259,10 +257,6 @@ export default {
     },
   },
 
-  updated() {
-    this.$nextTick(() => initializeLazyLoad())
-  },
-
   mounted() {
     window.addEventListener('scroll', this.scrollHandler)
     document.querySelectorAll('.copy-link')
@@ -357,9 +351,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/vars';
-@import '../../../assets/styles/socialNetworkIcons';
-
 :root {
   --top: 0px;
 }

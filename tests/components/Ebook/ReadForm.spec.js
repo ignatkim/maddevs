@@ -5,6 +5,10 @@ import ReadForm from '@/components/Ebook/ReadForm'
 describe('ReadForm component', () => {
   let wrapper = null
 
+  const directives = {
+    'lazy-load': () => {},
+  }
+
   beforeEach(() => {
     wrapper = shallowMount(ReadForm, {
       stubs: {
@@ -21,8 +25,10 @@ describe('ReadForm component', () => {
       mocks: {
         $v: {
           name: '',
+          $reset: () => {},
         },
       },
+      directives,
     })
   })
 

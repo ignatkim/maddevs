@@ -42,47 +42,28 @@ exports[`SupportedGadgets component should render correctly 1`] = `
           <div
             class="card-content_gadget-picture-wrapp card-content_gadget-picture-wrapp-macbook-pro-card"
           >
-            <picture
+            <picture-stub
+              alt="OTT-like Online Video Streaming Platform on MacBook Pro Laptop."
               class="card-content_picture"
-            >
-              <source
-                class="image media_lazy"
-                data-srcset="img.jpg,img.jpg"
-                type="image/webp"
-              />
-               
-              <img
-                alt="OTT-like Online Video Streaming Platform on MacBook Pro Laptop."
-                class="image media_lazy"
-                data-src="img.jpg"
-                data-srcset="img.jpg"
-                data-testid="test-picture-img"
-                height="449"
-                width="735"
-              />
-            </picture>
+              extension="png"
+              file="macbook-pro-card"
+              folder="yourcast"
+              height="449"
+              width="735"
+            />
           </div>
            
           <div
             class="card-content_gadget-picture-wrapp-mobile card-content_gadget-picture-wrapp-mobile-macbook-pro"
           >
-            <picture>
-              <source
-                class="image media_lazy"
-                data-srcset="img.jpg,img.jpg"
-                type="image/webp"
-              />
-               
-              <img
-                alt="OTT-like Online Video Streaming Platform on MacBook Pro Laptop."
-                class="image media_lazy"
-                data-src="img.jpg"
-                data-srcset="img.jpg"
-                data-testid="test-picture-img"
-                height="449"
-                width="735"
-              />
-            </picture>
+            <picture-stub
+              alt="OTT-like Online Video Streaming Platform on MacBook Pro Laptop."
+              extension="png"
+              file="macbook-pro"
+              folder="yourcast"
+              height="449"
+              width="735"
+            />
           </div>
         </div>
       </div>
@@ -103,47 +84,28 @@ exports[`SupportedGadgets component should render correctly 1`] = `
           <div
             class="card-content_gadget-picture-wrapp card-content_gadget-picture-wrapp-iphonex-card"
           >
-            <picture
+            <picture-stub
+              alt="OTT-like Online Video Streaming Platform on IPhone X Smartphone."
               class="card-content_picture"
-            >
-              <source
-                class="image media_lazy"
-                data-srcset="img.jpg,img.jpg"
-                type="image/webp"
-              />
-               
-              <img
-                alt="OTT-like Online Video Streaming Platform on IPhone X Smartphone."
-                class="image media_lazy"
-                data-src="img.jpg"
-                data-srcset="img.jpg"
-                data-testid="test-picture-img"
-                height="627"
-                width="312"
-              />
-            </picture>
+              extension="png"
+              file="iphonex-card"
+              folder="yourcast"
+              height="627"
+              width="312"
+            />
           </div>
            
           <div
             class="card-content_gadget-picture-wrapp-mobile card-content_gadget-picture-wrapp-mobile-iphonex"
           >
-            <picture>
-              <source
-                class="image media_lazy"
-                data-srcset="img.jpg,img.jpg"
-                type="image/webp"
-              />
-               
-              <img
-                alt="OTT-like Online Video Streaming Platform on IPhone X Smartphone."
-                class="image media_lazy"
-                data-src="img.jpg"
-                data-srcset="img.jpg"
-                data-testid="test-picture-img"
-                height="627"
-                width="312"
-              />
-            </picture>
+            <picture-stub
+              alt="OTT-like Online Video Streaming Platform on IPhone X Smartphone."
+              extension="png"
+              file="iphonex"
+              folder="yourcast"
+              height="627"
+              width="312"
+            />
           </div>
         </div>
       </div>
@@ -164,47 +126,28 @@ exports[`SupportedGadgets component should render correctly 1`] = `
           <div
             class="card-content_gadget-picture-wrapp card-content_gadget-picture-wrapp-ipad-pro-card"
           >
-            <picture
+            <picture-stub
+              alt="OTT-like Online Video Streaming Platform on IPad Tablet."
               class="card-content_picture"
-            >
-              <source
-                class="image media_lazy"
-                data-srcset="img.jpg,img.jpg"
-                type="image/webp"
-              />
-               
-              <img
-                alt="OTT-like Online Video Streaming Platform on IPad Tablet."
-                class="image media_lazy"
-                data-src="img.jpg"
-                data-srcset="img.jpg"
-                data-testid="test-picture-img"
-                height="374"
-                width="518"
-              />
-            </picture>
+              extension="png"
+              file="ipad-pro-card"
+              folder="yourcast"
+              height="374"
+              width="518"
+            />
           </div>
            
           <div
             class="card-content_gadget-picture-wrapp-mobile card-content_gadget-picture-wrapp-mobile-ipad-pro"
           >
-            <picture>
-              <source
-                class="image media_lazy"
-                data-srcset="img.jpg,img.jpg"
-                type="image/webp"
-              />
-               
-              <img
-                alt="OTT-like Online Video Streaming Platform on IPad Tablet."
-                class="image media_lazy"
-                data-src="img.jpg"
-                data-srcset="img.jpg"
-                data-testid="test-picture-img"
-                height="374"
-                width="518"
-              />
-            </picture>
+            <picture-stub
+              alt="OTT-like Online Video Streaming Platform on IPad Tablet."
+              extension="png"
+              file="ipad-pro"
+              folder="yourcast"
+              height="374"
+              width="518"
+            />
           </div>
         </div>
       </div>

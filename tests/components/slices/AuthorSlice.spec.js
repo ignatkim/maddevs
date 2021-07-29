@@ -79,6 +79,9 @@ describe('AuthorSlice component', () => {
       stubs,
       store,
       props,
+      directives: {
+        'lazy-load': () => {},
+      },
     })
 
     expect(container).toMatchSnapshot()
@@ -89,6 +92,9 @@ describe('AuthorSlice component', () => {
       stubs,
       store,
       props,
+      directives: {
+        'lazy-load': () => {},
+      },
     })
 
     expect(screen.getAllByTestId('test-social')).toHaveLength(store.getters.blogAuthor().socialNetworks.length)

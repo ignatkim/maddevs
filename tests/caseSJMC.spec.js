@@ -18,7 +18,10 @@ describe('sirJohnMonashCentre', () => {
           init: () => {},
         },
       },
-      stubs: ['NuxtLink'],
+      stubs: ['NuxtLink', 'SJMCVideo', 'CaseHeader', 'Main', 'CaseFooter'],
+      directives: {
+        'lazy-load': () => {},
+      },
     })
     wrapper.vm.$refs = {
       video: {

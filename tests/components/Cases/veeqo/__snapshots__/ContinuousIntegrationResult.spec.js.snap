@@ -32,7 +32,7 @@ exports[`ContinuousIntegrationResult component should render correctly 1`] = `
         >
           <img
             alt="Significantly Reduced Test Time."
-            class="case_card-icon case_time-icon media_lazy"
+            class="case_card-icon case_time-icon"
             data-src="img.jpg"
             height="66"
             width="66"
@@ -52,7 +52,7 @@ exports[`ContinuousIntegrationResult component should render correctly 1`] = `
         >
           <img
             alt="Decreased Cost of CI Maintenance."
-            class="case_card-icon case_dollar-icon media_lazy"
+            class="case_card-icon case_dollar-icon"
             data-src="img.jpg"
             height="66"
             width="66"

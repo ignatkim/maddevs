@@ -67,9 +67,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/cases/_mixins';
-@import '@/assets/styles/_vars';
-
 .case {
   &_cards {
     @include grid(repeat(1, 1fr), auto, 0, 24px);

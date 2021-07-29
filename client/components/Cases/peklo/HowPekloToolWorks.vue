@@ -43,11 +43,12 @@
             {{ card.description }}
           </TextParagraph>
           <img
+            v-lazy-load
             :width="card.iconWidth"
             :height="card.iconHeight"
             :data-src="$getMediaFromS3(`/images/Cases/peklo/svg/${card.icon}.svg`)"
             :alt="card.title"
-            class="case_card-icon media_lazy"
+            class="case_card-icon"
           >
         </Card>
       </div>
@@ -76,8 +77,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/cases/_mixins';
-
 .case {
   &_cards-list {
     @include grid(repeat(1, 1fr), auto, 0, 24px);

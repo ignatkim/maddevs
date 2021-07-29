@@ -33,7 +33,7 @@ exports[`BoilerplatesListItem component should render correctly 1`] = `
        
       <img
         alt="alt text"
-        class="boilerplates-list__item-logo media_lazy"
+        class="boilerplates-list__item-logo"
         data-src="img.jpg"
         height="32"
         width="23"

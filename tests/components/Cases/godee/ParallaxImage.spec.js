@@ -9,6 +9,11 @@ describe('ParallaxImage component', () => {
   it('should render correctly', () => {
     const { container } = render(ParallaxImage, {
       mocks,
+      directives: {
+        parallax: {
+          inserted: () => {},
+        },
+      },
     })
 
     expect(container).toMatchSnapshot()
@@ -17,6 +22,11 @@ describe('ParallaxImage component', () => {
   it('should correctly render url image', () => {
     render(ParallaxImage, {
       mocks,
+      directives: {
+        parallax: {
+          inserted: () => {},
+        },
+      },
     })
 
     expect(screen.getByTestId('test-case_parallax-image').style.background).toBe(`url(${mocks.$getMediaFromS3()})`)
