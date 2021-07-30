@@ -1,5 +1,5 @@
 import { render } from '@testing-library/vue'
-import TheLastPostSection from '@/components/Blog/Main/TheLastPostSection'
+import BlogHeader from '@/components/Blog/Main/BlogHeader'
 import { createLocalVue } from '@vue/test-utils'
 import Vuex from 'vuex'
 import allPosts from '../../../__mocks__/allPosts'
@@ -12,6 +12,7 @@ const mocks = {
     asText: () => 'text',
     asHtml: html => `<p>${html}</p>`,
   },
+  $getMediaFromS3: () => {},
 }
 
 const stubs = ['NuxtLink']
@@ -24,9 +25,9 @@ const store = {
   },
 }
 
-describe('TheLastPostSection component', () => {
+describe('BlogHeader component', () => {
   it('should render correctly', () => {
-    const { container } = render(TheLastPostSection, {
+    const { container } = render(BlogHeader, {
       stubs,
       mocks,
       store,
