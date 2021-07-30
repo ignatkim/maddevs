@@ -29,9 +29,8 @@ export default {
    */
   async middleware({ route = { name: '' }, $axios, $prismic }) {
     const pagesWithPrismic = ['careers', 'blog', 'ebooks', 'customer-university']
-
     if (pagesWithPrismic.some(page => route.name.includes(page))) {
-      const prismicData = await $axios.get('https://SuperPuperTest.cdn.prismic.io/api/v2')
+      const prismicData = await $axios.get(process.env.prismicApi)
       const currentMasterRef = $prismic.api.masterRef.ref
       const freshMasterRef = prismicData.data.refs[0].ref
       if (process.client && currentMasterRef !== freshMasterRef) $prismic.api.masterRef.ref = freshMasterRef
