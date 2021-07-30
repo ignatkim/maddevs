@@ -79,12 +79,13 @@ export default {
     color: $text-color--white;
     font-size: 100px;
     line-height: 96px;
+    letter-spacing: -0.04em;
   }
   &__subtitle {
     margin-top: 55px;
     font-size: 32px;
-    letter-spacing: -0.013em;
     line-height: 44px;
+    letter-spacing: -0.013em;
     color: $text-color--silver;
   }
 
@@ -94,8 +95,8 @@ export default {
 
   @media screen and (max-width: 1024px) {
     &__title {
-      font-size: 76px;
-      line-height: 76px;
+      font-size: 80px;
+      line-height: 88px;
     }
     &__subtitle {
       margin-top: 35px;
@@ -112,7 +113,7 @@ export default {
     &__subtitle {
       margin-top: 30px;
       font-size: 21px;
-      line-height: 29px;
+      line-height: 30px;
     }
   }
 }
