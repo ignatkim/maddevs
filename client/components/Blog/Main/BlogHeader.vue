@@ -185,6 +185,15 @@ export default {
     @media only screen and (max-width: 991px) {
       padding: 36px 0;
     }
+
+    /deep/ .featured-post__title {
+      color: #fff;
+    }
+
+    /deep/ .post-tag {
+      background-color: #707072;
+      color: #101113;
+    }
   }
 }
 </style>
