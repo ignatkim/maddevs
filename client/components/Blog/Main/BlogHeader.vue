@@ -190,9 +190,9 @@ export default {
       color: #fff;
     }
 
-    /deep/ .post-tag {
-      background-color: #707072;
-      color: #101113;
+    /deep/ .featured-post__meta .post-tag {
+      background-color: #707072 !important;
+      color: #101113 !important;
     }
   }
 }
