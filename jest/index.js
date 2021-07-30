@@ -84,11 +84,6 @@ function createCommands(args, modArgs) {
     cmd: 'node ./jest/utils/checkCoverage.js',
     message: 'Checking coverage',
   })
-  commands.push({
-    id: 'send-coverage-to-slack',
-    cmd: 'node ./jest/utils/sendCoverageToSlack.js',
-    message: 'Send Coverage to Slack',
-  })
   return commands
 }
 
