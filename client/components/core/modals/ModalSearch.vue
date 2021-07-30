@@ -141,9 +141,8 @@ export default {
 
     tags() {
       const ignoreTags = ['iOS development', 'iOS', 'Featured post', 'Software features']
-      const tags = this.blogTags
-      if (!tags || (tags && !tags.length)) return []
-      return tags.filter(tag => !ignoreTags.some(ignoreTag => ignoreTag === tag))
+      if (!this.blogTags || (this.blogTags && !this.blogTags.length)) return []
+      return this.blogTags.filter(tag => !ignoreTags.some(ignoreTag => ignoreTag === tag))
     },
   },
 

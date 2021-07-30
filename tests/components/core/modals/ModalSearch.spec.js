@@ -3,22 +3,10 @@ import { render } from '@testing-library/vue'
 import ModalSearch from '@/components/core/modals/ModalSearch'
 
 describe('ModalSearch component', () => {
-  const mocks = {
-    $refs: {
-      searchInput: {
-        focus: () => null,
-      },
-    },
-    $prismic: {
-      api: {
-        tags: ['iOS'],
-      },
-    },
-  }
-
   const store = {
     actions: {
       setSearchResponse: () => '',
+      getBlogTags: jest.fn(),
     },
     getters: {
       allAuthors() {
@@ -35,13 +23,15 @@ describe('ModalSearch component', () => {
     },
   }
 
-  it('test', () => {
+  it('should render correctly', () => {
     const { container } = render(ModalSearch, {
       store,
-      mocks,
     })
     expect(container).toMatchSnapshot()
   })
+
+  // TODO need to rewrite this test cases
+  /* eslint-disable */
   //
   // beforeEach(() => {
   //   wrapper = mount(ModalSearch, {
