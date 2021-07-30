@@ -153,7 +153,7 @@ export default {
     line-height: 46px;
     margin-bottom: 24px;
     letter-spacing: -1.3px;
-    color: #fff;
+    color: #000;
   }
 
   &__paragraph {
@@ -186,8 +186,8 @@ export default {
 
     /deep/ .post-tag {
       padding: 8px 16px;
-      background-color: #707072;
-      color: #101113;
+      background-color: #f4f4f4;
+      color: #000;
       font-size: 14px;
       line-height: 18px;
       letter-spacing: -0.4px;
