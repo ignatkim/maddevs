@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlogHeader component should render correctly 1`] = `
+<div>
+  <section
+    class="blog-header"
+    id="transparent-header-area"
+  >
+    <div
+      class="blog-header_bg"
+    >
+      <img
+        alt="Team"
+        height="741"
+        width="1440"
+      />
+    </div>
+     
+    <div
+      class="container"
+    >
+      <div
+        class="blog-header_info"
+        style="opacity: 1;"
+      >
+        <h1>
+          IT Blog
+        </h1>
+         
+        <p>
+          Here we share our processes, best practices, achievements, and knowledge with you based on our extensive experience working on various IT projects.
+        </p>
+      </div>
+       
+      <div
+        class="blog-header_last-post"
+      >
+        <div
+          class="featured-post dark"
+        >
+          <div
+            class="featured-post__wrapper"
+          >
+            <div
+              class="featured-post__main"
+            >
+              <h2
+                class="featured-post__title background-grey animated dark"
+              />
+               
+              <p
+                class="featured-post__paragraph background-grey animated dark"
+              />
+               
+              <div
+                class="featured-post__data d-flex justify-content-between"
+              >
+                <div
+                  class="featured-post__meta"
+                >
+                  <span
+                    class="created-at"
+                  />
+                </div>
+              </div>
+            </div>
+             
+            <div
+              class="featured-post__image-wrapper"
+            >
+              <div
+                class="featured-post__image background-grey animated dark"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;
