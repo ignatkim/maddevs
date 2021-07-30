@@ -93,11 +93,11 @@ const commands = createCommands(args, modArgs)
 
 function runExec(cmd) {
   return callback => {
-    const dashes = '-'.repeat(cmd.cmd.length)
+    const dashes = '-'.repeat(cmd.message.length * 3)
     // eslint-disable-next-line no-console
     console.log([
       chalk.cyan(dashes),
-      chalk.cyan(cmd.message),
+      chalk.cyan('-'.repeat(cmd.message.length) + cmd.message + '-'.repeat(cmd.message.length)),
       chalk.cyan(dashes),
       '',
     ].join('\n'))
