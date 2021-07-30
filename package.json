@@ -19,6 +19,7 @@
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect",
     "test": "npm run test:unit && npm run test:e2e",
+    "test:single": "jest --config ./jest/configs/browser.config.js",
     "test:unit": "node ./jest",
     "test:unit:node": "node ./jest -- --test=node",
     "test:unit:browser": "node ./jest -- --test=browser",
