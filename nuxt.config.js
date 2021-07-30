@@ -149,6 +149,7 @@ module.exports = {
     emailMarketing: process.env.NODE_EMAIL_MARKETING,
     sentryDsnFront: process.env.NODE_SENTRY_DSN_FRONT,
     ffEnvironment: process.env.FF_ENVIRONMENT,
+    prismicApi: process.env.NODE_PRISMIC_API,
   },
   router: {
     trailingSlash: true,

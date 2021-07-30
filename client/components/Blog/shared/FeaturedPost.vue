@@ -26,12 +26,12 @@
             :theme="theme"
           />
           <div class="featured-post__meta">
+            <span class="featured-post__date">{{ formattedDate }}</span>
             <PostTag
               v-if="post.tags && post.tags.length"
               :tag="tag || post.tags[0]"
               :theme="theme"
             />
-            <span class="featured-post__date">{{ formattedDate }}</span>
           </div>
         </div>
       </div>
@@ -149,17 +149,20 @@ export default {
     margin-top: 0;
   }
   &__title {
-    @include font('Poppins', 52px, 600);
-    line-height: 130%;
-    margin-bottom: 15px;
-    letter-spacing: -2px;
+    @include font('Poppins', 42px, 600);
+    line-height: 46px;
+    margin-bottom: 24px;
+    letter-spacing: -1.3px;
+    color: #000;
   }
+
   &__paragraph {
-    @include font('Inter', 17px, 400);
-    line-height: 28px;
-    letter-spacing: -0.035em;
-    margin-bottom: 44px;
+    @include font('Inter', 16px, 400);
+    line-height: 24px;
+    letter-spacing: -0.4px;
+    margin-bottom: 32px;
   }
+
   &__meta {
     @include font('Inter', 13px, 400);
     display: flex;
@@ -168,8 +171,10 @@ export default {
     &-wrapper {
       display: flex;
       justify-content: space-between;
+
       /deep/ .post-author {
         margin-right: 24px;
+
         &__image,
         &__none-image {
           width: 40px;
@@ -178,57 +183,77 @@ export default {
         }
       }
     }
+
+    /deep/ .post-tag {
+      padding: 8px 16px;
+      background-color: #f4f4f4;
+      color: #000;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: -0.4px;
+    }
   }
+
   &__date {
     white-space: nowrap;
-    margin-left: 24px;
+    margin-right: 24px;
     color: $text-color--grey;
   }
   &__image {
     display: block;
     width: 90%;
     margin-left: auto;
+    border-radius: 4px;
+    overflow: hidden;
+
     @media screen and (max-width: 1200px) {
       width: 100%;
     }
+
     img {
       display: block;
       width: 100%;
       height: auto;
       vertical-align: middle;
     }
+
     &-wrapper {
       margin-top: 0;
     }
   }
 }
+
 @media only screen and (max-width: 991px) {
   .featured-post {
     &__info-wrapper {
       order: 1;
       padding: 0;
     }
-    &__title {
-      font-size: 35px;
-    }
+
     &__paragraph {
       margin-bottom: 38px;
       font-size: 16px;
       line-height: 150%;
       letter-spacing: -0.02em;
     }
+
     &__meta {
       justify-content: space-between;
+
       .post-tag {
         padding: 8px 16px;
         line-height: 22px;
         margin-left: 0;
       }
+
       &-wrapper {
-        display: block;
+        display: flex;
+        align-content: center;
+
         /deep/ .post-author {
           margin-right: 0;
-          margin-bottom: 16px;
+          margin-bottom: 0;
+
           &__image,
           &__none-image {
             width: 30px;
@@ -241,10 +266,28 @@ export default {
     &__image {
       width: 100%;
       margin: 0;
+
       &-wrapper {
         order: 0;
         padding: 0;
         margin-bottom: 17px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .featured-post {
+    &__title {
+      @include font('Inter', 32px, 700);
+      line-height: 32px;
+    }
+
+    &__meta {
+      margin-bottom: 17px;
+
+      &-wrapper {
+        flex-direction: column-reverse;
       }
     }
   }

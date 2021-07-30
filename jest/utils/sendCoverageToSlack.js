@@ -1,5 +1,6 @@
 const request = require('request')
 const { readFile } = require('fs')
+const chalk = require('chalk')
 const { findArgument, getColor } = require('.')
 require('dotenv').config()
 
@@ -15,7 +16,7 @@ function getTotalCoveragePercentage(percentages) {
   return Number(sumPercentages / percentages.length).toFixed(2)
 }
 
-function createMessage(failedCount, vars) {
+function createMessage(vars) {
   const totalCoveragePercentage = getTotalCoveragePercentage([
     vars.statements.coverage,
     vars.branches.coverage,
@@ -24,7 +25,7 @@ function createMessage(failedCount, vars) {
   ])
 
   const message = {
-    text: failedCount > 0 ? messages.getErrorText(failedCount) : messages.passedText,
+    text: messages.passedText,
     attachments: [
       {
         text: `*Total coverage percentage*: ${totalCoveragePercentage}%`,
@@ -51,8 +52,8 @@ function createMessage(failedCount, vars) {
   return message
 }
 
-function sendMessageToSlack(reportResults, testResults, webhookUrl) {
-  const resultMessage = createMessage(testResults.numFailedTests, reportResults)
+function sendMessageToSlack(reportResults, webhookUrl) {
+  const resultMessage = createMessage(reportResults)
   const options = {
     uri: webhookUrl,
     method: 'POST',
@@ -62,7 +63,16 @@ function sendMessageToSlack(reportResults, testResults, webhookUrl) {
     },
     mrkdwn: true,
   }
-  request(options)
+  request(options, error => {
+    if (error) {
+      // eslint-disable-next-line no-console
+      console.log(chalk.red(error))
+      process.exit(1)
+    } else {
+      // eslint-disable-next-line no-console
+      console.log(chalk.green('Message sent to Slack'))
+    }
+  })
 }
 
 function readCoverageReport(data) {
@@ -88,7 +98,7 @@ function readCoverageReport(data) {
   return results
 }
 
-function sendCoverageToSlack(testResults) {
+function sendCoverageToSlack() {
   const webhookUrl = process.env.NODE_JEST_COVERAGE_SLACK_WEBHOOK_URL
   if (!webhookUrl) throw new Error(messages.emptyEnv)
 
@@ -97,10 +107,9 @@ function sendCoverageToSlack(testResults) {
   readFile(`${inputPath}`, 'utf8', (err, data) => {
     if (err) throw err
     const reportResults = readCoverageReport(data)
-    sendMessageToSlack(reportResults, testResults, webhookUrl)
+    sendMessageToSlack(reportResults, webhookUrl)
+    return reportResults
   })
-
-  return testResults
 }
 
 sendCoverageToSlack()
