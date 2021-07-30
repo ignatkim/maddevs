@@ -84,6 +84,11 @@ function createCommands(args, modArgs) {
     cmd: 'node ./jest/utils/checkCoverage.js',
     message: 'Checking coverage',
   })
+  commands.push({
+    id: 'send-coverage-to-slack',
+    cmd: 'node ./jest/utils/sendCoverageToSlack.js',
+    message: 'Send Coverage to Slack',
+  })
   return commands
 }
 
@@ -93,11 +98,11 @@ const commands = createCommands(args, modArgs)
 
 function runExec(cmd) {
   return callback => {
-    const dashes = '-'.repeat(cmd.cmd.length)
+    const dashes = '-'.repeat(cmd.message.length * 3)
     // eslint-disable-next-line no-console
     console.log([
       chalk.cyan(dashes),
-      chalk.cyan(cmd.message),
+      chalk.cyan('-'.repeat(cmd.message.length) + cmd.message + '-'.repeat(cmd.message.length)),
       chalk.cyan(dashes),
       '',
     ].join('\n'))
