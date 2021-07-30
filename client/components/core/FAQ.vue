@@ -74,17 +74,11 @@
         </h2>
         <p class="faq__paragraph">
           Simply submit your project idea to us via our contact form. We will contact you to clarify further
-          requirements and prepare the project time & cost estimates. For more details, you can get in touch with our
-          head of delivery management <span class="faq__nowrap">Tamara Mun:</span>
+          requirements and prepare the project time & cost estimates. For more details, you can get in touch
           <a
             class="faq__link"
-            href="mailto:tamaramun@maddevs.io"
-          >tamaramun@maddevs.io</a>, or schedule a meeting at
-          <a
-            class="faq__link"
-            href="https://calendly.com/tamaramun"
-            target="_blank"
-          ><span class="faq__nowrap">calendly/tamaramun</span></a>
+            href="mailto:team@maddevs.io"
+          >team@maddevs.io</a>
         </p>
         <h2
           id="how-much-does-software-development-cost?-how-do-you-charge?"
@@ -160,11 +154,11 @@
             Live chat
           </li>
           <li class="faq__list">
-            Direct mail to our Head of Delivery Management <span class="faq__nowrap">Tamara Mun</span> via
+            Direct mail to
             <a
               class="faq__link"
-              href="mailto:tamaramun@maddevs.io"
-            >tamaramun@maddevs.io</a>
+              href="mailto:team@maddevs.io"
+            >team@maddevs.io</a>
           </li>
           <li class="faq__list">
             Contact form
