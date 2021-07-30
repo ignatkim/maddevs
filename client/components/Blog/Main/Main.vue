@@ -40,11 +40,10 @@ export default {
   },
 
   methods: {
-    ...mapActions(['getHomePageContent', 'getBlogPosts', 'getBlogAuthors', 'getCustomerUniversityContent']),
+    ...mapActions(['getBlogPosts', 'getBlogAuthors', 'getCustomerUniversityContent']),
 
     getContent() {
       // Query to get blog home content
-      this.getHomePageContent()
       this.getCustomerUniversityContent()
 
       // Query to get posts content to preview
