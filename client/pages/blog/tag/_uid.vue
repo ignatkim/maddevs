@@ -20,7 +20,7 @@ export default {
 
   async asyncData({ store, params, error }) {
     try {
-      store.dispatch('getBlogTag', params.uid)
+      await store.dispatch('getBlogTag', params.uid)
       return {
         openGraphUrl: `${process.env.domain}/blog/tag/${params.uid}/`,
       }

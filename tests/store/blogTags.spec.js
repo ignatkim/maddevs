@@ -8,6 +8,7 @@ import { getPostsByTag } from '@/api/blogTags'
 jest.mock('@/api/blogTags', () => (
   {
     getPostsByTag: jest.fn(() => 'test'),
+    getBlogTag: jest.fn(() => 'tag'),
   }
 ))
 
@@ -85,6 +86,9 @@ describe('BlogTags module actions', () => {
   it('should correctly called getBlogTag', async () => {
     const store = {
       commit: jest.fn(),
+      state: {
+        tags: [],
+      },
     }
 
     await actions.getBlogTag(store, 'tag')
