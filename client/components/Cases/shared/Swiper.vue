@@ -22,11 +22,13 @@
           :key="element.fileName"
         >
           <Picture
+            :width="1026"
+            :height="525"
             :folder="element.pictureFolder"
             :file="element.fileName"
             :extension="element.fileExtension"
             :alt="element.alt"
-            :lazy="lazy"
+            :lazy="false"
           />
         </swiper-slide>
       </swiper>

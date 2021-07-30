@@ -5,7 +5,6 @@ exports[`Picture component should render correctly 1`] = `
   <picture>
     <source
       class="image box-shadow"
-      data-not-lazy="true"
       data-srcset="../../../../client/assets/img/Home/jpg/experts/Alice.jpg ,../../../../client/assets/img/Home/jpg/experts/Alice.jpg"
       type="image/webp"
     />
@@ -13,7 +12,6 @@ exports[`Picture component should render correctly 1`] = `
     <img
       alt="alt"
       class="image box-shadow"
-      data-not-lazy="true"
       data-src="../../../../client/assets/img/Home/jpg/experts/Alice.jpg"
       data-srcset="../../../../client/assets/img/Home/jpg/experts/Alice.jpg"
       data-testid="test-picture-img"

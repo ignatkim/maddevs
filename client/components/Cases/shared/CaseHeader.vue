@@ -11,7 +11,7 @@
     />
     <!-- End Image placeholder fallback for Video -->
     <video
-      v-if="!isIphone"
+      v-if="!isIphone && loaded"
       v-lazy-load
       class="case_main-video"
       data-testid="test-case_main-video"
@@ -115,6 +115,7 @@ export default {
   data() {
     return {
       isIphone: false,
+      loaded: false,
     }
   },
 
@@ -124,6 +125,9 @@ export default {
     } else {
       this.isIphone = false
     }
+    this.$nextTick(() => {
+      this.loaded = true
+    })
   },
 }
 </script>

@@ -11,11 +11,12 @@
     </div>
     <div class="container_full background-color-black-primary case_video-wrapp">
       <video
-        v-if="!isIphone"
+        v-if="!isIphone && loaded"
         id="yourcast-tv"
         v-lazy-load
         loop="true"
         muted="true"
+        autoplay="true"
         class="case_yourcast-tv"
       >
         <source
@@ -124,7 +125,14 @@ export default {
   data() {
     return {
       posters,
+      loaded: false,
     }
+  },
+
+  mounted() {
+    this.$nextTick(() => {
+      this.loaded = true
+    })
   },
 }
 </script>

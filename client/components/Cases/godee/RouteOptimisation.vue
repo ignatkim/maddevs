@@ -48,6 +48,7 @@
             alt="GoDee: Safari Browser Top Bar White."
           />
           <video
+            v-if="loaded"
             id="route-optimization"
             v-lazy-load
             class="case_html-video"
@@ -55,6 +56,7 @@
             height="100%"
             loop="true"
             muted="true"
+            autoplay="true"
           >
             <source
               :data-src="$getMediaFromS3('/videos/route-optimization.f5a2ff0.mp4')"
@@ -101,6 +103,18 @@ export default {
       type: Boolean,
       required: true,
     },
+  },
+
+  data() {
+    return {
+      loaded: false,
+    }
+  },
+
+  mounted() {
+    this.$nextTick(() => {
+      this.loaded = true
+    })
   },
 }
 </script>

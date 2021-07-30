@@ -33,8 +33,8 @@ exports[`Applications component should render correctly 1`] = `
       >
         <img
           class="case_phone-ios-image"
+          data-src="img.jpg"
           data-testid="test-case_phone-ios-image"
-          src="img.jpg"
         />
       </div>
     </section>

@@ -8,6 +8,10 @@ const mocks = {
   $getMediaFromS3: image => image,
 }
 
+const data = () => ({
+  loaded: true,
+})
+
 const directives = {
   'lazy-load': () => {},
 }
@@ -15,6 +19,7 @@ const directives = {
 describe('HardwareVideoOnlyIos component', () => {
   it('should render correctly', () => {
     const { container } = render(HardwareVideoOnlyIos, {
+      data,
       mocks,
       directives,
     })
@@ -24,6 +29,7 @@ describe('HardwareVideoOnlyIos component', () => {
 
   it('should work click pause handler', async () => {
     const { html } = render(HardwareVideoOnlyIos, {
+      data,
       mocks,
       directives,
     })
@@ -47,6 +53,7 @@ describe('HardwareVideoOnlyIos component', () => {
     }
 
     const wrapper = shallowMount(HardwareVideoOnlyIos, {
+      data,
       mocks,
       directives,
     })
@@ -71,6 +78,7 @@ describe('HardwareVideoOnlyIos component', () => {
     }
 
     const wrapper = shallowMount(HardwareVideoOnlyIos, {
+      data,
       mocks,
       directives,
     })
