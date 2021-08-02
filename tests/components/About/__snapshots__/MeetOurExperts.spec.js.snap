@@ -73,9 +73,9 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
           class="meet-our-experts__expert-item"
         >
           <uiimage-stub
-            alt="Tamara Mun - Head of Delivery Management at Mad Devs Software and Mobile App Development Company."
-            filename="Tamara"
-            filenameretina="Tamara@2x"
+            alt="Anatoliy Fedorenko - Delivery Manager at Mad Devs Software and Mobile App Development Company."
+            filename="Anatoliy"
+            filenameretina="Anatoliy@2x"
             height="401"
             width="295"
           />
@@ -90,7 +90,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
                 class="meet-our-experts__expert-name"
               >
                 
-              Tamara Mun
+              Anatoliy Fedorenko
             
               </div>
                
@@ -98,7 +98,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
                 class="meet-our-experts__expert-position"
               >
                 
-              Head of Delivery Management
+              Delivery Manager
             
               </div>
             </div>
@@ -113,7 +113,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
           />
            
           <a
-            href="https://www.linkedin.com/in/tamara-mun/"
+            href="https://www.linkedin.com/in/anatoliyfedorenko/"
             rel="nofollow"
             target="_blank"
           />

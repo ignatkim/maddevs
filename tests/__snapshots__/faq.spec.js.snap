@@ -195,32 +195,13 @@ exports[`fAQ renders correctly 1`] = `
       >
         
         Simply submit your project idea to us via our contact form. We will contact you to clarify further
-        requirements and prepare the project time & cost estimates. For more details, you can get in touch with our
-        head of delivery management 
-        <span
-          class="faq__nowrap"
-        >
-          Tamara Mun:
-        </span>
-         
-        <a
-          class="faq__link"
-          href="mailto:tamaramun@maddevs.io"
-        >
-          tamaramun@maddevs.io
-        </a>
-        , or schedule a meeting at
+        requirements and prepare the project time & cost estimates. For more details, you can get in touch
         
         <a
           class="faq__link"
-          href="https://calendly.com/tamaramun"
-          target="_blank"
+          href="mailto:team@maddevs.io"
         >
-          <span
-            class="faq__nowrap"
-          >
-            calendly/tamaramun
-          </span>
+          team@maddevs.io
         </a>
       </p>
        
@@ -382,19 +363,13 @@ exports[`fAQ renders correctly 1`] = `
           class="faq__list"
         >
           
-          Direct mail to our Head of Delivery Management 
-          <span
-            class="faq__nowrap"
-          >
-            Tamara Mun
-          </span>
-           via
+          Direct mail to
           
           <a
             class="faq__link"
-            href="mailto:tamaramun@maddevs.io"
+            href="mailto:team@maddevs.io"
           >
-            tamaramun@maddevs.io
+            team@maddevs.io
           </a>
         </li>
          
