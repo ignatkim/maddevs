@@ -7,11 +7,11 @@ export const experts = [
     alt: 'Marat Bediev - Senior DevOps Engineer at Mad Devs Software and Mobile App Development Company.',
   },
   {
-    name: 'Tamara Mun',
-    position: 'Head of Delivery Management',
-    image: 'Tamara',
-    linkedin: 'https://www.linkedin.com/in/tamara-mun/',
-    alt: 'Tamara Mun - Head of Delivery Management at Mad Devs Software and Mobile App Development Company.',
+    name: 'Anatoliy Fedorenko',
+    position: 'Delivery Manager',
+    image: 'Anatoliy',
+    linkedin: 'https://www.linkedin.com/in/anatoliyfedorenko/',
+    alt: 'Anatoliy Fedorenko - Delivery Manager at Mad Devs Software and Mobile App Development Company.',
   },
   {
     name: 'Andrew "Chuck" Minkin',
