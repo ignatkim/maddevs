@@ -115,6 +115,7 @@ module.exports = {
     [
       'nuxt-i18n',
       {
+        strategy: 'no_prefix',
         defaultLocale: 'en',
         langDir: '~/locales/',
         locales: [
