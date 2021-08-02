@@ -131,7 +131,7 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['allAuthors']),
+    ...mapGetters(['allAuthors', 'blogTags']),
 
     searchPosts() {
       if (!this.response || !this.response.results || !this.response.results.length) return []
@@ -141,9 +141,8 @@ export default {
 
     tags() {
       const ignoreTags = ['iOS development', 'iOS', 'Featured post', 'Software features']
-      const { tags } = this.$prismic.api
-      if (!tags || (tags && !tags.length)) return []
-      return tags.filter(tag => !ignoreTags.some(ignoreTag => ignoreTag === tag))
+      if (!this.blogTags || (this.blogTags && !this.blogTags.length)) return []
+      return this.blogTags.filter(tag => !ignoreTags.some(ignoreTag => ignoreTag === tag))
     },
   },
 
@@ -152,6 +151,10 @@ export default {
     '$route' () {
       this.onClose()
     },
+  },
+
+  created() {
+    if (!this.blogTags.length) this.getBlogTags()
   },
 
   mounted() {
@@ -164,7 +167,7 @@ export default {
   },
 
   methods: {
-    ...mapActions(['setSearchQuery', 'setSearchResponse']),
+    ...mapActions(['getBlogTags', 'setSearchQuery', 'setSearchResponse']),
 
     focusOnInput() {
       if (!this.$refs.searchInput) return null

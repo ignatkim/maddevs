@@ -139,16 +139,21 @@ export default {
 
     h1 {
       width: 100%;
-      @include font('Inter', 68px, 700);
-      line-height: 72px;
+      @include font('Inter', 100px, 700);
+      line-height: 96px;
       color: #fff;
       text-align: center;
-      letter-spacing: -2px;
+      letter-spacing: -0.04em;
       margin-top: 135px;
 
-      @media screen and (max-width: 560px) {
-        @include font('Inter', 42px, 700);
-        line-height: 48px;
+      @media screen and (max-width: 1024px) {
+        font-size: 80px;
+        line-height: 88px;
+      }
+
+      @media screen and (max-width: 768px) {
+        font-size: 52px;
+        line-height: 57px;
         margin-top: 98px;
       }
     }
@@ -156,24 +161,23 @@ export default {
     p {
       width: 100%;
       max-width: 815px;
-      @include font('Inter', 26px, 400);
-      line-height: 34px;
+      @include font('Inter', 32px, 400);
+      line-height: 44px;
       color: #F4F4F4;
       text-align: center;
-      letter-spacing: -1px;
+      letter-spacing: -0.013em;
       margin: 32px auto auto;
 
       @media screen and (max-width: 1024px) {
+        font-size: 24px;
+        line-height: 34px;
         margin-bottom: 124px;
       }
 
       @media screen and (max-width: 768px) {
-        margin-bottom: 64px;
-      }
-
-      @media screen and (max-width: 560px) {
-        @include font('Inter', 21px, 400);
+        font-size: 21px;
         line-height: 30px;
+        margin-bottom: 64px;
       }
     }
   }
