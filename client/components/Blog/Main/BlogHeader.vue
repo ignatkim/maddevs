@@ -123,13 +123,13 @@ export default {
     &::after {
       content: '';
       width: 100%;
-      height: 150px;
+      height: 200px;
       display: block;
       position: relative;
-      margin-top: -150px;
-      background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #111213 70%);
-      background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #111213 70%);
-      background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #111213 70%);
+      margin-top: -200px;
+      background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #111213 70%);
+      background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #111213 70%);
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #111213 70%);
       z-index: 2;
     }
   }
