@@ -306,7 +306,7 @@ This variable must contain the url, which will be used to access s3 files.
 | `aws s3 cp --acl public-read ./folder/name.jpg s3://maddevsio/folder/`   	      | Upload file to folder  	  	      |
 | `aws s3 rm s3://maddevsio/folder/name.jpg`	                    	              | Remove file  	  	      	        |
 | `aws s3 sync --acl public-read ./folder s3://maddevsio/folder/`                 | Update files  	  	      	      |
-| `aws s3 sync s3://maddevsio/images/Careers/ ./Careers`                          | Downloads all content from /images/Careers to /Careers folder |
+| `aws s3 sync s3://maddevsio/folder/ ./folder`                          | Downloads all content from s3 /folder to local folder ./folder |
 
 ## 🏳️ Feature flags
 
