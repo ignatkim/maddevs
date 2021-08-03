@@ -25,6 +25,7 @@ exports[`Banner component should render correctly 1`] = `
      
     <div
       class="container"
+      style="opacity: 1;"
     >
       <h1
         class="careers-banner_title"
