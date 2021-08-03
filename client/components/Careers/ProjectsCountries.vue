@@ -5,12 +5,12 @@
     <h2
       class="projects-countries_title"
     >
-      Global projects in 20+ countries
+      {{ $t('careers.section-2.title') }}
     </h2>
     <p
       class="projects-countries_description"
     >
-      We build solutions for 35M+ users worldwide
+      {{ $t('careers.section-2.description') }}
     </p>
     <div class="projects-countries_img-wrap">
       <img
@@ -29,7 +29,7 @@
     <UILinkButton
       class="projects-countries_link-btn"
       link="/case-studies/"
-      title="See all case studies "
+      :title="$t('careers.section-2.btn')"
     />
   </div>
 </template>

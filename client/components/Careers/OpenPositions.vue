@@ -8,12 +8,11 @@
         class="open-positions__head"
       >
         <h2 class="open-positions__title">
-          Open positions
+          {{ $t('careers.section-8.title') }}
         </h2>
         <PositionsFilter />
       </div>
-      <PositionsGrid
-      />
+      <PositionsGrid />
     </div>
   </div>
 </template>
@@ -45,7 +44,7 @@ export default {
     }
   }
   &__title {
-    @include font('Poppins', 60px, 700);
+    @include font('Inter', 60px, 900);
     line-height: 64px;
     letter-spacing: -2.6px;
     margin-bottom: 38px;

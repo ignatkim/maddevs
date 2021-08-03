@@ -1,6 +1,6 @@
 {
   "careers": {
-    "showOpenVacancies": "See all 25 open positions",
+    "showOpenVacancies": "See all {count} open positions",
     "section-1": {
       "title": "Career at Mad Devs",
       "description": "Without empty words, here at Mad Devs we partner with projects where our teams thrive. Innovating solutions, carrying ownership, delivering sustainable value and celebrating successes — make a happy workplace, where things get done.",
@@ -32,19 +32,19 @@
       "list-items-2": "staff members work for Mad Devs.",
       "list-items-3": "tech bloggers and conference speakers.",
       "list-items-4": "weekly pull requestsin a project.",
-      "list-items-5": "hours of internal training.",
-      "list-items-6": "boring task and bureaucratic procedures."
+      "list-items-5": "boring task and bureaucratic procedures.",
+      "list-items-6": "hours of internal training."
     },
     "section-7": {
       "title": "Employees benefits",
       "list-items-1": "Flexible working hours",
       "list-items-2": "Onsite business trips",
-      "list-items-3": "English lessons",
-      "list-items-4": "Training budget",
+      "list-items-3": "English <br> lessons",
+      "list-items-4": "Training <br> budget",
       "list-items-5": "Remote-first culture",
       "list-items-6": "Long-term projects",
-      "list-items-7": "Paid conferences",
-      "list-items-8": "Team parties"
+      "list-items-7": "Paid <br> conferences",
+      "list-items-8": "Team <br> parties"
     },
     "section-8": {
       "title": "Open positions",

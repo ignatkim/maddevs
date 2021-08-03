@@ -3,7 +3,7 @@
     <h2
       class="key-metrics_title"
     >
-      Mad Devs’ key metrics
+      {{ $t('careers.section-6.title') }}
     </h2>
     <div
       class="key-metrics_grid"
@@ -19,7 +19,6 @@
 
 <script>
 import MetricCard from '@/components/Careers/shared/MetricCard'
-import { keyMetrics } from '@/data/careersPage'
 
 export default {
   name: 'KeyMetrics',
@@ -27,10 +26,35 @@ export default {
     MetricCard,
   },
 
-  data() {
-    return {
-      keyMetrics,
-    }
+  computed: {
+    keyMetrics() {
+      return [
+        {
+          title: '70+',
+          description: this.$t('careers.section-6.list-items-1'),
+        },
+        {
+          title: '100+',
+          description: this.$t('careers.section-6.list-items-2'),
+        },
+        {
+          title: '30+',
+          description: this.$t('careers.section-6.list-items-3'),
+        },
+        {
+          title: '100+',
+          description: this.$t('careers.section-6.list-items-4'),
+        },
+        {
+          title: '0',
+          description: this.$t('careers.section-6.list-items-5'),
+        },
+        {
+          title: '10K',
+          description: this.$t('careers.section-6.list-items-6'),
+        },
+      ]
+    },
   },
 }
 </script>
@@ -71,7 +95,7 @@ export default {
   }
 
   &_title {
-    @include font('Poppins', 60px, 700);
+    @include font('Inter', 60px, 900);
     letter-spacing: -2.6px;
     line-height: 67px;
     color: $text-color--white;

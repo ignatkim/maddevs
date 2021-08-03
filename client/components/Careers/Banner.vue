@@ -36,7 +36,7 @@
           alt="Russian flag"
         >
         <img
-          v-else
+          v-if="currentLanguage === 'ru'"
           src="@/assets/img/Careers/svg/uk-flag.svg"
           alt="UK flag"
         >
@@ -47,20 +47,19 @@
 </template>
 
 <script>
-import { mapActions, mapGetters } from 'vuex'
-
 export default {
   name: 'CareersBanner',
+
   computed: {
-    ...mapGetters([
-      'currentLanguage',
-    ]),
+    currentLanguage() {
+      return this.$i18n.locale
+    },
   },
 
   methods: {
-    ...mapActions(['switchLanguage']),
     changeLocale() {
-      this.switchLanguage()
+      const lang = this.$i18n.locale === 'en' ? 'ru' : 'en'
+      this.$i18n.setLocale(lang)
     },
   },
 }

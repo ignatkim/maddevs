@@ -4,13 +4,13 @@
       <h2
         class="employees-benefits_title"
       >
-        Employees benefits
+        {{ $t('careers.section-7.title') }}
       </h2>
       <div
         class="employees-benefits_benefits-cards"
       >
         <BenefitCard
-          v-for="benefit in benefits"
+          v-for="benefit in employeesBenefits"
           v-bind="benefit"
           :key="benefit.title"
         />
@@ -28,7 +28,6 @@
 <script>
 import BenefitCard from '@/components/Careers/shared/BenefitCard'
 import UISlider from '@/components/shared/UISlider'
-import { employeesBenefits as benefits } from '@/data/benefits'
 import { slides } from '@/data/careersPage'
 
 export default {
@@ -40,7 +39,6 @@ export default {
 
   data() {
     return {
-      benefits,
       slides,
       swiperOptions: {
         speed: 750,
@@ -58,6 +56,93 @@ export default {
         },
       },
     }
+  },
+
+  computed: {
+    employeesBenefits() {
+      return [
+        {
+          icon: {
+            name: 'hours',
+            alt: 'Hours Icon.',
+            width: 31,
+            height: 30,
+          },
+
+          title: this.$t('careers.section-7.list-items-1'),
+        },
+        {
+          icon: {
+            name: 'trips',
+            alt: 'Trips Icon.',
+            width: 28,
+            height: 32,
+          },
+
+          title: this.$t('careers.section-7.list-items-2'),
+        },
+        {
+          icon: {
+            name: 'lessons',
+            alt: 'Lessons Icon.',
+            width: 36,
+            height: 31,
+          },
+
+          title: this.$t('careers.section-7.list-items-3'),
+        },
+        {
+          icon: {
+            name: 'training',
+            alt: 'Training Icon.',
+            width: 39,
+            height: 24,
+          },
+
+          title: this.$t('careers.section-7.list-items-4'),
+        },
+        {
+          icon: {
+            name: 'culture',
+            alt: 'Culture Icon.',
+            width: 24,
+            height: 31,
+          },
+
+          title: this.$t('careers.section-7.list-items-5'),
+        },
+        {
+          icon: {
+            name: 'term',
+            alt: 'Docs Icon.',
+            width: 26,
+            height: 30,
+          },
+
+          title: this.$t('careers.section-7.list-items-6'),
+        },
+        {
+          icon: {
+            name: 'conferences',
+            alt: 'Microphone Icon.',
+            width: 20,
+            height: 33,
+          },
+
+          title: this.$t('careers.section-7.list-items-7'),
+        },
+        {
+          icon: {
+            name: 'parties',
+            alt: 'Cocktail Glass Icon.',
+            width: 31,
+            height: 36,
+          },
+
+          title: this.$t('careers.section-7.list-items-8'),
+        },
+      ]
+    },
   },
 }
 </script>
@@ -91,7 +176,7 @@ export default {
 
   &_title {
     margin-right: 48px;
-    @include font('Poppins', 60px, 700);
+    @include font('Inter', 60px, 900);
     letter-spacing: -2.6px;
     line-height: 64px;
     color: $text-color--red;
