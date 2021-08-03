@@ -124,6 +124,10 @@ module.exports = {
         ],
       },
     ],
+    ['@nuxtjs/prismic', {
+      endpoint: 'https://your-repo-name.cdn.prismic.io/api/v2',
+    }],
+    ['nuxt-sm'],
   ],
   sitemap: {
     hostname: 'https://maddevs.io',
