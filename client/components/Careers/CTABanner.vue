@@ -3,8 +3,8 @@
     class="careers-cta-banner_container container"
   >
     <UIBanner
-      title="Can’t find your <br /> next role?"
-      text="If you don’t see a suitable vacancy, but are sure that we’re meant to be, drop us a line."
+      :title="$t('careers.section-9.title')"
+      :text="$t('careers.section-9.description')"
       :image="$getMediaFromS3(`/images/CTABanner/Daria.png`)"
       image-alt-text="Daria"
       man-name="Daria Utesheva"
@@ -23,7 +23,7 @@
             alt="Telegram"
           >
           &nbsp;
-          Telegram us
+          {{ $t('careers.section-9.btn') }}
         </UIButton>
       </a>
       <ul class="careers-cta-banner__links">

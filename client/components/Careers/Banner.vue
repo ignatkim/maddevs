@@ -1,48 +1,99 @@
 <template>
   <div
-    class="banner container"
+    id="transparent-header-area"
+    class="careers-banner"
+    :class="[`careers-banner_${currentLanguage}`]"
   >
-    <h1
-      class="banner_title"
-    >
-      Career at <br> Mad Devs
-    </h1>
-    <div
-      class="banner_img-wrap"
-    >
-      <picture>
-        <source
-          :srcset="[$getMediaFromS3('/images/Careers/webp/office.webp') + ' ', $getMediaFromS3('/images/Careers/webp/office@2x.webp 2x')]"
-          type="image/webp"
-          class="banner_img"
+    <picture>
+      <source
+        :srcset="[$getMediaFromS3('/images/Careers/webp/office_black.webp') + ' ', $getMediaFromS3('/images/Careers/webp/office_black@2x.webp 2x')]"
+        type="image/webp"
+        class="careers-banner__image"
+      >
+      <img
+        :src="$getMediaFromS3('/images/Careers/png/office_black.png')"
+        :srcset="$getMediaFromS3('/images/Careers/png/office_black@2x.png')"
+        width="1239"
+        height="606"
+        class="careers-banner__image"
+        alt="Office"
+      >
+    </picture>
+    <div class="container">
+      <h1 class="careers-banner_title">
+        {{ $t('careers.section-1.title') }}
+      </h1>
+      <p class="careers-banner_description">
+        {{ $t('careers.section-1.description') }}
+      </p>
+      <button
+        class="careers-banner_btn"
+        @click="changeLocale"
+      >
+        <img
+          v-if="currentLanguage === 'en'"
+          src="@/assets/img/Careers/svg/russian-flag.svg"
+          alt="Russian flag"
         >
         <img
-          :src="$getMediaFromS3('/images/Careers/png/office.png')"
-          :srcset="$getMediaFromS3('/images/Careers/png/office@2x.png')"
-          width="1239"
-          height="606"
-          class="banner_img"
-          alt="Office"
+          v-if="currentLanguage === 'ru'"
+          src="@/assets/img/Careers/svg/uk-flag.svg"
+          alt="UK flag"
         >
-      </picture>
+        {{ $t('careers.section-1.btn') }}
+      </button>
     </div>
-    <p
-      class="banner_description"
-    >
-      Here at Mad Devs, we partner with projects where <span>our teams thrive</span>. Innovating solutions, carrying ownership, delivering sustainable value, and celebrating successes—these make a happy workplace where things get done.
-    </p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Banner',
+  name: 'CareersBanner',
+
+  computed: {
+    currentLanguage() {
+      return this.$i18n?.locale || 'en'
+    },
+  },
+
+  methods: {
+    changeLocale() {
+      const lang = this.$i18n.locale === 'en' ? 'ru' : 'en'
+      this.$i18n.setLocale(lang)
+      return lang
+    },
+  },
 }
 </script>
 
 <style lang="scss" scoped>
-.banner {
-  margin-bottom: 210px;
+.careers-banner {
+  position: relative;
+  height: 100vh;
+  min-height: 568px;
+  background: linear-gradient(180deg, rgba(17, 18, 19, 0) 60%, #111213 100%);
+  overflow: hidden;
+
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__image {
+    display: block;
+    z-index: -1;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    object-fit: cover;
+    object-position: top;
+    opacity: 0.48;
+  }
 
   &_title,
   &_description {
@@ -50,9 +101,8 @@ export default {
   }
 
   &_title {
-    margin-top: 141px;
-    margin-bottom: 66px;
-    @include font('Poppins', 100px, 700);
+    margin-bottom: 56px;
+    @include font('Inter', 100px, 900);
     letter-spacing: -0.04em;
     line-height: 96px;
     color: $text-color--white;
@@ -62,8 +112,25 @@ export default {
     }
   }
 
-  &_img-wrap {
-    margin-bottom: 206px;
+  &_btn {
+    padding: 12px 24px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #101113;
+    border: none;
+    @include font('Inter', 16px, 400);
+    letter-spacing: -0.013em;
+    cursor: pointer;
+
+    img {
+      width: 18px;
+      margin-right: 10px;
+    }
+
+    &:active {
+      background-color: #dadada;
+    }
   }
 
   &_img {
@@ -74,10 +141,11 @@ export default {
   &_description {
     max-width: 1028px;
     margin: 0 auto;
-    @include font('Inter', 32px, 700);
-    line-height: 47px;
+    @include font('Inter', 32px, 600);
+    line-height: 44px;
     letter-spacing: -0.013em;
-    color: $text-color--grey-opacity-20-percent;
+    color: #F4F4F4;
+    margin-bottom: 56px;
 
     span {
       color: $text-color--red;
@@ -93,10 +161,6 @@ export default {
       line-height: 76px;
     }
 
-    &_img-wrap {
-      margin-bottom: 96px;
-    }
-
     &_description {
       font-size: 24px;
       line-height: 31px;
@@ -107,14 +171,14 @@ export default {
     margin-bottom: 108px;
 
     &_title {
-      margin-top: 116px;
-      margin-bottom: 38px;
-      font-size: 44px;
-      line-height: 109%;
+      max-width: 250px;
+      margin-bottom: 34px;
+      font-size: 48px;
+      line-height: 49px;
     }
 
-    &_img-wrap {
-      margin-bottom: 70px;
+    &_description {
+      margin-bottom: 65px;
     }
   }
 }

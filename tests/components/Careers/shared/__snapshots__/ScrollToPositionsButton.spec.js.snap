@@ -10,7 +10,7 @@ exports[`ScrollToPositionsLink component should render correctly 1`] = `
       class="underlined-button"
     >
       
-    See all 0 open positions
+    translated
   
     </button>
   </nuxtlink-stub>
