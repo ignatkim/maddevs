@@ -11,20 +11,9 @@
       man-position="Head of HR Departament"
     >
       <a
-        href="https://t.me/DianaHRDigital"
-        target="_blank"
+        :href="linkToHREmail"
       >
-        <UIButton>
-          <img
-            v-lazy-load
-            :data-src="require(`@/assets/img/Careers/svg/telegram--white.svg`)"
-            width="20"
-            height="17"
-            alt="Telegram"
-          >
-          &nbsp;
-          {{ $t('careers.section-9.btn') }}
-        </UIButton>
+        {{ $t('careers.section-9.btn') }}
       </a>
       <ul class="careers-cta-banner__links">
         <li>
@@ -58,13 +47,17 @@
 
 <script>
 import UIBanner from '@/components/shared/UIBanner'
-import UIButton from '@/components/shared/UIButton'
 
 export default {
   name: 'CTABanner',
   components: {
     UIBanner,
-    UIButton,
+  },
+
+  computed: {
+    linkToHREmail() {
+      return `mailto:${process.env.emailHR}`
+    },
   },
 }
 </script>
@@ -110,6 +103,20 @@ export default {
     &_container {
       padding-bottom: 44px;
     }
+  }
+}
+
+/deep/ .cta-banner__info > a {
+  padding: 17px 31px 17px 28px;
+  background-color: #EC1C24;
+  border-radius: 4px;
+  line-height: 100%;
+  text-decoration: none;
+  color: #fff;
+  @include font('Inter', 18px, 400);
+
+  &:active {
+    background-color: #b11218;
   }
 }
 </style>
