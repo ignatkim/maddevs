@@ -1,0 +1,59 @@
+{
+  "careers": {
+    "showOpenVacancies": "See all {count} open positions",
+    "section-1": {
+      "title": "Career at Mad Devs",
+      "description": "Without empty words, here at Mad Devs we partner with projects where our teams thrive. Innovating solutions, carrying ownership, delivering sustainable value and celebrating successes — make a happy workplace, where things get done.",
+      "btn": "На русском"
+    },
+    "section-2": {
+      "title": "Global projects in 20+ countries",
+      "description": "We build solutions for 35M+ users worldwide",
+      "btn": "See all case studies"
+    },
+    "section-3": {
+      "title": "Sustainable engineering culture",
+      "description": "At Mad Devs, we build an environment where teams can move sustainably and quickly by implementing <span class='yellow'>modern technologies and best practices.</span>",
+      "list": "Code reviews and testing, Automated CI/CD, Healthy oncall, Internal boilerplates and open-source, Regularly updated and reliable documentation."
+    },
+    "section-4": {
+      "title": "Agile development",
+      "description": "High talent density in our 20+ teams creates a culture where <span class='red'>collaboratively innovative and autonomous people thrive.</span>",
+      "list": "Clearly explained development goals,  Engineers contribute to backlog and roadmap, Direct, cult-the bullshit, communication in problem-solving, Celebrating initiatives culture, Cross-functional collaboration."
+    },
+    "section-5": {
+      "title": "Competitive and reliable compensation",
+      "description": "Everybody at Mad Devs, from C-suite to interns, <span class='green'>gets paid competitive compensation in USD.</green>",
+      "list": "Stable salary and pay day, Competitive compensation, Formal employment, Flexible payment terms, Salary, benefits and bonuses paid in USD"
+    },
+    "section-6": {
+      "title": "Mad Devs’ key metrics",
+      "list-items-1": "open-source projects on GitHub.",
+      "list-items-2": "staff members work for Mad Devs.",
+      "list-items-3": "tech bloggers and conference speakers.",
+      "list-items-4": "weekly pull requestsin a project.",
+      "list-items-5": "boring task and bureaucratic procedures.",
+      "list-items-6": "hours of internal training."
+    },
+    "section-7": {
+      "title": "Employees benefits",
+      "list-items-1": "Flexible working hours",
+      "list-items-2": "Onsite business trips",
+      "list-items-3": "English <br> lessons",
+      "list-items-4": "Training <br> budget",
+      "list-items-5": "Remote-first culture",
+      "list-items-6": "Long-term projects",
+      "list-items-7": "Paid <br> conferences",
+      "list-items-8": "Team <br> parties"
+    },
+    "section-8": {
+      "title": "Open positions",
+      "btn": "See all 25 open positions"
+    },
+    "section-9": {
+      "title": "Can’t see your next role?",
+      "description": "If you don’t see a suitable vacancy, but you are sure we’re meant to be, drop us a line.",
+      "btn": "Write Us"
+    }
+  }
+}

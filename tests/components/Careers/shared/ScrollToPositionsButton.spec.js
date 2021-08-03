@@ -13,6 +13,10 @@ const store = {
   },
 }
 
+const mocks = {
+  $t: () => 'translated',
+}
+
 const stubs = ['NuxtLink']
 
 describe('ScrollToPositionsLink component', () => {
@@ -20,6 +24,7 @@ describe('ScrollToPositionsLink component', () => {
     const { container } = render(ScrollToPositionsLink, {
       stubs,
       store,
+      mocks,
     })
 
     expect(container).toMatchSnapshot()

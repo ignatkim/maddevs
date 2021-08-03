@@ -9,7 +9,7 @@ exports[`KeyMetrics component should render correctly 1`] = `
       class="key-metrics_title"
     >
       
-    Mad Devs’ key metrics
+    translated
   
     </h2>
      
@@ -17,28 +17,28 @@ exports[`KeyMetrics component should render correctly 1`] = `
       class="key-metrics_grid"
     >
       <metriccard-stub
-        description="open-source projects on GitHub"
+        description="translated"
         title="70+"
       />
       <metriccard-stub
-        description="staff members work"
+        description="translated"
         title="100+"
       />
       <metriccard-stub
-        description="tech bloggers and conference speakers"
+        description="translated"
         title="30+"
       />
       <metriccard-stub
-        description="weekly pull requests in a project"
+        description="translated"
         title="100+"
       />
       <metriccard-stub
-        description="hours of internal training"
-        title="10K"
+        description="translated"
+        title="0"
       />
       <metriccard-stub
-        description="average project scope in months"
-        title="24+"
+        description="translated"
+        title="10K"
       />
     </div>
   </div>

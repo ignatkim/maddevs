@@ -112,6 +112,18 @@ module.exports = {
       defaultImage: '/DoNotRemove/nuxt-lazy-load-fallback.svg',
       directiveOnly: true,
     }],
+    [
+      'nuxt-i18n',
+      {
+        strategy: 'no_prefix',
+        defaultLocale: 'en',
+        langDir: '~/locales/',
+        locales: [
+          { code: 'ru', iso: 'ru-RU', file: 'ru.json' },
+          { code: 'en', iso: 'en-EN', file: 'en.json' },
+        ],
+      },
+    ],
   ],
   sitemap: {
     hostname: 'https://maddevs.io',

@@ -13,7 +13,7 @@
         type="button"
         @click="getMoreVacancies"
       >
-        See more positions
+        {{ $t('careers.section-8.btn') }}
       </UnderlinedButton>
     </div>
   </div>

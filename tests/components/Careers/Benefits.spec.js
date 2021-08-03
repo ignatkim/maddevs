@@ -1,11 +1,16 @@
 import Benefits from '@/components/Careers/Benefits'
-import { render, screen } from '@testing-library/vue'
+import { render } from '@testing-library/vue'
+
+const mocks = {
+  $t: () => 'translated',
+}
 
 describe('Benefits component', () => {
   it('should render correctly', () => {
-    const { container } = render(Benefits)
+    const { container } = render(Benefits, {
+      mocks,
+    })
 
-    expect(screen.getByText('Sustainable engineering culture')).not.toBeNull()
     expect(container).toMatchSnapshot()
   })
 })
