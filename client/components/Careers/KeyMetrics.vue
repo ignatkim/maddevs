@@ -9,9 +9,9 @@
       class="key-metrics_grid"
     >
       <MetricCard
-        v-for="metrica in keyMetrics"
+        v-for="(metrica, i) of keyMetrics"
         v-bind="metrica"
-        :key="metrica.description"
+        :key="`metrica_${i}`"
       />
     </div>
   </div>

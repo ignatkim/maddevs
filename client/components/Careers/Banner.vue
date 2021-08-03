@@ -52,7 +52,7 @@ export default {
 
   computed: {
     currentLanguage() {
-      return this.$i18n.locale
+      return this.$i18n?.locale || 'en'
     },
   },
 
@@ -60,6 +60,7 @@ export default {
     changeLocale() {
       const lang = this.$i18n.locale === 'en' ? 'ru' : 'en'
       this.$i18n.setLocale(lang)
+      return lang
     },
   },
 }

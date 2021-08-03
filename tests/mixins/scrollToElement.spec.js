@@ -13,6 +13,10 @@ const store = {
   },
 }
 
+const mocks = {
+  $t: () => 'translated',
+}
+
 const stubs = ['UnderlinedButton', 'NuxtLink']
 
 const WINDOW_SCROLL_TO = jest.fn()
@@ -31,6 +35,7 @@ describe('Scroll to element Mixin', () => {
       stubs,
       mixins: [scrollToElementMixin],
       store,
+      mocks,
       container: document.body.appendChild(TARGET_ELEMENT),
     })
   })

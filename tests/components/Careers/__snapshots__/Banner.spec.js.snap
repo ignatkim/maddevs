@@ -4,6 +4,7 @@ exports[`Banner component should render correctly 1`] = `
 <div>
   <div
     class="careers-banner careers-banner_en"
+    id="transparent-header-area"
   >
     <picture>
       <source
@@ -48,6 +49,8 @@ exports[`Banner component should render correctly 1`] = `
           alt="Russian flag"
           src="@/assets/img/Careers/svg/russian-flag.svg"
         />
+         
+        <!---->
         
       translated
     

@@ -10,9 +10,9 @@
         class="employees-benefits_benefits-cards"
       >
         <BenefitCard
-          v-for="benefit in employeesBenefits"
+          v-for="(benefit, i) of employeesBenefits"
           v-bind="benefit"
-          :key="benefit.title"
+          :key="`benefit_${i}`"
         />
       </div>
     </div>

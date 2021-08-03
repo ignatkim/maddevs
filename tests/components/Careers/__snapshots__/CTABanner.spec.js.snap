@@ -10,8 +10,8 @@ exports[`CTABanner component should render correctly 1`] = `
       imagealttext="Daria"
       manname="Daria Utesheva"
       manposition="Head of HR Departament"
-      text="If you don’t see a suitable vacancy, but are sure that we’re meant to be, drop us a line."
-      title="Can’t find your <br /> next role?"
+      text="translated"
+      title="translated"
     >
       <a
         href="https://t.me/DianaHRDigital"
@@ -26,7 +26,7 @@ exports[`CTABanner component should render correctly 1`] = `
           />
           
          
-        Telegram us
+        translated
       
         </uibutton-stub>
       </a>

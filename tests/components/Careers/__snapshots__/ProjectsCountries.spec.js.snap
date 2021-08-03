@@ -9,7 +9,7 @@ exports[`ProjectsCountries component should render correctly 1`] = `
       class="projects-countries_title"
     >
       
-    Global projects in 20+ countries
+    translated
   
     </h2>
      
@@ -17,7 +17,7 @@ exports[`ProjectsCountries component should render correctly 1`] = `
       class="projects-countries_description"
     >
       
-    We build solutions for 35M+ users worldwide
+    translated
   
     </p>
      
@@ -42,7 +42,7 @@ exports[`ProjectsCountries component should render correctly 1`] = `
     <uilinkbutton-stub
       class="projects-countries_link-btn"
       link="/case-studies/"
-      title="See all case studies "
+      title="translated"
     />
   </div>
 </div>

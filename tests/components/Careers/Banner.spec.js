@@ -1,9 +1,14 @@
 import Banner from '@/components/Careers/Banner'
 import { render } from '@testing-library/vue'
+import { shallowMount } from '@vue/test-utils'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',
   $t: () => 'translated',
+  $i18n: {
+    locale: 'en',
+    setLocale: jest.fn(),
+  },
 }
 
 const store = {
@@ -20,5 +25,15 @@ describe('Banner component', () => {
     })
 
     expect(container).toMatchSnapshot()
+  })
+
+  it('if call changeLocale should return locale "ru"', () => {
+    const wrapper = shallowMount(Banner, {
+      mocks,
+      store,
+    })
+    wrapper.vm.changeLocale()
+
+    expect(wrapper.vm.changeLocale()).toBe('ru')
   })
 })
