@@ -42,6 +42,7 @@ export default {
     flex-direction: column;
     align-items: center;
     margin-bottom: 151px;
+    padding-top: 75px;
   }
 
   &_grid {
@@ -74,6 +75,11 @@ export default {
     letter-spacing: -2.6px;
     line-height: 67px;
     color: $text-color--white;
+
+    @media screen and (max-width: 1340px) {
+      width: 100%;
+      text-align: left;
+    }
   }
 
   @media screen and (max-width: 1340px) {

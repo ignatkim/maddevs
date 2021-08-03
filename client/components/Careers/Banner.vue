@@ -1,5 +1,6 @@
 <template>
   <div
+    id="transparent-header-area"
     class="careers-banner"
     :class="[`careers-banner_${currentLanguage}`]"
   >

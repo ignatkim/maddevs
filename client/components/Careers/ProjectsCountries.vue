@@ -56,7 +56,7 @@ export default {
 
 <style lang="scss" scoped>
 .projects-countries {
-  margin-bottom: 233px;
+  margin-bottom: 150px;
 
   &_title,
   &_description {
