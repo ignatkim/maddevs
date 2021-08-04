@@ -39,9 +39,14 @@ exports[`PositionForm component should render correctly 1`] = `
         <p
           class="position-form__field position-form__field-positions"
         >
-          
-        translated
+          <span
+            class="position-form__field-description"
+          >
+            
+          translated
         
+          </span>
+           
           <div
             class="ui-radio-buttons position-form__positions-list"
           >
@@ -106,10 +111,18 @@ exports[`PositionForm component should render correctly 1`] = `
               </div>
             </div>
           </div>
-          
-        translated
-         
-          <span>
+           
+          <span
+            class="position-form__field-roles"
+          >
+            
+          translated
+        
+          </span>
+           
+          <span
+            class="position-form__field-error"
+          >
             <!---->
           </span>
         </p>

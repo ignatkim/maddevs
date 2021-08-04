@@ -32,7 +32,9 @@
           <!-- End Erros -->
         </label>
         <p class="position-form__field position-form__field-positions">
-          {{ $t('careers.detailPage.form.position.description') }}
+          <span class="position-form__field-description">
+            {{ $t('careers.detailPage.form.position.description') }}
+          </span>
           <UIRadioButtons
             ref="radioButtons"
             v-model="grade"
@@ -40,9 +42,11 @@
             :options="grades"
             @change="$v.grade.$touch"
           />
-          {{ $t('careers.detailPage.form.position.roles') }}
+          <span class="position-form__field-roles">
+            {{ $t('careers.detailPage.form.position.roles') }}
+          </span>
           <!-- Erros -->
-          <span>
+          <span class="position-form__field-error">
             <div v-if="$v.grade.$dirty">
               <span
                 v-if="!$v.grade.required"
@@ -344,11 +348,15 @@ export default {
   &__field-positions {
     display: flex;
     flex-wrap: wrap;
+  }
 
-    span {
-      width: 100%;
-      display: block;
-    }
+  &__field-description {
+    margin-right: 11px;
+  }
+
+  &__field-error {
+    width: 100%;
+    display: block;
   }
 
   /deep/ .ui-radio-buttons {
@@ -357,9 +365,6 @@ export default {
     grid-row-gap: initial;
 
     &_item {
-      &:first-child {
-        margin-left: 11px;
-      }
       &:last-child {
         margin-right: 11px;
       }
