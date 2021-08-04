@@ -14,7 +14,7 @@ exports[`CTABanner component should render correctly 1`] = `
       title="translated"
     >
       <a
-        href="mailto:undefined"
+        href="mailto:cv@maddevs.io"
       >
         
       translated
