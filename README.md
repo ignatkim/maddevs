@@ -28,6 +28,7 @@
 * [🏳️ Feature Flags](#%EF%B8%8F-feature-flags)
 * [🔥 SEO-Analyzer](#-seo-analyzer)
 * [📻 Radiator](#-radiator)
+* [🗄 Prismic](#-prismic)
 * [👐 Additional docs](#-additional-docs)
 
 ## ⚡️ Quick development start
@@ -118,6 +119,7 @@ A list of additional tools that we use for make our codebase better
 │   ├── mixins
 │   ├── pages
 │   ├── plugins
+│   ├── prismicSlices - libraries of shared slices for prismic dashboard
 │   ├── static
 │   ├── store - vuex
 ```
@@ -391,6 +393,45 @@ Otherwise, you should get success result:
 
  No any SEO defect found.
 ```
+
+## 🗄 Prismic
+
+### Create and push slices to prismic dashboard
+Slice machine dev tools are used to develop and push slices to prismic dashboard.
+* [How to configure the slice machine dev tools](https://prismic.io/docs/technologies/configure-project-manually-nuxtjs)
+* [How to use the slice machine dev tools](https://prismic.io/docs/technologies/create-model-component-nuxtjs)
+
+The main folder for developing slices is located in the following path - `client/prismicSlices`. <br>
+Slices can be divided into categories(libraries) by creating different folders for them inside the `client/prismicSlices` folder and adding the path to this folders to the `sm.json` config file.
+
+
+To develop slices you need to install globally the [prismic-cli](https://prismic.io/docs/technologies/prismic-cli-technical-reference)
+```bash
+npm install -g prismic-cli
+```
+
+After installation you need login to prismic
+```bash
+prismic login
+```
+
+After login you need to run the prismic slice machine dashboard: [localhost:9999](http://localhost:9999/)
+```bash
+prismic sm --development
+```
+
+Also you need to run the storybook dashboard in other terminal: [localhost:3003](http://localhost:3003/)
+```bash
+npm run storybook
+```
+
+Now you can create a new slice for development by following command:
+```bash
+prismic sm --create-slice
+```
+
+The new slice will be displayed in the slice machine dashboard - [localhost:9999](http://localhost:9999/) <br>
+To display this slice in the storybook you need to create and describe the `index.stories.js` file in his directory - [localhost:3003](http://localhost:3003/)
 
 ## 📻 Radiator
 Advanced tool for collect core metrics from analytics and pagespeed and send it to our slack/telegram channels.
