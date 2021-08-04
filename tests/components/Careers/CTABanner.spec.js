@@ -5,6 +5,7 @@ const stubs = ['UIBanner', 'UIButton']
 
 const mocks = {
   $getMediaFromS3: () => 'img.png',
+  $t: () => 'translated',
 }
 
 const directives = {

@@ -6,7 +6,7 @@
     @click.native="scrollToElement('#open-positions')"
   >
     <UnderlinedButton>
-      See all {{ vacanciesCount }} open positions
+      {{ $t('careers.showOpenVacancies', { count: vacanciesCount }) }}
     </UnderlinedButton>
   </NuxtLink>
 </template>

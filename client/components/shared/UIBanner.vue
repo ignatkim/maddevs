@@ -94,7 +94,7 @@ export default {
   }
 
   h2 {
-    @include font('Poppins', 60px, 700);
+    @include font('Inter', 60px, 900);
     max-width: 590px;
     line-height: 65px;
     letter-spacing: -0.04em;

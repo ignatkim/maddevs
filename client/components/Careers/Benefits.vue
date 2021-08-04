@@ -1,74 +1,49 @@
 <template>
   <div class="benefits container">
-    <div class="benefits_benefit">
-      <div
+    <!-- Item 1 -->
+    <div class="benefits_benefit benefits_benefit-1">
+      <h2 class="benefits_title">
+        {{ $t('careers.section-3.title') }}
+      </h2>
+      <p
         class="benefits_description"
-      >
-        <h2 class="benefits_title">
-          Sustainable <br> engineering culture
-        </h2>
-        <p class="benefits_paragraph">
-          At Mad Devs, we build an environment where teams can move sustainably and quickly by implementing modern technologies and best practices.
-        </p>
+        v-html="$t('careers.section-3.description')"
+      />
+      <div class="benefits_list">
+        <p v-html="$t('careers.section-3.list')" />
       </div>
-      <ul
-        class="benefits_list"
-      >
-        <li
-          v-for="benefit in engineeringCultureBenefits"
-          :key="benefit"
-          class="benefits_list-item"
-        >
-          {{ benefit }}
-        </li>
-      </ul>
     </div>
-    <div class="benefits_benefit">
-      <div
+    <!-- END Item -->
+
+    <!-- Item 2 -->
+    <div class="benefits_benefit benefits_benefit-2">
+      <h2 class="benefits_title">
+        {{ $t('careers.section-4.title') }}
+      </h2>
+      <p
         class="benefits_description"
-      >
-        <h2 class="benefits_title">
-          Agile <br> development
-        </h2>
-        <p class="benefits_paragraph">
-          High talent density in our 20+ teams creates a culture where collaboratively innovative and autonomous people thrive.
-        </p>
+        v-html="$t('careers.section-4.description')"
+      />
+      <div class="benefits_list">
+        <p v-html="$t('careers.section-4.list')" />
       </div>
-      <ul
-        class="benefits_list"
-      >
-        <li
-          v-for="benefit in agileDevelopmentBenefits"
-          :key="benefit"
-          class="benefits_list-item"
-        >
-          {{ benefit }}
-        </li>
-      </ul>
     </div>
-    <div class="benefits_benefit">
-      <div
+    <!-- END Item -->
+
+    <!-- Item 3 -->
+    <div class="benefits_benefit benefits_benefit-3">
+      <h2 class="benefits_title">
+        {{ $t('careers.section-5.title') }}
+      </h2>
+      <p
         class="benefits_description"
-      >
-        <h2 class="benefits_title">
-          Competitive and <br> reliable compensation
-        </h2>
-        <p class="benefits_paragraph">
-          Everybody at Mad Devs—from C-suite to interns—gets paid competitive compensation in USD. Please note that due to legal regulations, majority of employees receive salaries in the local currency with respect to the exchange rate.
-        </p>
+        v-html="$t('careers.section-5.description')"
+      />
+      <div class="benefits_list">
+        <p v-html="$t('careers.section-5.list')" />
       </div>
-      <ul
-        class="benefits_list"
-      >
-        <li
-          v-for="benefit in competitiveAndCompensationBenefits"
-          :key="benefit"
-          class="benefits_list-item"
-        >
-          {{ benefit }}
-        </li>
-      </ul>
     </div>
+    <!-- END Item -->
   </div>
 </template>
 
@@ -93,132 +68,118 @@ export default {
 
 <style lang="scss" scoped>
 .benefits {
-  margin-bottom: 68px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 48px;
+  padding-bottom: 75px;
+
+  @media screen and (max-width: 992px) {
+    grid-gap: 24px;
+    padding-bottom: 55px;
+  }
 
   &_benefit {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    align-items: end;
-    padding: 85px 0;
-    border-bottom: 1px solid $border-color--grey-02-opacity;
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+    background-color: #1D1D1F;
+    border-radius: 4px;
 
-    &:first-child {
-      padding-top: 0;
+    &-1 {
+      grid-column: 1 / 3;
+    }
+
+    &-2 {
+      grid-column: 3 / 5;
+    }
+
+    &-3 {
+      grid-column: 1 / 5;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+
+      h2,
+      p,
+      .benefits_list {
+        max-width: 650px;
+      }
+    }
+
+    @media screen and (max-width: 1340px) {
+      padding: 50px;
+    }
+
+    @media screen and (max-width: 1120px) {
+      padding: 32px;
+    }
+
+    @media screen and (max-width: 992px) {
+      grid-column: 1 / 5 !important;
+      align-items: flex-start;
+      text-align: left;
+    }
+  }
+
+  &_title {
+    margin-bottom: 40px;
+    color: #fff;
+    @include font('Inter', 56px, 700);
+    letter-spacing: -0.013em;
+    line-height: 60px;
+
+    @media screen and (max-width: 1120px) {
+      font-size: 38px;
+      line-height: 37px;
+      margin-bottom: 19px;
+      letter-spacing: -0.01em;
+    }
+
+    @media screen and (max-width: 1120px) {
+      font-size: 30px;
     }
   }
 
   &_description {
+    @include font('Inter', 28px, 700);
+    line-height: 38px;
     max-width: 686px;
-  }
-
-  &_title,
-  &_paragraph,
-  &_list-item {
-    color: $text-color--white;
-  }
-
-  &_paragraph,
-  &_list-item {
+    color: #F4F4F4;
     letter-spacing: -0.013em;
-  }
+    margin-bottom: 40px;
 
-  &_title {
-    margin-bottom: 21px;
-    @include font('Poppins', 60px, 700);
-    letter-spacing: -0.04em;
-    line-height: 65px;
-  }
+    /deep/ .yellow {
+      color: #F7C744;
+    }
 
-  &_paragraph {
-    @include font('Inter', 20px, 400);
-    line-height: 29px;
+    /deep/ .red {
+      color: #DC251C;
+    }
+
+    /deep/ .green {
+      color: #14c94d;
+    }
+
+    @media screen and (max-width: 1120px) {
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 19px;
+    }
   }
 
   &_list {
-    display: flex;
-    flex-direction: column;
-  }
+    display: block;
 
-  &_list-item  {
-    position: relative;
-    margin-bottom: 15px;
-    padding-left: 32px;
-    @include font('Inter', 17px, 400);
-    line-height: 140%;
+    p {
+      letter-spacing: -0.013em;
+      @include font('Inter', 17px, 400);
+      line-height: 180%;
+      color: #A0A0A1;
 
-    &:last-child {
-      margin-bottom: 0;
-    }
-
-    &:before {
-      content: '―';
-      position: absolute;
-      left: 0;
-      color: $text-color--red;
-    }
-  }
-
-  @media screen and (max-width: 1340px) {
-    &_benefit {
-      padding: 56px 0;
-    }
-
-    &_description {
-      max-width: 610px;
-    }
-
-    &_title {
-      font-size: 40px;
-      line-height: 50px;
-    }
-
-    &_paragraph {
-      font-size: 18px;
-      line-height: 29px;
-    }
-  }
-
-  @media screen and (max-width: 1260px) {
-    margin-bottom: 117px;
-
-    &_benefit {
-      grid-template-columns: 1fr;
-
-      &:last-child {
-        padding-bottom: 0;
-        border-bottom: 0;
+      @media screen and (max-width: 1120px) {
+        font-size: 17px;
+        line-height: 28px;
       }
-    }
-
-    &_description {
-      max-width: 100%;
-    }
-
-    &_title br {
-      display: none;
-    }
-
-    &_paragraph {
-      margin-bottom: 29px;
-    }
-  }
-
-  @media screen and (max-width: 620px) {
-    margin-bottom: 81px;
-
-    &_benefit {
-      padding: 47px 0;
-    }
-
-    &_title {
-      font-size: 34px;
-      line-height: 118%;
-    }
-
-    &_paragraph {
-      margin-bottom: 27px;
-      font-size: 17px;
-      line-height: 143%;
     }
   }
 }

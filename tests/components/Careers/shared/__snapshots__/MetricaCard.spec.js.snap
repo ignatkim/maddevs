@@ -4,14 +4,12 @@ exports[`KeyMetrics component should render correctly 1`] = `
 <div>
   <div
     class="key-metrics_container container"
-    description="open-source projects on GitHub"
-    title="70+"
   >
     <h2
       class="key-metrics_title"
     >
       
-    Mad Devs’ key metrics
+    translated
   
     </h2>
      
@@ -33,7 +31,7 @@ exports[`KeyMetrics component should render correctly 1`] = `
           class="metrica-card_description"
         >
           
-    open-source projects on GitHub
+    translated
   
         </p>
       </div>
@@ -52,7 +50,7 @@ exports[`KeyMetrics component should render correctly 1`] = `
           class="metrica-card_description"
         >
           
-    staff members work
+    translated
   
         </p>
       </div>
@@ -71,7 +69,7 @@ exports[`KeyMetrics component should render correctly 1`] = `
           class="metrica-card_description"
         >
           
-    tech bloggers and conference speakers
+    translated
   
         </p>
       </div>
@@ -90,7 +88,26 @@ exports[`KeyMetrics component should render correctly 1`] = `
           class="metrica-card_description"
         >
           
-    weekly pull requests in a project
+    translated
+  
+        </p>
+      </div>
+      <div
+        class="metrica-card"
+      >
+        <h3
+          class="metrica-card_title"
+        >
+          
+    0
+  
+        </h3>
+         
+        <p
+          class="metrica-card_description"
+        >
+          
+    translated
   
         </p>
       </div>
@@ -109,26 +126,7 @@ exports[`KeyMetrics component should render correctly 1`] = `
           class="metrica-card_description"
         >
           
-    hours of internal training
-  
-        </p>
-      </div>
-      <div
-        class="metrica-card"
-      >
-        <h3
-          class="metrica-card_title"
-        >
-          
-    24+
-  
-        </h3>
-         
-        <p
-          class="metrica-card_description"
-        >
-          
-    average project scope in months
+    translated
   
         </p>
       </div>

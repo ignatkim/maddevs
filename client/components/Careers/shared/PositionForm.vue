@@ -6,32 +6,35 @@
     >
       <div class="position-form__message">
         <label class="position-form__field">
-          Hello, my name is
+          {{ $t('careers.detailPage.form.name') }}
           <FormInput
             ref="nameInput"
             v-model="name"
             type="text"
-            placeholder="Your Name"
+            :placeholder="$t('careers.detailPage.form.yourname')"
             class="position-form__input position-form__input-name"
             @input="$v.name.$touch"
           />.
-          <br> I want to work for you as a desired position.
+          <br> {{ $t('careers.detailPage.form.description') }}
           <!-- Erros -->
           <div v-if="$v.name.$dirty">
             <span
               v-if="!$v.name.required"
               class="position-form__error error-text"
-            >This field is required.</span>
+            >{{ $t('form.errors.required') }}</span>
             <span
               v-if="!$v.name.maxLength"
               class="position-form__error error-text"
             >
-              Sorry, the number of characters in this field should not exceed 50.
+              {{ $t('form.errors.max') }}
             </span>
           </div>
           <!-- End Erros -->
         </label>
-        <p class="position-form__field">
+        <p class="position-form__field position-form__field-positions">
+          <span class="position-form__field-description">
+            {{ $t('careers.detailPage.form.position.description') }}
+          </span>
           <UIRadioButtons
             ref="radioButtons"
             v-model="grade"
@@ -39,21 +42,24 @@
             :options="grades"
             @change="$v.grade.$touch"
           />
+          <span class="position-form__field-roles">
+            {{ $t('careers.detailPage.form.position.roles') }}
+          </span>
           <!-- Erros -->
-          <span>
+          <span class="position-form__field-error">
             <div v-if="$v.grade.$dirty">
               <span
                 v-if="!$v.grade.required"
                 class="position-form__error error-text"
               >
-                This field is required.
+                {{ $t('form.errors.required') }}
               </span>
             </div>
           </span>
           <!-- End Erros -->
         </p>
         <label class="position-form__field">
-          Please reply to
+          {{ $t('careers.detailPage.form.email') }}
           <FormInput
             v-model="email"
             type="email"
@@ -66,36 +72,37 @@
             <span
               v-if="!$v.email.required"
               class="position-form__error error-text"
-            >This field is required.</span>
+            >{{ $t('form.errors.required') }}</span>
             <span
               v-if="!$v.email.email"
               class="position-form__error error-text"
             >
-              Invalid email address. Please use your work email.
+              {{ $t('form.errors.email') }}
             </span>
           </div>
           <!-- End Erros -->
         </label>
         <p class="position-form__field position-form__skills">
-          To get more information on my skills, please
+          {{ $t('careers.detailPage.form.skills.description') }}
           <ul class="position-form__skills-list">
             <li>
               <label>
-                check out my
+                {{ $t('careers.detailPage.form.skills.checkout') }}
                 <FormInput
                   v-model="linkedin"
                   type="text"
-                  placeholder="LinkedIn profile"
+                  :placeholder="$t('careers.detailPage.form.skills.placeholderLinkedin')"
                   class="position-form__input position-form__input-linkedin"
                 />
               </label>
-              AND
+              {{ $t('careers.detailPage.form.skills.and') }}
             </li>
             <li>
               <label>
                 <FileInput
                   ref="fileInput"
                   v-model="cvFile"
+                  :placeholder="$t('careers.detailPage.form.skills.placeholderCV')"
                   @input="handleFileSelect"
                 />
                 <!-- Erros -->
@@ -104,19 +111,19 @@
                     v-if="!$v.cvFile.required"
                     class="position-form__error position-form__error--file-attach error-text"
                   >
-                    This field is required.
+                    {{ $t('form.errors.required') }}
                   </span>
                   <span
                     v-if="!$v.cvFile.fileExt"
                     class="position-form__error position-form__error--file-attach error-text"
                   >
-                    Please, upload a file with one of the following extensions: pdf, doc, docx.
+                    {{ $t('form.errors.upload') }}
                   </span>
                   <span
                     v-if="!$v.cvFile.fileSizeValidation"
                     class="position-form__error position-form__error--file-attach error-text"
                   >
-                    Sorry, file size has exceeded its max limit of 5MB.
+                    {{ $t('form.errors.uploadMax') }}
                   </span>
                 </div>
                 <!-- End Erros -->
@@ -129,7 +136,7 @@
         type="submit"
         :disabled="$v.validationGroup.$invalid"
       >
-        I want to work for Mad Devs!
+        {{ $t('careers.detailPage.form.btn') }}
       </UIButton>
     </form>
     <!-- this id should be unique, because it used for google analytics -->
@@ -207,16 +214,21 @@ export default {
       email: null,
       cvFile: null,
       linkedin: null,
-      grades: [
-        { value: 'senior', label: 'Senior,' },
-        { value: 'middle', label: 'Middle,' },
-        { value: 'junior', label: 'Junior,' },
-        { value: 'intern', label: 'Intern' },
-      ],
 
       isShowSuccessModal: false,
       form: '',
     }
+  },
+
+  computed: {
+    grades() {
+      return [
+        { value: 'senior', label: this.$t('careers.detailPage.form.position.role1') },
+        { value: 'middle', label: this.$t('careers.detailPage.form.position.role2') },
+        { value: 'junior', label: this.$t('careers.detailPage.form.position.role3') },
+        { value: 'intern', label: this.$t('careers.detailPage.form.position.role4') },
+      ]
+    },
   },
 
   methods: {
@@ -332,17 +344,26 @@ export default {
       display: block;
     }
   }
+
+  &__field-positions {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__field-description {
+    margin-right: 11px;
+  }
+
+  &__field-error {
+    width: 100%;
+    display: block;
+  }
+
   /deep/ .ui-radio-buttons {
     display: flex;
     flex-flow: row wrap;
     grid-row-gap: initial;
-    &::before {
-      content: 'You can also consider me for your other:';
-      margin-right: 11px;
-    }
-    &::after {
-      content: 'roles.';
-    }
+
     &_item {
       &:last-child {
         margin-right: 11px;

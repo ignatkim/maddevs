@@ -3,28 +3,15 @@
     class="careers-cta-banner_container container"
   >
     <UIBanner
-      title="Can’t find your <br /> next role?"
-      text="If you don’t see a suitable vacancy, but are sure that we’re meant to be, drop us a line."
+      :title="$t('careers.section-9.title')"
+      :text="$t('careers.section-9.description')"
       :image="$getMediaFromS3(`/images/CTABanner/Daria.png`)"
       image-alt-text="Daria"
-      man-name="Daria Utesheva"
+      :man-name="$t('careers.section-9.hr')"
       man-position="Head of HR Departament"
     >
-      <a
-        href="https://t.me/DianaHRDigital"
-        target="_blank"
-      >
-        <UIButton>
-          <img
-            v-lazy-load
-            :data-src="require(`@/assets/img/Careers/svg/telegram--white.svg`)"
-            width="20"
-            height="17"
-            alt="Telegram"
-          >
-          &nbsp;
-          Telegram us
-        </UIButton>
+      <a href="mailto:cv@maddevs.io">
+        {{ $t('careers.section-9.btn') }}
       </a>
       <ul class="careers-cta-banner__links">
         <li>
@@ -58,13 +45,11 @@
 
 <script>
 import UIBanner from '@/components/shared/UIBanner'
-import UIButton from '@/components/shared/UIButton'
 
 export default {
   name: 'CTABanner',
   components: {
     UIBanner,
-    UIButton,
   },
 }
 </script>
@@ -110,6 +95,20 @@ export default {
     &_container {
       padding-bottom: 44px;
     }
+  }
+}
+
+/deep/ .cta-banner__info > a {
+  padding: 17px 31px 17px 28px;
+  background-color: #EC1C24;
+  border-radius: 4px;
+  line-height: 100%;
+  text-decoration: none;
+  color: #fff;
+  @include font('Inter', 18px, 400);
+
+  &:active {
+    background-color: #b11218;
   }
 }
 </style>

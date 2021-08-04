@@ -8,27 +8,17 @@ exports[`CTABanner component should render correctly 1`] = `
     <uibanner-stub
       image="img.png"
       imagealttext="Daria"
-      manname="Daria Utesheva"
+      manname="translated"
       manposition="Head of HR Departament"
-      text="If you don’t see a suitable vacancy, but are sure that we’re meant to be, drop us a line."
-      title="Can’t find your <br /> next role?"
+      text="translated"
+      title="translated"
     >
       <a
-        href="https://t.me/DianaHRDigital"
-        target="_blank"
+        href="mailto:cv@maddevs.io"
       >
-        <uibutton-stub>
-          <img
-            alt="Telegram"
-            data-src="[object Object]"
-            height="17"
-            width="20"
-          />
-          
-         
-        Telegram us
-      
-        </uibutton-stub>
+        
+      translated
+    
       </a>
        
       <ul

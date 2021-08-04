@@ -12,7 +12,7 @@ exports[`EmployeesBenefits component should render correctly 1`] = `
         class="employees-benefits_title"
       >
         
-      Employees benefits
+      translated
     
       </h2>
        
@@ -21,35 +21,35 @@ exports[`EmployeesBenefits component should render correctly 1`] = `
       >
         <benefitcard-stub
           icon="[object Object]"
-          title="Flexible working <br> hours"
+          title="translated"
         />
         <benefitcard-stub
           icon="[object Object]"
-          title="Onsite business <br> trips"
+          title="translated"
         />
         <benefitcard-stub
           icon="[object Object]"
-          title="English <br> lessons"
+          title="translated"
         />
         <benefitcard-stub
           icon="[object Object]"
-          title="Training <br> budget"
+          title="translated"
         />
         <benefitcard-stub
           icon="[object Object]"
-          title="Remote-first <br> culture"
+          title="translated"
         />
         <benefitcard-stub
           icon="[object Object]"
-          title="Long-term <br> projects"
+          title="translated"
         />
         <benefitcard-stub
           icon="[object Object]"
-          title="Paid <br> conferences"
+          title="translated"
         />
         <benefitcard-stub
           icon="[object Object]"
-          title="Team <br> parties"
+          title="translated"
         />
       </div>
     </div>

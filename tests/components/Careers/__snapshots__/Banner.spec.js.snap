@@ -3,50 +3,60 @@
 exports[`Banner component should render correctly 1`] = `
 <div>
   <div
-    class="banner container"
+    class="careers-banner careers-banner_en"
+    id="transparent-header-area"
   >
-    <h1
-      class="banner_title"
-    >
-      
-    Career at 
-      <br />
-       Mad Devs
-  
-    </h1>
+    <picture>
+      <source
+        class="careers-banner__image"
+        srcset="img.jpg ,img.jpg"
+        type="image/webp"
+      />
+       
+      <img
+        alt="Office"
+        class="careers-banner__image"
+        height="606"
+        src="img.jpg"
+        srcset="img.jpg"
+        width="1239"
+      />
+    </picture>
      
     <div
-      class="banner_img-wrap"
+      class="container"
+      style="opacity: 1;"
     >
-      <picture>
-        <source
-          class="banner_img"
-          srcset="img.jpg ,img.jpg"
-          type="image/webp"
+      <h1
+        class="careers-banner_title"
+      >
+        
+      translated
+    
+      </h1>
+       
+      <p
+        class="careers-banner_description"
+      >
+        
+      translated
+    
+      </p>
+       
+      <button
+        class="careers-banner_btn"
+      >
+        <img
+          alt="Russian flag"
+          src="@/assets/img/Careers/svg/russian-flag.svg"
         />
          
-        <img
-          alt="Office"
-          class="banner_img"
-          height="606"
-          src="img.jpg"
-          srcset="img.jpg"
-          width="1239"
-        />
-      </picture>
+        <!---->
+        
+      translated
+    
+      </button>
     </div>
-     
-    <p
-      class="banner_description"
-    >
-      
-    Here at Mad Devs, we partner with projects where 
-      <span>
-        our teams thrive
-      </span>
-      . Innovating solutions, carrying ownership, delivering sustainable value, and celebrating successes—these make a happy workplace where things get done.
-  
-    </p>
   </div>
 </div>
 `;
