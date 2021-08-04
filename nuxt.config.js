@@ -156,7 +156,7 @@ module.exports = {
     id: process.env.NODE_GOOGLE_TAG_MANAGER_ID,
   },
   storybook: {
-    stories: ['~/prismicSlices/**/*.stories.js'],
+    stories: ['~/prismicSlices/**/*.stories.js', '~/assets/styles/storybook.css'],
   },
   ignore: ['**/*.stories.js'],
   env: {
