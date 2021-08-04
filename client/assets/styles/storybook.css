@@ -1,0 +1,14 @@
+/* 
+  Global styles for storybook dashboard
+  This file is included in nuxt.config
+*/
+body,
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.sb-show-main.sb-main-padded {
+  padding: 0;
+}
