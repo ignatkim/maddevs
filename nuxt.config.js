@@ -125,7 +125,7 @@ module.exports = {
       },
     ],
     ['@nuxtjs/prismic', {
-      endpoint: 'https://your-repo-name.cdn.prismic.io/api/v2',
+      endpoint: process.env.NODE_PRISMIC_API,
     }],
     ['nuxt-sm'],
   ],
