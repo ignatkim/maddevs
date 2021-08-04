@@ -16,6 +16,7 @@ const store = {
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',
+  $t: () => 'translated',
   $v: {
     name: {
       $touch: jest.fn(),

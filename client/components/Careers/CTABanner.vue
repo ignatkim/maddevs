@@ -10,9 +10,7 @@
       man-name="Daria Utesheva"
       man-position="Head of HR Departament"
     >
-      <a
-        :href="linkToHREmail"
-      >
+      <a href="mailto:cv@maddevs.io">
         {{ $t('careers.section-9.btn') }}
       </a>
       <ul class="careers-cta-banner__links">
@@ -52,12 +50,6 @@ export default {
   name: 'CTABanner',
   components: {
     UIBanner,
-  },
-
-  computed: {
-    linkToHREmail() {
-      return `mailto:${process.env.emailHR}`
-    },
   },
 }
 </script>

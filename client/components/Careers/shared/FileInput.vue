@@ -24,6 +24,14 @@
 <script>
 export default {
   name: 'FileInput',
+
+  props: {
+    placeholder: {
+      type: String,
+      default: 'Select a file',
+    },
+  },
+
   data() {
     return {
       acceptedExtensions: '.pdf,.cv,.doc,.odt,.docx,.txt',
@@ -33,7 +41,7 @@ export default {
 
   computed: {
     selectedFilename() {
-      if (!this.selectedFile) return 'find attached my CV'
+      if (!this.selectedFile) return this.placeholder
       const { name } = this.selectedFile
       if (!name) return ''
       if (name.length > 25) return `${name.substring(0, 25)}...`
