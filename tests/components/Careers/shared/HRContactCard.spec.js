@@ -3,6 +3,7 @@ import { render } from '@testing-library/vue'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',
+  $t: () => 'translated',
 }
 
 const directives = {

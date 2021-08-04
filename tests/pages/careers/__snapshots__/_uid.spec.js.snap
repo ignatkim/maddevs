@@ -142,32 +142,35 @@ exports[`Careers _uid component should render correctly 1`] = `
                     class="position-form__field"
                   >
                     
-        Hello, my name is
+        translated
         
                     <div
                       class="career-form-input position-form__input position-form__input-name"
-                      title="Your Name"
+                      title="translated"
                     >
                       <pre>
-                        Your Name
+                        translated
                       </pre>
                        
                       <input
-                        placeholder="Your Name"
+                        placeholder="translated"
                         type="text"
                       />
                     </div>
                     .
         
                     <br />
-                     I want to work for you as a desired position.
+                     translated
          
                     <!---->
                   </label>
                    
                   <p
-                    class="position-form__field"
+                    class="position-form__field position-form__field-positions"
                   >
+                    
+        translated
+        
                     <div
                       class="ui-radio-buttons position-form__positions-list"
                     >
@@ -182,7 +185,7 @@ exports[`Careers _uid component should render correctly 1`] = `
                           class="ui-radio-buttons_item-label"
                         >
                           
-      Senior,
+      translated
     
                         </div>
                       </div>
@@ -197,7 +200,7 @@ exports[`Careers _uid component should render correctly 1`] = `
                           class="ui-radio-buttons_item-label"
                         >
                           
-      Middle,
+      translated
     
                         </div>
                       </div>
@@ -212,7 +215,7 @@ exports[`Careers _uid component should render correctly 1`] = `
                           class="ui-radio-buttons_item-label"
                         >
                           
-      Junior,
+      translated
     
                         </div>
                       </div>
@@ -227,12 +230,14 @@ exports[`Careers _uid component should render correctly 1`] = `
                           class="ui-radio-buttons_item-label"
                         >
                           
-      Intern
+      translated
     
                         </div>
                       </div>
                     </div>
-                     
+                    
+        translated
+         
                     <span>
                       <!---->
                     </span>
@@ -242,7 +247,7 @@ exports[`Careers _uid component should render correctly 1`] = `
                     class="position-form__field"
                   >
                     
-        Please reply to
+        translated
         
                     <div
                       class="career-form-input position-form__input position-form__input-email"
@@ -265,7 +270,7 @@ exports[`Careers _uid component should render correctly 1`] = `
                     class="position-form__field position-form__skills"
                   >
                     
-        To get more information on my skills, please
+        translated
         
                     <ul
                       class="position-form__skills-list"
@@ -273,24 +278,24 @@ exports[`Careers _uid component should render correctly 1`] = `
                       <li>
                         <label>
                           
-              check out my
+              translated
               
                           <div
                             class="career-form-input position-form__input position-form__input-linkedin"
-                            title="LinkedIn profile"
+                            title="translated"
                           >
                             <pre>
-                              LinkedIn profile
+                              translated
                             </pre>
                              
                             <input
-                              placeholder="LinkedIn profile"
+                              placeholder="translated"
                               type="text"
                             />
                           </div>
                         </label>
                         
-            AND
+            translated
           
                       </li>
                        
@@ -314,7 +319,7 @@ exports[`Careers _uid component should render correctly 1`] = `
                               for="file"
                             >
                               
-    find attached my CV
+    translated
                               <span
                                 class="red"
                               >
@@ -336,7 +341,7 @@ exports[`Careers _uid component should render correctly 1`] = `
                   type="submit"
                 >
                   
-      I want to work for Mad Devs!
+      translated
     
                   <div
                     class="wave"

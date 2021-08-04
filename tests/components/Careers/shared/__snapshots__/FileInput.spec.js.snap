@@ -20,7 +20,7 @@ exports[`FileInput component should render correctly 1`] = `
       for="file"
     >
       
-    find attached my CV
+    Select a file
       <span
         class="red"
       >

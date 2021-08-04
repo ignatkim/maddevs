@@ -69,12 +69,14 @@ const mocks = {
       reset: jest.fn(),
     },
   },
+  $t: () => 'translated',
 }
 
 describe('PositionForm component', () => {
   it('should render correctly', () => {
     const { container } = render(PositionForm, {
       localVue,
+      mocks,
     })
 
     expect(container).toMatchSnapshot()
@@ -222,16 +224,5 @@ describe('PositionForm component', () => {
 
     await expect(toBase64Mock).toHaveBeenCalledTimes(1)
     expect(result).toEqual(expectedResult)
-  })
-
-  it('should work base 64 function', async () => {
-    const wrapper = shallowMount(PositionForm, {
-      localVue,
-      mocks,
-    })
-
-    const result = await wrapper.vm.$options.methods.toBase64.call(mocks, new File([], 'testfile.png', undefined))
-
-    expect(result).toBe('data:application/octet-stream;base64,')
   })
 })
