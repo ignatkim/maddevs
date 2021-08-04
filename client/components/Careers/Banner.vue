@@ -19,7 +19,11 @@
         alt="Office"
       >
     </picture>
-    <div class="container">
+    <div
+      ref="sectionText"
+      class="container"
+      :style="{opacity: sectionTextOpacity}"
+    >
       <h1 class="careers-banner_title">
         {{ $t('careers.section-1.title') }}
       </h1>
@@ -47,8 +51,12 @@
 </template>
 
 <script>
+import changeSectionTextOpacityMixin from '@/mixins/changeSectionTextOpacityMixin'
+
 export default {
   name: 'CareersBanner',
+
+  mixins: [changeSectionTextOpacityMixin('sectionText')],
 
   computed: {
     currentLanguage() {
@@ -141,7 +149,7 @@ export default {
   &_description {
     max-width: 1028px;
     margin: 0 auto;
-    @include font('Inter', 32px, 600);
+    @include font('Inter', 32px, 400);
     line-height: 44px;
     letter-spacing: -0.013em;
     color: #F4F4F4;

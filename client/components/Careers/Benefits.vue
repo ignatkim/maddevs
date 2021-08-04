@@ -104,10 +104,6 @@ export default {
       .benefits_list {
         max-width: 650px;
       }
-
-      p {
-        color: #A0A0A1;
-      }
     }
 
     @media screen and (max-width: 1340px) {
@@ -153,15 +149,15 @@ export default {
     margin-bottom: 40px;
 
     /deep/ .yellow {
-      color: #f7c744;
+      color: #F7C744;
     }
 
     /deep/ .red {
-      color: #e84226;
+      color: #DC251C;
     }
 
     /deep/ .green {
-      color: #6dc25c;
+      color: #14c94d;
     }
 
     @media screen and (max-width: 1120px) {

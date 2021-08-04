@@ -14,21 +14,11 @@ exports[`CTABanner component should render correctly 1`] = `
       title="translated"
     >
       <a
-        href="https://t.me/DianaHRDigital"
-        target="_blank"
+        href="mailto:undefined"
       >
-        <uibutton-stub>
-          <img
-            alt="Telegram"
-            data-src="[object Object]"
-            height="17"
-            width="20"
-          />
-          
-         
-        translated
-      
-        </uibutton-stub>
+        
+      translated
+    
       </a>
        
       <ul
