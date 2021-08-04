@@ -7,56 +7,28 @@
         v-bind="vacancy"
       />
     </ul>
-    <div class="positions-load-button">
-      <UnderlinedButton
-        v-if="totalPages > vacanciesPage"
-        type="button"
-        @click="getMoreVacancies"
-      >
-        {{ $t('careers.section-8.btn') }}
-      </UnderlinedButton>
-    </div>
   </div>
 </template>
 
 <script>
-import { mapGetters, mapActions } from 'vuex'
+import { mapGetters } from 'vuex'
 import PositionsGridItem from '@/components/Careers/shared/PositionsGridItem'
-import UnderlinedButton from '@/components/Careers/shared/UnderlinedButton'
 
 export default {
   name: 'PositionsGrid',
   components: {
     PositionsGridItem,
-    UnderlinedButton,
-  },
-
-  data() {
-    return {
-      pageSize: 6,
-    }
   },
 
   computed: {
-    ...mapGetters(['vacancies', 'filteredVacancies', 'vacanciesCategory', 'vacanciesPage']),
+    ...mapGetters(['vacancies', 'filteredVacancies', 'vacanciesCategory']),
 
     vacanciesToShow() {
       if (this.vacanciesCategory) {
-        return this.filteredVacancies.slice(0, this.pageSize * this.vacanciesPage)
+        return this.filteredVacancies
       }
-      return this.vacancies.slice(0, this.pageSize * this.vacanciesPage)
+      return this.vacancies
     },
-
-    totalPages() {
-      if (this.vacanciesCategory) {
-        return Math.ceil(this.filteredVacancies.length / this.pageSize)
-      }
-      return Math.ceil(this.vacancies.length / this.pageSize)
-    },
-  },
-
-  methods: {
-    ...mapActions(['getMoreVacancies']),
   },
 }
 </script>
@@ -75,16 +47,6 @@ export default {
 
   @media screen and (max-width: 768px) {
     grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-.positions-load-button {
-  display: flex;
-  justify-content: center;
-  margin: 35px auto 0;
-
-  @media screen and (max-width: 768px) {
-    margin: 26px auto 0;
   }
 }
 </style>
