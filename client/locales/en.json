@@ -1,4 +1,13 @@
 {
+  "form": {
+    "errors": {
+      "required": "This field is required.",
+      "max": "Sorry, the number of characters in this field should not exceed 50.",
+      "email": "Invalid email address. Please use your work email.",
+      "upload": "Please, upload a file with one of the following extensions: pdf, doc, docx.",
+      "uploadMax": "Sorry, file size has exceeded its max limit of 5MB."
+    }
+  },
   "careers": {
     "showOpenVacancies": "See all {count} open positions",
     "section-1": {
@@ -54,6 +63,34 @@
       "title": "Can’t see your next role?",
       "description": "If you don’t see a suitable vacancy, but you are sure we’re meant to be, drop us a line.",
       "btn": "Write Us"
+    },
+    "detailPage": {
+      "hr": {
+        "name": "Hi, I'm Diana.",
+        "description": "Applying for jobs should be easy. I am here to simplify the hiring process and set you up for success. Feel free to send me a message on Telegram."
+      },
+      "form": {
+        "name": "Hello, my name is",
+        "yourname": "Your Name",
+        "description": "I want to work for you as a desired position.",
+        "position": {
+          "description": "You can also consider me for your other:",
+          "role1": "Senior,",
+          "role2": "Middle,",
+          "role3": "Junior,",
+          "role4": "Intern",
+          "roles": "roles."
+        },
+        "email": "Please reply to",
+        "skills": {
+          "description": "To get more information on my skills, please",
+          "checkout": "check out my",
+          "and": "AND",
+          "placeholderLinkedin": "LinkedIn profile",
+          "placeholderCV": "find attached my CV"
+        },
+        "btn": "I want to work for Mad Devs!"
+      }
     }
   }
 }

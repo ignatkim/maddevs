@@ -232,6 +232,6 @@ describe('PositionForm component', () => {
 
     const result = await wrapper.vm.$options.methods.toBase64.call(mocks, new File([], 'testfile.png', undefined))
 
-    expect(result).toBe('data:;base64,')
+    expect(result).toBe('data:application/octet-stream;base64,')
   })
 })
