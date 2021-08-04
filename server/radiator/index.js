@@ -41,6 +41,12 @@ function runRadiator() {
         goals: [9],
       },
     ],
+    lighthouse: {
+      // regular expression for skip blog and CU pages
+      urlTestRegexp: '(\\/blog\\/)|(\\/customer-university\\/)[a-zA-Z0-9]{1}',
+      topCount: 3,
+      worstCount: 3,
+    },
   }
 
   const weeklyConfig = {
@@ -56,7 +62,7 @@ function runRadiator() {
     },
     chart: {
       type: 'users',
-      period: 30,
+      period: 30 * 6, // 6 month
     },
   }
 
@@ -69,7 +75,7 @@ function runRadiator() {
     },
     chart: {
       type: 'users',
-      period: 7,
+      period: 30 * 2, // 2 month
     },
   }
 
