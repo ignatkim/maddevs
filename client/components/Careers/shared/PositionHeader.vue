@@ -30,7 +30,7 @@
           class="careers-position__apply-button"
           @click="scrollToElement('#careers-position-form')"
         >
-          Apply now
+          {{ $t('careers.detailPage.btn') }}
         </UIButton>
       </div>
     </div>

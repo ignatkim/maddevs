@@ -7,7 +7,7 @@
       :text="$t('careers.section-9.description')"
       :image="$getMediaFromS3(`/images/CTABanner/Daria.png`)"
       image-alt-text="Daria"
-      man-name="Daria Utesheva"
+      :man-name="$t('careers.section-9.hr')"
       man-position="Head of HR Departament"
     >
       <a href="mailto:cv@maddevs.io">
