@@ -9,12 +9,10 @@
     </div>
     <div class="hr-contact__info">
       <p class="hr-contact__title">
-        Hi, I'm Diana.
+        {{ $t('careers.detailPage.hr.name') }}
       </p>
       <p class="hr-contact__description">
-        Applying for jobs should be easy.
-        I am here to simplify the hiring process and set you up for success.
-        Feel free to send me a message on Telegram.
+        {{ $t('careers.detailPage.hr.description') }}
         <a
           href="https://t.me/DianaHRDigital"
           target="_blank"
