@@ -62,9 +62,11 @@
     "section-9": {
       "title": "Can’t see your next role?",
       "description": "If you don’t see a suitable vacancy, but you are sure we’re meant to be, drop us a line.",
+      "hr": "Daria Utesheva",
       "btn": "Write Us"
     },
     "detailPage": {
+      "btn": "Apply now",
       "hr": {
         "name": "Hi, I'm Diana.",
         "description": "Applying for jobs should be easy. I am here to simplify the hiring process and set you up for success. Feel free to send me a message on Telegram."

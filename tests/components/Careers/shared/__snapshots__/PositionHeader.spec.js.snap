@@ -37,7 +37,7 @@ exports[`PositionHeader component should render correctly 1`] = `
           type="button"
         >
           
-        Apply now
+        translated
       
           <div
             class="wave"

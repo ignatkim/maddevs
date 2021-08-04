@@ -12,10 +12,15 @@ const store = {
   },
 }
 
+const mocks = {
+  $t: () => 'translated',
+}
+
 describe('PositionHeader component', () => {
   it('should render correctly', () => {
     const { container } = render(PositionHeader, {
       store,
+      mocks,
     })
 
     expect(container).toMatchSnapshot()
