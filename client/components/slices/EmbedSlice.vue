@@ -13,8 +13,8 @@
       <div class="embed__image-wrapper">
         <img
           v-lazy-load
-          width="150"
-          height="126"
+          width="200"
+          height="124"
           class="embed__image"
           :data-src="slice.items[0].embed.thumbnail_url"
         >
@@ -131,14 +131,15 @@ export default {
   }
 
   &__image {
-    width: 100%;
-    height: 100%;
-    min-width: 136px;
-    min-height: 60px;
+    width: 200px;
+    min-width: 200px;
+    height: auto;
     object-fit: cover;
 
     &-wrapper {
       width: 33%;
+      display: flex;
+      align-items: center;
       padding: 24px !important;
     }
   }
@@ -157,7 +158,9 @@ export default {
     }
 
     &__image {
-      height: 40vw;
+      width: 100%;
+      min-width: auto;
+
       &-wrapper {
         order: 1;
         width: 100%;
