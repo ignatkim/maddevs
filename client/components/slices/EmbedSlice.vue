@@ -158,7 +158,9 @@ export default {
     }
 
     &__image {
-      height: 40vw;
+      width: 100%;
+      min-width: auto;
+
       &-wrapper {
         order: 1;
         width: 100%;
