@@ -33,7 +33,7 @@
         </h1>
         <p class="banner__subtitle">
           While we love writing code, nothing excites us more than collaborating with other members of the tech community.
-          We love building with new and emerging technologies here at Mad Devs. Making the world a better place,one line of code at a time.
+          We love building with new and emerging technologies here at Mad Devs. Making the world a better place, one line of code at a time.
         </p>
       </div>
     </div>

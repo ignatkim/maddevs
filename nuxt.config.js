@@ -71,7 +71,7 @@ module.exports = {
      ** Run ESLint on save
      */
     vendor: ['axios'],
-    transpile: ['swiper', 'dom7'],
+    transpile: ['swiper', 'dom7', 'vue-slicezone', 'nuxt-sm'],
     followSymlinks: true,
     cache: true,
     extend(config, { isDev, isClient }) {
@@ -124,6 +124,10 @@ module.exports = {
         ],
       },
     ],
+    ['@nuxtjs/prismic', {
+      endpoint: process.env.NODE_PRISMIC_API,
+    }],
+    ['nuxt-sm'],
   ],
   sitemap: {
     hostname: 'https://maddevs.io',
@@ -151,6 +155,10 @@ module.exports = {
     enabled: true,
     id: process.env.NODE_GOOGLE_TAG_MANAGER_ID,
   },
+  storybook: {
+    stories: ['~/prismicSlices/**/*.stories.js', '~/assets/styles/storybook.css'],
+  },
+  ignore: ['**/*.stories.js'],
   env: {
     environment: process.env.NODE_ENV,
     s3PublicUrl: process.env.NODE_S3_PUBLIC_URL,

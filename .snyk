@@ -102,10 +102,29 @@ ignore:
     - '@maddevs/mad-radiator > vega > vega-view > vega-functions > vega-scenegraph > vega-scale > d3-scale > d3-interpolate > d3-color':
         reason: non used on web
         expires: '2021-08-20T10:03:40.286Z'
+    - '@maddevs/mad-radiator > vega > vega-geo > d3-color':
+        reason: None given
+        expires: '2021-09-03T11:25:06.363Z'
   SNYK-JS-GLOBPARENT-1016905:
     - nuxt > @nuxt/builder > @nuxt/webpack > webpack > watchpack > watchpack-chokidar2 > chokidar > glob-parent:
         reason: None given
         expires: '2021-08-20T10:03:40.286Z'
+  SNYK-JS-CSSWHAT-1298035:
+    - nuxt > @nuxt/builder > @nuxt/webpack > cssnano > cssnano-preset-default > postcss-svgo > svgo > css-select > css-what:
+        reason: None given
+        expires: '2021-09-03T11:32:14.619Z'
+  SNYK-JS-LODASHTEMPLATE-1088054:
+    - nuxt > @nuxt/core > @nuxt/server > @nuxt/vue-renderer > vue-server-renderer > lodash.template:
+        reason: None given
+        expires: '2021-09-03T11:32:14.619Z'
+  SNYK-JS-TRIMNEWLINES-1298042:
+    - nuxt-sm > sm-commons > validate-npm-package > meow > trim-newlines:
+        reason: None given
+        expires: '2021-09-03T11:32:14.619Z'
+  SNYK-JS-SWIPER-1088062:
+    - swiper:
+        reason: None given
+        expires: '2021-09-03T11:50:43.362Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   SNYK-JS-LODASH-450202:

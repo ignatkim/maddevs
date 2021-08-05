@@ -1,0 +1,8 @@
+{
+  "apiEndpoint": "https://SuperPuperTest.cdn.prismic.io/api/v2",
+  "libraries": [
+    "@/client/prismicSlices/pageParts"
+  ],
+  "_latest": "0.0.46",
+  "storybook": "http://localhost:3003"
+}

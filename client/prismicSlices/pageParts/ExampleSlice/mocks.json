@@ -1,0 +1,27 @@
+[
+  {
+    "id": "default",
+    "name": "Default Slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "Example Slice",
+    "primary": {
+      "title": [
+        {
+          "type": "paragraph",
+          "text": "Nisi laboris cupidatat nostrud incididunt velit. Voluptate fugiat eiusmod magna adipisicing in eiusmod id amet ex id. Laboris nisi magna incididunt enim velit esse eiusmod proident tempor eu nulla adipisicing deserunt.",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Sit ea aute eu proident ullamco quis aute. Culpa ullamco aliqua tempor anim nostrud labore non duis culpa amet sit fugiat eiusmod.",
+          "spans": []
+        }
+      ]
+    },
+    "items": [],
+    "slice_type": "example_slice"
+  }
+]
