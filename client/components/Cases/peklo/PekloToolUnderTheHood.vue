@@ -1,6 +1,10 @@
 <template>
   <section class="container_full background-color-black m-48_bottom p-48_top p-48_bottom media-p-41_top media-p-41_bottom">
-    <div class="container_regular">
+    <div
+      class="container_regular"
+      data-aos="fade-up"
+      data-aos-anchor-placement="bottom"
+    >
       <h2 class="case_title_h2 case_title m-12_bottom">
         Peklo Tool under the hood
       </h2>
@@ -9,8 +13,6 @@
       </TextParagraph>
       <div
         class="case_cards m-48_bottom media-m-38_bottom"
-        data-aos="fade-up"
-        data-aos-anchor-placement="bottom"
       >
         <div
           v-for="card in pekloToolUnderTheHoodCards"
