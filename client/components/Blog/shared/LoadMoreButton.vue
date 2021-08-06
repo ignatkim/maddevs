@@ -25,14 +25,19 @@ export default {
   margin: 0 auto;
   padding: 12px 156px;
   border: 1px solid $border-color--black;
+  border-radius: 2px;
   font-size: 16px;
   line-height: 26px;
   background-color: transparent;
   cursor: pointer;
   font-family: inherit;
+  transition: 0.4s;
+
   &:hover {
-    color: $text-color--red;
+    background-color: $bgcolor--black;
+    color: $text-color--white;
   }
+
   @media only screen and (max-width: 991px) {
     width: 100%;
     padding: 12px 0;
