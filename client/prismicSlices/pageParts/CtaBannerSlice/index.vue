@@ -64,7 +64,7 @@ export default {
 
   methods: {
     goToDeliveryPage() {
-      this.$router.push(this.slice.primary.btnLink[0].text)
+      this.$router.push(this.slice.primary.btnLink.url)
     },
   },
 }
@@ -103,58 +103,57 @@ export default {
   }
 
   &_title {
-    @include font('Inter', 42px, 700);
-    max-width: 590px;
-    line-height: 46px;
-    letter-spacing: -0.04em;
-    margin-bottom: 16px;
-    @media screen and (max-width: 1280px) {
-      max-width: 500px;
-      font-size: 48px;
-    }
-    @media screen and (max-width: 1280px) {
-      max-width: 450px;
-      font-size: 42px;
-      line-height: 100%;
-    }
-    @media screen and (max-width: 900px) {
-      max-width: 395px;
-      font-size: 36px;
-    }
-    @media screen and (max-width: 768px) {
-      max-width: 100%;
-      text-align: center;
-      font-size: 40px;
-      letter-spacing: -0.05em;
-      margin-bottom: 24px;
-    }
-    @media screen and (max-width: 370px) {
-      font-size: 34px;
+    /deep/ h2 {
+      @include font('Inter', 42px, 700);
+      max-width: 590px;
+      line-height: 46px;
+      letter-spacing: -0.04em;
+      margin-bottom: 16px;
+
+      @media screen and (max-width: 900px) {
+        max-width: 500px;
+        line-height: 46px;
+      }
+
+      @media screen and (max-width: 768px) {
+        max-width: 100%;
+        text-align: center;
+        font-size: 28px;
+        line-height: 32px;
+        letter-spacing: -0.05em;
+        margin-bottom: 16px;
+      }
+
+      @media screen and (max-width: 370px) {
+        font-size: 34px;
+      }
     }
   }
 
   &_description {
-    font-weight: normal;
-    @include font('Inter', 22px, 400);
-    line-height: 30px;
-    letter-spacing: -0.013em;
-    margin-bottom: 40px;
-    max-width: 420px;
-    @media screen and (max-width: 1280px) {
-      font-size: 18px;
-    }
-    @media screen and (max-width: 992px) {
-      max-width: 350px;
-    }
-    @media screen and (max-width: 900px) {
-      max-width: 320px;
-    }
-    @media screen and (max-width: 768px) {
-      max-width: 100%;
-      font-size: 16px;
-      line-height: 21px;
-      margin-bottom: 24px;
-      text-align: center;
+    /deep/ p {
+      font-weight: normal;
+      @include font('Inter', 22px, 400);
+      line-height: 30px;
+      letter-spacing: -0.013em;
+      margin-bottom: 40px;
+      max-width: 420px;
+      @media screen and (max-width: 1280px) {
+        font-size: 18px;
+      }
+      @media screen and (max-width: 992px) {
+        max-width: 350px;
+      }
+      @media screen and (max-width: 900px) {
+        max-width: 320px;
+      }
+      @media screen and (max-width: 768px) {
+        max-width: 100%;
+        font-size: 17px;
+        line-height: 24px;
+        margin-bottom: 19px;
+        text-align: center;
+      }
     }
   }
 
@@ -222,7 +221,6 @@ export default {
         @include font('Inter', 14px, 600);
         line-height: 18px;
         display: block;
-        margin-top: 4px;
         letter-spacing: -0.4px;
         color: #111111;
       }
