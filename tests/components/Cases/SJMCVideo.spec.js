@@ -42,16 +42,11 @@ const directives = {
   'lazy-load': () => {},
 }
 
-const data = () => ({
-  loaded: true,
-})
-
 describe('SJMCVideo component', () => {
   let wrapper
 
   beforeEach(() => {
     wrapper = shallowMount(SJMCVideo, {
-      data,
       mocks,
       stubs,
       directives,
@@ -109,7 +104,6 @@ describe('SJMCVideo component', () => {
     document.fullscreenElement = null
 
     shallowMount(SJMCVideo, {
-      data,
       mocks,
       stubs,
       directives,

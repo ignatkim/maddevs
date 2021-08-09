@@ -14,7 +14,6 @@
         alt="Pause"
       >
       <video
-        v-if="loaded"
         ref="video"
         v-lazy-load
         class="main-video"
@@ -52,19 +51,12 @@ export default {
       fullscreenModIsActive: false,
       showIcon: false,
       flagFirstStartVideo: true,
-      loaded: false,
     }
   },
 
   mounted() {
-    this.$refs.video.onended = () => {
-      this.showIcon = true
-    }
-
     // event bus handler
-    this.$nuxt.$on('open-fullscreen', () => {
-      this.emitHandler()
-    })
+    this.$nuxt.$on('open-fullscreen', () => this.emitHandler())
 
     // exit fullscreen handler
     document.addEventListener('fullscreenchange', () => {
@@ -79,12 +71,14 @@ export default {
       }
     })
 
-    this.$nextTick(() => {
-      this.loaded = true
-    })
+    if (this.$refs?.video?.onended) this.$refs.video.onended = this.onEnded()
   },
 
   methods: {
+    onEnded() {
+      this.showIcon = true
+    },
+
     exitFullscreen() {
       document.exitFullscreen()
       this.fullscreenModIsActive = false
