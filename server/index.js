@@ -10,8 +10,7 @@ const runRadiator = require('./radiator')
 
 // custom middlewares
 const applyXFrame = require('./middlewares/applyXFrame')
-const redirectToHttps = require('./middlewares/redirectToHttps')
-const redirectToTrailingSlash = require('./middlewares/redirectToTrailingSlash')
+const redirectToValidLink = require('./middlewares/redirectToValidLink')
 const redirectToCorrectBlogUrl = require('./middlewares/redirectToCorrectBlogUrl')
 const redirectToCustomerUrl = require('./middlewares/redirectToCustomerUrl')
 const redirectToCorrectPostUrl = require('./middlewares/redirectToCorrectPostUrl')
@@ -43,8 +42,7 @@ function bootstrap() {
 
   // Custom middlewares
   app.use(applyXFrame)
-  app.use(redirectToHttps)
-  app.use(redirectToTrailingSlash)
+  app.use(redirectToValidLink)
   app.use(redirectToCorrectBlogUrl)
   app.use(redirectToCustomerUrl)
   app.use(redirectToCorrectPostUrl)
