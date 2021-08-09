@@ -7,6 +7,8 @@ exports[`PekloToolUnderTheHood component should render correctly 1`] = `
   >
     <div
       class="container_regular"
+      data-aos="fade-up"
+      data-aos-anchor-placement="bottom"
     >
       <h2
         class="case_title_h2 case_title m-12_bottom"
@@ -26,8 +28,6 @@ exports[`PekloToolUnderTheHood component should render correctly 1`] = `
        
       <div
         class="case_cards m-48_bottom media-m-38_bottom"
-        data-aos="fade-up"
-        data-aos-anchor-placement="bottom"
       >
         <div
           class="case_card background-color-gray"
