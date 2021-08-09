@@ -98,14 +98,16 @@
         The structure of a contextual advertising campaign for a car repair business. Ad texts have been generated automatically based on keyword groups and unique selling propositions.
       </TextParagraph>
     </div>
-    <div class="container_regular">
+    <div
+      class="container_regular"
+      data-aos="fade-up"
+      data-aos-anchor-placement="bottom"
+    >
       <h3 class="case_title_h3 m-24_bottom media-m-12_bottom">
         Additional functions
       </h3>
       <div
         class="case_cards"
-        data-aos="fade-up"
-        data-aos-anchor-placement="bottom"
       >
         <div class="case_cards-group">
           <Card class="background-color-black">
