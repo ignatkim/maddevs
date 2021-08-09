@@ -171,7 +171,7 @@ export default {
     height: 100%;
     position: absolute;
     bottom: 0;
-    right: 106px;
+    right: 100px;
     image-rendering: pixelated;
     @media screen and (max-width: 1280px) {
       right: 90px;
@@ -195,24 +195,22 @@ export default {
 
   &__man {
     min-width: 158px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     position: absolute;
-    top: 188px;
-    right: 61px;
+    bottom: 36px;
+    left: 546px;
     @media screen and (max-width: 1280px) {
-      right: 20px;
-    }
-    @media screen and (max-width: 1180px) {
-      right: 5px;
-      top: 215px;
+      left: 423px;
+      bottom: 24px;
     }
     @media screen and (max-width: 992px) {
-      top: 190px;
+      left: 380px;
     }
-    @media screen and (max-width: 900px) {
-      top: auto;
-      bottom: 0;
-      right: 0;
-      background-color: #f4f4f4;
+    @media screen and (max-width: 768px) {
+      bottom: 24px;
+      left: 24px;
       padding: 5px;
     }
 
@@ -223,6 +221,8 @@ export default {
         display: block;
         letter-spacing: -0.4px;
         color: #111111;
+        background-color: #FCFCFD;
+        padding: 0 8px;
       }
     }
 
@@ -233,6 +233,9 @@ export default {
         display: block;
         margin-top: 4px;
         letter-spacing: -0.4px;
+        background-color: #FCFCFD;
+        padding: 0 8px;
+        color: #111111;
         @media screen and (max-width: 768px) {
           margin-top: 0;
         }
