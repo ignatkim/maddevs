@@ -5,13 +5,20 @@
   >
     <div class="author-slice__info">
       <div class="author-slice__image">
-        <img
-          v-lazy-load
-          width="64"
-          height="64"
-          :data-src="blogAuthor.image.url"
-          :alt="blogAuthor.image.alt"
-        >
+        <picture>
+          <source
+            v-lazy-load
+            :srcset="authorImage.url + '&w=124&h=124'"
+            media="(max-width: 1024px)"
+          >
+          <img
+            v-lazy-load
+            :data-src="authorImage.url + '&w=136&h=136'"
+            :alt="authorImage.alt"
+            width="68"
+            height="68"
+          >
+        </picture>
       </div>
       <div>
         <p class="author-slice__name">
@@ -68,8 +75,8 @@
               v-lazy-load
               :data-src="contributor.image.url"
               :alt="contributor.image.alt"
-              width="26"
-              height="26"
+              width="28"
+              height="28"
             >
           </a>
           <img
@@ -77,8 +84,8 @@
             v-lazy-load
             :data-src="contributor.image.url"
             :alt="contributor.image.alt"
-            width="26"
-            height="26"
+            width="28"
+            height="28"
           >
         </li>
       </ul>
@@ -106,6 +113,14 @@ export default {
 
   computed: {
     ...mapGetters(['blogAuthor']),
+
+    authorImage() {
+      const {
+        image = { author_slice: { url: '', alt: '', dimensions: {} } },
+      } = this.blogAuthor
+      const urlWithoutSizeParams = image.author_slice.url.split('&w=')[0]
+      return { ...image.author_slice, url: urlWithoutSizeParams }
+    },
   },
 
   created() {
@@ -132,7 +147,6 @@ export default {
     border-radius: 50%;
     background-color: $bgcolor--silver;
     overflow: hidden;
-    -webkit-mask-image: -webkit-radial-gradient(white, black); // fix for problems with border-radius in Safari
     img {
       width: 100%;
       height: 100%;
@@ -201,7 +215,6 @@ export default {
       border: 2px solid $border-color--white;
       border-radius: 50%;
       overflow: hidden;
-      -webkit-mask-image: -webkit-radial-gradient(white, black); // fix for problems with border-radius in Safari
       &:first-of-type {
         margin-left: -2px;
       }
@@ -230,6 +243,7 @@ export default {
     }
     &__image {
       width: 64px;
+      min-width: 64px;
       height: 64px;
       margin-right: 0;
     }

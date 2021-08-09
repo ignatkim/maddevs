@@ -85,8 +85,8 @@ export default {
 
   computed: {
     compressedImage() {
-      const imageWithoutCrop = this.coverImageUrl.split('?auto')[0] // get image without crop and default compress params
-      const compressedImage = `${imageWithoutCrop}?q=50` // set custome compress params
+      const imageWithoutCrop = this.coverImageUrl.split('?')[0] // get image url without params
+      const compressedImage = `${imageWithoutCrop}?q=50&w=1966&h=1068` // set custom image params
       return compressedImage
     },
 
@@ -129,6 +129,7 @@ export default {
       max-height: 534px;
       display: block;
       vertical-align: middle;
+      object-fit: cover;
     }
   }
 }

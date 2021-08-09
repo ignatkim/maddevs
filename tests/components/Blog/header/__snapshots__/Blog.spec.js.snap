@@ -59,7 +59,7 @@ exports[`header Blog is a Vue instance 1`] = `
       <img
         alt="alt"
         height="300"
-        src="url?q=50"
+        src="url?q=50&w=1966&h=1068"
         width="200"
       />
     </div>
