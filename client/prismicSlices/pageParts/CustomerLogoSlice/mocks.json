@@ -5,7 +5,16 @@
     "docURL": "...",
     "version": "sktwi1xtmkfgx8626",
     "description": "Customer Logo Slice",
-    "primary": {},
+    "primary": {
+      "title": "Our valued customers",
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Ut reprehenderit occaecat Lorem velit deserunt do occaecat culpa nulla. Sunt proident consequat labore Lorem ex incididunt tempor. Lorem elit proident nulla tempor aute in anim duis.",
+          "spans": []
+        }
+      ]
+    },
     "items": [
       {
         "logo": {
@@ -15,7 +24,11 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?w=900&h=500&fit=crop"
+        },
+        "link": {
+          "link_type": "Web",
+          "url": "https://maddevs.io/"
         }
       },
       {
@@ -26,18 +39,11 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&h=500&fit=crop"
-        }
-      },
-      {
-        "logo": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&h=500&fit=crop"
+        },
+        "link": {
+          "link_type": "Web",
+          "url": "https://maddevs.io/"
         }
       }
     ],
