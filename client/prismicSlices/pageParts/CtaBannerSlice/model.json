@@ -11,24 +11,6 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "Cta Banner Slice",
       "primary": {
-        "title": {
-          "config": {
-            "label": "",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "heading2"
-          },
-          "type": "StructuredText"
-        },
-        "description": {
-          "config": {
-            "label": "",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph"
-          },
-          "type": "StructuredText"
-        },
         "image": {
           "config": {
             "label": "",
@@ -39,41 +21,48 @@
           },
           "type": "Image"
         },
-        "name": {
-          "config": {
-            "label": "",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "heading6"
-          },
-          "type": "StructuredText"
-        },
-        "position": {
-          "config": {
-            "label": "",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "heading6"
-          },
-          "type": "StructuredText"
-        },
         "btnLink": {
-          "type": "Link",
           "config": {
             "label": "",
-            "id": "btnLink",
             "placeholder": "",
             "allowTargetBlank": true
-          }
+          },
+          "type": "Link"
+        },
+        "title": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "description": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
         },
         "btnText": {
           "config": {
             "label": "",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "heading6"
+            "placeholder": ""
           },
-          "type": "StructuredText"
+          "type": "Text"
+        },
+        "name": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "position": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
         }
       },
       "items": {}

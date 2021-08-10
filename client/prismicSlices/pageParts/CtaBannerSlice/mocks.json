@@ -6,20 +6,6 @@
     "version": "sktwi1xtmkfgx8626",
     "description": "Cta Banner Slice",
     "primary": {
-      "title": [
-        {
-          "type": "heading2",
-          "text": "Reinvent impactful web services",
-          "spans": []
-        }
-      ],
-      "description": [
-        {
-          "type": "paragraph",
-          "text": "Velit labore consectetur deserunt id mollit laborum anim tempor culpa.",
-          "spans": []
-        }
-      ],
       "image": {
         "dimensions": {
           "width": null,
@@ -27,33 +13,17 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://lh3.googleusercontent.com/proxy/xwQrsUK-7L6tapBZYTy0CfCq7MwKLpyCmlRNBlVm4SMqpxT_WpZoO4MJ0-yObtMv41Zzveer0SBOMt8BHllzbvo7_vfwKgE?w=null&h=500&fit=crop"
+        "url": "https://d6xkme6dcvajw.cloudfront.net/images/CTABanner/Anatoliy.png?w=null&h=500&fit=crop"
       },
-      "name": [
-        {
-          "type": "heading6",
-          "text": "Architect holistic functionalities",
-          "spans": []
-        }
-      ],
-      "position": [
-        {
-          "type": "heading6",
-          "text": "Mesh dot-com technologies",
-          "spans": []
-        }
-      ],
       "btnLink": {
         "link_type": "Web",
-        "url": "http://google.com"
+        "url": "https://maddevs.io/delivery-models/"
       },
-      "btnText": [
-        {
-          "type": "heading6",
-          "text": "Engineer enterprise bandwidth",
-          "spans": []
-        }
-      ]
+      "title": "Build your product with Mad Devs",
+      "description": "Together we build solutions that bring digital innovation.",
+      "btnText": "Estimate your project",
+      "name": "Anatoliy Fedorenko",
+      "position": "Delivery Manager"
     },
     "items": [],
     "slice_type": "cta_banner_slice"
