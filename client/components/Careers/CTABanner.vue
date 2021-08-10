@@ -16,7 +16,7 @@
       <ul class="careers-cta-banner__links">
         <li>
           <a
-            href="https://career.habr.com/companies/maddevs/cp/vacancies/"
+            href="https://novosibirsk.hh.ru/employer/2861993/"
             target="_blank"
           >
             Headhunter
@@ -24,7 +24,7 @@
         </li>
         <li>
           <a
-            href="https://novosibirsk.hh.ru/employer/2861993/"
+            href="https://career.habr.com/companies/maddevs/cp/vacancies/"
             target="_blank"
           >
             Habr.com
