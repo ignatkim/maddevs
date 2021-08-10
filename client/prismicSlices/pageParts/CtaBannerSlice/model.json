@@ -1,0 +1,82 @@
+{
+  "id": "cta_banner_slice",
+  "type": "SharedSlice",
+  "name": "CtaBannerSlice",
+  "description": "Cta Banner Slice",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default Slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Cta Banner Slice",
+      "primary": {
+        "title": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          },
+          "type": "StructuredText"
+        },
+        "description": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          },
+          "type": "StructuredText"
+        },
+        "image": {
+          "config": {
+            "label": "",
+            "constraint": {
+              "width": null
+            },
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "name": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading6"
+          },
+          "type": "StructuredText"
+        },
+        "position": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading6"
+          },
+          "type": "StructuredText"
+        },
+        "btnLink": {
+          "type": "Link",
+          "config": {
+            "label": "",
+            "id": "btnLink",
+            "placeholder": "",
+            "allowTargetBlank": true
+          }
+        },
+        "btnText": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading6"
+          },
+          "type": "StructuredText"
+        }
+      },
+      "items": {}
+    }
+  ]
+}
