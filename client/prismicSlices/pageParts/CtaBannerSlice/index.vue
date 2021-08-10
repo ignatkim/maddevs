@@ -112,14 +112,13 @@ export default {
 
       @media screen and (max-width: 900px) {
         max-width: 500px;
-        line-height: 46px;
+        font-size: 28px;
+        line-height: 32px;
       }
 
       @media screen and (max-width: 768px) {
         max-width: 100%;
         text-align: center;
-        font-size: 28px;
-        line-height: 32px;
         letter-spacing: -0.05em;
         margin-bottom: 16px;
       }
