@@ -10,16 +10,40 @@
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
       "description": "Customer Logo Slice",
-      "primary": {},
+      "primary": {
+        "title": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "description": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          },
+          "type": "StructuredText"
+        }
+      },
       "items": {
         "logo": {
           "type": "Image",
           "config": {
-            "id": "logo",
-            "label": "",
+            "thumbnails": [],
             "constraint": {},
-            "thumbnails": []
+            "label": ""
           }
+        },
+        "link": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "allowTargetBlank": true
+          },
+          "type": "Link"
         }
       }
     }

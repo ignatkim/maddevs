@@ -1,5 +1,5 @@
-import Monitoring from '@/components/Cases/godee/Monitoring.vue'
 import { render, screen } from '@testing-library/vue'
+import Monitoring from '@/components/Cases/godee/Monitoring.vue'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

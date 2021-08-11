@@ -1,5 +1,5 @@
-import PekloToolUnderTheHood from '@/components/Cases/peklo/PekloToolUnderTheHood'
 import { render } from '@testing-library/vue'
+import PekloToolUnderTheHood from '@/components/Cases/peklo/PekloToolUnderTheHood'
 
 const directives = {
   'lazy-load': () => {},

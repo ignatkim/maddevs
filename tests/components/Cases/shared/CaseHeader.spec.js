@@ -1,5 +1,5 @@
-import CaseHeader from '@/components/Cases/shared/CaseHeader.vue'
 import { render, screen } from '@testing-library/vue'
+import CaseHeader from '@/components/Cases/shared/CaseHeader.vue'
 
 const props = {
   logo: {

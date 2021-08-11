@@ -1,5 +1,5 @@
-import InfrastructureSchema from '@/components/Cases/nambafood/InfrastructureSchema.vue'
 import { render, screen } from '@testing-library/vue'
+import InfrastructureSchema from '@/components/Cases/nambafood/InfrastructureSchema.vue'
 import '../../../__mocks__/intersectionObserverMock'
 
 const mocks = {

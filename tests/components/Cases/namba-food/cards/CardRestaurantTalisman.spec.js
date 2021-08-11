@@ -1,5 +1,5 @@
-import CardRestaurantTalisman from '@/components/Cases/nambafood/cards/CardRestaurantTalisman.vue'
 import { render, screen } from '@testing-library/vue'
+import CardRestaurantTalisman from '@/components/Cases/nambafood/cards/CardRestaurantTalisman.vue'
 
 describe('CardRestaurantTalisman component', () => {
   it('should render correctly', () => {

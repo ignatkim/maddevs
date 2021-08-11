@@ -1,5 +1,5 @@
-import TripsMonitor from '@/components/Cases/godee/TripsMonitor.vue'
 import { render, screen } from '@testing-library/vue'
+import TripsMonitor from '@/components/Cases/godee/TripsMonitor.vue'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

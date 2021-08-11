@@ -1,5 +1,5 @@
-import UISlider from '@/components/shared/UISlider'
 import { render } from '@testing-library/vue'
+import UISlider from '@/components/shared/UISlider'
 
 const stubs = ['Swiper', 'SwiperSlide']
 

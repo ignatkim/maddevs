@@ -1,6 +1,6 @@
 import { render } from '@testing-library/vue'
-import PostAuthor from '@/components/Blog/shared/PostAuthor'
 import { shallowMount } from '@vue/test-utils'
+import PostAuthor from '@/components/Blog/shared/PostAuthor'
 
 const mocks = {
   $prismic: {

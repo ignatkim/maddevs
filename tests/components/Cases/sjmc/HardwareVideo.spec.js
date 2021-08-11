@@ -1,5 +1,5 @@
-import HardwareVideo from '@/components/Cases/sjmc/HardwareVideo.vue'
 import { render, screen, fireEvent } from '@testing-library/vue'
+import HardwareVideo from '@/components/Cases/sjmc/HardwareVideo.vue'
 import '../../../__mocks__/intersectionObserverMock'
 import '../../../__mocks__/htmlMediaElement'
 

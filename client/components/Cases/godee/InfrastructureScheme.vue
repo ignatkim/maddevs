@@ -34,8 +34,8 @@
 </template>
 
 <script>
-import TextParagraph from '@/components/Cases/shared/TextParagraph'
 import Lottie from 'vue-lottie/src/lottie.vue'
+import TextParagraph from '@/components/Cases/shared/TextParagraph'
 import playLottieMixin from '@/mixins/playLottieMixin'
 import animationData from '@/assets/lottie/godee/infrastructure-scheme.json'
 

@@ -1,7 +1,7 @@
 import { render } from '@testing-library/vue'
-import ScrollToPositionsLink from '@/components/Careers/shared/ScrollToPositionsLink'
 import { createLocalVue } from '@vue/test-utils'
 import Vuex from 'vuex'
+import ScrollToPositionsLink from '@/components/Careers/shared/ScrollToPositionsLink'
 
 const localVue = createLocalVue()
 localVue.use(Vuex)

@@ -1,5 +1,5 @@
-import Blog from '@/components/Blog/header/Blog'
 import { render, screen } from '@testing-library/vue'
+import Blog from '@/components/Blog/header/Blog'
 
 const props = {
   title: 'title',

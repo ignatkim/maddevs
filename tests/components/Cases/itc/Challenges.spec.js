@@ -1,5 +1,5 @@
-import Challenges from '@/components/Cases/itc/Challenges'
 import { render } from '@testing-library/vue'
+import Challenges from '@/components/Cases/itc/Challenges'
 
 const stubs = ['CardTechSolution', 'Picture']
 

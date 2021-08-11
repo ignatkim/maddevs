@@ -1,5 +1,5 @@
-import TechnologyStack from '@/components/Cases/peklo/Technologies'
 import { render, screen } from '@testing-library/vue'
+import TechnologyStack from '@/components/Cases/peklo/Technologies'
 
 const stubs = ['ListTechnologiesItem']
 

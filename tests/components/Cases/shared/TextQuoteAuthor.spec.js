@@ -1,5 +1,5 @@
-import TextQuoteAuthor from '@/components/Cases/shared/TextQuoteAuthor'
 import { render } from '@testing-library/vue'
+import TextQuoteAuthor from '@/components/Cases/shared/TextQuoteAuthor'
 
 const props = {
   authorName: 'Author name',

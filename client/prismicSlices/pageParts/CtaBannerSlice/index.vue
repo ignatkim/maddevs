@@ -2,17 +2,14 @@
   <div class="container">
     <section class="cta-banner-slice">
       <div class="cta-banner-slice__info">
-        <prismic-rich-text
-          :field="slice.primary.title"
-          class="cta-banner-slice_title"
-        />
-        <prismic-rich-text
-          :field="slice.primary.description"
-          class="cta-banner-slice_description"
-        />
-        <!-- Child elements start -->
+        <h2 class="cta-banner-slice_title">
+          {{ slice.primary.title }}
+        </h2>
+        <p class="cta-banner-slice_description">
+          {{ slice.primary.description }}
+        </p>
         <UIButton @click="goToDeliveryPage">
-          {{ slice.primary.btnText[0].text }}
+          {{ slice.primary.btnText }}
           <img
             width="20"
             height="20"
@@ -20,7 +17,6 @@
             alt="arrow"
           >
         </UIButton>
-        <!-- Child elements end -->
       </div>
       <img
         width="395"
@@ -30,14 +26,12 @@
         :alt="slice.primary.image.alt"
       >
       <div class="cta-banner-slice__man">
-        <prismic-rich-text
-          :field="slice.primary.name"
-          class="cta-banner-slice__man-name"
-        />
-        <prismic-rich-text
-          :field="slice.primary.position"
-          class="cta-banner-slice__man-position"
-        />
+        <h6 class="cta-banner-slice__man-name">
+          {{ slice.primary.name }}
+        </h6>
+        <span class="cta-banner-slice__man-position">
+          {{ slice.primary.position }}
+        </span>
       </div>
     </section>
   </div>
@@ -103,57 +97,52 @@ export default {
   }
 
   &_title {
-    /deep/ h2 {
-      @include font('Inter', 42px, 700);
-      max-width: 590px;
-      line-height: 46px;
-      letter-spacing: -0.04em;
+    @include font('Inter', 42px, 700);
+    max-width: 590px;
+    line-height: 46px;
+    letter-spacing: -0.04em;
+    margin-bottom: 16px;
+
+    @media screen and (max-width: 900px) {
+      max-width: 500px;
+      font-size: 28px;
+      line-height: 32px;
+    }
+
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+      text-align: center;
+      letter-spacing: -0.05em;
       margin-bottom: 16px;
+    }
 
-      @media screen and (max-width: 900px) {
-        max-width: 500px;
-        line-height: 46px;
-      }
-
-      @media screen and (max-width: 768px) {
-        max-width: 100%;
-        text-align: center;
-        font-size: 28px;
-        line-height: 32px;
-        letter-spacing: -0.05em;
-        margin-bottom: 16px;
-      }
-
-      @media screen and (max-width: 370px) {
-        font-size: 34px;
-      }
+    @media screen and (max-width: 370px) {
+      font-size: 34px;
     }
   }
 
   &_description {
-    /deep/ p {
-      font-weight: normal;
-      @include font('Inter', 22px, 400);
-      line-height: 30px;
-      letter-spacing: -0.013em;
-      margin-bottom: 40px;
-      max-width: 420px;
-      @media screen and (max-width: 1280px) {
-        font-size: 18px;
-      }
-      @media screen and (max-width: 992px) {
-        max-width: 350px;
-      }
-      @media screen and (max-width: 900px) {
-        max-width: 320px;
-      }
-      @media screen and (max-width: 768px) {
-        max-width: 100%;
-        font-size: 17px;
-        line-height: 24px;
-        margin-bottom: 19px;
-        text-align: center;
-      }
+    font-weight: normal;
+    @include font('Inter', 22px, 400);
+    line-height: 30px;
+    letter-spacing: -0.013em;
+    margin-bottom: 40px;
+    max-width: 420px;
+    @media screen and (max-width: 1280px) {
+      font-size: 18px;
+    }
+    @media screen and (max-width: 992px) {
+      max-width: 350px;
+    }
+    @media screen and (max-width: 900px) {
+      max-width: 320px;
+    }
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+      font-size: 17px;
+      line-height: 24px;
+      margin-bottom: 19px;
+      text-align: center;
     }
   }
 
@@ -215,30 +204,26 @@ export default {
     }
 
     &-name {
-      /deep/ h6 {
-        @include font('Inter', 14px, 600);
-        line-height: 18px;
-        display: block;
-        letter-spacing: -0.4px;
-        color: #111111;
-        background-color: #FCFCFD;
-        padding: 0 8px;
-      }
+      @include font('Inter', 14px, 600);
+      line-height: 18px;
+      display: block;
+      letter-spacing: -0.4px;
+      color: #111111;
+      background-color: #FCFCFD;
+      padding: 0 8px;
     }
 
     &-position {
-      /deep/ h6 {
-        @include font('Inter', 14px, 400);
-        line-height: 18px;
-        display: block;
-        margin-top: 4px;
-        letter-spacing: -0.4px;
-        background-color: #FCFCFD;
-        padding: 0 8px;
-        color: #111111;
-        @media screen and (max-width: 768px) {
-          margin-top: 0;
-        }
+      @include font('Inter', 14px, 400);
+      line-height: 18px;
+      display: block;
+      margin-top: 2px;
+      letter-spacing: -0.4px;
+      background-color: #FCFCFD;
+      padding: 0 8px;
+      color: #111111;
+      @media screen and (max-width: 768px) {
+        margin-top: 0;
       }
     }
   }

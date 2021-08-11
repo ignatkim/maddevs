@@ -1,5 +1,5 @@
-import ListTeam from '@/components/Cases/shared/ListTeam'
 import { render } from '@testing-library/vue'
+import ListTeam from '@/components/Cases/shared/ListTeam'
 
 const slots = {
   default: '<li>List item</li>',

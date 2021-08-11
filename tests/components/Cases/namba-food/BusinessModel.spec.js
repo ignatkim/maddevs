@@ -1,5 +1,5 @@
-import BusinessModel from '@/components/Cases/nambafood/BusinessModel.vue'
 import { render, screen } from '@testing-library/vue'
+import BusinessModel from '@/components/Cases/nambafood/BusinessModel.vue'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

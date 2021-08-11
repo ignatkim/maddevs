@@ -1,5 +1,5 @@
-import PhaseCuttingTheCosts from '@/components/Cases/veeqo/PhaseCuttingTheCosts'
 import { render, screen } from '@testing-library/vue'
+import PhaseCuttingTheCosts from '@/components/Cases/veeqo/PhaseCuttingTheCosts'
 import '../../../__mocks__/intersectionObserverMock'
 
 describe('PhaseCuttingTheCosts component', () => {

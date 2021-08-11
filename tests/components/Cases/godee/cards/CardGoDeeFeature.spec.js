@@ -1,5 +1,5 @@
-import CardGoDeeFeature from '@/components/Cases/godee/cards/CardGoDeeFeature.vue'
 import { render } from '@testing-library/vue'
+import CardGoDeeFeature from '@/components/Cases/godee/cards/CardGoDeeFeature.vue'
 
 describe('CardGoDeeFeature component', () => {
   it('should render correctly', () => {

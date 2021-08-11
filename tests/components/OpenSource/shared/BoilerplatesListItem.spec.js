@@ -1,5 +1,5 @@
-import BoilerplatesListItem from '@/components/OpenSource/shared/BoilerplatesListItem'
 import { render } from '@testing-library/vue'
+import BoilerplatesListItem from '@/components/OpenSource/shared/BoilerplatesListItem'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

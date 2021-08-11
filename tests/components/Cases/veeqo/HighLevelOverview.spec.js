@@ -1,5 +1,5 @@
-import HighLevelOverview from '@/components/Cases/veeqo/HighLevelOverview'
 import { render, screen } from '@testing-library/vue'
+import HighLevelOverview from '@/components/Cases/veeqo/HighLevelOverview'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

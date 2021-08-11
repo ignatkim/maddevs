@@ -1,6 +1,6 @@
-import CustomerUniversity from '@/components/Blog/header/CustomerUniversity'
 import { render, screen } from '@testing-library/vue'
 import { mount } from '@vue/test-utils'
+import CustomerUniversity from '@/components/Blog/header/CustomerUniversity'
 
 describe('customer university header component', () => {
   const postList = [

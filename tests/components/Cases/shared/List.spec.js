@@ -1,5 +1,5 @@
-import List from '@/components/Cases/shared/List'
 import { render } from '@testing-library/vue'
+import List from '@/components/Cases/shared/List'
 
 const slots = {
   default: '<li>List item</li>',

@@ -1,5 +1,5 @@
-import PhaseOnlineCinema from '@/components/Cases/yourcast/PhaseOnlineCinema'
 import { render, screen } from '@testing-library/vue'
+import PhaseOnlineCinema from '@/components/Cases/yourcast/PhaseOnlineCinema'
 import '../../../__mocks__/intersectionObserverMock'
 
 const stubs = ['TextQuote']

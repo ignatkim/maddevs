@@ -1,6 +1,6 @@
 import { render } from '@testing-library/vue'
-import Index from '@/pages/case-studies/index'
 import { shallowMount } from '@vue/test-utils'
+import Index from '@/pages/case-studies/index'
 
 const META_DATA = {
   description: 'Discover how Mad Devs helps world-class brands and startups engineer their growth and reach desired outcomes with efficacy and creativity.',

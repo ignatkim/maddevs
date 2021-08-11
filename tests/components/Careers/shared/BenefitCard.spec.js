@@ -1,5 +1,5 @@
-import BenefitCard from '@/components/Careers/shared/BenefitCard'
 import { render, screen } from '@testing-library/vue'
+import BenefitCard from '@/components/Careers/shared/BenefitCard'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

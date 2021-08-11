@@ -1,5 +1,5 @@
-import OrderingProcess from '@/components/Cases/nambafood/OrderingProcess.vue'
 import { render, screen } from '@testing-library/vue'
+import OrderingProcess from '@/components/Cases/nambafood/OrderingProcess.vue'
 
 describe('OrderingProcess component', () => {
   it('should render correctly', () => {

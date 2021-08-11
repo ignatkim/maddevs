@@ -1,5 +1,5 @@
-import Hardware from '@/components/Cases/sjmc/Hardware.vue'
 import { render, screen } from '@testing-library/vue'
+import Hardware from '@/components/Cases/sjmc/Hardware.vue'
 import '../../../__mocks__/intersectionObserverMock'
 
 const mocks = {

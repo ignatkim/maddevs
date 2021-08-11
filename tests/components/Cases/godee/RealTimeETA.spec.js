@@ -1,5 +1,5 @@
-import RealTimeETA from '@/components/Cases/godee/RealTimeETA.vue'
 import { render, screen } from '@testing-library/vue'
+import RealTimeETA from '@/components/Cases/godee/RealTimeETA.vue'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

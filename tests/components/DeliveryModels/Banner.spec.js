@@ -1,5 +1,5 @@
-import Banner from '@/components/DeliveryModels/Banner.vue'
 import { render } from '@testing-library/vue'
+import Banner from '@/components/DeliveryModels/Banner.vue'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

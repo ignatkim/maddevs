@@ -121,13 +121,13 @@
 </template>
 
 <script>
+import Lottie from 'vue-lottie/src/lottie.vue'
 import TextParagraph from '@/components/Cases/shared/TextParagraph'
 import Card from '@/components/Cases/shared/Card'
 import TextQuoteBox from '@/components/Cases/shared/TextQuoteBox'
 import ListNumberedBox from '@/components/Cases/shared/ListNumberedBox'
 import ListNumberedItemBox from '@/components/Cases/shared/ListNumberedItemBox'
 import Picture from '@/components/Cases/shared/Picture'
-import Lottie from 'vue-lottie/src/lottie.vue'
 import animationData from '@/assets/lottie/itc/benefits-of-cqrs.json'
 import playLottieMixin from '@/mixins/playLottieMixin'
 import { developingInnovation, idList } from '@/data/caseITC'

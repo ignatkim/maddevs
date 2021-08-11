@@ -1,5 +1,5 @@
-import About from '@/components/Cases/veeqo/About'
 import { render } from '@testing-library/vue'
+import About from '@/components/Cases/veeqo/About'
 
 const stubs = ['TextQuote']
 
