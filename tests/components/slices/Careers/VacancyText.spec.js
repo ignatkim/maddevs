@@ -1,5 +1,5 @@
-import VacancyText from '@/components/slices/Careers/VacancyText'
 import { render } from '@testing-library/vue'
+import VacancyText from '@/components/slices/Careers/VacancyText'
 
 const stubs = ['PrismicRichText']
 

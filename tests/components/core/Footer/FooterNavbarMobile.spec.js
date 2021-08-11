@@ -1,5 +1,5 @@
-import FooterNavbarMobile from '@/components/core/Footer/FooterNavbarMobile'
 import { render } from '@testing-library/vue'
+import FooterNavbarMobile from '@/components/core/Footer/FooterNavbarMobile'
 
 const stubs = ['NuxtLink']
 

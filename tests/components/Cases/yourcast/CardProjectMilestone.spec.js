@@ -1,5 +1,5 @@
-import CardProjectMilestone from '@/components/Cases/yourcast/CardProjectMilestone'
 import { fireEvent, render, screen } from '@testing-library/vue'
+import CardProjectMilestone from '@/components/Cases/yourcast/CardProjectMilestone'
 
 describe('CardProjectMilestone component', () => {
   const props = {

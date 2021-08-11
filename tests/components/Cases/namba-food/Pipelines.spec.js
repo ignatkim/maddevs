@@ -1,5 +1,5 @@
-import Pipelines from '@/components/Cases/nambafood/Pipelines.vue'
 import { render, screen } from '@testing-library/vue'
+import Pipelines from '@/components/Cases/nambafood/Pipelines.vue'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

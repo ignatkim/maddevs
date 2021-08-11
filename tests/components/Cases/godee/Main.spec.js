@@ -1,5 +1,5 @@
-import Main from '@/components/Cases/godee/Main.vue'
 import { render } from '@testing-library/vue'
+import Main from '@/components/Cases/godee/Main.vue'
 import '../../../__mocks__/intersectionObserverMock'
 
 const containerToRender = document.createElement('div')

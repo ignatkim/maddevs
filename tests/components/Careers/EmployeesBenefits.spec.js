@@ -1,5 +1,5 @@
-import EmployeesBenefits from '@/components/Careers/EmployeesBenefits'
 import { render } from '@testing-library/vue'
+import EmployeesBenefits from '@/components/Careers/EmployeesBenefits'
 
 const stubs = ['BenefitCard', 'UISlider']
 

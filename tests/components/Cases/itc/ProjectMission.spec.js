@@ -1,5 +1,5 @@
-import ProjectMission from '@/components/Cases/itc/ProjectMission'
 import { render } from '@testing-library/vue'
+import ProjectMission from '@/components/Cases/itc/ProjectMission'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

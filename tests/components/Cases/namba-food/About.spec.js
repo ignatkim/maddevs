@@ -1,5 +1,5 @@
-import About from '@/components/Cases/nambafood/About.vue'
 import { render, screen } from '@testing-library/vue'
+import About from '@/components/Cases/nambafood/About.vue'
 
 describe('About component', () => {
   it('should render correctly', () => {

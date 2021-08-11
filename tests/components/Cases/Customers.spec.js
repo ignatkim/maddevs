@@ -1,5 +1,5 @@
-import Customers from '@/components/Cases/Customers'
 import { render, screen } from '@testing-library/vue'
+import Customers from '@/components/Cases/Customers'
 
 const stubs = ['UICustomersList']
 

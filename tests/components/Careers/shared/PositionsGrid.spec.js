@@ -1,7 +1,7 @@
-import PositionsGrid from '@/components/Careers/shared/PositionsGrid'
 import { render } from '@testing-library/vue'
 import { createLocalVue } from '@vue/test-utils'
 import Vuex from 'vuex'
+import PositionsGrid from '@/components/Careers/shared/PositionsGrid'
 
 const stubs = ['PositionsGridItem', 'UnderlinedButton']
 

@@ -1,5 +1,5 @@
-import InventoryChangeLog from '@/components/Cases/veeqo/InventoryChangeLog'
 import { render } from '@testing-library/vue'
+import InventoryChangeLog from '@/components/Cases/veeqo/InventoryChangeLog'
 
 const stubs = ['Picture']
 

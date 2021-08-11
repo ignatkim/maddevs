@@ -1,5 +1,5 @@
-import CardUseCase from '@/components/Cases/nambafood/cards/CardUseCase.vue'
 import { render, screen } from '@testing-library/vue'
+import CardUseCase from '@/components/Cases/nambafood/cards/CardUseCase.vue'
 
 const props = {
   title: 'some-title',

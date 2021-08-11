@@ -1,5 +1,5 @@
-import Benefits from '@/components/Careers/Benefits'
 import { render } from '@testing-library/vue'
+import Benefits from '@/components/Careers/Benefits'
 
 const mocks = {
   $t: () => 'translated',

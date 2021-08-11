@@ -1,7 +1,7 @@
-import ScrollToPositionsLink from '@/components/Careers/shared/ScrollToPositionsLink'
-import scrollToElementMixin from '@/mixins/scrollToElementMixin'
 import { shallowMount, createLocalVue } from '@vue/test-utils'
 import Vuex from 'vuex'
+import ScrollToPositionsLink from '@/components/Careers/shared/ScrollToPositionsLink'
+import scrollToElementMixin from '@/mixins/scrollToElementMixin'
 
 const localVue = createLocalVue()
 localVue.use(Vuex)

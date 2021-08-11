@@ -1,5 +1,5 @@
-import HowPekloToolWorks from '@/components/Cases/peklo/HowPekloToolWorks'
 import { render } from '@testing-library/vue'
+import HowPekloToolWorks from '@/components/Cases/peklo/HowPekloToolWorks'
 
 const directives = {
   'lazy-load': () => {},

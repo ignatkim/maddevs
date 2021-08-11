@@ -1,7 +1,7 @@
 import { render, screen, fireEvent } from '@testing-library/vue'
-import AllPostsSection from '@/components/Blog/Main/AllPostsSection'
 import Vuex from 'vuex'
 import { createLocalVue, shallowMount } from '@vue/test-utils'
+import AllPostsSection from '@/components/Blog/Main/AllPostsSection'
 import allPosts from '../../../__mocks__/allPosts'
 import * as homeContent from '../../../__mocks__/homePageContent'
 

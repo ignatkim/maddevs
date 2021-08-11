@@ -1,5 +1,5 @@
-import AuthorSlice from '@/components/slices/AuthorSlice'
 import { render, screen } from '@testing-library/vue'
+import AuthorSlice from '@/components/slices/AuthorSlice'
 
 const props = {
   slice: {

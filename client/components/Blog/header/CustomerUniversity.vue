@@ -65,8 +65,8 @@
 </template>
 
 <script>
-import CommonHeader from '@/components/Blog/header/Common'
 import VueSelect from 'vue-select'
+import CommonHeader from '@/components/Blog/header/Common'
 import 'vue-select/dist/vue-select.css'
 
 export default {

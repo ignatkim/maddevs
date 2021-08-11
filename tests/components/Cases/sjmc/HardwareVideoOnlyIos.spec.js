@@ -1,8 +1,8 @@
-import HardwareVideoOnlyIos from '@/components/Cases/sjmc/HardwareVideoOnlyIos.vue'
 import { fireEvent, render, screen } from '@testing-library/vue'
+import { shallowMount } from '@vue/test-utils'
 import '../../../__mocks__/intersectionObserverMock'
 import '../../../__mocks__/htmlMediaElement'
-import { shallowMount } from '@vue/test-utils'
+import HardwareVideoOnlyIos from '@/components/Cases/sjmc/HardwareVideoOnlyIos.vue'
 
 const mocks = {
   $getMediaFromS3: image => image,

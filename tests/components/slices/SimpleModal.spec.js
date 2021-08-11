@@ -1,6 +1,6 @@
-import Modal from '@/components/slices/SimpleModal'
 import { render } from '@testing-library/vue'
 import { shallowMount } from '@vue/test-utils'
+import Modal from '@/components/slices/SimpleModal'
 
 describe('SimpleModal component', () => {
   it('should render correctly', () => {

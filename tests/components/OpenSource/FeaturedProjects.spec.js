@@ -1,5 +1,5 @@
-import FeaturedProjects from '@/components/OpenSource/FeaturedProjects'
 import { render } from '@testing-library/vue'
+import FeaturedProjects from '@/components/OpenSource/FeaturedProjects'
 
 const stubs = ['TitleDesc', 'FeaturedProjectsList']
 

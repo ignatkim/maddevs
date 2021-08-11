@@ -1,6 +1,6 @@
 import { render } from '@testing-library/vue'
-import Blog from '@/pages/blog/'
 import { shallowMount } from '@vue/test-utils'
+import Blog from '@/pages/blog/'
 
 const DESCRIPTION = 'test description'
 

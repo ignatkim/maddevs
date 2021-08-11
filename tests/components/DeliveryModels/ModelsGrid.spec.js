@@ -1,5 +1,5 @@
-import ModelsGrid from '@/components/DeliveryModels/ModelsGrid'
 import { render } from '@testing-library/vue'
+import ModelsGrid from '@/components/DeliveryModels/ModelsGrid'
 
 const stubs = ['ModelCard']
 

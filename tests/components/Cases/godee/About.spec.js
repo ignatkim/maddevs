@@ -1,5 +1,5 @@
-import About from '@/components/Cases/godee/About.vue'
 import { render, screen } from '@testing-library/vue'
+import About from '@/components/Cases/godee/About.vue'
 
 const stubs = ['TextQuote']
 

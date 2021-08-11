@@ -1,5 +1,5 @@
-import Grafana from '@/components/Cases/nambafood/Grafana.vue'
 import { render, screen } from '@testing-library/vue'
+import Grafana from '@/components/Cases/nambafood/Grafana.vue'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

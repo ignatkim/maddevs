@@ -1,5 +1,5 @@
-import ListTechnologies from '@/components/Cases/shared/ListTechnologies'
 import { render } from '@testing-library/vue'
+import ListTechnologies from '@/components/Cases/shared/ListTechnologies'
 
 const slots = {
   default: '<li>List item</li>',

@@ -1,5 +1,5 @@
-import Main from '@/components/Cases/veeqo/Main'
 import { render } from '@testing-library/vue'
+import Main from '@/components/Cases/veeqo/Main'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

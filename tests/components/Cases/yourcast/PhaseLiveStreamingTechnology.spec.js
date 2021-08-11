@@ -1,5 +1,5 @@
-import PhaseLiveStreamingTechnology from '@/components/Cases/yourcast/PhaseLiveStreamingTechnology'
 import { render, screen } from '@testing-library/vue'
+import PhaseLiveStreamingTechnology from '@/components/Cases/yourcast/PhaseLiveStreamingTechnology'
 import '../../../__mocks__/intersectionObserverMock'
 
 const directives = {

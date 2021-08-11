@@ -1,5 +1,5 @@
-import TextParagraphUppercase from '@/components/Cases/shared/TextParagraphUppercase'
 import { render } from '@testing-library/vue'
+import TextParagraphUppercase from '@/components/Cases/shared/TextParagraphUppercase'
 
 const slots = {
   default: 'test',

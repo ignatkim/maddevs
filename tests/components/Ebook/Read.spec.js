@@ -1,7 +1,7 @@
 import 'regenerator-runtime'
 import { shallowMount, createLocalVue } from '@vue/test-utils'
-import Read from '@/components/Ebook/Read'
 import Vuex from 'vuex'
+import Read from '@/components/Ebook/Read'
 
 const localVue = createLocalVue()
 localVue.use(Vuex)

@@ -1,5 +1,5 @@
-import KeywordGrouping from '@/components/Cases/peklo/KeywordGrouping'
 import { render } from '@testing-library/vue'
+import KeywordGrouping from '@/components/Cases/peklo/KeywordGrouping'
 
 const stubs = ['Picture', 'TextQuote']
 

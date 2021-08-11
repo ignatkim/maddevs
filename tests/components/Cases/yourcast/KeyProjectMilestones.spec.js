@@ -1,5 +1,5 @@
-import KeyProjectMilestones from '@/components/Cases/yourcast/KeyProjectMilestones'
 import { render, screen } from '@testing-library/vue'
+import KeyProjectMilestones from '@/components/Cases/yourcast/KeyProjectMilestones'
 
 describe('KeyProjectMilestones component', () => {
   it('should render correctly', () => {

@@ -1,5 +1,5 @@
-import MeetOurExperts from '@/components/About/MeetOurExperts'
 import { render, screen } from '@testing-library/vue'
+import MeetOurExperts from '@/components/About/MeetOurExperts'
 
 const directives = {
   'lazy-load': () => {},

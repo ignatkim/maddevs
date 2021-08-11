@@ -1,6 +1,6 @@
 import { render } from '@testing-library/vue'
-import GoDeeCase from '@/pages/case-studies/godee'
 import { shallowMount } from '@vue/test-utils'
+import GoDeeCase from '@/pages/case-studies/godee'
 import formBaseProps from '../../__mocks__/formBaseProps'
 
 const DESCRIPTION = 'Case Study Shuttle Bus Service. Read GoDee’s story on building a public transportation app for passengers and drivers and a monitoring system for admins in Vietnam.'
