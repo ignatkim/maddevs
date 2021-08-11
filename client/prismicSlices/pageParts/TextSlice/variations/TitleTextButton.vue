@@ -19,9 +19,9 @@ export default {
     },
 
     button: {
-      type: String,
+      type: Object,
       required: true,
-      default: '',
+      default: () => ({}),
     },
   },
 }

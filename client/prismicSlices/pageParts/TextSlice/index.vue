@@ -1,11 +1,11 @@
 <template>
   <section class="text-slice">
-    <Title
+    <Text
       v-if="slice.variation === 'default-slice'"
       v-bind="slice.primary"
     />
-    <Text
-      v-else-if="slice.variation === 'text'"
+    <Title
+      v-else-if="slice.variation === 'title'"
       v-bind="slice.primary"
     />
     <TitleText
