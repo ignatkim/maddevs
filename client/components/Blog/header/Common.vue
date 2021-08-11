@@ -15,15 +15,16 @@
     </p>
     <slot name="afterTitle" />
     <div
-      v-if="coverImageUrl"
+      v-if="imageUrl"
       class="blog-post__introduction-image"
       :class="imageBackgroundClass"
     >
       <img
-        :src="compressedImage"
-        :width="coverImageWidth"
-        :height="coverImageHeight"
+        :src="`${imageUrl}&w=983&h=534`"
+        :srcset="`${imageUrl}&w=1966&h=1068` + ' 2x'"
         :alt="coverImageAltText"
+        width="983"
+        height="534"
       >
     </div>
   </div>
@@ -59,16 +60,6 @@ export default {
       type: String,
       default: '',
     },
-
-    coverImageWidth: {
-      type: Number,
-      default: 983,
-    },
-
-    coverImageHeight: {
-      type: Number,
-      default: 534,
-    },
   },
 
   head() {
@@ -84,9 +75,9 @@ export default {
   },
 
   computed: {
-    compressedImage() {
+    imageUrl() {
       const imageWithoutCrop = this.coverImageUrl.split('?')[0] // get image url without params
-      const compressedImage = `${imageWithoutCrop}?q=50&w=1966&h=1068` // set custom image params
+      const compressedImage = `${imageWithoutCrop}?q=50` // set custom image params
       return compressedImage
     },
 
