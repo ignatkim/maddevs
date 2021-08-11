@@ -112,9 +112,13 @@ export default {
 <style lang="scss" scoped>
 .case {
   &_video-wrapper {
-    width: 23%;
+    width: 31.944vw;
+    height: 63.3vw;
     max-width: 460px;
+    max-height: 921px;
     min-width: 270px;
+    min-height: 540px;
+
     video {
       display: block;
       &::-webkit-media-controls {
