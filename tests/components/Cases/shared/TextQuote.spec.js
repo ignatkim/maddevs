@@ -1,5 +1,5 @@
-import TextQuote from '@/components/Cases/shared/TextQuote'
 import { render, screen } from '@testing-library/vue'
+import TextQuote from '@/components/Cases/shared/TextQuote'
 
 const slots = {
   default: 'Main Content',

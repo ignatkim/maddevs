@@ -1,6 +1,6 @@
-import DevelopmentGoals from '@/components/Cases/godee/DevelopmentGoals.vue'
 import { render, screen } from '@testing-library/vue'
 import { shallowMount } from '@vue/test-utils'
+import DevelopmentGoals from '@/components/Cases/godee/DevelopmentGoals.vue'
 
 const refs = {
   container: {

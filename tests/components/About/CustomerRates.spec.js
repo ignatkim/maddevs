@@ -1,5 +1,5 @@
-import CustomerRates from '@/components/About/CustomerRates'
 import { render, screen } from '@testing-library/vue'
+import CustomerRates from '@/components/About/CustomerRates'
 
 describe('CustomerRates', () => {
   it('should render correctly', () => {

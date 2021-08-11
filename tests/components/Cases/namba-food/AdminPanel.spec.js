@@ -1,5 +1,5 @@
-import AdminPanel from '@/components/Cases/nambafood/AdminPanel.vue'
 import { render, screen } from '@testing-library/vue'
+import AdminPanel from '@/components/Cases/nambafood/AdminPanel.vue'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

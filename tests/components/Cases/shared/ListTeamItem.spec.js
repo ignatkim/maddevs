@@ -1,5 +1,5 @@
-import ListTeamItem from '@/components/Cases/shared/ListTeamItem'
 import { render, screen } from '@testing-library/vue'
+import ListTeamItem from '@/components/Cases/shared/ListTeamItem'
 
 describe('ListTeamItem component', () => {
   const props = {

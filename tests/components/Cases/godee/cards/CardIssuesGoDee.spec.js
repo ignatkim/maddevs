@@ -1,5 +1,5 @@
-import CardIssuesGoDee from '@/components/Cases/godee/cards/CardIssuesGoDee.vue'
 import { render, screen } from '@testing-library/vue'
+import CardIssuesGoDee from '@/components/Cases/godee/cards/CardIssuesGoDee.vue'
 
 describe('CardIssuesGoDee component', () => {
   it('should render correctly', () => {

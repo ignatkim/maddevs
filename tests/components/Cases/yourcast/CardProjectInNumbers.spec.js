@@ -1,5 +1,5 @@
-import CardProjectInNumbers from '@/components/Cases/yourcast/CardProjectInNumbers'
 import { render, screen } from '@testing-library/vue'
+import CardProjectInNumbers from '@/components/Cases/yourcast/CardProjectInNumbers'
 
 describe('CardProjectInNumbers component', () => {
   it('should render correctly', () => {

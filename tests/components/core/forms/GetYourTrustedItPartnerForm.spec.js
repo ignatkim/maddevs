@@ -1,7 +1,7 @@
 import { render, fireEvent, screen } from '@testing-library/vue'
-import GetYourTrustedItPartnerForm from '@/components/core/forms/GetYourTrustedItPartnerForm'
 import { createLocalVue } from '@vue/test-utils'
 import Vuex from 'vuex'
+import GetYourTrustedItPartnerForm from '@/components/core/forms/GetYourTrustedItPartnerForm'
 import formBaseProps from '../../../__mocks__/formBaseProps'
 
 import delay from '../../../../client/helpers/delay'

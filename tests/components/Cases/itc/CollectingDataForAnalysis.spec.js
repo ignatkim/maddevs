@@ -1,5 +1,5 @@
-import CollectingDataForAnalysis from '@/components/Cases/itc/CollectingDataForAnalysis'
 import { render } from '@testing-library/vue'
+import CollectingDataForAnalysis from '@/components/Cases/itc/CollectingDataForAnalysis'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

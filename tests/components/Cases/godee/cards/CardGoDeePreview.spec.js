@@ -1,5 +1,5 @@
-import CardGoDeePreview from '@/components/Cases/godee/cards/CardGoDeePreview.vue'
 import { render, screen } from '@testing-library/vue'
+import CardGoDeePreview from '@/components/Cases/godee/cards/CardGoDeePreview.vue'
 
 const props = {
   title: 'some-title',

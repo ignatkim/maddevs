@@ -98,10 +98,10 @@
 </template>
 
 <script>
+import Lottie from 'vue-lottie/src/lottie.vue'
 import TextParagraph from '@/components/Cases/shared/TextParagraph'
 import TextQuoteBox from '@/components/Cases/shared/TextQuoteBox'
 import Picture from '@/components/Cases/shared/Picture'
-import Lottie from 'vue-lottie/src/lottie.vue'
 import animationData from '@/assets/lottie/yourcast/streaming-technology.json'
 import isIphoneMixin from '@/mixins/isIphoneMixin'
 import playLottieMixin from '@/mixins/playLottieMixin'

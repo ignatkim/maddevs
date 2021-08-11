@@ -1,5 +1,5 @@
-import PhaseRedesignAndOptimisations from '@/components/Cases/yourcast/PhaseRedesignAndOptimisations'
 import { render, screen } from '@testing-library/vue'
+import PhaseRedesignAndOptimisations from '@/components/Cases/yourcast/PhaseRedesignAndOptimisations'
 import '../../../__mocks__/intersectionObserverMock'
 
 describe('PhaseRedesignAndOptimisations component', () => {

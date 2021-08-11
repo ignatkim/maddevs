@@ -1,5 +1,5 @@
-import NationwideSuccess from '@/components/Cases/nambafood/NationwideSuccess.vue'
 import { render, screen } from '@testing-library/vue'
+import NationwideSuccess from '@/components/Cases/nambafood/NationwideSuccess.vue'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

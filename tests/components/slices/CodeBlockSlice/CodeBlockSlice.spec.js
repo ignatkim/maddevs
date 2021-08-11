@@ -1,6 +1,6 @@
 // eslint-disalbe quotes
-import CodeBlockSlice from '@/components/slices/CodeBlockSlice'
 import { render } from '@testing-library/vue'
+import CodeBlockSlice from '@/components/slices/CodeBlockSlice'
 
 describe('code block slice component', () => {
   const props = {

@@ -1,5 +1,5 @@
-import FooterContacts from '@/components/core/Footer/FooterContacts'
 import { render, screen } from '@testing-library/vue'
+import FooterContacts from '@/components/core/Footer/FooterContacts'
 
 const directives = {
   'lazy-load': () => {},

@@ -1,5 +1,5 @@
-import AboutBanner from '@/components/core/banners/AboutBanner'
 import { render, screen } from '@testing-library/vue'
+import AboutBanner from '@/components/core/banners/AboutBanner'
 
 describe('AboutBanner', () => {
   global.$nuxt = {

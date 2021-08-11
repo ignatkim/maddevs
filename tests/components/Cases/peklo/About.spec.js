@@ -1,5 +1,5 @@
-import About from '@/components/Cases/peklo/About'
 import { render } from '@testing-library/vue'
+import About from '@/components/Cases/peklo/About'
 
 describe('About component', () => {
   it('should render correctly', () => {

@@ -1,5 +1,5 @@
-import CustomerTestimonials from '@/components/About/CustomerTestimonials'
 import { fireEvent, render, screen } from '@testing-library/vue'
+import CustomerTestimonials from '@/components/About/CustomerTestimonials'
 
 const directives = {
   'lazy-load': () => {},

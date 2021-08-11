@@ -1,5 +1,5 @@
-import Team from '@/components/Cases/yourcast/Team'
 import { render, screen } from '@testing-library/vue'
+import Team from '@/components/Cases/yourcast/Team'
 
 const stubs = ['Picture']
 

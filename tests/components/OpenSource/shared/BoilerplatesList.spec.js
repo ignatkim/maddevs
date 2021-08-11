@@ -1,5 +1,5 @@
-import BoilerplatesList from '@/components/OpenSource/shared/BoilerplatesList'
 import { render } from '@testing-library/vue'
+import BoilerplatesList from '@/components/OpenSource/shared/BoilerplatesList'
 
 const stubs = ['BoilerplatesListItem']
 

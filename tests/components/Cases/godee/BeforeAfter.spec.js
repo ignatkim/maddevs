@@ -1,5 +1,5 @@
-import BeforeAfter from '@/components/Cases/godee/BeforeAfter.vue'
 import { render, screen } from '@testing-library/vue'
+import BeforeAfter from '@/components/Cases/godee/BeforeAfter.vue'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

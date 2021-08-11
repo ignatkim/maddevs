@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import { buildHead } from '@/data/seo'
 import { mapGetters, mapActions } from 'vuex'
+import { buildHead } from '@/data/seo'
 import SearchResultBanner from '@/components/Blog/Main/SearchResultBanner'
 import PostsSection from '@/components/Blog/Main/PostsSection'
 

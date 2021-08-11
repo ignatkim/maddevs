@@ -1,5 +1,5 @@
-import Collaboration from '@/components/Cases/godee/Collaboration.vue'
 import { render, screen } from '@testing-library/vue'
+import Collaboration from '@/components/Cases/godee/Collaboration.vue'
 
 describe('Collaboration component', () => {
   it('should render correctly', () => {

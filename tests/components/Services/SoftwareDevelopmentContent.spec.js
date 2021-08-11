@@ -1,5 +1,5 @@
-import SoftwareDevelopmentContent from '@/components/Services/SoftwareDevelopmentContent'
 import { render, screen } from '@testing-library/vue'
+import SoftwareDevelopmentContent from '@/components/Services/SoftwareDevelopmentContent'
 
 const props = {
   type: 'some-type',

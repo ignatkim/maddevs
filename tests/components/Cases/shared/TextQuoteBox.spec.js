@@ -1,5 +1,5 @@
-import TextQuoteBox from '@/components/Cases/shared/TextQuoteBox'
 import { render, screen } from '@testing-library/vue'
+import TextQuoteBox from '@/components/Cases/shared/TextQuoteBox'
 
 const slots = {
   default: 'Main Content',

@@ -1,5 +1,5 @@
-import KeyMetrics from '@/components/Careers/KeyMetrics'
 import { render } from '@testing-library/vue'
+import KeyMetrics from '@/components/Careers/KeyMetrics'
 
 const stubs = ['MetricCard']
 

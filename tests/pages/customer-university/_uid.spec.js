@@ -1,7 +1,7 @@
 import { render } from '@testing-library/vue'
-import Post from '@/pages/customer-university/_uid.vue'
 import { createLocalVue, shallowMount } from '@vue/test-utils'
 import Vuelidate from 'vuelidate'
+import Post from '@/pages/customer-university/_uid.vue'
 import blogPost from '../../__mocks__/blogPost'
 
 const DESCRIPTION = 'test description'

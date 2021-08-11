@@ -1,5 +1,5 @@
-import GallerySlice from '@/components/slices/GallerySlice'
 import { render } from '@testing-library/vue'
+import GallerySlice from '@/components/slices/GallerySlice'
 
 describe('galary slice component', () => {
   const props = {

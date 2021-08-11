@@ -1,5 +1,5 @@
-import PhaseMovingToKubernetes from '@/components/Cases/veeqo/PhaseMovingToKubernetes'
 import { render, screen } from '@testing-library/vue'
+import PhaseMovingToKubernetes from '@/components/Cases/veeqo/PhaseMovingToKubernetes'
 
 describe('PhaseMovingToKubernetes component', () => {
   it('should render correctly', () => {

@@ -1,5 +1,5 @@
-import ProjectsCountries from '@/components/Careers/ProjectsCountries'
 import { render } from '@testing-library/vue'
+import ProjectsCountries from '@/components/Careers/ProjectsCountries'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

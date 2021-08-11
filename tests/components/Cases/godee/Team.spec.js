@@ -1,5 +1,5 @@
-import Team from '@/components/Cases/godee/Team.vue'
 import { render, screen } from '@testing-library/vue'
+import Team from '@/components/Cases/godee/Team.vue'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

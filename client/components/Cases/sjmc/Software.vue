@@ -64,11 +64,11 @@
 </template>
 
 <script>
+import Lottie from 'vue-lottie/src/lottie.vue'
 import TextParagraph from '@/components/Cases/shared/TextParagraph'
 import TextQuote from '@/components/Cases/shared/TextQuote'
 import List from '@/components/Cases/shared/List'
 import ListItemDot from '@/components/Cases/shared/ListItemDot'
-import Lottie from 'vue-lottie/src/lottie.vue'
 import playLottieMixin from '@/mixins/playLottieMixin'
 import animationData from '@/assets/lottie/sjmc/multimedia-management.json'
 

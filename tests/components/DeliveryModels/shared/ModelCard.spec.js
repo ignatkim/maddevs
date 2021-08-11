@@ -1,5 +1,5 @@
-import ModelCard from '@/components/DeliveryModels/shared/ModelCard'
 import { render } from '@testing-library/vue'
+import ModelCard from '@/components/DeliveryModels/shared/ModelCard'
 
 const props = {
   full: false,

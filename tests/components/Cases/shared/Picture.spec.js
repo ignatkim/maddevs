@@ -1,5 +1,5 @@
-import Picture from '@/components/Cases/shared/Picture'
 import { render, fireEvent, screen } from '@testing-library/vue'
+import Picture from '@/components/Cases/shared/Picture'
 
 const props = {
   folder: 'nambafood',

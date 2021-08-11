@@ -1,5 +1,5 @@
-import QuoteSlice from '@/components/slices/QuoteSlice'
 import { render } from '@testing-library/vue'
+import QuoteSlice from '@/components/slices/QuoteSlice'
 
 describe('quoteSlice component', () => {
   const slice = {

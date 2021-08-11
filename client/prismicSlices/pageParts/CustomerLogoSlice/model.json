@@ -32,10 +32,9 @@
         "logo": {
           "type": "Image",
           "config": {
-            "id": "logo",
-            "label": "",
+            "thumbnails": [],
             "constraint": {},
-            "thumbnails": []
+            "label": ""
           }
         },
         "link": {
