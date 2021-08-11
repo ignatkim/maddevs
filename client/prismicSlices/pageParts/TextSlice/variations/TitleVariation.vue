@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'Title',
+  name: 'TitleVariation',
   props: {
     title: {
       type: String,

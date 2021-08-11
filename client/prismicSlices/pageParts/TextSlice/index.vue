@@ -1,22 +1,22 @@
 <template>
   <section class="text-slice">
-    <Text
+    <TextVariation
       v-if="slice.variation === 'default-slice'"
       v-bind="slice.primary"
     />
-    <Title
+    <TitleVariation
       v-else-if="slice.variation === 'title'"
       v-bind="slice.primary"
     />
-    <TitleText
+    <TitleTextVariation
       v-else-if="slice.variation === 'titleText'"
       v-bind="slice.primary"
     />
-    <TitleTextButton
+    <TitleTextButtonVariation
       v-else-if="slice.variation === 'titleTextButton'"
       v-bind="slice.primary"
     />
-    <TitleTextList
+    <TitleTextListVariation
       v-else-if="slice.variation === 'titleTextList'"
       v-bind="slice.primary"
       :list="slice.items"
@@ -25,20 +25,20 @@
 </template>
 
 <script>
-import Title from './variations/Title'
-import Text from './variations/Text'
-import TitleText from './variations/TitleText'
-import TitleTextButton from './variations/TitleTextButton'
-import TitleTextList from './variations/TitleTextList'
+import TitleVariation from './variations/TitleVariation'
+import TextVariation from './variations/TextVariation'
+import TitleTextVariation from './variations/TitleTextVariation'
+import TitleTextButtonVariation from './variations/TitleTextButtonVariation'
+import TitleTextListVariation from './variations/TitleTextListVariation'
 
 export default {
   name: 'TextSlice',
   components: {
-    Title,
-    Text,
-    TitleText,
-    TitleTextButton,
-    TitleTextList,
+    TitleVariation,
+    TextVariation,
+    TitleTextVariation,
+    TitleTextButtonVariation,
+    TitleTextListVariation,
   },
 
   props: {

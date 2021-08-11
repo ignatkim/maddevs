@@ -1,10 +1,10 @@
 <template>
-  <div>title + text + button variant</div>
+  <div>title + text variant</div>
 </template>
 
 <script>
 export default {
-  name: 'TitleTextButton',
+  name: 'TitleTextVariation',
   props: {
     title: {
       type: String,
@@ -16,12 +16,6 @@ export default {
       type: String,
       required: true,
       default: '',
-    },
-
-    button: {
-      type: Object,
-      required: true,
-      default: () => ({}),
     },
   },
 }

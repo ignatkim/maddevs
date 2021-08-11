@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'Text',
+  name: 'TextVariation',
   props: {
     text: {
       type: String,
