@@ -71,6 +71,11 @@ module.exports = {
     /*
      ** Run ESLint on save
      */
+    babel: {
+      plugins: [
+        ['@babel/plugin-proposal-private-property-in-object', { loose: true }],
+      ],
+    },
     vendor: ['axios'],
     transpile: ['swiper', 'dom7', 'vue-slicezone', 'nuxt-sm'],
     followSymlinks: true,
@@ -116,7 +121,7 @@ module.exports = {
     [
       'nuxt-i18n',
       {
-        strategy: 'no_prefix',
+        strategy: 'prefix_and_default',
         defaultLocale: 'en',
         langDir: '~/locales/',
         locales: [

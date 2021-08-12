@@ -1,7 +1,7 @@
 <template>
   <li class="positions-grid__item">
     <NuxtLink
-      :to="`/careers/${uid}/`"
+      :to="`${uid}/`"
       class="positions-grid__item-link"
     >
       <div
