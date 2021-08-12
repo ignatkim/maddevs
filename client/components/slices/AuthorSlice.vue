@@ -123,7 +123,7 @@ export default {
       const { image } = this.blogAuthor
       if (image && image.author_slice) {
         // eslint-disable-next-line
-        urlWithoutSizeParams = image.author_slice.url.split('&w=')[0]
+        if (image.author_slice.url) urlWithoutSizeParams = image.author_slice.url.split('&w=')[0]
         return { ...image.author_slice, url: urlWithoutSizeParams }
       }
       return {}

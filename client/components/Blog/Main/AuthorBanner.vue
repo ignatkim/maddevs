@@ -45,7 +45,7 @@ export default {
       const { image } = this.blogAuthor
       if (image && image.header) {
         // eslint-disable-next-line
-        urlWithoutSizeParams = image.header.url.split('&w=')[0]
+        if (image.header.url) urlWithoutSizeParams = image.header.url.split('&w=')[0]
         return { ...image.header, url: urlWithoutSizeParams }
       }
       return {}
