@@ -15,12 +15,11 @@
       >
       <video
         ref="video"
-        v-lazy-load
         class="main-video"
         autoplay="true"
       >
         <source
-          :data-src="$getMediaFromS3('/videos/sjmc/sjmc-modal-video.00bd869.mp4')"
+          :src="$getMediaFromS3('/videos/sjmc/sjmc-modal-video.00bd869.mp4')"
           type="video/mp4"
         >
         Your browser does not support the video tag.
@@ -71,7 +70,11 @@ export default {
       }
     })
 
-    if (this.$refs?.video?.onended) this.$refs.video.onended = this.onEnded()
+    this.$refs.video.addEventListener('ended', this.onEnded)
+  },
+
+  destroyed() {
+    this.$refs.video.removeEventListener('ended', this.onEnded)
   },
 
   methods: {
