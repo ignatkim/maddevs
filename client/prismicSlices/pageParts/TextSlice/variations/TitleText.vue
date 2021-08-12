@@ -1,11 +1,17 @@
 <template>
-  <div>text variant</div>
+  <div>title + text variant</div>
 </template>
 
 <script>
 export default {
-  name: 'TextVariation',
+  name: 'TitleText',
   props: {
+    title: {
+      type: String,
+      required: true,
+      default: '',
+    },
+
     text: {
       type: String,
       required: true,

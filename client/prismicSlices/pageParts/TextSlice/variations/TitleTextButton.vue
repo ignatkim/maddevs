@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'TitleTextButtonVariation',
+  name: 'TitleTextButton',
   props: {
     title: {
       type: String,

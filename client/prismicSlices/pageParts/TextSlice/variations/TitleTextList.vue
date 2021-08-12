@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'TitleTextListVariation',
+  name: 'TitleTextList',
   props: {
     title: {
       type: String,
