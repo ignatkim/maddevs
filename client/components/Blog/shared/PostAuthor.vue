@@ -7,12 +7,12 @@
     class="post-author"
   >
     <div
-      v-if="image.thumbnail !== undefined"
+      v-if="authorImage !== undefined"
       class="post-author__image"
     >
       <img
-        :src="image.thumbnail.url"
-        :alt="image.thumbnail.alt"
+        :src="authorImage.url"
+        :alt="authorImage.alt"
         width="40"
         height="40"
       >
@@ -85,13 +85,18 @@ export default {
         {
           rel: 'preload',
           as: 'image',
-          href: this.image.thumbnail.url,
+          href: this.authorImage.url,
         },
       ],
     }
   },
 
   computed: {
+    authorImage() {
+      const { thumbnail = {} } = this.image
+      return thumbnail
+    },
+
     link() {
       return linkResolver({ type: 'author', uid: this.uid })
     },
