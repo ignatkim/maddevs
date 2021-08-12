@@ -8,16 +8,16 @@
         <picture>
           <source
             v-lazy-load
-            :srcset="[
-              `${authorImage.url}&w=62&h=62`,
-              `${authorImage.url}&w=124&h=124 2x`
+            :data-srcset="[
+              `${authorImage.url}&w=64&h=64`,
+              `${authorImage.url}&w=128&h=128 2x`
             ]"
             media="(max-width: 1024px)"
           >
           <img
             v-lazy-load
-            :src="`${authorImage.url}&w=68&h=68`"
-            :srcset="`${authorImage.url}&w=136&h=136 2x`"
+            :data-src="`${authorImage.url}&w=68&h=68`"
+            :data-srcset="`${authorImage.url}&w=136&h=136 2x`"
             :alt="authorImage.alt"
             width="68"
             height="68"

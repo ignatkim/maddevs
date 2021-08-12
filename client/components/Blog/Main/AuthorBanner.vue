@@ -5,7 +5,7 @@
         <picture>
           <source
             v-lazy-load
-            :srcset="[
+            :data-srcset="[
               `${authorImage.url}&w=128&h=128`,
               `${authorImage.url}&w=256&h=256 2x`
             ]"
@@ -13,8 +13,8 @@
           >
           <img
             v-lazy-load
-            :src="`${authorImage.url}&w=165&h=165`"
-            :srcset="`${authorImage.url}&w=330&h=330 2x`"
+            :data-src="`${authorImage.url}&w=165&h=165`"
+            :data-srcset="`${authorImage.url}&w=330&h=330 2x`"
             :alt="authorImage.alt"
             width="165"
             height="165"
