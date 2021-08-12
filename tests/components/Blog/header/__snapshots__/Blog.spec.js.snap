@@ -4,6 +4,8 @@ exports[`header Blog is a Vue instance 1`] = `
 <div>
   <div
     class="blog-post__introduction-container"
+    cover-image-height="300"
+    cover-image-width="200"
     id="introduction-container"
   >
      
@@ -58,9 +60,10 @@ exports[`header Blog is a Vue instance 1`] = `
     >
       <img
         alt="alt"
-        height="300"
-        src="url?q=50"
-        width="200"
+        height="534"
+        src="url?q=50&w=983&h=534"
+        srcset="url?q=50&w=1966&h=1068 2x"
+        width="983"
       />
     </div>
   </div>

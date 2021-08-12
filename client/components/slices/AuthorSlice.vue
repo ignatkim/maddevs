@@ -5,13 +5,24 @@
   >
     <div class="author-slice__info">
       <div class="author-slice__image">
-        <img
-          v-lazy-load
-          width="64"
-          height="64"
-          :data-src="blogAuthor.image.url"
-          :alt="blogAuthor.image.alt"
-        >
+        <picture>
+          <source
+            v-lazy-load
+            :data-srcset="[
+              `${authorImage.url}&w=64&h=64`,
+              `${authorImage.url}&w=128&h=128 2x`
+            ]"
+            media="(max-width: 1024px)"
+          >
+          <img
+            v-lazy-load
+            :data-src="`${authorImage.url}&w=68&h=68`"
+            :data-srcset="`${authorImage.url}&w=136&h=136 2x`"
+            :alt="authorImage.alt"
+            width="68"
+            height="68"
+          >
+        </picture>
       </div>
       <div>
         <p class="author-slice__name">
@@ -68,8 +79,8 @@
               v-lazy-load
               :data-src="contributor.image.url"
               :alt="contributor.image.alt"
-              width="26"
-              height="26"
+              width="28"
+              height="28"
             >
           </a>
           <img
@@ -77,8 +88,8 @@
             v-lazy-load
             :data-src="contributor.image.url"
             :alt="contributor.image.alt"
-            width="26"
-            height="26"
+            width="28"
+            height="28"
           >
         </li>
       </ul>
@@ -106,6 +117,17 @@ export default {
 
   computed: {
     ...mapGetters(['blogAuthor']),
+
+    authorImage() {
+      let urlWithoutSizeParams = ''
+      const { image } = this.blogAuthor
+      if (image && image.author_slice) {
+        // eslint-disable-next-line
+        if (image.author_slice.url) urlWithoutSizeParams = image.author_slice.url.split('&w=')[0]
+        return { ...image.author_slice, url: urlWithoutSizeParams }
+      }
+      return {}
+    },
   },
 
   created() {
@@ -132,7 +154,6 @@ export default {
     border-radius: 50%;
     background-color: $bgcolor--silver;
     overflow: hidden;
-    -webkit-mask-image: -webkit-radial-gradient(white, black); // fix for problems with border-radius in Safari
     img {
       width: 100%;
       height: 100%;
@@ -201,7 +222,6 @@ export default {
       border: 2px solid $border-color--white;
       border-radius: 50%;
       overflow: hidden;
-      -webkit-mask-image: -webkit-radial-gradient(white, black); // fix for problems with border-radius in Safari
       &:first-of-type {
         margin-left: -2px;
       }
@@ -230,6 +250,7 @@ export default {
     }
     &__image {
       width: 64px;
+      min-width: 64px;
       height: 64px;
       margin-right: 0;
     }

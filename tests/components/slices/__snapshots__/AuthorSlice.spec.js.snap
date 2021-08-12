@@ -11,12 +11,20 @@ exports[`AuthorSlice component should render correctly 1`] = `
       <div
         class="author-slice__image"
       >
-        <img
-          alt="alt"
-          data-src="someurl"
-          height="64"
-          width="64"
-        />
+        <picture>
+          <source
+            data-srcset="&w=64&h=64,&w=128&h=128 2x"
+            media="(max-width: 1024px)"
+          />
+           
+          <img
+            alt=""
+            data-src="&w=68&h=68"
+            data-srcset="&w=136&h=136 2x"
+            height="68"
+            width="68"
+          />
+        </picture>
       </div>
        
       <div>
@@ -93,8 +101,8 @@ exports[`AuthorSlice component should render correctly 1`] = `
         >
           <img
             data-src="some-url"
-            height="26"
-            width="26"
+            height="28"
+            width="28"
           />
         </li>
       </ul>
