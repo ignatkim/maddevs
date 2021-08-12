@@ -51,6 +51,12 @@ const store = {
       image: {
         alt: 'alt',
         url: 'someurl',
+        dimensions: {},
+        author_slice: {
+          url: '',
+          alt: '',
+          dimensions: {},
+        },
       },
       socialNetworks: [{
         title: 'facebook',
