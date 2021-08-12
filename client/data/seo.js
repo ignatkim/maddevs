@@ -124,7 +124,7 @@ export const getMetadata = key => meta[key] || {}
 
 export const buildHead = ({
   lang = 'en', title, description, url, jsonLd, image = 'https://maddevs.io/Open-Graph.png', metaTitle,
-}, scripts = []) => ({
+}, scripts = [], links = []) => ({
   htmlAttrs: {
     lang,
   },
@@ -152,6 +152,7 @@ export const buildHead = ({
       rel: 'canonical',
       href: url,
     },
+    ...links,
   ],
   __dangerouslyDisableSanitizers: ['script'],
   script: [
