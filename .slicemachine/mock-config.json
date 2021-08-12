@@ -1,6 +1,6 @@
 {
   "client/prismicSlices/pageParts": {
-    "CardGrid": {
+    "CardGridSlice": {
       "default-slice": {
         "items": {
           "title": {

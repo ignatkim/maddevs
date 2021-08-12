@@ -1,15 +1,15 @@
 {
   "id": "card_grid",
   "type": "SharedSlice",
-  "name": "CardGrid",
-  "description": "CardGrid",
+  "name": "Card Grid slice",
+  "description": "Card Grid slice",
   "variations": [
     {
       "id": "default-slice",
       "name": "Default slice",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "CardGrid",
+      "description": "Card Grid slice",
       "primary": {},
       "items": {
         "title": {

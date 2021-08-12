@@ -1,18 +1,18 @@
 <template>
   <section class="container">
-    <ul class="card-grid">
+    <ul class="card-grid-slice">
       <li
         v-for="(item, i) of slice.items"
-        :key="`card-grid__item-${i}`"
-        class="card-grid__item"
-        :class="{ 'card-grid__item--full-width': item.fullWidth }"
+        :key="`card-grid-slice__item-${i}`"
+        class="card-grid-slice__item"
+        :class="{ 'card-grid-slice__item--full-width': item.fullWidth }"
       >
         <a
           :href="item.btnLink"
           target="_blank"
-          class="card-grid__item-link"
+          class="card-grid-slice__item-link"
         >
-          <div class="card-grid__item-info">
+          <div class="card-grid-slice__item-info">
             <h3
               v-html="item.title"
             />
@@ -21,11 +21,11 @@
             />
             <UIArrowButton
               color="black"
-              class="card-grid__item-button"
+              class="card-grid-slice__item-button"
             />
           </div>
           <img
-            class="card-grid__item-logo"
+            class="card-grid-slice__item-logo"
             :src="item.image.url"
             :alt="item.image.alt"
             :width="item.image.width"
@@ -41,7 +41,7 @@
 import UIArrowButton from '@/components/shared/UIArrowButton.vue'
 
 export default {
-  name: 'BoilerplateGrid',
+  name: 'CardGridSliceSlice',
   components: {
     UIArrowButton,
   },
@@ -63,7 +63,7 @@ export default {
     margin-bottom: 46px;
   }
 
-  .card-grid {
+  .card-grid-slice {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 48px;
@@ -83,7 +83,7 @@ export default {
         grid-column: auto/span 2;
       }
       &:hover {
-        .card-grid__item-button {
+        .card-grid-slice__item-button {
           background-color: $text-color--black-oil;
           color: $text-color--white-primary;
         }

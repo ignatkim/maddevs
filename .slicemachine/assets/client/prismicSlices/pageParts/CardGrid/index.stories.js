@@ -1,8 +1,8 @@
-import MyComponent from '../../../../../../client/prismicSlices/pageParts/CardGrid';
+import MyComponent from '../../../../../../client/prismicSlices/pageParts/CardGridSlice';
 import SliceZone from 'vue-slicezone'
 
 export default {
-  title: 'client/prismicSlices/pageParts/CardGrid'
+  title: 'client/prismicSlices/pageParts/CardGridSlice'
 }
 
 
