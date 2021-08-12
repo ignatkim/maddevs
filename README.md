@@ -1,6 +1,6 @@
 
 <h1 align="center">
-  <img src="https://user-images.githubusercontent.com/35951221/129141222-4dc5df97-a76c-4925-ad4e-0ce643f6c3bd.png" alt="Maddevs" width="320px"/>
+  <img src="https://user-images.githubusercontent.com/35951221/129148284-51a1881d-18a8-4de6-aff2-4124b6e5e264.png" alt="Maddevs" width="320px"/>
   <br/>
   <span>Official Website Repository</span>
 </h1>
