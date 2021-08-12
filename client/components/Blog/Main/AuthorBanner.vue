@@ -37,11 +37,10 @@ export default {
     ...mapGetters(['blogAuthor']),
 
     authorImage() {
-      const {
-        image = {
-          header: { url: '', alt: '', dimensions: {} },
-        },
-      } = this.blogAuthor
+      const defaultImage = {
+        header: { url: '', alt: '', dimensions: {} },
+      }
+      const { image = defaultImage } = this.blogAuthor
       const urlWithoutSizeParams = image.header.url.split('&w=')[0]
       return { ...image.header, url: urlWithoutSizeParams }
     },

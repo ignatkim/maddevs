@@ -115,9 +115,8 @@ export default {
     ...mapGetters(['blogAuthor']),
 
     authorImage() {
-      const {
-        image = { author_slice: { url: '', alt: '', dimensions: {} } },
-      } = this.blogAuthor
+      const defaultImage = { author_slice: { url: '', alt: '', dimensions: {} } }
+      const { image = defaultImage } = this.blogAuthor
       const urlWithoutSizeParams = image.author_slice.url.split('&w=')[0]
       return { ...image.author_slice, url: urlWithoutSizeParams }
     },
