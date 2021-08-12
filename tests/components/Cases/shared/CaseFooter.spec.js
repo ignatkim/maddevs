@@ -1,5 +1,5 @@
-import Footer from '@/components/Cases/shared/CaseFooter'
 import { render } from '@testing-library/vue'
+import Footer from '@/components/Cases/shared/CaseFooter'
 
 const stubs = ['NuxtLink']
 

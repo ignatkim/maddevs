@@ -1,5 +1,5 @@
-import TechnologyStack from '@/components/Cases/godee/TechnologyStack.vue'
 import { render, screen } from '@testing-library/vue'
+import TechnologyStack from '@/components/Cases/godee/TechnologyStack.vue'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

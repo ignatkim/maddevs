@@ -1,5 +1,5 @@
-import BenefitsFromPekloTool from '@/components/Cases/peklo/BenefitsFromPekloTool'
 import { render } from '@testing-library/vue'
+import BenefitsFromPekloTool from '@/components/Cases/peklo/BenefitsFromPekloTool'
 
 const stubs = ['Picture']
 

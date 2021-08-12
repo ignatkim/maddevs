@@ -1,5 +1,5 @@
-import Swift from '@/components/Cases/nambafood/Swift.vue'
 import { render, screen } from '@testing-library/vue'
+import Swift from '@/components/Cases/nambafood/Swift.vue'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

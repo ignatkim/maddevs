@@ -1,5 +1,5 @@
-import TestimonialBlock from '@/components/DeliveryModels/shared/TestimonialBlock'
 import { render } from '@testing-library/vue'
+import TestimonialBlock from '@/components/DeliveryModels/shared/TestimonialBlock'
 
 const props = {
   text: 'Testimonial text',

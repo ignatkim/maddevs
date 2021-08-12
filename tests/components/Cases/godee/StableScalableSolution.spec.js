@@ -1,5 +1,5 @@
-import InfrastructureScheme from '@/components/Cases/godee/StableScalableSolution.vue'
 import { render, screen } from '@testing-library/vue'
+import InfrastructureScheme from '@/components/Cases/godee/StableScalableSolution.vue'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

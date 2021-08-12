@@ -1,5 +1,5 @@
-import CTABanner from '@/components/Careers/CTABanner'
 import { render } from '@testing-library/vue'
+import CTABanner from '@/components/Careers/CTABanner'
 
 const stubs = ['UIBanner', 'UIButton']
 

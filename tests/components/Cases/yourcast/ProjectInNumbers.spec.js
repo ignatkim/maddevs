@@ -1,5 +1,5 @@
-import ProjectInNumbers from '@/components/Cases/yourcast/ProjectInNumbers'
 import { render, screen } from '@testing-library/vue'
+import ProjectInNumbers from '@/components/Cases/yourcast/ProjectInNumbers'
 
 describe('ProjectInNumbers component', () => {
   it('should render correctly', () => {

@@ -1,7 +1,7 @@
 import { render, fireEvent, screen } from '@testing-library/vue'
-import InfrastructureAuditForm from '@/components/core/forms/InfrastructureAuditForm'
 import { createLocalVue } from '@vue/test-utils'
 import Vuex from 'vuex'
+import InfrastructureAuditForm from '@/components/core/forms/InfrastructureAuditForm'
 import formBaseProps from '../../../__mocks__/formBaseProps'
 
 import delay from '../../../../client/helpers/delay'

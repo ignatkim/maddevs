@@ -1,6 +1,6 @@
 import { render } from '@testing-library/vue'
-import Index from '@/pages/careers/index'
 import { shallowMount } from '@vue/test-utils'
+import Index from '@/pages/careers/index'
 
 const META_DATA = {
   description: 'Join our team of 100+ staff members working on unique projects, master new IT skills, and build a fantastic career path in cloud and software engineering.',

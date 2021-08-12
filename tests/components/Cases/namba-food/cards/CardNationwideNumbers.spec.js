@@ -1,5 +1,5 @@
-import CardNationwideNumbers from '@/components/Cases/nambafood/cards/CardNationwideNumbers.vue'
 import { render, screen } from '@testing-library/vue'
+import CardNationwideNumbers from '@/components/Cases/nambafood/cards/CardNationwideNumbers.vue'
 
 describe('CardNationwideNumbers component', () => {
   it('should render correctly', () => {

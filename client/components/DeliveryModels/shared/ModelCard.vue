@@ -27,8 +27,8 @@
 </template>
 
 <script>
-import UIArrowButton from '@/components/shared/UIArrowButton'
 import Lottie from 'vue-lottie/src/lottie.vue'
+import UIArrowButton from '@/components/shared/UIArrowButton'
 
 export default {
   name: 'ModelCard',

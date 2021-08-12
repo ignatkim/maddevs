@@ -1,5 +1,5 @@
-import InfrastructureScheme from '@/components/Cases/godee/InfrastructureScheme.vue'
 import { render, screen } from '@testing-library/vue'
+import InfrastructureScheme from '@/components/Cases/godee/InfrastructureScheme.vue'
 import '../../../__mocks__/intersectionObserverMock'
 
 const mocks = {

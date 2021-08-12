@@ -1,5 +1,5 @@
-import Partnership from '@/components/Cases/itc/Partnership'
 import { render } from '@testing-library/vue'
+import Partnership from '@/components/Cases/itc/Partnership'
 
 const stubs = ['TextQuoteAuthor']
 

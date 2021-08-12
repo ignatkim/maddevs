@@ -1,5 +1,5 @@
-import HRContactCard from '@/components/Careers/shared/HRContactCard'
 import { render } from '@testing-library/vue'
+import HRContactCard from '@/components/Careers/shared/HRContactCard'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

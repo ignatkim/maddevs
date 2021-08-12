@@ -1,5 +1,5 @@
-import PhasInfrastructureAsCode from '@/components/Cases/veeqo/PhasInfrastructureAsCode'
 import { render, screen } from '@testing-library/vue'
+import PhasInfrastructureAsCode from '@/components/Cases/veeqo/PhasInfrastructureAsCode'
 
 const stubs = ['TextQuote']
 

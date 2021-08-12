@@ -24,8 +24,8 @@
 </template>
 
 <script>
-import TextParagraph from '@/components/Cases/shared/TextParagraph'
 import Lottie from 'vue-lottie/src/lottie.vue'
+import TextParagraph from '@/components/Cases/shared/TextParagraph'
 import animationData from '@/assets/lottie/yourcast/phase-video-on-demand.json'
 import playLottieMixin from '@/mixins/playLottieMixin'
 

@@ -1,5 +1,5 @@
-import FooterSocialNetworks from '@/components/core/Footer/FooterSocialNetworks'
 import { render } from '@testing-library/vue'
+import FooterSocialNetworks from '@/components/core/Footer/FooterSocialNetworks'
 
 const directives = {
   'lazy-load': () => {},

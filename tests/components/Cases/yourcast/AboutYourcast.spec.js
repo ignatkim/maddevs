@@ -1,5 +1,5 @@
-import AboutYourcast from '@/components/Cases/yourcast/AboutYourcast'
 import { render, screen } from '@testing-library/vue'
+import AboutYourcast from '@/components/Cases/yourcast/AboutYourcast'
 
 const stubs = ['NuxtLink', 'TextQuote']
 

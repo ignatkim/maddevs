@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/vue'
-import About from '@/pages/index'
 import { shallowMount } from '@vue/test-utils'
+import About from '@/pages/index'
 
 const META_DATA = {
   description: 'Mad Devs develops enterprise-level custom software solutions & mobile apps for finance, transportation, logistics, security, edtech, cloudtech & advertising industries.',

@@ -1,5 +1,5 @@
-import Main from '@/components/Cases/yourcast/Main'
 import { render } from '@testing-library/vue'
+import Main from '@/components/Cases/yourcast/Main'
 import '../../../__mocks__/intersectionObserverMock'
 
 describe('Main component', () => {

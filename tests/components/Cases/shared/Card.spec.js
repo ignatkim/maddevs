@@ -1,5 +1,5 @@
-import Card from '@/components/Cases/shared/Card.vue'
 import { render, screen } from '@testing-library/vue'
+import Card from '@/components/Cases/shared/Card.vue'
 
 const props = {
   padding: '16px',

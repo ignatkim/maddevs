@@ -1,6 +1,6 @@
 import { render } from '@testing-library/vue'
-import CaseYourcast from '@/pages/case-studies/yourcast'
 import { shallowMount } from '@vue/test-utils'
+import CaseYourcast from '@/pages/case-studies/yourcast'
 import formBaseProps from '../../__mocks__/formBaseProps'
 
 const DESCRIPTION = 'OTT-like streaming platform case study. Read how Mad Devs developed an online video streaming service for isolated groups of people feeling homesick.'

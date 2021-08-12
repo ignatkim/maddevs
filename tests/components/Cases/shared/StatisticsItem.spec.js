@@ -1,5 +1,5 @@
-import StatisticsItem from '@/components/Cases/shared/StatisticsItem'
 import { render, screen } from '@testing-library/vue'
+import StatisticsItem from '@/components/Cases/shared/StatisticsItem'
 
 describe('StatisticsItem component', () => {
   const props = {

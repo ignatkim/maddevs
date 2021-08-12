@@ -1,5 +1,5 @@
-import Main from '@/components/Cases/itc/Main'
 import { render } from '@testing-library/vue'
+import Main from '@/components/Cases/itc/Main'
 
 const stubs = ['About', 'ProjectMission', 'Challenges', 'SavingTime', 'CollectingDataForAnalysis', 'DevelopingTheInnovation', 'Technologies', 'Team', 'FuturePlans', 'Partnership']
 

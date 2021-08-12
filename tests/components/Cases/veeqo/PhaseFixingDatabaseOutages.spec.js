@@ -1,5 +1,5 @@
-import PhaseFixingDatabaseOutages from '@/components/Cases/veeqo/PhaseFixingDatabaseOutages'
 import { render, screen } from '@testing-library/vue'
+import PhaseFixingDatabaseOutages from '@/components/Cases/veeqo/PhaseFixingDatabaseOutages'
 
 const stubs = ['FixingDatabaseOutagesResult', 'CardTechSolution']
 

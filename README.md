@@ -1,6 +1,6 @@
 
 <h1 align="center">
-  <img src="https://user-images.githubusercontent.com/35951221/126972786-cd5bc34d-a014-49e5-ac44-616b3169875f.png" width="320px"/>
+  <img src="https://user-images.githubusercontent.com/35951221/129149015-58707898-d6aa-4f70-b1fb-c5d0a1591458.png" alt="Maddevs" width="320px"/>
   <br/>
   <span>Official Website Repository</span>
 </h1>
@@ -417,7 +417,7 @@ prismic login
 
 After login you need to run the prismic slice machine dashboard: [localhost:9999](http://localhost:9999/)
 ```bash
-prismic sm --development
+prismic sm --develop
 ```
 
 Also you need to run the storybook dashboard in other terminal: [localhost:3003](http://localhost:3003/)
@@ -428,6 +428,13 @@ npm run storybook
 Now you can create a new slice for development:
 ```bash
 prismic sm --create-slice
+```
+
+> Please, use "./client/prismicSlices" folder for create new slices.
+
+```bash
+🗂 Where should we create your new local library? ./client/prismicSlices/<folder>
+...
 ```
 
 The new slice will be displayed in the slice machine dashboard - [localhost:9999](http://localhost:9999/) <br>

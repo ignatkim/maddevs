@@ -1,5 +1,5 @@
-import ListTechnologiesItem from '@/components/Cases/shared/ListTechnologiesItem'
 import { render } from '@testing-library/vue'
+import ListTechnologiesItem from '@/components/Cases/shared/ListTechnologiesItem'
 
 describe('ListTechnologiesItem components', () => {
   it('should render correctly', () => {

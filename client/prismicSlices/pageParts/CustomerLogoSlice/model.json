@@ -1,0 +1,51 @@
+{
+  "id": "customer_logo_slice",
+  "type": "SharedSlice",
+  "name": "CustomerLogoSlice",
+  "description": "Customer Logo Slice",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default Slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Customer Logo Slice",
+      "primary": {
+        "title": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "description": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          },
+          "type": "StructuredText"
+        }
+      },
+      "items": {
+        "logo": {
+          "type": "Image",
+          "config": {
+            "thumbnails": [],
+            "constraint": {},
+            "label": ""
+          }
+        },
+        "link": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "allowTargetBlank": true
+          },
+          "type": "Link"
+        }
+      }
+    }
+  ]
+}

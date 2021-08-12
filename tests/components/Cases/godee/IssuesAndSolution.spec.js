@@ -1,5 +1,5 @@
-import IssuesAndSolution from '@/components/Cases/godee/IssuesAndSolution.vue'
 import { render, screen } from '@testing-library/vue'
+import IssuesAndSolution from '@/components/Cases/godee/IssuesAndSolution.vue'
 
 describe('IssuesAndSolution component', () => {
   it('should render correctly', () => {

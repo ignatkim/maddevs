@@ -1,5 +1,5 @@
-import CasesList from '@/components/Cases/CasesList.vue'
 import { render } from '@testing-library/vue'
+import CasesList from '@/components/Cases/CasesList.vue'
 import '../../__mocks__/intersectionObserverMock'
 
 const stubs = ['CasesListItem', 'NuxtLink']
