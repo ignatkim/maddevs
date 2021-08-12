@@ -1,6 +1,6 @@
 // eslint-disalbe quotes
-import DoubleColumnBorderedSlice from '@/components/slices/DoubleColumnBorderedSlice'
 import { render } from '@testing-library/vue'
+import DoubleColumnBorderedSlice from '@/components/slices/DoubleColumnBorderedSlice'
 
 describe('double Column Bordered slice component', () => {
   const props = {

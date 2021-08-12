@@ -1,0 +1,71 @@
+{
+  "id": "cta_banner_slice",
+  "type": "SharedSlice",
+  "name": "CtaBannerSlice",
+  "description": "Cta Banner Slice",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default Slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Cta Banner Slice",
+      "primary": {
+        "image": {
+          "config": {
+            "label": "",
+            "constraint": {
+              "width": null
+            },
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "btnLink": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "allowTargetBlank": true
+          },
+          "type": "Link"
+        },
+        "title": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "description": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "btnText": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "name": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "position": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        }
+      },
+      "items": {}
+    }
+  ]
+}

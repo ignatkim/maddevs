@@ -1,5 +1,5 @@
-import Mvp from '@/components/Cases/godee/Mvp.vue'
 import { render, screen } from '@testing-library/vue'
+import Mvp from '@/components/Cases/godee/Mvp.vue'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

@@ -1,7 +1,7 @@
 import { render } from '@testing-library/vue'
-import Main from '@/components/Blog/Main/Main'
 import { createLocalVue } from '@vue/test-utils'
 import Vuex from 'vuex'
+import Main from '@/components/Blog/Main/Main'
 import * as homeContent from '../../../__mocks__/homePageContent'
 import allPosts from '../../../__mocks__/allPosts'
 

@@ -141,8 +141,8 @@
 </template>
 
 <script>
-import TextParagraph from '@/components/Cases/shared/TextParagraph'
 import Lottie from 'vue-lottie/src/lottie.vue'
+import TextParagraph from '@/components/Cases/shared/TextParagraph'
 import animationData from '@/assets/lottie/peklo/clusterisation-algorithm.json'
 import playLottieMixin from '@/mixins/playLottieMixin'
 import List from '@/components/Cases/shared/List'

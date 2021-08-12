@@ -1,5 +1,5 @@
-import CardThematicArea from '@/components/Cases/itc/CardThematicArea'
 import { render } from '@testing-library/vue'
+import CardThematicArea from '@/components/Cases/itc/CardThematicArea'
 
 const stubs = ['Card', 'Picture']
 

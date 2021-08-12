@@ -1,5 +1,5 @@
-import FileInput from '@/components/Careers/shared/FileInput'
 import { fireEvent, render, screen } from '@testing-library/vue'
+import FileInput from '@/components/Careers/shared/FileInput'
 
 const file = new File([new ArrayBuffer(1)], 'file.pdf')
 const fileWithLongName = new File(

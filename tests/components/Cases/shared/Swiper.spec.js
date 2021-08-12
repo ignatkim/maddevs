@@ -1,6 +1,6 @@
-import Swiper from '@/components/Cases/shared/Swiper'
 import { render } from '@testing-library/vue'
 import { shallowMount } from '@vue/test-utils'
+import Swiper from '@/components/Cases/shared/Swiper'
 
 const props = {
   components: [

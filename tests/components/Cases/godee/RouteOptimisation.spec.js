@@ -1,5 +1,5 @@
-import RouteOptimisation from '@/components/Cases/godee/RouteOptimisation.vue'
 import { render, screen } from '@testing-library/vue'
+import RouteOptimisation from '@/components/Cases/godee/RouteOptimisation.vue'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

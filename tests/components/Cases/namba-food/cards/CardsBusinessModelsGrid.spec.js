@@ -1,5 +1,5 @@
-import CardsBusinessModelsGrid from '@/components/Cases/nambafood/cards/CardsBusinessModelsGrid.vue'
 import { render, screen } from '@testing-library/vue'
+import CardsBusinessModelsGrid from '@/components/Cases/nambafood/cards/CardsBusinessModelsGrid.vue'
 
 describe('CardsBusinessModelsGrid component', () => {
   it('should render correctly', () => {

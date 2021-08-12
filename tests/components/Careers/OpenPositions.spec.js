@@ -1,5 +1,5 @@
-import OpenPositions from '@/components/Careers/OpenPositions'
 import { render } from '@testing-library/vue'
+import OpenPositions from '@/components/Careers/OpenPositions'
 
 const stubs = ['PositionsFilter', 'PositionsGrid']
 

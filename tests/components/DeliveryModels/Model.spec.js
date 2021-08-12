@@ -1,5 +1,5 @@
-import Model from '@/components/DeliveryModels/Model'
 import { render } from '@testing-library/vue'
+import Model from '@/components/DeliveryModels/Model'
 
 const stubs = ['ModelBanner', 'ModelOptimal', 'ModelProcess', 'CTABanner']
 

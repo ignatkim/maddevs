@@ -1,5 +1,5 @@
-import CardSolutionGoDee from '@/components/Cases/godee/cards/CardSolutionGoDee.vue'
 import { render, screen } from '@testing-library/vue'
+import CardSolutionGoDee from '@/components/Cases/godee/cards/CardSolutionGoDee.vue'
 
 describe('CardSolutionGoDee component', () => {
   it('should render correctly', () => {

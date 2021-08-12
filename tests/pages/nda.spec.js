@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/vue'
-import Mainnda from '@/pages/nda'
 import { shallowMount } from '@vue/test-utils'
+import Mainnda from '@/pages/nda'
 
 const META_DATA = {
   description: 'Signing an NDA has been a standard practice at Mad Devs for each employee on the first day of work: we understand the importance of confidentiality in our clients\' projects.',

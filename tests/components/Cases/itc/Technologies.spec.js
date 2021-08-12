@@ -1,5 +1,5 @@
-import Technologies from '@/components/Cases/itc/Technologies'
 import { render, screen } from '@testing-library/vue'
+import Technologies from '@/components/Cases/itc/Technologies'
 
 const stubs = ['ListTechnologies', 'ListTechnologiesItem']
 

@@ -1,7 +1,7 @@
 import { render } from '@testing-library/vue'
 import { mount, createLocalVue } from '@vue/test-utils'
-import TagPostsSection from '@/components/Blog/Main/TagPostsSection'
 import Vuex from 'vuex'
+import TagPostsSection from '@/components/Blog/Main/TagPostsSection'
 import tagPosts from '../../../__mocks__/tagPosts'
 
 const localVue = createLocalVue()

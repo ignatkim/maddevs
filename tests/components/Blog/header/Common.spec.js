@@ -1,5 +1,5 @@
-import Common from '@/components/Blog/header/Common'
 import { render, screen } from '@testing-library/vue'
+import Common from '@/components/Blog/header/Common'
 
 const props = {
   title: 'some title',

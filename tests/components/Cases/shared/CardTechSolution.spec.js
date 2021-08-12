@@ -1,5 +1,5 @@
-import CardTechSolution from '@/components/Cases/shared/CardTechSolution'
 import { render, screen } from '@testing-library/vue'
+import CardTechSolution from '@/components/Cases/shared/CardTechSolution'
 
 const directives = {
   'lazy-load': () => {},

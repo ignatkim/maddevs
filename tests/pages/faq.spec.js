@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/vue'
-import MainFaq from '@/pages/faq'
 import { shallowMount } from '@vue/test-utils'
+import MainFaq from '@/pages/faq'
 
 const META_DATA = {
   description: 'FAQs. Have a question? Find answers on our Frequently asked questions page. Discover more about Mad Devs\' team, expertise, pricing, and more.',

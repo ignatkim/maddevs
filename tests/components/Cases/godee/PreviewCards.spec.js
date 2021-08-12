@@ -1,5 +1,5 @@
-import PreviewCards from '@/components/Cases/godee/PreviewCards.vue'
 import { render } from '@testing-library/vue'
+import PreviewCards from '@/components/Cases/godee/PreviewCards.vue'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

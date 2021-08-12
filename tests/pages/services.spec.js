@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/vue'
-import MainServices from '@/pages/services'
 import { shallowMount } from '@vue/test-utils'
+import MainServices from '@/pages/services'
 
 const META_DATA = {
   description: 'We deliver software engineering and mobile app development services, DevOps and IT consulting services to businesses of any size.',

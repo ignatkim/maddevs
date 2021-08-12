@@ -45,8 +45,8 @@
 </template>
 
 <script>
-import IntersectionObserverMixin from '@/mixins/IntersectionObserverMixin'
 import Lottie from 'vue-lottie/src/lottie.vue'
+import IntersectionObserverMixin from '@/mixins/IntersectionObserverMixin'
 import animationData from '@/assets/lottie/sjmc/sound-icon.json'
 import playVideo from '@/helpers/playVideo'
 

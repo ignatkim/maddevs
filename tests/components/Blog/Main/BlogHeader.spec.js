@@ -1,7 +1,7 @@
 import { render } from '@testing-library/vue'
-import BlogHeader from '@/components/Blog/Main/BlogHeader'
 import { createLocalVue } from '@vue/test-utils'
 import Vuex from 'vuex'
+import BlogHeader from '@/components/Blog/Main/BlogHeader'
 import allPosts from '../../../__mocks__/allPosts'
 
 const localVue = createLocalVue()

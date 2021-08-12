@@ -1,5 +1,5 @@
-import CardDeliveryServiceNambafood from '@/components/Cases/nambafood/cards/CardDeliveryServiceNambafood.vue'
 import { render, screen } from '@testing-library/vue'
+import CardDeliveryServiceNambafood from '@/components/Cases/nambafood/cards/CardDeliveryServiceNambafood.vue'
 
 describe('CardDeliveryServiceNambafood component', () => {
   it('should render correctly', () => {

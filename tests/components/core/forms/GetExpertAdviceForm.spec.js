@@ -1,7 +1,7 @@
 import { render, fireEvent, screen } from '@testing-library/vue'
-import GetExpertAdviceForm from '@/components/core/forms/GetExpertAdviceForm'
 import { createLocalVue } from '@vue/test-utils'
 import Vuex from 'vuex'
+import GetExpertAdviceForm from '@/components/core/forms/GetExpertAdviceForm'
 import formBaseProps from '../../../__mocks__/formBaseProps'
 
 import delay from '../../../../client/helpers/delay'

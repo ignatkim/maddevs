@@ -1,5 +1,5 @@
-import FixingDatabaseOutagesResult from '@/components/Cases/veeqo/FixingDatabaseOutagesResult'
 import { render, screen } from '@testing-library/vue'
+import FixingDatabaseOutagesResult from '@/components/Cases/veeqo/FixingDatabaseOutagesResult'
 
 describe('FixingDatabaseOutagesResult component', () => {
   it('should render correctly', () => {

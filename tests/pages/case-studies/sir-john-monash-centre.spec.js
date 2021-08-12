@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/vue'
-import SirJohnMonashCentre from '@/pages/case-studies/sir-john-monash-centre'
 import { shallowMount } from '@vue/test-utils'
+import SirJohnMonashCentre from '@/pages/case-studies/sir-john-monash-centre'
 import formBaseProps from '../../__mocks__/formBaseProps'
 
 const DESCRIPTION = 'BYOD Case Study. Read how Mad Devs enhanced and developed new features for the Sir John Monash Centre’s software, mobile applications, and technological debt.'

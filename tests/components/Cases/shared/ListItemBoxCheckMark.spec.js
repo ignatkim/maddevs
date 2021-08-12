@@ -1,5 +1,5 @@
-import ListItemBoxCheckMark from '@/components/Cases/shared/ListItemBoxCheckMark'
 import { render, screen } from '@testing-library/vue'
+import ListItemBoxCheckMark from '@/components/Cases/shared/ListItemBoxCheckMark'
 
 const slots = {
   default: 'Main Content',

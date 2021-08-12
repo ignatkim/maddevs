@@ -1,8 +1,8 @@
 import 'regenerator-runtime'
 import { createLocalVue, shallowMount } from '@vue/test-utils'
-import Footer from '@/components/core/Footer/Footer'
 import Vuelidate from 'vuelidate'
 import { render, screen } from '@testing-library/vue'
+import Footer from '@/components/core/Footer/Footer'
 
 const localVue = createLocalVue()
 

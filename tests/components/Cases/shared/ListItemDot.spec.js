@@ -1,5 +1,5 @@
-import ListItemDot from '@/components/Cases/shared/ListItemDot'
 import { render, screen } from '@testing-library/vue'
+import ListItemDot from '@/components/Cases/shared/ListItemDot'
 
 const slots = {
   default: 'Main Content',

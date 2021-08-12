@@ -1,5 +1,5 @@
-import TextParagraph from '@/components/Cases/shared/TextParagraph'
 import { render, screen } from '@testing-library/vue'
+import TextParagraph from '@/components/Cases/shared/TextParagraph'
 
 const props = {
   color: 'rgb(0, 0, 0)',
