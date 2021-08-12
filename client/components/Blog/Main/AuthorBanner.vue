@@ -41,12 +41,14 @@ export default {
     ...mapGetters(['blogAuthor']),
 
     authorImage() {
-      const defaultImage = {
-        header: { url: '', alt: '', dimensions: {} },
+      let urlWithoutSizeParams = ''
+      const { image } = this.blogAuthor
+      if (image && image.header) {
+        // eslint-disable-next-line
+        urlWithoutSizeParams = image.header.url.split('&w=')[0]
+        return { ...image.header, url: urlWithoutSizeParams }
       }
-      const { image = defaultImage } = this.blogAuthor
-      const urlWithoutSizeParams = image.header.url.split('&w=')[0]
-      return { ...image.header, url: urlWithoutSizeParams }
+      return {}
     },
   },
 }

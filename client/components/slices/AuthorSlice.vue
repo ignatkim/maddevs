@@ -115,10 +115,14 @@ export default {
     ...mapGetters(['blogAuthor']),
 
     authorImage() {
-      const defaultImage = { author_slice: { url: '', alt: '', dimensions: {} } }
-      const { image = defaultImage } = this.blogAuthor
-      const urlWithoutSizeParams = image.author_slice.url.split('&w=')[0]
-      return { ...image.author_slice, url: urlWithoutSizeParams }
+      let urlWithoutSizeParams = ''
+      const { image } = this.blogAuthor
+      if (image && image.author_slice) {
+        // eslint-disable-next-line
+        urlWithoutSizeParams = image.author_slice.url.split('&w=')[0]
+        return { ...image.author_slice, url: urlWithoutSizeParams }
+      }
+      return {}
     },
   },
 
