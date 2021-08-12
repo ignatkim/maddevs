@@ -22,7 +22,7 @@ export default {
 
   computed: {
     contentClass() {
-      if (this.large) return 'text-slice__content--large'
+      if (this.large) return 'text-slice__content text-slice__content--large'
       return 'text-slice__content'
     },
   },
