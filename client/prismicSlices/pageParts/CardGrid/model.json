@@ -10,22 +10,7 @@
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
       "description": "CardGrid",
-      "primary": {
-        "mainTitle": {
-          "config": {
-            "label": "",
-            "placeholder": ""
-          },
-          "type": "Text"
-        },
-        "mainDescription": {
-          "config": {
-            "label": "",
-            "placeholder": ""
-          },
-          "type": "Text"
-        }
-      },
+      "primary": {},
       "items": {
         "title": {
           "config": {

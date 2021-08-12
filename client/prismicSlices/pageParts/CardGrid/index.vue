@@ -1,10 +1,5 @@
 <template>
   <section class="container">
-    <TitleDesc
-      v-if="slice.primary.mainTitle || slice.primary.mainDescription"
-      :title="slice.primary.mainTitle"
-      :description="slice.primary.mainDescription"
-    />
     <ul class="card-grid">
       <li
         v-for="(item, i) of slice.items"
@@ -43,13 +38,11 @@
 </template>
 
 <script>
-import TitleDesc from '@/components/OpenSource/shared/TitleDesc'
 import UIArrowButton from '@/components/shared/UIArrowButton.vue'
 
 export default {
   name: 'BoilerplateGrid',
   components: {
-    TitleDesc,
     UIArrowButton,
   },
 
