@@ -1,16 +1,31 @@
 {
-  "id": "boilerplate_grid",
+  "id": "card_grid",
   "type": "SharedSlice",
-  "name": "BoilerplateGrid",
-  "description": "BoilerplateGrid",
+  "name": "CardGrid",
+  "description": "CardGrid",
   "variations": [
     {
       "id": "default-slice",
       "name": "Default slice",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "BoilerplateGrid",
-      "primary": {},
+      "description": "CardGrid",
+      "primary": {
+        "mainTitle": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "mainDescription": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        }
+      },
       "items": {
         "title": {
           "config": {

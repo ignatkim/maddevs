@@ -1,18 +1,23 @@
 <template>
   <section class="container">
-    <ul class="boilerplates-grid">
+    <TitleDesc
+      v-if="slice.primary.mainTitle || slice.primary.mainDescription"
+      :title="slice.primary.mainTitle"
+      :description="slice.primary.mainDescription"
+    />
+    <ul class="card-grid">
       <li
         v-for="(item, i) of slice.items"
-        :key="`boilerplates-grid__item-${i}`"
-        class="boilerplates-grid__item"
-        :class="{ 'boilerplates-grid__item--full-width': item.fullWidth }"
+        :key="`card-grid__item-${i}`"
+        class="card-grid__item"
+        :class="{ 'card-grid__item--full-width': item.fullWidth }"
       >
         <a
           :href="item.btnLink"
           target="_blank"
-          class="boilerplates-grid__item-link"
+          class="card-grid__item-link"
         >
-          <div class="boilerplates-grid__item-info">
+          <div class="card-grid__item-info">
             <h3
               v-html="item.title"
             />
@@ -21,11 +26,11 @@
             />
             <UIArrowButton
               color="black"
-              class="boilerplates-grid__item-button"
+              class="card-grid__item-button"
             />
           </div>
           <img
-            class="boilerplates-grid__item-logo"
+            class="card-grid__item-logo"
             :src="item.image.url"
             :alt="item.image.alt"
             :width="item.image.width"
@@ -38,11 +43,13 @@
 </template>
 
 <script>
+import TitleDesc from '@/components/OpenSource/shared/TitleDesc'
 import UIArrowButton from '@/components/shared/UIArrowButton.vue'
 
 export default {
   name: 'BoilerplateGrid',
   components: {
+    TitleDesc,
     UIArrowButton,
   },
 
@@ -59,7 +66,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .boilerplates-grid {
+  .title-desc {
+    margin-bottom: 46px;
+  }
+
+  .card-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 48px;
@@ -79,7 +90,7 @@ export default {
         grid-column: auto/span 2;
       }
       &:hover {
-        .boilerplates-grid__item-button {
+        .card-grid__item-button {
           background-color: $text-color--black-oil;
           color: $text-color--white-primary;
         }
