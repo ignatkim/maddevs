@@ -1,0 +1,20 @@
+{
+  "client/prismicSlices/pageParts": {
+    "CardGridSlice": {
+      "default-slice": {
+        "items": {
+          "title": {
+            "content": "AWS–EKS–Base"
+          },
+          "fullWidth": {
+            "content": false
+          },
+          "image": {
+            "content": "https://d6xkme6dcvajw.cloudfront.net/images/OpenSource/svg/amazon.svg"
+          }
+        },
+        "primary": {}
+      }
+    }
+  }
+}
