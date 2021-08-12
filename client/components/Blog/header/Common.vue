@@ -21,7 +21,7 @@
     >
       <img
         :src="`${imageUrl}&w=983&h=534`"
-        :srcset="`${imageUrl}&w=1966&h=1068` + ' 2x'"
+        :srcset="`${imageUrl}&w=1966&h=1068 2x`"
         :alt="coverImageAltText"
         width="983"
         height="534"
