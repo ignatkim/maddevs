@@ -1,0 +1,147 @@
+{
+  "id": "text_slice",
+  "type": "SharedSlice",
+  "name": "TextSlice",
+  "description": "TextSlice",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TextSlice",
+      "primary": {
+        "text": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "large": {
+          "config": {
+            "label": "",
+            "placeholder_false": "normal",
+            "placeholder_true": "large",
+            "default_value": false
+          },
+          "type": "Boolean"
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "title",
+      "name": "Title",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TextSlice",
+      "primary": {
+        "title": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "titleText",
+      "name": "Title + Text",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TextSlice",
+      "primary": {
+        "title": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "text": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "titleTextButton",
+      "name": "Title + Text + Button",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TextSlice",
+      "primary": {
+        "title": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "text": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "buttonText": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "buttonLink": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "select": "web",
+            "allowTargetBlank": false
+          },
+          "type": "Link"
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "titleTextList",
+      "name": "Title + Text + List",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TextSlice",
+      "primary": {
+        "title": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "text": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        }
+      },
+      "items": {
+        "listItem": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        }
+      }
+    }
+  ]
+}
