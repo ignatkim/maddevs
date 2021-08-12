@@ -111,4 +111,10 @@ describe('SJMCVideo component', () => {
 
     expect(EVENT_LISTENER).toHaveBeenCalledTimes(1)
   })
+
+  it('onEnded should set true for showIcon', () => {
+    wrapper.vm.onEnded()
+
+    expect(wrapper.vm.$data.showIcon).toEqual(true)
+  })
 })
