@@ -41,7 +41,7 @@
 import UIArrowButton from '@/components/shared/UIArrowButton.vue'
 
 export default {
-  name: 'CardGridSliceSlice',
+  name: 'BoilerplatesGridSlice',
   components: {
     UIArrowButton,
   },

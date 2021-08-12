@@ -1,6 +1,6 @@
 {
   "client/prismicSlices/pageParts": {
-    "CardGridSlice": {
+    "BoilerplatesGridSlice": {
       "default-slice": {
         "items": {
           "title": {
@@ -14,6 +14,33 @@
           }
         },
         "primary": {}
+      }
+    },
+    "CtaBannerSlice": {
+      "default": {
+        "primary": {
+          "name": {
+            "content": "f"
+          }
+        }
+      }
+    },
+    "CustomerLogoSlice": {
+      "default": {
+        "primary": {
+          "title": {
+            "content": "f"
+          }
+        }
+      }
+    },
+    "TextSlice": {
+      "default-slice": {
+        "primary": {
+          "text": {
+            "content": "f"
+          }
+        }
       }
     }
   }

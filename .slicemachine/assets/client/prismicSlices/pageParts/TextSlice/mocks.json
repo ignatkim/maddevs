@@ -1,0 +1,67 @@
+[
+  {
+    "variation": "default-slice",
+    "name": "Default slice",
+    "slice_type": "text_slice",
+    "items": [],
+    "primary": {
+      "text": "f"
+    }
+  },
+  {
+    "variation": "title",
+    "name": "Title",
+    "slice_type": "text_slice",
+    "items": [],
+    "primary": {
+      "title": "deliver distributed technologies"
+    }
+  },
+  {
+    "variation": "titleText",
+    "name": "Title + Text",
+    "slice_type": "text_slice",
+    "items": [],
+    "primary": {
+      "title": "transition seamless channels",
+      "text": "target frictionless eyeballs"
+    }
+  },
+  {
+    "variation": "titleTextButton",
+    "name": "Title + Text + Button",
+    "slice_type": "text_slice",
+    "items": [],
+    "primary": {
+      "title": "optimize web-enabled bandwidth",
+      "text": "empower granular models",
+      "button": {
+        "link_type": "Web",
+        "url": "http://google.com"
+      }
+    }
+  },
+  {
+    "variation": "titleTextList",
+    "name": "Title + Text + List",
+    "slice_type": "text_slice",
+    "items": [
+      {
+        "listItem": "mesh seamless content"
+      },
+      {
+        "listItem": "extend rich markets"
+      },
+      {
+        "listItem": "scale next-generation systems"
+      },
+      {
+        "listItem": "benchmark mission-critical relationships"
+      }
+    ],
+    "primary": {
+      "title": "reinvent viral niches",
+      "text": "leverage intuitive systems"
+    }
+  }
+]
