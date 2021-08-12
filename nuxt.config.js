@@ -71,6 +71,11 @@ module.exports = {
     /*
      ** Run ESLint on save
      */
+    babel: {
+      plugins: [
+        ['@babel/plugin-proposal-private-property-in-object', { loose: true }],
+      ],
+    },
     vendor: ['axios'],
     transpile: ['swiper', 'dom7', 'vue-slicezone', 'nuxt-sm'],
     followSymlinks: true,
