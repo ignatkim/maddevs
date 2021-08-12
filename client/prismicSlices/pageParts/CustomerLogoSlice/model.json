@@ -21,20 +21,18 @@
         "description": {
           "config": {
             "label": "",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph"
+            "placeholder": ""
           },
-          "type": "StructuredText"
+          "type": "Text"
         }
       },
       "items": {
         "logo": {
           "type": "Image",
           "config": {
+            "label": "",
             "thumbnails": [],
-            "constraint": {},
-            "label": ""
+            "constraint": {}
           }
         },
         "link": {

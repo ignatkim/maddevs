@@ -29,7 +29,6 @@ dist/
 
 # Prismic slice machine directories and files
 .yo-rc.json
-.slicemachine
 .nuxt-storybook
 storybook-static
 customtypes
