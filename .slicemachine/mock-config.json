@@ -85,6 +85,21 @@
           }
         }
       }
+    },
+    "StartScreen": {
+      "default-slice": {
+        "primary": {
+          "title": {
+            "content": "Mad Devs Engineering Your Growth"
+          },
+          "image": {
+            "content": "https://d6xkme6dcvajw.cloudfront.net/images/OpenSource/png/programmer@2x.png"
+          },
+          "subtitle": {
+            "content": "Without empty words, here at Mad Devs we partner with projects where our teams thrive. Innovating solutions, carrying ownership, delivering sustainable value and celebrating successes — make a happy workplace, where things get done. "
+          }
+        }
+      }
     }
   }
 }

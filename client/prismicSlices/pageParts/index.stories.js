@@ -8,7 +8,7 @@ export const About = () => ({
   components: {
     SliceZone,
   },
-  template: '<slice-zone type="custom-page" uid="need to paste the uid" />',
+  template: '<slice-zone type="custom_page" uid="demo-about-page" />',
 })
 
 About.storyName = 'About page'
