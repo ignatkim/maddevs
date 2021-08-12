@@ -17,6 +17,15 @@
             "placeholder": ""
           },
           "type": "Text"
+        },
+        "large": {
+          "config": {
+            "label": "",
+            "placeholder_false": "normal",
+            "placeholder_true": "large",
+            "default_value": false
+          },
+          "type": "Boolean"
         }
       },
       "items": {}
@@ -83,7 +92,14 @@
           },
           "type": "Text"
         },
-        "button": {
+        "buttonText": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "buttonLink": {
           "config": {
             "label": "",
             "placeholder": "",

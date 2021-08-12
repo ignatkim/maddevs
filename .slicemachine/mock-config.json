@@ -38,7 +38,50 @@
       "default-slice": {
         "primary": {
           "text": {
-            "content": "f"
+            "content": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies."
+          }
+        }
+      },
+      "title": {
+        "primary": {
+          "title": {
+            "content": "Featured projects"
+          }
+        }
+      },
+      "titleText": {
+        "primary": {
+          "title": {
+            "content": "Featured projects"
+          },
+          "text": {
+            "content": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies."
+          }
+        }
+      },
+      "titleTextButton": {
+        "primary": {
+          "buttonLink": {
+            "content": "https://maddevs.co/delivery-models.pdf"
+          },
+          "text": {
+            "content": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies."
+          },
+          "title": {
+            "content": "Featured projects"
+          },
+          "buttonText": {
+            "content": "Get presentation"
+          }
+        }
+      },
+      "titleTextList": {
+        "primary": {
+          "title": {
+            "content": "Software <br /> development"
+          },
+          "text": {
+            "content": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies."
           }
         }
       }

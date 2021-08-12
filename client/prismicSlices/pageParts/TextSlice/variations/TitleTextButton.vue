@@ -1,5 +1,14 @@
 <template>
-  <div>title + text + button variant</div>
+  <div class="text-slice__content">
+    <h2>{{ title }}</h2>
+    <p>{{ text }}</p>
+    <a
+      :href="buttonLink.url"
+      target="_blank"
+    >
+      <button>{{ buttonText }}</button>
+    </a>
+  </div>
 </template>
 
 <script>
@@ -18,7 +27,13 @@ export default {
       default: '',
     },
 
-    button: {
+    buttonText: {
+      type: String,
+      required: true,
+      default: '',
+    },
+
+    buttonLink: {
       type: Object,
       required: true,
       default: () => ({}),
@@ -26,3 +41,23 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+
+.text-slice__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  p {
+    margin: 50px 0;
+    @media screen and (max-width: 1024px) {
+      margin: 30px 0;
+    }
+    @media screen and (max-width: 768px) {
+      margin: 20px 0;
+    }
+  }
+}
+</style>

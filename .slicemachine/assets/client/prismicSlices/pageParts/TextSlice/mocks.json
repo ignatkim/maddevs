@@ -5,7 +5,8 @@
     "slice_type": "text_slice",
     "items": [],
     "primary": {
-      "text": "f"
+      "text": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.",
+      "large": true
     }
   },
   {
@@ -14,7 +15,7 @@
     "slice_type": "text_slice",
     "items": [],
     "primary": {
-      "title": "deliver distributed technologies"
+      "title": "Featured projects"
     }
   },
   {
@@ -23,8 +24,8 @@
     "slice_type": "text_slice",
     "items": [],
     "primary": {
-      "title": "transition seamless channels",
-      "text": "target frictionless eyeballs"
+      "title": "Featured projects",
+      "text": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies."
     }
   },
   {
@@ -33,11 +34,12 @@
     "slice_type": "text_slice",
     "items": [],
     "primary": {
-      "title": "optimize web-enabled bandwidth",
-      "text": "empower granular models",
-      "button": {
+      "title": "Featured projects",
+      "text": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.",
+      "buttonText": "Get presentation",
+      "buttonLink": {
         "link_type": "Web",
-        "url": "http://google.com"
+        "url": "https://maddevs.co/delivery-models.pdf"
       }
     }
   },
@@ -47,21 +49,21 @@
     "slice_type": "text_slice",
     "items": [
       {
-        "listItem": "mesh seamless content"
+        "listItem": "drive extensible web-readiness"
       },
       {
-        "listItem": "extend rich markets"
+        "listItem": "iterate customized experiences"
       },
       {
-        "listItem": "scale next-generation systems"
+        "listItem": "expedite frictionless synergies"
       },
       {
-        "listItem": "benchmark mission-critical relationships"
+        "listItem": "mesh 24/365 markets"
       }
     ],
     "primary": {
-      "title": "reinvent viral niches",
-      "text": "leverage intuitive systems"
+      "title": "Software <br /> development",
+      "text": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies."
     }
   }
 ]
