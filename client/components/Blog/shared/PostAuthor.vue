@@ -7,14 +7,14 @@
     class="post-author"
   >
     <div
-      v-if="thumbnailImage.url !== undefined"
+      v-if="authorImage !== undefined"
       class="post-author__image"
     >
       <img
-        :src="thumbnailImage.url"
-        :alt="thumbnailImage.alt"
-        width="36"
-        height="36"
+        :src="authorImage.url"
+        :alt="authorImage.alt"
+        width="40"
+        height="40"
       >
     </div>
     <div
@@ -62,9 +62,15 @@ export default {
       default: '',
     },
 
-    thumbnailImage: {
+    image: {
       type: Object,
-      default: () => ({}),
+      default: () => ({
+        thumbnail: {
+          url: '',
+          alt: '',
+          dimensions: {},
+        },
+      }),
     },
 
     theme: {
@@ -79,13 +85,18 @@ export default {
         {
           rel: 'preload',
           as: 'image',
-          href: this.thumbnailImage.url,
+          href: this.authorImage.url,
         },
       ],
     }
   },
 
   computed: {
+    authorImage() {
+      const { thumbnail = {} } = this.image
+      return thumbnail
+    },
+
     link() {
       return linkResolver({ type: 'author', uid: this.uid })
     },
@@ -127,12 +138,11 @@ export default {
 
   &__image,
   &__none-image {
-    width: 36px;
-    min-width: 36px;
-    height: 36px;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
     border-radius: 50%;
     overflow: hidden;
-    -webkit-mask-image: -webkit-radial-gradient(white, black); // fix for problems with border-radius in Safari
     img {
       display: block;
       width: 100%;
