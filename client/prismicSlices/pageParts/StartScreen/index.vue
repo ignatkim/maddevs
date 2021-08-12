@@ -47,7 +47,7 @@ export default {
   position: relative;
   height: 100vh;
   min-height: 568px;
-  background: linear-gradient(180deg, rgba(17,18,19,0) 60%,#111213);
+  background: linear-gradient(180deg, rgba(17, 18, 19, 0) 60%, #111213);
   overflow: hidden;
   .container {
     height: 100%;
