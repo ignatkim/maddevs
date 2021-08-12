@@ -4,11 +4,11 @@ export default {
   title: 'Demo pages',
 }
 
-export const Default = () => ({
+export const About = () => ({
   components: {
     SliceZone,
   },
   template: '<slice-zone type="custom-page" uid="need to paste the uid" />',
 })
 
-Default.storyName = 'About page'
+About.storyName = 'About page'
