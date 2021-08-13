@@ -18,6 +18,8 @@ export default {
     PostsSection,
   },
 
+  nuxtI18n: false,
+
   head() {
     return buildHead({
       title: 'Mad Devs: Blog search result',

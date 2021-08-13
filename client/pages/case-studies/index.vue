@@ -23,6 +23,8 @@ export default {
     BuildDevTeam,
   },
 
+  nuxtI18n: false,
+
   head() {
     return buildHead(getMetadata('caseStudies'))
   },

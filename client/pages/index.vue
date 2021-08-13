@@ -35,6 +35,8 @@ export default {
     MeetOurExperts,
   },
 
+  nuxtI18n: false,
+
   head() {
     return buildHead(getMetadata('index'))
   },
