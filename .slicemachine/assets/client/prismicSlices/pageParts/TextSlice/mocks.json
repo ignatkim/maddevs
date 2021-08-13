@@ -1,0 +1,69 @@
+[
+  {
+    "variation": "default-slice",
+    "name": "Default slice",
+    "slice_type": "text_slice",
+    "items": [],
+    "primary": {
+      "text": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.",
+      "large": true
+    }
+  },
+  {
+    "variation": "title",
+    "name": "Title",
+    "slice_type": "text_slice",
+    "items": [],
+    "primary": {
+      "title": "Featured projects"
+    }
+  },
+  {
+    "variation": "titleText",
+    "name": "Title + Text",
+    "slice_type": "text_slice",
+    "items": [],
+    "primary": {
+      "title": "Featured projects",
+      "text": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies."
+    }
+  },
+  {
+    "variation": "titleTextButton",
+    "name": "Title + Text + Button",
+    "slice_type": "text_slice",
+    "items": [],
+    "primary": {
+      "title": "Featured projects",
+      "text": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.",
+      "buttonText": "Get presentation",
+      "buttonLink": {
+        "link_type": "Web",
+        "url": "https://maddevs.co/delivery-models.pdf"
+      }
+    }
+  },
+  {
+    "variation": "titleTextList",
+    "name": "Title + Text + List",
+    "slice_type": "text_slice",
+    "items": [
+      {
+        "listItem": "drive extensible web-readiness"
+      },
+      {
+        "listItem": "iterate customized experiences"
+      },
+      {
+        "listItem": "expedite frictionless synergies"
+      },
+      {
+        "listItem": "mesh 24/365 markets"
+      }
+    ],
+    "primary": {
+      "title": "Software <br /> development",
+      "text": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies."
+    }
+  }
+]

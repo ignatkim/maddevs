@@ -4,8 +4,8 @@
       <h2 v-if="slice.primary.title">
         {{ slice.primary.title }}
       </h2>
-      <p v-if="slice.primary.description[0].text">
-        {{ slice.primary.description[0].text }}
+      <p v-if="slice.primary.description">
+        {{ slice.primary.description }}
       </p>
       <div class="customer-logo-slice_list">
         <div

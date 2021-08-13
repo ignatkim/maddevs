@@ -2,11 +2,20 @@
   <div class="container">
     <div class="current-author">
       <div class="current-author__image">
-        <img
-          v-lazy-load
-          :data-src="blogAuthor.image.url"
-          :alt="blogAuthor.image.alt"
-        >
+        <picture>
+          <source
+            v-lazy-load
+            :data-src="`${authorImage.url}&w=256&h=256`"
+            media="(max-width: 991px)"
+          >
+          <img
+            v-lazy-load
+            :data-src="`${authorImage.url}&w=330&h=330`"
+            :alt="authorImage.alt"
+            width="165"
+            height="165"
+          >
+        </picture>
       </div>
       <h1 class="current-author__name">
         {{ blogAuthor.name }}
@@ -26,6 +35,17 @@ export default {
 
   computed: {
     ...mapGetters(['blogAuthor']),
+
+    authorImage() {
+      let urlWithoutSizeParams = ''
+      const { image } = this.blogAuthor
+      if (image && image.header) {
+        // eslint-disable-next-line
+        if (image.header.url) urlWithoutSizeParams = image.header.url.split('&w=')[0]
+        return { ...image.header, url: urlWithoutSizeParams }
+      }
+      return {}
+    },
   },
 }
 </script>
@@ -44,7 +64,6 @@ export default {
       border-radius: 50%;
       overflow: hidden;
       background: $bgcolor--black-light;
-      -webkit-mask-image: -webkit-radial-gradient(white, black); // fix for problems with border-radius in Safari
       img {
         display: block;
         width: 100%;
