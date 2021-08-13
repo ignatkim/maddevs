@@ -143,6 +143,11 @@ export default {
     @media screen and (max-width: 768px) {
       margin-bottom: 50px;
     }
+    @media screen and (max-width: 485px) {
+      /deep/ br {
+        display: none;
+      }
+    }
     h2 {
       @include font('Inter', 80px, 700);
       line-height: 67px;
@@ -170,11 +175,6 @@ export default {
         margin-top: 21px;
         font-size: 21px;
         line-height: 30px;
-      }
-    }
-    @media screen and (max-width: 485px) {
-      /deep/ br {
-        display: none;
       }
     }
   }
