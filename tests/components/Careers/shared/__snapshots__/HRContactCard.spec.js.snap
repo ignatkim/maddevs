@@ -32,17 +32,16 @@ exports[`HRContactCard is a Vue instance 1`] = `
       translated
       
         <a
-          href="https://t.me/DianaHRDigital"
-          target="_blank"
+          href="mailto:cv@maddevs.io"
         >
           <img
-            data-src="img.jpg"
             height="17"
+            src="@/assets/img/common/mail.svg"
             width="20"
           />
            
           <span>
-            @DianaHRDigital
+            cv@maddevs.io
           </span>
         </a>
       </p>
