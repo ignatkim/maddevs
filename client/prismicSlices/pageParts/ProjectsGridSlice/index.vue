@@ -23,7 +23,7 @@
           :key="project.name"
           :href="project.link.url"
           target="_blank"
-          :class="`project-card ${project.displayArrowButton ? '' : 'project-card--without-button'}`"
+          :class="`project-card ${displayCardButton ? '' : 'project-card--without-button'}`"
         >
           <div class="project-card__info">
             <img
@@ -34,7 +34,7 @@
             <h3 class="project-card__name">{{ project.name }}</h3>
             <p class="project-card__description">{{ project.description }}</p>
           </div>
-          <UIArrowButton v-if="project.displayArrowButton" />
+          <UIArrowButton v-if="displayCardButton" />
         </a>
       </div>
       <a
@@ -71,6 +71,7 @@ export default {
   data() {
     return {
       colorTheme: this.slice.primary.colorTheme,
+      displayCardButton: this.slice.primary.displayCardButton,
       title: this.slice.primary.title,
       subtitle: this.slice.primary.subtitle,
       projects: this.slice.items,

@@ -103,7 +103,11 @@
     },
     "ProjectsGridSlice": {
       "default-slice": {
-        "primary": {},
+        "primary": {
+          "displayCardButton": {
+            "content": true
+          }
+        },
         "items": {
           "logo": {
             "content": "https://d6xkme6dcvajw.cloudfront.net/images/OpenSource/svg/location.svg"

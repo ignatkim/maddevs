@@ -23,6 +23,15 @@
           },
           "type": "Select"
         },
+        "displayCardButton": {
+          "config": {
+            "label": "",
+            "placeholder_false": "show",
+            "placeholder_true": "hide",
+            "default_value": true
+          },
+          "type": "Boolean"
+        },
         "title": {
           "config": {
             "label": "",
@@ -85,15 +94,6 @@
             "placeholder": ""
           },
           "type": "Text"
-        },
-        "displayArrowButton": {
-          "config": {
-            "label": "",
-            "placeholder_false": "false",
-            "placeholder_true": "true",
-            "default_value": false
-          },
-          "type": "Boolean"
         }
       }
     }
