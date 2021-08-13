@@ -38,7 +38,7 @@
 </template>
 
 <script>
-import UIArrowButton from '@/components/shared/UIArrowButton.vue'
+import UIArrowButton from '@/components/shared/UIArrowButton'
 
 export default {
   name: 'BoilerplatesGridSlice',

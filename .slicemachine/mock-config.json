@@ -100,6 +100,22 @@
           }
         }
       }
+    },
+    "ProjectsGridSlice": {
+      "default-slice": {
+        "primary": {},
+        "items": {
+          "logo": {
+            "content": "https://d6xkme6dcvajw.cloudfront.net/images/OpenSource/svg/location.svg"
+          },
+          "name": {
+            "content": "Mad Location Manager"
+          },
+          "description": {
+            "content": "A library for GPS and Accelerometer data \"fusion\" with Kalman filter."
+          }
+        }
+      }
     }
   }
 }

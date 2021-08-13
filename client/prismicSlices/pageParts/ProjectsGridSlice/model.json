@@ -1,0 +1,101 @@
+{
+  "id": "projects_grid_slice",
+  "type": "SharedSlice",
+  "name": "ProjectsGridSlice",
+  "description": "ProjectsGridSlice",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "ProjectsGridSlice",
+      "primary": {
+        "colorTheme": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "options": [
+              "black",
+              "white"
+            ],
+            "default_value": "black"
+          },
+          "type": "Select"
+        },
+        "title": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "subtitle": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "buttonText": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "buttonLink": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "select": "web",
+            "allowTargetBlank": false
+          },
+          "type": "Link"
+        }
+      },
+      "items": {
+        "link": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "select": "web",
+            "allowTargetBlank": false
+          },
+          "type": "Link"
+        },
+        "logo": {
+          "config": {
+            "label": "",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "name": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "description": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "displayArrowButton": {
+          "config": {
+            "label": "",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          },
+          "type": "Boolean"
+        }
+      }
+    }
+  ]
+}
