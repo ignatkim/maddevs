@@ -1,0 +1,82 @@
+{
+  "id": "key_metrics_slice",
+  "type": "SharedSlice",
+  "name": "KeyMetricsSlice",
+  "description": "KeyMetricsSlice",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "KeyMetricsSlice",
+      "primary": {
+        "colorTheme": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "options": [
+              "white",
+              "black"
+            ],
+            "default_value": "white"
+          },
+          "type": "Select"
+        }
+      },
+      "items": {
+        "title": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "subtitle": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        }
+      }
+    },
+    {
+      "id": "withTopTitle",
+      "name": "With Top Title",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "KeyMetricsSlice",
+      "primary": {
+        "colorTheme": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "options": [
+              "white",
+              "black"
+            ],
+            "default_value": "white"
+          },
+          "type": "Select"
+        }
+      },
+      "items": {
+        "title": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "subtitle": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        }
+      }
+    }
+  ]
+}
