@@ -13,14 +13,13 @@ exports[`AuthorBanner component should render correctly 1`] = `
       >
         <picture>
           <source
-            data-srcset="&w=128&h=128,&w=256&h=256 2x"
+            data-src="&w=256&h=256"
             media="(max-width: 991px)"
           />
            
           <img
             alt=""
-            data-src="&w=165&h=165"
-            data-srcset="&w=330&h=330 2x"
+            data-src="&w=330&h=330"
             height="165"
             width="165"
           />
