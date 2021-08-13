@@ -17,7 +17,12 @@ export default {
   head() {
     return {
       ...buildHead(
-        { ...getMetadata('careers'), url: `https://maddevs.io${this.$route.path}` }, // meta tags
+        {
+          ...getMetadata('careers'),
+          url: `https://maddevs.io${this.$route.path}`,
+          title: this.$t('careers.meta.title'),
+          description: this.$t('careers.meta.description'),
+        }, // meta tags
         [], // scripts
         [
           { rel: 'alternate', hreflang: 'en', href: 'https://maddevs.io/careers/' },

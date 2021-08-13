@@ -13,17 +13,13 @@
       </p>
       <p class="hr-contact__description">
         {{ $t('careers.detailPage.hr.description') }}
-        <a
-          href="https://t.me/DianaHRDigital"
-          target="_blank"
-        >
+        <a href="mailto:cv@maddevs.io">
           <img
-            v-lazy-load
-            :data-src="$getMediaFromS3(`/images/Careers/svg/telegram.svg`)"
+            src="@/assets/img/common/mail.svg"
             width="20"
             height="17"
           >
-          <span>@DianaHRDigital</span>
+          <span>cv@maddevs.io</span>
         </a>
       </p>
     </div>
@@ -68,12 +64,16 @@ export default {
     line-height: 27px;
     letter-spacing: -0.013em;
     a {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
       color: $text-color--blue;
       text-decoration: none;
       letter-spacing: normal;
+      line-height: normal;
+
       img {
-        transform: translateY(2.5px);
+        margin-right: 3px;
+        transform: translateY(2px);
       }
     }
   }
