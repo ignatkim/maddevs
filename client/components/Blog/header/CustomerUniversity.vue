@@ -4,8 +4,6 @@
     :subtitle="subtitle"
     :cover-image-url="featuredImage.url"
     :cover-image-alt-text="featuredImage.alt"
-    :cover-image-width="featuredImage.dimensions.width"
-    :cover-image-height="featuredImage.dimensions.height"
   >
     <template #beforeTitle>
       <div class="cluster-navigation">
@@ -65,8 +63,8 @@
 </template>
 
 <script>
-import CommonHeader from '@/components/Blog/header/Common'
 import VueSelect from 'vue-select'
+import CommonHeader from '@/components/Blog/header/Common'
 import 'vue-select/dist/vue-select.css'
 
 export default {

@@ -1,5 +1,5 @@
-import ListNumberedBox from '@/components/Cases/shared/ListNumberedBox'
 import { render, screen } from '@testing-library/vue'
+import ListNumberedBox from '@/components/Cases/shared/ListNumberedBox'
 
 const slots = {
   default: 'Main Content',

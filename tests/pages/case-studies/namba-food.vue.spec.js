@@ -1,6 +1,6 @@
 import { render } from '@testing-library/vue'
-import NambaFood from '@/pages/case-studies/namba-food'
 import { shallowMount } from '@vue/test-utils'
+import NambaFood from '@/pages/case-studies/namba-food'
 import formBaseProps from '../../__mocks__/formBaseProps'
 
 const DESCRIPTION = 'FoodTech Case Study. How to make a delivery app from scratch? Read Namba Food’s story of developing a custom software top delivery service in Central Asia.'

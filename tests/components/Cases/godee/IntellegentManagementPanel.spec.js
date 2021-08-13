@@ -1,5 +1,5 @@
-import IntellegentManagementPanel from '@/components/Cases/godee/IntellegentManagementPanel.vue'
 import { render, screen } from '@testing-library/vue'
+import IntellegentManagementPanel from '@/components/Cases/godee/IntellegentManagementPanel.vue'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

@@ -1,5 +1,5 @@
-import PostCard from '@/components/Blog/shared/PostCard'
 import { render } from '@testing-library/vue'
+import PostCard from '@/components/Blog/shared/PostCard'
 import blogPost from '../../../__mocks__/blogPost'
 import blogPostWithLongTitle from '../../../__mocks__/blogPostWithLongTitle'
 

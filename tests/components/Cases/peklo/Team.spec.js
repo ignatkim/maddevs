@@ -1,5 +1,5 @@
-import Team from '@/components/Cases/peklo/Team'
 import { render, screen } from '@testing-library/vue'
+import Team from '@/components/Cases/peklo/Team'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

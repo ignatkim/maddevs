@@ -1,7 +1,7 @@
 import { render, screen, fireEvent } from '@testing-library/vue'
 import { shallowMount, createLocalVue } from '@vue/test-utils'
-import Post from '@/components/Blog/Post/Post'
 import Vuex from 'vuex'
+import Post from '@/components/Blog/Post/Post'
 import blogDocument from '../../../__mocks__/blogDocument'
 import recomendedPosts from '../../../__mocks__/recomendedPosts'
 import blogSlices from '../../../__mocks__/blogSlices'

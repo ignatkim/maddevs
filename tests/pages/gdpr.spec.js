@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/vue'
-import MainGdpr from '@/pages/gdpr'
 import { shallowMount } from '@vue/test-utils'
+import MainGdpr from '@/pages/gdpr'
 
 const META_DATA = {
   description: 'Mad Devs is committed to complying with the data protection and privacy rules in the EU General Data Protection Regulation (GDPR).',

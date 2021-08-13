@@ -1,15 +1,15 @@
 {
-  "id": "example_slice",
+  "id": "create_projects_slice",
   "type": "SharedSlice",
-  "name": "ExampleSlice",
-  "description": "Example Slice",
+  "name": "CreateProjectsSlice",
+  "description": "CreateProjectsSlice",
   "variations": [
     {
-      "id": "default",
-      "name": "Default Slice",
+      "id": "default-slice",
+      "name": "Default slice",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "Example Slice",
+      "description": "CreateProjectsSlice",
       "primary": {
         "title": {
           "type": "StructuredText",
@@ -27,8 +27,7 @@
             "placeholder": "A nice description of your product"
           }
         }
-      },
-      "items": {}
+      }
     }
   ]
 }

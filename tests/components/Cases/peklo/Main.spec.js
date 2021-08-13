@@ -1,5 +1,5 @@
-import Main from '@/components/Cases/peklo/Main'
 import { render } from '@testing-library/vue'
+import Main from '@/components/Cases/peklo/Main'
 
 const stubs = ['About',
   'BenefitsFromPekloTool',

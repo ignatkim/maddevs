@@ -150,13 +150,13 @@
 
 <script>
 import { mapActions } from 'vuex'
+import { required, email, maxLength } from 'vuelidate/lib/validators'
 import UIRadioButtons from '@/components/shared/UIRadioButtons'
 import UIButton from '@/components/shared/UIButton'
 import FormInput from '@/components/Careers/shared/FormInput'
 import FileInput from '@/components/Careers/shared/FileInput'
 import ModalSuccess from '@/components/core/modals/ModalSuccess'
 
-import { required, email, maxLength } from 'vuelidate/lib/validators'
 import { fileSizeValidation, fileExt } from '@/helpers/validators'
 import parseUserAgentForLeads from '@/helpers/parseUserAgentForLeads'
 import { getIPInfo } from '@/api/ipInfo'

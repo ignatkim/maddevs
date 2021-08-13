@@ -15,6 +15,11 @@ const store = {
       image: {
         alt: 'alt',
         url: 'someurl',
+        header: {
+          url: '',
+          alt: '',
+          dimensions: {},
+        },
       },
     }),
   },

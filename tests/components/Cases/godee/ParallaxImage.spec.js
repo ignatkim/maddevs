@@ -1,5 +1,5 @@
-import ParallaxImage from '@/components/Cases/godee/ParallaxImage.vue'
 import { render, screen } from '@testing-library/vue'
+import ParallaxImage from '@/components/Cases/godee/ParallaxImage.vue'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

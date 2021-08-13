@@ -1,5 +1,5 @@
-import PhaseContinuousIntegration from '@/components/Cases/veeqo/PhaseContinuousIntegration'
 import { render, screen } from '@testing-library/vue'
+import PhaseContinuousIntegration from '@/components/Cases/veeqo/PhaseContinuousIntegration'
 
 const stubs = ['Picture', 'TextQuote']
 

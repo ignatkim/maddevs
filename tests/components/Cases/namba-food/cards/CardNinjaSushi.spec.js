@@ -1,5 +1,5 @@
-import CardNinjaSushi from '@/components/Cases/nambafood/cards/CardNinjaSushi.vue'
 import { render, screen } from '@testing-library/vue'
+import CardNinjaSushi from '@/components/Cases/nambafood/cards/CardNinjaSushi.vue'
 
 const DEFAULT_INDEX = 0
 

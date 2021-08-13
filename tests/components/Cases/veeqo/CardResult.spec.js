@@ -1,5 +1,5 @@
-import CardResult from '@/components/Cases/veeqo/CardResult'
 import { render, screen } from '@testing-library/vue'
+import CardResult from '@/components/Cases/veeqo/CardResult'
 
 const directives = {
   'lazy-load': () => {},

@@ -1,5 +1,5 @@
-import TrackStatuses from '@/components/Cases/nambafood/TrackStatuses.vue'
 import { render, screen } from '@testing-library/vue'
+import TrackStatuses from '@/components/Cases/nambafood/TrackStatuses.vue'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

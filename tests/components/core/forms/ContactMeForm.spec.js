@@ -1,7 +1,7 @@
 import { render, fireEvent, screen } from '@testing-library/vue'
-import ContactMeForm from '@/components/core/forms/ContactMeForm'
 import { createLocalVue } from '@vue/test-utils'
 import Vuex from 'vuex'
+import ContactMeForm from '@/components/core/forms/ContactMeForm'
 import formBaseProps from '../../../__mocks__/formBaseProps'
 
 import delay from '../../../../client/helpers/delay'

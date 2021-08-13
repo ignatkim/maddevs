@@ -1,0 +1,40 @@
+{
+  "id": "start_screen",
+  "type": "SharedSlice",
+  "name": "StartScreen",
+  "description": "StartScreen",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "StartScreen",
+      "primary": {
+        "image": {
+          "config": {
+            "label": "",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "title": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "subtitle": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        }
+      },
+      "items": {}
+    }
+  ]
+}

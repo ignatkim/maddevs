@@ -1,6 +1,6 @@
 import { render } from '@testing-library/vue'
-import PostAuthor from '@/components/Blog/shared/PostAuthor'
 import { shallowMount } from '@vue/test-utils'
+import PostAuthor from '@/components/Blog/shared/PostAuthor'
 
 const mocks = {
   $prismic: {
@@ -11,8 +11,13 @@ const mocks = {
 const props = {
   document: {
     author: 'some-author',
-    author_image: {
+    image: {
       url: 'some-url',
+      thumbnail: {
+        url: '',
+        alt: '',
+        dimensions: {},
+      },
     },
     author_title: 'author_title',
   },

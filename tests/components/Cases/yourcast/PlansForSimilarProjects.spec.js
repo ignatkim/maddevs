@@ -1,5 +1,5 @@
-import PlansForSimilarProjects from '@/components/Cases/yourcast/PlansForSimilarProjects'
 import { render, screen } from '@testing-library/vue'
+import PlansForSimilarProjects from '@/components/Cases/yourcast/PlansForSimilarProjects'
 
 describe('PlansForSimilarProjects component', () => {
   it('should render correctly', () => {

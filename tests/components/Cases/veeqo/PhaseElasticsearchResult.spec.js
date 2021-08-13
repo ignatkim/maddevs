@@ -1,5 +1,5 @@
-import PhaseElasticsearchResult from '@/components/Cases/veeqo/PhaseElasticsearchResult'
 import { render, screen } from '@testing-library/vue'
+import PhaseElasticsearchResult from '@/components/Cases/veeqo/PhaseElasticsearchResult'
 
 describe('PhaseElasticsearchResult component', () => {
   it('should render correctly', () => {

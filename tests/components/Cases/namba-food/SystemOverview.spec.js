@@ -1,5 +1,5 @@
-import SystemOverview from '@/components/Cases/nambafood/SystemOverview.vue'
 import { render, screen } from '@testing-library/vue'
+import SystemOverview from '@/components/Cases/nambafood/SystemOverview.vue'
 import '../../../__mocks__/intersectionObserverMock'
 
 const mocks = {

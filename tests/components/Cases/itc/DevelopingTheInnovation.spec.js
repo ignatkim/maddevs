@@ -1,5 +1,5 @@
-import DevelopingTheInnovation from '@/components/Cases/itc/DevelopingTheInnovation'
 import { render } from '@testing-library/vue'
+import DevelopingTheInnovation from '@/components/Cases/itc/DevelopingTheInnovation'
 import '../../../__mocks__/intersectionObserverMock'
 
 const stubs = ['Lottie', 'Picture']

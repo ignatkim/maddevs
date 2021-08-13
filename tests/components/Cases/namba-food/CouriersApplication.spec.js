@@ -1,5 +1,5 @@
-import CouriersApplication from '@/components/Cases/nambafood/CouriersApplication.vue'
 import { render, screen } from '@testing-library/vue'
+import CouriersApplication from '@/components/Cases/nambafood/CouriersApplication.vue'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

@@ -1,5 +1,5 @@
-import FeaturedProjectsListItem from '@/components/OpenSource/shared/FeaturedProjectsListItem'
 import { render } from '@testing-library/vue'
+import FeaturedProjectsListItem from '@/components/OpenSource/shared/FeaturedProjectsListItem'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

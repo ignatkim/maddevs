@@ -1,5 +1,5 @@
-import SkeletonBlogWidget from '@/components/Blog/skeletons/SkeletonBlogWidget'
 import { render } from '@testing-library/vue'
+import SkeletonBlogWidget from '@/components/Blog/skeletons/SkeletonBlogWidget'
 
 describe('skeleton blog widget component', () => {
   it('should render correctly', () => {

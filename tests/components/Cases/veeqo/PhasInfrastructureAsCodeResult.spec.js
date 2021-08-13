@@ -1,5 +1,5 @@
-import PhasInfrastructureAsCodeResult from '@/components/Cases/veeqo/PhasInfrastructureAsCodeResult'
 import { render, screen } from '@testing-library/vue'
+import PhasInfrastructureAsCodeResult from '@/components/Cases/veeqo/PhasInfrastructureAsCodeResult'
 
 const stubs = ['CardResult']
 

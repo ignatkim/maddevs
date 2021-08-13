@@ -1,5 +1,5 @@
-import UsageScenarios from '@/components/Cases/nambafood/UsageScenarios.vue'
 import { render, screen } from '@testing-library/vue'
+import UsageScenarios from '@/components/Cases/nambafood/UsageScenarios.vue'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

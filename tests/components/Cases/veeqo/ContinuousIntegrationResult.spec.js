@@ -1,5 +1,5 @@
-import ContinuousIntegrationResult from '@/components/Cases/veeqo/ContinuousIntegrationResult'
 import { render, screen } from '@testing-library/vue'
+import ContinuousIntegrationResult from '@/components/Cases/veeqo/ContinuousIntegrationResult'
 
 const directives = {
   'lazy-load': () => {},

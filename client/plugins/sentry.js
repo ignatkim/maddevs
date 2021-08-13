@@ -6,8 +6,10 @@ if (process.env.environment !== 'development') {
   Sentry.init({
     Vue,
     dsn: process.env.sentryDsnFront,
-    integrations: [new Integrations.BrowserTracing()],
-    tracesSampleRate: 1.0,
+    integrations: [new Integrations.BrowserTracing({
+      tracingOrigins: ['maddevs.io'],
+    })],
+    tracesSampleRate: 0.2,
     ignoreErrors: [
       'ResizeObserver loop limit exceeded', // https://stackoverflow.com/questions/49384120/resizeobserver-loop-limit-exceeded#comment86691361_49384120
       'ResizeObserver loop completed with undelivered notifications.', // ^

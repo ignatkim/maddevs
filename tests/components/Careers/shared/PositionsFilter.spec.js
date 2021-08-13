@@ -1,8 +1,8 @@
-import PositionsFilter from '@/components/Careers/shared/PositionsFilter'
-import OpenPositions from '@/components/Careers/OpenPositions'
 import { render } from '@testing-library/vue'
 import { createLocalVue } from '@vue/test-utils'
 import Vuex from 'vuex'
+import OpenPositions from '@/components/Careers/OpenPositions'
+import PositionsFilter from '@/components/Careers/shared/PositionsFilter'
 
 const localVue = createLocalVue()
 localVue.use(Vuex)

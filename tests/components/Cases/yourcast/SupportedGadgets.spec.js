@@ -1,5 +1,5 @@
-import SupportedGadgets from '@/components/Cases/yourcast/SupportedGadgets'
 import { render, screen } from '@testing-library/vue'
+import SupportedGadgets from '@/components/Cases/yourcast/SupportedGadgets'
 
 const stubs = ['Picture']
 

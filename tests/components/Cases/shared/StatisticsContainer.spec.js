@@ -1,5 +1,5 @@
-import StatisticsContainer from '@/components/Cases/shared/StatisticsContainer'
 import { render } from '@testing-library/vue'
+import StatisticsContainer from '@/components/Cases/shared/StatisticsContainer'
 
 const slots = {
   default: 'test',

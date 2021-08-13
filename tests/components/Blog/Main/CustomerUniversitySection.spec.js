@@ -1,7 +1,7 @@
 import { render } from '@testing-library/vue'
-import CustomerUniversitySection from '@/components/Blog/Main/CustomerUniversitySection'
 import { createLocalVue } from '@vue/test-utils'
 import Vuex from 'vuex'
+import CustomerUniversitySection from '@/components/Blog/Main/CustomerUniversitySection'
 
 const localVue = createLocalVue()
 localVue.use(Vuex)

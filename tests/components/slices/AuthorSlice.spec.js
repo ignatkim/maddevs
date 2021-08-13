@@ -1,5 +1,5 @@
-import AuthorSlice from '@/components/slices/AuthorSlice'
 import { render, screen } from '@testing-library/vue'
+import AuthorSlice from '@/components/slices/AuthorSlice'
 
 const props = {
   slice: {
@@ -51,6 +51,12 @@ const store = {
       image: {
         alt: 'alt',
         url: 'someurl',
+        dimensions: {},
+        author_slice: {
+          url: '',
+          alt: '',
+          dimensions: {},
+        },
       },
       socialNetworks: [{
         title: 'facebook',
