@@ -78,6 +78,9 @@ export default {
   border-radius: 4px;
   padding: 22px 27px 30px;
   word-break: break-word;
+  @media screen and (max-width: 1024px) {
+    padding: 17px 22px 30px;
+  }
   &__title {
     @include font('Inter', 53px, 700);
     line-height: 56px;
