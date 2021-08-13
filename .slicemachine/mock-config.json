@@ -121,6 +121,14 @@
         }
       }
     },
+    "KeyMetricsSlice": {
+      "default-slice": {
+        "primary": {}
+      },
+      "withTopTitle": {
+        "primary": {}
+      }
+    },
     "CreateProjectsSlice": {}
   }
 }
