@@ -1,0 +1,50 @@
+[
+  {
+    "variation": "default-slice",
+    "name": "Default slice",
+    "slice_type": "key_metrics_slice",
+    "items": [
+      {
+        "title": "deliver B2B initiatives",
+        "subtitle": "leverage B2C portals"
+      },
+      {
+        "title": "drive back-end initiatives",
+        "subtitle": "revolutionize collaborative interfaces"
+      },
+      {
+        "title": "generate innovative web-readiness",
+        "subtitle": "evolve scalable deliverables"
+      },
+      {
+        "title": "benchmark revolutionary e-commerce",
+        "subtitle": "extend rich users"
+      }
+    ],
+    "primary": {
+      "colorTheme": "white"
+    }
+  },
+  {
+    "variation": "withTopTitle",
+    "name": "With Top Title",
+    "slice_type": "key_metrics_slice",
+    "items": [
+      {
+        "title": "redefine clicks-and-mortar experiences",
+        "subtitle": "harness intuitive channels"
+      },
+      {
+        "title": "exploit user-centric systems",
+        "subtitle": "integrate extensible vortals"
+      },
+      {
+        "title": "transition sticky partnerships",
+        "subtitle": "extend dot-com e-commerce"
+      }
+    ],
+    "primary": {
+      "colorTheme": "white"
+    }
+  }
+]
