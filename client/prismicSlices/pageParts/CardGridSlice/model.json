@@ -1,8 +1,8 @@
 {
-  "id": "boilerplates_grid_slice",
+  "id": "card_grid_slice",
   "type": "SharedSlice",
-  "name": "BoilerplatesGridSlice",
-  "description": "BoilerplatesGridSlice",
+  "name": "CardGridSlice",
+  "description": "CardGridSlice",
   "variations": [
     {
       "id": "default-slice",

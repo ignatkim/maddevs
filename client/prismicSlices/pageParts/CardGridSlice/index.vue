@@ -41,7 +41,7 @@
 import UIArrowButton from '@/components/shared/UIArrowButton'
 
 export default {
-  name: 'BoilerplatesGridSlice',
+  name: 'CardGridSlice',
   components: {
     UIArrowButton,
   },
