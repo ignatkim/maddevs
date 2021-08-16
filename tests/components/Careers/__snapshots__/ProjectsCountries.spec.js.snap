@@ -39,14 +39,17 @@ exports[`ProjectsCountries component should render correctly 1`] = `
       iconbackground="transparent"
     />
      
-    <nuxtlink
+    <div
       class="projects-countries_link-btn"
-      to="/case-studies/"
     >
-      <uibutton-stub>
-        translated
-      </uibutton-stub>
-    </nuxtlink>
+      <nuxtlink
+        to="/case-studies/"
+      >
+        <uibutton-stub>
+          translated
+        </uibutton-stub>
+      </nuxtlink>
+    </div>
   </div>
 </div>
 `;

@@ -26,12 +26,11 @@
       class="projects-countries_customers-list"
       :customers="careersCustomers"
     />
-    <NuxtLink
-      to="/case-studies/"
-      class="projects-countries_link-btn"
-    >
-      <UIButton>{{ $t('careers.section-2.btn') }}</UIButton>
-    </NuxtLink>
+    <div class="projects-countries_link-btn">
+      <NuxtLink to="/case-studies/">
+        <UIButton>{{ $t('careers.section-2.btn') }}</UIButton>
+      </NuxtLink>
+    </div>
   </div>
 </template>
 
@@ -93,14 +92,15 @@ export default {
   }
 
   &_link-btn {
-    display: block;
-    width: 195px;
-    height: 46px;
-    margin: 0 auto;
-    .ui-button {
-      @include font('Inter', 15px, 400);
-      width: 100%;
-      height: 100%;
+    text-align: center;
+    a {
+      display: inline-block;
+      .ui-button {
+        @include font('Inter', 15px, 400);
+        width: 100%;
+        padding: 15px 31px 15px 28px;
+        line-height: 100%;
+      }
     }
   }
 
@@ -130,8 +130,8 @@ export default {
       margin-bottom: 35px;
     }
 
-    &_link-btn {
-      width: 100%;
+    &_link-btn a {
+      display: block;
     }
   }
 }
