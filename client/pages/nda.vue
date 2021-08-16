@@ -14,6 +14,8 @@ export default {
     NDA,
   },
 
+  nuxtI18n: false,
+
   head() {
     return buildHead(getMetadata('nda'))
   },

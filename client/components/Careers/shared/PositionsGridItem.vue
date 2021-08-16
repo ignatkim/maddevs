@@ -1,7 +1,7 @@
 <template>
   <li class="positions-grid__item">
-    <NuxtLink
-      :to="`/careers/${uid}/`"
+    <router-link
+      :to="link"
       class="positions-grid__item-link"
     >
       <div
@@ -35,7 +35,7 @@
           :tags="tags"
         />
       </div>
-    </NuxtLink>
+    </router-link>
   </li>
 </template>
 
@@ -79,6 +79,13 @@ export default {
     tags: {
       type: Array,
       default: () => ([]),
+    },
+  },
+
+  computed: {
+    link() {
+      if (this.uid === 'сopywriter') return `/careers/${this.uid}/`
+      return `/ru/careers/${this.uid}/`
     },
   },
 }

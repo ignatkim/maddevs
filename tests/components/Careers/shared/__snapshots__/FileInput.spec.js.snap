@@ -21,11 +21,7 @@ exports[`FileInput component should render correctly 1`] = `
     >
       
     Select a file
-      <span
-        class="red"
-      >
-        *
-      </span>
+  
     </label>
   </div>
 </div>

@@ -71,6 +71,11 @@ module.exports = {
     /*
      ** Run ESLint on save
      */
+    babel: {
+      plugins: [
+        ['@babel/plugin-proposal-private-property-in-object', { loose: true }],
+      ],
+    },
     vendor: ['axios'],
     transpile: ['swiper', 'dom7', 'vue-slicezone', 'nuxt-sm'],
     followSymlinks: true,
@@ -116,7 +121,7 @@ module.exports = {
     [
       'nuxt-i18n',
       {
-        strategy: 'no_prefix',
+        strategy: 'prefix_except_default',
         defaultLocale: 'en',
         langDir: '~/locales/',
         locales: [
@@ -166,6 +171,7 @@ module.exports = {
     domain: process.env.NODE_DOMAIN,
     reserveVacancyId: process.env.NODE_HUNTFLOW_RESERVE_VACANCY_ID,
     emailHR: process.env.NODE_EMAIL_HR,
+    emailCV: process.env.NODE_EMAIL_CV,
     emailContact: process.env.NODE_EMAIL_CONTACT,
     emailMarketing: process.env.NODE_EMAIL_MARKETING,
     sentryDsnFront: process.env.NODE_SENTRY_DSN_FRONT,

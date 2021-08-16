@@ -106,5 +106,57 @@
   {
     "from": "/blog/mad-devs-ishet-golang-razrabotchika",
     "to": "https://maddevs.io/careers/#open-positions"
+  },
+  {
+    "from": "/careers/junior-frontend-developer",
+    "to": "https://maddevs.io/ru/careers/junior-frontend-developer/"
+  },
+  {
+    "from": "/careers/qa-engineer",
+    "to": "https://maddevs.io/ru/careers/qa-engineer/"
+  },
+  {
+    "from": "/careers/pm-clutch",
+    "to": "https://maddevs.io/ru/careers/pm-clutch/"
+  },
+  {
+    "from": "/careers/ux-ui",
+    "to": "https://maddevs.io/ru/careers/ux-ui/"
+  },
+  {
+    "from": "/careers/.net-edentity",
+    "to": "https://maddevs.io/ru/careers/.net-edentity/"
+  },
+  {
+    "from": "/careers/business-analyst",
+    "to": "https://maddevs.io/ru/careers/business-analyst/"
+  },
+  {
+    "from": "/careers/mobile-team-lead",
+    "to": "https://maddevs.io/ru/careers/mobile-team-lead/"
+  },
+  {
+    "from": "/careers/it-recruiter",
+    "to": "https://maddevs.io/ru/careers/it-recruiter/"
+  },
+  {
+    "from": "/careers/.net",
+    "to": "https://maddevs.io/ru/careers/.net/"
+  },
+  {
+    "from": "/careers/project-manager",
+    "to": "https://maddevs.io/ru/careers/project-manager/"
+  },
+  {
+    "from": "/careers/ios-developer",
+    "to": "https://maddevs.io/ru/careers/ios-developer/"
+  },
+  {
+    "from": "/careers/android-developer",
+    "to": "https://maddevs.io/ru/careers/android-developer/"
+  },
+  {
+    "from": "/careers/golang-developer",
+    "to": "https://maddevs.io/ru/careers/golang-developer/"
   }
 ]
