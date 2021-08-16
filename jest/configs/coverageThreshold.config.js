@@ -1,10 +1,10 @@
 module.exports = {
   check: {
     global: {
-      lines: 89.37,
-      statements: 89.04,
-      branches: 72.94,
-      functions: 83.86,
+      lines: 84.1,
+      statements: 73.02,
+      functions: 83.67,
+      branches: 72.93,
     },
   },
 }
