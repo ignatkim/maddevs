@@ -1,11 +1,13 @@
 <template>
-  <section
-    class="spacer-slice"
-    :style="{
-      height: slice.primary.height,
-      backgroundColor: slice.primary.color
-    }"
-  />
+  <div>
+    <section
+      class="spacer-slice"
+      :style="{
+        height,
+        backgroundColor: slice.primary.color
+      }"
+    />
+  </div>
 </template>
 
 <script>
@@ -18,6 +20,36 @@ export default {
       default() {
         return {}
       },
+    },
+  },
+
+  data() {
+    return {
+      height: this.slice.primary.height,
+    }
+  },
+
+  mounted() {
+    window.addEventListener('resize', this.onResize)
+  },
+
+  beforeDestroy() {
+    window.removeEventListener('resize', this.onResize)
+  },
+
+  methods: {
+    onResize() {
+      if (window.innerWidth < 375) {
+        this.height = this.slice.primary['height-sm']
+      } if (window.innerWidth > 375 && window.innerWidth < 768) {
+        this.height = this.slice.primary['height-md']
+      } if (window.innerWidth > 768 && window.innerWidth < 1024) {
+        this.height = this.slice.primary['height-lg']
+      } if (window.innerWidth > 1024 && window.innerWidth < 1440) {
+        this.height = this.slice.primary['height-xl']
+      } if (window.innerWidth > 1440) {
+        this.height = this.slice.primary.height
+      }
     },
   },
 }

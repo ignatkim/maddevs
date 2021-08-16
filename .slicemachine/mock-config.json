@@ -137,7 +137,19 @@
             "content": "#555555"
           },
           "height": {
+            "content": "100px"
+          },
+          "height-xl": {
             "content": "50px"
+          },
+          "height-lg": {
+            "content": "40px"
+          },
+          "height-md": {
+            "content": "30px"
+          },
+          "height-sm": {
+            "content": "20px"
           }
         }
       }
