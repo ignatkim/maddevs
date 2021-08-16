@@ -13,14 +13,13 @@ exports[`AuthorSlice component should render correctly 1`] = `
       >
         <picture>
           <source
-            data-srcset="&w=64&h=64,&w=128&h=128 2x"
+            data-src="&w=128&h=128"
             media="(max-width: 1024px)"
           />
            
           <img
             alt=""
-            data-src="&w=68&h=68"
-            data-srcset="&w=136&h=136 2x"
+            data-src="&w=136&h=136"
             height="68"
             width="68"
           />

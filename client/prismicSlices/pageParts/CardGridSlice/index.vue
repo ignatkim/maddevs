@@ -38,10 +38,10 @@
 </template>
 
 <script>
-import UIArrowButton from '@/components/shared/UIArrowButton.vue'
+import UIArrowButton from '@/components/shared/UIArrowButton'
 
 export default {
-  name: 'CardGridSliceSlice',
+  name: 'CardGridSlice',
   components: {
     UIArrowButton,
   },

@@ -56,6 +56,8 @@ export default {
     Footer,
   },
 
+  nuxtI18n: false,
+
   data() {
     return {
       logo: {

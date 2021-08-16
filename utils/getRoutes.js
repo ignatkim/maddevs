@@ -62,6 +62,10 @@ const getRoutes = async () => {
     .filter(post => post.type === 'author')
     .map(author => `/blog/author/${author.uid}`)
 
+  const careerPageRoutes = prismicPosts
+    .filter(post => post.type === 'vacancy')
+    .map(vacancy => `/ru/careers/${vacancy.uid}`)
+
   const tagPageRoutes = prismicTags
     .map(tag => `/blog/tag/${convertToSlug(tag)}`)
 
@@ -69,6 +73,7 @@ const getRoutes = async () => {
     '/',
     '/services',
     '/careers',
+    '/ru/careers',
     '/gdpr',
     '/nda',
     '/privacy',
@@ -79,6 +84,7 @@ const getRoutes = async () => {
     'case-studies/yourcast/',
     'case-studies/veeqo/',
     '/blog',
+    ...careerPageRoutes,
     ...blogPageRoutes,
     ...cuPageRoutes,
     ...authorPageRoutes,

@@ -1,19 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`UILinkButton should render correctly with props data 1`] = `
+exports[`UILinkButton component should render correctly with slot 1`] = `
 <div>
   <button
-    class="ui-link-btn"
+    class="ui-link-button"
     type="button"
   >
-    <nuxtlink-stub
-      class="ui-link-btn_link"
-      to="test"
-    >
-      
-    See all case studies
-  
-    </nuxtlink-stub>
+    Link button
   </button>
+</div>
+`;
+
+exports[`UILinkButton component should render correctly without slot 1`] = `
+<div>
+  <button
+    class="ui-link-button"
+    type="button"
+  />
 </div>
 `;

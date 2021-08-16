@@ -13,6 +13,8 @@ export default {
     Main,
   },
 
+  nuxtI18n: false,
+
   async asyncData({ store, error }) {
     try {
       await store.dispatch('getHomePageContent')

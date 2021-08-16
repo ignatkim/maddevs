@@ -1,56 +1,35 @@
 <template>
   <button
     type="button"
-    class="ui-link-btn"
+    class="ui-link-button"
   >
-    <NuxtLink
-      :to="link"
-      class="ui-link-btn_link"
-    >
-      {{ title }}
-    </NuxtLink>
+    <slot />
   </button>
 </template>
 
 <script>
-
 export default {
   name: 'UILinkButton',
-  props: {
-    link: {
-      type: String,
-      default: '',
-    },
-
-    title: {
-      type: String,
-      default: '',
-    },
-  },
 }
 </script>
 
 <style lang="scss" scoped>
-.ui-link-btn {
-  display: block;
-  padding: 15px 31px 15px 28px;
-  border: 0;
-  border-radius: 4px;
-  background-color: $bgcolor--red;
-  cursor: pointer;
+.ui-link-button {
+  @include font('Inter', 16px, 600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: underline;
+  background-color: transparent;
+  border: none;
   box-shadow: none;
+  line-height: 20px;
+  letter-spacing: -0.4px;
+  color: $text-color--blue;
   transition: 0.4s;
-
-  &:active {
-    background-color: $button-active--red;
-  }
-
-  &_link {
-    @include font('Inter', 15px, 400);
-    line-height: 100%;
-    letter-spacing: -0.013em;
-    color: $text-color--silver;
-    text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    color: darken($text-color--blue, 10%);
   }
 }
 </style>

@@ -267,7 +267,7 @@ export default {
             variables: {
               fullName: this.name,
               email: this.email,
-              emailTo: process.env.emailHR,
+              emailTo: process.env.emailCV,
               linkedinProfile: this.linkedin,
               positionTitle: this.position,
               positionValue: this.grade.value,

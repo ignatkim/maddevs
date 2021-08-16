@@ -18,6 +18,8 @@ export default {
     TagPostsSection,
   },
 
+  nuxtI18n: false,
+
   async asyncData({ store, params, error }) {
     try {
       await store.dispatch('getBlogTag', params.uid)

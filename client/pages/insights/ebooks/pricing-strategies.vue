@@ -24,6 +24,8 @@ export default {
     Delivery,
   },
 
+  nuxtI18n: false,
+
   mixins: [animateOnScrollMixin({
     offset: 200,
     delay: 50,

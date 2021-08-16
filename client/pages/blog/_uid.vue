@@ -16,6 +16,8 @@ export default {
     PostView,
   },
 
+  nuxtI18n: false,
+
   mixins: [buildBlogPostMixin()],
 
   beforeRouteEnter(to, from, next) {

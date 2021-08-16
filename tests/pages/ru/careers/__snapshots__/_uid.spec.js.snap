@@ -1,0 +1,373 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Careers _uid component should render correctly 1`] = `
+<div>
+  <section
+    class="careers-position"
+    id="careers-position"
+  >
+    <div
+      class="careers-position__header"
+    >
+      <div
+        class="container"
+      >
+        <div
+          class="careers-position__container"
+        >
+          <div
+            class="careers-position__labels"
+          >
+            <div
+              class="position-labels"
+            >
+              <div
+                class="position-labels__item position-labels__item--filled"
+              >
+                
+    Remote
+  
+              </div>
+               
+              <!---->
+            </div>
+          </div>
+           
+          <h1
+            class="careers-position__title"
+          >
+            
+        
+      
+          </h1>
+           
+          <!---->
+           
+          <!---->
+           
+          <button
+            class="ui-button careers-position__apply-button"
+            style="position: relative; overflow: hidden;"
+            type="button"
+          >
+            
+        translated
+      
+            <div
+              class="wave"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+     
+    <div
+      class="container"
+    >
+      <div
+        class="careers-position__container"
+      >
+        <div
+          class="careers-position__info"
+        >
+          <!---->
+           
+          <div
+            class="careers-position__benefits"
+          >
+            <h2
+              class="careers-position__benefits-title"
+            >
+              
+            translated
+          
+            </h2>
+             
+            <div
+              class="careers-position__benefits-grid"
+            >
+              <benefitcard-stub
+                icon="[object Object]"
+                title="Flexible working <br> hours"
+              />
+              <benefitcard-stub
+                icon="[object Object]"
+                title="Onsite business <br> trips"
+              />
+              <benefitcard-stub
+                icon="[object Object]"
+                title="English <br> lessons"
+              />
+              <benefitcard-stub
+                icon="[object Object]"
+                title="Training <br> budget"
+              />
+              <benefitcard-stub
+                icon="[object Object]"
+                title="Remote-first <br> culture"
+              />
+              <benefitcard-stub
+                icon="[object Object]"
+                title="Long-term <br> projects"
+              />
+              <benefitcard-stub
+                icon="[object Object]"
+                title="Paid <br> conferences"
+              />
+              <benefitcard-stub
+                icon="[object Object]"
+                title="Team <br> parties"
+              />
+            </div>
+          </div>
+        </div>
+         
+        <div
+          class="careers-position__contacts"
+          id="careers-position-form"
+        >
+          <hrcontactcard-stub />
+           
+          <div
+            class="careers-position__form"
+          >
+            <div>
+              <form
+                class="position-form"
+              >
+                <div
+                  class="position-form__message"
+                >
+                  <label
+                    class="position-form__field"
+                  >
+                    
+        translated
+        
+                    <div
+                      class="career-form-input position-form__input position-form__input-name"
+                      title="translated"
+                    >
+                      <pre>
+                        translated
+                      </pre>
+                       
+                      <input
+                        placeholder="translated"
+                        type="text"
+                      />
+                    </div>
+                    .
+        
+                    <br />
+                     translated
+         
+                    <!---->
+                  </label>
+                   
+                  <p
+                    class="position-form__field position-form__field-positions"
+                  >
+                    <span
+                      class="position-form__field-description"
+                    >
+                      
+          translated
+        
+                    </span>
+                     
+                    <div
+                      class="ui-radio-buttons position-form__positions-list"
+                    >
+                      <div
+                        class="ui-radio-buttons_item"
+                      >
+                        <div
+                          class="ui-radio-buttons_item-circle"
+                        />
+                         
+                        <div
+                          class="ui-radio-buttons_item-label"
+                        >
+                          
+      translated
+    
+                        </div>
+                      </div>
+                      <div
+                        class="ui-radio-buttons_item"
+                      >
+                        <div
+                          class="ui-radio-buttons_item-circle"
+                        />
+                         
+                        <div
+                          class="ui-radio-buttons_item-label"
+                        >
+                          
+      translated
+    
+                        </div>
+                      </div>
+                      <div
+                        class="ui-radio-buttons_item"
+                      >
+                        <div
+                          class="ui-radio-buttons_item-circle"
+                        />
+                         
+                        <div
+                          class="ui-radio-buttons_item-label"
+                        >
+                          
+      translated
+    
+                        </div>
+                      </div>
+                      <div
+                        class="ui-radio-buttons_item"
+                      >
+                        <div
+                          class="ui-radio-buttons_item-circle"
+                        />
+                         
+                        <div
+                          class="ui-radio-buttons_item-label"
+                        >
+                          
+      translated
+    
+                        </div>
+                      </div>
+                    </div>
+                     
+                    <span
+                      class="position-form__field-roles"
+                    >
+                      
+          translated
+        
+                    </span>
+                     
+                    <span
+                      class="position-form__field-error"
+                    >
+                      <!---->
+                    </span>
+                  </p>
+                   
+                  <label
+                    class="position-form__field"
+                  >
+                    
+        translated
+        
+                    <div
+                      class="career-form-input position-form__input position-form__input-email"
+                      title="your@mail.com"
+                    >
+                      <pre>
+                        your@mail.com
+                      </pre>
+                       
+                      <input
+                        placeholder="your@mail.com"
+                        type="email"
+                      />
+                    </div>
+                     
+                    <!---->
+                  </label>
+                   
+                  <p
+                    class="position-form__field position-form__skills"
+                  >
+                    
+        translated
+        
+                    <ul
+                      class="position-form__skills-list"
+                    >
+                      <li>
+                        <label>
+                          
+              translated
+              
+                          <div
+                            class="career-form-input position-form__input position-form__input-linkedin"
+                            title="translated"
+                          >
+                            <pre>
+                              translated
+                            </pre>
+                             
+                            <input
+                              placeholder="translated"
+                              type="text"
+                            />
+                          </div>
+                        </label>
+                        
+            translated
+          
+                      </li>
+                       
+                      <li>
+                        <label>
+                          <div
+                            class="file-input"
+                          >
+                            <input
+                              accept=".pdf,.cv,.doc,.odt,.docx,.txt"
+                              class="file-input__uploader"
+                              data-testid="test-file"
+                              id="file"
+                              name="file"
+                              type="file"
+                            />
+                             
+                            <label
+                              class="file-input__cv file-input__cv--attachable"
+                              data-testid="test-file-label"
+                              for="file"
+                            >
+                              
+    translated
+  
+                            </label>
+                          </div>
+                           
+                          <!---->
+                        </label>
+                      </li>
+                    </ul>
+                  </p>
+                </div>
+                 
+                <button
+                  class="ui-button"
+                  style="position: relative; overflow: hidden;"
+                  type="submit"
+                >
+                  
+      translated
+    
+                  <div
+                    class="wave"
+                  />
+                </button>
+              </form>
+               
+              <transition-stub
+                name="fade"
+              >
+                <!---->
+              </transition-stub>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;
