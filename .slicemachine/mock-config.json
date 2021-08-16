@@ -130,10 +130,14 @@
       }
     },
     "CreateProjectsSlice": {},
-    "TechnologiesAndToolsSlice": {
+    "ButtonSlice": {
       "default-slice": {
         "primary": {}
-      }
+      },
+      "outlinedButton": {
+        "primary": {}
+      },
+      "linkButton": {}
     },
     "TechnologiesSlice": {
       "default-slice": {

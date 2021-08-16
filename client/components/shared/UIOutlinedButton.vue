@@ -1,7 +1,7 @@
 <template>
   <button
     type="button"
-    class="ui-link-button"
+    class="ui-outlined-button"
   >
     <slot />
   </button>
@@ -9,27 +9,28 @@
 
 <script>
 export default {
-  name: 'UILinkButton',
+  name: 'UIOutlinedButton',
 }
 </script>
 
 <style lang="scss" scoped>
-.ui-link-button {
+.ui-outlined-button {
   @include font('Inter', 16px, 600);
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: underline;
+  border: 1px solid $border-color--grey-pale;
+  color: $text-color--quote-box;
   background-color: transparent;
-  border: none;
   box-shadow: none;
-  line-height: 20px;
+  border-radius: 4px;
   letter-spacing: -0.4px;
-  color: $text-color--blue;
+  line-height: 20px;
   transition: 0.4s;
   cursor: pointer;
   &:hover {
-    color: darken($text-color--blue, 10%);
+    background-color: $border-color--grey-pale;
+    color: $text-color--white;
   }
 }
 </style>
