@@ -13,13 +13,13 @@
       </p>
       <p class="hr-contact__description">
         {{ $t('careers.detailPage.hr.description') }}
-        <a href="mailto:cv@maddevs.io">
+        <a :href="`mailto:${mailCV}`">
           <img
-            src="@/assets/img/common/mail.svg"
+            src="@/assets/img/common/gmail.svg"
             width="20"
             height="17"
           >
-          <span>cv@maddevs.io</span>
+          <span>{{ mailCV }}</span>
         </a>
       </p>
     </div>
@@ -29,7 +29,11 @@
 <script>
 export default {
   name: 'CareersAuthorCard',
-
+  computed: {
+    mailCV() {
+      return process.env.emailCV
+    },
+  },
 }
 </script>
 
@@ -72,8 +76,8 @@ export default {
       line-height: normal;
 
       img {
-        margin-right: 3px;
-        transform: translateY(2px);
+        margin-right: 5px;
+        transform: translateY(1px);
       }
     }
   }

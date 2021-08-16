@@ -73,6 +73,7 @@ const getRoutes = async () => {
     '/',
     '/services',
     '/careers',
+    '/ru/careers',
     '/gdpr',
     '/nda',
     '/privacy',

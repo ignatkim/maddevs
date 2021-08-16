@@ -10,7 +10,7 @@
       :man-name="$t('careers.section-9.hr')"
       man-position="Head of HR Departament"
     >
-      <a href="mailto:cv@maddevs.io">
+      <a :href="mailTo">
         {{ $t('careers.section-9.btn') }}
       </a>
       <ul class="careers-cta-banner__links">
@@ -50,6 +50,12 @@ export default {
   name: 'CTABanner',
   components: {
     UIBanner,
+  },
+
+  computed: {
+    mailTo() {
+      return `mailto:${process.env.emailCV}`
+    },
   },
 }
 </script>
