@@ -1,0 +1,24 @@
+<template>
+  <SliceZone
+    type="custom_page"
+    uid="demo-about-page"
+  />
+</template>
+
+<script>
+import SliceZone from 'vue-slicezone'
+import featureFlag from '@/featureFlags/featureFlag'
+
+export default {
+  name: 'About',
+  components: {
+    SliceZone,
+  },
+
+  // NOTE: Remove if need show this page on production
+  asyncData({ error }) {
+    if (!featureFlag('aboutPageDemo')) return error({ statusCode: 404, message: 'Page not found' })
+    return {}
+  },
+}
+</script>
