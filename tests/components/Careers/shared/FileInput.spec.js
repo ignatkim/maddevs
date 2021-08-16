@@ -28,7 +28,7 @@ describe('FileInput component', () => {
     })
     const label = screen.getByTestId('test-file-label')
     expect(emitted().input).toHaveLength(1)
-    expect(label.textContent.trim()).toBe('file.pdf*')
+    expect(label.textContent.trim()).toBe('file.pdf')
   })
 
   it('should correct display long file name', async () => {
@@ -39,6 +39,6 @@ describe('FileInput component', () => {
       target: { files: [fileWithLongName] },
     })
     const label = screen.getByTestId('test-file-label')
-    expect(label.textContent.trim()).toBe(`${fileWithLongName.name.substring(0, MAX_FILE_LENGTH)}...*`)
+    expect(label.textContent.trim()).toBe(`${fileWithLongName.name.substring(0, MAX_FILE_LENGTH)}...`)
   })
 })

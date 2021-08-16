@@ -79,6 +79,8 @@ export default {
     SJMCVideo,
   },
 
+  nuxtI18n: false,
+
   data() {
     return {
       logo: {

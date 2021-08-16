@@ -4,5 +4,5 @@
  * Available environments - [development, staging, production]
  */
 export const config = {
-  ebookPage: ['development', 'staging'],
+  aboutPageDemo: ['development', 'staging'],
 }

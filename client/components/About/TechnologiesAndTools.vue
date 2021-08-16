@@ -839,15 +839,8 @@ $tech_legends: (
 .technologies-and_tools {
   &__main-title {
     @include h2-title;
-
     color: $text-color--white;
     text-align: left;
-  }
-
-  &__technologies-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
 }
 </style>

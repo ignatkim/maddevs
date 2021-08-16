@@ -58,6 +58,8 @@ export default {
     Main,
   },
 
+  nuxtI18n: false,
+
   data() {
     return {
       logo: {

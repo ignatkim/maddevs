@@ -15,7 +15,26 @@ export default {
   },
 
   head() {
-    return buildHead(getMetadata('careers'))
+    return {
+      ...buildHead(
+        {
+          ...getMetadata('careers'),
+          url: `https://maddevs.io${this.$route.path}`,
+          title: this.$t('careers.meta.title'),
+          description: this.$t('careers.meta.description'),
+        }, // meta tags
+        [], // scripts
+        [
+          { rel: 'alternate', hreflang: 'en', href: 'https://maddevs.io/careers/' },
+          { rel: 'alternate', hreflang: 'x-default', href: 'https://maddevs.io/careers/' },
+          { rel: 'alternate', hreflang: 'ru', href: 'https://maddevs.io/ru/careers/' },
+        ], // links
+      ),
+
+      htmlAttrs: {
+        lang: this.$i18n.locale,
+      },
+    }
   },
 }
 </script>

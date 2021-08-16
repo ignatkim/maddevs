@@ -18,6 +18,8 @@ export default {
     Model,
   },
 
+  nuxtI18n: false,
+
   asyncData({ params, error }) {
     const model = deliveryModels[params.uid]
 

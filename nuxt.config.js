@@ -121,7 +121,7 @@ module.exports = {
     [
       'nuxt-i18n',
       {
-        strategy: 'no_prefix',
+        strategy: 'prefix_except_default',
         defaultLocale: 'en',
         langDir: '~/locales/',
         locales: [
@@ -162,7 +162,7 @@ module.exports = {
     id: process.env.NODE_GOOGLE_TAG_MANAGER_ID,
   },
   storybook: {
-    stories: [...getStoriesPaths(), '~/assets/styles/storybook.css'],
+    stories: [...getStoriesPaths(), '~/prismicSlices/**/*.stories.js', '~/assets/styles/storybook.css'],
   },
   ignore: ['**/*.stories.js'],
   env: {
@@ -171,6 +171,7 @@ module.exports = {
     domain: process.env.NODE_DOMAIN,
     reserveVacancyId: process.env.NODE_HUNTFLOW_RESERVE_VACANCY_ID,
     emailHR: process.env.NODE_EMAIL_HR,
+    emailCV: process.env.NODE_EMAIL_CV,
     emailContact: process.env.NODE_EMAIL_CONTACT,
     emailMarketing: process.env.NODE_EMAIL_MARKETING,
     sentryDsnFront: process.env.NODE_SENTRY_DSN_FRONT,
