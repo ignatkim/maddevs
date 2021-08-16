@@ -15,8 +15,8 @@ export default {
     SliceZone,
   },
 
-  asyncData({ params, error }) {
-    if (!featureFlag('aboutPageDemo') || params.uid !== 'demo-about-page') return error({ statusCode: 404, message: 'Page not found' })
+  asyncData({ error }) {
+    if (!featureFlag('aboutPageDemo')) return error({ statusCode: 404, message: 'Page not found' })
     return {}
   },
 }
