@@ -26,24 +26,25 @@
       class="projects-countries_customers-list"
       :customers="careersCustomers"
     />
-    <UILinkButton
+    <NuxtLink
+      to="/case-studies/"
       class="projects-countries_link-btn"
-      link="/case-studies/"
-      :title="$t('careers.section-2.btn')"
-    />
+    >
+      <UIButton>{{ $t('careers.section-2.btn') }}</UIButton>
+    </NuxtLink>
   </div>
 </template>
 
 <script>
 import UICustomersList from '@/components/shared/UICustomersList'
-import UILinkButton from '@/components/shared/UILinkButton'
+import UIButton from '@/components/shared/UIButton'
 import { careersCustomers } from '@/data/customers'
 
 export default {
   name: 'ProjectsCountries',
   components: {
     UICustomersList,
-    UILinkButton,
+    UIButton,
   },
 
   data() {
@@ -92,7 +93,15 @@ export default {
   }
 
   &_link-btn {
+    display: block;
+    width: 195px;
+    height: 46px;
     margin: 0 auto;
+    .ui-button {
+      @include font('Inter', 15px, 400);
+      width: 100%;
+      height: 100%;
+    }
   }
 
   @media screen and (max-width: 1024px) {

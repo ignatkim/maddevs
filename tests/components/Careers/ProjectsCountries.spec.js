@@ -6,7 +6,7 @@ const mocks = {
   $t: () => 'translated',
 }
 
-const stubs = ['UICustomersList', 'UILinkButton']
+const stubs = ['UICustomersList', 'UIButton']
 
 const directives = {
   'lazy-load': () => {},
