@@ -16,8 +16,8 @@ export default {
   },
 
   // NOTE: Remove if need show this page on production
-  asyncData({ error }) {
-    if (!featureFlag('aboutPageDemo')) return error({ statusCode: 404, message: 'Page not found' })
+  asyncData({ params, error }) {
+    if (!featureFlag('aboutPageDemo') || params.uid !== 'demo-about-page') return error({ statusCode: 404, message: 'Page not found' })
     return {}
   },
 }
