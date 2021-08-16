@@ -41,7 +41,7 @@ export default {
 
 <style lang="scss" scoped>
 .ui-button {
-  @include font('Inter', 16px, 700);
+  @include font('Inter', 16px, 600);
   border: 1px solid $border-color--red-opacity;
   background-color: $bgcolor--red;
   border-radius: 4px;
