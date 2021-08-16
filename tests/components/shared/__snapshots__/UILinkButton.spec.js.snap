@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UILinkButton component should render correctly with slot 1`] = `
+<div>
+  <button
+    class="ui-link-button"
+    type="button"
+  >
+    Link button
+  </button>
+</div>
+`;
+
+exports[`UILinkButton component should render correctly without slot 1`] = `
+<div>
+  <button
+    class="ui-link-button"
+    type="button"
+  />
+</div>
+`;
