@@ -129,6 +129,16 @@
         "primary": {}
       }
     },
-    "CreateProjectsSlice": {}
+    "CreateProjectsSlice": {},
+    "TechnologiesAndToolsSlice": {
+      "default-slice": {
+        "primary": {}
+      }
+    },
+    "TechnologiesSlice": {
+      "default-slice": {
+        "primary": {}
+      }
+    }
   }
 }
