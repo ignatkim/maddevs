@@ -1,0 +1,152 @@
+{
+  "id": "button_slice",
+  "type": "SharedSlice",
+  "name": "ButtonSlice",
+  "description": "ButtonSlice",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "ButtonSlice",
+      "primary": {
+        "fullWidth": {
+          "config": {
+            "label": "",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          },
+          "type": "Boolean"
+        },
+        "alignment": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "options": [
+              "left",
+              "center",
+              "right"
+            ],
+            "default_value": "left"
+          },
+          "type": "Select"
+        },
+        "text": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "link": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "select": "web",
+            "allowTargetBlank": false
+          },
+          "type": "Link"
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "outlinedButton",
+      "name": "Outlined Button",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "ButtonSlice",
+      "primary": {
+        "fullWidth": {
+          "config": {
+            "label": "",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          },
+          "type": "Boolean"
+        },
+        "alignment": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "options": [
+              "left",
+              "center",
+              "right"
+            ],
+            "default_value": "left"
+          },
+          "type": "Select"
+        },
+        "text": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "link": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "select": "web",
+            "allowTargetBlank": false
+          },
+          "type": "Link"
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "linkButton",
+      "name": "Link Button",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "ButtonSlice",
+      "primary": {
+        "fullWidth": {
+          "config": {
+            "label": "",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          },
+          "type": "Boolean"
+        },
+        "alignment": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "options": [
+              "left",
+              "center",
+              "right"
+            ],
+            "default_value": "left"
+          },
+          "type": "Select"
+        },
+        "text": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "link": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "select": "web",
+            "allowTargetBlank": false
+          },
+          "type": "Link"
+        }
+      },
+      "items": {}
+    }
+  ]
+}

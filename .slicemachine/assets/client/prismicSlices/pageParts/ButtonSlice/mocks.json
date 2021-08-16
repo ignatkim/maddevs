@@ -1,0 +1,47 @@
+[
+  {
+    "variation": "default-slice",
+    "name": "Default slice",
+    "slice_type": "button_slice",
+    "items": [],
+    "primary": {
+      "fullWidth": true,
+      "alignment": "right",
+      "text": "whiteboard sticky technologies",
+      "link": {
+        "link_type": "Web",
+        "url": "https://slicemachine.dev"
+      }
+    }
+  },
+  {
+    "variation": "outlinedButton",
+    "name": "Outlined Button",
+    "slice_type": "button_slice",
+    "items": [],
+    "primary": {
+      "fullWidth": false,
+      "alignment": "left",
+      "text": "unleash bleeding-edge solutions",
+      "link": {
+        "link_type": "Web",
+        "url": "https://slicemachine.dev"
+      }
+    }
+  },
+  {
+    "variation": "linkButton",
+    "name": "Link Button",
+    "slice_type": "button_slice",
+    "items": [],
+    "primary": {
+      "fullWidth": false,
+      "alignment": "center",
+      "text": "transition interactive architectures",
+      "link": {
+        "link_type": "Web",
+        "url": "https://prismic.io"
+      }
+    }
+  }
+]
