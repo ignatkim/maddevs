@@ -2,7 +2,7 @@
   {
     "variation": "default-slice",
     "name": "Default slice",
-    "slice_type": "boilerplates_grid_slice",
+    "slice_type": "card_grid_slice",
     "items": [],
     "primary": {
       "title": [

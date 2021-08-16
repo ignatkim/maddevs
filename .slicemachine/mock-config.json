@@ -1,6 +1,6 @@
 {
   "client/prismicSlices/pageParts": {
-    "BoilerplatesGridSlice": {
+    "CardGridSlice": {
       "default-slice": {
         "items": {
           "title": {
@@ -129,6 +129,18 @@
         "primary": {}
       }
     },
-    "CreateProjectsSlice": {}
+    "CreateProjectsSlice": {},
+    "SpacerSlice": {
+      "default-slice": {
+        "primary": {
+          "color": {
+            "content": "#555555"
+          },
+          "height": {
+            "content": "50px"
+          }
+        }
+      }
+    }
   }
 }

@@ -1,0 +1,32 @@
+{
+  "id": "spacer_slice",
+  "type": "SharedSlice",
+  "name": "SpacerSlice",
+  "description": "SpacerSlice",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "SpacerSlice",
+      "primary": {
+        "height": {
+          "config": {
+            "label": "Height",
+            "placeholder": "Example: 100px or 10% or 100vh"
+          },
+          "type": "Text"
+        },
+        "color": {
+          "config": {
+            "label": "Color",
+            "placeholder": "Background color"
+          },
+          "type": "Color"
+        }
+      },
+      "items": {}
+    }
+  ]
+}
