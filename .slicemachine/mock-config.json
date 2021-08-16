@@ -129,6 +129,17 @@
         "primary": {}
       }
     },
-    "CreateProjectsSlice": {}
+    "CreateProjectsSlice": {},
+    "ButtonSlice": {
+      "default-slice": {
+        "primary": {}
+      },
+      "outlinedButton": {
+        "primary": {}
+      },
+      "linkButton": {
+        "primary": {}
+      }
+    }
   }
 }
