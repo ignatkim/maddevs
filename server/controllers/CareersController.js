@@ -1,4 +1,4 @@
-const { sendCVMail, sendCVResponseMail } = require('../services/EmailsService')
+const { sendMailFromVariables, sendCVResponseMail } = require('../services/EmailsService')
 const { sendApplication } = require('../services/HuntflowService')
 const { validate } = require('../utils/validation')
 
@@ -26,7 +26,7 @@ async function index(req, res) {
   if (!emailValidation.isValid) return res.status(emailValidation.error.status).json(emailValidation.error)
 
   const huntflowResponse = await sendApplication(huntflowReq)
-  const hrEmailResponse = await sendCVMail(emailReq.body)
+  const hrEmailResponse = await sendMailFromVariables(emailReq.body)
   const userEmailResponse = await sendCVResponseMail(emailReq.body)
 
   return res.json({ email: hrEmailResponse, userEmail: userEmailResponse, huntflow: huntflowResponse })
