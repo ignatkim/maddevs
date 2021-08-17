@@ -37,7 +37,7 @@ export default {
   computed: {
     colorThemeClass() {
       if (this.colorTheme === 'white') return 'ard-grid-with-list-slice--white-theme'
-      return 'ard-grid-with-list-slice--black-theme'
+      return 'card-grid-with-list-slice--black-theme'
     },
   },
 }
