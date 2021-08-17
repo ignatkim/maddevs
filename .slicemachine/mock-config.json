@@ -172,6 +172,11 @@
       "default-slice": {
         "primary": {}
       }
+    },
+    "CustomerRatesSlice": {
+      "default-slice": {
+        "primary": {}
+      }
     }
   }
 }

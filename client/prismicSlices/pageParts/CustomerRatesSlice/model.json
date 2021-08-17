@@ -1,0 +1,32 @@
+{
+  "id": "customer_rates_slice",
+  "type": "SharedSlice",
+  "name": "CustomerRatesSlice",
+  "description": "CustomerRatesSlice",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "CustomerRatesSlice",
+      "primary": {},
+      "items": {
+        "title": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "subtitle": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        }
+      }
+    }
+  ]
+}
