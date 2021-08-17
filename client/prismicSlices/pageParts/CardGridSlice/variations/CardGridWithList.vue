@@ -48,7 +48,7 @@ export default {
     margin-bottom: 46px;
   }
 
-  .ard-grid-with-list-slice {
+  .card-grid-with-list-slice {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 48px;
@@ -68,7 +68,7 @@ export default {
         grid-column: auto/span 2;
       }
       &:hover {
-        .ard-grid-with-list-slice__item-button {
+        .card-grid-with-list-slice__item-button {
           background-color: $text-color--black-oil;
           color: $text-color--white-primary;
         }
