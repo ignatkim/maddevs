@@ -1,21 +1,27 @@
 <template>
   <section
-    class="container"
+    class="card-grid-with-list-slice"
     :class="colorThemeClass"
   >
-    <ul class="card-grid-with-list-slice">
-      <li
-        v-for="(item, i) of items"
-        :key="`card-grid-with-list-slice__item-${i}`"
-        class="card-grid-with-list-slice__item"
-        :class="{ 'ard-grid-with-list-slice__item--full-width': item.fullWidth }"
-      >
-        <div class="card-grid-with-list-slice__item-info">
+    <div class="container">
+      <ul>
+        <li
+          v-for="(item, i) of items"
+          :key="`item-${i}`"
+          :class="{ 'full-width': item.fullWidth }"
+        >
           <h3 v-html="item.title" />
           <p v-html="item.description[0].text" />
-        </div>
-      </li>
-    </ul>
+
+          <div
+            v-for="(text, j) of item.list && item.list.split(', ')"
+            :key="`list-item-${j}`"
+          >
+            {{ text }}
+          </div>
+        </li>
+      </ul>
+    </div>
   </section>
 </template>
 
@@ -36,7 +42,7 @@ export default {
 
   computed: {
     colorThemeClass() {
-      if (this.colorTheme === 'white') return 'ard-grid-with-list-slice--white-theme'
+      if (this.colorTheme === 'white') return 'card-grid-with-list-slice--white-theme'
       return 'card-grid-with-list-slice--black-theme'
     },
   },
@@ -44,127 +50,102 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .title-desc {
-    margin-bottom: 46px;
-  }
-
   .card-grid-with-list-slice {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 48px;
+    background-color: #111213;
 
-    @media screen and (max-width: 1260px) {
-      grid-gap: 24px;
-    }
-
-    @media screen and (max-width: 1090px) {
-      grid-template-columns: 1fr;
-    }
-
-    &__item {
-      background-color: $bgcolor--silver;
-      border-radius: 4px;
-      &--full-width {
-        grid-column: auto/span 2;
-      }
-      &:hover {
-        .card-grid-with-list-slice__item-button {
-          background-color: $text-color--black-oil;
-          color: $text-color--white-primary;
-        }
-      }
-      &-link {
-        padding: 90px 112px 0;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        text-align: center;
-        width: 100%;
-        height: 100%;
-        color: $text-color--black-oil;
-        word-break: break-word;
-        &--bottom-padding {
-          padding-bottom: 104px;
-        }
-      }
-      &-info {
-        h3 {
-          font-size: 56px;
-          line-height: 60px;
-          letter-spacing: -0.013em;
-        }
-        p {
-          margin-top: 31px;
-          font-size: 20px;
-          line-height: 29px;
-          letter-spacing: -0.013em;
-          max-width: 814px;
-        }
-      }
-      &-button {
-        margin: 40px auto 0;
-      }
-      &-logo {
-        margin-top: 45px;
-        display: block;
-        line-height: 1;
-        max-width: 75%;
-        width: auto;
-        height: auto;
-      }
+    ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 48px;
 
       @media screen and (max-width: 1260px) {
-        &-info {
-          h3 {
+        grid-gap: 24px;
+      }
+
+      @media screen and (max-width: 1090px) {
+        grid-template-columns: 1fr;
+      }
+
+      li {
+        background-color: #1D1D1F;
+        padding: 80px;
+        border-radius: 4px;
+
+        @media screen and (max-width: 768px) {
+          padding: 32px;
+        }
+
+        h3 {
+          @include font('Inter', 56px, 800);
+          line-height: 60px;
+          letter-spacing: -0.013em;
+          color: #fff;
+
+          @media screen and (max-width: 1260px) {
             font-size: 40px;
             line-height: 48px;
           }
-          p {
+
+          @media screen and (max-width: 768px) {
+            font-size: 32px;
+          }
+        }
+        p {
+          margin-top: 31px;
+          @include font('Inter', 20px, 400);
+          line-height: 29px;
+          letter-spacing: -0.013em;
+          color: #fff;
+          margin-bottom: 40px;
+
+          @media screen and (max-width: 1260px) {
             margin-top: 16px;
             font-size: 17px;
             line-height: 25px;
           }
         }
+
+        > div {
+          color: #fff;
+          @include font('Inter', 24px, 400);
+          line-height: 140%;
+          letter-spacing: -0.013em;
+          margin-bottom: 10px;
+          position: relative;
+          padding-left: 40px;
+
+          @media screen and (max-width: 768px) {
+            font-size: 20px;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          &:before {
+            content: '';
+            width: 25px;
+            height: 2px;
+            background-color: #EC1C24;
+            position: absolute;
+            top: 16px;
+            left: 0;
+          }
+        }
       }
+    }
+
+    .full-width {
+      grid-column: auto/span 2;
 
       @media screen and (max-width: 1090px) {
-        /deep/ br {
-          display: none;
-        }
-        &--full-width {
-          grid-column: auto;
-        }
+        grid-column: 1;
       }
 
-      @media screen and (max-width: 1024px) {
-        &-link {
-          padding-top: 51px;
-          &--bottom-padding {
-            padding-bottom: 65px;
-          }
-        }
-        &-button {
-          margin-top: 28px;
-        }
-        &-logo {
-          margin-top: 30px;
-        }
-      }
-
-      @media screen and (max-width: 768px) {
-        &-link {
-          padding: 29px 20px 0;
-          &--bottom-padding {
-            padding-bottom: 43px;
-          }
-        }
-        &-info {
-          h3 {
-            font-size: 32px;
-          }
-        }
+      h3,
+      p {
+        width: 100% !important;
+        text-align: center !important;
       }
     }
   }
