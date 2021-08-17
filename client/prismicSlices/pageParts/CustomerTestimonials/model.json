@@ -1,0 +1,25 @@
+{
+  "id": "customer_testimonials",
+  "type": "SharedSlice",
+  "name": "CustomerTestimonials",
+  "description": "CustomerTestimonials",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "CustomerTestimonials",
+      "primary": {
+        "title": {
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          },
+          "type": "Text"
+        }
+      },
+      "items": {}
+    }
+  ]
+}

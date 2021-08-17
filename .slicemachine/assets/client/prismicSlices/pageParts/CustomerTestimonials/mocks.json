@@ -1,0 +1,11 @@
+[
+  {
+    "variation": "default-slice",
+    "name": "Default slice",
+    "slice_type": "customer_testimonials",
+    "items": [],
+    "primary": {
+      "title": "Customer Testimonials"
+    }
+  }
+]

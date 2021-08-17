@@ -5,7 +5,7 @@
   >
     <div class="container">
       <h2 class="customer-testimonials__title">
-        Customer Testimonials
+        {{ title }}
       </h2>
       <div class="customer-testimonials__content-wrap">
         <div class="customer-testimonials__widget-col">
@@ -76,6 +76,13 @@ import { customerTestimonials as testimonials } from '@/data/customerTestimonial
 
 export default {
   name: 'CustomerTestimonials',
+  props: {
+    title: {
+      type: String,
+      default: 'Customer Testimonials',
+    },
+  },
+
   data() {
     return {
       testimonials,

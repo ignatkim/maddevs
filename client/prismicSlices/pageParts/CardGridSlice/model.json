@@ -66,6 +66,52 @@
           "type": "Boolean"
         }
       }
+    },
+    {
+      "id": "cardGridWithList",
+      "name": "Card Grid With List",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Card Grid slice",
+      "primary": {
+        "colorTheme": {
+          "config": {
+            "label": "Theme color",
+            "placeholder": "",
+            "options": [
+              "white",
+              "black"
+            ],
+            "default_value": "white"
+          },
+          "type": "Select"
+        }
+      },
+      "items": {
+        "title": {
+          "config": {
+            "label": "Main Title",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "description": {
+          "config": {
+            "label": "Main Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          },
+          "type": "StructuredText"
+        },
+        "list": {
+          "config": {
+            "label": "List",
+            "placeholder": "Example: item 1, item 2, item 3"
+          },
+          "type": "Text"
+        }
+      }
     }
   ]
 }

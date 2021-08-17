@@ -1,19 +1,19 @@
 {
   "client/prismicSlices/pageParts": {
     "CardGridSlice": {
-      "default-slice": {
+      "cardGridWithList": {
         "items": {
           "title": {
-            "content": "Title card"
-          },
-          "fullWidth": {
-            "content": false
-          },
-          "image": {
-            "content": "https://d6xkme6dcvajw.cloudfront.net/images/OpenSource/svg/amazon.svg"
+            "content": "Main title"
           },
           "description": {
-            "content": "Description of card"
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "list": {
+            "content": "Occaecat voluptate nostrud, Velit esse incididunt, Lorem consequat culpa esse, Dolor occaecat proident"
           }
         },
         "primary": {}
@@ -166,6 +166,15 @@
     "TechnologiesSlice": {
       "default-slice": {
         "primary": {}
+      }
+    },
+    "CustomerTestimonials": {
+      "default-slice": {
+        "primary": {
+          "title": {
+            "content": "Customer Testimonials"
+          }
+        }
       }
     }
   }

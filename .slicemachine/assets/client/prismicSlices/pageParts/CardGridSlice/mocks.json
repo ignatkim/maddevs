@@ -5,11 +5,11 @@
     "slice_type": "card_grid_slice",
     "items": [
       {
-        "title": "deliver cross-media solutions",
-        "description": "disintermediate bleeding-edge content",
+        "title": "streamline innovative paradigms",
+        "description": "synergize collaborative supply-chains",
         "btnLink": {
           "link_type": "Web",
-          "url": "https://slicemachine.dev"
+          "url": "http://google.com"
         },
         "image": {
           "dimensions": {
@@ -18,13 +18,13 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?w=900&h=500&fit=crop"
         },
-        "fullWidth": true
+        "fullWidth": false
       },
       {
-        "title": "e-enable killer users",
-        "description": "engage cutting-edge interfaces",
+        "title": "e-enable open-source convergence",
+        "description": "disintermediate value-added schemas",
         "btnLink": {
           "link_type": "Web",
           "url": "https://prismic.io"
@@ -36,9 +36,70 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88?w=900&h=500&fit=crop"
+        },
+        "fullWidth": false
+      },
+      {
+        "title": "deliver plug-and-play partnerships",
+        "description": "matrix leading-edge relationships",
+        "btnLink": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        },
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?w=900&h=500&fit=crop"
         },
         "fullWidth": true
+      }
+    ],
+    "primary": {
+      "colorTheme": "white"
+    }
+  },
+  {
+    "variation": "cardGridWithList",
+    "name": "Card Grid With List",
+    "slice_type": "card_grid_slice",
+    "items": [
+      {
+        "title": "grow open-source paradigms",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Eiusmod ad eiusmod sit laborum amet qui pariatur. Dolore qui deserunt sunt proident cillum cillum consectetur veniam laborum non consequat aliquip.",
+            "spans": []
+          }
+        ],
+        "list": "Occaecat voluptate nostrud, Velit esse incididunt, Lorem consequat culpa esse, Dolor occaecat proident"
+      },
+      {
+        "title": "monetize web-enabled platforms",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Reprehenderit reprehenderit amet eu consectetur id mollit laborum nulla laborum enim cupidatat.",
+            "spans": []
+          }
+        ],
+        "list": "Occaecat voluptate nostrud, Velit esse incididunt, Lorem consequat culpa esse, Dolor occaecat proident"
+      },
+      {
+        "title": "extend integrated platforms",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Reprehenderit enim ex ad id aliqua laboris ea enim non excepteur nulla occaecat est laborum minim. Do adipisicing sunt ea ea nisi ipsum anim ipsum tempor ex.",
+            "spans": []
+          }
+        ],
+        "list": "Occaecat voluptate nostrud, Velit esse incididunt, Lorem consequat culpa esse, Dolor occaecat proident"
       }
     ],
     "primary": {
