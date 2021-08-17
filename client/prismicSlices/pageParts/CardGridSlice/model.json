@@ -10,7 +10,20 @@
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
       "description": "Card Grid slice",
-      "primary": {},
+      "primary": {
+        "colorTheme": {
+          "config": {
+            "label": "Theme color",
+            "placeholder": "",
+            "options": [
+              "white",
+              "black"
+            ],
+            "default_value": "white"
+          },
+          "type": "Select"
+        }
+      },
       "items": {
         "title": {
           "config": {

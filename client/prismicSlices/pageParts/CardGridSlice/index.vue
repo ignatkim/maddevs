@@ -1,5 +1,8 @@
 <template>
-  <section class="container">
+  <section
+    class="container"
+    :class="colorThemeClass"
+  >
     <ul class="card-grid-slice">
       <li
         v-for="(item, i) of slice.items"
@@ -53,6 +56,19 @@ export default {
       default() {
         return {}
       },
+    },
+  },
+
+  data() {
+    return {
+      colorTheme: this.slice.primary.colorTheme,
+    }
+  },
+
+  computed: {
+    colorThemeClass() {
+      if (this.colorTheme === 'white') return 'card-grid-slice--white-theme'
+      return 'card-grid-slice--black-theme'
     },
   },
 }

@@ -1,12 +1,9 @@
 <template>
-  <section class="customer-logo-slice">
+  <section
+    class="customer-logo-slice"
+    :class="colorThemeClass"
+  >
     <div class="container">
-      <h2 v-if="slice.primary.title">
-        {{ slice.primary.title }}
-      </h2>
-      <p v-if="slice.primary.description">
-        {{ slice.primary.description }}
-      </p>
       <div class="customer-logo-slice_list">
         <div
           v-for="(item, i) of slice.items"
@@ -37,6 +34,13 @@ export default {
       },
     },
   },
+
+  computed: {
+    colorThemeClass() {
+      if (this.slice?.primary?.colorTheme === 'white') return 'customer-logo-slice--white-theme'
+      return 'customer-logo-slice--black-theme'
+    },
+  },
 }
 </script>
 
@@ -48,34 +52,11 @@ export default {
     align-items: center;
   }
 
-  h2 {
-    width: 100%;
-    text-align: center;
-    @include h2-title;
-    width: max-content;
-    color: #101113;
-    padding-bottom: 4px;
-  }
-
-  p {
-    width: 680px;
-    text-align: center;
-    @include font('Inter', 14px, 400);
-    line-height: 22px;
-    letter-spacing: -0.02em;
-    color: #101113;
-
-    @media only screen and (max-width: 834px) {
-      width: 395px;
-    }
-  }
-
   &_list {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-gap: 20px;
-    margin-top: 40px;
 
     @media only screen and (max-width: 1300px) {
       grid-template-columns: repeat(5, 1fr);
@@ -114,7 +95,6 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #191A1B;
     padding: 24px 8px;
     box-sizing: border-box;
 
@@ -131,6 +111,22 @@ export default {
         width: 75px;
         height: 33px;
       }
+    }
+  }
+
+  // ---- Themes ---- //
+  &--white-theme {
+    background-color: #fff;
+
+    .customer-logo-slice_logo {
+      background-color: #fff;
+    }
+  }
+  &--black-theme {
+    background-color: #111213;
+
+    .customer-logo-slice_logo {
+      background-color: #191A1B;
     }
   }
 }

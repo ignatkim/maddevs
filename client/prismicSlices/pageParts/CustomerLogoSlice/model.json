@@ -11,19 +11,17 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "Customer Logo Slice",
       "primary": {
-        "title": {
+        "colorTheme": {
           "config": {
-            "label": "Title",
-            "placeholder": ""
+            "label": "Theme color",
+            "placeholder": "",
+            "options": [
+              "white",
+              "black"
+            ],
+            "default_value": "white"
           },
-          "type": "Text"
-        },
-        "description": {
-          "config": {
-            "label": "Description",
-            "placeholder": ""
-          },
-          "type": "Text"
+          "type": "Select"
         }
       },
       "items": {
