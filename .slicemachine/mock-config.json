@@ -190,6 +190,10 @@
         "primary": {}
       }
     },
-    "ProjectStartSlice": {}
+    "ProjectStartSlice": {
+      "default-slice": {
+        "primary": {}
+      }
+    }
   }
 }
