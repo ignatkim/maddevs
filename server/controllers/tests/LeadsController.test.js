@@ -4,7 +4,7 @@ import * as emailsService from '../../services/EmailsService'
 import * as leadsService from '../../services/LeadsService'
 
 jest.mock('../../services/EmailsService', () => ({
-  sendEmail: jest.fn(),
+  sendMailFromVariables: jest.fn(),
 }))
 
 jest.mock('../../services/LeadsService', () => ({
@@ -15,7 +15,7 @@ jest.mock('../../services/LeadsService', () => ({
 const sendEmail = jest.fn()
 const createLead = jest.fn(() => Promise.resolve({ data: 'data' }))
 
-emailsService.sendEmail.mockImplementation(sendEmail)
+emailsService.sendMailFromVariables.mockImplementation(sendEmail)
 leadsService.createLead.mockImplementation(createLead)
 
 describe('leadsController', () => {
@@ -56,7 +56,7 @@ describe('leadsController', () => {
     req.body.variables = {}
     const data = await controller.create(req, res)
     expect(data).toEqual({ data: 'data' })
-    expect(emailsService.sendEmail).toHaveBeenCalledTimes(1)
+    expect(emailsService.sendMailFromVariables).toHaveBeenCalledTimes(1)
     expect(leadsService.createLead).toHaveBeenCalledTimes(1)
   })
 })

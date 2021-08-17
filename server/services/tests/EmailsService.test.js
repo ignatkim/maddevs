@@ -1,3 +1,4 @@
+import 'regenerator-runtime'
 import * as emailsService from '../EmailsService'
 
 jest.mock('sendpulse-api', () => ({
@@ -5,24 +6,25 @@ jest.mock('sendpulse-api', () => ({
   smtpSendMail: jest.fn((cb, email) => cb(email)),
 }))
 
-describe('emailsService', () => {
+describe('EmailsService', () => {
   const req = {
     body: {
       variables: {
         modalTitle: 'title',
         emailTo: 'user',
         subject: 'subject',
+        fullName: 'John Doe',
+        email: 'johndoe@g.com',
       },
       templateId: 123,
       attachment: null,
     },
   }
 
-  const callback = jest.fn()
+  it('should correctly called sendMailFromVariables', async () => {
+    const result = await emailsService.sendMailFromVariables(req.body)
 
-  it('should correctly call sendEmail and call some sendpulse methods', () => {
-    emailsService.sendEmail(req, callback)
-    expect(callback).toHaveBeenCalledWith({
+    expect(result).toEqual({
       subject: req.body.variables.subject,
       template: {
         id: req.body.templateId, // required
@@ -41,32 +43,25 @@ describe('emailsService', () => {
     })
   })
 
-  it('should correctly call sendEmail and call some sendpulse methods with attachment', () => {
-    req.body.attachment = {
-      name: 'name',
-      base64: 'base64',
-    }
+  it('should correctly called sendCVResponseMail', async () => {
+    const result = await emailsService.sendCVResponseMail(req.body)
 
-    emailsService.sendEmail(req, callback)
-    expect(callback).toHaveBeenCalledWith({
+    expect(result).toEqual({
       subject: req.body.variables.subject,
       template: {
-        id: req.body.templateId, // required
+        id: 638666, // required
         variables: req.body.variables,
       },
       from: {
-        name: req.body.variables.modalTitle,
+        name: 'Mad Devs HR department',
         email: 'marketing@maddevs.io',
       },
       to: [
         {
-          name: 'Mad Devs team',
-          email: req.body.variables.emailTo,
+          name: 'John Doe',
+          email: 'johndoe@g.com',
         },
       ],
-      attachments_binary: {
-        name: 'base64',
-      },
     })
   })
 })
