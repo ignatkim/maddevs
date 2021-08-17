@@ -1,15 +1,13 @@
 <template>
   <section class="card-grid-main">
-    <div class="container">
-      <CardGrid
-        v-if="slice.variation === 'default-slice'"
-        v-bind="slice.primary"
-      />
-      <CardGridWithList
-        v-else-if="slice.variation === 'cardGridWithList'"
-        v-bind="slice"
-      />
-    </div>
+    <CardGrid
+      v-if="slice.variation === 'default-slice'"
+      v-bind="slice.primary"
+    />
+    <CardGridWithList
+      v-else-if="slice.variation === 'cardGridWithList'"
+      v-bind="slice"
+    />
   </section>
 </template>
 
