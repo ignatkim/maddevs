@@ -110,6 +110,15 @@
             "placeholder": "Example: item 1, item 2, item 3"
           },
           "type": "Text"
+        },
+        "fullWidth": {
+          "config": {
+            "label": "100% or 50%",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": true
+          },
+          "type": "Boolean"
         }
       }
     }
