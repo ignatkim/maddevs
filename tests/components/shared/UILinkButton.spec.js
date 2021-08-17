@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/vue'
+import { render, fireEvent, screen } from '@testing-library/vue'
 import UILinkButton from '@/components/shared/UILinkButton'
 
 describe('UILinkButton component', () => {
@@ -18,5 +18,17 @@ describe('UILinkButton component', () => {
 
     expect(screen.queryByText('Link button')).toBeNull()
     expect(container).toMatchSnapshot()
+  })
+
+  it('should correctly handle click', async () => {
+    const { emitted } = render(UILinkButton, {
+      slots: {
+        default: 'Button',
+      },
+    })
+
+    const btn = screen.getByText('Button')
+    await fireEvent.click(btn)
+    expect(emitted().click).toHaveLength(1)
   })
 })
