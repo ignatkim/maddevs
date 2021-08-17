@@ -5,11 +5,11 @@
     "slice_type": "card_grid_slice",
     "items": [
       {
-        "title": "streamline innovative paradigms",
-        "description": "synergize collaborative supply-chains",
+        "title": "envisioneer open-source e-business",
+        "description": "mesh sexy e-tailers",
         "btnLink": {
           "link_type": "Web",
-          "url": "http://google.com"
+          "url": "https://slicemachine.dev"
         },
         "image": {
           "dimensions": {
@@ -18,13 +18,67 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=900&h=500&fit=crop"
         },
         "fullWidth": false
       },
       {
-        "title": "e-enable open-source convergence",
-        "description": "disintermediate value-added schemas",
+        "title": "synergize efficient mindshare",
+        "description": "seize viral paradigms",
+        "btnLink": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=900&h=500&fit=crop"
+        },
+        "fullWidth": false
+      },
+      {
+        "title": "productize world-class markets",
+        "description": "enhance extensible eyeballs",
+        "btnLink": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1547082299-de196ea013d6?w=900&h=500&fit=crop"
+        },
+        "fullWidth": true
+      },
+      {
+        "title": "grow interactive bandwidth",
+        "description": "transition intuitive channels",
+        "btnLink": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&h=500&fit=crop"
+        },
+        "fullWidth": true
+      },
+      {
+        "title": "deploy ubiquitous platforms",
+        "description": "embrace real-time technologies",
         "btnLink": {
           "link_type": "Web",
           "url": "https://prismic.io"
@@ -36,25 +90,7 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88?w=900&h=500&fit=crop"
-        },
-        "fullWidth": false
-      },
-      {
-        "title": "deliver plug-and-play partnerships",
-        "description": "matrix leading-edge relationships",
-        "btnLink": {
-          "link_type": "Web",
-          "url": "http://twitter.com"
-        },
-        "image": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1587840171670-8b850147754e?w=900&h=500&fit=crop"
         },
         "fullWidth": true
       }
@@ -69,41 +105,80 @@
     "slice_type": "card_grid_slice",
     "items": [
       {
-        "title": "grow open-source paradigms",
+        "title": "innovate e-business technologies",
         "description": [
           {
             "type": "paragraph",
-            "text": "Eiusmod ad eiusmod sit laborum amet qui pariatur. Dolore qui deserunt sunt proident cillum cillum consectetur veniam laborum non consequat aliquip.",
+            "text": "Mollit culpa commodo id labore aute incididunt dolore. Eiusmod labore adipisicing sit ullamco.",
             "spans": []
           }
         ],
-        "list": "Occaecat voluptate nostrud, Velit esse incididunt, Lorem consequat culpa esse, Dolor occaecat proident"
+        "list": "enhance intuitive networks",
+        "fullWidth": false
       },
       {
-        "title": "monetize web-enabled platforms",
+        "title": "grow 24/365 platforms",
         "description": [
           {
             "type": "paragraph",
-            "text": "Reprehenderit reprehenderit amet eu consectetur id mollit laborum nulla laborum enim cupidatat.",
+            "text": "Minim ut amet ut in velit sunt aute minim aliqua.",
             "spans": []
           }
         ],
-        "list": "Occaecat voluptate nostrud, Velit esse incididunt, Lorem consequat culpa esse, Dolor occaecat proident"
+        "list": "empower virtual synergies",
+        "fullWidth": true
       },
       {
-        "title": "extend integrated platforms",
+        "title": "iterate distributed e-services",
         "description": [
           {
             "type": "paragraph",
-            "text": "Reprehenderit enim ex ad id aliqua laboris ea enim non excepteur nulla occaecat est laborum minim. Do adipisicing sunt ea ea nisi ipsum anim ipsum tempor ex.",
+            "text": "Ut consectetur cupidatat aute exercitation ipsum est veniam in incididunt laborum deserunt occaecat ea laboris enim. In velit consectetur amet fugiat esse aliquip et do aliquip do dolore qui velit laboris fugiat.",
             "spans": []
           }
         ],
-        "list": "Occaecat voluptate nostrud, Velit esse incididunt, Lorem consequat culpa esse, Dolor occaecat proident"
+        "list": "brand 24/7 infomediaries",
+        "fullWidth": false
+      },
+      {
+        "title": "target viral channels",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "In nostrud sunt esse fugiat qui. Exercitation dolore esse ipsum proident cupidatat anim.",
+            "spans": []
+          }
+        ],
+        "list": "leverage strategic action-items",
+        "fullWidth": true
+      },
+      {
+        "title": "drive ubiquitous solutions",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Laboris consectetur excepteur labore eu proident labore laborum sint esse tempor excepteur duis ad exercitation. Lorem ad ipsum cupidatat ad duis sint laborum commodo nostrud labore irure proident.",
+            "spans": []
+          }
+        ],
+        "list": "enable 24/365 supply-chains",
+        "fullWidth": false
+      },
+      {
+        "title": "syndicate killer platforms",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Pariatur nisi eu minim laborum esse veniam non veniam laborum culpa.",
+            "spans": []
+          }
+        ],
+        "list": "facilitate collaborative web services",
+        "fullWidth": true
       }
     ],
     "primary": {
-      "colorTheme": "black"
+      "colorTheme": "white"
     }
   }
 ]
