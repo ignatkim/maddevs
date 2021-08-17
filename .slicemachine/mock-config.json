@@ -133,9 +133,6 @@
     "SpacerSlice": {
       "default-slice": {
         "primary": {
-          "color": {
-            "content": "#555555"
-          },
           "height": {
             "content": "100px"
           },

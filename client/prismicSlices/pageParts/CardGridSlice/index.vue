@@ -18,7 +18,7 @@ import CardGrid from './variations/CardGrid'
 import CardGridWithList from './variations/CardGridWithList'
 
 export default {
-  name: 'TextSlice',
+  name: 'CardGridMain',
   components: {
     CardGrid,
     CardGridWithList,

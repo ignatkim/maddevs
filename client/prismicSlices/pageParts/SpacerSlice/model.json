@@ -18,13 +18,6 @@
           },
           "type": "Text"
         },
-        "color": {
-          "config": {
-            "label": "Color",
-            "placeholder": "Background color"
-          },
-          "type": "Color"
-        },
         "height-sm": {
           "config": {
             "label": "Height SM",
@@ -52,6 +45,17 @@
             "placeholder": "1024px - 1440px"
           },
           "type": "Text"
+        },
+        "background": {
+          "config": {
+            "label": "Background",
+            "placeholder": "",
+            "options": [
+              "white",
+              "black"
+            ]
+          },
+          "type": "Select"
         }
       },
       "items": {}

@@ -14,16 +14,6 @@
           <h3 v-html="item.title" />
           <p v-html="item.description[0].text" />
         </div>
-
-        {{ item.list }} !!!!!
-
-        <!-- <div
-          v-for="(v, j) of item.list[0].text.split(', ')"
-          :key="`card-grid-with-list-slice__items-list_item-${j}`"
-          class="card-grid-with-list-slice__items-list"
-        >
-          {{ v }}
-        </div> -->
       </li>
     </ul>
   </section>
@@ -31,7 +21,7 @@
 
 <script>
 export default {
-  name: 'CardGridSlice',
+  name: 'CardGridWithListSlice',
   props: {
     colorTheme: {
       type: String,
