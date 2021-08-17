@@ -4,13 +4,18 @@
     :class="colorThemeClass"
   >
     <div class="container">
-      <WithLeftTitle
+      <FirstVariation
         v-if="slice.variation === 'default-slice'"
         v-bind="slice.primary"
         :metrics="slice.items"
       />
-      <WithTopTitle
-        v-else-if="slice.variation === 'withTopTitle'"
+      <SecondVariation
+        v-else-if="slice.variation === 'secondVariation'"
+        v-bind="slice.primary"
+        :metrics="slice.items"
+      />
+      <ThirdVariation
+        v-else-if="slice.variation === 'thirdVariation'"
         v-bind="slice.primary"
         :metrics="slice.items"
       />
@@ -19,14 +24,16 @@
 </template>
 
 <script>
-import WithLeftTitle from './variations/WithLeftTitle'
-import WithTopTitle from './variations/WithTopTitle'
+import FirstVariation from './variations/FirstVariation'
+import SecondVariation from './variations/SecondVariation'
+import ThirdVariation from './variations/ThirdVariation'
 
 export default {
   name: 'KeyMetricsSlice',
   components: {
-    WithLeftTitle,
-    WithTopTitle,
+    FirstVariation,
+    SecondVariation,
+    ThirdVariation,
   },
 
   props: {
