@@ -1,5 +1,5 @@
 <template>
-  <section class="text-slice">
+  <section class="card-grid-main">
     <div class="container">
       <CardGrid
         v-if="slice.variation === 'default-slice'"
