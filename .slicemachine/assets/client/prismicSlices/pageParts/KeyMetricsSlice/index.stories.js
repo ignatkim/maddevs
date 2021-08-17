@@ -18,14 +18,14 @@ export const _DefaultSlice = () => ({
   },
   data() {
     return {
-      mock: {"variation":"default-slice","name":"Default slice","slice_type":"key_metrics_slice","items":[{"title":"deliver B2B initiatives","subtitle":"leverage B2C portals"},{"title":"drive back-end initiatives","subtitle":"revolutionize collaborative interfaces"},{"title":"generate innovative web-readiness","subtitle":"evolve scalable deliverables"},{"title":"benchmark revolutionary e-commerce","subtitle":"extend rich users"}],"primary":{"colorTheme":"white"},"id":"_DefaultSlice"}
+      mock: {"variation":"default-slice","name":"Default slice","slice_type":"key_metrics_slice","items":[{"title":"facilitate bleeding-edge e-markets","subtitle":"iterate robust ROI"},{"title":"enhance open-source blockchains","subtitle":"implement bleeding-edge infomediaries"},{"title":"architect vertical infrastructures","subtitle":"enable scalable systems"},{"title":"engage world-class ROI","subtitle":"deploy interactive models"}],"primary":{"colorTheme":"black"},"id":"_DefaultSlice"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
 })
 _DefaultSlice.storyName = 'Default slice'
 
-export const _WithTopTitle = () => ({
+export const _SecondVariation = () => ({
   components: {
     MyComponent,
     SliceZone
@@ -37,9 +37,28 @@ export const _WithTopTitle = () => ({
   },
   data() {
     return {
-      mock: {"variation":"withTopTitle","name":"With Top Title","slice_type":"key_metrics_slice","items":[{"title":"redefine clicks-and-mortar experiences","subtitle":"harness intuitive channels"},{"title":"exploit user-centric systems","subtitle":"integrate extensible vortals"},{"title":"transition sticky partnerships","subtitle":"extend dot-com e-commerce"}],"primary":{"colorTheme":"white"},"id":"_WithTopTitle"}
+      mock: {"variation":"secondVariation","name":"Second variation","slice_type":"key_metrics_slice","items":[{"title":"morph mission-critical relationships","subtitle":"engage proactive infrastructures"},{"title":"matrix B2C blockchains","subtitle":"generate distributed infomediaries"}],"primary":{"colorTheme":"white"},"id":"_SecondVariation"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
 })
-_WithTopTitle.storyName = 'With Top Title'
+_SecondVariation.storyName = 'Second variation'
+
+export const _ThirdVariation = () => ({
+  components: {
+    MyComponent,
+    SliceZone
+  },
+  methods: {
+    resolve() {
+      return MyComponent
+    }
+  },
+  data() {
+    return {
+      mock: {"variation":"thirdVariation","name":"Third variation","slice_type":"key_metrics_slice","items":[{"title":"deploy impactful infrastructures","subtitle":"grow seamless mindshare"},{"title":"repurpose mission-critical experiences","subtitle":"maximize innovative content"},{"title":"brand intuitive action-items","subtitle":"enhance user-centric networks"},{"title":"reintermediate interactive partnerships","subtitle":"incentivize 24/365 paradigms"},{"title":"disintermediate dynamic infrastructures","subtitle":"visualize bricks-and-clicks eyeballs"}],"primary":{"colorTheme":"black"},"id":"_ThirdVariation"}
+    }
+  },
+  template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
+})
+_ThirdVariation.storyName = 'Third variation'

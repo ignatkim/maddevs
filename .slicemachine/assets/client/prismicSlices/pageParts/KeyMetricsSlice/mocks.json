@@ -5,20 +5,38 @@
     "slice_type": "key_metrics_slice",
     "items": [
       {
-        "title": "deliver B2B initiatives",
-        "subtitle": "leverage B2C portals"
+        "title": "facilitate bleeding-edge e-markets",
+        "subtitle": "iterate robust ROI"
       },
       {
-        "title": "drive back-end initiatives",
-        "subtitle": "revolutionize collaborative interfaces"
+        "title": "enhance open-source blockchains",
+        "subtitle": "implement bleeding-edge infomediaries"
       },
       {
-        "title": "generate innovative web-readiness",
-        "subtitle": "evolve scalable deliverables"
+        "title": "architect vertical infrastructures",
+        "subtitle": "enable scalable systems"
       },
       {
-        "title": "benchmark revolutionary e-commerce",
-        "subtitle": "extend rich users"
+        "title": "engage world-class ROI",
+        "subtitle": "deploy interactive models"
+      }
+    ],
+    "primary": {
+      "colorTheme": "black"
+    }
+  },
+  {
+    "variation": "secondVariation",
+    "name": "Second variation",
+    "slice_type": "key_metrics_slice",
+    "items": [
+      {
+        "title": "morph mission-critical relationships",
+        "subtitle": "engage proactive infrastructures"
+      },
+      {
+        "title": "matrix B2C blockchains",
+        "subtitle": "generate distributed infomediaries"
       }
     ],
     "primary": {
@@ -26,25 +44,33 @@
     }
   },
   {
-    "variation": "withTopTitle",
-    "name": "With Top Title",
+    "variation": "thirdVariation",
+    "name": "Third variation",
     "slice_type": "key_metrics_slice",
     "items": [
       {
-        "title": "redefine clicks-and-mortar experiences",
-        "subtitle": "harness intuitive channels"
+        "title": "deploy impactful infrastructures",
+        "subtitle": "grow seamless mindshare"
       },
       {
-        "title": "exploit user-centric systems",
-        "subtitle": "integrate extensible vortals"
+        "title": "repurpose mission-critical experiences",
+        "subtitle": "maximize innovative content"
       },
       {
-        "title": "transition sticky partnerships",
-        "subtitle": "extend dot-com e-commerce"
+        "title": "brand intuitive action-items",
+        "subtitle": "enhance user-centric networks"
+      },
+      {
+        "title": "reintermediate interactive partnerships",
+        "subtitle": "incentivize 24/365 paradigms"
+      },
+      {
+        "title": "disintermediate dynamic infrastructures",
+        "subtitle": "visualize bricks-and-clicks eyeballs"
       }
     ],
     "primary": {
-      "colorTheme": "white"
+      "colorTheme": "black"
     }
   }
 ]

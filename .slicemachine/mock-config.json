@@ -126,10 +126,15 @@
     },
     "KeyMetricsSlice": {
       "default-slice": {
-        "primary": {}
-      },
-      "withTopTitle": {
-        "primary": {}
+        "primary": {},
+        "items": {
+          "title": {
+            "content": "10M+"
+          },
+          "subtitle": {
+            "content": "US dollars raised by 5 customer startups  in 2019."
+          }
+        }
       }
     },
     "CreateProjectsSlice": {},
@@ -167,6 +172,11 @@
       "linkButton": {}
     },
     "TechnologiesSlice": {
+      "default-slice": {
+        "primary": {}
+      }
+    },
+    "CustomerRatesSlice": {
       "default-slice": {
         "primary": {}
       }

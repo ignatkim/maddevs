@@ -42,8 +42,45 @@
       }
     },
     {
-      "id": "withTopTitle",
-      "name": "With Top Title",
+      "id": "secondVariation",
+      "name": "Second variation",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "KeyMetricsSlice",
+      "primary": {
+        "colorTheme": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "options": [
+              "white",
+              "black"
+            ],
+            "default_value": "white"
+          },
+          "type": "Select"
+        }
+      },
+      "items": {
+        "title": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "subtitle": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        }
+      }
+    },
+    {
+      "id": "thirdVariation",
+      "name": "Third variation",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
       "description": "KeyMetricsSlice",

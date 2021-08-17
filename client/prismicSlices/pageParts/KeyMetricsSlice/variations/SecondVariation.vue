@@ -36,7 +36,7 @@ export default {
 <style lang="scss" scoped>
 .key-metrics-slice {
   &__title {
-    @include font('Inter', 42px, 900);
+    @include font('Inter', 42px, 700);
     line-height: 46px;
     letter-spacing: -1.3px;
     margin-bottom: 28px;

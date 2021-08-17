@@ -1,7 +1,7 @@
 <template>
   <div class="key-metrics-slice__content">
     <h2 class="key-metrics-slice__title">
-      Mad Devs’ <br> key metrics
+      Mad Devs’ key metrics
     </h2>
     <div class="key-metrics-slice__grid">
       <div
@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  name: 'WithLeftTitle',
+  name: 'WithTopTitle',
   props: {
     metrics: {
       type: Array,
@@ -35,65 +35,67 @@ export default {
 
 <style lang="scss" scoped>
 .key-metrics-slice {
-  &__content {
-    display: flex;
-    justify-content: space-between;
-    @media screen and (max-width: 1340px) {
-      flex-direction: column;
-      justify-content: flex-start;
-    }
-  }
   &__title {
-    @include font('Inter', 60px, 900);
-    line-height: 64px;
-    letter-spacing: -2.6px;
-    margin-right: 45px;
+    @include font('Inter', 40px, 700);
+    line-height: 48px;
+    letter-spacing: -1px;
+    margin-bottom: 22px;
     color: $text-color--black-oil;
-    white-space: nowrap;
-    @media screen and (max-width: 1340px) {
-      margin-right: 0;
-      margin-bottom: 10px;
-      white-space: normal;
-      br {
-        display: none;
-      }
-    }
+    text-align: center;
     @media screen and (max-width: 1024px) {
-      font-size: 40px;
+      font-size: 36px;
+      line-height: 43px;
     }
   }
   &__grid {
-    flex: 1;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-gap: 20px;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1199px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media screen and (max-width: 767px) {
       grid-template-columns: repeat(2, 1fr);
     }
   }
 }
 
 .key-metric {
-  border-radius: 4px;
-  padding: 22px 27px 30px;
+  padding: 27px 27px 24px;
+  background-color: $bgcolor--white;
   word-break: break-word;
   @media screen and (max-width: 1024px) {
-    padding: 17px 22px 30px;
+    padding: 29px 17px 13px;
+  }
+  @media screen and (max-width: 1024px) {
+    padding: 28px 13px;
+  }
+  &__title,
+  &__subtitle {
+    text-align: center;
   }
   &__title {
-    @include font('Inter', 53px, 700);
-    line-height: 56px;
-    letter-spacing: -0.013em;
+    @include font('Poppins', 45px, 700);
+    line-height: 47px;
+    letter-spacing: -1px;
+    color: $text-color--red;
     @media screen and (max-width: 1024px) {
-      font-size: 40px;
-      line-height: 56px;
+      font-size: 38px;
+      line-height: 40px;
     }
   }
   &__subtitle {
-    @include font('Inter', 17px, 400);
-    line-height: 24px;
-    letter-spacing: -0.013em;
+    @include font('Inter', 14px, 400);
+    line-height: 22px;
+    @media screen and (max-width: 1024px) {
+      margin-top: 8px;
+      font-size: 12px;
+      line-height: 21px;
+    }
+    @media screen and (max-width: 768px) {
+      line-height: 16px;
+    }
   }
 }
 </style>
