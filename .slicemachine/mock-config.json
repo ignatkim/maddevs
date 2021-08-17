@@ -186,6 +186,7 @@
       "default-slice": {
         "primary": {}
       }
-    }
+    },
+    "ProjectStartSlice": {}
   }
 }
