@@ -97,6 +97,9 @@
           },
           "subtitle": {
             "content": "Without empty words, here at Mad Devs we partner with projects where our teams thrive. Innovating solutions, carrying ownership, delivering sustainable value and celebrating successes — make a happy workplace, where things get done. "
+          },
+          "imageOpacity": {
+            "content": 1
           }
         }
       }

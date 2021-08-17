@@ -13,22 +13,29 @@
       "primary": {
         "image": {
           "config": {
-            "label": "",
+            "label": "Background",
             "constraint": {},
             "thumbnails": []
           },
           "type": "Image"
         },
+        "imageOpacity": {
+          "config": {
+            "label": "Background opacity",
+            "placeholder": "0.8"
+          },
+          "type": "Number"
+        },
         "title": {
           "config": {
-            "label": "",
+            "label": "Title",
             "placeholder": ""
           },
           "type": "Text"
         },
         "subtitle": {
           "config": {
-            "label": "",
+            "label": "Subtitle",
             "placeholder": ""
           },
           "type": "Text"
