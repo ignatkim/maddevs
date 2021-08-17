@@ -6,7 +6,7 @@
       </h2>
       <div class="project-start-slice__list">
         <div
-          v-for="step in steps"
+          v-for="(step, idx) in steps"
           :key="step.name"
           class="project-start"
         >
