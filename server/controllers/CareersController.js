@@ -1,4 +1,4 @@
-const { sendEmail } = require('../services/EmailsService')
+const { sendCVMail, sendCVResponseMail } = require('../services/EmailsService')
 const { sendApplication } = require('../services/HuntflowService')
 const { validate } = require('../utils/validation')
 
@@ -25,11 +25,11 @@ async function index(req, res) {
   const emailValidation = validate(emailReq, 'email')
   if (!emailValidation.isValid) return res.status(emailValidation.error.status).json(emailValidation.error)
 
-  const huntflowRes = await sendApplication(huntflowReq)
+  const huntflowResponse = await sendApplication(huntflowReq)
+  const hrEmailResponse = await sendCVMail(emailReq.body)
+  const userEmailResponse = await sendCVResponseMail(emailReq.body)
 
-  const emailRes = await sendEmail(emailReq, data => res.json({ email: data, huntflow: huntflowRes }))
-
-  return emailRes
+  return res.json({ email: hrEmailResponse, userEmail: userEmailResponse, huntflow: huntflowResponse })
 }
 
 module.exports = {

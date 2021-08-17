@@ -1,4 +1,4 @@
-const { sendEmail } = require('../services/EmailsService')
+const { sendLeadMail } = require('../services/EmailsService')
 const { createLead } = require('../services/LeadsService')
 const { validate } = require('../utils/validation')
 
@@ -6,7 +6,7 @@ async function create(req, res) {
   const { isValid, error } = validate(req, 'email')
   if (!isValid) return res.status(error.status).json(error)
 
-  sendEmail(req)
+  await sendLeadMail(req.body)
   const response = await createLead(req)
 
   return res.json(response)

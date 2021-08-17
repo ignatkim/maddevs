@@ -202,7 +202,7 @@ describe('PositionForm component', () => {
             positionValue: callObject.grade.value,
             positionTitle: wrapper.vm.$props.position,
             subject: `Job Candidate Application for ${wrapper.vm.$props.position}`,
-            modalTitle: 'Mad Devs Website Carrers Form',
+            modalTitle: 'Mad Devs Website Careers Form',
             pageUrl: 'pageUrl',
             ip: 'ip',
             geoIp: 'Country: country, City: city',
