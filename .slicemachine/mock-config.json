@@ -4,13 +4,16 @@
       "default-slice": {
         "items": {
           "title": {
-            "content": "AWS–EKS–Base"
+            "content": "Title card"
           },
           "fullWidth": {
             "content": false
           },
           "image": {
             "content": "https://d6xkme6dcvajw.cloudfront.net/images/OpenSource/svg/amazon.svg"
+          },
+          "description": {
+            "content": "Description of card"
           }
         },
         "primary": {}
@@ -31,7 +34,8 @@
           "title": {
             "content": "f"
           }
-        }
+        },
+        "items": {}
       }
     },
     "TextSlice": {
