@@ -4,7 +4,8 @@ import * as huntflowService from '../../services/HuntflowService'
 import * as emailsService from '../../services/EmailsService'
 
 jest.mock('../../services/EmailsService', () => ({
-  sendEmail: jest.fn(),
+  sendMailFromVariables: jest.fn(),
+  sendCVResponseMail: jest.fn(),
 }))
 
 jest.mock('../../services/HuntflowService', () => ({
@@ -15,7 +16,8 @@ jest.mock('../../services/HuntflowService', () => ({
 const sendApplication = jest.fn()
 const sendEmail = jest.fn(() => Promise.resolve({ data: 'data' }))
 
-emailsService.sendEmail.mockImplementation(sendEmail)
+emailsService.sendMailFromVariables.mockImplementation(sendEmail)
+emailsService.sendCVResponseMail.mockImplementation(sendEmail)
 huntflowService.sendApplication.mockImplementation(sendApplication)
 
 describe('careersController', () => {
@@ -98,8 +100,9 @@ describe('careersController', () => {
       },
     }
     const data = await controller.index(req, res)
-    expect(data).toEqual({ data: 'data' })
+    expect(data).toEqual({ email: { data: 'data' }, userEmail: { data: 'data' } })
     expect(huntflowService.sendApplication).toHaveBeenCalledTimes(1)
-    expect(emailsService.sendEmail).toHaveBeenCalledTimes(1)
+    expect(emailsService.sendMailFromVariables).toHaveBeenCalledTimes(1)
+    expect(emailsService.sendCVResponseMail).toHaveBeenCalledTimes(1)
   })
 })

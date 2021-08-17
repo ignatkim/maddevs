@@ -1,4 +1,4 @@
-const { sendEmail } = require('../services/EmailsService')
+const { sendMailFromVariables } = require('../services/EmailsService')
 const { validate } = require('../utils/validation')
 
 const parseRequest = req => ({
@@ -13,14 +13,18 @@ const buildRequest = (req, key) => ({
   body: req.body[key],
 })
 
-export async function send(req, res) {
+async function send(req, res) {
   const parsedReq = parseRequest(req)
   const emailReq = buildRequest(parsedReq, 'email')
 
   const emailValidation = validate(emailReq, 'email')
   if (!emailValidation.isValid) return res.status(emailValidation.error.status).json(emailValidation.error)
 
-  const emailRes = await sendEmail(emailReq, data => res.json({ email: data }))
+  const emailRes = await sendMailFromVariables(emailReq.body)
 
-  return emailRes
+  return res.json({ email: emailRes })
+}
+
+module.exports = {
+  send,
 }
