@@ -11,8 +11,6 @@
             v-lazy-load
             :data-src="img.url"
             :alt="img.alt"
-            width="632"
-            height="170"
           >
         </a>
       </div>
