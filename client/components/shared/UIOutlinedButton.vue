@@ -2,6 +2,7 @@
   <button
     type="button"
     class="ui-outlined-button"
+    @click="handleClick"
   >
     <slot />
   </button>
@@ -10,6 +11,11 @@
 <script>
 export default {
   name: 'UIOutlinedButton',
+  methods: {
+    handleClick() {
+      if (!this.disabled) this.$emit('click')
+    },
+  },
 }
 </script>
 

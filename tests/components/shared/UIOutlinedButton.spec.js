@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/vue'
+import { render, fireEvent, screen } from '@testing-library/vue'
 import UIOutlinedButton from '@/components/shared/UIOutlinedButton'
 
 describe('UIOutlinedButton component', () => {
@@ -18,5 +18,17 @@ describe('UIOutlinedButton component', () => {
 
     expect(screen.queryByText('Outlined button')).toBeNull()
     expect(container).toMatchSnapshot()
+  })
+
+  it('should correctly handle click', async () => {
+    const { emitted } = render(UIOutlinedButton, {
+      slots: {
+        default: 'Button',
+      },
+    })
+
+    const btn = screen.getByText('Button')
+    await fireEvent.click(btn)
+    expect(emitted().click).toHaveLength(1)
   })
 })
