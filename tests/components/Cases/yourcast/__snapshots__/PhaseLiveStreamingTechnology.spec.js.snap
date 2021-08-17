@@ -63,19 +63,6 @@ exports[`PhaseLiveStreamingTechnology component should render correctly 1`] = `
         >
           <a
             class="case_poster-link"
-            href="https://commons.wikimedia.org/wiki/File:African_Apocalypse_Poster.jpg"
-            target="_blank"
-          >
-            
-          African Apocalypse,
-        
-          </a>
-        </li>
-        <li
-          class="case_poster"
-        >
-          <a
-            class="case_poster-link"
             href="https://commons.wikimedia.org/wiki/File:Gasmann_-_Plakat_.jpg"
             target="_blank"
           >
@@ -107,19 +94,6 @@ exports[`PhaseLiveStreamingTechnology component should render correctly 1`] = `
           >
             
           Genesis 2.0,
-        
-          </a>
-        </li>
-        <li
-          class="case_poster"
-        >
-          <a
-            class="case_poster-link"
-            href="https://commons.wikimedia.org/wiki/File:Alberto_and_the_Concrete_Jungle_retro_travel_poster.jpg"
-            target="_blank"
-          >
-            
-          Alberto and the Concrete Jungle,
         
           </a>
         </li>

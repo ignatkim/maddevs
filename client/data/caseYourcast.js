@@ -133,10 +133,6 @@ export const team = [
 
 export const posters = [
   {
-    title: 'African Apocalypse,',
-    href: 'https://commons.wikimedia.org/wiki/File:African_Apocalypse_Poster.jpg',
-  },
-  {
     title: 'Gasman,',
     href: 'https://commons.wikimedia.org/wiki/File:Gasmann_-_Plakat_.jpg',
   },
@@ -147,10 +143,6 @@ export const posters = [
   {
     title: 'Genesis 2.0,',
     href: 'https://commons.wikimedia.org/wiki/File:GENESIS_2.0.jpg',
-  },
-  {
-    title: 'Alberto and the Concrete Jungle,',
-    href: 'https://commons.wikimedia.org/wiki/File:Alberto_and_the_Concrete_Jungle_retro_travel_poster.jpg',
   },
   {
     title: 'Black Ruby,',
