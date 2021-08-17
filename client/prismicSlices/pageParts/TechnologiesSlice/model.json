@@ -1,0 +1,17 @@
+{
+  "id": "technologies_slice",
+  "type": "SharedSlice",
+  "name": "TechnologiesSlice",
+  "description": "TechnologiesSlice",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TechnologiesSlice",
+      "primary": {},
+      "items": {}
+    }
+  ]
+}

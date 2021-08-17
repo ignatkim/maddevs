@@ -1,7 +1,7 @@
 import { render } from '@testing-library/vue'
 import { createLocalVue } from '@vue/test-utils'
 import Vuelidate from 'vuelidate'
-import Vacancy from '@/pages/careers/_uid.vue'
+import Vacancy from '@/pages/ru/careers/_uid.vue'
 
 const store = {
   getters: {
@@ -17,6 +17,9 @@ const store = {
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',
   $t: () => 'translated',
+  $i18n: {
+    setLocale: () => {},
+  },
   $v: {
     name: {
       $touch: jest.fn(),

@@ -1,8 +1,8 @@
 {
-  "id": "boilerplates_grid_slice",
+  "id": "card_grid_slice",
   "type": "SharedSlice",
-  "name": "BoilerplatesGridSlice",
-  "description": "BoilerplatesGridSlice",
+  "name": "CardGridSlice",
+  "description": "CardGridSlice",
   "variations": [
     {
       "id": "default-slice",
@@ -14,21 +14,21 @@
       "items": {
         "title": {
           "config": {
-            "label": "",
+            "label": "Main Title",
             "placeholder": ""
           },
           "type": "Text"
         },
         "description": {
           "config": {
-            "label": "",
+            "label": "Description",
             "placeholder": ""
           },
           "type": "Text"
         },
         "btnLink": {
           "config": {
-            "label": "",
+            "label": "Button link",
             "placeholder": "",
             "select": "web",
             "allowTargetBlank": false
@@ -37,7 +37,7 @@
         },
         "image": {
           "config": {
-            "label": "",
+            "label": "Image",
             "constraint": {},
             "thumbnails": []
           },
@@ -45,7 +45,7 @@
         },
         "fullWidth": {
           "config": {
-            "label": "",
+            "label": "100% or 50%",
             "placeholder_false": "false",
             "placeholder_true": "true",
             "default_value": false

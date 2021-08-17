@@ -79,7 +79,7 @@ exports[`Careers _uid component should render correctly 1`] = `
               class="careers-position__benefits-title"
             >
               
-            Employees benefits
+            translated
           
             </h2>
              
@@ -333,11 +333,7 @@ exports[`Careers _uid component should render correctly 1`] = `
                             >
                               
     translated
-                              <span
-                                class="red"
-                              >
-                                *
-                              </span>
+  
                             </label>
                           </div>
                            

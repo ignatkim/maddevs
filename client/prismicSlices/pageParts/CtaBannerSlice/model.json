@@ -13,7 +13,7 @@
       "primary": {
         "image": {
           "config": {
-            "label": "",
+            "label": "Image",
             "constraint": {
               "width": null
             },
@@ -23,7 +23,7 @@
         },
         "btnLink": {
           "config": {
-            "label": "",
+            "label": "Button link",
             "placeholder": "",
             "allowTargetBlank": true
           },
@@ -31,35 +31,35 @@
         },
         "title": {
           "config": {
-            "label": "",
+            "label": "Main Title",
             "placeholder": ""
           },
           "type": "Text"
         },
         "description": {
           "config": {
-            "label": "",
+            "label": "Main Description",
             "placeholder": ""
           },
           "type": "Text"
         },
         "btnText": {
           "config": {
-            "label": "",
+            "label": "Button text",
             "placeholder": ""
           },
           "type": "Text"
         },
         "name": {
           "config": {
-            "label": "",
+            "label": "Fullname",
             "placeholder": ""
           },
           "type": "Text"
         },
         "position": {
           "config": {
-            "label": "",
+            "label": "Position",
             "placeholder": ""
           },
           "type": "Text"

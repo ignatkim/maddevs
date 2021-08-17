@@ -9,6 +9,10 @@
     }
   },
   "careers": {
+    "meta": {
+      "title": "Mad Devs Careers: Work with Us",
+      "description": "Join our team of 100+ staff members working on unique projects, master new IT skills, and build a fantastic career path in cloud and software engineering."
+    },
     "showOpenVacancies": "See all {count} open positions",
     "section-1": {
       "title": "Career at Mad Devs",
@@ -33,7 +37,7 @@
     "section-5": {
       "title": "Competitive and reliable compensation",
       "description": "Everybody at Mad Devs, from C-suite to junior developers, <span class='green'>gets paid competitive compensation in USD.</green>",
-      "list": "Stable salary and pay day, Competitive compensation, Formal employment, Flexible payment terms, Salary, benefits and bonuses paid in USD"
+      "list": "Stable salary and pay day, Competitive compensation, Formal employment, Flexible payment terms, Salary, benefits and bonuses paid in USD."
     },
     "section-6": {
       "title": "Mad Devs’ key metrics",

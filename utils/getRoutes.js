@@ -23,6 +23,19 @@ const IGNORE_ROUTES = [
   '/blog/tag/hr-department',
   '/blog/tag/assistant-delivery-manager',
   '/blog/tag/software-features',
+  '/blog/mad-devs-devops',
+  '/mad-devs-ishet-golang-razrabotchika',
+  '/blog/middle-python-developer',
+  '/blog/vue-vuetify-middle-v-saas-proekt',
+  '/blog/senior-android-developer',
+  '/blog/project-manager-v-finteh-proekt',
+  '/blog/middle-ios-developer',
+  '/blog/golang-middle-senior-developer-v-finteh-proekt',
+  '/blog/senior-ios-developer',
+  '/blog/mad-devs-ishet-senior-python-developer-v-proekt-clutch',
+  '/blog/middle-android-developer',
+  '/blog/ios-middle-senior-developer-v-finteh-proekt',
+  '/blog/it-recruiter-middle-maddevs',
 ]
 
 const getRoutes = async () => {
@@ -62,6 +75,10 @@ const getRoutes = async () => {
     .filter(post => post.type === 'author')
     .map(author => `/blog/author/${author.uid}`)
 
+  const careerPageRoutes = prismicPosts
+    .filter(post => post.type === 'vacancy')
+    .map(vacancy => `/ru/careers/${vacancy.uid}`)
+
   const tagPageRoutes = prismicTags
     .map(tag => `/blog/tag/${convertToSlug(tag)}`)
 
@@ -69,6 +86,7 @@ const getRoutes = async () => {
     '/',
     '/services',
     '/careers',
+    '/ru/careers',
     '/gdpr',
     '/nda',
     '/privacy',
@@ -79,6 +97,7 @@ const getRoutes = async () => {
     'case-studies/yourcast/',
     'case-studies/veeqo/',
     '/blog',
+    ...careerPageRoutes,
     ...blogPageRoutes,
     ...cuPageRoutes,
     ...authorPageRoutes,

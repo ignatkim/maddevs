@@ -14,6 +14,8 @@ export default {
     GDPR,
   },
 
+  nuxtI18n: false,
+
   head() {
     return buildHead(getMetadata('gdpr'))
   },
