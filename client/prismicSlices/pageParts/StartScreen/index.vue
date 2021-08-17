@@ -3,6 +3,9 @@
     <img
       :src="image.url"
       :alt="image.alt"
+      :style="{
+        opacity: imageOpacity
+      }"
       class="start-screen-slice__image"
     >
     <div class="container">
@@ -33,6 +36,7 @@ export default {
 
   data() {
     return {
+      imageOpacity: this.slice.primary.imageOpacity,
       image: this.slice.primary.image,
       title: this.slice.primary.title,
       subtitle: this.slice.primary.subtitle,
@@ -70,6 +74,7 @@ export default {
   &__content {
     text-align: center;
     z-index: 2;
+    max-width: 1028px;
   }
   &__title {
     color: $text-color--white;
