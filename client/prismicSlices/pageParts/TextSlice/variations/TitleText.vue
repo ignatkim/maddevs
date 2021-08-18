@@ -1,5 +1,10 @@
 <template>
-  <div class="text-slice__content">
+  <div
+    :class="[
+      'text-slice__content',
+      `text-slice__content--${colorTheme}-theme`,
+    ]"
+  >
     <h2>{{ title }}</h2>
     <p>{{ text }}</p>
   </div>
@@ -20,6 +25,11 @@ export default {
       required: true,
       default: '',
     },
+
+    colorTheme: {
+      type: String,
+      default: 'white',
+    },
   },
 }
 </script>
@@ -32,6 +42,13 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+  &--white-theme {
+    color: $text-color--white;
+  }
+  &--black-theme {
+    color: $text-color--black-lighter;
+  }
+
   p {
     margin-top: 50px;
     @media screen and (max-width: 1024px) {
