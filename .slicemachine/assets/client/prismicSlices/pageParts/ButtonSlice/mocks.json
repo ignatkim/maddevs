@@ -10,8 +10,9 @@
       "text": "Default red button",
       "link": {
         "link_type": "Web",
-        "url": "http://google.com"
-      }
+        "url": "https://slicemachine.dev"
+      },
+      "background": "black"
     }
   },
   {
@@ -21,13 +22,14 @@
     "items": [],
     "primary": {
       "fullWidth": true,
-      "alignment": "left",
-      "color": "red",
+      "alignment": "center",
+      "color": "blue",
       "text": "Outlined button",
       "link": {
         "link_type": "Web",
-        "url": "https://prismic.io"
-      }
+        "url": "http://google.com"
+      },
+      "background": "white"
     }
   },
   {
@@ -36,14 +38,15 @@
     "slice_type": "button_slice",
     "items": [],
     "primary": {
-      "fullWidth": true,
+      "fullWidth": false,
       "alignment": "left",
-      "color": "red",
+      "color": "black",
       "text": "Link button",
       "link": {
         "link_type": "Web",
         "url": "https://prismic.io"
-      }
+      },
+      "background": "white"
     }
   }
 ]

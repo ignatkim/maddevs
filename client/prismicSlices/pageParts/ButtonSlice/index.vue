@@ -1,5 +1,10 @@
 <template>
-  <div class="button-slice">
+  <div
+    class="button-slice"
+    :style="{
+      sliceBackground,
+    }"
+  >
     <div
       :class="[
         'container',
@@ -74,6 +79,14 @@ export default {
       text: this.slice.primary.text,
       color: this.slice.primary.color,
     }
+  },
+
+  computed: {
+    sliceBackground() {
+      if (this.slice.primary.background === 'white') return '#fff'
+      if (this.slice.primary.background === 'grey') return '#f5f7f9'
+      return '#111213' // black
+    },
   },
 }
 </script>
