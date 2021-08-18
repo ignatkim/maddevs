@@ -137,6 +137,9 @@
           },
           "imageOpacity": {
             "content": 1
+          },
+          "background": {
+            "content": "black"
           }
         }
       }

@@ -13,7 +13,7 @@
       "primary": {
         "image": {
           "config": {
-            "label": "Background",
+            "label": "Image",
             "constraint": {},
             "thumbnails": []
           },
@@ -21,7 +21,7 @@
         },
         "imageOpacity": {
           "config": {
-            "label": "Background opacity",
+            "label": "Image opacity",
             "placeholder": "0.8"
           },
           "type": "Number"
@@ -39,6 +39,19 @@
             "placeholder": ""
           },
           "type": "Text"
+        },
+        "background": {
+          "config": {
+            "label": "Slice background",
+            "placeholder": "",
+            "options": [
+              "black",
+              "white",
+              "grey"
+            ],
+            "default_value": "black"
+          },
+          "type": "Select"
         }
       },
       "items": {}

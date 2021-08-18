@@ -57,7 +57,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .start-screen-slice {
   position: relative;
   height: 100vh;
