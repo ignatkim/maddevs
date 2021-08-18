@@ -11,23 +11,21 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "CreateProjectsSlice",
       "primary": {
-        "title": {
-          "type": "StructuredText",
+        "background": {
           "config": {
-            "single": "heading1",
-            "label": "Title",
-            "placeholder": "This is where it all begins..."
-          }
-        },
-        "description": {
-          "type": "StructuredText",
-          "config": {
-            "single": "paragraph",
-            "label": "Description",
-            "placeholder": "A nice description of your product"
-          }
+            "label": "Slice background",
+            "placeholder": "",
+            "options": [
+              "black",
+              "white",
+              "grey"
+            ],
+            "default_value": "black"
+          },
+          "type": "Select"
         }
-      }
+      },
+      "items": {}
     }
   ]
 }
