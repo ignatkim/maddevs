@@ -62,7 +62,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .text-slice__content {
   width: 100%;
   max-width: 1242px;

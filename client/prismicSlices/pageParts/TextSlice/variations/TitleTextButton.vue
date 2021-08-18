@@ -59,7 +59,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .text-slice__content {
   display: flex;
   flex-direction: column;

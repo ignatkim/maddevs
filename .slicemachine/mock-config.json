@@ -50,7 +50,7 @@
             "content": "white"
           },
           "maxWidth": {
-            "content": 1028
+            "content": "1028px"
           }
         }
       },
@@ -64,6 +64,9 @@
           },
           "colorTheme": {
             "content": "white"
+          },
+          "maxWidth": {
+            "content": "1028px"
           }
         }
       },
@@ -80,6 +83,9 @@
           },
           "colorTheme": {
             "content": "white"
+          },
+          "maxWidth": {
+            "content": "1028px"
           }
         }
       },
@@ -102,6 +108,9 @@
           },
           "colorTheme": {
             "content": "white"
+          },
+          "maxWidth": {
+            "content": "1028px"
           }
         }
       },
@@ -118,6 +127,9 @@
           },
           "colorTheme": {
             "content": "white"
+          },
+          "maxWidth": {
+            "content": "1028px"
           }
         },
         "items": {}
