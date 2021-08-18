@@ -425,11 +425,6 @@ Also you need to run the storybook dashboard in other terminal: [localhost:3003]
 npm run storybook
 ```
 
-Now you can create a new slice for development:
-```bash
-prismic sm --create-slice
-```
-
 > Please, use "./client/prismicSlices" folder for create new slices.
 
 ```bash
