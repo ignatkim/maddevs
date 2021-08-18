@@ -37,6 +37,7 @@ export default {
   },
 
   mounted() {
+    this.onResize()
     window.addEventListener('resize', this.onResize)
   },
 
@@ -46,16 +47,17 @@ export default {
 
   methods: {
     onResize() {
+      const defaultHeight = this.slice.primary.height || '50px'
       if (window.innerWidth < 375) {
-        this.height = this.slice.primary['height-sm']
+        this.height = this.slice.primary['height-sm'] || defaultHeight
       } if (window.innerWidth > 375 && window.innerWidth < 768) {
-        this.height = this.slice.primary['height-md']
+        this.height = this.slice.primary['height-md'] || defaultHeight
       } if (window.innerWidth > 768 && window.innerWidth < 1024) {
-        this.height = this.slice.primary['height-lg']
+        this.height = this.slice.primary['height-lg'] || defaultHeight
       } if (window.innerWidth > 1024 && window.innerWidth < 1440) {
-        this.height = this.slice.primary['height-xl']
+        this.height = this.slice.primary['height-xl'] || defaultHeight
       } if (window.innerWidth > 1440) {
-        this.height = this.slice.primary.height
+        this.height = defaultHeight
       }
     },
   },
