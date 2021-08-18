@@ -1,5 +1,8 @@
 <template>
-  <section class="start-screen-slice">
+  <section
+    id="transparent-header-area"
+    class="start-screen-slice"
+  >
     <img
       :src="image.url"
       :alt="image.alt"
