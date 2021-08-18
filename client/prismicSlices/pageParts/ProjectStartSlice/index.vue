@@ -1,5 +1,10 @@
 <template>
-  <section class="project-start-slice">
+  <section
+    class="project-start-slice"
+    :style="{
+      backgroundColor: sliceBackground,
+    }"
+  >
     <div class="container">
       <h2 class="project-start-slice__title">
         Quick Project Start
@@ -40,6 +45,8 @@
         </div>
       </div>
       <UIOutlinedButton
+        full-width
+        color="red"
         class="project-start-slice__button"
         @click="$refs.modalOrderProjectFromUs.show()"
       >
@@ -79,6 +86,14 @@ export default {
     return {
       steps,
     }
+  },
+
+  computed: {
+    sliceBackground() {
+      if (this.slice.primary.background === 'white') return '#fff'
+      if (this.slice.primary.background === 'grey') return '#f5f7f9'
+      return '#111213' // black
+    },
   },
 
   methods: {
