@@ -113,10 +113,10 @@
         },
         "fullWidth": {
           "config": {
-            "label": "100% or 50%",
+            "label": "Set to full width?",
             "placeholder_false": "false",
             "placeholder_true": "true",
-            "default_value": true
+            "default_value": false
           },
           "type": "Boolean"
         }

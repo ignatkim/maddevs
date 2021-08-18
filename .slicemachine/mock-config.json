@@ -16,7 +16,7 @@
             "content": "Occaecat voluptate nostru, Velit esse incididunt, Lorem consequat culpa esse, Dolor occaecat proident"
           },
           "fullWidth": {
-            "content": true
+            "content": false
           }
         },
         "primary": {}
