@@ -7,7 +7,6 @@
         backgroundColor,
       }"
     />
-    {{ height }}
   </div>
 </template>
 
