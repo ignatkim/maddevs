@@ -2,7 +2,7 @@ import { render } from '@testing-library/vue'
 import PositionsGridItem from '@/components/Careers/shared/PositionsGridItem'
 import PositionsGrid from '@/components/Careers/shared/PositionsGrid'
 
-const stubs = ['NuxtLink']
+const stubs = ['router-link']
 
 describe('PositionsGridItem component', () => {
   it('should render correctly', () => {

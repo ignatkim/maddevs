@@ -1,0 +1,31 @@
+{
+  "id": "project_start_slice",
+  "type": "SharedSlice",
+  "name": "ProjectStartSlice",
+  "description": "ProjectStartSlice",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "ProjectStartSlice",
+      "primary": {
+        "background": {
+          "config": {
+            "label": "Slice background",
+            "placeholder": "",
+            "options": [
+              "black",
+              "white",
+              "grey"
+            ],
+            "default_value": "black"
+          },
+          "type": "Select"
+        }
+      },
+      "items": {}
+    }
+  ]
+}

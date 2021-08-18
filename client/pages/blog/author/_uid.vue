@@ -18,6 +18,8 @@ export default {
     AuthorPostsSection,
   },
 
+  nuxtI18n: false,
+
   beforeRouteEnter(to, from, next) {
     next(vm => {
       const { params } = to

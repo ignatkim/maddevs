@@ -14,6 +14,8 @@ export default {
     Main,
   },
 
+  nuxtI18n: false,
+
   head() {
     return buildHead(getMetadata('delivery-models'))
   },

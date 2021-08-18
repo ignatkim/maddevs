@@ -1,5 +1,10 @@
 <template>
-  <div class="key-metrics-slice__content">
+  <div
+    :class="[
+      'key-metrics-slice__content',
+      colorTheme ? `key-metrics-slice__content--${colorTheme}-theme` : null
+    ]"
+  >
     <h2 class="key-metrics-slice__title">
       Mad Devs’ key metrics
     </h2>
@@ -24,6 +29,11 @@
 export default {
   name: 'WithTopTitle',
   props: {
+    colorTheme: {
+      type: String,
+      default: 'white',
+    },
+
     metrics: {
       type: Array,
       required: true,
@@ -35,17 +45,47 @@ export default {
 
 <style lang="scss" scoped>
 .key-metrics-slice {
+  &__content {
+    &--white-theme {
+      .key-metrics-slice__title {
+        color: $text-color--black-oil;
+      }
+      /deep/ .key-metric {
+        background-color: $bgcolor--silver;
+        &__title,
+        &__subtitle {
+          color: $text-color--black-oil;
+        }
+      }
+    }
+
+    &--black-theme {
+      .key-metrics-slice__title {
+        color: $text-color--black-oil;
+      }
+      /deep/ .key-metric {
+        background-color: $bgcolor--black-oil;
+        &__title {
+          color: $text-color--white-primary;
+        }
+        &__subtitle {
+          color: $text-color--silver;
+        }
+      }
+    }
+  }
+
   &__title {
-    @include font('Inter', 42px, 900);
+    @include font('Inter', 42px, 700);
     line-height: 46px;
     letter-spacing: -1.3px;
     margin-bottom: 28px;
-    color: $text-color--black-oil;
     text-align: center;
     @media screen and (max-width: 768px) {
       text-align: left;
     }
   }
+
   &__grid {
     width: 100%;
     display: grid;
@@ -63,12 +103,13 @@ export default {
 .key-metric {
   border-radius: 4px;
   padding: 24px 32px;
-  background-color: white;
+
   &__title {
     @include font('Inter', 28px, 700);
     line-height: 32px;
     letter-spacing: -1px;
   }
+
   &__subtitle {
     @include font('Inter', 16px, 400);
     line-height: 24px;

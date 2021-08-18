@@ -14,6 +14,8 @@ export default {
     Privacy,
   },
 
+  nuxtI18n: false,
+
   head() {
     return buildHead(getMetadata('privacy'))
   },

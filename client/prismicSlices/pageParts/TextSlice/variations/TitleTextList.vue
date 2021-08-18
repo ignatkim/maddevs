@@ -1,5 +1,10 @@
 <template>
-  <div class="text-slice__content">
+  <div
+    :class="[
+      'text-slice__content',
+      `text-slice__content--${colorTheme}-theme`,
+    ]"
+  >
     <div class="text-slice__content-text">
       <h2 v-html="title" />
       <p>{{ text }}</p>
@@ -37,6 +42,11 @@ export default {
       required: true,
       default: () => ([]),
     },
+
+    colorTheme: {
+      type: String,
+      default: 'white',
+    },
   },
 
   computed: {
@@ -59,6 +69,12 @@ export default {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  &--white-theme {
+    color: $text-color--white;
+  }
+  &--black-theme {
+    color: $text-color--black-lighter;
+  }
   @media screen and (max-width: 1300px) {
     flex-direction: column;
     align-items: flex-start;

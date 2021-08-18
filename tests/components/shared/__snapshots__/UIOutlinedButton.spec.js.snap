@@ -3,7 +3,7 @@
 exports[`UIOutlinedButton component should render correctly with slot 1`] = `
 <div>
   <button
-    class="ui-outlined-button"
+    class="ui-outlined-button ui-outlined-button--grey"
     type="button"
   >
     Outlined button
@@ -14,7 +14,7 @@ exports[`UIOutlinedButton component should render correctly with slot 1`] = `
 exports[`UIOutlinedButton component should render correctly without slot 1`] = `
 <div>
   <button
-    class="ui-outlined-button"
+    class="ui-outlined-button ui-outlined-button--grey"
     type="button"
   />
 </div>

@@ -1,6 +1,16 @@
 <template>
-  <section class="text-slice">
-    <div class="container">
+  <section
+    class="text-slice"
+    :style="{
+      backgroundColor: sliceBackground,
+    }"
+  >
+    <div
+      class="container"
+      :style="{
+        maxWidth: `${slice.primary.maxWidth}px`,
+      }"
+    >
       <SimpleText
         v-if="slice.variation === 'default-slice'"
         v-bind="slice.primary"
@@ -50,6 +60,14 @@ export default {
       default() {
         return {}
       },
+    },
+  },
+
+  computed: {
+    sliceBackground() {
+      if (this.slice.primary.background === 'white') return '#fff'
+      if (this.slice.primary.background === 'grey') return '#f5f7f9'
+      return '#111213' // black
     },
   },
 }

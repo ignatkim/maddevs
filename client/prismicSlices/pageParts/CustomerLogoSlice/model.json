@@ -11,33 +11,31 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "Customer Logo Slice",
       "primary": {
-        "title": {
+        "colorTheme": {
           "config": {
-            "label": "",
-            "placeholder": ""
+            "label": "Theme color",
+            "placeholder": "",
+            "options": [
+              "white",
+              "black"
+            ],
+            "default_value": "white"
           },
-          "type": "Text"
-        },
-        "description": {
-          "config": {
-            "label": "",
-            "placeholder": ""
-          },
-          "type": "Text"
+          "type": "Select"
         }
       },
       "items": {
         "logo": {
           "type": "Image",
           "config": {
-            "label": "",
+            "label": "Image logo",
             "thumbnails": [],
             "constraint": {}
           }
         },
         "link": {
           "config": {
-            "label": "",
+            "label": "Link",
             "placeholder": "",
             "allowTargetBlank": true
           },

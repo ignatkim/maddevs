@@ -146,7 +146,7 @@ describe('PositionForm component', () => {
   })
 
   it('should work build applicant data function', async () => {
-    process.env.emailHR = 'emailTo@maddevs.io'
+    process.env.emailCV = 'emailTo@maddevs.io'
     const toBase64Mock = jest.fn()
     mocks.toBase64 = () => {
       toBase64Mock()
@@ -197,12 +197,12 @@ describe('PositionForm component', () => {
           variables: {
             fullName: callObject.name,
             email: callObject.email,
-            emailTo: process.env.emailHR,
+            emailTo: process.env.emailCV,
             linkedinProfile: callObject.linkedin,
             positionValue: callObject.grade.value,
             positionTitle: wrapper.vm.$props.position,
             subject: `Job Candidate Application for ${wrapper.vm.$props.position}`,
-            modalTitle: 'Mad Devs Website Carrers Form',
+            modalTitle: 'Mad Devs Website Careers Form',
             pageUrl: 'pageUrl',
             ip: 'ip',
             geoIp: 'Country: country, City: city',

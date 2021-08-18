@@ -204,11 +204,7 @@ exports[`PositionForm component should render correctly 1`] = `
                   >
                     
     translated
-                    <span
-                      class="red"
-                    >
-                      *
-                    </span>
+  
                   </label>
                 </div>
                  

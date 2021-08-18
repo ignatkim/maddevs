@@ -1,8 +1,10 @@
 <template>
-  <SliceZone
-    type="custom_page"
-    uid="demo-about-page"
-  />
+  <main class="main">
+    <SliceZone
+      type="custom_page"
+      uid="demo-about-page"
+    />
+  </main>
 </template>
 
 <script>

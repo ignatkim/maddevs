@@ -18,7 +18,7 @@ export const _DefaultSlice = () => ({
   },
   data() {
     return {
-      mock: {"variation":"default-slice","name":"Default slice","slice_type":"button_slice","items":[],"primary":{"fullWidth":true,"alignment":"right","text":"whiteboard sticky technologies","link":{"link_type":"Web","url":"https://slicemachine.dev"}},"id":"_DefaultSlice"}
+      mock: {"variation":"default-slice","name":"Default slice","slice_type":"button_slice","items":[],"primary":{"fullWidth":false,"alignment":"left","text":"Default red button","link":{"link_type":"Web","url":"https://slicemachine.dev"},"background":"black"},"id":"_DefaultSlice"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -37,7 +37,7 @@ export const _OutlinedButton = () => ({
   },
   data() {
     return {
-      mock: {"variation":"outlinedButton","name":"Outlined Button","slice_type":"button_slice","items":[],"primary":{"fullWidth":false,"alignment":"left","text":"unleash bleeding-edge solutions","link":{"link_type":"Web","url":"https://slicemachine.dev"}},"id":"_OutlinedButton"}
+      mock: {"variation":"outlinedButton","name":"Outlined Button","slice_type":"button_slice","items":[],"primary":{"fullWidth":true,"alignment":"center","color":"blue","text":"Outlined button","link":{"link_type":"Web","url":"http://google.com"},"background":"white"},"id":"_OutlinedButton"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -56,7 +56,7 @@ export const _LinkButton = () => ({
   },
   data() {
     return {
-      mock: {"variation":"linkButton","name":"Link Button","slice_type":"button_slice","items":[],"primary":{"fullWidth":false,"alignment":"center","text":"transition interactive architectures","link":{"link_type":"Web","url":"https://prismic.io"}},"id":"_LinkButton"}
+      mock: {"variation":"linkButton","name":"Link Button","slice_type":"button_slice","items":[],"primary":{"fullWidth":false,"alignment":"left","color":"black","text":"Link button","link":{"link_type":"Web","url":"https://prismic.io"},"background":"white"},"id":"_LinkButton"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'

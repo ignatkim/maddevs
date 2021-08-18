@@ -14,14 +14,12 @@
         alt="Pause"
       >
       <video
-        v-if="loaded"
         ref="video"
-        v-lazy-load
         class="main-video"
         autoplay="true"
       >
         <source
-          :data-src="$getMediaFromS3('/videos/sjmc/sjmc-modal-video.00bd869.mp4')"
+          :src="$getMediaFromS3('/videos/sjmc/sjmc-modal-video.00bd869.mp4')"
           type="video/mp4"
         >
         Your browser does not support the video tag.
@@ -52,19 +50,12 @@ export default {
       fullscreenModIsActive: false,
       showIcon: false,
       flagFirstStartVideo: true,
-      loaded: false,
     }
   },
 
   mounted() {
-    this.$refs.video.onended = () => {
-      this.showIcon = true
-    }
-
     // event bus handler
-    this.$nuxt.$on('open-fullscreen', () => {
-      this.emitHandler()
-    })
+    this.$nuxt.$on('open-fullscreen', () => this.emitHandler())
 
     // exit fullscreen handler
     document.addEventListener('fullscreenchange', () => {
@@ -79,12 +70,18 @@ export default {
       }
     })
 
-    this.$nextTick(() => {
-      this.loaded = true
-    })
+    this.$refs.video.addEventListener('ended', this.onEnded)
+  },
+
+  destroyed() {
+    this.$refs.video.removeEventListener('ended', this.onEnded)
   },
 
   methods: {
+    onEnded() {
+      this.showIcon = true
+    },
+
     exitFullscreen() {
       document.exitFullscreen()
       this.fullscreenModIsActive = false

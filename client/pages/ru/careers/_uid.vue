@@ -15,7 +15,7 @@
             <h2
               class="careers-position__benefits-title"
             >
-              Employees benefits
+              {{ $t('careers.section-7.title') }}
             </h2>
             <div
               class="careers-position__benefits-grid"
@@ -67,8 +67,11 @@ export default {
     PositionForm,
   },
 
+  nuxtI18n: false,
+
   async asyncData({ store, params, error }) {
-    const openGraphUrl = `${process.env.domain}/careers/${params.uid}/`
+    const { uid } = params
+    const openGraphUrl = `${process.env.domain}${uid === 'сopywriter' ? '' : '/ru'}/careers/${uid}/`
 
     try {
       await store.dispatch('getVacancy', params.uid)
@@ -102,6 +105,10 @@ export default {
 
   computed: {
     ...mapGetters(['vacancy']),
+  },
+
+  created() {
+    this.$i18n.setLocale('ru')
   },
 }
 </script>

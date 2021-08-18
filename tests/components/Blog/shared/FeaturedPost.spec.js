@@ -12,7 +12,7 @@ describe('featured post component', () => {
       propsData: {
         post: blogPost,
         author: {
-          image: '',
+          image: {},
           name: '',
           position: '',
         },

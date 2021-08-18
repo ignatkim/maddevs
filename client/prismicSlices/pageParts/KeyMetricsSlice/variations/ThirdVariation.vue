@@ -1,5 +1,10 @@
 <template>
-  <div class="key-metrics-slice__content">
+  <div
+    :class="[
+      'key-metrics-slice__content',
+      colorTheme ? `key-metrics-slice__content--${colorTheme}-theme` : null
+    ]"
+  >
     <h2 class="key-metrics-slice__title">
       Mad Devs’ <br> key metrics
     </h2>
@@ -24,6 +29,11 @@
 export default {
   name: 'WithLeftTitle',
   props: {
+    colorTheme: {
+      type: String,
+      default: 'white',
+    },
+
     metrics: {
       type: Array,
       required: true,
@@ -36,6 +46,34 @@ export default {
 <style lang="scss" scoped>
 .key-metrics-slice {
   &__content {
+    &--white-theme {
+      .key-metrics-slice__title {
+        color: $text-color--black-oil;
+      }
+      /deep/ .key-metric {
+        background-color: $bgcolor--silver;
+        &__title,
+        &__subtitle {
+          color: $text-color--black-oil;
+        }
+      }
+    }
+
+    &--black-theme {
+      .key-metrics-slice__title {
+        color: $text-color--black-oil;
+      }
+      /deep/ .key-metric {
+        background-color: $bgcolor--black-pale;
+        &__title,
+        &__subtitle {
+          color: $text-color--white-primary;
+        }
+      }
+    }
+  }
+
+  &__content {
     display: flex;
     justify-content: space-between;
     @media screen and (max-width: 1340px) {
@@ -43,12 +81,12 @@ export default {
       justify-content: flex-start;
     }
   }
+
   &__title {
-    @include font('Inter', 60px, 900);
+    @include font('Inter', 60px, 700);
     line-height: 64px;
     letter-spacing: -2.6px;
     margin-right: 45px;
-    color: $text-color--black-oil;
     white-space: nowrap;
     @media screen and (max-width: 1340px) {
       margin-right: 0;
@@ -62,6 +100,7 @@ export default {
       font-size: 40px;
     }
   }
+
   &__grid {
     flex: 1;
     width: 100%;
@@ -81,6 +120,7 @@ export default {
   @media screen and (max-width: 1024px) {
     padding: 17px 22px 30px;
   }
+
   &__title {
     @include font('Inter', 53px, 700);
     line-height: 56px;
@@ -90,6 +130,7 @@ export default {
       line-height: 56px;
     }
   }
+
   &__subtitle {
     @include font('Inter', 17px, 400);
     line-height: 24px;

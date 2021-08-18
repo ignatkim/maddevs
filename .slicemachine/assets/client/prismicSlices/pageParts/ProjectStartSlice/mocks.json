@@ -1,0 +1,11 @@
+[
+  {
+    "variation": "default-slice",
+    "name": "Default slice",
+    "slice_type": "project_start_slice",
+    "items": [],
+    "primary": {
+      "background": "black"
+    }
+  }
+]

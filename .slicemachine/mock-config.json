@@ -1,16 +1,22 @@
 {
   "client/prismicSlices/pageParts": {
     "CardGridSlice": {
-      "default-slice": {
+      "cardGridWithList": {
         "items": {
           "title": {
-            "content": "AWS–EKS–Base"
+            "content": "Main title"
+          },
+          "description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "list": {
+            "content": "Occaecat voluptate nostru, Velit esse incididunt, Lorem consequat culpa esse, Dolor occaecat proident"
           },
           "fullWidth": {
             "content": false
-          },
-          "image": {
-            "content": "https://d6xkme6dcvajw.cloudfront.net/images/OpenSource/svg/amazon.svg"
           }
         },
         "primary": {}
@@ -27,11 +33,8 @@
     },
     "CustomerLogoSlice": {
       "default": {
-        "primary": {
-          "title": {
-            "content": "f"
-          }
-        }
+        "primary": {},
+        "items": {}
       }
     },
     "TextSlice": {
@@ -39,6 +42,15 @@
         "primary": {
           "text": {
             "content": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies."
+          },
+          "background": {
+            "content": "black"
+          },
+          "colorTheme": {
+            "content": "white"
+          },
+          "maxWidth": {
+            "content": 1028
           }
         }
       },
@@ -46,6 +58,12 @@
         "primary": {
           "title": {
             "content": "Featured projects"
+          },
+          "background": {
+            "content": "black"
+          },
+          "colorTheme": {
+            "content": "white"
           }
         }
       },
@@ -56,6 +74,12 @@
           },
           "text": {
             "content": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies."
+          },
+          "background": {
+            "content": "black"
+          },
+          "colorTheme": {
+            "content": "white"
           }
         }
       },
@@ -72,6 +96,12 @@
           },
           "buttonText": {
             "content": "Get presentation"
+          },
+          "background": {
+            "content": "black"
+          },
+          "colorTheme": {
+            "content": "white"
           }
         }
       },
@@ -82,8 +112,15 @@
           },
           "text": {
             "content": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies."
+          },
+          "background": {
+            "content": "black"
+          },
+          "colorTheme": {
+            "content": "white"
           }
-        }
+        },
+        "items": {}
       }
     },
     "StartScreen": {
@@ -97,6 +134,9 @@
           },
           "subtitle": {
             "content": "Without empty words, here at Mad Devs we partner with projects where our teams thrive. Innovating solutions, carrying ownership, delivering sustainable value and celebrating successes — make a happy workplace, where things get done. "
+          },
+          "imageOpacity": {
+            "content": 1
           }
         }
       }
@@ -123,19 +163,45 @@
     },
     "KeyMetricsSlice": {
       "default-slice": {
-        "primary": {}
+        "primary": {},
+        "items": {
+          "title": {
+            "content": "10M+"
+          },
+          "subtitle": {
+            "content": "US dollars raised by 5 customer startups  in 2019."
+          }
+        }
       },
-      "withTopTitle": {
-        "primary": {}
+      "secondVariation": {
+        "primary": {
+          "colorTheme": {
+            "content": "white"
+          }
+        },
+        "items": {}
+      },
+      "thirdVariation": {
+        "primary": {
+          "colorTheme": {
+            "content": "white"
+          }
+        },
+        "items": {}
       }
     },
-    "CreateProjectsSlice": {},
+    "CreateProjectsSlice": {
+      "default-slice": {
+        "primary": {
+          "background": {
+            "content": "black"
+          }
+        }
+      }
+    },
     "SpacerSlice": {
       "default-slice": {
         "primary": {
-          "color": {
-            "content": "#555555"
-          },
           "height": {
             "content": "100px"
           },
@@ -156,16 +222,58 @@
     },
     "ButtonSlice": {
       "default-slice": {
-        "primary": {}
+        "primary": {
+          "text": {
+            "content": "Default red button"
+          }
+        }
       },
       "outlinedButton": {
-        "primary": {}
+        "primary": {
+          "text": {
+            "content": "Outlined button"
+          }
+        }
       },
-      "linkButton": {}
+      "linkButton": {
+        "primary": {
+          "text": {
+            "content": "Link button"
+          }
+        }
+      }
     },
     "TechnologiesSlice": {
       "default-slice": {
         "primary": {}
+      }
+    },
+    "CustomerTestimonials": {
+      "default-slice": {
+        "primary": {
+          "title": {
+            "content": "Customer Testimonials"
+          }
+        }
+      }
+    },
+    "CustomerRatesSlice": {
+      "default-slice": {
+        "primary": {
+          "background": {
+            "content": "black"
+          }
+        },
+        "items": {}
+      }
+    },
+    "ProjectStartSlice": {
+      "default-slice": {
+        "primary": {
+          "background": {
+            "content": "black"
+          }
+        }
       }
     }
   }

@@ -4,7 +4,7 @@
       class="spacer-slice"
       :style="{
         height,
-        backgroundColor: slice.primary.color
+        backgroundColor,
       }"
     />
   </div>
@@ -27,6 +27,13 @@ export default {
     return {
       height: this.slice.primary.height,
     }
+  },
+
+  computed: {
+    backgroundColor() {
+      if (this.slice.primary.background === 'black') return '#111213'
+      return '#fff'
+    },
   },
 
   mounted() {

@@ -1,5 +1,10 @@
 <template>
-  <section class="create-projects-slice">
+  <section
+    class="create-projects-slice"
+    :style="{
+      backgroundColor: sliceBackground,
+    }"
+  >
     <div class="container">
       <div class="create-projects-slice__content">
         <h2 class="create-projects-slice__title">
@@ -25,6 +30,7 @@
             class="flags-list__item"
           >
             <img
+              v-lazy-load
               :src="require(`@/assets/img/Home/flags/${country}.svg`)"
               :alt="country"
               width="32"
@@ -57,6 +63,14 @@ export default {
       countries,
       industriesEntries,
     }
+  },
+
+  computed: {
+    sliceBackground() {
+      if (this.slice.primary.background === 'white') return '#fff'
+      if (this.slice.primary.background === 'grey') return '#f5f7f9'
+      return '#111213' // black
+    },
   },
 }
 </script>

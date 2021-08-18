@@ -5,46 +5,70 @@
     "slice_type": "key_metrics_slice",
     "items": [
       {
-        "title": "deliver B2B initiatives",
-        "subtitle": "leverage B2C portals"
+        "title": "enhance viral functionalities",
+        "subtitle": "transition dot-com functionalities"
       },
       {
-        "title": "drive back-end initiatives",
-        "subtitle": "revolutionize collaborative interfaces"
+        "title": "envisioneer value-added interfaces",
+        "subtitle": "streamline e-business e-business"
       },
       {
-        "title": "generate innovative web-readiness",
-        "subtitle": "evolve scalable deliverables"
-      },
-      {
-        "title": "benchmark revolutionary e-commerce",
-        "subtitle": "extend rich users"
+        "title": "deliver frictionless methodologies",
+        "subtitle": "deliver cutting-edge deliverables"
       }
     ],
     "primary": {
-      "colorTheme": "white"
+      "background": "black"
     }
   },
   {
-    "variation": "withTopTitle",
-    "name": "With Top Title",
+    "variation": "secondVariation",
+    "name": "Second variation",
     "slice_type": "key_metrics_slice",
     "items": [
       {
-        "title": "redefine clicks-and-mortar experiences",
-        "subtitle": "harness intuitive channels"
+        "title": "syndicate back-end bandwidth",
+        "subtitle": "generate efficient e-services"
       },
       {
-        "title": "exploit user-centric systems",
-        "subtitle": "integrate extensible vortals"
+        "title": "orchestrate world-class infomediaries",
+        "subtitle": "integrate virtual bandwidth"
       },
       {
-        "title": "transition sticky partnerships",
-        "subtitle": "extend dot-com e-commerce"
+        "title": "innovate bleeding-edge functionalities",
+        "subtitle": "enhance mission-critical eyeballs"
+      },
+      {
+        "title": "expedite customized ROI",
+        "subtitle": "streamline turn-key portals"
       }
     ],
     "primary": {
-      "colorTheme": "white"
+      "colorTheme": "white",
+      "background": "black"
+    }
+  },
+  {
+    "variation": "thirdVariation",
+    "name": "Third variation",
+    "slice_type": "key_metrics_slice",
+    "items": [
+      {
+        "title": "deliver compelling web services",
+        "subtitle": "matrix back-end bandwidth"
+      },
+      {
+        "title": "deploy enterprise interfaces",
+        "subtitle": "deliver real-time initiatives"
+      },
+      {
+        "title": "incubate web-enabled solutions",
+        "subtitle": "embrace sexy deliverables"
+      }
+    ],
+    "primary": {
+      "colorTheme": "white",
+      "background": "white"
     }
   }
 ]

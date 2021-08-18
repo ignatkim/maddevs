@@ -3,16 +3,22 @@
     <img
       :src="image.url"
       :alt="image.alt"
+      :style="{
+        opacity: imageOpacity,
+        backgroundColor: sliceBackground,
+      }"
       class="start-screen-slice__image"
     >
     <div class="container">
       <div class="start-screen-slice__content">
-        <h1 class="start-screen-slice__title">
-          {{ title }}
-        </h1>
-        <p class="start-screen-slice__subtitle">
-          {{ subtitle }}
-        </p>
+        <h1
+          class="start-screen-slice__title"
+          v-html="title"
+        />
+        <p
+          class="start-screen-slice__subtitle"
+          v-html="subtitle"
+        />
       </div>
     </div>
   </section>
@@ -33,10 +39,19 @@ export default {
 
   data() {
     return {
+      imageOpacity: this.slice.primary.imageOpacity,
       image: this.slice.primary.image,
       title: this.slice.primary.title,
       subtitle: this.slice.primary.subtitle,
     }
+  },
+
+  computed: {
+    sliceBackground() {
+      if (this.slice.primary.background === 'white') return '#fff'
+      if (this.slice.primary.background === 'grey') return '#f5f7f9'
+      return '#111213' // black
+    },
   },
 }
 </script>
@@ -70,6 +85,7 @@ export default {
   &__content {
     text-align: center;
     z-index: 2;
+    max-width: 1028px;
   }
   &__title {
     color: $text-color--white;
