@@ -2,6 +2,12 @@
   <button
     type="button"
     class="ui-outlined-button"
+    :class="{
+      'ui-outlined-button--grey': color === 'grey',
+      'ui-outlined-button--black': color === 'black',
+      'ui-outlined-button--red': color === 'red',
+      'ui-outlined-button--full-width': fullWidth,
+    }"
     @click="handleClick"
   >
     <slot />
@@ -11,6 +17,18 @@
 <script>
 export default {
   name: 'UIOutlinedButton',
+  props: {
+    color: {
+      type: String,
+      default: 'grey',
+    },
+
+    fullWidth: {
+      type: Boolean,
+      default: false,
+    },
+  },
+
   methods: {
     handleClick() {
       if (!this.disabled) this.$emit('click')
@@ -25,18 +43,41 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid $border-color--grey-pale;
-  color: $text-color--quote-box;
   background-color: transparent;
   box-shadow: none;
   border-radius: 4px;
   letter-spacing: -0.4px;
+  padding: 14px 24px;
   line-height: 20px;
+  border: 1px solid;
   transition: 0.4s;
   cursor: pointer;
-  &:hover {
-    background-color: $border-color--grey-pale;
-    color: $text-color--white;
+  &--full-width {
+    width: 100%;
+  }
+  &--red {
+    color: $text-color--red;
+    border-color: $border-color--red;
+    &:hover {
+      background-color: $bgcolor--red;
+      color: $text-color--white;
+    }
+  }
+  &--black {
+    color: $text-color--black;
+    border-color: $border-color--black;
+    &:hover {
+      background-color: $bgcolor--black;
+      color: $text-color--white;
+    }
+  }
+  &--grey {
+    color: $text-color--quote-box;
+    border-color: $border-color--grey-pale;
+    &:hover {
+      background-color: $border-color--grey-pale;
+      color: $text-color--white;
+    }
   }
 }
 </style>
