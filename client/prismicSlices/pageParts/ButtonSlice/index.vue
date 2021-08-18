@@ -2,7 +2,7 @@
   <div
     class="button-slice"
     :style="{
-      sliceBackground,
+      backgroundColor: sliceBackground,
     }"
   >
     <div
