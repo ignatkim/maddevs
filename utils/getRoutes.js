@@ -36,6 +36,7 @@ const IGNORE_ROUTES = [
   '/blog/middle-android-developer',
   '/blog/ios-middle-senior-developer-v-finteh-proekt',
   '/blog/it-recruiter-middle-maddevs',
+  '/blog/mad-devs-ishet-golang-razrabotchika',
 ]
 
 const getRoutes = async () => {
