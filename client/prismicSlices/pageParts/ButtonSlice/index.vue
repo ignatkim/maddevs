@@ -1,34 +1,44 @@
 <template>
-  <div
-    :class="[
-      'button-slice',
-      `button-slice--align-${alignment}`,
-    ]"
-  >
-    <a
-      :to="link"
-      class="button-slice__link"
-      :class="fullWidth ? 'button-slice__link--full-width' : null"
+  <div class="button-slice">
+    <div
+      :class="[
+        'container',
+        `button-slice__content--align-${alignment}`,
+      ]"
     >
-      <UIButton
-        v-if="variation === 'default-slice'"
-        class="button-slice__button button-slice__button--normal"
+      <a
+        :to="link.url"
+        target="_blank"
+        class="button-slice__link"
+        :class="{
+          'button-slice__link--full-width': fullWidth
+        }"
       >
-        {{ text }}
-      </UIButton>
-      <UIOutlinedButton
-        v-else-if="variation === 'outlinedButton'"
-        class="button-slice__button button-slice__button--outlined"
-      >
-        {{ text }}
-      </UIOutlinedButton>
-      <UILinkButton
-        v-else-if="variation === 'linkButton'"
-        class="button-slice__button button-slice__button--link"
-      >
-        {{ text }}
-      </UILinkButton>
-    </a>
+        <UIButton
+          v-if="variation === 'default-slice'"
+          full-width
+          class="button-slice__button button-slice__button--normal"
+        >
+          {{ text }}
+        </UIButton>
+        <UIOutlinedButton
+          v-else-if="variation === 'outlinedButton'"
+          full-width
+          :color="color"
+          class="button-slice__button button-slice__button--outlined"
+        >
+          {{ text }}
+        </UIOutlinedButton>
+        <UILinkButton
+          v-else-if="variation === 'linkButton'"
+          full-width
+          :color="color"
+          class="button-slice__button button-slice__button--link"
+        >
+          {{ text }}
+        </UILinkButton>
+      </a>
+    </div>
   </div>
 </template>
 
@@ -62,6 +72,7 @@ export default {
       alignment: this.slice.primary.alignment,
       link: this.slice.primary.link,
       text: this.slice.primary.text,
+      color: this.slice.primary.color,
     }
   },
 }
@@ -70,12 +81,14 @@ export default {
 <style lang="scss" scoped>
 .button-slice {
   display: block;
-  &--align {
-    &-center {
-      text-align: center;
-    }
-    &-right {
-      text-align: right;
+  &__content {
+    &--align {
+      &-center {
+        text-align: center;
+      }
+      &-right {
+        text-align: right;
+      }
     }
   }
   &__link {
@@ -85,13 +98,10 @@ export default {
     }
   }
   &__button {
-    width: 100%;
     padding: 14px 24px;
-    &--normal {
-      line-height: 20px;
-      &:hover {
-        background-color: lighten($bgcolor--red, 10%) !important;
-      }
+    line-height: 20px;
+    &--normal:hover {
+      background-color: lighten($bgcolor--red, 10%) !important;
     }
   }
 }

@@ -48,7 +48,6 @@ export default {
   background-color: transparent;
   border: none;
   box-shadow: none;
-  padding: 14px 24px;
   line-height: 20px;
   letter-spacing: -0.4px;
   color: $text-color--blue;

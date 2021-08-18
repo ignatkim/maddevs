@@ -13,7 +13,7 @@
       "primary": {
         "fullWidth": {
           "config": {
-            "label": "",
+            "label": "Full width",
             "placeholder_false": "false",
             "placeholder_true": "true",
             "default_value": false
@@ -22,7 +22,7 @@
         },
         "alignment": {
           "config": {
-            "label": "",
+            "label": "Alignment",
             "placeholder": "",
             "options": [
               "left",
@@ -35,14 +35,14 @@
         },
         "text": {
           "config": {
-            "label": "",
+            "label": "Button text",
             "placeholder": ""
           },
           "type": "Text"
         },
         "link": {
           "config": {
-            "label": "",
+            "label": "Button link",
             "placeholder": "",
             "select": "web",
             "allowTargetBlank": false
@@ -61,7 +61,7 @@
       "primary": {
         "fullWidth": {
           "config": {
-            "label": "",
+            "label": "Full width",
             "placeholder_false": "false",
             "placeholder_true": "true",
             "default_value": false
@@ -70,7 +70,7 @@
         },
         "alignment": {
           "config": {
-            "label": "",
+            "label": "Alignment",
             "placeholder": "",
             "options": [
               "left",
@@ -81,16 +81,29 @@
           },
           "type": "Select"
         },
+        "color": {
+          "config": {
+            "label": "Button color",
+            "placeholder": "",
+            "options": [
+              "grey",
+              "black",
+              "red",
+              "blue"
+            ]
+          },
+          "type": "Select"
+        },
         "text": {
           "config": {
-            "label": "",
+            "label": "Button text",
             "placeholder": ""
           },
           "type": "Text"
         },
         "link": {
           "config": {
-            "label": "",
+            "label": "Button link",
             "placeholder": "",
             "select": "web",
             "allowTargetBlank": false
@@ -109,7 +122,7 @@
       "primary": {
         "fullWidth": {
           "config": {
-            "label": "",
+            "label": "Full width",
             "placeholder_false": "false",
             "placeholder_true": "true",
             "default_value": false
@@ -118,7 +131,7 @@
         },
         "alignment": {
           "config": {
-            "label": "",
+            "label": "Alignment",
             "placeholder": "",
             "options": [
               "left",
@@ -129,16 +142,29 @@
           },
           "type": "Select"
         },
+        "color": {
+          "config": {
+            "label": "Button color",
+            "placeholder": "",
+            "options": [
+              "grey",
+              "black",
+              "red",
+              "blue"
+            ]
+          },
+          "type": "Select"
+        },
         "text": {
           "config": {
-            "label": "",
+            "label": "Button text",
             "placeholder": ""
           },
           "type": "Text"
         },
         "link": {
           "config": {
-            "label": "",
+            "label": "Button link",
             "placeholder": "",
             "select": "web",
             "allowTargetBlank": false

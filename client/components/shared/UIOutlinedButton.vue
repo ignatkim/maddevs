@@ -6,6 +6,7 @@
       'ui-outlined-button--grey': color === 'grey',
       'ui-outlined-button--black': color === 'black',
       'ui-outlined-button--red': color === 'red',
+      'ui-outlined-button--blue': color === 'blue',
       'ui-outlined-button--full-width': fullWidth,
     }"
     @click="handleClick"
@@ -47,7 +48,6 @@ export default {
   box-shadow: none;
   border-radius: 4px;
   letter-spacing: -0.4px;
-  padding: 14px 24px;
   line-height: 20px;
   border: 1px solid;
   transition: 0.4s;
@@ -60,6 +60,14 @@ export default {
     border-color: $border-color--red;
     &:hover {
       background-color: $bgcolor--red;
+      color: $text-color--white;
+    }
+  }
+  &--blue {
+    color: $text-color--blue;
+    border-color: $border-color--blue;
+    &:hover {
+      background-color: $bgcolor--blue;
       color: $text-color--white;
     }
   }

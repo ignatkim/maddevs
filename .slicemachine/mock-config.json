@@ -169,7 +169,9 @@
       "outlinedButton": {
         "primary": {}
       },
-      "linkButton": {}
+      "linkButton": {
+        "primary": {}
+      }
     },
     "TechnologiesSlice": {
       "default-slice": {
