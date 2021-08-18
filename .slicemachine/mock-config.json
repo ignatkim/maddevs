@@ -164,12 +164,26 @@
     },
     "ButtonSlice": {
       "default-slice": {
-        "primary": {}
+        "primary": {
+          "text": {
+            "content": "Default red button"
+          }
+        }
       },
       "outlinedButton": {
-        "primary": {}
+        "primary": {
+          "text": {
+            "content": "Outlined button"
+          }
+        }
       },
-      "linkButton": {}
+      "linkButton": {
+        "primary": {
+          "text": {
+            "content": "Link button"
+          }
+        }
+      }
     },
     "TechnologiesSlice": {
       "default-slice": {

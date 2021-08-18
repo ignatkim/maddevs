@@ -2,6 +2,13 @@
   <button
     type="button"
     class="ui-link-button"
+    :class="{
+      'ui-link-button--grey': color === 'grey',
+      'ui-link-button--black': color === 'black',
+      'ui-link-button--red': color === 'red',
+      'ui-link-button--blue': color === 'blue',
+      'ui-link-button--full-width': fullWidth,
+    }"
     @click="handleClick"
   >
     <slot />
@@ -11,6 +18,18 @@
 <script>
 export default {
   name: 'UILinkButton',
+  props: {
+    color: {
+      type: String,
+      default: 'grey',
+    },
+
+    fullWidth: {
+      type: Boolean,
+      default: false,
+    },
+  },
+
   methods: {
     handleClick() {
       if (!this.disabled) this.$emit('click')
@@ -31,11 +50,34 @@ export default {
   box-shadow: none;
   line-height: 20px;
   letter-spacing: -0.4px;
-  color: $text-color--blue;
   transition: 0.4s;
   cursor: pointer;
-  &:hover {
-    color: darken($text-color--blue, 10%);
+  &--full-width {
+    width: 100%;
+  }
+  &--red {
+    color: $text-color--red;
+    &:hover {
+      color: lighten($text-color--red, 10%);
+    }
+  }
+  &--blue {
+    color: $text-color--blue;
+    &:hover {
+      color: lighten($text-color--blue, 10%);
+    }
+  }
+  &--black {
+    color: $text-color--black;
+    &:hover {
+      color: lighten($text-color--black, 10%);
+    }
+  }
+  &--grey {
+    color: $text-color--quote-box;
+    &:hover {
+      color: lighten($text-color--quote-box, 10%)
+    }
   }
 }
 </style>

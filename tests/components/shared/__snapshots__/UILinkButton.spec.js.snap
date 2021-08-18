@@ -3,7 +3,7 @@
 exports[`UILinkButton component should render correctly with slot 1`] = `
 <div>
   <button
-    class="ui-link-button"
+    class="ui-link-button ui-link-button--grey"
     type="button"
   >
     Link button
@@ -14,7 +14,7 @@ exports[`UILinkButton component should render correctly with slot 1`] = `
 exports[`UILinkButton component should render correctly without slot 1`] = `
 <div>
   <button
-    class="ui-link-button"
+    class="ui-link-button ui-link-button--grey"
     type="button"
   />
 </div>
