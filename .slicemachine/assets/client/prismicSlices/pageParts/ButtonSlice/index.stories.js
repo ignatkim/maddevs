@@ -18,7 +18,7 @@ export const _DefaultSlice = () => ({
   },
   data() {
     return {
-      mock: {"variation":"default-slice","name":"Default slice","slice_type":"button_slice","items":[],"primary":{"fullWidth":true,"alignment":"right","text":"empower world-class eyeballs","link":{"link_type":"Web","url":"https://prismic.io"}},"id":"_DefaultSlice"}
+      mock: {"variation":"default-slice","name":"Default slice","slice_type":"button_slice","items":[],"primary":{"fullWidth":false,"alignment":"left","text":"Default red button","link":{"link_type":"Web","url":"http://google.com"}},"id":"_DefaultSlice"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -37,7 +37,7 @@ export const _OutlinedButton = () => ({
   },
   data() {
     return {
-      mock: {"variation":"outlinedButton","name":"Outlined Button","slice_type":"button_slice","items":[],"primary":{"fullWidth":false,"alignment":"left","color":"grey","text":"e-enable e-business action-items","link":{"link_type":"Web","url":"http://twitter.com"}},"id":"_OutlinedButton"}
+      mock: {"variation":"outlinedButton","name":"Outlined Button","slice_type":"button_slice","items":[],"primary":{"fullWidth":true,"alignment":"left","color":"red","text":"Outlined button","link":{"link_type":"Web","url":"https://prismic.io"}},"id":"_OutlinedButton"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -56,7 +56,7 @@ export const _LinkButton = () => ({
   },
   data() {
     return {
-      mock: {"variation":"linkButton","name":"Link Button","slice_type":"button_slice","items":[],"primary":{"fullWidth":false,"alignment":"right","color":"grey","text":"seize sticky e-commerce","link":{"link_type":"Web","url":"http://google.com"}},"id":"_LinkButton"}
+      mock: {"variation":"linkButton","name":"Link Button","slice_type":"button_slice","items":[],"primary":{"fullWidth":true,"alignment":"left","color":"red","text":"Link button","link":{"link_type":"Web","url":"https://prismic.io"}},"id":"_LinkButton"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
