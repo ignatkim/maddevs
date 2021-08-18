@@ -5,10 +5,11 @@
     "slice_type": "text_slice",
     "items": [],
     "primary": {
-      "large": false,
+      "large": true,
       "text": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.",
       "colorTheme": "white",
-      "background": "black"
+      "background": "black",
+      "maxWidth": 1028
     }
   },
   {
@@ -57,13 +58,13 @@
     "slice_type": "text_slice",
     "items": [
       {
-        "listItem": "whiteboard cutting-edge relationships"
+        "listItem": "reintermediate best-of-breed relationships"
       },
       {
-        "listItem": "evolve distributed ROI"
+        "listItem": "aggregate killer eyeballs"
       },
       {
-        "listItem": "visualize front-end portals"
+        "listItem": "architect vertical networks"
       }
     ],
     "primary": {

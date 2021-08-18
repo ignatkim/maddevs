@@ -48,6 +48,9 @@
           },
           "colorTheme": {
             "content": "white"
+          },
+          "maxWidth": {
+            "content": 1028
           }
         }
       },
