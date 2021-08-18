@@ -18,7 +18,7 @@ export const _DefaultSlice = () => ({
   },
   data() {
     return {
-      mock: {"variation":"default-slice","name":"Default slice","slice_type":"text_slice","items":[],"primary":{"large":true,"text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","background":"black","maxWidth":1028},"id":"_DefaultSlice"}
+      mock: {"variation":"default-slice","name":"Default slice","slice_type":"text_slice","items":[],"primary":{"large":false,"text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","background":"black","maxWidth":"1028px"},"id":"_DefaultSlice"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -37,7 +37,7 @@ export const _Title = () => ({
   },
   data() {
     return {
-      mock: {"variation":"title","name":"Title","slice_type":"text_slice","items":[],"primary":{"title":"Featured projects","colorTheme":"white","background":"black"},"id":"_Title"}
+      mock: {"variation":"title","name":"Title","slice_type":"text_slice","items":[],"primary":{"title":"Featured projects","colorTheme":"white","background":"black","maxWidth":"1028px"},"id":"_Title"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -56,7 +56,7 @@ export const _TitleText = () => ({
   },
   data() {
     return {
-      mock: {"variation":"titleText","name":"Title + Text","slice_type":"text_slice","items":[],"primary":{"title":"Featured projects","text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","background":"black"},"id":"_TitleText"}
+      mock: {"variation":"titleText","name":"Title + Text","slice_type":"text_slice","items":[],"primary":{"title":"Featured projects","text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","background":"black","maxWidth":"1028px"},"id":"_TitleText"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -75,7 +75,7 @@ export const _TitleTextButton = () => ({
   },
   data() {
     return {
-      mock: {"variation":"titleTextButton","name":"Title + Text + Button","slice_type":"text_slice","items":[],"primary":{"title":"Featured projects","text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","buttonText":"Get presentation","buttonLink":{"link_type":"Web","url":"https://maddevs.co/delivery-models.pdf"},"colorTheme":"white","background":"black"},"id":"_TitleTextButton"}
+      mock: {"variation":"titleTextButton","name":"Title + Text + Button","slice_type":"text_slice","items":[],"primary":{"title":"Featured projects","text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","buttonText":"Get presentation","buttonLink":{"link_type":"Web","url":"https://maddevs.co/delivery-models.pdf"},"colorTheme":"white","background":"black","maxWidth":"1028px"},"id":"_TitleTextButton"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -94,7 +94,7 @@ export const _TitleTextList = () => ({
   },
   data() {
     return {
-      mock: {"variation":"titleTextList","name":"Title + Text + List","slice_type":"text_slice","items":[{"listItem":"reintermediate best-of-breed relationships"},{"listItem":"aggregate killer eyeballs"},{"listItem":"architect vertical networks"}],"primary":{"title":"Software <br /> development","text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","background":"black"},"id":"_TitleTextList"}
+      mock: {"variation":"titleTextList","name":"Title + Text + List","slice_type":"text_slice","items":[{"listItem":"maximize interactive niches"},{"listItem":"deliver interactive partnerships"},{"listItem":"evolve e-business bandwidth"}],"primary":{"title":"Software <br /> development","text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","background":"black","maxWidth":"1028px"},"id":"_TitleTextList"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'

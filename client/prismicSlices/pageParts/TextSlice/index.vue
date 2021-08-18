@@ -8,7 +8,7 @@
     <div
       class="container"
       :style="{
-        maxWidth: `${slice.primary.maxWidth}px`,
+        maxWidth: slice.primary.maxWidth,
       }"
     >
       <SimpleText
