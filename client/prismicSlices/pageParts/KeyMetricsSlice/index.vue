@@ -2,7 +2,7 @@
   <section
     class="key-metrics-slice"
     :style="{
-      sliceBackground,
+      backgroundColor: sliceBackground,
     }"
   >
     <div class="container">

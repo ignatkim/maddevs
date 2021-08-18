@@ -5,7 +5,7 @@
       :alt="image.alt"
       :style="{
         opacity: imageOpacity,
-        background: sliceBackground,
+        backgroundColor: sliceBackground,
       }"
       class="start-screen-slice__image"
     >
