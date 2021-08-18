@@ -50,7 +50,6 @@ export default {
   box-shadow: none;
   line-height: 20px;
   letter-spacing: -0.4px;
-  color: $text-color--blue;
   transition: 0.4s;
   cursor: pointer;
   &--full-width {
