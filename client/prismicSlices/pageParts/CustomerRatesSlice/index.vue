@@ -1,5 +1,10 @@
 <template>
-  <section class="customer-rates-slice">
+  <section
+    class="customer-rates-slice"
+    :style="{
+      backgroundColor: sliceBackground,
+    }"
+  >
     <div class="container">
       <h2 class="customer-rates-slice__title">
         <span>Fantastic</span> <br>
@@ -40,6 +45,14 @@ export default {
     return {
       ratesList: this.slice.items,
     }
+  },
+
+  computed: {
+    sliceBackground() {
+      if (this.slice.primary.background === 'white') return '#fff'
+      if (this.slice.primary.background === 'grey') return '#f5f7f9'
+      return '#111213' // black
+    },
   },
 }
 </script>

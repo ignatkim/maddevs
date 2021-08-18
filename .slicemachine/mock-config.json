@@ -256,7 +256,12 @@
     },
     "CustomerRatesSlice": {
       "default-slice": {
-        "primary": {}
+        "primary": {
+          "background": {
+            "content": "black"
+          }
+        },
+        "items": {}
       }
     },
     "ProjectStartSlice": {
