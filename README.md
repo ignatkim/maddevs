@@ -425,8 +425,6 @@ Also you need to run the storybook dashboard in other terminal: [localhost:3003]
 npm run storybook
 ```
 
-> Please, use "./client/prismicSlices" folder for create new slices.
-
 ```bash
 🗂 Where should we create your new local library? ./client/prismicSlices/<folder>
 ...
