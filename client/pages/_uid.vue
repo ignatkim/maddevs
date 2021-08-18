@@ -15,6 +15,7 @@ export default {
 
   async asyncData({ error, params, $prismic }) {
     const response = await $prismic.api.getByUID('custom_page', params.uid)
+    if (!response?.data?.body) return error({ statusCode: 404, message: 'Page not found' })
     if (!response.data.released && process.env.ffEnvironment === 'production') {
       return error({ statusCode: 404, message: 'Page not found' })
     }
