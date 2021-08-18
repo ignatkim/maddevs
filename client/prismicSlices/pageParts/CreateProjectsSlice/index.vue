@@ -2,7 +2,7 @@
   <section
     class="create-projects-slice"
     :style="{
-      sliceBackground,
+      backgroundColor: sliceBackground,
     }"
   >
     <div class="container">
