@@ -1,13 +1,11 @@
 <template>
-  <div>
-    <section
-      class="spacer-slice"
-      :style="{
-        height,
-        backgroundColor,
-      }"
-    />
-  </div>
+  <section
+    class="spacer-slice"
+    :style="{
+      height,
+      backgroundColor,
+    }"
+  />
 </template>
 
 <script>
