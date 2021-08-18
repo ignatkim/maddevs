@@ -156,7 +156,15 @@
         "items": {}
       }
     },
-    "CreateProjectsSlice": {},
+    "CreateProjectsSlice": {
+      "default-slice": {
+        "primary": {
+          "background": {
+            "content": "black"
+          }
+        }
+      }
+    },
     "SpacerSlice": {
       "default-slice": {
         "primary": {
