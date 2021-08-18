@@ -18,7 +18,7 @@ export const _DefaultSlice = () => ({
   },
   data() {
     return {
-      mock: {"variation":"default-slice","name":"Default slice","slice_type":"text_slice","items":[],"primary":{"large":false,"text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","background":"black","maxWidth":5098},"id":"_DefaultSlice"}
+      mock: {"variation":"default-slice","name":"Default slice","slice_type":"text_slice","items":[],"primary":{"large":true,"text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","background":"black","maxWidth":1028},"id":"_DefaultSlice"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -94,7 +94,7 @@ export const _TitleTextList = () => ({
   },
   data() {
     return {
-      mock: {"variation":"titleTextList","name":"Title + Text + List","slice_type":"text_slice","items":[{"listItem":"evolve extensible architectures"},{"listItem":"matrix killer solutions"},{"listItem":"engineer transparent web services"}],"primary":{"title":"Software <br /> development","text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","background":"black"},"id":"_TitleTextList"}
+      mock: {"variation":"titleTextList","name":"Title + Text + List","slice_type":"text_slice","items":[{"listItem":"reintermediate best-of-breed relationships"},{"listItem":"aggregate killer eyeballs"},{"listItem":"architect vertical networks"}],"primary":{"title":"Software <br /> development","text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","background":"black"},"id":"_TitleTextList"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'

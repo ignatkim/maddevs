@@ -5,11 +5,11 @@
     "slice_type": "text_slice",
     "items": [],
     "primary": {
-      "large": false,
+      "large": true,
       "text": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.",
       "colorTheme": "white",
       "background": "black",
-      "maxWidth": 5098
+      "maxWidth": 1028
     }
   },
   {
@@ -58,13 +58,13 @@
     "slice_type": "text_slice",
     "items": [
       {
-        "listItem": "evolve extensible architectures"
+        "listItem": "reintermediate best-of-breed relationships"
       },
       {
-        "listItem": "matrix killer solutions"
+        "listItem": "aggregate killer eyeballs"
       },
       {
-        "listItem": "engineer transparent web services"
+        "listItem": "architect vertical networks"
       }
     ],
     "primary": {

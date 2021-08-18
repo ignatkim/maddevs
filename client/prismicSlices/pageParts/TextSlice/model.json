@@ -54,7 +54,7 @@
         },
         "maxWidth": {
           "config": {
-            "label": "Max width",
+            "label": "Max width (px)",
             "placeholder": ""
           },
           "type": "Number"
