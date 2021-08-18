@@ -1,7 +1,9 @@
 <template>
   <section
     class="key-metrics-slice"
-    :class="colorThemeClass"
+    :style="{
+      sliceBackground,
+    }"
   >
     <div class="container">
       <FirstVariation
@@ -46,34 +48,12 @@ export default {
     },
   },
 
-  data() {
-    return {
-      colorTheme: this.slice.primary.colorTheme,
-    }
-  },
-
   computed: {
-    colorThemeClass() {
-      if (this.colorTheme === 'white') return 'key-metrics-slice--white-theme'
-      return 'key-metrics-slice--black-theme'
+    sliceBackground() {
+      if (this.slice.primary.background === 'white') return '#fff'
+      if (this.slice.primary.background === 'grey') return '#f5f7f9'
+      return '#111213' // black
     },
   },
 }
 </script>
-
-<style lang="scss" scoped>
-.key-metrics-slice {
-  &--black-theme {
-    /deep/ .key-metric {
-      background-color: $bgcolor--black-pale;
-      color: $text-color--white-primary;
-    }
-  }
-  &--white-theme {
-    /deep/ .key-metric {
-      background-color: $bgcolor--silver;
-      color: $text-color--black-oil;
-    }
-  }
-}
-</style>
