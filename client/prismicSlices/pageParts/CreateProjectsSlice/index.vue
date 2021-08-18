@@ -30,6 +30,7 @@
             class="flags-list__item"
           >
             <img
+              v-lazy-load
               :src="require(`@/assets/img/Home/flags/${country}.svg`)"
               :alt="country"
               width="32"
