@@ -40,8 +40,8 @@ export default {
     line-height: 48px;
     letter-spacing: -1px;
     margin-bottom: 22px;
-    color: $text-color--black-oil;
     text-align: center;
+    color: $text-color--black-lighter;
     @media screen and (max-width: 1024px) {
       font-size: 36px;
       line-height: 43px;
@@ -63,18 +63,20 @@ export default {
 
 .key-metric {
   padding: 27px 27px 24px;
-  background-color: $bgcolor--white;
   word-break: break-word;
+  background-color: $bgcolor--white;
   @media screen and (max-width: 1024px) {
     padding: 29px 17px 13px;
   }
   @media screen and (max-width: 1024px) {
     padding: 28px 13px;
   }
+
   &__title,
   &__subtitle {
     text-align: center;
   }
+
   &__title {
     @include font('Poppins', 45px, 700);
     line-height: 47px;
@@ -85,9 +87,11 @@ export default {
       line-height: 40px;
     }
   }
+
   &__subtitle {
     @include font('Inter', 14px, 400);
     line-height: 22px;
+    color: $text-color--black-lighter;
     @media screen and (max-width: 1024px) {
       margin-top: 8px;
       font-size: 12px;
