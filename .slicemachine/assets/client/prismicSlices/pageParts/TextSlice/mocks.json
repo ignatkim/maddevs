@@ -5,8 +5,10 @@
     "slice_type": "text_slice",
     "items": [],
     "primary": {
+      "large": false,
       "text": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.",
-      "large": true
+      "colorTheme": "white",
+      "background": "black"
     }
   },
   {
@@ -15,7 +17,9 @@
     "slice_type": "text_slice",
     "items": [],
     "primary": {
-      "title": "Featured projects"
+      "title": "Featured projects",
+      "colorTheme": "white",
+      "background": "black"
     }
   },
   {
@@ -25,7 +29,9 @@
     "items": [],
     "primary": {
       "title": "Featured projects",
-      "text": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies."
+      "text": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.",
+      "colorTheme": "white",
+      "background": "black"
     }
   },
   {
@@ -40,7 +46,9 @@
       "buttonLink": {
         "link_type": "Web",
         "url": "https://maddevs.co/delivery-models.pdf"
-      }
+      },
+      "colorTheme": "white",
+      "background": "black"
     }
   },
   {
@@ -49,21 +57,20 @@
     "slice_type": "text_slice",
     "items": [
       {
-        "listItem": "drive extensible web-readiness"
+        "listItem": "whiteboard cutting-edge relationships"
       },
       {
-        "listItem": "iterate customized experiences"
+        "listItem": "evolve distributed ROI"
       },
       {
-        "listItem": "expedite frictionless synergies"
-      },
-      {
-        "listItem": "mesh 24/365 markets"
+        "listItem": "visualize front-end portals"
       }
     ],
     "primary": {
       "title": "Software <br /> development",
-      "text": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies."
+      "text": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.",
+      "colorTheme": "white",
+      "background": "black"
     }
   }
 ]

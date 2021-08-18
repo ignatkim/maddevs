@@ -1,5 +1,10 @@
 <template>
-  <section class="text-slice">
+  <section
+    class="text-slice"
+    :style="{
+      backgroundColor: sliceBackground
+    }"
+  >
     <div class="container">
       <SimpleText
         v-if="slice.variation === 'default-slice'"
@@ -50,6 +55,14 @@ export default {
       default() {
         return {}
       },
+    },
+  },
+
+  computed: {
+    sliceBackground() {
+      if (this.slice.primary.background === 'white') return '#fff'
+      if (this.slice.primary.background === 'grey') return '#f5f7f9'
+      return '#111213' // black
     },
   },
 }

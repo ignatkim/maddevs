@@ -11,21 +11,46 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "TextSlice",
       "primary": {
-        "text": {
-          "config": {
-            "label": "",
-            "placeholder": ""
-          },
-          "type": "Text"
-        },
         "large": {
           "config": {
-            "label": "",
+            "label": "Size",
             "placeholder_false": "normal",
             "placeholder_true": "large",
             "default_value": false
           },
           "type": "Boolean"
+        },
+        "text": {
+          "config": {
+            "label": "Text",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "colorTheme": {
+          "config": {
+            "label": "Color theme",
+            "placeholder": "",
+            "options": [
+              "white",
+              "black"
+            ],
+            "default_value": "white"
+          },
+          "type": "Select"
+        },
+        "background": {
+          "config": {
+            "label": "Slice background",
+            "placeholder": "",
+            "options": [
+              "black",
+              "white",
+              "grey"
+            ],
+            "default_value": "black"
+          },
+          "type": "Select"
         }
       },
       "items": {}
@@ -39,10 +64,35 @@
       "primary": {
         "title": {
           "config": {
-            "label": "",
+            "label": "Title",
             "placeholder": ""
           },
           "type": "Text"
+        },
+        "colorTheme": {
+          "config": {
+            "label": "Color theme",
+            "placeholder": "",
+            "options": [
+              "white",
+              "black"
+            ],
+            "default_value": "white"
+          },
+          "type": "Select"
+        },
+        "background": {
+          "config": {
+            "label": "Slice background",
+            "placeholder": "",
+            "options": [
+              "black",
+              "white",
+              "grey"
+            ],
+            "default_value": "black"
+          },
+          "type": "Select"
         }
       },
       "items": {}
@@ -56,17 +106,42 @@
       "primary": {
         "title": {
           "config": {
-            "label": "",
+            "label": "Title",
             "placeholder": ""
           },
           "type": "Text"
         },
         "text": {
           "config": {
-            "label": "",
+            "label": "Text",
             "placeholder": ""
           },
           "type": "Text"
+        },
+        "colorTheme": {
+          "config": {
+            "label": "Color theme",
+            "placeholder": "",
+            "options": [
+              "white",
+              "black"
+            ],
+            "default_value": "white"
+          },
+          "type": "Select"
+        },
+        "background": {
+          "config": {
+            "label": "Slice background",
+            "placeholder": "",
+            "options": [
+              "black",
+              "white",
+              "grey"
+            ],
+            "default_value": "black"
+          },
+          "type": "Select"
         }
       },
       "items": {}
@@ -80,33 +155,58 @@
       "primary": {
         "title": {
           "config": {
-            "label": "",
+            "label": "Title",
             "placeholder": ""
           },
           "type": "Text"
         },
         "text": {
           "config": {
-            "label": "",
+            "label": "Text",
             "placeholder": ""
           },
           "type": "Text"
         },
         "buttonText": {
           "config": {
-            "label": "",
+            "label": "Button text",
             "placeholder": ""
           },
           "type": "Text"
         },
         "buttonLink": {
           "config": {
-            "label": "",
+            "label": "Button link",
             "placeholder": "",
             "select": "web",
             "allowTargetBlank": false
           },
           "type": "Link"
+        },
+        "colorTheme": {
+          "config": {
+            "label": "Color theme",
+            "placeholder": "",
+            "options": [
+              "white",
+              "black"
+            ],
+            "default_value": "white"
+          },
+          "type": "Select"
+        },
+        "background": {
+          "config": {
+            "label": "Slice background",
+            "placeholder": "",
+            "options": [
+              "black",
+              "white",
+              "grey"
+            ],
+            "default_value": "black"
+          },
+          "type": "Select"
         }
       },
       "items": {}
@@ -120,23 +220,48 @@
       "primary": {
         "title": {
           "config": {
-            "label": "",
+            "label": "Title",
             "placeholder": ""
           },
           "type": "Text"
         },
         "text": {
           "config": {
-            "label": "",
+            "label": "Text",
             "placeholder": ""
           },
           "type": "Text"
+        },
+        "colorTheme": {
+          "config": {
+            "label": "Color theme",
+            "placeholder": "",
+            "options": [
+              "white",
+              "black"
+            ],
+            "default_value": "white"
+          },
+          "type": "Select"
+        },
+        "background": {
+          "config": {
+            "label": "Slice background",
+            "placeholder": "",
+            "options": [
+              "black",
+              "white",
+              "grey"
+            ],
+            "default_value": "black"
+          },
+          "type": "Select"
         }
       },
       "items": {
         "listItem": {
           "config": {
-            "label": "",
+            "label": "List item",
             "placeholder": ""
           },
           "type": "Text"

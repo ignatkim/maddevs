@@ -42,6 +42,12 @@
         "primary": {
           "text": {
             "content": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies."
+          },
+          "background": {
+            "content": "black"
+          },
+          "colorTheme": {
+            "content": "white"
           }
         }
       },
@@ -49,6 +55,12 @@
         "primary": {
           "title": {
             "content": "Featured projects"
+          },
+          "background": {
+            "content": "black"
+          },
+          "colorTheme": {
+            "content": "white"
           }
         }
       },
@@ -59,6 +71,12 @@
           },
           "text": {
             "content": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies."
+          },
+          "background": {
+            "content": "black"
+          },
+          "colorTheme": {
+            "content": "white"
           }
         }
       },
@@ -75,6 +93,12 @@
           },
           "buttonText": {
             "content": "Get presentation"
+          },
+          "background": {
+            "content": "black"
+          },
+          "colorTheme": {
+            "content": "white"
           }
         }
       },
@@ -85,8 +109,15 @@
           },
           "text": {
             "content": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies."
+          },
+          "background": {
+            "content": "black"
+          },
+          "colorTheme": {
+            "content": "white"
           }
-        }
+        },
+        "items": {}
       }
     },
     "StartScreen": {
