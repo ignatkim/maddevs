@@ -8,7 +8,8 @@
       "large": false,
       "text": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.",
       "colorTheme": "white",
-      "background": "black"
+      "background": "black",
+      "maxWidth": 5098
     }
   },
   {
@@ -57,13 +58,13 @@
     "slice_type": "text_slice",
     "items": [
       {
-        "listItem": "whiteboard cutting-edge relationships"
+        "listItem": "evolve extensible architectures"
       },
       {
-        "listItem": "evolve distributed ROI"
+        "listItem": "matrix killer solutions"
       },
       {
-        "listItem": "visualize front-end portals"
+        "listItem": "engineer transparent web services"
       }
     ],
     "primary": {

@@ -51,6 +51,13 @@
             "default_value": "black"
           },
           "type": "Select"
+        },
+        "maxWidth": {
+          "config": {
+            "label": "Max width",
+            "placeholder": ""
+          },
+          "type": "Number"
         }
       },
       "items": {}

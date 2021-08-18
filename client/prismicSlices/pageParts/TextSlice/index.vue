@@ -2,10 +2,15 @@
   <section
     class="text-slice"
     :style="{
-      backgroundColor: sliceBackground
+      backgroundColor: sliceBackground,
     }"
   >
-    <div class="container">
+    <div
+      class="container"
+      :style="{
+        maxWidth: `${slice.primary.maxWidth}px`,
+      }"
+    >
       <SimpleText
         v-if="slice.variation === 'default-slice'"
         v-bind="slice.primary"
