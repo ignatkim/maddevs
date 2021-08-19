@@ -104,7 +104,9 @@
       ref="progressBar"
       class="progress-bar"
     />
-    <ContentLocker />
+    <client-only>
+      <ContentLocker />
+    </client-only>
   </main>
 </template>
 

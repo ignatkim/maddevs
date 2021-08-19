@@ -124,7 +124,7 @@ export default {
 
   &__img {
     width: 100%;
-    max-width: 140px;
+    max-width: 85px;
     height: auto;
     transform: rotate(9deg);
     margin: 0 auto;
