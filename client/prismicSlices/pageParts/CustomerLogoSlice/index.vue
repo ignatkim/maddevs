@@ -4,7 +4,10 @@
     :class="colorThemeClass"
   >
     <div class="container">
-      <div class="customer-logo-slice_list">
+      <div
+        data-aos="fade-up"
+        class="customer-logo-slice_list"
+      >
         <div
           v-for="(item, i) of slice.items"
           :key="`customer-logo-slice-${i}`"
@@ -23,8 +26,19 @@
 </template>
 
 <script>
+import animateOnScrollMixin from '@/mixins/animateOnScrollMixin'
+
 export default {
   name: 'CustomerLogoSlice',
+
+  mixins: [animateOnScrollMixin({
+    offset: 200,
+    delay: 50,
+    anchorPlacement: 'top-center',
+    duration: 1000,
+    once: true,
+  })],
+
   props: {
     slice: {
       type: Object,

@@ -3,7 +3,10 @@
     id="customer-testimonials"
     class="customer-testimonials"
   >
-    <div class="container">
+    <div
+      :data-aos="aos"
+      class="container"
+    >
       <h2 class="customer-testimonials__title">
         {{ title }}
       </h2>
@@ -80,6 +83,11 @@ export default {
     title: {
       type: String,
       default: 'Customer Testimonials',
+    },
+
+    aos: {
+      type: String,
+      default: null,
     },
   },
 
