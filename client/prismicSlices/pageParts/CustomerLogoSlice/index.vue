@@ -214,6 +214,7 @@ export default {
 
   // ---- Themes ---- //
   &--white-theme {
+    background-color: $bgcolor--white-primary;
     /deep/ .customer-logo-slice {
       &_title,
       &_description {
@@ -225,6 +226,7 @@ export default {
     }
   }
   &--black-theme {
+    background-color: $bgcolor--black;
     /deep/ .customer-logo-slice {
       &_title {
         color: $text-color--white-primary;
