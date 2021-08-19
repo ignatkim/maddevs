@@ -5,6 +5,7 @@
     "slice_type": "project_start_slice",
     "items": [],
     "primary": {
+      "title": "Quick Project Start",
       "background": "black",
       "colorTheme": "white"
     }

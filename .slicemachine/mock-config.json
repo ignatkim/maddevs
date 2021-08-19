@@ -290,6 +290,9 @@
           },
           "colorTheme": {
             "content": "white"
+          },
+          "title": {
+            "content": "Quick Project Start"
           }
         }
       }

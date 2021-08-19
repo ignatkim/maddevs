@@ -11,6 +11,13 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "ProjectStartSlice",
       "primary": {
+        "title": {
+          "config": {
+            "label": "Title",
+            "placeholder": "Quick Project Start"
+          },
+          "type": "Text"
+        },
         "background": {
           "config": {
             "label": "Slice background",

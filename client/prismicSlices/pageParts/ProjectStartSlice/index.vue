@@ -10,7 +10,7 @@
   >
     <div class="container">
       <h2 class="project-start-slice__title">
-        Quick Project Start
+        {{ slice.primary.title || 'Quick Project Start' }}
       </h2>
       <div class="project-start-slice__list">
         <div
