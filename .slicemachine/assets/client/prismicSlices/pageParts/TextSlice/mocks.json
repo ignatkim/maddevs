@@ -5,7 +5,7 @@
     "slice_type": "text_slice",
     "items": [],
     "primary": {
-      "large": true,
+      "large": false,
       "text": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.",
       "colorTheme": "white",
       "maxWidth": "1028px"
@@ -57,16 +57,10 @@
     "slice_type": "text_slice",
     "items": [
       {
-        "listItem": "morph extensible channels"
+        "listItem": "revolutionize extensible bandwidth"
       },
       {
-        "listItem": "exploit value-added schemas"
-      },
-      {
-        "listItem": "streamline granular relationships"
-      },
-      {
-        "listItem": "grow scalable solutions"
+        "listItem": "reintermediate real-time solutions"
       }
     ],
     "primary": {
