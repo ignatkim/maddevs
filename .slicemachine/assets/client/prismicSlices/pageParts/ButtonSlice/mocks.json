@@ -12,7 +12,7 @@
         "link_type": "Web",
         "url": "https://slicemachine.dev"
       },
-      "background": "black"
+      "colorTheme": "black"
     }
   },
   {
@@ -21,15 +21,15 @@
     "slice_type": "button_slice",
     "items": [],
     "primary": {
-      "fullWidth": true,
-      "alignment": "center",
-      "color": "blue",
+      "fullWidth": false,
+      "alignment": "left",
+      "color": "red",
       "text": "Outlined button",
       "link": {
         "link_type": "Web",
-        "url": "http://google.com"
+        "url": "http://twitter.com"
       },
-      "background": "white"
+      "background": "black"
     }
   },
   {
@@ -44,9 +44,9 @@
       "text": "Link button",
       "link": {
         "link_type": "Web",
-        "url": "https://prismic.io"
+        "url": "http://twitter.com"
       },
-      "background": "white"
+      "background": "black"
     }
   }
 ]

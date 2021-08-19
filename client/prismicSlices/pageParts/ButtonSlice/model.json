@@ -49,14 +49,13 @@
           },
           "type": "Link"
         },
-        "background": {
+        "colorTheme": {
           "config": {
-            "label": "Slice background",
+            "label": "Color theme",
             "placeholder": "",
             "options": [
               "black",
-              "white",
-              "grey"
+              "white"
             ],
             "default_value": "black"
           },

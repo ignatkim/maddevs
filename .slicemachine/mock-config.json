@@ -238,6 +238,9 @@
         "primary": {
           "text": {
             "content": "Default red button"
+          },
+          "colorTheme": {
+            "content": "black"
           }
         }
       },
