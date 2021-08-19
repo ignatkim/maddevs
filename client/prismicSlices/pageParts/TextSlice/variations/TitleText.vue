@@ -35,19 +35,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/styles/slices/text-slices/_mixins';
 
 .text-slice__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  &--white-theme {
-    color: $text-color--white;
-  }
-  &--black-theme {
-    color: $text-color--black-lighter;
-  }
+  @include text-slice-content;
 
   p {
     margin-top: 50px;

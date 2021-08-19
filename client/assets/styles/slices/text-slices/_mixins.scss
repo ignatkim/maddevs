@@ -1,0 +1,18 @@
+@import '../../vars';
+
+@mixin text-slice-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &--white-theme {
+    color: $text-color--white;
+  }
+
+  &--black-theme {
+    color: $text-color--black-lighter;
+  }
+}
+  
