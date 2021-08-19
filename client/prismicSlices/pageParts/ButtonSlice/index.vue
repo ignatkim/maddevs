@@ -1,9 +1,7 @@
 <template>
   <div
     class="button-slice"
-    :style="{
-      backgroundColor: sliceBackground,
-    }"
+    :class="colorThemeClass"
   >
     <div
       :class="[
@@ -15,9 +13,7 @@
         :to="link.url"
         target="_blank"
         class="button-slice__link"
-        :class="{
-          'button-slice__link--full-width': fullWidth
-        }"
+        :class="{ 'button-slice__link--full-width': fullWidth }"
       >
         <UIButton
           v-if="variation === 'default-slice'"
@@ -82,10 +78,9 @@ export default {
   },
 
   computed: {
-    sliceBackground() {
-      if (this.slice.primary.background === 'white') return '#fff'
-      if (this.slice.primary.background === 'grey') return '#f5f7f9'
-      return '#111213' // black
+    colorThemeClass() {
+      if (this.slice?.primary?.colorTheme === 'white') return 'button-slice--white-theme'
+      return 'button-slice--black-theme'
     },
   },
 }
@@ -94,6 +89,13 @@ export default {
 <style lang="scss" scoped>
 .button-slice {
   display: block;
+  &--black-theme {
+    background-color: $bgcolor--black;
+  }
+  &--white-theme {
+    background-color: $bgcolor--white-primary;
+  }
+
   &__content {
     &--align {
       &-center {
@@ -104,12 +106,14 @@ export default {
       }
     }
   }
+
   &__link {
     display: inline-block;
     &--full-width {
       display: block;
     }
   }
+
   &__button {
     padding: 16px 24px;
     line-height: 20px;
