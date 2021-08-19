@@ -2,7 +2,8 @@
 
 exports[`success message renders correctly 1`] = `
 <transition-stub
-  name="fade"
+  mode="out-in"
+  name="main-fade"
 >
   <!---->
 </transition-stub>
