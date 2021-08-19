@@ -1,15 +1,11 @@
 <template>
   <section
     class="text-slice"
-    :style="{
-      backgroundColor: sliceBackground,
-    }"
+    :class="colorThemeClass"
   >
     <div
       class="container"
-      :style="{
-        maxWidth: slice.primary.maxWidth,
-      }"
+      :style="{ maxWidth: slice.primary.maxWidth }"
     >
       <SimpleText
         v-if="slice.variation === 'default-slice'"
@@ -64,10 +60,9 @@ export default {
   },
 
   computed: {
-    sliceBackground() {
-      if (this.slice.primary.background === 'white') return '#fff'
-      if (this.slice.primary.background === 'grey') return '#f5f7f9'
-      return '#111213' // black
+    colorThemeClass() {
+      if (this.slice?.primary?.colorTheme === 'white') return 'text-slice--white-theme'
+      return 'text-slice--black-theme'
     },
   },
 }
@@ -76,6 +71,14 @@ export default {
 <style lang="scss" scoped>
 .text-slice {
   word-break: break-word;
+  &--white-theme {
+    background-color: $bgcolor--white-primary;
+    color: $text-color--black-lighter;
+  }
+  &--black-theme {
+    background-color: $bgcolor--black;
+    color: $text-color--white;
+  }
 }
 
 /deep/ h1,
@@ -89,6 +92,7 @@ export default {
   }
   @media screen and (max-width: 768px) {
     font-size: 40px;
+    line-height: 40px;
   }
 }
 
