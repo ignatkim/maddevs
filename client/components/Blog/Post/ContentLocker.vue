@@ -23,11 +23,11 @@ export default {
 
   watch: {
     isScrolled() {
-      if (this.isScrolled) this.startTimeout()
+      this.startTimeout()
     },
 
     isShowLocker() {
-      if (this.isShowLocker) this.$refs.modalContentLocker.show()
+      this.$refs.modalContentLocker.show()
     },
   },
 

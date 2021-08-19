@@ -8,6 +8,7 @@
     <div
       v-if="!formSended"
       class="modal-content"
+      data-testid="content-locker-modal-content"
     >
       <img
         v-lazy-load
