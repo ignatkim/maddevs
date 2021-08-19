@@ -2,9 +2,6 @@
   <section
     class="customer-logo-slice"
     :class="colorThemeClass"
-    :style="{
-      backgroundColor: sliceBackground,
-    }"
   >
     <div class="container">
       <div
@@ -85,12 +82,6 @@ export default {
     colorThemeClass() {
       if (this.slice?.primary?.colorTheme === 'white') return 'customer-logo-slice--white-theme'
       return 'customer-logo-slice--black-theme'
-    },
-
-    sliceBackground() {
-      if (this.slice.primary.background === 'white') return '#fff'
-      if (this.slice.primary.background === 'grey') return '#f5f7f9'
-      return '#111213' // black
     },
   },
 }
@@ -224,11 +215,9 @@ export default {
   // ---- Themes ---- //
   &--white-theme {
     /deep/ .customer-logo-slice {
-      &_title {
-        color: $text-color--white-primary;
-      }
+      &_title,
       &_description {
-        color: $text-color--white;
+        color: $text-color--black-oil;
       }
       &_logo {
         background-color: #fff;
@@ -237,9 +226,11 @@ export default {
   }
   &--black-theme {
     /deep/ .customer-logo-slice {
-      &_title,
+      &_title {
+        color: $text-color--white-primary;
+      }
       &_description {
-        color: $text-color--black-oil;
+        color: $text-color--white;
       }
       &_logo {
         background-color: #191A1B;
