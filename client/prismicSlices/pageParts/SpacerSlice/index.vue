@@ -45,17 +45,21 @@ export default {
 
   methods: {
     onResize() {
-      const defaultHeight = this.slice.primary.height || '50px'
-      if (window.innerWidth < 375) {
-        this.height = this.slice.primary['height-sm'] || defaultHeight
-      } if (window.innerWidth > 375 && window.innerWidth < 768) {
-        this.height = this.slice.primary['height-md'] || defaultHeight
-      } if (window.innerWidth > 768 && window.innerWidth < 1024) {
-        this.height = this.slice.primary['height-lg'] || defaultHeight
-      } if (window.innerWidth > 1024 && window.innerWidth < 1440) {
-        this.height = this.slice.primary['height-xl'] || defaultHeight
+      const fallbacktHeight = this.slice.primary['height-sm']
+        || this.slice.primary['height-md']
+        || this.slice.primary['height-lg']
+        || this.slice.primary['height-xl']
+        || this.slice.primary.height
+      if (window.innerWidth <= 375) {
+        this.height = this.slice.primary['height-sm'] || fallbacktHeight
+      } if (window.innerWidth > 375 && window.innerWidth <= 768) {
+        this.height = this.slice.primary['height-md'] || fallbacktHeight
+      } if (window.innerWidth > 768 && window.innerWidth <= 1024) {
+        this.height = this.slice.primary['height-lg'] || fallbacktHeight
+      } if (window.innerWidth > 1024 && window.innerWidth <= 1440) {
+        this.height = this.slice.primary['height-xl'] || fallbacktHeight
       } if (window.innerWidth > 1440) {
-        this.height = defaultHeight
+        this.height = this.slice.primary.height
       }
     },
   },
@@ -67,5 +71,6 @@ export default {
   width: 100%;
   display: block;
   background-color: #fff;
+  margin: -1px 0;
 }
 </style>
