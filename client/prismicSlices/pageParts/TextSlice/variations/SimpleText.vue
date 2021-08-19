@@ -1,10 +1,7 @@
 <template>
   <p
-    :class="[
-      'text-slice__content',
-      `text-slice__content--${colorTheme}-theme`,
-      large ? 'text-slice__content text-slice__content--large' : null,
-    ]"
+    class="text-slice__content"
+    :class="{ 'text-slice__content--large': large }"
   >
     {{ text }}
   </p>
@@ -24,30 +21,15 @@ export default {
       required: true,
       default: '',
     },
-
-    colorTheme: {
-      type: String,
-      default: 'white',
-    },
   },
 }
 </script>
 
 <style lang="scss" scoped>
 .text-slice__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  &--white-theme {
-    color: $text-color--white;
-  }
-  &--black-theme {
-    color: $text-color--black-lighter;
-  }
   &--large {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 60px;
     line-height: 70px;
     @media screen and (max-width: 1024px) {

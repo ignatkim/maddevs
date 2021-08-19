@@ -18,7 +18,7 @@ export const _DefaultSlice = () => ({
   },
   data() {
     return {
-      mock: {"variation":"default-slice","name":"Default slice","slice_type":"text_slice","items":[],"primary":{"large":false,"text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","background":"black","maxWidth":"1028px"},"id":"_DefaultSlice"}
+      mock: {"variation":"default-slice","name":"Default slice","slice_type":"text_slice","items":[],"primary":{"large":true,"text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","maxWidth":"1028px"},"id":"_DefaultSlice"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -94,7 +94,7 @@ export const _TitleTextList = () => ({
   },
   data() {
     return {
-      mock: {"variation":"titleTextList","name":"Title + Text + List","slice_type":"text_slice","items":[{"listItem":"maximize interactive niches"},{"listItem":"deliver interactive partnerships"},{"listItem":"evolve e-business bandwidth"}],"primary":{"title":"Software <br /> development","text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","background":"black","maxWidth":"1028px"},"id":"_TitleTextList"}
+      mock: {"variation":"titleTextList","name":"Title + Text + List","slice_type":"text_slice","items":[{"listItem":"extend 24/365 users"},{"listItem":"scale strategic bandwidth"},{"listItem":"cultivate clicks-and-mortar functionalities"},{"listItem":"facilitate user-centric supply-chains"}],"primary":{"title":"Software <br /> development","text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","background":"black","maxWidth":"1028px"},"id":"_TitleTextList"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
