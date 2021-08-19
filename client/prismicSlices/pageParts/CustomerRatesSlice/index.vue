@@ -64,6 +64,7 @@ export default {
     line-height: 74px;
     letter-spacing: -1px;
     color: $text-color--black-lighter;
+    text-align: center;
     @media screen and (max-width: 1024px) {
       font-size: 36px;
       line-height: 43px;
