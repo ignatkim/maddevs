@@ -60,14 +60,17 @@ export default {
 <style lang="scss" scoped>
 .customer-rates-slice {
   &__title {
-    @include h2-title;
-    text-align: center;
+    @include font('Poppins', 62px, 700);
+    line-height: 74px;
+    letter-spacing: -1px;
     color: $text-color--black-lighter;
     @media screen and (max-width: 1024px) {
+      font-size: 36px;
+      line-height: 43px;
       margin-bottom: 30px;
     }
     @media screen and (max-width: 768px) {
-      margin-top: 22px;
+      margin-bottom: 22px;
     }
     &-icon {
       position: relative;
