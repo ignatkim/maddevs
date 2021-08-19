@@ -18,7 +18,7 @@ export const _DefaultSlice = () => ({
   },
   data() {
     return {
-      mock: {"variation":"default-slice","name":"Default slice","slice_type":"text_slice","items":[],"primary":{"large":true,"text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","maxWidth":"1028px"},"id":"_DefaultSlice"}
+      mock: {"variation":"default-slice","name":"Default slice","slice_type":"text_slice","items":[],"primary":{"large":false,"text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","maxWidth":"1028px"},"id":"_DefaultSlice"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -94,7 +94,7 @@ export const _TitleTextList = () => ({
   },
   data() {
     return {
-      mock: {"variation":"titleTextList","name":"Title + Text + List","slice_type":"text_slice","items":[{"listItem":"morph extensible channels"},{"listItem":"exploit value-added schemas"},{"listItem":"streamline granular relationships"},{"listItem":"grow scalable solutions"}],"primary":{"title":"Software <br /> development","text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","maxWidth":"1028px"},"id":"_TitleTextList"}
+      mock: {"variation":"titleTextList","name":"Title + Text + List","slice_type":"text_slice","items":[{"listItem":"revolutionize extensible bandwidth"},{"listItem":"reintermediate real-time solutions"}],"primary":{"title":"Software <br /> development","text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","maxWidth":"1028px"},"id":"_TitleTextList"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
