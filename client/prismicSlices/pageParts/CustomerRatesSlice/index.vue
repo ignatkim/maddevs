@@ -65,12 +65,10 @@ export default {
     letter-spacing: -1px;
     color: $text-color--black-lighter;
     text-align: center;
+    margin-bottom: 30px;
     @media screen and (max-width: 1024px) {
       font-size: 36px;
       line-height: 43px;
-      margin-bottom: 30px;
-    }
-    @media screen and (max-width: 768px) {
       margin-bottom: 22px;
     }
     &-icon {
