@@ -12,7 +12,10 @@
       }"
       class="start-screen-slice__image"
     >
-    <div class="container">
+    <div
+      ref="sectionText"
+      class="container"
+    >
       <div class="start-screen-slice__content">
         <h1
           class="start-screen-slice__title"
@@ -28,8 +31,11 @@
 </template>
 
 <script>
+import changeSectionTextOpacityMixin from '@/mixins/changeSectionTextOpacityMixin'
+
 export default {
   name: 'StartScreen',
+  mixins: [changeSectionTextOpacityMixin('sectionText')],
   props: {
     slice: {
       type: Object,
