@@ -30,7 +30,6 @@
             class="flags-list__item"
           >
             <img
-              v-lazy-load
               :src="require(`@/assets/img/Home/flags/${country}.svg`)"
               :alt="country"
               width="32"
@@ -79,7 +78,7 @@ export default {
 
 .create-projects-slice {
   @media screen and (max-width: 576px) {
-    background-color: $bgcolor--white;
+    background-color: $bgcolor--white !important;
   }
   &__content {
     padding: 0 45px 45px;

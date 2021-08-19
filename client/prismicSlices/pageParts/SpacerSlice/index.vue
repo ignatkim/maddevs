@@ -1,13 +1,11 @@
 <template>
-  <div>
-    <section
-      class="spacer-slice"
-      :style="{
-        height,
-        backgroundColor,
-      }"
-    />
-  </div>
+  <section
+    class="spacer-slice"
+    :style="{
+      height,
+      backgroundColor,
+    }"
+  />
 </template>
 
 <script>
@@ -37,6 +35,7 @@ export default {
   },
 
   mounted() {
+    this.onResize()
     window.addEventListener('resize', this.onResize)
   },
 
@@ -46,14 +45,19 @@ export default {
 
   methods: {
     onResize() {
-      if (window.innerWidth < 375) {
-        this.height = this.slice.primary['height-sm']
-      } if (window.innerWidth > 375 && window.innerWidth < 768) {
-        this.height = this.slice.primary['height-md']
-      } if (window.innerWidth > 768 && window.innerWidth < 1024) {
-        this.height = this.slice.primary['height-lg']
-      } if (window.innerWidth > 1024 && window.innerWidth < 1440) {
-        this.height = this.slice.primary['height-xl']
+      const fallbacktHeight = this.slice.primary['height-sm']
+        || this.slice.primary['height-md']
+        || this.slice.primary['height-lg']
+        || this.slice.primary['height-xl']
+        || this.slice.primary.height
+      if (window.innerWidth <= 375) {
+        this.height = this.slice.primary['height-sm'] || fallbacktHeight
+      } if (window.innerWidth > 375 && window.innerWidth <= 768) {
+        this.height = this.slice.primary['height-md'] || fallbacktHeight
+      } if (window.innerWidth > 768 && window.innerWidth <= 1024) {
+        this.height = this.slice.primary['height-lg'] || fallbacktHeight
+      } if (window.innerWidth > 1024 && window.innerWidth <= 1440) {
+        this.height = this.slice.primary['height-xl'] || fallbacktHeight
       } if (window.innerWidth > 1440) {
         this.height = this.slice.primary.height
       }
@@ -67,5 +71,6 @@ export default {
   width: 100%;
   display: block;
   background-color: #fff;
+  margin: -1px 0;
 }
 </style>

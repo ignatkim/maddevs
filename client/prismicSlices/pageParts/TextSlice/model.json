@@ -39,25 +39,12 @@
           },
           "type": "Select"
         },
-        "background": {
-          "config": {
-            "label": "Slice background",
-            "placeholder": "",
-            "options": [
-              "black",
-              "white",
-              "grey"
-            ],
-            "default_value": "black"
-          },
-          "type": "Select"
-        },
         "maxWidth": {
           "config": {
-            "label": "Max width (px)",
-            "placeholder": ""
+            "label": "Max width (px,% or vw)",
+            "placeholder": "1028px"
           },
-          "type": "Number"
+          "type": "Text"
         }
       },
       "items": {}
@@ -88,18 +75,12 @@
           },
           "type": "Select"
         },
-        "background": {
+        "maxWidth": {
           "config": {
-            "label": "Slice background",
-            "placeholder": "",
-            "options": [
-              "black",
-              "white",
-              "grey"
-            ],
-            "default_value": "black"
+            "label": "Max width (px,% or vw)",
+            "placeholder": "1028px"
           },
-          "type": "Select"
+          "type": "Text"
         }
       },
       "items": {}
@@ -137,18 +118,12 @@
           },
           "type": "Select"
         },
-        "background": {
+        "maxWidth": {
           "config": {
-            "label": "Slice background",
-            "placeholder": "",
-            "options": [
-              "black",
-              "white",
-              "grey"
-            ],
-            "default_value": "black"
+            "label": "Max width (px,% or vw)",
+            "placeholder": "1028px"
           },
-          "type": "Select"
+          "type": "Text"
         }
       },
       "items": {}
@@ -202,18 +177,12 @@
           },
           "type": "Select"
         },
-        "background": {
+        "maxWidth": {
           "config": {
-            "label": "Slice background",
-            "placeholder": "",
-            "options": [
-              "black",
-              "white",
-              "grey"
-            ],
-            "default_value": "black"
+            "label": "Max width (px,% or vw)",
+            "placeholder": "1028px"
           },
-          "type": "Select"
+          "type": "Text"
         }
       },
       "items": {}
@@ -251,18 +220,12 @@
           },
           "type": "Select"
         },
-        "background": {
+        "maxWidth": {
           "config": {
-            "label": "Slice background",
-            "placeholder": "",
-            "options": [
-              "black",
-              "white",
-              "grey"
-            ],
-            "default_value": "black"
+            "label": "Max width (px,% or vw)",
+            "placeholder": "1028px"
           },
-          "type": "Select"
+          "type": "Text"
         }
       },
       "items": {

@@ -10,7 +10,15 @@
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
       "description": "TechnologiesSlice",
-      "primary": {},
+      "primary": {
+        "title": {
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          },
+          "type": "Text"
+        }
+      },
       "items": {}
     }
   ]

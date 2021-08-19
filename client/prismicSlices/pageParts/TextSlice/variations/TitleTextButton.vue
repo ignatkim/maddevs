@@ -1,10 +1,5 @@
 <template>
-  <div
-    :class="[
-      'text-slice__content',
-      `text-slice__content--${colorTheme}-theme`,
-    ]"
-  >
+  <div class="text-slice__content">
     <h2>{{ title }}</h2>
     <p>{{ text }}</p>
     <a
@@ -77,6 +72,7 @@ export default {
   button {
     padding: 14px 24px;
     line-height: 20px;
+    letter-spacing: -0.4px;
     &:hover {
       background-color: lighten($bgcolor--red, 10%) !important;
     }

@@ -4,6 +4,8 @@
     "name": "Default slice",
     "slice_type": "technologies_slice",
     "items": [],
-    "primary": {}
+    "primary": {
+      "title": "Technologies & Tools"
+    }
   }
 ]

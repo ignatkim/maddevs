@@ -1,6 +1,9 @@
 <template>
   <section class="technologies-slice">
     <div class="container">
+      <h2 class="technologies-slice__title">
+        {{ slice.primary.title || 'Technologies & Tools' }}
+      </h2>
       <div
         :class="[
           'technologies-slice__categories',
@@ -53,6 +56,16 @@ import refreshLazyImages from '@/helpers/refreshLazyImages'
 
 export default {
   name: 'TechnologiesAndTools',
+  props: {
+    slice: {
+      type: Object,
+      required: true,
+      default() {
+        return {}
+      },
+    },
+  },
+
   data() {
     return {
       activeCategory: '',
@@ -102,6 +115,20 @@ $tech_legends: (
 }
 
 .technologies-slice {
+  &__title {
+    @include font('Poppins', 62px, 700);
+    line-height: 74px;
+    letter-spacing: -1px;
+    text-align: center;
+    margin-bottom: 24px;
+    color: $text-color--white;
+    @media screen and (max-width: 1024px) {
+      font-size: 26px;
+      line-height: 33px;
+      margin-bottom: 44px;
+    }
+  }
+
   &__categories {
     display: flex;
     align-items: center;
@@ -173,6 +200,25 @@ $tech_legends: (
       &--#{$name}:before {
         background: $color;
       }
+    }
+
+    @media screen and (max-width: 976px) {
+      margin-right: 9px;
+      margin-left: 9px;
+      font-size: 12px;
+      line-height: 18px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+
+    @media screen and (max-width: 390px) {
+      margin-right: 0;
+      margin-left: 7px;
+    }
+
+    @media screen and (max-width: 330px) {
+      font-size: 10px;
     }
   }
 

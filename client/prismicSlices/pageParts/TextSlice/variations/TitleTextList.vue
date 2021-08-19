@@ -1,10 +1,5 @@
 <template>
-  <div
-    :class="[
-      'text-slice__content',
-      `text-slice__content--${colorTheme}-theme`,
-    ]"
-  >
+  <div class="text-slice__content">
     <div class="text-slice__content-text">
       <h2 v-html="title" />
       <p>{{ text }}</p>
@@ -62,19 +57,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .text-slice__content {
   width: 100%;
   max-width: 1242px;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  &--white-theme {
-    color: $text-color--white;
-  }
-  &--black-theme {
-    color: $text-color--black-lighter;
-  }
   @media screen and (max-width: 1300px) {
     flex-direction: column;
     align-items: flex-start;
@@ -82,7 +70,7 @@ export default {
   }
 
   h1, h2, h3 {
-    @include font('Inter', 60px, 700);
+    @include font('Inter', 60px, 800);
     line-height: 65px;
     letter-spacing: -0.04em;
     @media screen and (max-width: 1024px) {
@@ -114,6 +102,10 @@ export default {
   &-text {
     width: 100%;
     max-width: 692px;
+    margin-right: 20px;
+    @media screen and (max-width: 1300px) {
+      margin-right: 0;
+    }
   }
 
   &-list {
@@ -124,7 +116,7 @@ export default {
     li {
       display: flex;
       align-items: flex-start;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
       &:last-child {
         margin-bottom: 0;
       }

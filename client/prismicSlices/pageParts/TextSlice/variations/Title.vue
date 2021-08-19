@@ -1,10 +1,5 @@
 <template>
-  <h2
-    :class="[
-      'text-slice__content',
-      `text-slice__content--${colorTheme}-theme`,
-    ]"
-  >
+  <h2 class="text-slice__content">
     {{ title }}
   </h2>
 </template>
@@ -28,9 +23,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/slices/text-slices/_mixins';
-
 .text-slice__content {
-  @include text-slice-content;
+  text-align: center;
 }
 </style>

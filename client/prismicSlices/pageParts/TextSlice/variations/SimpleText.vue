@@ -1,10 +1,7 @@
 <template>
   <p
-    :class="[
-      'text-slice__content',
-      `text-slice__content--${colorTheme}-theme`,
-      large ? 'text-slice__content text-slice__content--large' : null,
-    ]"
+    class="text-slice__content"
+    :class="{ 'text-slice__content--large': large }"
   >
     {{ text }}
   </p>
@@ -24,11 +21,6 @@ export default {
       required: true,
       default: '',
     },
-
-    colorTheme: {
-      type: String,
-      default: 'white',
-    },
   },
 }
 </script>
@@ -37,10 +29,9 @@ export default {
 @import '@/assets/styles/slices/text-slices/_mixins';
 
 .text-slice__content {
-  @include text-slice-content;
-
+  text-align: center;
   &--large {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 60px;
     line-height: 70px;
     @media screen and (max-width: 1024px) {

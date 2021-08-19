@@ -33,7 +33,20 @@
     },
     "CustomerLogoSlice": {
       "default": {
-        "primary": {},
+        "primary": {
+          "title": {
+            "content": "Our valued customers"
+          },
+          "description": {
+            "content": "Due to  our NDAs and confidentiality requirements, we cannot disclose details for all of our customers. These are a few of the companies we work with."
+          },
+          "buttonText": {
+            "content": "See the case studies"
+          },
+          "buttonLink": {
+            "content": "https://maddevs.io/case-studies/"
+          }
+        },
         "items": {}
       }
     },
@@ -43,14 +56,11 @@
           "text": {
             "content": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies."
           },
-          "background": {
-            "content": "black"
-          },
           "colorTheme": {
             "content": "white"
           },
           "maxWidth": {
-            "content": 1028
+            "content": "1028px"
           }
         }
       },
@@ -59,11 +69,11 @@
           "title": {
             "content": "Featured projects"
           },
-          "background": {
-            "content": "black"
-          },
           "colorTheme": {
             "content": "white"
+          },
+          "maxWidth": {
+            "content": "1028px"
           }
         }
       },
@@ -75,11 +85,11 @@
           "text": {
             "content": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies."
           },
-          "background": {
-            "content": "black"
-          },
           "colorTheme": {
             "content": "white"
+          },
+          "maxWidth": {
+            "content": "1028px"
           }
         }
       },
@@ -97,11 +107,11 @@
           "buttonText": {
             "content": "Get presentation"
           },
-          "background": {
-            "content": "black"
-          },
           "colorTheme": {
             "content": "white"
+          },
+          "maxWidth": {
+            "content": "1028px"
           }
         }
       },
@@ -113,11 +123,11 @@
           "text": {
             "content": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies."
           },
-          "background": {
-            "content": "black"
-          },
           "colorTheme": {
             "content": "white"
+          },
+          "maxWidth": {
+            "content": "1028px"
           }
         },
         "items": {}
@@ -137,6 +147,9 @@
           },
           "imageOpacity": {
             "content": 1
+          },
+          "background": {
+            "content": "black"
           }
         }
       }
@@ -245,7 +258,11 @@
     },
     "TechnologiesSlice": {
       "default-slice": {
-        "primary": {}
+        "primary": {
+          "title": {
+            "content": "Technologies & Tools"
+          }
+        }
       }
     },
     "CustomerTestimonials": {
@@ -272,6 +289,12 @@
         "primary": {
           "background": {
             "content": "black"
+          },
+          "colorTheme": {
+            "content": "white"
+          },
+          "title": {
+            "content": "Quick Project Start"
           }
         }
       }

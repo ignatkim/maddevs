@@ -16,7 +16,7 @@
           <div class="quick-project-start__icons-group">
             <img
               v-lazy-load
-              :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/${step.name}.svg`)"
+              :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/white/${step.name}.svg`)"
               :alt="step.name"
               width="52"
               height="73"
@@ -25,7 +25,7 @@
             <img
               v-if="idx !== steps.length - 1"
               v-lazy-load
-              :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/arrow.svg`)"
+              :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/white/arrow.svg`)"
               width="165"
               height="65"
               class="quick-project-start__arrow-icon"
