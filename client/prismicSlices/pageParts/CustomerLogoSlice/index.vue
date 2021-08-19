@@ -2,29 +2,63 @@
   <section
     class="customer-logo-slice"
     :class="colorThemeClass"
+    :style="{
+      backgroundColor: sliceBackground,
+    }"
   >
     <div class="container">
+      <div
+        v-if="title || description"
+        class="customer-logo-slice_head"
+      >
+        <h2
+          v-if="title"
+          class="customer-logo-slice_title"
+        >
+          {{ title }}
+        </h2>
+        <p
+          v-if="description"
+          class="customer-logo-slice_description"
+        >
+          {{ description }}
+        </p>
+      </div>
       <div class="customer-logo-slice_list">
         <div
-          v-for="(item, i) of slice.items"
+          v-for="(customer, i) of customers"
           :key="`customer-logo-slice-${i}`"
           class="customer-logo-slice_logo"
         >
           <img
             width="143"
             height="64"
-            :src="item.logo.url"
-            :alt="item.logo.alt"
+            :src="customer.logo.url"
+            :alt="customer.logo.alt"
           >
         </div>
       </div>
+      <a
+        v-if="button.text && button.link"
+        :href="button.link.url"
+        target="_blank"
+        class="customer-logo-slice_link"
+      >
+        <UIButton full-width>{{ button.text }}</UIButton>
+      </a>
     </div>
   </section>
 </template>
 
 <script>
+import UIButton from '@/components/shared/UIButton'
+
 export default {
   name: 'CustomerLogoSlice',
+  components: {
+    UIButton,
+  },
+
   props: {
     slice: {
       type: Object,
@@ -35,10 +69,28 @@ export default {
     },
   },
 
+  data() {
+    return {
+      title: this.slice.primary.title,
+      description: this.slice.primary.description,
+      customers: this.slice.items,
+      button: {
+        link: this.slice.primary.buttonLink,
+        text: this.slice.primary.buttonText,
+      },
+    }
+  },
+
   computed: {
     colorThemeClass() {
       if (this.slice?.primary?.colorTheme === 'white') return 'customer-logo-slice--white-theme'
       return 'customer-logo-slice--black-theme'
+    },
+
+    sliceBackground() {
+      if (this.slice.primary.background === 'white') return '#fff'
+      if (this.slice.primary.background === 'grey') return '#f5f7f9'
+      return '#111213' // black
     },
   },
 }
@@ -50,6 +102,42 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  &_head {
+    width: 100%;
+    max-width: 820px;
+    margin: 0 auto 62px;
+    @media screen and (max-width: 1024px) {
+      margin: 0 auto 45px;
+    }
+  }
+
+  &_title,
+  &_description {
+    text-align: center;
+  }
+
+  &_title {
+    @include font('Poppins', 60px, 700);
+    line-height: 73px;
+    letter-spacing: -0.04em;
+    @media screen and (max-width: 1024px) {
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+
+  &_description {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.013em;
+    margin-top: 14px;
+    @media screen and (max-width: 1024px) {
+      margin-top: 24px;
+      font-size: 16px;
+      line-height: 21px;
+    }
   }
 
   &_list {
@@ -114,19 +202,36 @@ export default {
     }
   }
 
+  &_link {
+    margin-top: 50px;
+    @media screen and (max-width: 1024px) {
+      margin-top: 32px;
+    }
+  }
+
   // ---- Themes ---- //
   &--white-theme {
-    background-color: #fff;
-
-    .customer-logo-slice_logo {
-      background-color: #fff;
+    /deep/ .customer-logo-slice {
+      &_title,
+      &_description {
+        color: $text-color--black-oil;
+      }
+      &_logo {
+        background-color: #fff;
+      }
     }
   }
   &--black-theme {
-    background-color: #111213;
-
-    .customer-logo-slice_logo {
-      background-color: #191A1B;
+    /deep/ .customer-logo-slice {
+      &_title {
+        color: $text-color--white-primary;
+      }
+      &_description {
+        color: $text-color--white;
+      }
+      &_logo {
+        background-color: #191A1B;
+      }
     }
   }
 }
