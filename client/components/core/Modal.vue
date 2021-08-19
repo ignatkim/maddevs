@@ -226,7 +226,7 @@ export default {
   }
 
   &_content {
-    max-height: 80vh;
+    max-height: 90vh;
     padding: 0 84px;
     box-sizing: border-box;
   }
