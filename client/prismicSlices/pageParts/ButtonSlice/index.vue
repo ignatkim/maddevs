@@ -111,7 +111,7 @@ export default {
     }
   }
   &__button {
-    padding: 14px 24px;
+    padding: 16px 24px;
     line-height: 20px;
     &--normal:hover {
       background-color: lighten($bgcolor--red, 10%) !important;
