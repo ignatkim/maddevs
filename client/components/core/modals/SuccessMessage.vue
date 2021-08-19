@@ -9,13 +9,10 @@
         alt="Hand"
       >
       <div class="success-message__text-content">
-        <!-- Title -->
         <div
           class="success-message__title"
           v-html="title"
         />
-
-        <!-- Message -->
         <div
           class="success-message__info-text"
           v-html="message"
@@ -46,11 +43,27 @@ export default {
 .success-message {
   background-color: $modal-bg-color;
 
+  @media screen and (max-width: 640px) {
+    display: flex;
+    justify-content: center;
+  }
+
   &__title {
     @include font('Poppins', 40px, 700);
     padding-top: 28px;
-    color: $text-color--red;
+    color: $text-color--white;
     letter-spacing: -1px;
+
+    @media screen and (max-width: 968px) {
+      @include font('Poppins', 32px, 700);
+      padding-top: 20px;
+    }
+
+    @media screen and (max-width: 640px) {
+      @include font('Poppins', 26px, 700);
+      padding-top: 10px;
+      line-height: 1.2;
+    }
   }
 
   &__info-text {
@@ -58,6 +71,16 @@ export default {
     padding-top: 23px;
     color: $text-color--grey;
     letter-spacing: -0.03em;
+
+    @media screen and (max-width: 968px) {
+      @include font('Poppins', 16px, 400);
+      padding-top: 15px;
+    }
+
+    @media screen and (max-width: 640px) {
+      @include font('Poppins', 14px, 400);
+      padding-top: 10px;
+    }
   }
 }
 
@@ -69,7 +92,7 @@ export default {
 
 @media screen and (max-width: 640px) {
   .success-message {
-    padding: 0 40px;
+    padding: 0 20px;
   }
 
   .success-modal {
