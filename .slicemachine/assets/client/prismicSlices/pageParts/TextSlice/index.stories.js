@@ -37,7 +37,7 @@ export const _Title = () => ({
   },
   data() {
     return {
-      mock: {"variation":"title","name":"Title","slice_type":"text_slice","items":[],"primary":{"title":"Featured projects","colorTheme":"white","background":"black","maxWidth":"1028px"},"id":"_Title"}
+      mock: {"variation":"title","name":"Title","slice_type":"text_slice","items":[],"primary":{"title":"Featured projects","colorTheme":"white","maxWidth":"1028px"},"id":"_Title"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -56,7 +56,7 @@ export const _TitleText = () => ({
   },
   data() {
     return {
-      mock: {"variation":"titleText","name":"Title + Text","slice_type":"text_slice","items":[],"primary":{"title":"Featured projects","text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","background":"black","maxWidth":"1028px"},"id":"_TitleText"}
+      mock: {"variation":"titleText","name":"Title + Text","slice_type":"text_slice","items":[],"primary":{"title":"Featured projects","text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","maxWidth":"1028px"},"id":"_TitleText"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -75,7 +75,7 @@ export const _TitleTextButton = () => ({
   },
   data() {
     return {
-      mock: {"variation":"titleTextButton","name":"Title + Text + Button","slice_type":"text_slice","items":[],"primary":{"title":"Featured projects","text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","buttonText":"Get presentation","buttonLink":{"link_type":"Web","url":"https://maddevs.co/delivery-models.pdf"},"colorTheme":"white","background":"black","maxWidth":"1028px"},"id":"_TitleTextButton"}
+      mock: {"variation":"titleTextButton","name":"Title + Text + Button","slice_type":"text_slice","items":[],"primary":{"title":"Featured projects","text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","buttonText":"Get presentation","buttonLink":{"link_type":"Web","url":"https://maddevs.co/delivery-models.pdf"},"colorTheme":"white","maxWidth":"1028px"},"id":"_TitleTextButton"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -94,7 +94,7 @@ export const _TitleTextList = () => ({
   },
   data() {
     return {
-      mock: {"variation":"titleTextList","name":"Title + Text + List","slice_type":"text_slice","items":[{"listItem":"extend 24/365 users"},{"listItem":"scale strategic bandwidth"},{"listItem":"cultivate clicks-and-mortar functionalities"},{"listItem":"facilitate user-centric supply-chains"}],"primary":{"title":"Software <br /> development","text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","background":"black","maxWidth":"1028px"},"id":"_TitleTextList"}
+      mock: {"variation":"titleTextList","name":"Title + Text + List","slice_type":"text_slice","items":[{"listItem":"morph extensible channels"},{"listItem":"exploit value-added schemas"},{"listItem":"streamline granular relationships"},{"listItem":"grow scalable solutions"}],"primary":{"title":"Software <br /> development","text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","maxWidth":"1028px"},"id":"_TitleTextList"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'

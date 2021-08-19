@@ -19,7 +19,6 @@
     "primary": {
       "title": "Featured projects",
       "colorTheme": "white",
-      "background": "black",
       "maxWidth": "1028px"
     }
   },
@@ -32,7 +31,6 @@
       "title": "Featured projects",
       "text": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.",
       "colorTheme": "white",
-      "background": "black",
       "maxWidth": "1028px"
     }
   },
@@ -50,7 +48,6 @@
         "url": "https://maddevs.co/delivery-models.pdf"
       },
       "colorTheme": "white",
-      "background": "black",
       "maxWidth": "1028px"
     }
   },
@@ -60,23 +57,22 @@
     "slice_type": "text_slice",
     "items": [
       {
-        "listItem": "extend 24/365 users"
+        "listItem": "morph extensible channels"
       },
       {
-        "listItem": "scale strategic bandwidth"
+        "listItem": "exploit value-added schemas"
       },
       {
-        "listItem": "cultivate clicks-and-mortar functionalities"
+        "listItem": "streamline granular relationships"
       },
       {
-        "listItem": "facilitate user-centric supply-chains"
+        "listItem": "grow scalable solutions"
       }
     ],
     "primary": {
       "title": "Software <br /> development",
       "text": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.",
       "colorTheme": "white",
-      "background": "black",
       "maxWidth": "1028px"
     }
   }

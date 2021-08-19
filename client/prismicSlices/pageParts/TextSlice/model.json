@@ -75,19 +75,6 @@
           },
           "type": "Select"
         },
-        "background": {
-          "config": {
-            "label": "Slice background",
-            "placeholder": "",
-            "options": [
-              "black",
-              "white",
-              "grey"
-            ],
-            "default_value": "black"
-          },
-          "type": "Select"
-        },
         "maxWidth": {
           "config": {
             "label": "Max width (px,% or vw)",
@@ -128,19 +115,6 @@
               "black"
             ],
             "default_value": "white"
-          },
-          "type": "Select"
-        },
-        "background": {
-          "config": {
-            "label": "Slice background",
-            "placeholder": "",
-            "options": [
-              "black",
-              "white",
-              "grey"
-            ],
-            "default_value": "black"
           },
           "type": "Select"
         },
@@ -203,19 +177,6 @@
           },
           "type": "Select"
         },
-        "background": {
-          "config": {
-            "label": "Slice background",
-            "placeholder": "",
-            "options": [
-              "black",
-              "white",
-              "grey"
-            ],
-            "default_value": "black"
-          },
-          "type": "Select"
-        },
         "maxWidth": {
           "config": {
             "label": "Max width (px,% or vw)",
@@ -256,19 +217,6 @@
               "black"
             ],
             "default_value": "white"
-          },
-          "type": "Select"
-        },
-        "background": {
-          "config": {
-            "label": "Slice background",
-            "placeholder": "",
-            "options": [
-              "black",
-              "white",
-              "grey"
-            ],
-            "default_value": "black"
           },
           "type": "Select"
         },
