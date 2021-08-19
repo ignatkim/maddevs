@@ -1,13 +1,16 @@
 <template>
   <section
-    class="project-start-slice"
+    :class="[
+      'project-start-slice',
+      `project-start-slice--${colorTheme}-theme`,
+    ]"
     :style="{
       backgroundColor: sliceBackground,
     }"
   >
     <div class="container">
       <h2 class="project-start-slice__title">
-        Quick Project Start
+        {{ slice.primary.title || 'Quick Project Start' }}
       </h2>
       <div class="project-start-slice__list">
         <div
@@ -18,7 +21,7 @@
           <div class="project-start__icons">
             <img
               v-lazy-load
-              :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/${step.name}.svg`)"
+              :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/${colorTheme}/${step.name}.svg`)"
               :alt="step.name"
               width="52"
               height="73"
@@ -27,7 +30,7 @@
             <img
               v-if="idx !== steps.length - 1"
               v-lazy-load
-              :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/arrow.svg`)"
+              :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/${colorTheme}/arrow.svg`)"
               width="165"
               height="65"
               class="project-start__arrow-icon"
@@ -94,6 +97,11 @@ export default {
       if (this.slice.primary.background === 'grey') return '#f5f7f9'
       return '#111213' // black
     },
+
+    colorTheme() {
+      if (this.slice.primary.colorTheme === 'black') return 'black'
+      return 'white'
+    },
   },
 
   methods: {
@@ -107,12 +115,42 @@ export default {
 
 <style lang="scss" scoped>
 .project-start-slice {
-  text-align: center;
+  &--black-theme {
+    .project-start-slice__title {
+      color: $text-color--black-lighter;
+    }
+    /deep/ .project-start {
+      &__title {
+        color: $text-color--red;
+      }
+      &__description {
+        color: $text-color--black-lighter;
+      }
+    }
+  }
+  &--white-theme {
+    .project-start-slice__title {
+      color: $text-color--white;
+    }
+    /deep/ .project-start {
+      &__title {
+        color: $text-color--red;
+      }
+      &__description {
+        color: $quick-project-description-color;
+      }
+    }
+  }
   &__title {
-    @include h2-title;
-    color: $text-color--white;
-    @media screen and (max-width: 767px) {
-      text-align: center;
+    @include font('Poppins', 62px, 700);
+    line-height: 74px;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+    text-align: center;
+    @media screen and (max-width: 768px) {
+      font-size: 36px;
+      line-height: 43px;
+      margin-bottom: 36px;
     }
   }
   &__list {
@@ -128,6 +166,9 @@ export default {
     margin-top: 47px;
     @media screen and (max-width: 960px) {
       margin-top: 37px;
+    }
+    @media screen and (max-width: 768px) {
+      display: none;
     }
   }
 }
@@ -191,12 +232,13 @@ export default {
     line-height: 32px;
     letter-spacing: -1px;
     text-transform: capitalize;
-    color: $text-color--red;
+    text-align: center;
     @media screen and (max-width: 960px) {
       font-size: 18px;
       line-height: 21px;
     }
     @media screen and (max-width: 767px) {
+      text-align: left;
       font-size: 27px;
       line-height: 32px;
     }
@@ -205,9 +247,8 @@ export default {
     @include font('Inter', 14px, 400);
     margin-top: 8px;
     line-height: 22px;
-    text-align: center;
     letter-spacing: -0.02em;
-    color: $quick-project-description-color;
+    text-align: center;
     @media screen and (max-width: 960px) {
       margin-top: 4px;
       font-size: 10px;
