@@ -12,9 +12,11 @@
       }"
       class="start-screen-slice__image"
     >
+    <!-- sectionTextOpacity - value from changeOpacityOnScrollMixin mixin -->
     <div
       ref="sectionText"
       class="container"
+      :style="{opacity: sectionTextOpacity}"
     >
       <div class="start-screen-slice__content">
         <h1
