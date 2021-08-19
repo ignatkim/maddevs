@@ -1,15 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ReadForm component should render correctly with no data 1`] = `
-<div class="read-form">
-  <div class="read-form__fields">
+<div class="read-form"><img width="110" height="155" data-src="@/assets/img/Ebook/book.svg" alt="Pricing strategies">
+  <h2>Get your copy of “Custom Software Development: Pricing Strategies”</h2>
+  <div class="read-form_fields">
     <div name="name" required="required" placeholder="Your name" validation="" value=""></div>
-    <div name="email" placeholder="Email" required="required" value=""></div> <button class="read-form__button read-form__button--active">
+    <div name="email" placeholder="Email" required="required" value=""></div> <button class="read-form_btn read-form_btn--active">
       Send me the ebook
     </button>
   </div>
-  <p class="read-form__caption">
-    By providing your email address, you agree to our Privacy Policy. We will not send you any spam – only link for downloading the ebook and some more useful resources in the future.
-  </p>
+  <p>By providing your email address, you agree to our Privacy Policy. We will not send you any spam – only link for downloading the ebook and some more useful resources in the future.</p>
 </div>
 `;

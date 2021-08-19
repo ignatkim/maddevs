@@ -1,6 +1,14 @@
 <template>
   <div class="read-form">
-    <div class="read-form__fields">
+    <img
+      v-lazy-load
+      width="110"
+      height="155"
+      data-src="@/assets/img/Ebook/book.svg"
+      alt="Pricing strategies"
+    >
+    <h2>Get your copy of  “Custom Software Development: Pricing Strategies”</h2>
+    <div class="read-form_fields">
       <BaseInput
         v-model="name"
         name="name"
@@ -18,16 +26,14 @@
         :validation="$v.email"
       />
       <button
-        class="read-form__button"
-        :class="{ 'read-form__button--active': isValid, 'read-form__button--always-fullsized': fullsizeButton }"
+        class="read-form_btn"
+        :class="{ 'read-form_btn--active': isValid }"
         @click="submit"
       >
         Send me the ebook
       </button>
     </div>
-    <p class="read-form__caption">
-      By providing your email address, you agree to our Privacy Policy. We will not send you any spam – only link for downloading the ebook and some more useful resources in the future.
-    </p>
+    <p>By providing your email address, you agree to our Privacy Policy. We will not send you any spam – only link for downloading the ebook and some more useful resources in the future.</p>
   </div>
 </template>
 
@@ -39,14 +45,6 @@ import { sendEmail } from '@/api/email'
 export default {
   name: 'ReadForm',
   components: { BaseInput },
-
-  props: {
-    fullsizeButton: {
-      type: Boolean,
-      default: false,
-    },
-  },
-
   data() {
     return {
       name: '',
@@ -125,7 +123,41 @@ export default {
 
 <style lang="scss" scoped>
 .read-form {
-  &__fields {
+  width: 100%;
+  max-width: 498px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 42px 48px;
+  background-color: #F4F4F4;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 540px) {
+    padding: 32px 38px;
+  }
+
+  @media screen and (max-width: 376px) {
+    padding: 22px 28px;
+  }
+
+  > img {
+    width: 100%;
+    max-width: 110px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  > h2 {
+    @include font('Inter', 22px, 400);
+    line-height: 30px;
+    letter-spacing: -1px;
+    color: #111;
+    margin-bottom: 24px;
+  }
+
+  &_fields {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -134,7 +166,6 @@ export default {
 
     /deep/ .field-item {
       width: 100%;
-      margin-bottom: 16px;
 
       input {
         width: 100%;
@@ -156,7 +187,7 @@ export default {
     }
   }
 
-  &__button {
+  &_btn {
     width: auto;
     padding: 12px 15px;
     @include font('Inter', 16px, 600);
@@ -166,13 +197,11 @@ export default {
     border-radius: 4px;
     border: 1px solid #707072;
     background-color: transparent;
+    cursor: pointer;
     margin-bottom: 16px;
     box-sizing: border-box;
+    cursor: not-allowed;
     opacity: 0.7;
-
-    &--always-fullsized {
-      width: 100%;
-    }
 
     &--active {
       background-color: #ec1c24;
@@ -191,7 +220,7 @@ export default {
     }
   }
 
-  &__caption {
+  > p {
     @include font('Inter', 14px, 400);
     letter-spacing: -0.4px;
     color: #A0A0A1;
