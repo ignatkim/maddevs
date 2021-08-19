@@ -71,7 +71,6 @@ export default {
 
   data() {
     return {
-      colorTheme: this.slice.primary.colorTheme,
       title: this.slice.primary.title,
       description: this.slice.primary.description,
       customers: this.slice.items,
@@ -84,7 +83,7 @@ export default {
 
   computed: {
     colorThemeClass() {
-      if (this.colorTheme === 'white') return 'customer-logo-slice--white-theme'
+      if (this.slice?.primary?.colorTheme === 'white') return 'customer-logo-slice--white-theme'
       return 'customer-logo-slice--black-theme'
     },
 
