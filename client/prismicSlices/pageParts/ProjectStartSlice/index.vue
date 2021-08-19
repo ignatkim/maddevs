@@ -147,7 +147,7 @@ export default {
     letter-spacing: -1px;
     margin-bottom: 30px;
     text-align: center;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       font-size: 36px;
       line-height: 43px;
       margin-bottom: 36px;
