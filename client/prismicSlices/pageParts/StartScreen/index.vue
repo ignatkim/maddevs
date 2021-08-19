@@ -12,7 +12,12 @@
       }"
       class="start-screen-slice__image"
     >
-    <div class="container">
+    <!-- sectionTextOpacity - value from changeOpacityOnScrollMixin mixin -->
+    <div
+      ref="sectionText"
+      class="container"
+      :style="{opacity: sectionTextOpacity}"
+    >
       <div class="start-screen-slice__content">
         <h1
           class="start-screen-slice__title"
@@ -28,8 +33,11 @@
 </template>
 
 <script>
+import changeSectionTextOpacityMixin from '@/mixins/changeSectionTextOpacityMixin'
+
 export default {
   name: 'StartScreen',
+  mixins: [changeSectionTextOpacityMixin('sectionText')],
   props: {
     slice: {
       type: Object,
