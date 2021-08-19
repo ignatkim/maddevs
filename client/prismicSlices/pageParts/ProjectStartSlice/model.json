@@ -23,6 +23,18 @@
             "default_value": "black"
           },
           "type": "Select"
+        },
+        "colorTheme": {
+          "config": {
+            "label": "Color theme",
+            "placeholder": "",
+            "options": [
+              "white",
+              "black"
+            ],
+            "default_value": "white"
+          },
+          "type": "Select"
         }
       },
       "items": {}

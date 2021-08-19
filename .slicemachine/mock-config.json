@@ -287,6 +287,9 @@
         "primary": {
           "background": {
             "content": "black"
+          },
+          "colorTheme": {
+            "content": "white"
           }
         }
       }

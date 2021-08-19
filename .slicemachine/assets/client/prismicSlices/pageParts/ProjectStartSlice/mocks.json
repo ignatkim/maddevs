@@ -5,7 +5,8 @@
     "slice_type": "project_start_slice",
     "items": [],
     "primary": {
-      "background": "black"
+      "background": "black",
+      "colorTheme": "white"
     }
   }
 ]
