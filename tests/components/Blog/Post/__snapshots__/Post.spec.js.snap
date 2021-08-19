@@ -82,13 +82,15 @@ exports[`Post component should render correctly with default props 1`] = `
       class="progress-bar"
     />
      
-    <transition-stub
-      class="modal-content-locker"
-      mode="out-in"
-      name="main-fade"
-    >
-      <!---->
-    </transition-stub>
+    <client-only>
+      <transition-stub
+        class="modal-content-locker"
+        mode="out-in"
+        name="main-fade"
+      >
+        <!---->
+      </transition-stub>
+    </client-only>
   </main>
 </div>
 `;
