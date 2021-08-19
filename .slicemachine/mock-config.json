@@ -260,7 +260,11 @@
     },
     "TechnologiesSlice": {
       "default-slice": {
-        "primary": {}
+        "primary": {
+          "title": {
+            "content": "Technologies & Tools"
+          }
+        }
       }
     },
     "CustomerTestimonials": {
