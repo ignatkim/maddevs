@@ -2,8 +2,8 @@
   <!-- id is needed for google analytics, don't remove it -->
   <Modal
     :id="id"
-    ref="modalEbook"
-    :class="{ 'modal-ebook': !formSended }"
+    ref="modalContentLocker"
+    :class="{ 'modal-content-locker': !formSended }"
   >
     <div
       v-if="!formSended"
@@ -18,9 +18,13 @@
         alt="Pricing strategies"
       >
       <h2 class="modal-content__title">
+        {{ title }}
+      </h2>
+      <h2 class="modal-content__description">
         Get your copy of “Custom Software Development: Pricing Strategies”
       </h2>
       <ReadForm
+        :fullsize-button="true"
         @form-sended="handleSendedForm"
       />
     </div>
@@ -38,7 +42,7 @@ import ReadForm from '@/components/Ebook/ReadForm'
 import SuccessMessage from '@/components/core/modals/SuccessMessage'
 
 export default {
-  name: 'ModalEbook',
+  name: 'ModalContentLocker',
   components: {
     Modal,
     ReadForm,
@@ -61,10 +65,26 @@ export default {
     return {
       successMessage: null,
       formSended: false,
+      title: '',
+      titles: [
+        'How to negotiate with an IT vendor?',
+        'Are looking for software development services?',
+        'Are an aspiring IT company searching for useful information?',
+        'Are interested in pricing information for custom software development?',
+      ],
     }
   },
 
+  mounted() {
+    this.makeRandomTitle()
+  },
+
   methods: {
+    makeRandomTitle() {
+      const randomIndex = Math.floor(Math.random() * this.titles.length)
+      this.title = this.titles[randomIndex]
+    },
+
     handleSendedForm(payload) {
       this.successMessage = `
         The letter with the PDF file was successfully sent to mail ${payload.email}.
@@ -74,13 +94,13 @@ export default {
     },
 
     show() {
-      if (!this.$refs.modalEbook.show) return
-      this.$refs.modalEbook.show()
+      if (!this.$refs.modalContentLocker.show) return
+      this.$refs.modalContentLocker.show()
     },
 
     close() {
-      if (!this.$refs.modalEbook.close) return
-      this.$refs.modalEbook.close()
+      if (!this.$refs.modalContentLocker.close) return
+      this.$refs.modalContentLocker.close()
     },
   },
 }
@@ -92,37 +112,55 @@ export default {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 42px 48px;
+  padding: 25px 46px;
   background-color: #F4F4F4;
   border-radius: 4px;
   box-sizing: border-box;
 
   @media screen and (max-width: 540px) {
-    padding: 32px 38px;
-  }
-
-  @media screen and (max-width: 376px) {
-    padding: 22px 28px;
+    padding: 30px 32px;
   }
 
   &__img {
     width: 100%;
     max-width: 140px;
     height: auto;
+    transform: rotate(9deg);
+    margin: 0 auto;
   }
 
   &__title {
+    @include font('Inter', 28px, 700);
+    line-height: 32px;
+    letter-spacing: -1px;
+    color: #111;
+    margin-top: 22px;
+    margin-bottom: 8px;
+    width: 100%;
+    text-align: center;
+    @media screen and (max-width: 580px) {
+      @include font('Inter', 21px, 700);
+      line-height: 24px;
+    }
+  }
+
+  &__description {
     @include font('Inter', 22px, 400);
     line-height: 30px;
     letter-spacing: -1px;
     color: #111;
-    margin-top: 15px;
     margin-bottom: 24px;
     width: 100%;
+    text-align: center;
+    @media screen and (max-width: 580px) {
+      @include font('Inter', 17px, 400);
+      line-height: 24px;
+      margin-bottom: 20px;
+    }
   }
 }
 
-.modal-ebook {
+.modal-content-locker {
   /deep/ .modal {
     &_container,
     &_content,
@@ -131,15 +169,25 @@ export default {
     }
 
     &_head {
-      @media screen and (max-width: 640px) {
-        margin-top: 54px;
+      @media screen and (max-width: 670px) {
+        margin-top: 0;
       }
     }
 
     &_container {
-      @media screen and (min-width: 640px) {
-        width: 498px;
-        max-width: 498px;
+      @media screen and (min-width: 720px) {
+        width: 654px;
+        max-width: 654px;
+      }
+      @media screen and (max-width: 720px) {
+        margin-top: 0;
+      }
+    }
+
+    &_content, &-content {
+      @media screen and (max-width: 720px) {
+        max-height: 100vh;
+        height: 100vh;
       }
     }
 

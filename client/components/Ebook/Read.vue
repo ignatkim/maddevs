@@ -4,11 +4,11 @@
     class="ebook-read"
   >
     <div class="container">
-      <h2>
+      <h2 class="ebook-read__title">
         Read articles online
       </h2>
 
-      <div class="ebook-read_cards">
+      <div class="ebook-read__cards">
         <ReadCard
           v-for="(post, i) of posts"
           :key="`post-card_${i}`"
@@ -16,7 +16,18 @@
         />
       </div>
 
-      <div class="ebook-read_form">
+      <div class="ebook-read__form">
+        <img
+          v-lazy-load
+          class="ebook-read__form-img"
+          width="110"
+          height="155"
+          data-src="@/assets/img/Ebook/book.svg"
+          alt="Pricing strategies"
+        >
+        <h2 class="ebook-read__form-title">
+          Get your copy of “Custom Software Development: Pricing Strategies”
+        </h2>
         <ReadForm @form-sended="handleSendedForm" />
       </div>
     </div>
@@ -91,6 +102,84 @@ export default {
   padding: 96px 0 64px;
   background-color: #fff;
 
+  &__form {
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 42px 48px;
+    background-color: #F4F4F4;
+    border-radius: 4px;
+    box-sizing: border-box;
+    align-self: flex-start;
+
+    @media only screen and (min-width: 1024px) and (max-width: 1094px) {
+      width: 364px;
+    }
+
+    @media screen and (max-width: 992px) {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 96px;
+      order: 1;
+    }
+
+    @media screen and (max-width: 540px) {
+      margin-bottom: 48px;
+    }
+
+    @media screen and (max-width: 540px) {
+      padding: 32px 38px;
+    }
+
+    @media screen and (max-width: 376px) {
+      padding: 22px 28px;
+    }
+
+    &-img {
+      width: 100%;
+      max-width: 140px;
+      height: auto;
+      transform: rotate(9deg);
+
+      @media screen and (max-width: 992px) {
+        margin: 0 auto;
+      }
+    }
+
+    &-title {
+      @include font('Inter', 22px, 400);
+      line-height: 30px;
+      letter-spacing: -1px;
+      color: #111;
+      margin-bottom: 24px;
+      width: 100%;
+      margin-top: 15px;
+
+      @media screen and (max-width: 992px) {
+        text-align: center;
+        margin-top: 30px;
+      }
+    }
+
+    /deep/ .read-form {
+      &__caption {
+        width: 100%;
+
+        @media screen and (max-width: 992px) {
+          text-align: center;
+        }
+      }
+
+      &__button {
+        @media screen and (max-width: 992px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
   > .container {
     display: flex;
     flex-wrap: wrap;
@@ -105,7 +194,7 @@ export default {
     padding: 72px 0;
   }
 
-  h2 {
+  &__title {
     width: 100%;
     @include font('Inter', 42px, 600);
     line-height: 46px;
@@ -123,7 +212,7 @@ export default {
     }
   }
 
-  &_cards {
+  &__cards {
     @include grid(repeat(2, 1fr), auto, 30px, 30px);
 
     @media screen and (max-width: 992px) {
@@ -154,48 +243,6 @@ export default {
 
       @media screen and (max-width: 992px) {
         width: 100%;
-      }
-    }
-  }
-
-  /deep/ .read-form {
-    width: 440px;
-
-    @media only screen and (min-width: 1024px) and (max-width: 1094px) {
-      width: 364px;
-    }
-
-    @media screen and (max-width: 992px) {
-      width: 100%;
-      max-width: 100%;
-      margin-bottom: 96px;
-      order: 1;
-    }
-
-    @media screen and (max-width: 540px) {
-      margin-bottom: 48px;
-    }
-
-    img {
-      @media screen and (max-width: 992px) {
-        margin: 0 auto 20px;
-      }
-    }
-
-    h4,
-    p {
-      width: 100%;
-
-      @media screen and (max-width: 992px) {
-        text-align: center;
-      }
-    }
-
-    &_fields {
-      button {
-        @media screen and (max-width: 992px) {
-          width: 100%;
-        }
       }
     }
   }
