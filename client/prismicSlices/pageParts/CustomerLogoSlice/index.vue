@@ -203,18 +203,32 @@ export default {
   }
 
   &_link {
+    display: block;
+    width: 100%;
     margin-top: 50px;
+    /deep/ .ui-button {
+      padding: 25px;
+      line-height: 20px;
+      &:hover {
+        background-color: lighten($bgcolor--red, 10%) !important;
+      }
+    }
     @media screen and (max-width: 1024px) {
       margin-top: 32px;
+      /deep/ .ui-button {
+        padding: 14px 25px;
+      }
     }
   }
 
   // ---- Themes ---- //
   &--white-theme {
     /deep/ .customer-logo-slice {
-      &_title,
+      &_title {
+        color: $text-color--white-primary;
+      }
       &_description {
-        color: $text-color--black-oil;
+        color: $text-color--white;
       }
       &_logo {
         background-color: #fff;
@@ -223,11 +237,9 @@ export default {
   }
   &--black-theme {
     /deep/ .customer-logo-slice {
-      &_title {
-        color: $text-color--white-primary;
-      }
+      &_title,
       &_description {
-        color: $text-color--white;
+        color: $text-color--black-oil;
       }
       &_logo {
         background-color: #191A1B;
