@@ -15,6 +15,7 @@
             :alt="expert.image.alt"
             width="295"
             height="401"
+            class="meet-our-experts__expert-item-img"
           >
           <div class="meet-our-experts__expert-bottom_content">
             <div class="meet-our-experts__expert-info">
@@ -107,7 +108,9 @@ export default {
       }
     }
 
-    img {
+    &-img {
+      width: 100%;
+      height: 100%;
       object-fit: cover;
     }
 
