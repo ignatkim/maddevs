@@ -10,50 +10,7 @@
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
       "description": "Customer Logo Slice",
-      "primary": {
-        "title": {
-          "config": {
-            "label": "Title",
-            "placeholder": ""
-          },
-          "type": "Text"
-        },
-        "description": {
-          "config": {
-            "label": "Description",
-            "placeholder": ""
-          },
-          "type": "Text"
-        },
-        "colorTheme": {
-          "config": {
-            "label": "Theme color",
-            "placeholder": "",
-            "options": [
-              "white",
-              "black"
-            ],
-            "default_value": "white"
-          },
-          "type": "Select"
-        },
-        "buttonText": {
-          "config": {
-            "label": "Button text",
-            "placeholder": ""
-          },
-          "type": "Text"
-        },
-        "buttonLink": {
-          "config": {
-            "label": "Button link",
-            "placeholder": "",
-            "select": "web",
-            "allowTargetBlank": false
-          },
-          "type": "Link"
-        }
-      },
+      "primary": {},
       "items": {
         "logo": {
           "type": "Image",
