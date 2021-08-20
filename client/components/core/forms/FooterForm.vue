@@ -15,9 +15,7 @@
     <!-- this id should be unique, because it used for google analytics -->
     <ModalSuccess
       id="footer-modal"
-      :display-time="3000"
-      :visibled="isSuccess"
-      @close="handleModalClose"
+      ref="successModal"
     />
   </section>
 </template>
@@ -37,12 +35,6 @@ export default {
 
   mixins: [createLeadMixin(305480, 'Contact Me'), scrollOnBody],
 
-  data() {
-    return {
-      isSuccess: false,
-    }
-  },
-
   methods: {
     handleSubmit(formData) {
       const variables = {
@@ -54,16 +46,11 @@ export default {
       this.submitLead(variables)
 
       this.disableScrollOnBody()
-      this.isSuccess = true
+      this.$refs.successModal.show()
     },
 
     reset() {
       this.$refs.baseForm.reset()
-    },
-
-    handleModalClose() {
-      this.isSuccess = false
-      this.enableScrollOnBody()
     },
   },
 }

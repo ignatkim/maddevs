@@ -51,6 +51,8 @@ exports[`Careers _uid component should render correctly 1`] = `
             type="button"
           >
             
+  
+  
         translated
       
             <div
@@ -350,6 +352,8 @@ exports[`Careers _uid component should render correctly 1`] = `
                   type="submit"
                 >
                   
+  
+  
       translated
     
                   <div
@@ -359,7 +363,8 @@ exports[`Careers _uid component should render correctly 1`] = `
               </form>
                
               <transition-stub
-                name="fade"
+                mode="out-in"
+                name="main-fade"
               >
                 <!---->
               </transition-stub>

@@ -32,10 +32,10 @@
             "label": "Color theme",
             "placeholder": "",
             "options": [
-              "white",
-              "black"
+              "black",
+              "white"
             ],
-            "default_value": "white"
+            "default_value": "black"
           },
           "type": "Select"
         },
@@ -68,10 +68,10 @@
             "label": "Color theme",
             "placeholder": "",
             "options": [
-              "white",
-              "black"
+              "black",
+              "white"
             ],
-            "default_value": "white"
+            "default_value": "black"
           },
           "type": "Select"
         },
@@ -111,10 +111,10 @@
             "label": "Color theme",
             "placeholder": "",
             "options": [
-              "white",
-              "black"
+              "black",
+              "white"
             ],
-            "default_value": "white"
+            "default_value": "black"
           },
           "type": "Select"
         },
@@ -170,10 +170,10 @@
             "label": "Color theme",
             "placeholder": "",
             "options": [
-              "white",
-              "black"
+              "black",
+              "white"
             ],
-            "default_value": "white"
+            "default_value": "black"
           },
           "type": "Select"
         },
@@ -213,10 +213,10 @@
             "label": "Color theme",
             "placeholder": "",
             "options": [
-              "white",
-              "black"
+              "black",
+              "white"
             ],
-            "default_value": "white"
+            "default_value": "black"
           },
           "type": "Select"
         },

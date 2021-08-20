@@ -265,6 +265,9 @@
         "primary": {
           "text": {
             "content": "Default red button"
+          },
+          "background": {
+            "content": "black"
           }
         }
       },
@@ -324,6 +327,12 @@
             "content": "Quick Project Start"
           }
         }
+      }
+    },
+    "TeamCards": {
+      "default-slice": {
+        "primary": {},
+        "items": {}
       }
     }
   }

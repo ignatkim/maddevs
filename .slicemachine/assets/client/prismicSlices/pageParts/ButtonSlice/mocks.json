@@ -5,12 +5,12 @@
     "slice_type": "button_slice",
     "items": [],
     "primary": {
-      "fullWidth": false,
+      "fullWidth": true,
       "alignment": "left",
       "text": "Default red button",
       "link": {
         "link_type": "Web",
-        "url": "https://slicemachine.dev"
+        "url": "http://google.com"
       },
       "background": "black"
     }
@@ -22,12 +22,12 @@
     "items": [],
     "primary": {
       "fullWidth": true,
-      "alignment": "center",
-      "color": "blue",
+      "alignment": "right",
+      "color": "grey",
       "text": "Outlined button",
       "link": {
         "link_type": "Web",
-        "url": "http://google.com"
+        "url": "https://slicemachine.dev"
       },
       "background": "white"
     }
@@ -39,14 +39,14 @@
     "items": [],
     "primary": {
       "fullWidth": false,
-      "alignment": "left",
-      "color": "black",
+      "alignment": "right",
+      "color": "grey",
       "text": "Link button",
       "link": {
         "link_type": "Web",
-        "url": "https://prismic.io"
+        "url": "https://slicemachine.dev"
       },
-      "background": "white"
+      "background": "black"
     }
   }
 ]

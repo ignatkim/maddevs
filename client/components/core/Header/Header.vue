@@ -223,6 +223,7 @@ export default {
     showModal() {
       if (!this.$refs?.modalContactMe?.show) return
       this.$refs.modalContactMe.show()
+      this.isActiveMobileMenu = false
     },
 
     onChangePage() {

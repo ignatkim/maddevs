@@ -124,7 +124,7 @@ export default {
 
   &__img {
     width: 100%;
-    max-width: 140px;
+    max-width: 100px;
     height: auto;
     transform: rotate(9deg);
     margin: 0 auto;
@@ -133,11 +133,9 @@ export default {
   &__title {
     @include font('Inter', 28px, 700);
     line-height: 32px;
+    margin: 22px 15px 8px;
     letter-spacing: -1px;
     color: #111;
-    margin-top: 22px;
-    margin-bottom: 8px;
-    width: 100%;
     text-align: center;
     @media screen and (max-width: 580px) {
       @include font('Inter', 21px, 700);
@@ -148,10 +146,9 @@ export default {
   &__description {
     @include font('Inter', 22px, 400);
     line-height: 30px;
+    margin: 0 15px 24px;
     letter-spacing: -1px;
     color: #111;
-    margin-bottom: 24px;
-    width: 100%;
     text-align: center;
     @media screen and (max-width: 580px) {
       @include font('Inter', 17px, 400);
@@ -182,13 +179,12 @@ export default {
       }
       @media screen and (max-width: 720px) {
         margin-top: 0;
+        background-color: #F4F4F4;
       }
     }
 
     &_content, &-content {
       @media screen and (max-width: 720px) {
-        max-height: 100vh;
-        height: 100vh;
       }
     }
 

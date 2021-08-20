@@ -18,7 +18,7 @@ export const _DefaultSlice = () => ({
   },
   data() {
     return {
-      mock: {"variation":"default-slice","name":"Default slice","slice_type":"text_slice","items":[],"primary":{"large":true,"text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","maxWidth":"1028px"},"id":"_DefaultSlice"}
+      mock: {"variation":"default-slice","name":"Default slice","slice_type":"text_slice","items":[],"primary":{"large":false,"text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","maxWidth":"1028px"},"id":"_DefaultSlice"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -94,7 +94,7 @@ export const _TitleTextList = () => ({
   },
   data() {
     return {
-      mock: {"variation":"titleTextList","name":"Title + Text + List","slice_type":"text_slice","items":[{"listItem":"maximize world-class supply-chains"},{"listItem":"deploy interactive niches"},{"listItem":"target web-enabled initiatives"},{"listItem":"iterate open-source initiatives"},{"listItem":"transition front-end infomediaries"}],"primary":{"title":"Software <br /> development","text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","maxWidth":"1028px"},"id":"_TitleTextList"}
+      mock: {"variation":"titleTextList","name":"Title + Text + List","slice_type":"text_slice","items":[{"listItem":"revolutionize extensible bandwidth"},{"listItem":"reintermediate real-time solutions"}],"primary":{"title":"Software <br /> development","text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","maxWidth":"1028px"},"id":"_TitleTextList"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -132,7 +132,7 @@ export const _TitleH5Text = () => ({
   },
   data() {
     return {
-      mock: {"variation":"titleH5Text","name":"Title H5 + Text","slice_type":"text_slice","items":[],"primary":{"title":"We encourage the best practices in sustainability","text":"Mad Devs takes full responsibility for the projects we have been involved in.  It includes not only the quality of a product but also the responsibility toward  the environment and people.  Therefore, the environmental and social sustainability compliances form  a crucial component of our business strategy. We are committed to comply with legal regulations and official requirements and encourage the best sustainability practices.  We understand sustainability as a path to continuous improvement  of our processes and services for the purposes of environmental protection,  the provision of occupational health, and meeting safety requirements. ","colorTheme":"white","maxWidth":"exploit cross-platform functionalities"},"id":"_TitleH5Text"}
+      mock: {"variation":"titleH5Text","name":"Title H5 + Text","slice_type":"text_slice","items":[],"primary":{"title":"We encourage the best practices in sustainability","text":"Mad Devs takes full responsibility for the projects we have been involved in. It includes not only the quality of a product but also the responsibility toward the environment and people.  Therefore, the environmental and social sustainability compliances form a crucial component of our business strategy. We are committed to comply with legal regulations and official requirements and encourage the best sustainability practices. We understand sustainability as a path to continuous improvement of our processes and services for the purposes of environmental protection, the provision of occupational health, and meeting safety requirements. ","colorTheme":"white","maxWidth":"exploit cross-platform functionalities"},"id":"_TitleH5Text"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'

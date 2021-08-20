@@ -1,6 +1,8 @@
 <template>
-  <button
+  <component
+    :is="isTag"
     v-WaveAnimation="!disabled"
+    :href="linkTo"
     class="ui-button"
     :class="{
       'ui-button--disabled': disabled,
@@ -8,9 +10,10 @@
     }"
     @click="handleClick"
   >
+    {{ attrs }}
     <span v-if="loading">Waiting...</span>
     <slot v-else />
-  </button>
+  </component>
 </template>
 
 <script>
@@ -33,9 +36,35 @@ export default {
       default: false,
     },
 
+    link: {
+      type: Boolean,
+      default: false,
+    },
+
+    to: {
+      type: String,
+      default: '/',
+    },
+
     fullWidth: {
       type: Boolean,
       default: false,
+    },
+  },
+
+  computed: {
+    isTag() {
+      if (this.link) {
+        return 'a'
+      }
+      return 'button'
+    },
+
+    linkTo() {
+      if (this.link) {
+        return this.to
+      }
+      return null
     },
   },
 
