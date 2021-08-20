@@ -95,6 +95,7 @@ export default {
     border: 1px solid;
     border-color: transparent;
     transition: all .2s ease;
+    background-color: #F5F7F9;
 
     &:hover {
       border-color: $border-color--red;
