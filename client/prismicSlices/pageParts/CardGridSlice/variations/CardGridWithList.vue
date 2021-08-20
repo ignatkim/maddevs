@@ -10,8 +10,8 @@
           :key="`item-${i}`"
           :class="{ 'full-width': item.fullWidth }"
         >
-          <h3 v-html="item.title" />
-          <p v-html="item.description[0].text" />
+          <h3 v-html="formatHtmlText(item.title)" />
+          <p v-html="formatHtmlText(item.description[0].text)" />
 
           <div
             v-for="(text, j) of item.list && item.list.split(', ')"
@@ -26,8 +26,13 @@
 </template>
 
 <script>
+import prismicSlicesMixin from '@/mixins/prismicSlicesMixin'
+
 export default {
   name: 'CardGridWithListSlice',
+
+  mixins: [prismicSlicesMixin],
+
   props: {
     colorTheme: {
       type: String,

@@ -17,10 +17,10 @@
         >
           <div class="card-grid-slice__item-info">
             <h3
-              v-html="item.title"
+              v-html="formatHtmlText(item.title)"
             />
             <p
-              v-html="item.description"
+              v-html="formatHtmlText(item.description)"
             />
             <UIArrowButton
               color="black"
@@ -42,12 +42,16 @@
 
 <script>
 import UIArrowButton from '@/components/shared/UIArrowButton'
+import prismicSlicesMixin from '@/mixins/prismicSlicesMixin'
 
 export default {
   name: 'CardGridSlice',
+
   components: {
     UIArrowButton,
   },
+
+  mixins: [prismicSlicesMixin],
 
   props: {
     colorTheme: {
