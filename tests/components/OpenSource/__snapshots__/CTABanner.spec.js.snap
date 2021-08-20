@@ -31,7 +31,9 @@ exports[`CTABanner component should render correctly 1`] = `
           href="https://github.com/maddevsio"
           target="_blank"
         >
-          <uibutton-stub>
+          <uibutton-stub
+            to="/"
+          >
             
           Contribute
         

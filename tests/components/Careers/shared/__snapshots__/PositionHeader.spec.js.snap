@@ -37,6 +37,8 @@ exports[`PositionHeader component should render correctly 1`] = `
           type="button"
         >
           
+  
+  
         translated
       
           <div
