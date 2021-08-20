@@ -10,15 +10,7 @@
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
       "description": "TeamCards",
-      "primary": {
-        "description": {
-          "config": {
-            "label": "Description",
-            "placeholder": ""
-          },
-          "type": "Text"
-        }
-      },
+      "primary": {},
       "items": {
         "name": {
           "config": {
