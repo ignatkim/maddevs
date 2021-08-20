@@ -158,6 +158,23 @@
             "content": "We build our sustainability efforts around three primary areas: social, economic, and ecological sustainability."
           }
         }
+      },
+      "redTextSimpleTextMd": {
+        "primary": {
+          "title": {
+            "content": "Our Primary Areas of Sustainable Enterprise"
+          },
+          "text": {
+            "content": "We build our sustainability efforts around three primary areas: social, economic, and ecological sustainability."
+          }
+        }
+      },
+      "simpleTextMedium": {
+        "primary": {
+          "text": {
+            "content": "We build our sustainability efforts around three primary areas: social, economic, and ecological sustainability."
+          }
+        }
       }
     },
     "StartScreen": {

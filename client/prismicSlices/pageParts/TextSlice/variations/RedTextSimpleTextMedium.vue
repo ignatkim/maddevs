@@ -1,9 +1,9 @@
 <template>
   <div class="text-slice__content">
-    <h2 class="text-slice__title-h5">
+    <p class="text-slice__red-text">
       {{ title }}
-    </h2>
-    <p class="text-slice__text">
+    </p>
+    <p class="text-slice__simple-text-medium">
       {{ text }}
     </p>
   </div>
@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: 'TitleH5Text',
+  name: 'RedTextSimpleTextMedium',
   props: {
     title: {
       type: String,
@@ -37,16 +37,14 @@ export default {
 @import '@/assets/styles/slices/_slices';
 
 .text-slice {
-  &__title-h5 {
-    margin-bottom: 14px;
-  }
+  &__red-text {
+    margin-bottom: 12px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+    color: $text-color--red;
+    @include font('Inter', 21px, 400);
 
-  &__text {
-    @include font('Inter', 20px, 400);
-    line-height: 140%;
-    letter-spacing: -0.015em;
-
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 375px) {
       font-size: 16px;
       line-height: 150%;
       letter-spacing: -0.4px;

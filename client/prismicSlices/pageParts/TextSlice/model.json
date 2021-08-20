@@ -318,8 +318,8 @@
       "items": {}
     },
     {
-      "id": "redTextSimpleText",
-      "name": "Red Text + Simple Text",
+      "id": "redTextSimpleTextMedium",
+      "name": "Red Text + Simple Text Medium",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
       "description": "TextSlice",
@@ -347,6 +347,42 @@
               "black"
             ],
             "default_value": "white"
+          },
+          "type": "Select"
+        },
+        "maxWidth": {
+          "config": {
+            "label": "Max width (px,% or vw)",
+            "placeholder": "1028px"
+          },
+          "type": "Text"
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "simpleTextMedium",
+      "name": "Simple Text Medium",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TextSlice",
+      "primary": {
+        "text": {
+          "config": {
+            "label": "Text",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "colorTheme": {
+          "config": {
+            "label": "Color theme",
+            "placeholder": "",
+            "options": [
+              "black",
+              "white"
+            ],
+            "default_value": "black"
           },
           "type": "Select"
         },
