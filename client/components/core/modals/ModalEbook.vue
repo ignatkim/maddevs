@@ -3,12 +3,27 @@
   <Modal
     :id="id"
     ref="modalEbook"
-    :class="{ 'modal-ebook--without-padding': !formSended }"
+    :class="{ 'modal-ebook': !formSended }"
   >
-    <ReadForm
+    <div
       v-if="!formSended"
-      @form-sended="handleSendedForm"
-    />
+      class="modal-content"
+    >
+      <img
+        v-lazy-load
+        class="modal-content__img"
+        width="110"
+        height="155"
+        data-src="@/assets/img/Ebook/book.svg"
+        alt="Pricing strategies"
+      >
+      <h2 class="modal-content__title">
+        Get your copy of “Custom Software Development: Pricing Strategies”
+      </h2>
+      <ReadForm
+        @form-sended="handleSendedForm"
+      />
+    </div>
     <SuccessMessage
       v-else
       title="Thank you!"
@@ -72,35 +87,70 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .modal-ebook--without-padding {
-    /deep/ .modal {
-      &_container,
-      &_content,
-      &_head {
-        padding: 0;
-      }
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 42px 48px;
+  background-color: #F4F4F4;
+  border-radius: 4px;
+  box-sizing: border-box;
 
-      &_head {
-        @media screen and (max-width: 640px) {
-          margin-top: 54px;
-        }
-      }
+  @media screen and (max-width: 540px) {
+    padding: 32px 38px;
+  }
 
-      &_container {
-        @media screen and (min-width: 640px) {
-          width: 498px;
-          max-width: 498px;
-        }
-      }
+  @media screen and (max-width: 376px) {
+    padding: 22px 28px;
+  }
 
-      &_close {
-        top: 20px;
-        right: 20px;
+  &__img {
+    width: 100%;
+    max-width: 140px;
+    height: auto;
+  }
+
+  &__title {
+    @include font('Inter', 22px, 400);
+    line-height: 30px;
+    letter-spacing: -1px;
+    color: #111;
+    margin-top: 15px;
+    margin-bottom: 24px;
+    width: 100%;
+  }
+}
+
+.modal-ebook {
+  /deep/ .modal {
+    &_container,
+    &_content,
+    &_head {
+      padding: 0;
+    }
+
+    &_head {
+      @media screen and (max-width: 640px) {
+        margin-top: 54px;
       }
     }
 
-    /deep/ .read-form {
-      max-width: 100%;
+    &_container {
+      @media screen and (min-width: 640px) {
+        width: 498px;
+        max-width: 498px;
+      }
+    }
+
+    &_close {
+      top: 20px;
+      right: 20px;
     }
   }
+
+  /deep/ .read-form {
+    max-width: 100%;
+  }
+}
 </style>

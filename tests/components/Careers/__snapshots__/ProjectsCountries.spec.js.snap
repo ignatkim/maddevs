@@ -45,7 +45,9 @@ exports[`ProjectsCountries component should render correctly 1`] = `
       <nuxtlink-stub
         to="/case-studies/"
       >
-        <uibutton-stub>
+        <uibutton-stub
+          to="/"
+        >
           translated
         </uibutton-stub>
       </nuxtlink-stub>

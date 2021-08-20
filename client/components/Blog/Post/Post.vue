@@ -104,6 +104,9 @@
       ref="progressBar"
       class="progress-bar"
     />
+    <client-only>
+      <ContentLocker />
+    </client-only>
   </main>
 </template>
 
@@ -115,6 +118,7 @@ import BlogHeader from '@/components/Blog/header/Blog'
 import CustomerUniversityHeader from '@/components/Blog/header/CustomerUniversity'
 import CustomerUniversityNavigation from '@/components/Blog/Post/CustomerUniversityNavigation'
 import PostCard from '@/components/Blog/shared/PostCard'
+import ContentLocker from '@/components/Blog/Post/ContentLocker'
 import copyToClipboard from '@/helpers/copyToClipboard'
 
 import findPostAuthorMixin from '@/mixins/findPostAuthorMixin'
@@ -122,6 +126,7 @@ import findPostAuthorMixin from '@/mixins/findPostAuthorMixin'
 export default {
   name: 'PostView',
   components: {
+    ContentLocker,
     SlicesBlock,
     PostCard,
     TableOfContents,

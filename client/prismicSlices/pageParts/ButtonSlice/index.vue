@@ -1,6 +1,7 @@
 <template>
   <div
     class="button-slice"
+    :class="colorThemeClass"
     :style="{
       backgroundColor: sliceBackground,
     }"
@@ -15,9 +16,7 @@
         :to="link.url"
         target="_blank"
         class="button-slice__link"
-        :class="{
-          'button-slice__link--full-width': fullWidth
-        }"
+        :class="{ 'button-slice__link--full-width': fullWidth }"
       >
         <UIButton
           v-if="variation === 'default-slice'"
@@ -94,6 +93,7 @@ export default {
 <style lang="scss" scoped>
 .button-slice {
   display: block;
+
   &__content {
     &--align {
       &-center {
@@ -104,14 +104,16 @@ export default {
       }
     }
   }
+
   &__link {
     display: inline-block;
     &--full-width {
       display: block;
     }
   }
+
   &__button {
-    padding: 14px 24px;
+    padding: 16px 24px;
     line-height: 20px;
     &--normal:hover {
       background-color: lighten($bgcolor--red, 10%) !important;

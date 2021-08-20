@@ -32,21 +32,8 @@
             "label": "Color theme",
             "placeholder": "",
             "options": [
-              "white",
-              "black"
-            ],
-            "default_value": "white"
-          },
-          "type": "Select"
-        },
-        "background": {
-          "config": {
-            "label": "Slice background",
-            "placeholder": "",
-            "options": [
               "black",
-              "white",
-              "grey"
+              "white"
             ],
             "default_value": "black"
           },
@@ -81,21 +68,8 @@
             "label": "Color theme",
             "placeholder": "",
             "options": [
-              "white",
-              "black"
-            ],
-            "default_value": "white"
-          },
-          "type": "Select"
-        },
-        "background": {
-          "config": {
-            "label": "Slice background",
-            "placeholder": "",
-            "options": [
               "black",
-              "white",
-              "grey"
+              "white"
             ],
             "default_value": "black"
           },
@@ -137,21 +111,8 @@
             "label": "Color theme",
             "placeholder": "",
             "options": [
-              "white",
-              "black"
-            ],
-            "default_value": "white"
-          },
-          "type": "Select"
-        },
-        "background": {
-          "config": {
-            "label": "Slice background",
-            "placeholder": "",
-            "options": [
               "black",
-              "white",
-              "grey"
+              "white"
             ],
             "default_value": "black"
           },
@@ -209,21 +170,8 @@
             "label": "Color theme",
             "placeholder": "",
             "options": [
-              "white",
-              "black"
-            ],
-            "default_value": "white"
-          },
-          "type": "Select"
-        },
-        "background": {
-          "config": {
-            "label": "Slice background",
-            "placeholder": "",
-            "options": [
               "black",
-              "white",
-              "grey"
+              "white"
             ],
             "default_value": "black"
           },
@@ -265,21 +213,8 @@
             "label": "Color theme",
             "placeholder": "",
             "options": [
-              "white",
-              "black"
-            ],
-            "default_value": "white"
-          },
-          "type": "Select"
-        },
-        "background": {
-          "config": {
-            "label": "Slice background",
-            "placeholder": "",
-            "options": [
               "black",
-              "white",
-              "grey"
+              "white"
             ],
             "default_value": "black"
           },

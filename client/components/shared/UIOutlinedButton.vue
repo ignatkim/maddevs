@@ -48,7 +48,7 @@ export default {
   box-shadow: none;
   border-radius: 4px;
   letter-spacing: -0.4px;
-  padding: 12px 24px;
+  padding: 16px 24px;
   line-height: 20px;
   border: 1px solid;
   transition: 0.4s;

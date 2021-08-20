@@ -8,7 +8,6 @@
       "large": false,
       "text": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.",
       "colorTheme": "white",
-      "background": "black",
       "maxWidth": "1028px"
     }
   },
@@ -20,7 +19,6 @@
     "primary": {
       "title": "Featured projects",
       "colorTheme": "white",
-      "background": "black",
       "maxWidth": "1028px"
     }
   },
@@ -33,7 +31,6 @@
       "title": "Featured projects",
       "text": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.",
       "colorTheme": "white",
-      "background": "black",
       "maxWidth": "1028px"
     }
   },
@@ -51,7 +48,6 @@
         "url": "https://maddevs.co/delivery-models.pdf"
       },
       "colorTheme": "white",
-      "background": "black",
       "maxWidth": "1028px"
     }
   },
@@ -61,20 +57,16 @@
     "slice_type": "text_slice",
     "items": [
       {
-        "listItem": "maximize interactive niches"
+        "listItem": "revolutionize extensible bandwidth"
       },
       {
-        "listItem": "deliver interactive partnerships"
-      },
-      {
-        "listItem": "evolve e-business bandwidth"
+        "listItem": "reintermediate real-time solutions"
       }
     ],
     "primary": {
       "title": "Software <br /> development",
       "text": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.",
       "colorTheme": "white",
-      "background": "black",
       "maxWidth": "1028px"
     }
   }

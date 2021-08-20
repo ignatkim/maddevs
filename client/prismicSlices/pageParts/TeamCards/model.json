@@ -1,0 +1,57 @@
+{
+  "id": "team_cards",
+  "type": "SharedSlice",
+  "name": "TeamCards",
+  "description": "TeamCards",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TeamCards",
+      "primary": {
+        "description": {
+          "config": {
+            "label": "Description",
+            "placeholder": ""
+          },
+          "type": "Text"
+        }
+      },
+      "items": {
+        "name": {
+          "config": {
+            "label": "Name",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "position": {
+          "config": {
+            "label": "Position",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "linkedin": {
+          "config": {
+            "label": "LinkedIn link",
+            "placeholder": "",
+            "select": "web",
+            "allowTargetBlank": false
+          },
+          "type": "Link"
+        },
+        "image": {
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
+        }
+      }
+    }
+  ]
+}

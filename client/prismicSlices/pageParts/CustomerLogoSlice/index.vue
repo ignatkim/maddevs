@@ -9,15 +9,15 @@
         class="customer-logo-slice_list"
       >
         <div
-          v-for="(item, i) of slice.items"
+          v-for="(customer, i) of customers"
           :key="`customer-logo-slice-${i}`"
           class="customer-logo-slice_logo"
         >
           <img
             width="143"
             height="64"
-            :src="item.logo.url"
-            :alt="item.logo.alt"
+            :src="customer.logo.url"
+            :alt="customer.logo.alt"
           >
         </div>
       </div>
@@ -47,6 +47,18 @@ export default {
         return {}
       },
     },
+  },
+
+  data() {
+    return {
+      title: this.slice.primary.title,
+      description: this.slice.primary.description,
+      customers: this.slice.items,
+      button: {
+        link: this.slice.primary.buttonLink,
+        text: this.slice.primary.buttonText,
+      },
+    }
   },
 
   computed: {
@@ -128,19 +140,50 @@ export default {
     }
   }
 
+  &_link {
+    display: block;
+    width: 100%;
+    margin-top: 50px;
+    /deep/ .ui-button {
+      padding: 25px;
+      line-height: 20px;
+      &:hover {
+        background-color: lighten($bgcolor--red, 10%) !important;
+      }
+    }
+    @media screen and (max-width: 1024px) {
+      margin-top: 32px;
+      /deep/ .ui-button {
+        padding: 14px 25px;
+      }
+    }
+  }
+
   // ---- Themes ---- //
   &--white-theme {
-    background-color: #fff;
-
-    .customer-logo-slice_logo {
-      background-color: #fff;
+    background-color: $bgcolor--white-primary;
+    /deep/ .customer-logo-slice {
+      &_title,
+      &_description {
+        color: $text-color--black-oil;
+      }
+      &_logo {
+        background-color: #fff;
+      }
     }
   }
   &--black-theme {
-    background-color: #111213;
-
-    .customer-logo-slice_logo {
-      background-color: #191A1B;
+    background-color: $bgcolor--black;
+    /deep/ .customer-logo-slice {
+      &_title {
+        color: $text-color--white-primary;
+      }
+      &_description {
+        color: $text-color--white;
+      }
+      &_logo {
+        background-color: #191A1B;
+      }
     }
   }
 }

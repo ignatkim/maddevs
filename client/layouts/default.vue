@@ -76,5 +76,7 @@ export default {
 
 .main-section {
   margin-top: -62px !important;
+  position: relative;
+  z-index: 1;
 }
 </style>

@@ -37,7 +37,7 @@
           <Simplebar
             ref="content"
             class="modal_content safari-only"
-            @success="openSuccessModal"
+            @success="makeSuccess"
           >
             <!-- id is needed for google analytics, don't remove it -->
             <div
@@ -114,7 +114,7 @@ export default {
   },
 
   methods: {
-    openSuccessModal() {
+    makeSuccess() {
       this.isSuccess = true
     },
 
@@ -226,7 +226,7 @@ export default {
   }
 
   &_content {
-    max-height: 80vh;
+    max-height: 90vh;
     padding: 0 84px;
     box-sizing: border-box;
   }

@@ -1,40 +1,45 @@
 <template>
-  <div class="container">
-    <section class="cta-banner-slice">
-      <div class="cta-banner-slice__info">
-        <h2 class="cta-banner-slice_title">
-          {{ slice.primary.title }}
-        </h2>
-        <p class="cta-banner-slice_description">
-          {{ slice.primary.description }}
-        </p>
-        <UIButton @click="goToDeliveryPage">
-          {{ slice.primary.btnText }}
-          <img
-            width="20"
-            height="20"
-            src="@/assets/img/common/arrow-up-right.svg"
-            alt="arrow"
+  <section class="cta-banner-slice">
+    <div class="container">
+      <div class="cta-banner-slice_content">
+        <div class="cta-banner-slice__info">
+          <h2 class="cta-banner-slice_title">
+            {{ slice.primary.title }}
+          </h2>
+          <p class="cta-banner-slice_description">
+            {{ slice.primary.description }}
+          </p>
+          <UIButton
+            link
+            :to="slice.primary.btnLink.url"
           >
-        </UIButton>
+            {{ slice.primary.btnText }}
+            <img
+              width="20"
+              height="20"
+              src="@/assets/img/common/arrow-up-right.svg"
+              alt="arrow"
+            >
+          </UIButton>
+        </div>
+        <img
+          width="395"
+          height="490"
+          class="cta-banner-slice__image"
+          :src="slice.primary.image.url"
+          :alt="slice.primary.image.alt"
+        >
+        <div class="cta-banner-slice__man">
+          <h6 class="cta-banner-slice__man-name">
+            {{ slice.primary.name }}
+          </h6>
+          <span class="cta-banner-slice__man-position">
+            {{ slice.primary.position }}
+          </span>
+        </div>
       </div>
-      <img
-        width="395"
-        height="490"
-        class="cta-banner-slice__image"
-        :src="slice.primary.image.url"
-        :alt="slice.primary.image.alt"
-      >
-      <div class="cta-banner-slice__man">
-        <h6 class="cta-banner-slice__man-name">
-          {{ slice.primary.name }}
-        </h6>
-        <span class="cta-banner-slice__man-position">
-          {{ slice.primary.position }}
-        </span>
-      </div>
-    </section>
-  </div>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -55,44 +60,42 @@ export default {
       },
     },
   },
-
-  methods: {
-    goToDeliveryPage() {
-      this.$router.push(this.slice.primary.btnLink.url)
-    },
-  },
 }
 </script>
 
 <style lang="scss" scoped>
 .cta-banner-slice {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  position: relative;
-  background-color: $bgcolor--silver;
-  padding: 85px 105px;
-  @media screen and (max-width: 1280px) {
-    padding: 85px 40px;
-  }
-  @media screen and (max-width: 992px) {
-    padding: 40px;
-  }
-  @media screen and (max-width: 768px) {
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px 32px 0;
-  }
+  background-color: #fff;
 
-  /deep/ .ui-button {
+  &_content {
+    box-sizing: border-box;
     display: flex;
-    align-items: center;
-    padding: 14px 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    background-color: $bgcolor--silver;
+    padding: 85px 105px;
+    @media screen and (max-width: 1280px) {
+      padding: 85px 40px;
+    }
+    @media screen and (max-width: 992px) {
+      padding: 40px;
+    }
+    @media screen and (max-width: 768px) {
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px 32px 0;
+    }
 
-    img {
-      margin-left: 7px;
+    /deep/ .ui-button {
+      display: flex;
+      align-items: center;
+      padding: 14px 24px;
+
+      img {
+        margin-left: 7px;
+      }
     }
   }
 
