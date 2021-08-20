@@ -16,7 +16,7 @@
     <div
       ref="sectionText"
       class="container"
-      :style="{opacity: sectionTextOpacity}"
+      :style="{ opacity: sectionTextOpacity }"
     >
       <div class="start-screen-slice__content">
         <h1
@@ -95,35 +95,45 @@ export default {
   &__content {
     text-align: center;
     z-index: 2;
-    max-width: 1028px;
+    max-width: 1113px;
   }
   &__title {
-    color: $text-color--white;
-    font-size: 100px;
-    line-height: 96px;
-    letter-spacing: -0.04em;
+    @include font('Inter', 100px, 700);
+    line-height: 105px;
+    letter-spacing: -2px;
+    color: $text-color--white-primary;
     @media screen and (max-width: 1024px) {
-      font-size: 80px;
-      line-height: 88px;
+      font-size: 76px;
+      line-height: 72px;
     }
     @media screen and (max-width: 768px) {
-      font-size: 52px;
-      line-height: 57px;
+      font-size: 42px;
+      line-height: 48px;
+    }
+    /deep/ .large {
+      @include font('Inter', 130px, 800);
+      line-height: 105px;
+      @media screen and (max-width: 1024px) {
+        font-size: 120px;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 65px;
+        line-height: 48px;
+      }
     }
   }
   &__subtitle {
-    margin-top: 55px;
-    font-size: 32px;
+    @include font('Inter', 32px, 600);
     line-height: 44px;
-    letter-spacing: -0.013em;
-    color: $text-color--silver;
+    letter-spacing: -1px;
+    margin-top: 50px;
+    color: $text-color--white-primary;
     @media screen and (max-width: 1024px) {
-      margin-top: 35px;
-      font-size: 24px;
-      line-height: 34px;
+      font-size: 32px;
+      line-height: 44px;
     }
     @media screen and (max-width: 768px) {
-      margin-top: 30px;
+      margin-top: 27px;
       font-size: 21px;
       line-height: 30px;
     }
