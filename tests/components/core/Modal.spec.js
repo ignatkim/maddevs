@@ -32,9 +32,9 @@ describe('namba food', () => {
   })
   // --------------------- //
 
-  it('if call method openSuccessModal > data isSuccess will be true', () => {
+  it('if call method makeSuccess > data isSuccess will be true', () => {
     expect(wrapper.vm.isSuccess).toBeFalsy()
-    wrapper.vm.openSuccessModal()
+    wrapper.vm.makeSuccess()
     expect(wrapper.vm.isSuccess).toBeTruthy()
   })
 

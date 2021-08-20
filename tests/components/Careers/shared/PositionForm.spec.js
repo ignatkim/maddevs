@@ -68,6 +68,9 @@ const mocks = {
     radioButtons: {
       reset: jest.fn(),
     },
+    successModal: {
+      show: jest.fn(),
+    },
   },
   $t: () => 'translated',
 }
@@ -130,6 +133,7 @@ describe('PositionForm component', () => {
     await expect(mocks.buildApplicantData).toHaveBeenCalledTimes(1)
     expect(mocks.resetForm).toHaveBeenCalledTimes(1)
     expect(mocks.sendVacancy).toHaveBeenCalledTimes(1)
+    expect(mocks.$refs.successModal.show).toHaveBeenCalledTimes(1)
   })
 
   it('should work reset form', () => {

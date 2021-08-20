@@ -229,7 +229,8 @@ exports[`Footer component should render correctly 1`] = `
             </div>
              
             <transition-stub
-              name="fade"
+              mode="out-in"
+              name="main-fade"
             >
               <!---->
             </transition-stub>
