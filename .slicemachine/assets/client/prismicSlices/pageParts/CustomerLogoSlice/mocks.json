@@ -16,7 +16,7 @@
         },
         "link": {
           "link_type": "Web",
-          "url": "https://slicemachine.dev"
+          "url": "http://twitter.com"
         }
       },
       {
@@ -27,11 +27,26 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764?w=900&h=500&fit=crop"
         },
         "link": {
           "link_type": "Web",
-          "url": "http://google.com"
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "logo": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&h=500&fit=crop"
+        },
+        "link": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
         }
       },
       {
@@ -46,12 +61,19 @@
         },
         "link": {
           "link_type": "Web",
-          "url": "http://google.com"
+          "url": "https://prismic.io"
         }
       }
     ],
     "primary": {
-      "colorTheme": "white"
+      "title": "Our valued customers",
+      "description": "Due to  our NDAs and confidentiality requirements, we cannot disclose details for all of our customers. These are a few of the companies we work with.",
+      "colorTheme": "white",
+      "buttonText": "See the case studies",
+      "buttonLink": {
+        "link_type": "Web",
+        "url": "https://maddevs.io/case-studies/"
+      }
     }
   }
 ]

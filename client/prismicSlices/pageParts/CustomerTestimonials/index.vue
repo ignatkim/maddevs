@@ -1,7 +1,5 @@
 <template>
-  <section class="section">
-    <CustomerTestimonials :title="slice.primary.title" />
-  </section>
+  <CustomerTestimonials :title="slice.primary.title" />
 </template>
 
 <script>

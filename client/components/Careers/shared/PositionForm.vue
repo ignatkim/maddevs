@@ -142,8 +142,7 @@
     <!-- this id should be unique, because it used for google analytics -->
     <ModalSuccess
       id="career-modal"
-      :visibled="isShowSuccessModal"
-      @close="isShowSuccessModal = false"
+      ref="successModal"
     />
   </div>
 </template>
@@ -162,7 +161,7 @@ import parseUserAgentForLeads from '@/helpers/parseUserAgentForLeads'
 import { getIPInfo } from '@/api/ipInfo'
 
 export default {
-  name: 'Careers',
+  name: 'PositionForm',
   components: {
     FormInput,
     UIRadioButtons,
@@ -214,8 +213,6 @@ export default {
       email: null,
       cvFile: null,
       linkedin: null,
-
-      isShowSuccessModal: false,
       form: '',
     }
   },
@@ -312,7 +309,7 @@ export default {
       if (this.$v.validationGroup.$invalid) return
       const applicantData = await this.buildApplicantData()
       this.sendVacancy(applicantData)
-      this.isShowSuccessModal = true
+      this.$refs.successModal.show()
       this.resetForm()
     },
   },

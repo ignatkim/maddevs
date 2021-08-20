@@ -223,6 +223,7 @@ export default {
     showModal() {
       if (!this.$refs?.modalContactMe?.show) return
       this.$refs.modalContactMe.show()
+      this.isActiveMobileMenu = false
     },
 
     onChangePage() {
@@ -231,7 +232,15 @@ export default {
     },
 
     setDefaultStateForHeader() {
-      const pagesWithTransparentHeaderArea = ['delivery-models', 'open-source', 'blog', 'careers___en', 'careers___ru']
+      const pagesWithTransparentHeaderArea = [
+        'delivery-models',
+        'open-source',
+        'blog',
+        'careers___en',
+        'careers___ru',
+        'uid___en',
+        'uid___ru',
+      ]
       const { name: routeName } = this.$nuxt.$route
       if (routeName) this.hasTransparentHeaderArea = routeName.includes('case-studies-') || pagesWithTransparentHeaderArea.includes(routeName)
     },

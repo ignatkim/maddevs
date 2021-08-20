@@ -1,10 +1,5 @@
 <template>
-  <div
-    :class="[
-      'text-slice__content',
-      `text-slice__content--${colorTheme}-theme`,
-    ]"
-  >
+  <div class="text-slice__content">
     <h2>{{ title }}</h2>
     <p>{{ text }}</p>
   </div>
@@ -35,20 +30,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .text-slice__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  &--white-theme {
-    color: $text-color--white;
-  }
-  &--black-theme {
-    color: $text-color--black-lighter;
-  }
-
   p {
     margin-top: 50px;
     @media screen and (max-width: 1024px) {

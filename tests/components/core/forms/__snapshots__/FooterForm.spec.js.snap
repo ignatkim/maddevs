@@ -14,7 +14,6 @@ exports[`FooterForm should render correctly 1`] = `
     />
      
     <modalsuccess-stub
-      displaytime="3000"
       id="footer-modal"
     />
   </section>

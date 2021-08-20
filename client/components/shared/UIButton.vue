@@ -1,8 +1,11 @@
 <template>
   <button
     v-WaveAnimation="!disabled"
-    :class="{ 'ui-button--disabled': disabled }"
     class="ui-button"
+    :class="{
+      'ui-button--disabled': disabled,
+      'ui-button--full-width': fullWidth,
+    }"
     @click="handleClick"
   >
     <span v-if="loading">Waiting...</span>
@@ -26,6 +29,11 @@ export default {
     },
 
     disabled: {
+      type: Boolean,
+      default: false,
+    },
+
+    fullWidth: {
       type: Boolean,
       default: false,
     },
@@ -62,6 +70,10 @@ export default {
       background-color: $button-active--red;
       border-color: $button-active-border--red;
     }
+  }
+
+  &--full-width {
+    width: 100%;
   }
 
   &--disabled {

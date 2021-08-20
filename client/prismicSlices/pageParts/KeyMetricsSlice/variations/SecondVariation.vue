@@ -76,7 +76,7 @@ export default {
   }
 
   &__title {
-    @include font('Inter', 42px, 700);
+    @include font('Poppins', 42px, 700);
     line-height: 46px;
     letter-spacing: -1.3px;
     margin-bottom: 28px;

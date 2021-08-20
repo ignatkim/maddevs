@@ -32,21 +32,8 @@
             "label": "Color theme",
             "placeholder": "",
             "options": [
-              "white",
-              "black"
-            ],
-            "default_value": "white"
-          },
-          "type": "Select"
-        },
-        "background": {
-          "config": {
-            "label": "Slice background",
-            "placeholder": "",
-            "options": [
               "black",
-              "white",
-              "grey"
+              "white"
             ],
             "default_value": "black"
           },
@@ -54,10 +41,10 @@
         },
         "maxWidth": {
           "config": {
-            "label": "Max width (px)",
-            "placeholder": ""
+            "label": "Max width (px,% or vw)",
+            "placeholder": "1028px"
           },
-          "type": "Number"
+          "type": "Text"
         }
       },
       "items": {}
@@ -81,25 +68,19 @@
             "label": "Color theme",
             "placeholder": "",
             "options": [
-              "white",
-              "black"
-            ],
-            "default_value": "white"
-          },
-          "type": "Select"
-        },
-        "background": {
-          "config": {
-            "label": "Slice background",
-            "placeholder": "",
-            "options": [
               "black",
-              "white",
-              "grey"
+              "white"
             ],
             "default_value": "black"
           },
           "type": "Select"
+        },
+        "maxWidth": {
+          "config": {
+            "label": "Max width (px,% or vw)",
+            "placeholder": "1028px"
+          },
+          "type": "Text"
         }
       },
       "items": {}
@@ -130,25 +111,19 @@
             "label": "Color theme",
             "placeholder": "",
             "options": [
-              "white",
-              "black"
-            ],
-            "default_value": "white"
-          },
-          "type": "Select"
-        },
-        "background": {
-          "config": {
-            "label": "Slice background",
-            "placeholder": "",
-            "options": [
               "black",
-              "white",
-              "grey"
+              "white"
             ],
             "default_value": "black"
           },
           "type": "Select"
+        },
+        "maxWidth": {
+          "config": {
+            "label": "Max width (px,% or vw)",
+            "placeholder": "1028px"
+          },
+          "type": "Text"
         }
       },
       "items": {}
@@ -195,25 +170,19 @@
             "label": "Color theme",
             "placeholder": "",
             "options": [
-              "white",
-              "black"
-            ],
-            "default_value": "white"
-          },
-          "type": "Select"
-        },
-        "background": {
-          "config": {
-            "label": "Slice background",
-            "placeholder": "",
-            "options": [
               "black",
-              "white",
-              "grey"
+              "white"
             ],
             "default_value": "black"
           },
           "type": "Select"
+        },
+        "maxWidth": {
+          "config": {
+            "label": "Max width (px,% or vw)",
+            "placeholder": "1028px"
+          },
+          "type": "Text"
         }
       },
       "items": {}
@@ -244,25 +213,19 @@
             "label": "Color theme",
             "placeholder": "",
             "options": [
-              "white",
-              "black"
-            ],
-            "default_value": "white"
-          },
-          "type": "Select"
-        },
-        "background": {
-          "config": {
-            "label": "Slice background",
-            "placeholder": "",
-            "options": [
               "black",
-              "white",
-              "grey"
+              "white"
             ],
             "default_value": "black"
           },
           "type": "Select"
+        },
+        "maxWidth": {
+          "config": {
+            "label": "Max width (px,% or vw)",
+            "placeholder": "1028px"
+          },
+          "type": "Text"
         }
       },
       "items": {
