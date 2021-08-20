@@ -10,11 +10,11 @@
       >
         <h2
           v-if="title"
-          v-html="title"
+          v-html="formatHtmlText(title)"
         />
         <p
           v-if="subtitle"
-          v-html="subtitle"
+          v-html="formatHtmlText(subtitle)"
         />
       </div>
       <div class="projects-grid-slice__content">
@@ -51,12 +51,16 @@
 
 <script>
 import UIArrowButton from '@/components/shared/UIArrowButton'
+import prismicSlicesMixin from '@/mixins/prismicSlicesMixin'
 
 export default {
   name: 'ProjectsGridSlice',
+
   components: {
     UIArrowButton,
   },
+
+  mixins: [prismicSlicesMixin],
 
   props: {
     slice: {
