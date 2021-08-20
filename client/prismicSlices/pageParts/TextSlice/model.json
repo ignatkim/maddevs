@@ -237,6 +237,128 @@
           "type": "Text"
         }
       }
+    },
+    {
+      "id": "titleH5",
+      "name": "Title H5",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TextSlice",
+      "primary": {
+        "title": {
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "colorTheme": {
+          "config": {
+            "label": "Color theme",
+            "placeholder": "",
+            "options": [
+              "white",
+              "black"
+            ],
+            "default_value": "white"
+          },
+          "type": "Select"
+        },
+        "maxWidth": {
+          "config": {
+            "label": "Max width (px,% or vw)",
+            "placeholder": "1028px"
+          },
+          "type": "Text"
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "titleH5Text",
+      "name": "Title H5 + Text",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TextSlice",
+      "primary": {
+        "title": {
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "text": {
+          "config": {
+            "label": "Text",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "colorTheme": {
+          "config": {
+            "label": "Color theme",
+            "placeholder": "",
+            "options": [
+              "white",
+              "black"
+            ],
+            "default_value": "white"
+          },
+          "type": "Select"
+        },
+        "maxWidth": {
+          "config": {
+            "label": "Max width (px,% or vw)",
+            "placeholder": "1028px"
+          },
+          "type": "Text"
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "redTextSimpleText",
+      "name": "Red Text + Simple Text",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TextSlice",
+      "primary": {
+        "title": {
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "text": {
+          "config": {
+            "label": "Text",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "colorTheme": {
+          "config": {
+            "label": "Color theme",
+            "placeholder": "",
+            "options": [
+              "white",
+              "black"
+            ],
+            "default_value": "white"
+          },
+          "type": "Select"
+        },
+        "maxWidth": {
+          "config": {
+            "label": "Max width (px,% or vw)",
+            "placeholder": "1028px"
+          },
+          "type": "Text"
+        }
+      },
+      "items": {}
     }
   ]
 }

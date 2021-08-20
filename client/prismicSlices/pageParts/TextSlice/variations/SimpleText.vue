@@ -26,8 +26,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/slices/text-slices/_mixins';
-
 .text-slice__content {
   text-align: center;
   &--large {

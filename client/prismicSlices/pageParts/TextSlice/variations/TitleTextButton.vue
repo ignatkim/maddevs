@@ -54,11 +54,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/slices/text-slices/_mixins';
-
 .text-slice__content {
-  @include text-slice-content;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   p {
     margin: 50px 0;
     @media screen and (max-width: 1024px) {
@@ -68,7 +69,6 @@ export default {
       margin: 20px 0;
     }
   }
-
   button {
     padding: 14px 24px;
     line-height: 20px;

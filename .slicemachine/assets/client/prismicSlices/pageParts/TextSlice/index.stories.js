@@ -94,9 +94,66 @@ export const _TitleTextList = () => ({
   },
   data() {
     return {
-      mock: {"variation":"titleTextList","name":"Title + Text + List","slice_type":"text_slice","items":[{"listItem":"morph extensible channels"},{"listItem":"exploit value-added schemas"},{"listItem":"streamline granular relationships"},{"listItem":"grow scalable solutions"}],"primary":{"title":"Software <br /> development","text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","maxWidth":"1028px"},"id":"_TitleTextList"}
+      mock: {"variation":"titleTextList","name":"Title + Text + List","slice_type":"text_slice","items":[{"listItem":"maximize world-class supply-chains"},{"listItem":"deploy interactive niches"},{"listItem":"target web-enabled initiatives"},{"listItem":"iterate open-source initiatives"},{"listItem":"transition front-end infomediaries"}],"primary":{"title":"Software <br /> development","text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","maxWidth":"1028px"},"id":"_TitleTextList"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
 })
 _TitleTextList.storyName = 'Title + Text + List'
+
+export const _TitleH5 = () => ({
+  components: {
+    MyComponent,
+    SliceZone
+  },
+  methods: {
+    resolve() {
+      return MyComponent
+    }
+  },
+  data() {
+    return {
+      mock: {"variation":"titleH5","name":"Title H5","slice_type":"text_slice","items":[],"primary":{"title":"We encourage the best practices in sustainability","colorTheme":"white","maxWidth":"grow viral synergies"},"id":"_TitleH5"}
+    }
+  },
+  template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
+})
+_TitleH5.storyName = 'Title H5'
+
+export const _TitleH5Text = () => ({
+  components: {
+    MyComponent,
+    SliceZone
+  },
+  methods: {
+    resolve() {
+      return MyComponent
+    }
+  },
+  data() {
+    return {
+      mock: {"variation":"titleH5Text","name":"Title H5 + Text","slice_type":"text_slice","items":[],"primary":{"title":"We encourage the best practices in sustainability","text":"Mad Devs takes full responsibility for the projects we have been involved in.  It includes not only the quality of a product but also the responsibility toward  the environment and people.  Therefore, the environmental and social sustainability compliances form  a crucial component of our business strategy. We are committed to comply with legal regulations and official requirements and encourage the best sustainability practices.  We understand sustainability as a path to continuous improvement  of our processes and services for the purposes of environmental protection,  the provision of occupational health, and meeting safety requirements. ","colorTheme":"white","maxWidth":"exploit cross-platform functionalities"},"id":"_TitleH5Text"}
+    }
+  },
+  template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
+})
+_TitleH5Text.storyName = 'Title H5 + Text'
+
+export const _RedTextSimpleText = () => ({
+  components: {
+    MyComponent,
+    SliceZone
+  },
+  methods: {
+    resolve() {
+      return MyComponent
+    }
+  },
+  data() {
+    return {
+      mock: {"variation":"redTextSimpleText","name":"Red Text + Simple Text","slice_type":"text_slice","items":[],"primary":{"title":"Our Primary Areas of Sustainable Enterprise","text":"We build our sustainability efforts around three primary areas: social, economic, and ecological sustainability.","colorTheme":"black","maxWidth":"incentivize robust convergence"},"id":"_RedTextSimpleText"}
+    }
+  },
+  template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
+})
+_RedTextSimpleText.storyName = 'Red Text + Simple Text'

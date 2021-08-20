@@ -57,16 +57,19 @@
     "slice_type": "text_slice",
     "items": [
       {
-        "listItem": "morph extensible channels"
+        "listItem": "maximize world-class supply-chains"
       },
       {
-        "listItem": "exploit value-added schemas"
+        "listItem": "deploy interactive niches"
       },
       {
-        "listItem": "streamline granular relationships"
+        "listItem": "target web-enabled initiatives"
       },
       {
-        "listItem": "grow scalable solutions"
+        "listItem": "iterate open-source initiatives"
+      },
+      {
+        "listItem": "transition front-end infomediaries"
       }
     ],
     "primary": {
@@ -74,6 +77,41 @@
       "text": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.",
       "colorTheme": "white",
       "maxWidth": "1028px"
+    }
+  },
+  {
+    "variation": "titleH5",
+    "name": "Title H5",
+    "slice_type": "text_slice",
+    "items": [],
+    "primary": {
+      "title": "We encourage the best practices in sustainability",
+      "colorTheme": "white",
+      "maxWidth": "grow viral synergies"
+    }
+  },
+  {
+    "variation": "titleH5Text",
+    "name": "Title H5 + Text",
+    "slice_type": "text_slice",
+    "items": [],
+    "primary": {
+      "title": "We encourage the best practices in sustainability",
+      "text": "Mad Devs takes full responsibility for the projects we have been involved in.  It includes not only the quality of a product but also the responsibility toward  the environment and people.  Therefore, the environmental and social sustainability compliances form  a crucial component of our business strategy. We are committed to comply with legal regulations and official requirements and encourage the best sustainability practices.  We understand sustainability as a path to continuous improvement  of our processes and services for the purposes of environmental protection,  the provision of occupational health, and meeting safety requirements. ",
+      "colorTheme": "white",
+      "maxWidth": "exploit cross-platform functionalities"
+    }
+  },
+  {
+    "variation": "redTextSimpleText",
+    "name": "Red Text + Simple Text",
+    "slice_type": "text_slice",
+    "items": [],
+    "primary": {
+      "title": "Our Primary Areas of Sustainable Enterprise",
+      "text": "We build our sustainability efforts around three primary areas: social, economic, and ecological sustainability.",
+      "colorTheme": "black",
+      "maxWidth": "incentivize robust convergence"
     }
   }
 ]
