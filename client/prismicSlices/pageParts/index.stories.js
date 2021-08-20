@@ -12,3 +12,12 @@ export const About = () => ({
 })
 
 About.storyName = 'About page'
+
+export const TeamPage = () => ({
+  components: {
+    SliceZone,
+  },
+  template: '<slice-zone type="custom_page" uid="team-page" />',
+})
+
+TeamPage.storyName = 'Team page'

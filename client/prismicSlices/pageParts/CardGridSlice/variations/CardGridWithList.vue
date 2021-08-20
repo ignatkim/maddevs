@@ -3,7 +3,10 @@
     class="card-grid-with-list-slice"
     :class="colorThemeClass"
   >
-    <div class="container">
+    <div
+      class="container"
+      data-aos="fade-up"
+    >
       <ul>
         <li
           v-for="(item, i) of items"
@@ -27,11 +30,21 @@
 
 <script>
 import prismicSlicesMixin from '@/mixins/prismicSlicesMixin'
+import animateOnScrollMixin from '@/mixins/animateOnScrollMixin'
 
 export default {
   name: 'CardGridWithListSlice',
 
-  mixins: [prismicSlicesMixin],
+  mixins: [
+    animateOnScrollMixin({
+      offset: 200,
+      delay: 50,
+      anchorPlacement: 'top-center',
+      duration: 1000,
+      once: true,
+    }),
+    prismicSlicesMixin,
+  ],
 
   props: {
     colorTheme: {
