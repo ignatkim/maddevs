@@ -13,12 +13,12 @@
       class="start-screen-slice__image"
     >
     <!-- sectionTextOpacity - value from changeOpacityOnScrollMixin mixin -->
-    <div
-      ref="sectionText"
-      class="container"
-      :style="{ opacity: sectionTextOpacity }"
-    >
-      <div class="start-screen-slice__content">
+    <div class="container">
+      <div
+        ref="sectionText"
+        :style="{ opacity: sectionTextOpacity }"
+        class="start-screen-slice__content"
+      >
         <h1
           class="start-screen-slice__title"
           v-html="title"

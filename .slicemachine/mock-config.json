@@ -33,20 +33,7 @@
     },
     "CustomerLogoSlice": {
       "default": {
-        "primary": {
-          "title": {
-            "content": "Our valued customers"
-          },
-          "description": {
-            "content": "Due to  our NDAs and confidentiality requirements, we cannot disclose details for all of our customers. These are a few of the companies we work with."
-          },
-          "buttonText": {
-            "content": "See the case studies"
-          },
-          "buttonLink": {
-            "content": "https://maddevs.io/case-studies/"
-          }
-        },
+        "primary": {},
         "items": {}
       }
     },
