@@ -28,6 +28,8 @@ exports[`Presentation component should render correctly 1`] = `
             style="position: relative; overflow: hidden;"
           >
             
+  
+  
           Download presentation
         
             <div
