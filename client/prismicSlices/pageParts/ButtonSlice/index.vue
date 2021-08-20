@@ -2,6 +2,9 @@
   <div
     class="button-slice"
     :class="colorThemeClass"
+    :style="{
+      backgroundColor: sliceBackground,
+    }"
   >
     <div
       :class="[
@@ -78,9 +81,10 @@ export default {
   },
 
   computed: {
-    colorThemeClass() {
-      if (this.slice?.primary?.colorTheme === 'white') return 'button-slice--white-theme'
-      return 'button-slice--black-theme'
+    sliceBackground() {
+      if (this.slice.primary.background === 'white') return '#fff'
+      if (this.slice.primary.background === 'grey') return '#f5f7f9'
+      return '#111213' // black
     },
   },
 }
@@ -89,12 +93,6 @@ export default {
 <style lang="scss" scoped>
 .button-slice {
   display: block;
-  &--black-theme {
-    background-color: $bgcolor--black;
-  }
-  &--white-theme {
-    background-color: $bgcolor--white-primary;
-  }
 
   &__content {
     &--align {

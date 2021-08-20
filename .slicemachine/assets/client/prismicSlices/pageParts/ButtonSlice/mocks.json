@@ -5,14 +5,14 @@
     "slice_type": "button_slice",
     "items": [],
     "primary": {
-      "fullWidth": false,
+      "fullWidth": true,
       "alignment": "left",
       "text": "Default red button",
       "link": {
         "link_type": "Web",
-        "url": "https://slicemachine.dev"
+        "url": "http://google.com"
       },
-      "colorTheme": "black"
+      "background": "black"
     }
   },
   {
@@ -21,15 +21,15 @@
     "slice_type": "button_slice",
     "items": [],
     "primary": {
-      "fullWidth": false,
-      "alignment": "left",
-      "color": "red",
+      "fullWidth": true,
+      "alignment": "right",
+      "color": "grey",
       "text": "Outlined button",
       "link": {
         "link_type": "Web",
-        "url": "http://twitter.com"
+        "url": "https://slicemachine.dev"
       },
-      "background": "black"
+      "background": "white"
     }
   },
   {
@@ -39,12 +39,12 @@
     "items": [],
     "primary": {
       "fullWidth": false,
-      "alignment": "left",
-      "color": "black",
+      "alignment": "right",
+      "color": "grey",
       "text": "Link button",
       "link": {
         "link_type": "Web",
-        "url": "http://twitter.com"
+        "url": "https://slicemachine.dev"
       },
       "background": "black"
     }
