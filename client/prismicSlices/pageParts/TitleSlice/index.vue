@@ -12,7 +12,7 @@
         v-bind="slice.primary"
       />
       <TitleH3
-        v-else-if="slice.variation === 'title-h3'"
+        v-else-if="slice.variation === 'titleH3'"
         v-bind="slice.primary"
       />
     </div>
