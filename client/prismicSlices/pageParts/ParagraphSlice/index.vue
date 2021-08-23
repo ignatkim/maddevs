@@ -9,9 +9,8 @@
     >
       <p
         :class="`paragraph-slice-text paragraph-slice-text--${slice.primary.size} paragraph-slice-text--${slice.primary.position}`"
-      >
-        {{ slice.primary.text }}
-      </p>
+        v-html="slice.primary.text"
+      />
     </div>
   </section>
 </template>

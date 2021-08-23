@@ -52,6 +52,17 @@
             "default_value": "black"
           },
           "type": "Select"
+        },
+        "gradientColor": {
+          "config": {
+            "label": "Gradient color",
+            "placeholder": "",
+            "options": [
+              "white",
+              "black"
+            ]
+          },
+          "type": "Select"
         }
       },
       "items": {}

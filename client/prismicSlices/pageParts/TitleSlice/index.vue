@@ -10,9 +10,8 @@
       <component
         :is="slice.primary.tag"
         :class="`title-slice-text title-slice-text--${slice.primary.size} title-slice-text--${slice.primary.position}`"
-      >
-        {{ slice.primary.title }}
-      </component>
+        v-html="slice.primary.title"
+      />
     </div>
   </section>
 </template>
