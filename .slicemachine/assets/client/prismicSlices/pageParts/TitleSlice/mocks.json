@@ -1,0 +1,20 @@
+[
+  {
+    "variation": "default-slice",
+    "name": "Default slice",
+    "slice_type": "title_slice",
+    "items": [],
+    "primary": {
+      "title": "generate scalable blockchains"
+    }
+  },
+  {
+    "variation": "titleH3",
+    "name": "Title-h3",
+    "slice_type": "title_slice",
+    "items": [],
+    "primary": {
+      "title": "grow sticky partnerships"
+    }
+  }
+]

@@ -18,8 +18,7 @@
             "options": [
               "white",
               "black"
-            ],
-            "default_value": "white"
+            ]
           },
           "type": "Select"
         }

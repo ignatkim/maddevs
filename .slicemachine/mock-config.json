@@ -338,6 +338,14 @@
         "primary": {},
         "items": {}
       }
+    },
+    "TitleSlice": {
+      "default-slice": {
+        "primary": {}
+      },
+      "titleH3": {
+        "primary": {}
+      }
     }
   }
 }

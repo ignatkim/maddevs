@@ -1,0 +1,42 @@
+{
+  "id": "title_slice",
+  "type": "SharedSlice",
+  "name": "TitleSlice",
+  "description": "TitleSlice",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TitleSlice",
+      "primary": {
+        "title": {
+          "config": {
+            "label": "Title H2",
+            "placeholder": ""
+          },
+          "type": "Text"
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "titleH3",
+      "name": "Title-h3",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TitleSlice",
+      "primary": {
+        "title": {
+          "config": {
+            "label": "Titile H3",
+            "placeholder": ""
+          },
+          "type": "Text"
+        }
+      },
+      "items": {}
+    }
+  ]
+}
