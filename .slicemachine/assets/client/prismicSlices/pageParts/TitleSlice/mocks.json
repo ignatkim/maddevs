@@ -1,0 +1,22 @@
+[
+  {
+    "variation": "default-slice",
+    "name": "Default slice",
+    "slice_type": "title_slice",
+    "items": [],
+    "primary": {
+      "title": "innovate sexy paradigms",
+      "colorTheme": "white"
+    }
+  },
+  {
+    "variation": "titleH3",
+    "name": "Title-h3",
+    "slice_type": "title_slice",
+    "items": [],
+    "primary": {
+      "title": "strategize plug-and-play bandwidth",
+      "colorTheme": "black"
+    }
+  }
+]

@@ -28,6 +28,16 @@
         v-bind="slice.primary"
         :list="slice.items"
       />
+      <TitleH5
+        v-else-if="slice.variation === 'titleH5'"
+        v-bind="slice.primary"
+        :list="slice.items"
+      />
+      <TitleH5Text
+        v-else-if="slice.variation === 'titleH5Text'"
+        v-bind="slice.primary"
+        :list="slice.items"
+      />
     </div>
   </section>
 </template>
@@ -38,6 +48,8 @@ import SimpleText from './variations/SimpleText'
 import TitleText from './variations/TitleText'
 import TitleTextButton from './variations/TitleTextButton'
 import TitleTextList from './variations/TitleTextList'
+import TitleH5 from './variations/TitleH5'
+import TitleH5Text from './variations/TitleH5Text'
 
 export default {
   name: 'TextSlice',
@@ -47,6 +59,8 @@ export default {
     TitleText,
     TitleTextButton,
     TitleTextList,
+    TitleH5,
+    TitleH5Text,
   },
 
   props: {

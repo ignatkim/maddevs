@@ -1,0 +1,22 @@
+[
+  {
+    "variation": "default-slice",
+    "name": "Default slice",
+    "slice_type": "paragraph_slice",
+    "items": [],
+    "primary": {
+      "text": "drive sexy vortals",
+      "colorTheme": "white"
+    }
+  },
+  {
+    "variation": "paragraphLg",
+    "name": "Paragraph LG",
+    "slice_type": "paragraph_slice",
+    "items": [],
+    "primary": {
+      "text": "strategize interactive systems",
+      "colorTheme": "black"
+    }
+  }
+]

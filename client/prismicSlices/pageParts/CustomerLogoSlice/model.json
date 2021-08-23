@@ -10,7 +10,19 @@
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
       "description": "Customer Logo Slice",
-      "primary": {},
+      "primary": {
+        "colorTheme": {
+          "config": {
+            "label": "Background",
+            "placeholder": "",
+            "options": [
+              "white",
+              "black"
+            ]
+          },
+          "type": "Select"
+        }
+      },
       "items": {
         "logo": {
           "type": "Image",
