@@ -22,5 +22,14 @@ export default {
     @include font('Inter', 80px, 800);
     line-height: 84px;
     color: inherit;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 60px;
+      line-height: 67px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 40px;
+    }
   }
 </style>
