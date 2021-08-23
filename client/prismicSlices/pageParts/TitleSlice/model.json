@@ -11,13 +11,6 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "TitleSlice",
       "primary": {
-        "title": {
-          "config": {
-            "label": "Title H2",
-            "placeholder": ""
-          },
-          "type": "Text"
-        },
         "colorTheme": {
           "config": {
             "label": "Theme color",
@@ -28,31 +21,57 @@
             ]
           },
           "type": "Select"
-        }
-      },
-      "items": {}
-    },
-    {
-      "id": "titleH3",
-      "name": "Title-h3",
-      "docURL": "...",
-      "version": "sktwi1xtmkfgx8626",
-      "description": "TitleSlice",
-      "primary": {
+        },
         "title": {
           "config": {
-            "label": "Titile H3",
+            "label": "Title",
             "placeholder": ""
           },
           "type": "Text"
         },
-        "colorTheme": {
+        "tag": {
           "config": {
-            "label": "Theme color",
+            "label": "Header tag",
             "placeholder": "",
             "options": [
-              "white",
-              "black"
+              "h1",
+              "h2",
+              "h3",
+              "h4",
+              "h5",
+              "h6"
+            ]
+          },
+          "type": "Select"
+        },
+        "maxWidth": {
+          "config": {
+            "label": "Max width",
+            "placeholder": "Example: 100px or 10% or 100vh"
+          },
+          "type": "Text"
+        },
+        "size": {
+          "config": {
+            "label": "Header size",
+            "placeholder": "",
+            "options": [
+              "sm",
+              "md",
+              "lg",
+              "xl"
+            ]
+          },
+          "type": "Select"
+        },
+        "position": {
+          "config": {
+            "label": "Title position",
+            "placeholder": "",
+            "options": [
+              "left",
+              "center",
+              "right"
             ]
           },
           "type": "Select"

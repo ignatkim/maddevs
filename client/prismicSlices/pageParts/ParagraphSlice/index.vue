@@ -7,28 +7,18 @@
       class="container"
       :style="{ maxWidth: slice.primary.maxWidth }"
     >
-      <ParagraphSM
-        v-if="slice.variation === 'default-slice'"
-        v-bind="slice.primary"
-      />
-      <ParagraphLG
-        v-else-if="slice.variation === 'paragraphLg'"
-        v-bind="slice.primary"
-      />
+      <p
+        :class="`paragraph-slice-text paragraph-slice-text--${slice.primary.size} paragraph-slice-text--${slice.primary.position}`"
+      >
+        {{ slice.primary.text }}
+      </p>
     </div>
   </section>
 </template>
 
 <script>
-import ParagraphSM from './variations/ParagraphSM'
-import ParagraphLG from './variations/ParagraphLG'
-
 export default {
   name: 'ParagraphSlice',
-  components: {
-    ParagraphSM,
-    ParagraphLG,
-  },
 
   props: {
     slice: {
@@ -51,13 +41,85 @@ export default {
 
 <style lang="scss" scoped>
   .paragraph-slice {
+    width: 100%;
+
     &--white-theme {
       background-color: $bgcolor--white-primary;
       color: $text-color--black-lighter;
     }
+
     &--black-theme {
       background-color: $bgcolor--black;
       color: $text-color--white;
+    }
+
+    &-text {
+      width: 100%;
+      display: block;
+      color: inherit;
+      letter-spacing: -1.3%;
+
+      &--left {
+        text-align: left;
+      }
+
+      &--center {
+        text-align: center;
+      }
+
+      &--right {
+        text-align: right;
+      }
+
+      &--sm {
+        @include font('Inter', 21px, 600);
+        line-height: 30px;
+      }
+
+      &--md {
+        @include font('Inter', 24px, 600);
+        line-height: 35px;
+
+        @media screen and (max-width: 375px) {
+          font-size: 21px;
+          line-height: 30px;
+        }
+      }
+
+      &--lg {
+        @include font('Inter', 32px, 600);
+        line-height: 44px;
+
+        @media screen and (max-width: 768px) {
+          font-size: 24px;
+          line-height: 35px;
+        }
+
+        @media screen and (max-width: 375px) {
+          font-size: 21px;
+          line-height: 30px;
+        }
+      }
+
+      &--xl {
+        @include font('Inter', 60px, 600);
+        line-height: 70px;
+
+        @media screen and (max-width: 1024px) {
+          font-size: 32px;
+          line-height: 44px;
+        }
+
+        @media screen and (max-width: 768px) {
+          font-size: 24px;
+          line-height: 35px;
+        }
+
+        @media screen and (max-width: 375px) {
+          font-size: 21px;
+          line-height: 30px;
+        }
+      }
     }
   }
 </style>

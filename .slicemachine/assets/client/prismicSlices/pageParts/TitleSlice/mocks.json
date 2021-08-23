@@ -5,18 +5,12 @@
     "slice_type": "title_slice",
     "items": [],
     "primary": {
-      "title": "innovate sexy paradigms",
-      "colorTheme": "white"
-    }
-  },
-  {
-    "variation": "titleH3",
-    "name": "Title-h3",
-    "slice_type": "title_slice",
-    "items": [],
-    "primary": {
-      "title": "strategize plug-and-play bandwidth",
-      "colorTheme": "black"
+      "colorTheme": "white",
+      "title": "integrate global partnerships",
+      "tag": "h3",
+      "maxWidth": "drive 24/7 supply-chains",
+      "size": "xl",
+      "position": "left"
     }
   }
 ]
