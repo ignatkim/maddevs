@@ -1,19 +1,19 @@
 {
-  "id": "title_slice",
+  "id": "paragraph_slice",
   "type": "SharedSlice",
-  "name": "TitleSlice",
-  "description": "TitleSlice",
+  "name": "ParagraphSlice",
+  "description": "ParagraphSlice",
   "variations": [
     {
       "id": "default-slice",
       "name": "Default slice",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "TitleSlice",
+      "description": "ParagraphSlice",
       "primary": {
-        "title": {
+        "text": {
           "config": {
-            "label": "Title H2",
+            "label": "Paragraph text",
             "placeholder": ""
           },
           "type": "Text"
@@ -33,15 +33,15 @@
       "items": {}
     },
     {
-      "id": "titleH3",
-      "name": "Title-h3",
+      "id": "paragraphLg",
+      "name": "Paragraph LG",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "TitleSlice",
+      "description": "ParagraphSlice",
       "primary": {
-        "title": {
+        "text": {
           "config": {
-            "label": "Titile H3",
+            "label": "Paragraph text",
             "placeholder": ""
           },
           "type": "Text"

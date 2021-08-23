@@ -246,20 +246,20 @@
     "SpacerSlice": {
       "default-slice": {
         "primary": {
-          "height": {
-            "content": "100px"
+          "size-sm": {
+            "content": "20px"
           },
-          "height-xl": {
-            "content": "50px"
-          },
-          "height-lg": {
-            "content": "40px"
-          },
-          "height-md": {
+          "size-md": {
             "content": "30px"
           },
-          "height-sm": {
-            "content": "20px"
+          "size-lg": {
+            "content": "40px"
+          },
+          "size-xl": {
+            "content": "50px"
+          },
+          "default-size": {
+            "content": "100px"
           }
         }
       }
@@ -344,6 +344,14 @@
         "primary": {}
       },
       "titleH3": {
+        "primary": {}
+      }
+    },
+    "ParagraphSlice": {
+      "default-slice": {
+        "primary": {}
+      },
+      "paragraphLg": {
         "primary": {}
       }
     }

@@ -1,8 +1,8 @@
-import MyComponent from '../../../../../../client/prismicSlices/pageParts/TitleSlice';
+import MyComponent from '../../../../../../client/prismicSlices/pageParts/ParagraphSlice';
 import SliceZone from 'vue-slicezone'
 
 export default {
-  title: 'client/prismicSlices/pageParts/TitleSlice'
+  title: 'client/prismicSlices/pageParts/ParagraphSlice'
 }
 
 
@@ -18,14 +18,14 @@ export const _DefaultSlice = () => ({
   },
   data() {
     return {
-      mock: {"variation":"default-slice","name":"Default slice","slice_type":"title_slice","items":[],"primary":{"title":"innovate sexy paradigms","colorTheme":"white"},"id":"_DefaultSlice"}
+      mock: {"variation":"default-slice","name":"Default slice","slice_type":"paragraph_slice","items":[],"primary":{"text":"drive sexy vortals","colorTheme":"white"},"id":"_DefaultSlice"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
 })
 _DefaultSlice.storyName = 'Default slice'
 
-export const _TitleH3 = () => ({
+export const _ParagraphLg = () => ({
   components: {
     MyComponent,
     SliceZone
@@ -37,9 +37,9 @@ export const _TitleH3 = () => ({
   },
   data() {
     return {
-      mock: {"variation":"titleH3","name":"Title-h3","slice_type":"title_slice","items":[],"primary":{"title":"strategize plug-and-play bandwidth","colorTheme":"black"},"id":"_TitleH3"}
+      mock: {"variation":"paragraphLg","name":"Paragraph LG","slice_type":"paragraph_slice","items":[],"primary":{"text":"strategize interactive systems","colorTheme":"black"},"id":"_ParagraphLg"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
 })
-_TitleH3.storyName = 'Title-h3'
+_ParagraphLg.storyName = 'Paragraph LG'

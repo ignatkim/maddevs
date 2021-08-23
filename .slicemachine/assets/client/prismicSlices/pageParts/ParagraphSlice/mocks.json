@@ -2,20 +2,20 @@
   {
     "variation": "default-slice",
     "name": "Default slice",
-    "slice_type": "title_slice",
+    "slice_type": "paragraph_slice",
     "items": [],
     "primary": {
-      "title": "innovate sexy paradigms",
+      "text": "drive sexy vortals",
       "colorTheme": "white"
     }
   },
   {
-    "variation": "titleH3",
-    "name": "Title-h3",
-    "slice_type": "title_slice",
+    "variation": "paragraphLg",
+    "name": "Paragraph LG",
+    "slice_type": "paragraph_slice",
     "items": [],
     "primary": {
-      "title": "strategize plug-and-play bandwidth",
+      "text": "strategize interactive systems",
       "colorTheme": "black"
     }
   }
