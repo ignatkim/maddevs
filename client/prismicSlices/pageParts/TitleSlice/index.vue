@@ -74,22 +74,50 @@ export default {
 
       &--sm {
         @include font('Inter', 33px, 700);
-        line-height: 43px
+        line-height: 43px;
       }
 
       &--md {
         @include font('Inter', 40px, 700);
-        line-height: 67px
+        line-height: 67px;
+
+        @media screen and (max-width: 375px) {
+          font-size: 33px;
+          line-height: 43px;
+        }
       }
 
       &--lg {
         @include font('Inter', 60px, 700);
-        line-height: 67px
+        line-height: 67px;
+
+        @media screen and (max-width: 768px) {
+          font-size: 40px;
+        }
+
+        @media screen and (max-width: 375px) {
+          font-size: 33px;
+          line-height: 43px;
+        }
       }
 
       &--xl {
         @include font('Inter', 80px, 700);
-        line-height: 84px
+        line-height: 84px;
+
+        @media screen and (max-width: 1024px) {
+          font-size: 60px;
+          line-height: 67px;
+        }
+
+        @media screen and (max-width: 768px) {
+          font-size: 40px;
+        }
+
+        @media screen and (max-width: 375px) {
+          font-size: 33px;
+          line-height: 43px;
+        }
       }
     }
   }

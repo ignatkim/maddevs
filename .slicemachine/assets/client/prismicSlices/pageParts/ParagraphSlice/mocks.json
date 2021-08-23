@@ -5,18 +5,11 @@
     "slice_type": "paragraph_slice",
     "items": [],
     "primary": {
-      "text": "drive sexy vortals",
-      "colorTheme": "white"
-    }
-  },
-  {
-    "variation": "paragraphLg",
-    "name": "Paragraph LG",
-    "slice_type": "paragraph_slice",
-    "items": [],
-    "primary": {
-      "text": "strategize interactive systems",
-      "colorTheme": "black"
+      "text": "strategize intuitive experiences",
+      "colorTheme": "black",
+      "maxWidth": "envisioneer magnetic models",
+      "size": "lg",
+      "position": "center"
     }
   }
 ]
