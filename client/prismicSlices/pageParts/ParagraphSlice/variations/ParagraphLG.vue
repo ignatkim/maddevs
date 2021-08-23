@@ -1,7 +1,8 @@
 <template>
-  <p class="paragraph-slice-lg">
-    {{ title }}
-  </p>
+  <p
+    class="paragraph-slice-lg"
+    v-html="title"
+  />
 </template>
 
 <script>
