@@ -69,8 +69,8 @@ export default {
     },
 
     sliceGradient() {
-      if (this.slice.primary.background === 'white') return 'linear-gradient(180deg, rgba(17, 18, 19, 0) 60%, #fff)'
-      if (this.slice.primary.background === 'grey') return 'linear-gradient(180deg, rgba(17, 18, 19, 0) 60%, #111213)'
+      if (this.slice.primary.gradientColor === 'white') return 'linear-gradient(180deg, rgba(17, 18, 19, 0) 60%, #fff)'
+      if (this.slice.primary.gradientColor === 'grey') return 'linear-gradient(180deg, rgba(17, 18, 19, 0) 60%, #111213)'
       return '#linear-gradient(180deg, rgba(17, 18, 19, 0) 60%, #111213)' // black
     },
   },

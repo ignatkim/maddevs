@@ -39,7 +39,7 @@
         "size": {
           "config": {
             "label": "Text size",
-            "placeholder": "sm, md, lg, xl",
+            "placeholder": "Select text size",
             "options": [
               "sm",
               "md",
