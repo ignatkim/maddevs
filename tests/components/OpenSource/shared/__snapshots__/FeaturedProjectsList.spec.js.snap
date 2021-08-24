@@ -65,9 +65,7 @@ exports[`FeaturedProjectsList component should render correctly 1`] = `
         class="ui-button"
         style="position: relative; overflow: hidden;"
       >
-        
-  
-  70+ Open source projects on GitHub
+        70+ Open source projects on GitHub
         <div
           class="wave"
         />
