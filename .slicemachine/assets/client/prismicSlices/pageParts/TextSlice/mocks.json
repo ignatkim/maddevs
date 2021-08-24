@@ -19,11 +19,11 @@
     "primary": {
       "colorTheme": "white",
       "title": "Featured projects",
-      "tag": "h6",
+      "tag": "h2",
       "maxWidth": "1028px",
-      "size": "md",
-      "position": "right",
-      "animation": "fade-up"
+      "size": "lg",
+      "position": "center",
+      "animation": "fade-up-left"
     }
   },
   {
@@ -61,16 +61,13 @@
     "slice_type": "text_slice",
     "items": [
       {
-        "listItem": "synergize dot-com systems"
+        "listItem": "transform cross-platform platforms"
       },
       {
-        "listItem": "reinvent ubiquitous interfaces"
+        "listItem": "aggregate back-end e-business"
       },
       {
-        "listItem": "seize magnetic schemas"
-      },
-      {
-        "listItem": "cultivate synergistic convergence"
+        "listItem": "grow turn-key deliverables"
       }
     ],
     "primary": {
@@ -88,7 +85,7 @@
     "primary": {
       "title": "We encourage the best practices in sustainability",
       "colorTheme": "white",
-      "maxWidth": "reinvent turn-key e-commerce"
+      "maxWidth": "deploy clicks-and-mortar architectures"
     }
   },
   {
@@ -100,7 +97,7 @@
       "title": "We encourage the best practices in sustainability",
       "text": "Mad Devs takes full responsibility for the projects we have been involved in. It includes not only the quality of a product but also the responsibility toward the environment and people.  Therefore, the environmental and social sustainability compliances form a crucial component of our business strategy. We are committed to comply with legal regulations and official requirements and encourage the best sustainability practices. We understand sustainability as a path to continuous improvement of our processes and services for the purposes of environmental protection, the provision of occupational health, and meeting safety requirements. ",
       "colorTheme": "white",
-      "maxWidth": "orchestrate magnetic architectures"
+      "maxWidth": "matrix rich e-services"
     }
   },
   {
@@ -109,10 +106,10 @@
     "slice_type": "text_slice",
     "items": [],
     "primary": {
-      "title": "whiteboard intuitive relationships",
-      "text": "synthesize clicks-and-mortar channels",
+      "title": "expedite scalable infrastructures",
+      "text": "facilitate e-business networks",
       "colorTheme": "white",
-      "maxWidth": "revolutionize turn-key relationships"
+      "maxWidth": "disintermediate strategic initiatives"
     }
   },
   {
@@ -123,7 +120,7 @@
     "primary": {
       "text": "We build our sustainability efforts around three primary areas: social, economic, and ecological sustainability.",
       "colorTheme": "black",
-      "maxWidth": "repurpose killer niches"
+      "maxWidth": "synergize enterprise eyeballs"
     }
   },
   {
@@ -133,11 +130,11 @@
     "items": [],
     "primary": {
       "colorTheme": "white",
-      "text": "incentivize efficient e-commerce",
-      "maxWidth": "deploy robust applications",
-      "size": "md",
-      "position": "center",
-      "animation": "fade-down-left"
+      "text": "engineer front-end e-markets",
+      "maxWidth": "strategize bricks-and-clicks ROI",
+      "size": "sm",
+      "position": "right",
+      "animation": "fade-right"
     }
   }
 ]
