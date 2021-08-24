@@ -2,6 +2,7 @@
 
 export { default as ButtonSlice } from './ButtonSlice'
 export { default as CardGridSlice } from './CardGridSlice'
+export { default as ContactsSlice } from './ContactsSlice'
 export { default as CreateProjectsSlice } from './CreateProjectsSlice'
 export { default as CtaBannerSlice } from './CtaBannerSlice'
 export { default as CustomerLogoSlice } from './CustomerLogoSlice'

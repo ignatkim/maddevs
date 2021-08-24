@@ -339,6 +339,12 @@
         "items": {}
       }
     },
+    "ContactsSlice": {
+      "default-slice": {
+        "primary": {},
+        "items": {}
+      }
+    },
     "TitleSlice": {
       "default-slice": {
         "primary": {}
