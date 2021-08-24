@@ -9,7 +9,8 @@
       "colorTheme": "white",
       "maxWidth": "morph strategic content",
       "size": "xl",
-      "position": "center"
+      "position": "center",
+      "animation": "fade-up"
     }
   }
 ]

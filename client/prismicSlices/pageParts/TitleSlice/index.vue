@@ -10,6 +10,7 @@
       <component
         :is="slice.primary.tag"
         :class="`title-slice-text title-slice-text--${slice.primary.size} title-slice-text--${slice.primary.position}`"
+        :data-aos="slice.primary.animation"
         v-html="slice.primary.title"
       />
     </div>

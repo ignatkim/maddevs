@@ -1,7 +1,7 @@
 <template>
   <CustomerTestimonials
     :title="slice.primary.title"
-    aos="fade-up"
+    data-aos="fade-up"
   />
 </template>
 

@@ -6,11 +6,12 @@
     "items": [],
     "primary": {
       "colorTheme": "white",
-      "title": "integrate global partnerships",
+      "title": "integrate virtual applications",
       "tag": "h3",
-      "maxWidth": "drive 24/7 supply-chains",
-      "size": "xl",
-      "position": "left"
+      "maxWidth": "incentivize seamless bandwidth",
+      "size": "md",
+      "position": "center",
+      "animation": "fade-up"
     }
   }
 ]
