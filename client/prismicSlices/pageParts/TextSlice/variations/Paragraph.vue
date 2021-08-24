@@ -1,15 +1,13 @@
 <template>
-  <section class="paragraph-slice">
-    <div
-      class="container"
-      :style="{ maxWidth }"
-    >
-      <p
-        :class="`paragraph-slice-text paragraph-slice-text--${size} paragraph-slice-text--${position}`"
-        :data-aos="animation"
-        v-html="text"
-      />
-    </div>
+  <section
+    class="paragraph-slice"
+    :style="{ maxWidth }"
+  >
+    <p
+      :class="`paragraph-slice-text paragraph-slice-text--${size} paragraph-slice-text--${position}`"
+      :data-aos="animation"
+      v-html="text"
+    />
   </section>
 </template>
 
