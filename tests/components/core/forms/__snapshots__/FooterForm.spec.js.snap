@@ -8,8 +8,13 @@ exports[`FooterForm should render correctly 1`] = `
       buttonclassname="ui-button--transparent-bgc ui-button_submit-button-footer"
       buttonlabel="Order a project now"
       classname="footer-form"
+      companyplaceholder="My Awesome Company, Inc."
+      descriptionplaceholder="Describe your project..."
+      emailplaceholder="your@mail.com"
       emailrequired="true"
+      fullnameplaceholder="John Smith"
       id="footer-form"
+      phoneplaceholder="Phone number"
       usedescription="true"
     />
      

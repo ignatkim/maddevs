@@ -1,0 +1,17 @@
+{
+  "id": "contacts_slice",
+  "type": "SharedSlice",
+  "name": "ContactsSlice",
+  "description": "ContactsSlice",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "ContactsSlice",
+      "primary": {},
+      "items": {}
+    }
+  ]
+}
