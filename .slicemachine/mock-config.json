@@ -294,6 +294,11 @@
         "primary": {},
         "items": {}
       }
+    },
+    "ContactsSlice": {
+      "default-slice": {
+        "primary": {}
+      }
     }
   }
 }
