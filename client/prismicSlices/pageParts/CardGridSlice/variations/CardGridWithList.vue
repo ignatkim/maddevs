@@ -5,7 +5,7 @@
   >
     <div
       class="container"
-      data-aos="fade-up"
+      :data-aos="animation"
     >
       <ul>
         <li
@@ -50,6 +50,11 @@ export default {
     colorTheme: {
       type: String,
       default: 'white',
+    },
+
+    animation: {
+      type: String,
+      default: 'none',
     },
 
     items: {

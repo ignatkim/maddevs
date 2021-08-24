@@ -2,7 +2,7 @@
   <section class="card-grid-main">
     <CardGrid
       v-if="slice.variation === 'default-slice'"
-      v-bind="slice.primary"
+      v-bind="slice"
     />
     <CardGridWithList
       v-else-if="slice.variation === 'cardGridWithList'"
