@@ -38,6 +38,10 @@
         v-bind="slice.primary"
         :list="slice.items"
       />
+      <Paragraph
+        v-else-if="slice.variation === 'paragraph'"
+        v-bind="slice.primary"
+      />
     </div>
   </section>
 </template>
@@ -50,6 +54,7 @@ import TitleTextButton from './variations/TitleTextButton'
 import TitleTextList from './variations/TitleTextList'
 import TitleH5 from './variations/TitleH5'
 import TitleH5Text from './variations/TitleH5Text'
+import Paragraph from './variations/Paragraph'
 
 export default {
   name: 'TextSlice',
@@ -61,6 +66,7 @@ export default {
     TitleTextList,
     TitleH5,
     TitleH5Text,
+    Paragraph,
   },
 
   props: {
@@ -85,6 +91,7 @@ export default {
 <style lang="scss" scoped>
 .text-slice {
   word-break: break-word;
+
   &--white-theme {
     background-color: $bgcolor--white-primary;
     color: $text-color--black-lighter;

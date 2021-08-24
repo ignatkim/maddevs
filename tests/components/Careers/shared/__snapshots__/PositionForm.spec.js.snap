@@ -221,8 +221,6 @@ exports[`PositionForm component should render correctly 1`] = `
         type="submit"
       >
         
-  
-  
       translated
     
         <div

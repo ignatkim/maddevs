@@ -6,7 +6,10 @@
     }"
   >
     <div class="container">
-      <div class="create-projects-slice__content">
+      <div
+        class="create-projects-slice__content"
+        :data-aos="slice.primary.animation"
+      >
         <h2 class="create-projects-slice__title">
           We create <br> IT projects for:
         </h2>
@@ -44,9 +47,19 @@
 
 <script>
 import { countries, industriesEntries } from '@/data/projectsFor'
+import animateOnScrollMixin from '@/mixins/animateOnScrollMixin'
 
 export default {
   name: 'CreateProjectsSlice',
+
+  mixins: [animateOnScrollMixin({
+    offset: 200,
+    delay: 50,
+    anchorPlacement: 'top-center',
+    duration: 1000,
+    once: true,
+  })],
+
   props: {
     slice: {
       type: Object,

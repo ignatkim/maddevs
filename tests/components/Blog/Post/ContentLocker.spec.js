@@ -4,9 +4,15 @@ import {
 } from '@testing-library/vue'
 import ContentLocker from '@/components/Blog/Post/ContentLocker'
 
+const directives = {
+  'lazy-load': () => {},
+}
+
 describe('ContentLocker component', () => {
   it('should correctly render', () => {
-    const { container } = render(ContentLocker)
+    const { container } = render(ContentLocker, {
+      directives,
+    })
 
     expect(container).toMatchSnapshot()
   })
@@ -23,9 +29,7 @@ describe('ContentLocker component', () => {
           },
         },
       },
-      directives: {
-        'lazy-load': () => {},
-      },
+      directives,
     })
 
     await fireEvent.scroll(document, { target: { scrollY: 100 } })
