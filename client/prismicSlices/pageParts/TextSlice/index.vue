@@ -3,10 +3,7 @@
     class="text-slice"
     :class="colorThemeClass"
   >
-    <div
-      class="container"
-      :style="{ maxWidth: slice.primary.maxWidth }"
-    >
+    <div class="container">
       <SimpleText
         v-if="slice.variation === 'default-slice'"
         v-bind="slice.primary"

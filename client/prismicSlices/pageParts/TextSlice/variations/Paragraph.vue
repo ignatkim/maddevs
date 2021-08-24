@@ -77,32 +77,55 @@ export default {
       }
 
       &--sm {
-        @include font('Inter', 21px, 600);
-        line-height: 30px;
+        @include font('Inter', 16px, 400);
+        line-height: 24px;
       }
 
       &--md {
-        @include font('Inter', 24px, 600);
-        line-height: 35px;
+        @include font('Inter', 21px, 600);
+        line-height: 30px;
 
         @media screen and (max-width: 375px) {
-          font-size: 21px;
-          line-height: 30px;
+          font-size: 16px;
+          line-height: 24px;
+          line-height: 400;
         }
       }
 
       &--lg {
+        @include font('Inter', 24px, 600);
+        line-height: 35px;
+
+        @media screen and (max-width: 768px) {
+          font-size: 21px;
+          line-height: 30px;
+        }
+
+        @media screen and (max-width: 375px) {
+          font-size: 16px;
+          line-height: 24px;
+          line-height: 400;
+        }
+      }
+
+      &--xs {
         @include font('Inter', 32px, 600);
         line-height: 44px;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1024px) {
           font-size: 24px;
           line-height: 35px;
         }
 
-        @media screen and (max-width: 375px) {
+        @media screen and (max-width: 768px) {
           font-size: 21px;
           line-height: 30px;
+        }
+
+        @media screen and (max-width: 375px) {
+          font-size: 16px;
+          line-height: 24px;
+          line-height: 400;
         }
       }
 
@@ -110,19 +133,25 @@ export default {
         @include font('Inter', 60px, 600);
         line-height: 70px;
 
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 1200px) {
           font-size: 32px;
           line-height: 44px;
         }
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1024px) {
           font-size: 24px;
           line-height: 35px;
         }
 
-        @media screen and (max-width: 375px) {
+        @media screen and (max-width: 768px) {
           font-size: 21px;
           line-height: 30px;
+        }
+
+        @media screen and (max-width: 375px) {
+          font-size: 16px;
+          line-height: 24px;
+          line-height: 400;
         }
       }
     }
