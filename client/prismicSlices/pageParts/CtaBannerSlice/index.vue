@@ -1,7 +1,10 @@
 <template>
   <section class="cta-banner-slice">
     <div class="container">
-      <div class="cta-banner-slice_content">
+      <div
+        class="cta-banner-slice_content"
+        :data-aos="slice.primary.animation"
+      >
         <div class="cta-banner-slice__info">
           <h2 class="cta-banner-slice_title">
             {{ slice.primary.title }}
@@ -44,12 +47,21 @@
 
 <script>
 import UIButton from '@/components/shared/UIButton'
+import animateOnScrollMixin from '@/mixins/animateOnScrollMixin'
 
 export default {
   name: 'CtaBannerSlice',
   components: {
     UIButton,
   },
+
+  mixins: [animateOnScrollMixin({
+    offset: 200,
+    delay: 50,
+    anchorPlacement: 'top-center',
+    duration: 1000,
+    once: true,
+  })],
 
   props: {
     slice: {

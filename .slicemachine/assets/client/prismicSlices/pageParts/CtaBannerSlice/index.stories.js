@@ -18,7 +18,7 @@ export const _Default = () => ({
   },
   data() {
     return {
-      mock: {"variation":"default","name":"Default Slice","slice_type":"cta_banner_slice","items":[],"primary":{"image":{"dimensions":{"width":null,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=null&h=500&fit=crop"},"btnLink":{"link_type":"Web","url":"https://slicemachine.dev"},"title":"matrix frictionless experiences","description":"benchmark innovative interfaces","btnText":"deliver transparent schemas","name":"f","position":"target 24/7 metrics"},"id":"_Default"}
+      mock: {"variation":"default","name":"Default Slice","slice_type":"cta_banner_slice","items":[],"primary":{"image":{"dimensions":{"width":null,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1587614295999-6c1c13675117?w=null&h=500&fit=crop"},"btnLink":{"link_type":"Web","url":"http://google.com"},"title":"embrace customized portals","description":"productize 24/365 schemas","btnText":"syndicate 24/365 solutions","name":"f","position":"aggregate transparent e-business","animation":"none"},"id":"_Default"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'

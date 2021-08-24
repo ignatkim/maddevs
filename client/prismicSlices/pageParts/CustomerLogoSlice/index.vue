@@ -5,7 +5,7 @@
   >
     <div class="container">
       <div
-        data-aos="fade-up"
+        :data-aos="slice.primary.animation"
         class="customer-logo-slice_list"
       >
         <div
