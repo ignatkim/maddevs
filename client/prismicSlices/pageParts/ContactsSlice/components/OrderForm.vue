@@ -31,7 +31,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .contacts-slice-form {
   background-color: $bgcolor--white-primary;
   padding: 44px 25px;
