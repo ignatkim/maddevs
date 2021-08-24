@@ -4,7 +4,8 @@
     class="container_regular m-48_top m-96_bottom media-m-16_top media-m-48_bottom"
   >
     <TextParagraph class="m-24_bottom media-m-12_bottom">
-      The Sir John Monash Centre (SJMC) tells its visitors the story about Australia's participation on the Western Front. The story is told in the words of those who served.
+      The Sir John Monash Centre (SJMC) tells its visitors the story about Australia's participation
+      on the Western Front. The story is told in the words of those who served.
     </TextParagraph>
     <TextParagraph class="m-24_bottom media-m-12_bottom">
       There is much to learn from the Great War, however, ordinary history books often only explain events on a
