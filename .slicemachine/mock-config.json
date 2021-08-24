@@ -19,7 +19,18 @@
             "content": false
           }
         },
-        "primary": {}
+        "primary": {
+          "animation": {
+            "content": "none"
+          }
+        }
+      },
+      "default-slice": {
+        "primary": {
+          "animation": {
+            "content": "none"
+          }
+        }
       }
     },
     "CtaBannerSlice": {
@@ -246,6 +257,9 @@
         "primary": {
           "background": {
             "content": "black"
+          },
+          "animation": {
+            "content": "none"
           }
         }
       }
@@ -311,6 +325,9 @@
         "primary": {
           "title": {
             "content": "Customer Testimonials"
+          },
+          "animation": {
+            "content": "none"
           }
         }
       }
@@ -354,30 +371,6 @@
       "default-slice": {
         "primary": {},
         "items": {}
-      }
-    },
-    "TitleSlice": {
-      "default-slice": {
-        "primary": {
-          "animation": {
-            "content": "none"
-          }
-        }
-      },
-      "titleH3": {
-        "primary": {}
-      }
-    },
-    "ParagraphSlice": {
-      "default-slice": {
-        "primary": {
-          "animation": {
-            "content": "none"
-          }
-        }
-      },
-      "paragraphLg": {
-        "primary": {}
       }
     }
   }

@@ -1,7 +1,6 @@
 <template>
   <div
     class="button-slice"
-    :class="colorThemeClass"
     :style="{
       backgroundColor: sliceBackground,
     }"

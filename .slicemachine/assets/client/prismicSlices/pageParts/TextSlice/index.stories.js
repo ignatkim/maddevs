@@ -37,7 +37,7 @@ export const _Title = () => ({
   },
   data() {
     return {
-      mock: {"variation":"title","name":"Title","slice_type":"text_slice","items":[],"primary":{"title":"Featured projects","colorTheme":"white","maxWidth":"1028px"},"id":"_Title"}
+      mock: {"variation":"title","name":"Title","slice_type":"text_slice","items":[],"primary":{"colorTheme":"white","title":"Featured projects","tag":"h6","maxWidth":"1028px","size":"md","position":"right","animation":"fade-up"},"id":"_Title"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -94,7 +94,7 @@ export const _TitleTextList = () => ({
   },
   data() {
     return {
-      mock: {"variation":"titleTextList","name":"Title + Text + List","slice_type":"text_slice","items":[{"listItem":"seize granular infrastructures"},{"listItem":"seize clicks-and-mortar synergies"}],"primary":{"title":"Software <br /> development","text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","maxWidth":"1028px"},"id":"_TitleTextList"}
+      mock: {"variation":"titleTextList","name":"Title + Text + List","slice_type":"text_slice","items":[{"listItem":"synergize dot-com systems"},{"listItem":"reinvent ubiquitous interfaces"},{"listItem":"seize magnetic schemas"},{"listItem":"cultivate synergistic convergence"}],"primary":{"title":"Software <br /> development","text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","maxWidth":"1028px"},"id":"_TitleTextList"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -113,7 +113,7 @@ export const _TitleH5 = () => ({
   },
   data() {
     return {
-      mock: {"variation":"titleH5","name":"Title H5","slice_type":"text_slice","items":[],"primary":{"title":"We encourage the best practices in sustainability","colorTheme":"black","maxWidth":"redefine proactive infomediaries"},"id":"_TitleH5"}
+      mock: {"variation":"titleH5","name":"Title H5","slice_type":"text_slice","items":[],"primary":{"title":"We encourage the best practices in sustainability","colorTheme":"white","maxWidth":"reinvent turn-key e-commerce"},"id":"_TitleH5"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -132,7 +132,7 @@ export const _TitleH5Text = () => ({
   },
   data() {
     return {
-      mock: {"variation":"titleH5Text","name":"Title H5 + Text","slice_type":"text_slice","items":[],"primary":{"title":"We encourage the best practices in sustainability","text":"Mad Devs takes full responsibility for the projects we have been involved in. It includes not only the quality of a product but also the responsibility toward the environment and people.  Therefore, the environmental and social sustainability compliances form a crucial component of our business strategy. We are committed to comply with legal regulations and official requirements and encourage the best sustainability practices. We understand sustainability as a path to continuous improvement of our processes and services for the purposes of environmental protection, the provision of occupational health, and meeting safety requirements. ","colorTheme":"black","maxWidth":"extend interactive supply-chains"},"id":"_TitleH5Text"}
+      mock: {"variation":"titleH5Text","name":"Title H5 + Text","slice_type":"text_slice","items":[],"primary":{"title":"We encourage the best practices in sustainability","text":"Mad Devs takes full responsibility for the projects we have been involved in. It includes not only the quality of a product but also the responsibility toward the environment and people.  Therefore, the environmental and social sustainability compliances form a crucial component of our business strategy. We are committed to comply with legal regulations and official requirements and encourage the best sustainability practices. We understand sustainability as a path to continuous improvement of our processes and services for the purposes of environmental protection, the provision of occupational health, and meeting safety requirements. ","colorTheme":"white","maxWidth":"orchestrate magnetic architectures"},"id":"_TitleH5Text"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -151,7 +151,7 @@ export const _RedTextSimpleTextMedium = () => ({
   },
   data() {
     return {
-      mock: {"variation":"redTextSimpleTextMedium","name":"Red Text + Simple Text Medium","slice_type":"text_slice","items":[],"primary":{"title":"enable out-of-the-box relationships","text":"harness 24/7 e-services","colorTheme":"white","maxWidth":"disintermediate interactive web-readiness"},"id":"_RedTextSimpleTextMedium"}
+      mock: {"variation":"redTextSimpleTextMedium","name":"Red Text + Simple Text Medium","slice_type":"text_slice","items":[],"primary":{"title":"whiteboard intuitive relationships","text":"synthesize clicks-and-mortar channels","colorTheme":"white","maxWidth":"revolutionize turn-key relationships"},"id":"_RedTextSimpleTextMedium"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -170,9 +170,28 @@ export const _SimpleTextMedium = () => ({
   },
   data() {
     return {
-      mock: {"variation":"simpleTextMedium","name":"Simple Text Medium","slice_type":"text_slice","items":[],"primary":{"text":"We build our sustainability efforts around three primary areas: social, economic, and ecological sustainability.","colorTheme":"black","maxWidth":"visualize value-added mindshare"},"id":"_SimpleTextMedium"}
+      mock: {"variation":"simpleTextMedium","name":"Simple Text Medium","slice_type":"text_slice","items":[],"primary":{"text":"We build our sustainability efforts around three primary areas: social, economic, and ecological sustainability.","colorTheme":"black","maxWidth":"repurpose killer niches"},"id":"_SimpleTextMedium"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
 })
 _SimpleTextMedium.storyName = 'Simple Text Medium'
+
+export const _Paragraph = () => ({
+  components: {
+    MyComponent,
+    SliceZone
+  },
+  methods: {
+    resolve() {
+      return MyComponent
+    }
+  },
+  data() {
+    return {
+      mock: {"variation":"paragraph","name":"Paragraph","slice_type":"text_slice","items":[],"primary":{"colorTheme":"white","text":"incentivize efficient e-commerce","maxWidth":"deploy robust applications","size":"md","position":"center","animation":"fade-down-left"},"id":"_Paragraph"}
+    }
+  },
+  template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
+})
+_Paragraph.storyName = 'Paragraph'

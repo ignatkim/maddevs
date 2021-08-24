@@ -3,7 +3,10 @@
     class="container"
     :class="colorThemeClass"
   >
-    <ul class="card-grid-slice">
+    <ul
+      class="card-grid-slice"
+      :data-aos="animation"
+    >
       <li
         v-for="(item, i) of items"
         :key="`card-grid-slice__item-${i}`"
@@ -43,6 +46,7 @@
 <script>
 import UIArrowButton from '@/components/shared/UIArrowButton'
 import prismicSlicesMixin from '@/mixins/prismicSlicesMixin'
+import animateOnScrollMixin from '@/mixins/animateOnScrollMixin'
 
 export default {
   name: 'CardGridSlice',
@@ -51,12 +55,24 @@ export default {
     UIArrowButton,
   },
 
-  mixins: [prismicSlicesMixin],
+  mixins: [animateOnScrollMixin({
+    offset: 200,
+    delay: 50,
+    anchorPlacement: 'top-center',
+    duration: 1000,
+    once: true,
+  }),
+  prismicSlicesMixin],
 
   props: {
     colorTheme: {
       type: String,
       default: 'white',
+    },
+
+    animation: {
+      type: String,
+      default: 'none',
     },
 
     items: {

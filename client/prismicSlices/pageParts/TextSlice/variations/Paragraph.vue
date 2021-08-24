@@ -1,16 +1,13 @@
 <template>
-  <section
-    class="paragraph-slice"
-    :class="colorThemeClass"
-  >
+  <section class="paragraph-slice">
     <div
       class="container"
-      :style="{ maxWidth: slice.primary.maxWidth }"
+      :style="{ maxWidth }"
     >
       <p
-        :class="`paragraph-slice-text paragraph-slice-text--${slice.primary.size} paragraph-slice-text--${slice.primary.position}`"
-        :data-aos="slice.primary.animation"
-        v-html="slice.primary.text"
+        :class="`paragraph-slice-text paragraph-slice-text--${size} paragraph-slice-text--${position}`"
+        :data-aos="animation"
+        v-html="text"
       />
     </div>
   </section>
@@ -31,19 +28,29 @@ export default {
   })],
 
   props: {
-    slice: {
-      type: Object,
-      required: true,
-      default() {
-        return {}
-      },
+    text: {
+      type: String,
+      default: '',
     },
-  },
 
-  computed: {
-    colorThemeClass() {
-      if (this.slice?.primary?.colorTheme === 'white') return 'paragraph-slice--white-theme'
-      return 'paragraph-slice--black-theme'
+    animation: {
+      type: String,
+      default: 'none',
+    },
+
+    maxWidth: {
+      type: String,
+      default: '100%',
+    },
+
+    position: {
+      type: String,
+      default: 'left',
+    },
+
+    size: {
+      type: String,
+      default: 'sm',
     },
   },
 }
@@ -52,16 +59,6 @@ export default {
 <style lang="scss" scoped>
   .paragraph-slice {
     width: 100%;
-
-    &--white-theme {
-      background-color: $bgcolor--white-primary;
-      color: $text-color--black-lighter;
-    }
-
-    &--black-theme {
-      background-color: $bgcolor--black;
-      color: $text-color--white;
-    }
 
     &-text {
       width: 100%;
