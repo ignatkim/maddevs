@@ -27,7 +27,7 @@
 
 <script>
 export default {
-  name: 'WithTopTitle',
+  name: 'SecondVariation',
   props: {
     colorTheme: {
       type: String,

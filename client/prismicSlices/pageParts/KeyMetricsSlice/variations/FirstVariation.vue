@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  name: 'WithTopTitle',
+  name: 'FirstVariation',
   props: {
     metrics: {
       type: Array,
