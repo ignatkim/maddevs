@@ -4,7 +4,10 @@
     class="meet-our-experts"
   >
     <div class="container">
-      <div class="meet-our-experts__experts-list">
+      <div
+        class="meet-our-experts__experts-list"
+        :data-aos="slice.primary.animation"
+      >
         <div
           v-for="expert in slice.items"
           :key="expert.name"
@@ -47,9 +50,18 @@
 
 <script>
 import { experts } from '@/data/ourExperts'
+import animateOnScrollMixin from '@/mixins/animateOnScrollMixin'
 
 export default {
   name: 'MeetOurExperts',
+
+  mixins: [animateOnScrollMixin({
+    offset: 200,
+    delay: 50,
+    anchorPlacement: 'top-center',
+    duration: 1000,
+    once: true,
+  })],
 
   props: {
     slice: {

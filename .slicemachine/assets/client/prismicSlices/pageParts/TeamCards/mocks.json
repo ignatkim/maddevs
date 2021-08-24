@@ -5,42 +5,8 @@
     "slice_type": "team_cards",
     "items": [
       {
-        "name": "exploit global architectures",
-        "position": "evolve compelling e-services",
-        "linkedin": {
-          "link_type": "Web",
-          "url": "http://google.com"
-        },
-        "image": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=900&h=500&fit=crop"
-        }
-      },
-      {
-        "name": "transition proactive models",
-        "position": "e-enable real-time infomediaries",
-        "linkedin": {
-          "link_type": "Web",
-          "url": "http://google.com"
-        },
-        "image": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=900&h=500&fit=crop"
-        }
-      },
-      {
-        "name": "disintermediate bricks-and-clicks niches",
-        "position": "leverage plug-and-play action-items",
+        "name": "enhance plug-and-play markets",
+        "position": "embrace viral e-commerce",
         "linkedin": {
           "link_type": "Web",
           "url": "http://twitter.com"
@@ -52,10 +18,63 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=900&h=500&fit=crop"
+        }
+      },
+      {
+        "name": "visualize global methodologies",
+        "position": "syndicate out-of-the-box platforms",
+        "linkedin": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1547082299-de196ea013d6?w=900&h=500&fit=crop"
+        }
+      },
+      {
+        "name": "target strategic interfaces",
+        "position": "evolve one-to-one action-items",
+        "linkedin": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        },
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1494173853739-c21f58b16055?w=900&h=500&fit=crop"
+        }
+      },
+      {
+        "name": "mesh sticky e-services",
+        "position": "deploy innovative infomediaries",
+        "linkedin": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        },
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869?w=900&h=500&fit=crop"
         }
       }
     ],
-    "primary": {}
+    "primary": {
+      "animation": "fade-down"
+    }
   }
 ]

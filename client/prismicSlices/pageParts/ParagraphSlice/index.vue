@@ -9,6 +9,7 @@
     >
       <p
         :class="`paragraph-slice-text paragraph-slice-text--${slice.primary.size} paragraph-slice-text--${slice.primary.position}`"
+        :data-aos="slice.primary.animation"
         v-html="slice.primary.text"
       />
     </div>
@@ -16,8 +17,18 @@
 </template>
 
 <script>
+import animateOnScrollMixin from '@/mixins/animateOnScrollMixin'
+
 export default {
   name: 'ParagraphSlice',
+
+  mixins: [animateOnScrollMixin({
+    offset: 200,
+    delay: 50,
+    anchorPlacement: 'top-center',
+    duration: 1000,
+    once: true,
+  })],
 
   props: {
     slice: {
