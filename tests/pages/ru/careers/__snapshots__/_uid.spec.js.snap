@@ -51,8 +51,6 @@ exports[`Careers _uid component should render correctly 1`] = `
             type="button"
           >
             
-  
-  
         translated
       
             <div
@@ -352,8 +350,6 @@ exports[`Careers _uid component should render correctly 1`] = `
                   type="submit"
                 >
                   
-  
-  
       translated
     
                   <div

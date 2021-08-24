@@ -346,8 +346,6 @@ exports[`InfrastructureAuditForm component should render correctly 1`] = `
       class="ui-button ui-button--disabled ui-button--transparent-bgc ui-button_submit-button-footer"
     >
       
-  
-  
     Get an infrastructure audit
   
     </button>
