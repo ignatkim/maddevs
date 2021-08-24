@@ -27,13 +27,20 @@
         "primary": {
           "name": {
             "content": "f"
+          },
+          "animation": {
+            "content": "none"
           }
         }
       }
     },
     "CustomerLogoSlice": {
       "default": {
-        "primary": {},
+        "primary": {
+          "animation": {
+            "content": "none"
+          }
+        },
         "items": {}
       }
     },
@@ -335,7 +342,11 @@
     },
     "TeamCards": {
       "default-slice": {
-        "primary": {},
+        "primary": {
+          "animation": {
+            "content": "none"
+          }
+        },
         "items": {}
       }
     },
@@ -347,7 +358,11 @@
     },
     "TitleSlice": {
       "default-slice": {
-        "primary": {}
+        "primary": {
+          "animation": {
+            "content": "none"
+          }
+        }
       },
       "titleH3": {
         "primary": {}
@@ -355,7 +370,11 @@
     },
     "ParagraphSlice": {
       "default-slice": {
-        "primary": {}
+        "primary": {
+          "animation": {
+            "content": "none"
+          }
+        }
       },
       "paragraphLg": {
         "primary": {}

@@ -92,7 +92,8 @@
               "zoom-in",
               "zoom-in-up",
               "zoom-in-left",
-              "zoom-in-right"
+              "zoom-in-right",
+              "none"
             ]
           },
           "type": "Select"
