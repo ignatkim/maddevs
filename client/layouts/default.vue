@@ -5,7 +5,7 @@
     <ClientOnly>
       <CookieNotice />
     </ClientOnly>
-    <Footer />
+    <Footer v-if="displayFooter" />
   </div>
 </template>
 
@@ -37,9 +37,16 @@ export default {
     }
   },
 
+  data() {
+    return {
+      displayFooter: true,
+    }
+  },
+
   mounted() {
     this.initHashLinks()
     this.loadIntercomScript()
+    if (document.getElementById('contacts-slice')) this.displayFooter = false
   },
 
   methods: {

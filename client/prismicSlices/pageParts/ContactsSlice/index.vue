@@ -1,5 +1,8 @@
 <template>
-  <section class="contacts-slice">
+  <section
+    id="contacts-slice"
+    class="contacts-slice"
+  >
     <FirstVariation v-if="slice.variation === 'default-slice'" />
   </section>
 </template>
