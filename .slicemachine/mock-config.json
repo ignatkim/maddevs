@@ -366,30 +366,6 @@
         },
         "items": {}
       }
-    },
-    "TitleSlice": {
-      "default-slice": {
-        "primary": {
-          "animation": {
-            "content": "none"
-          }
-        }
-      },
-      "titleH3": {
-        "primary": {}
-      }
-    },
-    "ParagraphSlice": {
-      "default-slice": {
-        "primary": {
-          "animation": {
-            "content": "none"
-          }
-        }
-      },
-      "paragraphLg": {
-        "primary": {}
-      }
     }
   }
 }

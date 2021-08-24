@@ -10,7 +10,6 @@
     }"
     @click="handleClick"
   >
-    {{ attrs }}
     <span v-if="loading">Waiting...</span>
     <slot v-else />
   </component>
