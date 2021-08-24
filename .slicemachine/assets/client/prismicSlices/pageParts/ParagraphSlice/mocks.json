@@ -1,0 +1,15 @@
+[
+  {
+    "variation": "default-slice",
+    "name": "Default slice",
+    "slice_type": "paragraph_slice",
+    "items": [],
+    "primary": {
+      "text": "optimize enterprise applications",
+      "colorTheme": "white",
+      "maxWidth": "morph strategic content",
+      "size": "xl",
+      "position": "center"
+    }
+  }
+]

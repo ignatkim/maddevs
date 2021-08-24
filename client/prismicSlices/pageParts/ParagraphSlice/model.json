@@ -1,0 +1,68 @@
+{
+  "id": "paragraph_slice",
+  "type": "SharedSlice",
+  "name": "ParagraphSlice",
+  "description": "ParagraphSlice",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "ParagraphSlice",
+      "primary": {
+        "text": {
+          "config": {
+            "label": "Paragraph text",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "colorTheme": {
+          "config": {
+            "label": "Theme color",
+            "placeholder": "",
+            "options": [
+              "white",
+              "black"
+            ]
+          },
+          "type": "Select"
+        },
+        "maxWidth": {
+          "config": {
+            "label": "Max width",
+            "placeholder": "Example: 100px or 10% or 100vh"
+          },
+          "type": "Text"
+        },
+        "size": {
+          "config": {
+            "label": "Text size",
+            "placeholder": "Select text size",
+            "options": [
+              "sm",
+              "md",
+              "lg",
+              "xl"
+            ]
+          },
+          "type": "Select"
+        },
+        "position": {
+          "config": {
+            "label": "Text position",
+            "placeholder": "left, center, right",
+            "options": [
+              "left",
+              "center",
+              "right"
+            ]
+          },
+          "type": "Select"
+        }
+      },
+      "items": {}
+    }
+  ]
+}

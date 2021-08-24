@@ -69,7 +69,6 @@ export default {
       margin: 20px 0;
     }
   }
-
   button {
     padding: 14px 24px;
     line-height: 20px;

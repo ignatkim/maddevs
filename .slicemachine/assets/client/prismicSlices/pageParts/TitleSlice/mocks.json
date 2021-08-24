@@ -1,0 +1,16 @@
+[
+  {
+    "variation": "default-slice",
+    "name": "Default slice",
+    "slice_type": "title_slice",
+    "items": [],
+    "primary": {
+      "colorTheme": "white",
+      "title": "integrate global partnerships",
+      "tag": "h3",
+      "maxWidth": "drive 24/7 supply-chains",
+      "size": "xl",
+      "position": "left"
+    }
+  }
+]

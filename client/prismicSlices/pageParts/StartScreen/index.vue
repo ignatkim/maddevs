@@ -2,6 +2,9 @@
   <section
     id="transparent-header-area"
     class="start-screen-slice"
+    :style="{
+      background: sliceGradient,
+    }"
   >
     <img
       :src="image.url"
@@ -64,6 +67,12 @@ export default {
       if (this.slice.primary.background === 'grey') return '#f5f7f9'
       return '#111213' // black
     },
+
+    sliceGradient() {
+      if (this.slice.primary.gradientColor === 'white') return 'linear-gradient(180deg, rgba(17, 18, 19, 0) 60%, #fff)'
+      if (this.slice.primary.gradientColor === 'grey') return 'linear-gradient(180deg, rgba(17, 18, 19, 0) 60%, #111213)'
+      return '#linear-gradient(180deg, rgba(17, 18, 19, 0) 60%, #111213)' // black
+    },
   },
 }
 </script>
@@ -99,7 +108,7 @@ export default {
     max-width: 1113px;
   }
   &__title {
-    @include font('Inter', 100px, 700);
+    @include font('Inter', 100px, 800);
     line-height: 105px;
     letter-spacing: -2px;
     color: $text-color--white-primary;
