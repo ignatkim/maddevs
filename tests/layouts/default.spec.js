@@ -11,6 +11,9 @@ const mocks = {
       callback()
     }
   }),
+  $nuxt: {
+    $on: jest.fn(),
+  },
 }
 const SCROLL_FN = jest.fn()
 
