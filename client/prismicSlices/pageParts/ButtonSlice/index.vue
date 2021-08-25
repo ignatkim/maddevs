@@ -11,36 +11,44 @@
         `button-slice__content--align-${alignment}`,
       ]"
     >
-      <a
-        :to="link.url"
+      <UIButton
+        v-if="variation === 'default-slice'"
+        link
+        :full-width="fullWidth"
         target="_blank"
-        class="button-slice__link"
-        :class="{ 'button-slice__link--full-width': fullWidth }"
+        :class="[
+          'button-slice__button',
+          'button-slice__button--normal',
+        ]"
       >
-        <UIButton
-          v-if="variation === 'default-slice'"
-          full-width
-          class="button-slice__button button-slice__button--normal"
-        >
-          {{ text }}
-        </UIButton>
-        <UIOutlinedButton
-          v-else-if="variation === 'outlinedButton'"
-          full-width
-          :color="color"
-          class="button-slice__button button-slice__button--outlined"
-        >
-          {{ text }}
-        </UIOutlinedButton>
-        <UILinkButton
-          v-else-if="variation === 'linkButton'"
-          full-width
-          :color="color"
-          class="button-slice__button button-slice__button--link"
-        >
-          {{ text }}
-        </UILinkButton>
-      </a>
+        {{ text }}
+      </UIButton>
+      <UIOutlinedButton
+        v-else-if="variation === 'outlinedButton'"
+        link
+        :full-width="fullWidth"
+        :color="color"
+        target="_blank"
+        :class="[
+          'button-slice__button',
+          'button-slice__button--outlined',
+        ]"
+      >
+        {{ text }}
+      </UIOutlinedButton>
+      <UILinkButton
+        v-else-if="variation === 'linkButton'"
+        link
+        :full-width="fullWidth"
+        :color="color"
+        target="_blank"
+        :class="[
+          'button-slice__button',
+          'button-slice__button--link',
+        ]"
+      >
+        {{ text }}
+      </UILinkButton>
     </div>
   </div>
 </template>
@@ -101,13 +109,6 @@ export default {
       &-right {
         text-align: right;
       }
-    }
-  }
-
-  &__link {
-    display: inline-block;
-    &--full-width {
-      display: block;
     }
   }
 

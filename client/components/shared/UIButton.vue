@@ -1,5 +1,5 @@
 <template>
-  <component
+  <Component
     :is="isTag"
     v-WaveAnimation="!disabled"
     :href="linkTo"
@@ -13,7 +13,7 @@
   >
     <span v-if="loading">Waiting...</span>
     <slot v-else />
-  </component>
+  </Component>
 </template>
 
 <script>
@@ -54,16 +54,12 @@ export default {
 
   computed: {
     isTag() {
-      if (this.link) {
-        return 'a'
-      }
+      if (this.link) return 'a'
       return 'button'
     },
 
     linkTo() {
-      if (this.link) {
-        return this.to
-      }
+      if (this.link) return this.to
       return null
     },
   },
@@ -79,6 +75,10 @@ export default {
 <style lang="scss" scoped>
 .ui-button {
   @include font('Inter', 16px, 600);
+  width: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid $border-color--red-opacity;
   background-color: $bgcolor--red;
   border-radius: 4px;
@@ -102,6 +102,7 @@ export default {
   }
 
   &--full-width {
+    display: flex;
     width: 100%;
   }
 
