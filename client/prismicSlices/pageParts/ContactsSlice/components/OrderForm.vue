@@ -4,6 +4,8 @@
       Tell Us About <br> Your Project
     </h3>
     <BaseForm
+      id="contacts-slice-form"
+      ref="baseForm"
       :use-company="true"
       :use-description="true"
       :use-labels="false"
@@ -15,17 +17,40 @@
       description-placeholder="How we can help you?"
       button-class-name="contacts-slice-form__button"
       button-label="Order a project now"
+      @submit="handleSubmit"
     />
   </div>
 </template>
 
 <script>
 import BaseForm from '@/components/core/forms/BaseForm'
+import createLeadMixin from '@/mixins/createLeadMixin'
+
+import exceptKeys from '@/helpers/exceptKeys'
 
 export default {
   name: 'OrderForm',
   components: {
     BaseForm,
+  },
+
+  mixins: [createLeadMixin(304632, 'Tell Us About Your Project')],
+
+  methods: {
+    handleSubmit(formData) {
+      const variables = {
+        ...exceptKeys(formData, 'description'),
+        projectDescription: formData.description,
+        formLocation: '\'Order a project now\' button, prismic ContactsSlice component',
+      }
+
+      // from mixin
+      this.submitLead(variables)
+    },
+
+    reset() {
+      this.$refs.baseForm.reset()
+    },
   },
 }
 </script>
