@@ -8,6 +8,7 @@
       'ui-button--disabled': disabled,
       'ui-button--full-width': fullWidth,
     }"
+    :disabled="disabled"
     @click="handleClick"
   >
     <span v-if="loading">Waiting...</span>
