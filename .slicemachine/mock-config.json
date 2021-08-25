@@ -79,6 +79,9 @@
           },
           "maxWidth": {
             "content": "1028px"
+          },
+          "size": {
+            "content": "lg"
           }
         }
       },
@@ -180,6 +183,9 @@
             "content": "We build our sustainability efforts around three primary areas: social, economic, and ecological sustainability."
           }
         }
+      },
+      "paragraph": {
+        "primary": {}
       }
     },
     "StartScreen": {
