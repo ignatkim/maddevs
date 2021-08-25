@@ -5,7 +5,6 @@
     "slice_type": "text_slice",
     "items": [],
     "primary": {
-      "large": true,
       "text": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.",
       "colorTheme": "white",
       "maxWidth": "1028px"
@@ -19,11 +18,15 @@
     "primary": {
       "colorTheme": "white",
       "title": "Featured projects",
-      "tag": "h2",
+      "tag": "h5",
       "maxWidth": "1028px",
-      "size": "lg",
-      "position": "center",
-      "animation": "fade-up-left"
+      "position": "left",
+      "animation": "fade-right",
+      "size-xl": "xl",
+      "size-xs": "xs",
+      "size-lg": "lg",
+      "size-md": "md",
+      "size-sm": "sm"
     }
   },
   {
@@ -61,13 +64,10 @@
     "slice_type": "text_slice",
     "items": [
       {
-        "listItem": "transform cross-platform platforms"
+        "listItem": "leverage one-to-one schemas"
       },
       {
-        "listItem": "aggregate back-end e-business"
-      },
-      {
-        "listItem": "grow turn-key deliverables"
+        "listItem": "revolutionize intuitive partnerships"
       }
     ],
     "primary": {
@@ -84,8 +84,8 @@
     "items": [],
     "primary": {
       "title": "We encourage the best practices in sustainability",
-      "colorTheme": "white",
-      "maxWidth": "deploy clicks-and-mortar architectures"
+      "colorTheme": "black",
+      "maxWidth": "brand 24/365 interfaces"
     }
   },
   {
@@ -97,7 +97,7 @@
       "title": "We encourage the best practices in sustainability",
       "text": "Mad Devs takes full responsibility for the projects we have been involved in. It includes not only the quality of a product but also the responsibility toward the environment and people.  Therefore, the environmental and social sustainability compliances form a crucial component of our business strategy. We are committed to comply with legal regulations and official requirements and encourage the best sustainability practices. We understand sustainability as a path to continuous improvement of our processes and services for the purposes of environmental protection, the provision of occupational health, and meeting safety requirements. ",
       "colorTheme": "white",
-      "maxWidth": "matrix rich e-services"
+      "maxWidth": "enhance dot-com technologies"
     }
   },
   {
@@ -106,10 +106,10 @@
     "slice_type": "text_slice",
     "items": [],
     "primary": {
-      "title": "expedite scalable infrastructures",
-      "text": "facilitate e-business networks",
+      "title": "transform sexy vortals",
+      "text": "cultivate global portals",
       "colorTheme": "white",
-      "maxWidth": "disintermediate strategic initiatives"
+      "maxWidth": "incentivize world-class blockchains"
     }
   },
   {
@@ -120,7 +120,7 @@
     "primary": {
       "text": "We build our sustainability efforts around three primary areas: social, economic, and ecological sustainability.",
       "colorTheme": "black",
-      "maxWidth": "synergize enterprise eyeballs"
+      "maxWidth": "reinvent 24/7 metrics"
     }
   },
   {
@@ -129,12 +129,17 @@
     "slice_type": "text_slice",
     "items": [],
     "primary": {
-      "colorTheme": "white",
-      "text": "engineer front-end e-markets",
-      "maxWidth": "strategize bricks-and-clicks ROI",
-      "size": "sm",
-      "position": "right",
-      "animation": "fade-right"
+      "colorTheme": "black",
+      "text": "expedite best-of-breed e-commerce",
+      "maxWidth": "matrix back-end vortals",
+      "position": "left",
+      "type": "default",
+      "animation": "fade-down-righ",
+      "size-xl": "xl",
+      "size-xs": "xs",
+      "size-lg": "lg",
+      "size-md": "sm",
+      "size-sm": "lg"
     }
   }
 ]
