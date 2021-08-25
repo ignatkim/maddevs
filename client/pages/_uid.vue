@@ -13,6 +13,11 @@ export default {
     SliceZone,
   },
 
+  beforeRouteLeave(to, from, next) {
+    this.$nuxt.$emit('showFooter', true)
+    next()
+  },
+
   async asyncData({ error, params, $prismic }) {
     const response = await $prismic.api.getByUID('custom_page', params.uid)
     if (!response?.data?.body) return error({ statusCode: 404, message: 'Page not found' })
@@ -21,7 +26,12 @@ export default {
     }
     return {
       slices: response.data.body,
+      showFooter: response.data.show_footer,
     }
+  },
+
+  created() {
+    this.$nuxt.$emit('showFooter', this.showFooter)
   },
 }
 </script>

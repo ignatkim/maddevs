@@ -5,7 +5,7 @@
     <ClientOnly>
       <CookieNotice />
     </ClientOnly>
-    <Footer />
+    <Footer v-if="showFooter" />
   </div>
 </template>
 
@@ -35,6 +35,18 @@ export default {
       const freshMasterRef = prismicData.data.refs[0].ref
       if (process.client && currentMasterRef !== freshMasterRef) $prismic.api.masterRef.ref = freshMasterRef
     }
+  },
+
+  data() {
+    return {
+      showFooter: true,
+    }
+  },
+
+  created() {
+    this.$nuxt.$on('showFooter', value => {
+      this.showFooter = value
+    })
   },
 
   mounted() {
