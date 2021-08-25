@@ -2,9 +2,16 @@
   <section
     class="paragraph-slice"
     :style="{ maxWidth }"
+    :class="[
+      `paragraph-slice-text--${position}`,
+    ]"
   >
     <p
-      :class="`paragraph-slice-text paragraph-slice-text--${size} paragraph-slice-text--${position}`"
+      :class="[
+        `paragraph-slice-text`,
+        `paragraph-slice-text--${size}`,
+        `paragraph-slice-text--${type}`,
+      ]"
       :data-aos="animation"
       v-html="text"
     />
@@ -50,6 +57,11 @@ export default {
       type: String,
       default: 'sm',
     },
+
+    type: {
+      type: String,
+      default: 'default',
+    },
   },
 }
 </script>
@@ -59,23 +71,32 @@ export default {
     width: 100%;
 
     &-text {
-      width: 100%;
+      width: auto;
+      max-width: 100%;
       display: block;
       color: inherit;
       letter-spacing: -1.3%;
 
+      // Positions
       &--left {
-        text-align: left;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
       }
 
       &--center {
-        text-align: center;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
       }
 
       &--right {
-        text-align: right;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
       }
 
+      // Sixes
       &--sm {
         @include font('Inter', 16px, 400);
         line-height: 24px;
@@ -84,74 +105,35 @@ export default {
       &--md {
         @include font('Inter', 21px, 600);
         line-height: 30px;
-
-        @media screen and (max-width: 375px) {
-          font-size: 16px;
-          line-height: 24px;
-          line-height: 400;
-        }
       }
 
       &--lg {
         @include font('Inter', 24px, 600);
         line-height: 35px;
-
-        @media screen and (max-width: 768px) {
-          font-size: 21px;
-          line-height: 30px;
-        }
-
-        @media screen and (max-width: 375px) {
-          font-size: 16px;
-          line-height: 24px;
-          line-height: 400;
-        }
       }
 
       &--xs {
         @include font('Inter', 32px, 600);
         line-height: 44px;
-
-        @media screen and (max-width: 1024px) {
-          font-size: 24px;
-          line-height: 35px;
-        }
-
-        @media screen and (max-width: 768px) {
-          font-size: 21px;
-          line-height: 30px;
-        }
-
-        @media screen and (max-width: 375px) {
-          font-size: 16px;
-          line-height: 24px;
-          line-height: 400;
-        }
       }
 
       &--xl {
         @include font('Inter', 60px, 600);
         line-height: 70px;
+      }
 
-        @media screen and (max-width: 1200px) {
-          font-size: 32px;
-          line-height: 44px;
-        }
+      // Types
+      &--list {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
 
-        @media screen and (max-width: 1024px) {
-          font-size: 24px;
-          line-height: 35px;
-        }
-
-        @media screen and (max-width: 768px) {
-          font-size: 21px;
-          line-height: 30px;
-        }
-
-        @media screen and (max-width: 375px) {
-          font-size: 16px;
-          line-height: 24px;
-          line-height: 400;
+        &::before {
+          content: '•';
+          display: inline-block;
+          color: #000;
+          margin-right: 8px;
+          margin-left: 8px;
         }
       }
     }

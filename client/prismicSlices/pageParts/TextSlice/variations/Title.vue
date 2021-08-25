@@ -5,7 +5,11 @@
   >
     <component
       :is="tag"
-      :class="`title-slice-text title-slice-text--${size} title-slice-text--${position}`"
+      :class="[
+        `title-slice-text`,
+        `title-slice-text--${size}`,
+        `title-slice-text--${position}`
+      ]"
       :data-aos="animation"
       v-html="title"
     />
@@ -90,81 +94,21 @@ export default {
       &--md {
         @include font('Inter', 33px, 600);
         line-height: 43px;
-
-        @media screen and (max-width: 375px) {
-          font-size: 21px;
-          line-height: 28px;
-          font-weight: 400;
-        }
       }
 
       &--lg {
         @include font('Inter', 40px, 700);
         line-height: 67px;
-
-        @media screen and (max-width: 768px) {
-          font-size: 33px;
-          line-height: 43px;
-          font-weight: 600;
-        }
-
-        @media screen and (max-width: 375px) {
-          font-size: 21px;
-          line-height: 28px;
-          font-weight: 400;
-        }
       }
 
       &--xs {
         @include font('Inter', 60px, 700);
         line-height: 67px;
-
-        @media screen and (max-width: 1024px) {
-          font-size: 40px;
-          line-height: 67px;
-          font-weight: 700;
-        }
-
-        @media screen and (max-width: 768px) {
-          font-size: 33px;
-          line-height: 43px;
-          font-weight: 600;
-        }
-
-        @media screen and (max-width: 375px) {
-          font-size: 21px;
-          line-height: 28px;
-          font-weight: 400;
-        }
       }
 
       &--xl {
         @include font('Inter', 80px, 700);
         line-height: 84px;
-
-        @media screen and (max-width: 1200px) {
-          font-size: 60px;
-          line-height: 67px;
-          font-weight: 700;
-        }
-
-        @media screen and (max-width: 1024px) {
-          font-size: 40px;
-          line-height: 67px;
-          font-weight: 700;
-        }
-
-        @media screen and (max-width: 768px) {
-          font-size: 33px;
-          line-height: 43px;
-          font-weight: 600;
-        }
-
-        @media screen and (max-width: 375px) {
-          font-size: 21px;
-          line-height: 28px;
-          font-weight: 400;
-        }
       }
     }
   }

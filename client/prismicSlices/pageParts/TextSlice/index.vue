@@ -10,6 +10,7 @@
       />
       <Title
         v-else-if="slice.variation === 'title'"
+        :size="size"
         v-bind="slice.primary"
       />
       <TitleText
@@ -37,6 +38,7 @@
       />
       <Paragraph
         v-else-if="slice.variation === 'paragraph'"
+        :size="size"
         v-bind="slice.primary"
       />
     </div>
@@ -76,10 +78,51 @@ export default {
     },
   },
 
+  data() {
+    return {
+      size: this.slice.primary['size-sm'],
+    }
+  },
+
   computed: {
     colorThemeClass() {
       if (this.slice?.primary?.colorTheme === 'white') return 'text-slice--white-theme'
       return 'text-slice--black-theme'
+    },
+  },
+
+  mounted() {
+    this.onResize()
+    window.addEventListener('resize', this.onResize)
+  },
+
+  beforeDestroy() {
+    window.removeEventListener('resize', this.onResize)
+  },
+
+  methods: {
+    onResize() {
+      if (window.innerWidth <= 768) {
+        this.size = this.slice.primary['size-sm']
+        || this.slice.primary['size-md']
+        || this.slice.primary['size-lg']
+        || this.slice.primary['size-xs']
+        || this.slice.primary['size-xl']
+      } if (window.innerWidth > 768 && window.innerWidth <= 1024) {
+        this.size = this.slice.primary['size-md']
+        || this.slice.primary['size-lg']
+        || this.slice.primary['size-xs']
+        || this.slice.primary['size-xl']
+      } if (window.innerWidth > 1024 && window.innerWidth <= 1200) {
+        this.size = this.slice.primary['size-lg']
+        || this.slice.primary['size-xs']
+        || this.slice.primary['size-xl']
+      } if (window.innerWidth > 1200 && window.innerWidth <= 1440) {
+        this.size = this.slice.primary['size-xs']
+        this.size = this.slice.primary['size-xl']
+      } if (window.innerWidth > 1440) {
+        this.size = this.slice.primary['size-xl']
+      }
     },
   },
 }

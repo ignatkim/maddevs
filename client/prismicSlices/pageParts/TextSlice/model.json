@@ -11,15 +11,6 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "TextSlice",
       "primary": {
-        "large": {
-          "config": {
-            "label": "Size",
-            "placeholder_false": "normal",
-            "placeholder_true": "large",
-            "default_value": false
-          },
-          "type": "Boolean"
-        },
         "text": {
           "config": {
             "label": "Text",
@@ -96,20 +87,6 @@
           },
           "type": "Text"
         },
-        "size": {
-          "config": {
-            "label": "Header size",
-            "placeholder": "",
-            "options": [
-              "sm",
-              "md",
-              "lg",
-              "xs",
-              "xl"
-            ]
-          },
-          "type": "Select"
-        },
         "position": {
           "config": {
             "label": "Title position",
@@ -140,6 +117,76 @@
               "zoom-in-left",
               "zoom-in-right",
               "none"
+            ]
+          },
+          "type": "Select"
+        },
+        "size-xl": {
+          "config": {
+            "label": "Size on over big screens",
+            "placeholder": "1440px - 1920px",
+            "options": [
+              "sm",
+              "md",
+              "lg",
+              "xs",
+              "xl"
+            ]
+          },
+          "type": "Select"
+        },
+        "size-xs": {
+          "config": {
+            "label": "Size on monitor screens",
+            "placeholder": "1200px - 1440px",
+            "options": [
+              "sm",
+              "md",
+              "lg",
+              "xs",
+              "xl"
+            ]
+          },
+          "type": "Select"
+        },
+        "size-lg": {
+          "config": {
+            "label": "Size on desktop screens",
+            "placeholder": "1024px - 1200px",
+            "options": [
+              "sm",
+              "md",
+              "lg",
+              "xs",
+              "xl"
+            ]
+          },
+          "type": "Select"
+        },
+        "size-md": {
+          "config": {
+            "label": "Size on tablet screens",
+            "placeholder": "768px - 1024px",
+            "options": [
+              "sm",
+              "md",
+              "lg",
+              "xs",
+              "xl"
+            ]
+          },
+          "type": "Select"
+        },
+        "size-sm": {
+          "config": {
+            "label": "Size on mobile screens",
+            "placeholder": "320px - 768px",
+            "options": [
+              "sm",
+              "md",
+              "lg",
+              "xs",
+              "xl"
             ]
           },
           "type": "Select"
@@ -490,20 +537,6 @@
           },
           "type": "Text"
         },
-        "size": {
-          "config": {
-            "label": "Text size",
-            "placeholder": "Select text size",
-            "options": [
-              "sm",
-              "md",
-              "lg",
-              "xs",
-              "xl"
-            ]
-          },
-          "type": "Select"
-        },
         "position": {
           "config": {
             "label": "Text position",
@@ -512,6 +545,17 @@
               "left",
               "center",
               "right"
+            ]
+          },
+          "type": "Select"
+        },
+        "type": {
+          "config": {
+            "label": "Paragraph type",
+            "placeholder": "",
+            "options": [
+              "default",
+              "list"
             ]
           },
           "type": "Select"
@@ -534,6 +578,76 @@
               "zoom-in-left",
               "zoom-in-right",
               "none"
+            ]
+          },
+          "type": "Select"
+        },
+        "size-xl": {
+          "config": {
+            "label": "Size on over big screens",
+            "placeholder": "1440px - 1920px",
+            "options": [
+              "sm",
+              "md",
+              "lg",
+              "xs",
+              "xl"
+            ]
+          },
+          "type": "Select"
+        },
+        "size-xs": {
+          "config": {
+            "label": "Size on monitor screens",
+            "placeholder": "1200px - 1440px",
+            "options": [
+              "sm",
+              "md",
+              "lg",
+              "xs",
+              "xl"
+            ]
+          },
+          "type": "Select"
+        },
+        "size-lg": {
+          "config": {
+            "label": "Size on desctop screens",
+            "placeholder": "1024px - 1200px",
+            "options": [
+              "sm",
+              "md",
+              "lg",
+              "xs",
+              "xl"
+            ]
+          },
+          "type": "Select"
+        },
+        "size-md": {
+          "config": {
+            "label": "Size on tablet screens",
+            "placeholder": "768px - 1024px",
+            "options": [
+              "sm",
+              "md",
+              "lg",
+              "xs",
+              "xl"
+            ]
+          },
+          "type": "Select"
+        },
+        "size-sm": {
+          "config": {
+            "label": "Size on mobile screens",
+            "placeholder": "320px - 768px",
+            "options": [
+              "sm",
+              "md",
+              "lg",
+              "xs",
+              "xl"
             ]
           },
           "type": "Select"

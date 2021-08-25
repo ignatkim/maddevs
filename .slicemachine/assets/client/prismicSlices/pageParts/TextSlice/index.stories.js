@@ -18,7 +18,7 @@ export const _DefaultSlice = () => ({
   },
   data() {
     return {
-      mock: {"variation":"default-slice","name":"Default slice","slice_type":"text_slice","items":[],"primary":{"large":true,"text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","maxWidth":"1028px"},"id":"_DefaultSlice"}
+      mock: {"variation":"default-slice","name":"Default slice","slice_type":"text_slice","items":[],"primary":{"text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","maxWidth":"1028px"},"id":"_DefaultSlice"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -37,7 +37,7 @@ export const _Title = () => ({
   },
   data() {
     return {
-      mock: {"variation":"title","name":"Title","slice_type":"text_slice","items":[],"primary":{"colorTheme":"white","title":"Featured projects","tag":"h2","maxWidth":"1028px","size":"lg","position":"center","animation":"fade-up-left"},"id":"_Title"}
+      mock: {"variation":"title","name":"Title","slice_type":"text_slice","items":[],"primary":{"colorTheme":"white","title":"Featured projects","tag":"h5","maxWidth":"1028px","position":"left","animation":"fade-right","size-xl":"xl","size-xs":"xs","size-lg":"lg","size-md":"md","size-sm":"sm"},"id":"_Title"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -94,7 +94,7 @@ export const _TitleTextList = () => ({
   },
   data() {
     return {
-      mock: {"variation":"titleTextList","name":"Title + Text + List","slice_type":"text_slice","items":[{"listItem":"transform cross-platform platforms"},{"listItem":"aggregate back-end e-business"},{"listItem":"grow turn-key deliverables"}],"primary":{"title":"Software <br /> development","text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","maxWidth":"1028px"},"id":"_TitleTextList"}
+      mock: {"variation":"titleTextList","name":"Title + Text + List","slice_type":"text_slice","items":[{"listItem":"leverage one-to-one schemas"},{"listItem":"revolutionize intuitive partnerships"}],"primary":{"title":"Software <br /> development","text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","maxWidth":"1028px"},"id":"_TitleTextList"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -113,7 +113,7 @@ export const _TitleH5 = () => ({
   },
   data() {
     return {
-      mock: {"variation":"titleH5","name":"Title H5","slice_type":"text_slice","items":[],"primary":{"title":"We encourage the best practices in sustainability","colorTheme":"white","maxWidth":"deploy clicks-and-mortar architectures"},"id":"_TitleH5"}
+      mock: {"variation":"titleH5","name":"Title H5","slice_type":"text_slice","items":[],"primary":{"title":"We encourage the best practices in sustainability","colorTheme":"black","maxWidth":"brand 24/365 interfaces"},"id":"_TitleH5"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -132,7 +132,7 @@ export const _TitleH5Text = () => ({
   },
   data() {
     return {
-      mock: {"variation":"titleH5Text","name":"Title H5 + Text","slice_type":"text_slice","items":[],"primary":{"title":"We encourage the best practices in sustainability","text":"Mad Devs takes full responsibility for the projects we have been involved in. It includes not only the quality of a product but also the responsibility toward the environment and people.  Therefore, the environmental and social sustainability compliances form a crucial component of our business strategy. We are committed to comply with legal regulations and official requirements and encourage the best sustainability practices. We understand sustainability as a path to continuous improvement of our processes and services for the purposes of environmental protection, the provision of occupational health, and meeting safety requirements. ","colorTheme":"white","maxWidth":"matrix rich e-services"},"id":"_TitleH5Text"}
+      mock: {"variation":"titleH5Text","name":"Title H5 + Text","slice_type":"text_slice","items":[],"primary":{"title":"We encourage the best practices in sustainability","text":"Mad Devs takes full responsibility for the projects we have been involved in. It includes not only the quality of a product but also the responsibility toward the environment and people.  Therefore, the environmental and social sustainability compliances form a crucial component of our business strategy. We are committed to comply with legal regulations and official requirements and encourage the best sustainability practices. We understand sustainability as a path to continuous improvement of our processes and services for the purposes of environmental protection, the provision of occupational health, and meeting safety requirements. ","colorTheme":"white","maxWidth":"enhance dot-com technologies"},"id":"_TitleH5Text"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -151,7 +151,7 @@ export const _RedTextSimpleTextMedium = () => ({
   },
   data() {
     return {
-      mock: {"variation":"redTextSimpleTextMedium","name":"Red Text + Simple Text Medium","slice_type":"text_slice","items":[],"primary":{"title":"expedite scalable infrastructures","text":"facilitate e-business networks","colorTheme":"white","maxWidth":"disintermediate strategic initiatives"},"id":"_RedTextSimpleTextMedium"}
+      mock: {"variation":"redTextSimpleTextMedium","name":"Red Text + Simple Text Medium","slice_type":"text_slice","items":[],"primary":{"title":"transform sexy vortals","text":"cultivate global portals","colorTheme":"white","maxWidth":"incentivize world-class blockchains"},"id":"_RedTextSimpleTextMedium"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -170,7 +170,7 @@ export const _SimpleTextMedium = () => ({
   },
   data() {
     return {
-      mock: {"variation":"simpleTextMedium","name":"Simple Text Medium","slice_type":"text_slice","items":[],"primary":{"text":"We build our sustainability efforts around three primary areas: social, economic, and ecological sustainability.","colorTheme":"black","maxWidth":"synergize enterprise eyeballs"},"id":"_SimpleTextMedium"}
+      mock: {"variation":"simpleTextMedium","name":"Simple Text Medium","slice_type":"text_slice","items":[],"primary":{"text":"We build our sustainability efforts around three primary areas: social, economic, and ecological sustainability.","colorTheme":"black","maxWidth":"reinvent 24/7 metrics"},"id":"_SimpleTextMedium"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -189,7 +189,7 @@ export const _Paragraph = () => ({
   },
   data() {
     return {
-      mock: {"variation":"paragraph","name":"Paragraph","slice_type":"text_slice","items":[],"primary":{"colorTheme":"white","text":"engineer front-end e-markets","maxWidth":"strategize bricks-and-clicks ROI","size":"sm","position":"right","animation":"fade-right"},"id":"_Paragraph"}
+      mock: {"variation":"paragraph","name":"Paragraph","slice_type":"text_slice","items":[],"primary":{"colorTheme":"black","text":"expedite best-of-breed e-commerce","maxWidth":"matrix back-end vortals","position":"left","type":"default","animation":"fade-down-righ","size-xl":"xl","size-xs":"xs","size-lg":"lg","size-md":"sm","size-sm":"lg"},"id":"_Paragraph"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'

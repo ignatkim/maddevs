@@ -80,8 +80,20 @@
           "maxWidth": {
             "content": "1028px"
           },
-          "size": {
+          "size-xl": {
+            "content": "xl"
+          },
+          "size-xs": {
+            "content": "xs"
+          },
+          "size-lg": {
             "content": "lg"
+          },
+          "size-md": {
+            "content": "md"
+          },
+          "size-sm": {
+            "content": "sm"
           }
         }
       },
@@ -185,7 +197,17 @@
         }
       },
       "paragraph": {
-        "primary": {}
+        "primary": {
+          "type": {
+            "content": "default"
+          },
+          "size-xs": {
+            "content": "xs"
+          },
+          "size-xl": {
+            "content": "xl"
+          }
+        }
       }
     },
     "StartScreen": {
