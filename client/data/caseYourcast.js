@@ -133,6 +133,11 @@ export const team = [
 
 export const posters = [
   {
+    title: 'EL APOSTOLADO',
+    href: 'https://commons.wikimedia.org/wiki/File:EL_APOSTOLADO_POSTER-04_copia.tif',
+  },
+
+  {
     title: 'Gasman,',
     href: 'https://commons.wikimedia.org/wiki/File:Gasmann_-_Plakat_.jpg',
   },
@@ -143,6 +148,10 @@ export const posters = [
   {
     title: 'Genesis 2.0,',
     href: 'https://commons.wikimedia.org/wiki/File:GENESIS_2.0.jpg',
+  },
+  {
+    title: 'Elephants Dream',
+    href: 'https://commons.wikimedia.org/wiki/Category:Film_posters#/media/File:Elephants_Dream_-_Final_Poster_Source.png',
   },
   {
     title: 'Black Ruby,',
