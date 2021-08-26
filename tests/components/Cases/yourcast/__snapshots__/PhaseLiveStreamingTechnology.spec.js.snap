@@ -63,6 +63,19 @@ exports[`PhaseLiveStreamingTechnology component should render correctly 1`] = `
         >
           <a
             class="case_poster-link"
+            href="https://commons.wikimedia.org/wiki/File:EL_APOSTOLADO_POSTER-04_copia.tif"
+            target="_blank"
+          >
+            
+          EL APOSTOLADO
+        
+          </a>
+        </li>
+        <li
+          class="case_poster"
+        >
+          <a
+            class="case_poster-link"
             href="https://commons.wikimedia.org/wiki/File:Gasmann_-_Plakat_.jpg"
             target="_blank"
           >
@@ -94,6 +107,19 @@ exports[`PhaseLiveStreamingTechnology component should render correctly 1`] = `
           >
             
           Genesis 2.0,
+        
+          </a>
+        </li>
+        <li
+          class="case_poster"
+        >
+          <a
+            class="case_poster-link"
+            href="https://commons.wikimedia.org/wiki/Category:Film_posters#/media/File:Elephants_Dream_-_Final_Poster_Source.png"
+            target="_blank"
+          >
+            
+          Elephants Dream
         
           </a>
         </li>

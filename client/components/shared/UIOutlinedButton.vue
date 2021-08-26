@@ -1,6 +1,8 @@
 <template>
-  <button
-    type="button"
+  <Component
+    :is="isTag"
+    :type="link ? 'button' : null"
+    :href="linkTo"
     class="ui-outlined-button"
     :class="{
       'ui-outlined-button--grey': color === 'grey',
@@ -12,7 +14,7 @@
     @click="handleClick"
   >
     <slot />
-  </button>
+  </Component>
 </template>
 
 <script>
@@ -28,6 +30,28 @@ export default {
       type: Boolean,
       default: false,
     },
+
+    link: {
+      type: Boolean,
+      default: false,
+    },
+
+    to: {
+      type: String,
+      default: '/',
+    },
+  },
+
+  computed: {
+    isTag() {
+      if (this.link) return 'a'
+      return 'button'
+    },
+
+    linkTo() {
+      if (this.link) return this.to
+      return null
+    },
   },
 
   methods: {
@@ -41,7 +65,8 @@ export default {
 <style lang="scss" scoped>
 .ui-outlined-button {
   @include font('Inter', 16px, 600);
-  display: flex;
+  width: auto;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   background-color: transparent;
@@ -54,6 +79,7 @@ export default {
   transition: 0.4s;
   cursor: pointer;
   &--full-width {
+    display: flex;
     width: 100%;
   }
   &--red {

@@ -1,11 +1,17 @@
 <template>
   <section
     class="title-slice"
-    :style="{ maxWidth }"
+    :class="[
+      `title-slice-text--${position}`
+    ]"
   >
     <component
       :is="tag"
-      :class="`title-slice-text title-slice-text--${size} title-slice-text--${position}`"
+      :style="{ maxWidth }"
+      :class="[
+        `title-slice-text`,
+        `title-slice-text--${size}`,
+      ]"
       :data-aos="animation"
       v-html="title"
     />
@@ -70,101 +76,61 @@ export default {
       color: inherit;
       letter-spacing: -0.013em;
 
+      // Positions
       &--left {
-        text-align: left;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        > * {
+          text-align: left;
+        }
       }
 
       &--center {
-        text-align: center;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+
+        > * {
+          text-align: center;
+        }
       }
 
       &--right {
-        text-align: right;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+
+        > * {
+          text-align: right;
+        }
       }
 
-      &--sm {
+      // Sizes
+      &--24-px {
         @include font('Inter', 21px, 400);
         line-height: 28px;
       }
 
-      &--md {
+      &--33-px {
         @include font('Inter', 33px, 600);
         line-height: 43px;
-
-        @media screen and (max-width: 375px) {
-          font-size: 21px;
-          line-height: 28px;
-          font-weight: 400;
-        }
       }
 
-      &--lg {
+      &--40-px {
         @include font('Inter', 40px, 700);
         line-height: 67px;
-
-        @media screen and (max-width: 768px) {
-          font-size: 33px;
-          line-height: 43px;
-          font-weight: 600;
-        }
-
-        @media screen and (max-width: 375px) {
-          font-size: 21px;
-          line-height: 28px;
-          font-weight: 400;
-        }
       }
 
-      &--xs {
-        @include font('Inter', 60px, 700);
+      &--60-px {
+        @include font('Inter', 60px, 800);
         line-height: 67px;
-
-        @media screen and (max-width: 1024px) {
-          font-size: 40px;
-          line-height: 67px;
-          font-weight: 700;
-        }
-
-        @media screen and (max-width: 768px) {
-          font-size: 33px;
-          line-height: 43px;
-          font-weight: 600;
-        }
-
-        @media screen and (max-width: 375px) {
-          font-size: 21px;
-          line-height: 28px;
-          font-weight: 400;
-        }
       }
 
-      &--xl {
-        @include font('Inter', 80px, 700);
-        line-height: 84px;
-
-        @media screen and (max-width: 1200px) {
-          font-size: 60px;
-          line-height: 67px;
-          font-weight: 700;
-        }
-
-        @media screen and (max-width: 1024px) {
-          font-size: 40px;
-          line-height: 67px;
-          font-weight: 700;
-        }
-
-        @media screen and (max-width: 768px) {
-          font-size: 33px;
-          line-height: 43px;
-          font-weight: 600;
-        }
-
-        @media screen and (max-width: 375px) {
-          font-size: 21px;
-          line-height: 28px;
-          font-weight: 400;
-        }
+      &--80-px {
+        @include font('Inter', 80px, 800);
+        line-height: 90px;
       }
     }
   }
