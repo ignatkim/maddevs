@@ -84,16 +84,16 @@
             "content": "xl"
           },
           "size-xs": {
-            "content": "xs"
-          },
-          "size-lg": {
             "content": "lg"
           },
-          "size-md": {
+          "size-lg": {
             "content": "md"
           },
-          "size-sm": {
+          "size-md": {
             "content": "sm"
+          },
+          "size-sm": {
+            "content": "xs"
           }
         }
       },
