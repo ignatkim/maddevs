@@ -1,14 +1,16 @@
 <template>
   <section
     class="title-slice"
-    :style="{ maxWidth }"
+    :class="[
+      `title-slice-text--${position}`
+    ]"
   >
     <component
       :is="tag"
+      :style="{ maxWidth }"
       :class="[
         `title-slice-text`,
         `title-slice-text--${size}`,
-        `title-slice-text--${position}`
       ]"
       :data-aos="animation"
       v-html="title"
@@ -74,39 +76,59 @@ export default {
       color: inherit;
       letter-spacing: -0.013em;
 
+      // Positions
       &--left {
-        text-align: left;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        > * {
+          text-align: left;
+        }
       }
 
       &--center {
-        text-align: center;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+
+        > * {
+          text-align: center;
+        }
       }
 
       &--right {
-        text-align: right;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+
+        > * {
+          text-align: right;
+        }
       }
 
-      &--xs {
+      // Sizes
+      &--24-px {
         @include font('Inter', 21px, 400);
         line-height: 28px;
       }
 
-      &--sm {
+      &--33-px {
         @include font('Inter', 33px, 600);
         line-height: 43px;
       }
 
-      &--md {
+      &--40-px {
         @include font('Inter', 40px, 700);
         line-height: 67px;
       }
 
-      &--lg {
+      &--60-px {
         @include font('Inter', 60px, 800);
         line-height: 67px;
       }
 
-      &--xl {
+      &--80-px {
         @include font('Inter', 80px, 800);
         line-height: 90px;
       }

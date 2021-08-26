@@ -81,19 +81,19 @@
             "content": "1028px"
           },
           "size-xl": {
-            "content": "xl"
+            "content": "80-px"
           },
           "size-xs": {
-            "content": "lg"
+            "content": "60-px"
           },
           "size-lg": {
-            "content": "md"
+            "content": "40-px"
           },
           "size-md": {
-            "content": "sm"
+            "content": "33-px"
           },
           "size-sm": {
-            "content": "xs"
+            "content": "24-px"
           }
         }
       },
@@ -202,10 +202,19 @@
             "content": "default"
           },
           "size-xs": {
-            "content": "xs"
+            "content": "32-px"
           },
           "size-xl": {
-            "content": "xl"
+            "content": "40-px"
+          },
+          "size-sm": {
+            "content": "16-px"
+          },
+          "size-md": {
+            "content": "21-px"
+          },
+          "size-lg": {
+            "content": "24-px"
           }
         }
       }
