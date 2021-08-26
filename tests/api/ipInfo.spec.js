@@ -9,10 +9,7 @@ const expectedResult = {
   city: 'city',
 }
 
-const response = {
-  data: expectedResult,
-}
-jest.spyOn(axios, 'get').mockImplementation(() => Promise.resolve(response))
+jest.spyOn(axios, 'get')
 
 describe('IPinfo service', () => {
   describe('extractIPInfo helper', () => {
@@ -32,7 +29,37 @@ describe('IPinfo service', () => {
     })
   })
 
-  it('should correctly return data from response', async () => {
+  it('should correctly return data from first api response', async () => {
+    axios.get.mockImplementation(() => Promise.resolve({
+      data: {
+        ip: 'ip',
+        version: 'IPv4',
+        city: 'city',
+        region: '',
+        region_code: null,
+        country: '',
+        country_name: 'country',
+        country_code: '',
+        country_code_iso3: '',
+        country_capital: '',
+        country_tld: '',
+        continent_code: '',
+        in_eu: false,
+        postal: null,
+        latitude: 1,
+        longitude: 2,
+        timezone: null,
+        utc_offset: null,
+        country_calling_code: '',
+        currency: '',
+        currency_name: '',
+        languages: '',
+        country_area: 3,
+        country_population: 4,
+        asn: '',
+        org: '',
+      },
+    }))
     expect(await getIPInfo()).toEqual(expectedResult)
   })
 
