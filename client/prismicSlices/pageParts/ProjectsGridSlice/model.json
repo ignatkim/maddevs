@@ -31,36 +31,6 @@
             "default_value": true
           },
           "type": "Boolean"
-        },
-        "title": {
-          "config": {
-            "label": "",
-            "placeholder": ""
-          },
-          "type": "Text"
-        },
-        "subtitle": {
-          "config": {
-            "label": "",
-            "placeholder": ""
-          },
-          "type": "Text"
-        },
-        "buttonText": {
-          "config": {
-            "label": "",
-            "placeholder": ""
-          },
-          "type": "Text"
-        },
-        "buttonLink": {
-          "config": {
-            "label": "",
-            "placeholder": "",
-            "select": "web",
-            "allowTargetBlank": false
-          },
-          "type": "Link"
         }
       },
       "items": {
