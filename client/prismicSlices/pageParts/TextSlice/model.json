@@ -126,20 +126,7 @@
             "label": "1440px - 1920px",
             "placeholder": "",
             "options": [
-              "24-px",
-              "33-px",
-              "40-px",
-              "60-px",
-              "80-px"
-            ]
-          },
-          "type": "Select"
-        },
-        "size-xs": {
-          "config": {
-            "label": "1200px - 1440px",
-            "placeholder": "",
-            "options": [
+              "16-px",
               "24-px",
               "33-px",
               "40-px",
@@ -151,9 +138,10 @@
         },
         "size-lg": {
           "config": {
-            "label": "1024px - 1200px",
+            "label": "1200px - 1440px",
             "placeholder": "",
             "options": [
+              "16-px",
               "24-px",
               "33-px",
               "40-px",
@@ -165,9 +153,10 @@
         },
         "size-md": {
           "config": {
-            "label": "768px - 1024px",
+            "label": "1024px - 1200px",
             "placeholder": "",
             "options": [
+              "16-px",
               "24-px",
               "33-px",
               "40-px",
@@ -179,9 +168,25 @@
         },
         "size-sm": {
           "config": {
+            "label": "768px - 1024px",
+            "placeholder": "",
+            "options": [
+              "21-px",
+              "33-px",
+              "40-px",
+              "60-px",
+              "80-px",
+              "16-px"
+            ]
+          },
+          "type": "Select"
+        },
+        "size-xs": {
+          "config": {
             "label": "320px - 768px",
             "placeholder": "",
             "options": [
+              "16-px",
               "24-px",
               "33-px",
               "40-px",
@@ -388,7 +393,7 @@
           },
           "type": "Select"
         },
-        "size-xs": {
+        "size-lg": {
           "config": {
             "label": "1200px - 1440px",
             "placeholder": "",
@@ -403,7 +408,7 @@
           },
           "type": "Select"
         },
-        "size-lg": {
+        "size-md": {
           "config": {
             "label": "1024px - 1200px",
             "placeholder": "",
@@ -418,7 +423,7 @@
           },
           "type": "Select"
         },
-        "size-md": {
+        "size-sm": {
           "config": {
             "label": "768px - 1024px",
             "placeholder": "",
@@ -433,7 +438,7 @@
           },
           "type": "Select"
         },
-        "size-sm": {
+        "size-xs": {
           "config": {
             "label": "320px - 768px",
             "placeholder": "",

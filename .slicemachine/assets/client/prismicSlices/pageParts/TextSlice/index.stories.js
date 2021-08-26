@@ -37,7 +37,7 @@ export const _Title = () => ({
   },
   data() {
     return {
-      mock: {"variation":"title","name":"Title","slice_type":"text_slice","items":[],"primary":{"colorTheme":"white","title":"Featured projects","tag":"h6","maxWidth":"1028px","position":"right","animation":"none","size-xl":"80-px","size-xs":"60-px","size-lg":"40-px","size-md":"33-px","size-sm":"24-px"},"id":"_Title"}
+      mock: {"variation":"title","name":"Title","slice_type":"text_slice","items":[],"primary":{"colorTheme":"white","title":"Featured projects","tag":"h3","maxWidth":"1028px","position":"center","animation":"none","size-xl":"80-px","size-lg":"40-px","size-md":"33-px","size-sm":"16-px","size-xs":"60-px"},"id":"_Title"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -94,7 +94,7 @@ export const _Paragraph = () => ({
   },
   data() {
     return {
-      mock: {"variation":"paragraph","name":"Paragraph","slice_type":"text_slice","items":[],"primary":{"colorTheme":"white","text":"reintermediate wireless ROI","maxWidth":"whiteboard user-centric supply-chains","position":"right","type":"default","animation":"zoom-in-left","size-xl":"40-px","size-xs":"32-px","size-lg":"24-px","size-md":"21-px","size-sm":"16-px"},"id":"_Paragraph"}
+      mock: {"variation":"paragraph","name":"Paragraph","slice_type":"text_slice","items":[],"primary":{"colorTheme":"white","text":"incentivize user-centric schemas","maxWidth":"incentivize killer interfaces","position":"right","type":"default","animation":"fade-up-right","size-xl":"40-px","size-lg":"24-px","size-md":"21-px","size-sm":"16-px","size-xs":"32-px"},"id":"_Paragraph"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
