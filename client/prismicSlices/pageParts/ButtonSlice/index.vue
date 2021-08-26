@@ -20,6 +20,7 @@
           'button-slice__button',
           'button-slice__button--normal',
         ]"
+        :style="{ maxWidth }"
       >
         {{ text }}
       </UIButton>
@@ -33,6 +34,7 @@
           'button-slice__button',
           'button-slice__button--outlined',
         ]"
+        :style="{ maxWidth }"
       >
         {{ text }}
       </UIOutlinedButton>
@@ -46,6 +48,7 @@
           'button-slice__button',
           'button-slice__button--link',
         ]"
+        :style="{ maxWidth }"
       >
         {{ text }}
       </UILinkButton>
@@ -80,6 +83,7 @@ export default {
     return {
       variation: this.slice.variation,
       fullWidth: this.slice.primary.fullWidth,
+      maxWidth: this.slice.primary.maxWidth,
       alignment: this.slice.primary.alignment,
       link: this.slice.primary.link,
       text: this.slice.primary.text,
