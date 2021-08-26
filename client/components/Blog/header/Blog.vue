@@ -12,17 +12,8 @@
         <PostAuthor
           v-bind="blogAuthor"
           theme="dark"
+          :date="date"
         />
-        <div class="blog-post__date-tag">
-          <div class="blog-post__date">
-            {{ date }}
-          </div>
-          <PostTag
-            v-if="tags.length"
-            :tag="tags[0]"
-            theme="dark"
-          />
-        </div>
       </div>
     </template>
   </CommonHeader>
@@ -30,14 +21,12 @@
 
 <script>
 import { mapGetters } from 'vuex'
-import PostTag from '@/components/Blog/shared/PostTag'
 import PostAuthor from '@/components/Blog/shared/PostAuthor'
 import CommonHeader from '@/components/Blog/header/Common'
 
 export default {
   name: 'Blog',
   components: {
-    PostTag,
     PostAuthor,
     CommonHeader,
   },
@@ -65,7 +54,7 @@ export default {
 
     date: {
       type: String,
-      required: true,
+      default: '',
     },
   },
 
@@ -95,19 +84,6 @@ export default {
       height: 30px;
     }
   }
-
-  &__date-tag {
-    @include font('Inter', 13px, 400);
-    display: flex;
-    align-items: center;
-    line-height: 22px;
-    font-weight: 400;
-
-    .blog-post__date {
-      color: $text-color--grey-pale;
-      margin-right: 24px;
-    }
-  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -115,16 +91,6 @@ export default {
     &__post-info {
       padding: 0 24px;
       display: block;
-    }
-
-    &__date-tag {
-      justify-content: space-between;
-      margin-top: 19px;
-
-      .blog-post__date {
-        order: 2;
-        margin-right: 0;
-      }
     }
   }
 }

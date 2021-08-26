@@ -13,7 +13,9 @@
       >
     </NuxtLink>
     <div class="post-card__info">
-      <NuxtLink :to="link">
+      <NuxtLink
+        :to="link"
+      >
         <h2
           class="post-card__title post-card__title--short"
           :title="$prismic.asText(post.data.title)"
@@ -38,19 +40,11 @@
           v-html="firstParagraph"
         />
       </NuxtLink>
-      <div class="post-card__meta">
-        <span class="post-card__date">{{ formattedDate }}</span>
-        <PostTag
-          v-if="post.tags && post.tags.length"
-          :tag="tag || post.tags[0]"
-          :disabled="disableTagLink"
-          class="light"
-        />
-      </div>
       <PostAuthor
         v-bind="author"
         :disabled="disableAuthorLink"
         theme="light"
+        :date="formattedDate"
       />
     </div>
   </div>
@@ -59,7 +53,6 @@
 <script>
 import linkResolver from '@/plugins/link-resolver.js'
 import PostAuthor from '@/components/Blog/shared/PostAuthor'
-import PostTag from '@/components/Blog/shared/PostTag'
 import getFirstParagraph from '@/helpers/getFirstParagraph'
 import textEllipsis from '@/helpers/textEllipsis'
 import formatDate from '@/helpers/formatDate'
@@ -68,7 +61,6 @@ export default {
   name: 'PostCard',
   components: {
     PostAuthor,
-    PostTag,
   },
 
   props: {
@@ -132,23 +124,29 @@ export default {
 .post-card {
   width: 100%;
   height: 100%;
+
   * {
     color: $text-color--black;
   }
+
   p,
   span {
     @include font('Inter', 16px, 400);
     opacity: 0.8;
   }
+
   p {
     margin-top: 5px;
   }
+
   span {
     letter-spacing: -0.02em;
   }
+
   a {
     text-decoration: none;
   }
+
   &__image {
     display: block;
     width: 100%;
@@ -160,10 +158,12 @@ export default {
       height: auto;
     }
   }
+
   &__info {
     max-width: 100%;
     overflow: hidden;
   }
+
   &__title {
     @include font('Poppins', 21px, 600);
     max-width: 100%;
@@ -206,6 +206,7 @@ export default {
       }
     }
   }
+
   &__paragraph {
     @include font('Inter', 16px, 400);
     line-height: 166%;
@@ -215,18 +216,7 @@ export default {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-  }
-  &__meta {
-    @include font('Inter', 13px, 400);
-    display: flex;
-    align-items: center;
-    margin: 20px 0;
-  }
-  &__date {
-    margin-right: 5px;
-    flex-basis: 95px;
-    white-space: nowrap;
-    color: $text-color--grey;
+    margin-bottom: 20px;
   }
 }
 </style>

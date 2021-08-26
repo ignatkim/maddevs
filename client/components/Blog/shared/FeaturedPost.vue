@@ -24,15 +24,8 @@
           <PostAuthor
             v-bind="author"
             :theme="theme"
+            :date="formattedDate"
           />
-          <div class="featured-post__meta">
-            <span class="featured-post__date">{{ formattedDate }}</span>
-            <PostTag
-              v-if="post.tags && post.tags.length"
-              :tag="tag || post.tags[0]"
-              :theme="theme"
-            />
-          </div>
         </div>
       </div>
       <div class="featured-post__image-wrapper">
@@ -127,14 +120,17 @@ export default {
       color: $text-color--white-primary;
     }
   }
+
   &--light-theme {
     * {
       color: $text-color--black;
     }
   }
+
   a {
     text-decoration: none;
   }
+
   &__wrapper {
     display: grid;
     align-items: center;
@@ -145,9 +141,11 @@ export default {
       grid-gap: 10px;
     }
   }
+
   &__info-wrapper{
     margin-top: 0;
   }
+
   &__title {
     @include font('Poppins', 42px, 600);
     line-height: 46px;
@@ -163,42 +161,6 @@ export default {
     margin-bottom: 32px;
   }
 
-  &__meta {
-    @include font('Inter', 13px, 400);
-    display: flex;
-    align-items: center;
-
-    &-wrapper {
-      display: flex;
-      justify-content: space-between;
-
-      /deep/ .post-author {
-        margin-right: 24px;
-
-        &__image,
-        &__none-image {
-          width: 40px;
-          min-width: 40px;
-          height: 40px;
-        }
-      }
-    }
-
-    /deep/ .post-tag {
-      padding: 8px 16px;
-      background-color: #f4f4f4;
-      color: #000;
-      font-size: 14px;
-      line-height: 18px;
-      letter-spacing: -0.4px;
-    }
-  }
-
-  &__date {
-    white-space: nowrap;
-    margin-right: 24px;
-    color: $text-color--grey;
-  }
   &__image {
     display: block;
     width: 90%;
@@ -214,7 +176,6 @@ export default {
       display: block;
       width: 100%;
       height: auto;
-      vertical-align: middle;
     }
 
     &-wrapper {
@@ -237,32 +198,6 @@ export default {
       letter-spacing: -0.02em;
     }
 
-    &__meta {
-      justify-content: space-between;
-
-      .post-tag {
-        padding: 8px 16px;
-        line-height: 22px;
-        margin-left: 0;
-      }
-
-      &-wrapper {
-        display: flex;
-        align-content: center;
-
-        /deep/ .post-author {
-          margin-right: 0;
-          margin-bottom: 0;
-
-          &__image,
-          &__none-image {
-            width: 30px;
-            min-width: 30px;
-            height: 30px;
-          }
-        }
-      }
-    }
     &__image {
       width: 100%;
       margin: 0;
@@ -281,14 +216,6 @@ export default {
     &__title {
       @include font('Inter', 32px, 700);
       line-height: 32px;
-    }
-
-    &__meta {
-      margin-bottom: 17px;
-
-      &-wrapper {
-        flex-direction: column-reverse;
-      }
     }
   }
 }
