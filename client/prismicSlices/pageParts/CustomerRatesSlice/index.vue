@@ -1,10 +1,5 @@
 <template>
-  <section
-    class="customer-rates-slice"
-    :style="{
-      backgroundColor: sliceBackground,
-    }"
-  >
+  <section class="customer-rates-slice">
     <div class="container">
       <h2 class="customer-rates-slice__title">
         <span>Fantastic</span> <br>
@@ -46,35 +41,42 @@ export default {
       ratesList: this.slice.items,
     }
   },
-
-  computed: {
-    sliceBackground() {
-      if (this.slice.primary.background === 'white') return '#fff'
-      if (this.slice.primary.background === 'grey') return '#f5f7f9'
-      return '#111213' // black
-    },
-  },
 }
 </script>
 
 <style lang="scss" scoped>
 .customer-rates-slice {
+  background-color: $bgcolor--white-primary;
   &__title {
     @include font('Poppins', 62px, 700);
     line-height: 74px;
     letter-spacing: -1px;
     color: $text-color--black-lighter;
     text-align: center;
-    margin-bottom: 30px;
-    @media screen and (max-width: 1024px) {
+    margin-bottom: 24px;
+    @media screen and (max-width: 834px) {
       font-size: 36px;
       line-height: 43px;
-      margin-bottom: 22px;
+    }
+    br {
+      display: none;
+      @media screen and (max-width: 965px) {
+        display: block;
+      }
+      @media screen and (max-width: 834px) {
+        display: none;
+      }
+      @media screen and (max-width: 534px) {
+        display: block;
+      }
     }
     &-icon {
       position: relative;
       z-index: 1;
       margin-left: 65px;
+      @media screen and (max-width: 834px) {
+        margin-left: 0;
+      }
       &::after {
         content: '';
         background-repeat: no-repeat;
@@ -87,10 +89,7 @@ export default {
         width: 220px;
         height: 105px;
         display: block;
-      }
-      @media screen and (max-width: 834px) {
-        margin-left: 0;
-        &::after {
+        @media screen and (max-width: 834px) {
           width: 103px;
           height: 50px;
           top: -2px;
@@ -123,13 +122,14 @@ export default {
 
   .rate-card {
     background-color: $bgcolor--white;
-    padding: 29px 37px 41px;
+    padding: 28px 0 40px;
     word-break: break-word;
-    @media screen and (max-width: 1024px) {
-      padding: 11px 37px 18px;
+    @media screen and (max-width: 1366px) {
+      padding: 28px 10px 40px;
     }
-    @media screen and (max-width: 768px) {
-      padding: 11px 68px 25px;
+    @media screen and (max-width: 834px) {
+      height: 103px;
+      padding: 20px 10px;
     }
     &__title,
     &__subtitle {
@@ -138,25 +138,33 @@ export default {
     &__title {
       @include font('Poppins', 102px, 700);
       line-height: 107px;
-      @media screen and (max-width: 1024px) {
+      margin-bottom: 11px;
+      @media screen and (max-width: 1199px) {
+        font-size: 80px;
+        margin-bottom: 0;
+      }
+      @media screen and (max-width: 834px) {
+        font-size: 56px;
+        line-height: 66px;
+      }
+      @media screen and (max-width: 767px) {
         font-size: 50px;
-        line-height: 81px;
+        line-height: 60px;
+      }
+      @media screen and (max-width: 540px) {
+        line-height: 63px;
       }
     }
     &__subtitle {
       @include font('Inter', 16px, 400);
-      margin-top: 11px;
       line-height: 24px;
       letter-spacing: -0.02em;
-      @media screen and (max-width: 1024px) {
-        margin-top: 4px;
+      @media screen and (max-width: 834px) {
         font-size: 12px;
-        line-height: 21px;
-      }
-      @media screen and (max-width: 768px) {
-        font-size: 14px;
         line-height: 18px;
-        margin-top: 0;
+      }
+      @media screen and (max-width: 767px) {
+        font-size: 14px;
       }
     }
   }

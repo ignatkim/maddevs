@@ -371,11 +371,7 @@
     },
     "CustomerRatesSlice": {
       "default-slice": {
-        "primary": {
-          "background": {
-            "content": "black"
-          }
-        },
+        "primary": {},
         "items": {}
       }
     },
