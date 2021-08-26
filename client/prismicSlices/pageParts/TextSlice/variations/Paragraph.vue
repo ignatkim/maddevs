@@ -1,7 +1,6 @@
 <template>
   <section
     class="paragraph-slice"
-    :style="{ maxWidth }"
     :class="[
       `paragraph-slice-text--${position}`,
     ]"
@@ -12,6 +11,7 @@
         `paragraph-slice-text--${size}`,
         `paragraph-slice-text--${type}`,
       ]"
+      :style="{ maxWidth }"
       :data-aos="animation"
       v-html="text"
     />
