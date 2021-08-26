@@ -82,42 +82,59 @@ export default {
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
+
+        p {
+          text-align: left;
+        }
       }
 
       &--center {
         display: flex;
         align-items: flex-start;
         justify-content: center;
+
+        p {
+          text-align: center;
+        }
       }
 
       &--right {
         display: flex;
         align-items: flex-start;
         justify-content: flex-end;
+
+        p {
+          text-align: right;
+        }
       }
 
       // Sixes
-      &--sm {
+      &--xs {
         @include font('Inter', 16px, 400);
         line-height: 24px;
       }
 
-      &--md {
-        @include font('Inter', 21px, 600);
+      &--sm {
+        @include font('Inter', 21px, 400);
         line-height: 30px;
       }
 
-      &--lg {
-        @include font('Inter', 24px, 600);
+      &--md {
+        @include font('Inter', 24px, 400);
         line-height: 35px;
       }
 
-      &--xs {
-        @include font('Inter', 32px, 600);
+      &--lg {
+        @include font('Inter', 32px, 400);
         line-height: 44px;
       }
 
       &--xl {
+        @include font('Inter', 40px, 600);
+        line-height: 48px;
+      }
+
+      &--xxl {
         @include font('Inter', 60px, 600);
         line-height: 70px;
       }
@@ -131,7 +148,7 @@ export default {
         &::before {
           content: '•';
           display: inline-block;
-          color: #000;
+          color: inherit;
           margin-right: 8px;
           margin-left: 8px;
         }

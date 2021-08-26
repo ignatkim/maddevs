@@ -86,29 +86,29 @@ export default {
         text-align: right;
       }
 
-      &--sm {
+      &--xs {
         @include font('Inter', 21px, 400);
         line-height: 28px;
       }
 
-      &--md {
+      &--sm {
         @include font('Inter', 33px, 600);
         line-height: 43px;
       }
 
-      &--lg {
+      &--md {
         @include font('Inter', 40px, 700);
         line-height: 67px;
       }
 
-      &--xs {
+      &--lg {
         @include font('Inter', 60px, 700);
         line-height: 67px;
       }
 
       &--xl {
         @include font('Inter', 80px, 700);
-        line-height: 84px;
+        line-height: 90px;
       }
     }
   }

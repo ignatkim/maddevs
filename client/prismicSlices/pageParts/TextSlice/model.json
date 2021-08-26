@@ -123,13 +123,13 @@
         },
         "size-xl": {
           "config": {
-            "label": "Size on over big screens",
-            "placeholder": "1440px - 1920px",
+            "label": "1440px - 1920px",
+            "placeholder": "",
             "options": [
+              "xs",
               "sm",
               "md",
               "lg",
-              "xs",
               "xl"
             ]
           },
@@ -137,13 +137,13 @@
         },
         "size-xs": {
           "config": {
-            "label": "Size on monitor screens",
-            "placeholder": "1200px - 1440px",
+            "label": "1200px - 1440px",
+            "placeholder": "",
             "options": [
+              "xs",
               "sm",
               "md",
               "lg",
-              "xs",
               "xl"
             ]
           },
@@ -151,13 +151,13 @@
         },
         "size-lg": {
           "config": {
-            "label": "Size on desktop screens",
-            "placeholder": "1024px - 1200px",
+            "label": "1024px - 1200px",
+            "placeholder": "",
             "options": [
+              "xs",
               "sm",
               "md",
               "lg",
-              "xs",
               "xl"
             ]
           },
@@ -165,13 +165,13 @@
         },
         "size-md": {
           "config": {
-            "label": "Size on tablet screens",
-            "placeholder": "768px - 1024px",
+            "label": "768px - 1024px",
+            "placeholder": "",
             "options": [
+              "xs",
               "sm",
               "md",
               "lg",
-              "xs",
               "xl"
             ]
           },
@@ -179,13 +179,13 @@
         },
         "size-sm": {
           "config": {
-            "label": "Size on mobile screens",
-            "placeholder": "320px - 768px",
+            "label": "320px - 768px",
+            "placeholder": "",
             "options": [
+              "xs",
               "sm",
               "md",
               "lg",
-              "xs",
               "xl"
             ]
           },
@@ -584,70 +584,75 @@
         },
         "size-xl": {
           "config": {
-            "label": "Size on over big screens",
-            "placeholder": "1440px - 1920px",
+            "label": "1440px - 1920px",
+            "placeholder": "",
             "options": [
+              "xs",
               "sm",
               "md",
               "lg",
-              "xs",
-              "xl"
+              "xl",
+              "xxl"
             ]
           },
           "type": "Select"
         },
         "size-xs": {
           "config": {
-            "label": "Size on monitor screens",
-            "placeholder": "1200px - 1440px",
+            "label": "1200px - 1440px",
+            "placeholder": "",
             "options": [
+              "xs",
               "sm",
               "md",
               "lg",
-              "xs",
-              "xl"
+              "xl",
+              "xxl"
             ]
           },
           "type": "Select"
         },
         "size-lg": {
           "config": {
-            "label": "Size on desctop screens",
-            "placeholder": "1024px - 1200px",
+            "label": "1024px - 1200px",
+            "placeholder": "",
             "options": [
+              "xs",
               "sm",
               "md",
               "lg",
-              "xs",
-              "xl"
+              "xl",
+              "xxl"
             ]
           },
           "type": "Select"
         },
         "size-md": {
           "config": {
-            "label": "Size on tablet screens",
-            "placeholder": "768px - 1024px",
+            "label": "768px - 1024px",
+            "placeholder": "",
             "options": [
+              "xs",
               "sm",
               "md",
               "lg",
-              "xs",
-              "xl"
+              "xl",
+              "xxl"
             ]
           },
           "type": "Select"
         },
         "size-sm": {
           "config": {
-            "label": "Size on mobile screens",
-            "placeholder": "320px - 768px",
+            "label": "320px - 768px",
+            "placeholder": "",
             "options": [
+              "xs",
               "sm",
               "md",
               "lg",
-              "xs",
-              "xl"
+              "xl",
+              "xxl"
             ]
           },
           "type": "Select"
