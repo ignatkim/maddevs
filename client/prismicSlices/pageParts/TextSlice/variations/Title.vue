@@ -60,7 +60,7 @@ export default {
 
     size: {
       type: String,
-      default: 'sm',
+      default: '16-px',
     },
   },
 }
@@ -108,7 +108,12 @@ export default {
       }
 
       // Sizes
-      &--24-px {
+      &--16-px {
+        @include font('Inter', 16px, 400);
+        line-height: 24px;
+      }
+
+      &--21-px {
         @include font('Inter', 21px, 400);
         line-height: 28px;
       }
