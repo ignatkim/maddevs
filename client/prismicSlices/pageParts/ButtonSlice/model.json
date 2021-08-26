@@ -61,6 +61,13 @@
             "default_value": "black"
           },
           "type": "Select"
+        },
+        "maxWidth": {
+          "config": {
+            "label": "Max width (px,% or vw)",
+            "placeholder": "300px"
+          },
+          "type": "Text"
         }
       },
       "items": {}
@@ -135,6 +142,13 @@
             "default_value": "black"
           },
           "type": "Select"
+        },
+        "maxWidth": {
+          "config": {
+            "label": "Max width (px,% or vw)",
+            "placeholder": "300px"
+          },
+          "type": "Text"
         }
       },
       "items": {}
@@ -209,6 +223,13 @@
             "default_value": "black"
           },
           "type": "Select"
+        },
+        "maxWidth": {
+          "config": {
+            "label": "Max width (px,% or vw)",
+            "placeholder": "300px"
+          },
+          "type": "Text"
         }
       },
       "items": {}

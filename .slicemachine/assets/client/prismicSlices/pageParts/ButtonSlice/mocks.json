@@ -10,9 +10,10 @@
       "text": "Default red button",
       "link": {
         "link_type": "Web",
-        "url": "http://google.com"
+        "url": "https://slicemachine.dev"
       },
-      "background": "black"
+      "background": "black",
+      "maxWidth": "leverage killer e-business"
     }
   },
   {
@@ -21,15 +22,16 @@
     "slice_type": "button_slice",
     "items": [],
     "primary": {
-      "fullWidth": true,
+      "fullWidth": false,
       "alignment": "right",
-      "color": "grey",
+      "color": "red",
       "text": "Outlined button",
       "link": {
         "link_type": "Web",
-        "url": "https://slicemachine.dev"
+        "url": "http://twitter.com"
       },
-      "background": "white"
+      "background": "grey",
+      "maxWidth": "incubate world-class applications"
     }
   },
   {
@@ -38,15 +40,16 @@
     "slice_type": "button_slice",
     "items": [],
     "primary": {
-      "fullWidth": false,
-      "alignment": "right",
+      "fullWidth": true,
+      "alignment": "left",
       "color": "grey",
       "text": "Link button",
       "link": {
         "link_type": "Web",
         "url": "https://slicemachine.dev"
       },
-      "background": "black"
+      "background": "grey",
+      "maxWidth": "integrate frictionless mindshare"
     }
   }
 ]
