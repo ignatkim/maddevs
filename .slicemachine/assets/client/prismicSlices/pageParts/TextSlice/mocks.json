@@ -18,15 +18,15 @@
     "primary": {
       "colorTheme": "white",
       "title": "Featured projects",
-      "tag": "h6",
+      "tag": "h3",
       "maxWidth": "1028px",
-      "position": "right",
+      "position": "center",
       "animation": "none",
       "size-xl": "80-px",
-      "size-xs": "60-px",
       "size-lg": "40-px",
       "size-md": "33-px",
-      "size-sm": "24-px"
+      "size-sm": "16-px",
+      "size-xs": "60-px"
     }
   },
   {
@@ -65,16 +65,16 @@
     "items": [],
     "primary": {
       "colorTheme": "white",
-      "text": "reintermediate wireless ROI",
-      "maxWidth": "whiteboard user-centric supply-chains",
+      "text": "incentivize user-centric schemas",
+      "maxWidth": "incentivize killer interfaces",
       "position": "right",
       "type": "default",
-      "animation": "zoom-in-left",
+      "animation": "fade-up-right",
       "size-xl": "40-px",
-      "size-xs": "32-px",
       "size-lg": "24-px",
       "size-md": "21-px",
-      "size-sm": "16-px"
+      "size-sm": "16-px",
+      "size-xs": "32-px"
     }
   }
 ]
