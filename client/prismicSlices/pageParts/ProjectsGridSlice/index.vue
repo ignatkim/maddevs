@@ -4,26 +4,16 @@
     :class="colorThemeClass"
   >
     <div class="container">
-      <div
-        v-if="title"
-        class="projects-grid-slice__head"
-      >
-        <h2
-          v-if="title"
-          v-html="formatHtmlText(title)"
-        />
-        <p
-          v-if="subtitle"
-          v-html="formatHtmlText(subtitle)"
-        />
-      </div>
       <div class="projects-grid-slice__content">
         <a
           v-for="project in projects"
           :key="project.name"
           :href="project.link.url"
           target="_blank"
-          :class="`project-card ${displayCardButton ? '' : 'project-card--without-button'}`"
+          :class="[
+            'project-card',
+            displayCardButton ? '' : 'project-card--without-button'
+          ]"
         >
           <div class="project-card__info">
             <img
@@ -37,30 +27,18 @@
           <UIArrowButton v-if="displayCardButton" />
         </a>
       </div>
-      <a
-        v-if="button.text && button.link"
-        :href="button.link.url"
-        target="_blank"
-        class="projects-grid-slice__button"
-      >
-        <button>{{ button.text }}</button>
-      </a>
     </div>
   </section>
 </template>
 
 <script>
 import UIArrowButton from '@/components/shared/UIArrowButton'
-import prismicSlicesMixin from '@/mixins/prismicSlicesMixin'
 
 export default {
   name: 'ProjectsGridSlice',
-
   components: {
     UIArrowButton,
   },
-
-  mixins: [prismicSlicesMixin],
 
   props: {
     slice: {
@@ -75,14 +53,8 @@ export default {
   data() {
     return {
       colorTheme: this.slice.primary.colorTheme,
-      displayCardButton: this.slice.primary.displayCardButton,
-      title: this.slice.primary.title,
-      subtitle: this.slice.primary.subtitle,
       projects: this.slice.items,
-      button: {
-        link: this.slice.primary.buttonLink,
-        text: this.slice.primary.buttonText,
-      },
+      displayCardButton: this.slice.primary.displayCardButton,
     }
   },
 
@@ -98,6 +70,7 @@ export default {
 <style lang="scss" scoped>
 .projects-grid-slice {
   &--white-theme {
+    background-color: $bgcolor--white-primary;
     .project-card {
       background-color: $bgcolor--silver;
       color: $text-color--black-oil;
@@ -117,6 +90,7 @@ export default {
     }
   }
   &--black-theme {
+    background-color: $bgcolor--black;
     .project-card {
       background-color: $bgcolor--black-pale;
       color: $text-color--white-primary;
@@ -135,53 +109,6 @@ export default {
       }
     }
   }
-  &__head {
-    width: 100%;
-    max-width: 1028px;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 85px;
-    @media screen and (max-width: 1024px) {
-      margin-bottom: 83px;
-    }
-    @media screen and (max-width: 768px) {
-      margin-bottom: 50px;
-    }
-    @media screen and (max-width: 485px) {
-      /deep/ br {
-        display: none;
-      }
-    }
-    h2 {
-      @include font('Inter', 80px, 700);
-      line-height: 67px;
-      letter-spacing: -0.013em;
-      @media screen and (max-width: 1024px) {
-        font-size: 60px;
-        line-height: 60px;
-      }
-      @media screen and (max-width: 768px) {
-        font-size: 40px;
-        line-height: 40px;
-      }
-    }
-    p {
-      @include font('Inter', 32px, 400);
-      line-height: 44px;
-      letter-spacing: -0.013em;
-      margin-top: 50px;
-      @media screen and (max-width: 1024px) {
-        margin-top: 29px;
-        font-size: 24px;
-        line-height: 35px;
-      }
-      @media screen and (max-width: 768px) {
-        margin-top: 21px;
-        font-size: 21px;
-        line-height: 30px;
-      }
-    }
-  }
   &__content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -192,14 +119,6 @@ export default {
     @media screen and (max-width: 768px) {
       grid-template-columns: 1fr;
     }
-  }
-  &__button {
-    display: block;
-    margin: 0 auto;
-    margin-top: 50px;
-    width: 100%;
-    max-width: 393px;
-    text-align: center;
   }
 }
 
@@ -218,14 +137,14 @@ export default {
     height: auto;
   }
   &__name {
+    @include font('Inter', 28px, 600);
     margin-top: 27px;
-    font-size: 28px;
     line-height: 32px;
     letter-spacing: -0.013em;
   }
   &__description {
+    @include font('Inter', 17px, 400);
     margin-top: 21px;
-    font-size: 17px;
     line-height: 25px;
     letter-spacing: -0.013em;
   }
