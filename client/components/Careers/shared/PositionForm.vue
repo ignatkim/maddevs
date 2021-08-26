@@ -244,7 +244,7 @@ export default {
       const splitedName = this.name.split(' ')
       const base64File = await this.toBase64(this.cvFile)
       const { userBrowser, userOS, userPlatform } = parseUserAgentForLeads()
-      const { ip = 'Unknown', country_name: country = 'Unknown', city = 'Unknown' } = await getIPInfo()
+      const { ip = 'Unknown', country = 'Unknown', city = 'Unknown' } = await getIPInfo()
 
       return {
         body: {
