@@ -56,18 +56,6 @@ export default {
       default: '',
     },
   },
-
-  head() {
-    return {
-      link: [
-        {
-          rel: 'preload',
-          as: 'image',
-          href: this.image,
-        },
-      ],
-    }
-  },
 }
 </script>
 

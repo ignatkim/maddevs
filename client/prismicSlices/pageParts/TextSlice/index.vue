@@ -3,31 +3,31 @@
     class="text-slice"
     :class="colorThemeClass"
   >
-    <div
-      class="container"
-      :style="{ maxWidth: slice.primary.maxWidth }"
-    >
-      <SimpleText
-        v-if="slice.variation === 'default-slice'"
-        v-bind="slice.primary"
-      />
-      <Title
-        v-else-if="slice.variation === 'title'"
-        v-bind="slice.primary"
-      />
-      <TitleText
-        v-else-if="slice.variation === 'titleText'"
-        v-bind="slice.primary"
-      />
-      <TitleTextButton
-        v-else-if="slice.variation === 'titleTextButton'"
-        v-bind="slice.primary"
-      />
-      <TitleTextList
-        v-else-if="slice.variation === 'titleTextList'"
-        v-bind="slice.primary"
-        :list="slice.items"
-      />
+    <div class="container">
+      <transition name="fade">
+        <SimpleText
+          v-if="slice.variation === 'default-slice'"
+          v-bind="slice.primary"
+        />
+        <Title
+          v-else-if="size && slice.variation === 'title'"
+          :size="size"
+          v-bind="slice.primary"
+        />
+        <TitleText
+          v-else-if="slice.variation === 'titleText'"
+          v-bind="slice.primary"
+        />
+        <TitleTextButton
+          v-else-if="slice.variation === 'titleTextButton'"
+          v-bind="slice.primary"
+        />
+        <Paragraph
+          v-else-if="size && slice.variation === 'paragraph'"
+          :size="size"
+          v-bind="slice.primary"
+        />
+      </transition>
     </div>
   </section>
 </template>
@@ -37,7 +37,7 @@ import Title from './variations/Title'
 import SimpleText from './variations/SimpleText'
 import TitleText from './variations/TitleText'
 import TitleTextButton from './variations/TitleTextButton'
-import TitleTextList from './variations/TitleTextList'
+import Paragraph from './variations/Paragraph'
 
 export default {
   name: 'TextSlice',
@@ -46,7 +46,7 @@ export default {
     SimpleText,
     TitleText,
     TitleTextButton,
-    TitleTextList,
+    Paragraph,
   },
 
   props: {
@@ -59,10 +59,51 @@ export default {
     },
   },
 
+  data() {
+    return {
+      size: null,
+    }
+  },
+
   computed: {
     colorThemeClass() {
       if (this.slice?.primary?.colorTheme === 'white') return 'text-slice--white-theme'
       return 'text-slice--black-theme'
+    },
+  },
+
+  mounted() {
+    this.onResize()
+    window.addEventListener('resize', this.onResize)
+  },
+
+  beforeDestroy() {
+    window.removeEventListener('resize', this.onResize)
+  },
+
+  methods: {
+    onResize() {
+      if (window.innerWidth <= 768) {
+        this.size = this.slice.primary['size-xs']
+        || this.slice.primary['size-sm']
+        || this.slice.primary['size-md']
+        || this.slice.primary['size-lg']
+        || this.slice.primary['size-xl']
+      } if (window.innerWidth > 768 && window.innerWidth <= 1024) {
+        this.size = this.slice.primary['size-sm']
+        || this.slice.primary['size-md']
+        || this.slice.primary['size-lg']
+        || this.slice.primary['size-xl']
+      } if (window.innerWidth > 1024 && window.innerWidth <= 1200) {
+        this.size = this.slice.primary['size-md']
+        || this.slice.primary['size-lg']
+        || this.slice.primary['size-xl']
+      } if (window.innerWidth > 1200 && window.innerWidth <= 1440) {
+        this.size = this.slice.primary['size-lg']
+        this.size = this.slice.primary['size-xl']
+      } if (window.innerWidth > 1440) {
+        this.size = this.slice.primary['size-xl']
+      }
     },
   },
 }
@@ -71,6 +112,7 @@ export default {
 <style lang="scss" scoped>
 .text-slice {
   word-break: break-word;
+
   &--white-theme {
     background-color: $bgcolor--white-primary;
     color: $text-color--black-lighter;
@@ -114,5 +156,16 @@ export default {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: -0.013em;
+}
+
+/deep/ .fade-enter-active,
+.fade-leave-active {
+  transition: all 0.3s;
+}
+
+/deep/ .fade-enter,
+.fade-leave-to {
+  transform: scale(0.95);
+  opacity: 0;
 }
 </style>

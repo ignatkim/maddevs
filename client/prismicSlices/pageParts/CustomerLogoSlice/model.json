@@ -11,47 +11,38 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "Customer Logo Slice",
       "primary": {
-        "title": {
-          "config": {
-            "label": "Title",
-            "placeholder": ""
-          },
-          "type": "Text"
-        },
-        "description": {
-          "config": {
-            "label": "Description",
-            "placeholder": ""
-          },
-          "type": "Text"
-        },
         "colorTheme": {
           "config": {
-            "label": "Theme color",
+            "label": "Background",
             "placeholder": "",
             "options": [
               "white",
               "black"
-            ],
-            "default_value": "white"
+            ]
           },
           "type": "Select"
         },
-        "buttonText": {
+        "animation": {
           "config": {
-            "label": "Button text",
-            "placeholder": ""
+            "label": "Animation list",
+            "placeholder": "Select aos animation",
+            "options": [
+              "fade-up",
+              "fade-down",
+              "fade-right",
+              "fade-left",
+              "fade-up-right",
+              "fade-up-left",
+              "fade-down-righ",
+              "fade-down-left",
+              "zoom-in",
+              "zoom-in-up",
+              "zoom-in-left",
+              "zoom-in-right",
+              "none"
+            ]
           },
-          "type": "Text"
-        },
-        "buttonLink": {
-          "config": {
-            "label": "Button link",
-            "placeholder": "",
-            "select": "web",
-            "allowTargetBlank": false
-          },
-          "type": "Link"
+          "type": "Select"
         }
       },
       "items": {

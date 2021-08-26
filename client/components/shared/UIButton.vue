@@ -1,16 +1,19 @@
 <template>
-  <button
+  <Component
+    :is="isTag"
     v-WaveAnimation="!disabled"
+    :href="linkTo"
     class="ui-button"
     :class="{
       'ui-button--disabled': disabled,
       'ui-button--full-width': fullWidth,
     }"
+    :disabled="disabled"
     @click="handleClick"
   >
     <span v-if="loading">Waiting...</span>
     <slot v-else />
-  </button>
+  </Component>
 </template>
 
 <script>
@@ -33,9 +36,31 @@ export default {
       default: false,
     },
 
+    link: {
+      type: Boolean,
+      default: false,
+    },
+
+    to: {
+      type: String,
+      default: '/',
+    },
+
     fullWidth: {
       type: Boolean,
       default: false,
+    },
+  },
+
+  computed: {
+    isTag() {
+      if (this.link) return 'a'
+      return 'button'
+    },
+
+    linkTo() {
+      if (this.link) return this.to
+      return null
     },
   },
 
@@ -50,6 +75,10 @@ export default {
 <style lang="scss" scoped>
 .ui-button {
   @include font('Inter', 16px, 600);
+  width: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid $border-color--red-opacity;
   background-color: $bgcolor--red;
   border-radius: 4px;
@@ -73,6 +102,7 @@ export default {
   }
 
   &--full-width {
+    display: flex;
     width: 100%;
   }
 

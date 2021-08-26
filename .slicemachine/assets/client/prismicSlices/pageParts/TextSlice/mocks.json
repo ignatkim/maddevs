@@ -5,7 +5,6 @@
     "slice_type": "text_slice",
     "items": [],
     "primary": {
-      "large": false,
       "text": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.",
       "colorTheme": "white",
       "maxWidth": "1028px"
@@ -17,9 +16,17 @@
     "slice_type": "text_slice",
     "items": [],
     "primary": {
-      "title": "Featured projects",
       "colorTheme": "white",
-      "maxWidth": "1028px"
+      "title": "Featured projects",
+      "tag": "h3",
+      "maxWidth": "1028px",
+      "position": "center",
+      "animation": "none",
+      "size-xl": "80-px",
+      "size-lg": "40-px",
+      "size-md": "33-px",
+      "size-sm": "16-px",
+      "size-xs": "60-px"
     }
   },
   {
@@ -52,22 +59,22 @@
     }
   },
   {
-    "variation": "titleTextList",
-    "name": "Title + Text + List",
+    "variation": "paragraph",
+    "name": "Paragraph",
     "slice_type": "text_slice",
-    "items": [
-      {
-        "listItem": "revolutionize extensible bandwidth"
-      },
-      {
-        "listItem": "reintermediate real-time solutions"
-      }
-    ],
+    "items": [],
     "primary": {
-      "title": "Software <br /> development",
-      "text": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.",
       "colorTheme": "white",
-      "maxWidth": "1028px"
+      "text": "incentivize user-centric schemas",
+      "maxWidth": "incentivize killer interfaces",
+      "position": "right",
+      "type": "default",
+      "animation": "fade-up-right",
+      "size-xl": "40-px",
+      "size-lg": "24-px",
+      "size-md": "21-px",
+      "size-sm": "16-px",
+      "size-xs": "32-px"
     }
   }
 ]

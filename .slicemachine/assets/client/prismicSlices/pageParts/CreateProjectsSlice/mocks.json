@@ -5,7 +5,8 @@
     "slice_type": "create_projects_slice",
     "items": [],
     "primary": {
-      "background": "black"
+      "background": "black",
+      "animation": "none"
     }
   }
 ]

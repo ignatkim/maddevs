@@ -3,7 +3,10 @@
     class="card-grid-with-list-slice"
     :class="colorThemeClass"
   >
-    <div class="container">
+    <div
+      class="container"
+      :data-aos="animation"
+    >
       <ul>
         <li
           v-for="(item, i) of items"
@@ -26,12 +29,30 @@
 </template>
 
 <script>
+import animateOnScrollMixin from '@/mixins/animateOnScrollMixin'
+
 export default {
   name: 'CardGridWithListSlice',
+
+  mixins: [
+    animateOnScrollMixin({
+      offset: 200,
+      delay: 50,
+      anchorPlacement: 'top-center',
+      duration: 1000,
+      once: true,
+    }),
+  ],
+
   props: {
     colorTheme: {
       type: String,
       default: 'white',
+    },
+
+    animation: {
+      type: String,
+      default: 'none',
     },
 
     items: {

@@ -19,7 +19,18 @@
             "content": false
           }
         },
-        "primary": {}
+        "primary": {
+          "animation": {
+            "content": "none"
+          }
+        }
+      },
+      "default-slice": {
+        "primary": {
+          "animation": {
+            "content": "none"
+          }
+        }
       }
     },
     "CtaBannerSlice": {
@@ -27,6 +38,9 @@
         "primary": {
           "name": {
             "content": "f"
+          },
+          "animation": {
+            "content": "none"
           }
         }
       }
@@ -34,17 +48,8 @@
     "CustomerLogoSlice": {
       "default": {
         "primary": {
-          "title": {
-            "content": "Our valued customers"
-          },
-          "description": {
-            "content": "Due to  our NDAs and confidentiality requirements, we cannot disclose details for all of our customers. These are a few of the companies we work with."
-          },
-          "buttonText": {
-            "content": "See the case studies"
-          },
-          "buttonLink": {
-            "content": "https://maddevs.io/case-studies/"
+          "animation": {
+            "content": "none"
           }
         },
         "items": {}
@@ -74,6 +79,21 @@
           },
           "maxWidth": {
             "content": "1028px"
+          },
+          "size-xl": {
+            "content": "80-px"
+          },
+          "size-xs": {
+            "content": "60-px"
+          },
+          "size-lg": {
+            "content": "40-px"
+          },
+          "size-md": {
+            "content": "33-px"
+          },
+          "size-sm": {
+            "content": "16-px"
           }
         }
       },
@@ -131,6 +151,72 @@
           }
         },
         "items": {}
+      },
+      "titleH5": {
+        "primary": {
+          "title": {
+            "content": "We encourage the best practices in sustainability"
+          }
+        }
+      },
+      "titleH5Text": {
+        "primary": {
+          "title": {
+            "content": "We encourage the best practices in sustainability"
+          },
+          "text": {
+            "content": "Mad Devs takes full responsibility for the projects we have been involved in. It includes not only the quality of a product but also the responsibility toward the environment and people.  Therefore, the environmental and social sustainability compliances form a crucial component of our business strategy. We are committed to comply with legal regulations and official requirements and encourage the best sustainability practices. We understand sustainability as a path to continuous improvement of our processes and services for the purposes of environmental protection, the provision of occupational health, and meeting safety requirements. "
+          }
+        }
+      },
+      "redTextSimpleText": {
+        "primary": {
+          "title": {
+            "content": "Our Primary Areas of Sustainable Enterprise"
+          },
+          "text": {
+            "content": "We build our sustainability efforts around three primary areas: social, economic, and ecological sustainability."
+          }
+        }
+      },
+      "redTextSimpleTextMd": {
+        "primary": {
+          "title": {
+            "content": "Our Primary Areas of Sustainable Enterprise"
+          },
+          "text": {
+            "content": "We build our sustainability efforts around three primary areas: social, economic, and ecological sustainability."
+          }
+        }
+      },
+      "simpleTextMedium": {
+        "primary": {
+          "text": {
+            "content": "We build our sustainability efforts around three primary areas: social, economic, and ecological sustainability."
+          }
+        }
+      },
+      "paragraph": {
+        "primary": {
+          "type": {
+            "content": "default"
+          },
+          "size-xs": {
+            "content": "32-px"
+          },
+          "size-xl": {
+            "content": "40-px"
+          },
+          "size-sm": {
+            "content": "16-px"
+          },
+          "size-md": {
+            "content": "21-px"
+          },
+          "size-lg": {
+            "content": "24-px"
+          }
+        }
       }
     },
     "StartScreen": {
@@ -208,6 +294,9 @@
         "primary": {
           "background": {
             "content": "black"
+          },
+          "animation": {
+            "content": "none"
           }
         }
       }
@@ -215,20 +304,20 @@
     "SpacerSlice": {
       "default-slice": {
         "primary": {
-          "height": {
-            "content": "100px"
+          "size-sm": {
+            "content": "20px"
           },
-          "height-xl": {
-            "content": "50px"
-          },
-          "height-lg": {
-            "content": "40px"
-          },
-          "height-md": {
+          "size-md": {
             "content": "30px"
           },
-          "height-sm": {
-            "content": "20px"
+          "size-lg": {
+            "content": "40px"
+          },
+          "size-xl": {
+            "content": "50px"
+          },
+          "default-size": {
+            "content": "100px"
           }
         }
       }
@@ -273,6 +362,9 @@
         "primary": {
           "title": {
             "content": "Customer Testimonials"
+          },
+          "animation": {
+            "content": "none"
           }
         }
       }
@@ -300,6 +392,22 @@
             "content": "Quick Project Start"
           }
         }
+      }
+    },
+    "TeamCards": {
+      "default-slice": {
+        "primary": {
+          "animation": {
+            "content": "none"
+          }
+        },
+        "items": {}
+      }
+    },
+    "ContactsSlice": {
+      "default-slice": {
+        "primary": {},
+        "items": {}
       }
     }
   }

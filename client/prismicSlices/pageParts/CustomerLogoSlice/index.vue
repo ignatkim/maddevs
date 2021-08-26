@@ -5,23 +5,9 @@
   >
     <div class="container">
       <div
-        v-if="title || description"
-        class="customer-logo-slice_head"
+        :data-aos="slice.primary.animation"
+        class="customer-logo-slice_list"
       >
-        <h2
-          v-if="title"
-          class="customer-logo-slice_title"
-        >
-          {{ title }}
-        </h2>
-        <p
-          v-if="description"
-          class="customer-logo-slice_description"
-        >
-          {{ description }}
-        </p>
-      </div>
-      <div class="customer-logo-slice_list">
         <div
           v-for="(customer, i) of customers"
           :key="`customer-logo-slice-${i}`"
@@ -35,26 +21,23 @@
           >
         </div>
       </div>
-      <a
-        v-if="button.text && button.link"
-        :href="button.link.url"
-        target="_blank"
-        class="customer-logo-slice_link"
-      >
-        <UIButton full-width>{{ button.text }}</UIButton>
-      </a>
     </div>
   </section>
 </template>
 
 <script>
-import UIButton from '@/components/shared/UIButton'
+import animateOnScrollMixin from '@/mixins/animateOnScrollMixin'
 
 export default {
   name: 'CustomerLogoSlice',
-  components: {
-    UIButton,
-  },
+
+  mixins: [animateOnScrollMixin({
+    offset: 200,
+    delay: 50,
+    anchorPlacement: 'top-center',
+    duration: 1000,
+    once: true,
+  })],
 
   props: {
     slice: {
@@ -93,42 +76,6 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  &_head {
-    width: 100%;
-    max-width: 820px;
-    margin: 0 auto 62px;
-    @media screen and (max-width: 1024px) {
-      margin: 0 auto 45px;
-    }
-  }
-
-  &_title,
-  &_description {
-    text-align: center;
-  }
-
-  &_title {
-    @include font('Poppins', 60px, 700);
-    line-height: 73px;
-    letter-spacing: -0.04em;
-    @media screen and (max-width: 1024px) {
-      font-size: 40px;
-      line-height: 40px;
-    }
-  }
-
-  &_description {
-    font-size: 20px;
-    line-height: 28px;
-    letter-spacing: -0.013em;
-    margin-top: 14px;
-    @media screen and (max-width: 1024px) {
-      margin-top: 24px;
-      font-size: 16px;
-      line-height: 21px;
-    }
   }
 
   &_list {

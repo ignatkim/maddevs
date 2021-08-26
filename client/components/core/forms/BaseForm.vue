@@ -9,7 +9,7 @@
         name="fullName"
         :show-label="useLabels"
         label="Full Name"
-        placeholder="John Smith"
+        :placeholder="fullNamePlaceholder"
         :required="fullnameRequired"
         :validation="$v.fullName"
       />
@@ -19,7 +19,7 @@
         name="company"
         :show-label="useLabels"
         label="Company"
-        placeholder="My Awesome Company, Inc."
+        :placeholder="companyPlaceholder"
         :required="true"
         :validation="$v.company"
       />
@@ -28,7 +28,7 @@
         name="email"
         :show-label="useLabels"
         label="Work Email"
-        placeholder="your@mail.com"
+        :placeholder="emailPlaceholder"
         :required="emailRequired"
         :validation="$v.email"
       />
@@ -38,7 +38,7 @@
         :value="phoneNumber"
         :show-label="useLabels"
         label="Phone Number"
-        placeholder="Phone number"
+        :placeholder="phonePlaceholder"
         :required="false"
         :validation="$v.phoneNumber"
         @input="phoneChangeHandler"
@@ -49,7 +49,7 @@
         name="description"
         :show-label="useLabels"
         label="Project description"
-        placeholder="Describe your project..."
+        :placeholder="descriptionPlaceholder"
         :required="false"
         :validation="$v.description"
         element-type="textarea"
@@ -186,6 +186,31 @@ export default {
     emailRequired: {
       type: Boolean,
       default: true,
+    },
+
+    fullNamePlaceholder: {
+      type: String,
+      default: 'John Smith',
+    },
+
+    companyPlaceholder: {
+      type: String,
+      default: 'My Awesome Company, Inc.',
+    },
+
+    emailPlaceholder: {
+      type: String,
+      default: 'your@mail.com',
+    },
+
+    phonePlaceholder: {
+      type: String,
+      default: 'Phone number',
+    },
+
+    descriptionPlaceholder: {
+      type: String,
+      default: 'Describe your project...',
     },
   },
 
