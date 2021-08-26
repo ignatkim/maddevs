@@ -117,7 +117,7 @@ export const team = [
   },
   {
     name: 'Andrew Minkin',
-    position: 'CTO, Mad Devs',
+    position: 'CTO',
     image: {
       file: 'andrew-minkin',
     },
