@@ -37,7 +37,7 @@ export const _Title = () => ({
   },
   data() {
     return {
-      mock: {"variation":"title","name":"Title","slice_type":"text_slice","items":[],"primary":{"colorTheme":"white","title":"Featured projects","tag":"h6","maxWidth":"1028px","position":"center","animation":"fade-up-right","size-xl":"xl","size-xs":"lg","size-lg":"md","size-md":"sm","size-sm":"xs"},"id":"_Title"}
+      mock: {"variation":"title","name":"Title","slice_type":"text_slice","items":[],"primary":{"colorTheme":"white","title":"Featured projects","tag":"h6","maxWidth":"1028px","position":"right","animation":"none","size-xl":"80-px","size-xs":"60-px","size-lg":"40-px","size-md":"33-px","size-sm":"24-px"},"id":"_Title"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -82,25 +82,6 @@ export const _TitleTextButton = () => ({
 })
 _TitleTextButton.storyName = 'Title + Text + Button'
 
-export const _SimpleTextMedium = () => ({
-  components: {
-    MyComponent,
-    SliceZone
-  },
-  methods: {
-    resolve() {
-      return MyComponent
-    }
-  },
-  data() {
-    return {
-      mock: {"variation":"simpleTextMedium","name":"Simple Text Medium","slice_type":"text_slice","items":[],"primary":{"text":"We build our sustainability efforts around three primary areas: social, economic, and ecological sustainability.","colorTheme":"black","maxWidth":"engage e-business relationships"},"id":"_SimpleTextMedium"}
-    }
-  },
-  template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
-})
-_SimpleTextMedium.storyName = 'Simple Text Medium'
-
 export const _Paragraph = () => ({
   components: {
     MyComponent,
@@ -113,7 +94,7 @@ export const _Paragraph = () => ({
   },
   data() {
     return {
-      mock: {"variation":"paragraph","name":"Paragraph","slice_type":"text_slice","items":[],"primary":{"colorTheme":"black","text":"leverage value-added markets","maxWidth":"envisioneer B2C architectures","position":"left","type":"default","animation":"fade-up-right","size-xl":"xl","size-xs":"xs","size-lg":"sm","size-md":"xs","size-sm":"md"},"id":"_Paragraph"}
+      mock: {"variation":"paragraph","name":"Paragraph","slice_type":"text_slice","items":[],"primary":{"colorTheme":"white","text":"reintermediate wireless ROI","maxWidth":"whiteboard user-centric supply-chains","position":"right","type":"default","animation":"zoom-in-left","size-xl":"40-px","size-xs":"32-px","size-lg":"24-px","size-md":"21-px","size-sm":"16-px"},"id":"_Paragraph"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'

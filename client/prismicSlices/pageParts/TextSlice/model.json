@@ -126,11 +126,11 @@
             "label": "1440px - 1920px",
             "placeholder": "",
             "options": [
-              "xs",
-              "sm",
-              "md",
-              "lg",
-              "xl"
+              "24-px",
+              "33-px",
+              "40-px",
+              "60-px",
+              "80-px"
             ]
           },
           "type": "Select"
@@ -140,11 +140,11 @@
             "label": "1200px - 1440px",
             "placeholder": "",
             "options": [
-              "xs",
-              "sm",
-              "md",
-              "lg",
-              "xl"
+              "24-px",
+              "33-px",
+              "40-px",
+              "60-px",
+              "80-px"
             ]
           },
           "type": "Select"
@@ -154,11 +154,11 @@
             "label": "1024px - 1200px",
             "placeholder": "",
             "options": [
-              "xs",
-              "sm",
-              "md",
-              "lg",
-              "xl"
+              "24-px",
+              "33-px",
+              "40-px",
+              "60-px",
+              "80-px"
             ]
           },
           "type": "Select"
@@ -168,11 +168,11 @@
             "label": "768px - 1024px",
             "placeholder": "",
             "options": [
-              "xs",
-              "sm",
-              "md",
-              "lg",
-              "xl"
+              "24-px",
+              "33-px",
+              "40-px",
+              "60-px",
+              "80-px"
             ]
           },
           "type": "Select"
@@ -182,11 +182,11 @@
             "label": "320px - 768px",
             "placeholder": "",
             "options": [
-              "xs",
-              "sm",
-              "md",
-              "lg",
-              "xl"
+              "24-px",
+              "33-px",
+              "40-px",
+              "60-px",
+              "80-px"
             ]
           },
           "type": "Select"
@@ -378,12 +378,12 @@
             "label": "1440px - 1920px",
             "placeholder": "",
             "options": [
-              "xs",
-              "sm",
-              "md",
-              "lg",
-              "xl",
-              "xxl"
+              "16-px",
+              "21-px",
+              "24-px",
+              "32-px",
+              "40-px",
+              "60-px"
             ]
           },
           "type": "Select"
@@ -393,12 +393,12 @@
             "label": "1200px - 1440px",
             "placeholder": "",
             "options": [
-              "xs",
-              "sm",
-              "md",
-              "lg",
-              "xl",
-              "xxl"
+              "16-px",
+              "21-px",
+              "24-px",
+              "32-px",
+              "40-px",
+              "60-px"
             ]
           },
           "type": "Select"
@@ -408,12 +408,12 @@
             "label": "1024px - 1200px",
             "placeholder": "",
             "options": [
-              "xs",
-              "sm",
-              "md",
-              "lg",
-              "xl",
-              "xxl"
+              "16-px",
+              "21-px",
+              "24-px",
+              "32-px",
+              "40-px",
+              "60-px"
             ]
           },
           "type": "Select"
@@ -423,12 +423,12 @@
             "label": "768px - 1024px",
             "placeholder": "",
             "options": [
-              "xs",
-              "sm",
-              "md",
-              "lg",
-              "xl",
-              "xxl"
+              "16-px",
+              "21-px",
+              "24-px",
+              "32-px",
+              "40-px",
+              "60-px"
             ]
           },
           "type": "Select"
@@ -438,12 +438,12 @@
             "label": "320px - 768px",
             "placeholder": "",
             "options": [
-              "xs",
-              "sm",
-              "md",
-              "lg",
-              "xl",
-              "xxl"
+              "16-px",
+              "21-px",
+              "24-px",
+              "32-px",
+              "40-px",
+              "60-px"
             ]
           },
           "type": "Select"

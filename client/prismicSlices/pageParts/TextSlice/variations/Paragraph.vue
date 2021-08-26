@@ -109,32 +109,32 @@ export default {
       }
 
       // Sixes
-      &--xs {
+      &--16-px {
         @include font('Inter', 16px, 400);
         line-height: 24px;
       }
 
-      &--sm {
+      &--21-px {
         @include font('Inter', 21px, 400);
         line-height: 30px;
       }
 
-      &--md {
+      &--24-px {
         @include font('Inter', 24px, 400);
         line-height: 35px;
       }
 
-      &--lg {
+      &--32-px {
         @include font('Inter', 32px, 400);
         line-height: 44px;
       }
 
-      &--xl {
+      &--40-px {
         @include font('Inter', 40px, 600);
         line-height: 48px;
       }
 
-      &--xxl {
+      &--60-px {
         @include font('Inter', 60px, 600);
         line-height: 70px;
       }
