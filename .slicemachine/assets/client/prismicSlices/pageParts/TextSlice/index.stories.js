@@ -18,7 +18,7 @@ export const _DefaultSlice = () => ({
   },
   data() {
     return {
-      mock: {"variation":"default-slice","name":"Default slice","slice_type":"text_slice","items":[],"primary":{"large":true,"text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","maxWidth":"1028px"},"id":"_DefaultSlice"}
+      mock: {"variation":"default-slice","name":"Default slice","slice_type":"text_slice","items":[],"primary":{"text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","maxWidth":"1028px"},"id":"_DefaultSlice"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -37,7 +37,7 @@ export const _Title = () => ({
   },
   data() {
     return {
-      mock: {"variation":"title","name":"Title","slice_type":"text_slice","items":[],"primary":{"colorTheme":"white","title":"Featured projects","tag":"h2","maxWidth":"1028px","size":"lg","position":"center","animation":"fade-up-left"},"id":"_Title"}
+      mock: {"variation":"title","name":"Title","slice_type":"text_slice","items":[],"primary":{"colorTheme":"white","title":"Featured projects","tag":"h3","maxWidth":"1028px","position":"center","animation":"none","size-xl":"80-px","size-lg":"40-px","size-md":"33-px","size-sm":"16-px","size-xs":"60-px"},"id":"_Title"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -82,101 +82,6 @@ export const _TitleTextButton = () => ({
 })
 _TitleTextButton.storyName = 'Title + Text + Button'
 
-export const _TitleTextList = () => ({
-  components: {
-    MyComponent,
-    SliceZone
-  },
-  methods: {
-    resolve() {
-      return MyComponent
-    }
-  },
-  data() {
-    return {
-      mock: {"variation":"titleTextList","name":"Title + Text + List","slice_type":"text_slice","items":[{"listItem":"transform cross-platform platforms"},{"listItem":"aggregate back-end e-business"},{"listItem":"grow turn-key deliverables"}],"primary":{"title":"Software <br /> development","text":"A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.","colorTheme":"white","maxWidth":"1028px"},"id":"_TitleTextList"}
-    }
-  },
-  template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
-})
-_TitleTextList.storyName = 'Title + Text + List'
-
-export const _TitleH5 = () => ({
-  components: {
-    MyComponent,
-    SliceZone
-  },
-  methods: {
-    resolve() {
-      return MyComponent
-    }
-  },
-  data() {
-    return {
-      mock: {"variation":"titleH5","name":"Title H5","slice_type":"text_slice","items":[],"primary":{"title":"We encourage the best practices in sustainability","colorTheme":"white","maxWidth":"deploy clicks-and-mortar architectures"},"id":"_TitleH5"}
-    }
-  },
-  template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
-})
-_TitleH5.storyName = 'Title H5'
-
-export const _TitleH5Text = () => ({
-  components: {
-    MyComponent,
-    SliceZone
-  },
-  methods: {
-    resolve() {
-      return MyComponent
-    }
-  },
-  data() {
-    return {
-      mock: {"variation":"titleH5Text","name":"Title H5 + Text","slice_type":"text_slice","items":[],"primary":{"title":"We encourage the best practices in sustainability","text":"Mad Devs takes full responsibility for the projects we have been involved in. It includes not only the quality of a product but also the responsibility toward the environment and people.  Therefore, the environmental and social sustainability compliances form a crucial component of our business strategy. We are committed to comply with legal regulations and official requirements and encourage the best sustainability practices. We understand sustainability as a path to continuous improvement of our processes and services for the purposes of environmental protection, the provision of occupational health, and meeting safety requirements. ","colorTheme":"white","maxWidth":"matrix rich e-services"},"id":"_TitleH5Text"}
-    }
-  },
-  template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
-})
-_TitleH5Text.storyName = 'Title H5 + Text'
-
-export const _RedTextSimpleTextMedium = () => ({
-  components: {
-    MyComponent,
-    SliceZone
-  },
-  methods: {
-    resolve() {
-      return MyComponent
-    }
-  },
-  data() {
-    return {
-      mock: {"variation":"redTextSimpleTextMedium","name":"Red Text + Simple Text Medium","slice_type":"text_slice","items":[],"primary":{"title":"expedite scalable infrastructures","text":"facilitate e-business networks","colorTheme":"white","maxWidth":"disintermediate strategic initiatives"},"id":"_RedTextSimpleTextMedium"}
-    }
-  },
-  template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
-})
-_RedTextSimpleTextMedium.storyName = 'Red Text + Simple Text Medium'
-
-export const _SimpleTextMedium = () => ({
-  components: {
-    MyComponent,
-    SliceZone
-  },
-  methods: {
-    resolve() {
-      return MyComponent
-    }
-  },
-  data() {
-    return {
-      mock: {"variation":"simpleTextMedium","name":"Simple Text Medium","slice_type":"text_slice","items":[],"primary":{"text":"We build our sustainability efforts around three primary areas: social, economic, and ecological sustainability.","colorTheme":"black","maxWidth":"synergize enterprise eyeballs"},"id":"_SimpleTextMedium"}
-    }
-  },
-  template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
-})
-_SimpleTextMedium.storyName = 'Simple Text Medium'
-
 export const _Paragraph = () => ({
   components: {
     MyComponent,
@@ -189,7 +94,7 @@ export const _Paragraph = () => ({
   },
   data() {
     return {
-      mock: {"variation":"paragraph","name":"Paragraph","slice_type":"text_slice","items":[],"primary":{"colorTheme":"white","text":"engineer front-end e-markets","maxWidth":"strategize bricks-and-clicks ROI","size":"sm","position":"right","animation":"fade-right"},"id":"_Paragraph"}
+      mock: {"variation":"paragraph","name":"Paragraph","slice_type":"text_slice","items":[],"primary":{"colorTheme":"white","text":"incentivize user-centric schemas","maxWidth":"incentivize killer interfaces","position":"right","type":"default","animation":"fade-up-right","size-xl":"40-px","size-lg":"24-px","size-md":"21-px","size-sm":"16-px","size-xs":"32-px"},"id":"_Paragraph"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'

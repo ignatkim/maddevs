@@ -20,10 +20,10 @@
         >
           <div class="card-grid-slice__item-info">
             <h3
-              v-html="formatHtmlText(item.title)"
+              v-html="item.title"
             />
             <p
-              v-html="formatHtmlText(item.description)"
+              v-html="item.description"
             />
             <UIArrowButton
               color="black"
@@ -45,7 +45,6 @@
 
 <script>
 import UIArrowButton from '@/components/shared/UIArrowButton'
-import prismicSlicesMixin from '@/mixins/prismicSlicesMixin'
 import animateOnScrollMixin from '@/mixins/animateOnScrollMixin'
 
 export default {
@@ -55,14 +54,15 @@ export default {
     UIArrowButton,
   },
 
-  mixins: [animateOnScrollMixin({
-    offset: 200,
-    delay: 50,
-    anchorPlacement: 'top-center',
-    duration: 1000,
-    once: true,
-  }),
-  prismicSlicesMixin],
+  mixins: [
+    animateOnScrollMixin({
+      offset: 200,
+      delay: 50,
+      anchorPlacement: 'top-center',
+      duration: 1000,
+      once: true,
+    }),
+  ],
 
   props: {
     colorTheme: {

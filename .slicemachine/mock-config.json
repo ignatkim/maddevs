@@ -80,8 +80,20 @@
           "maxWidth": {
             "content": "1028px"
           },
-          "size": {
-            "content": "lg"
+          "size-xl": {
+            "content": "80-px"
+          },
+          "size-xs": {
+            "content": "60-px"
+          },
+          "size-lg": {
+            "content": "40-px"
+          },
+          "size-md": {
+            "content": "33-px"
+          },
+          "size-sm": {
+            "content": "16-px"
           }
         }
       },
@@ -185,7 +197,26 @@
         }
       },
       "paragraph": {
-        "primary": {}
+        "primary": {
+          "type": {
+            "content": "default"
+          },
+          "size-xs": {
+            "content": "32-px"
+          },
+          "size-xl": {
+            "content": "40-px"
+          },
+          "size-sm": {
+            "content": "16-px"
+          },
+          "size-md": {
+            "content": "21-px"
+          },
+          "size-lg": {
+            "content": "24-px"
+          }
+        }
       }
     },
     "StartScreen": {

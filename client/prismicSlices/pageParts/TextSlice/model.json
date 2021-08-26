@@ -11,15 +11,6 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "TextSlice",
       "primary": {
-        "large": {
-          "config": {
-            "label": "Size",
-            "placeholder_false": "normal",
-            "placeholder_true": "large",
-            "default_value": false
-          },
-          "type": "Boolean"
-        },
         "text": {
           "config": {
             "label": "Text",
@@ -96,20 +87,6 @@
           },
           "type": "Text"
         },
-        "size": {
-          "config": {
-            "label": "Header size",
-            "placeholder": "",
-            "options": [
-              "sm",
-              "md",
-              "lg",
-              "xs",
-              "xl"
-            ]
-          },
-          "type": "Select"
-        },
         "position": {
           "config": {
             "label": "Title position",
@@ -140,6 +117,81 @@
               "zoom-in-left",
               "zoom-in-right",
               "none"
+            ]
+          },
+          "type": "Select"
+        },
+        "size-xl": {
+          "config": {
+            "label": "1440px - 1920px",
+            "placeholder": "",
+            "options": [
+              "16-px",
+              "24-px",
+              "33-px",
+              "40-px",
+              "60-px",
+              "80-px"
+            ]
+          },
+          "type": "Select"
+        },
+        "size-lg": {
+          "config": {
+            "label": "1200px - 1440px",
+            "placeholder": "",
+            "options": [
+              "16-px",
+              "24-px",
+              "33-px",
+              "40-px",
+              "60-px",
+              "80-px"
+            ]
+          },
+          "type": "Select"
+        },
+        "size-md": {
+          "config": {
+            "label": "1024px - 1200px",
+            "placeholder": "",
+            "options": [
+              "16-px",
+              "24-px",
+              "33-px",
+              "40-px",
+              "60-px",
+              "80-px"
+            ]
+          },
+          "type": "Select"
+        },
+        "size-sm": {
+          "config": {
+            "label": "768px - 1024px",
+            "placeholder": "",
+            "options": [
+              "21-px",
+              "33-px",
+              "40-px",
+              "60-px",
+              "80-px",
+              "16-px"
+            ]
+          },
+          "type": "Select"
+        },
+        "size-xs": {
+          "config": {
+            "label": "320px - 768px",
+            "placeholder": "",
+            "options": [
+              "16-px",
+              "24-px",
+              "33-px",
+              "40-px",
+              "60-px",
+              "80-px"
             ]
           },
           "type": "Select"
@@ -250,215 +302,6 @@
       "items": {}
     },
     {
-      "id": "titleTextList",
-      "name": "Title + Text + List",
-      "docURL": "...",
-      "version": "sktwi1xtmkfgx8626",
-      "description": "TextSlice",
-      "primary": {
-        "title": {
-          "config": {
-            "label": "Title",
-            "placeholder": ""
-          },
-          "type": "Text"
-        },
-        "text": {
-          "config": {
-            "label": "Text",
-            "placeholder": ""
-          },
-          "type": "Text"
-        },
-        "colorTheme": {
-          "config": {
-            "label": "Color theme",
-            "placeholder": "",
-            "options": [
-              "black",
-              "white"
-            ],
-            "default_value": "black"
-          },
-          "type": "Select"
-        },
-        "maxWidth": {
-          "config": {
-            "label": "Max width (px,% or vw)",
-            "placeholder": "1028px"
-          },
-          "type": "Text"
-        }
-      },
-      "items": {
-        "listItem": {
-          "config": {
-            "label": "List item",
-            "placeholder": ""
-          },
-          "type": "Text"
-        }
-      }
-    },
-    {
-      "id": "titleH5",
-      "name": "Title H5",
-      "docURL": "...",
-      "version": "sktwi1xtmkfgx8626",
-      "description": "TextSlice",
-      "primary": {
-        "title": {
-          "config": {
-            "label": "Title",
-            "placeholder": ""
-          },
-          "type": "Text"
-        },
-        "colorTheme": {
-          "config": {
-            "label": "Color theme",
-            "placeholder": "",
-            "options": [
-              "white",
-              "black"
-            ],
-            "default_value": "white"
-          },
-          "type": "Select"
-        },
-        "maxWidth": {
-          "config": {
-            "label": "Max width (px,% or vw)",
-            "placeholder": "1028px"
-          },
-          "type": "Text"
-        }
-      },
-      "items": {}
-    },
-    {
-      "id": "titleH5Text",
-      "name": "Title H5 + Text",
-      "docURL": "...",
-      "version": "sktwi1xtmkfgx8626",
-      "description": "TextSlice",
-      "primary": {
-        "title": {
-          "config": {
-            "label": "Title",
-            "placeholder": ""
-          },
-          "type": "Text"
-        },
-        "text": {
-          "config": {
-            "label": "Text",
-            "placeholder": ""
-          },
-          "type": "Text"
-        },
-        "colorTheme": {
-          "config": {
-            "label": "Color theme",
-            "placeholder": "",
-            "options": [
-              "white",
-              "black"
-            ],
-            "default_value": "white"
-          },
-          "type": "Select"
-        },
-        "maxWidth": {
-          "config": {
-            "label": "Max width (px,% or vw)",
-            "placeholder": "1028px"
-          },
-          "type": "Text"
-        }
-      },
-      "items": {}
-    },
-    {
-      "id": "redTextSimpleTextMedium",
-      "name": "Red Text + Simple Text Medium",
-      "docURL": "...",
-      "version": "sktwi1xtmkfgx8626",
-      "description": "TextSlice",
-      "primary": {
-        "title": {
-          "config": {
-            "label": "Title",
-            "placeholder": ""
-          },
-          "type": "Text"
-        },
-        "text": {
-          "config": {
-            "label": "Text",
-            "placeholder": ""
-          },
-          "type": "Text"
-        },
-        "colorTheme": {
-          "config": {
-            "label": "Color theme",
-            "placeholder": "",
-            "options": [
-              "white",
-              "black"
-            ],
-            "default_value": "white"
-          },
-          "type": "Select"
-        },
-        "maxWidth": {
-          "config": {
-            "label": "Max width (px,% or vw)",
-            "placeholder": "1028px"
-          },
-          "type": "Text"
-        }
-      },
-      "items": {}
-    },
-    {
-      "id": "simpleTextMedium",
-      "name": "Simple Text Medium",
-      "docURL": "...",
-      "version": "sktwi1xtmkfgx8626",
-      "description": "TextSlice",
-      "primary": {
-        "text": {
-          "config": {
-            "label": "Text",
-            "placeholder": ""
-          },
-          "type": "Text"
-        },
-        "colorTheme": {
-          "config": {
-            "label": "Color theme",
-            "placeholder": "",
-            "options": [
-              "black",
-              "white"
-            ],
-            "default_value": "black"
-          },
-          "type": "Select"
-        },
-        "maxWidth": {
-          "config": {
-            "label": "Max width (px,% or vw)",
-            "placeholder": "1028px"
-          },
-          "type": "Text"
-        }
-      },
-      "items": {}
-    },
-    {
       "id": "paragraph",
       "name": "Paragraph",
       "docURL": "...",
@@ -490,20 +333,6 @@
           },
           "type": "Text"
         },
-        "size": {
-          "config": {
-            "label": "Text size",
-            "placeholder": "Select text size",
-            "options": [
-              "sm",
-              "md",
-              "lg",
-              "xs",
-              "xl"
-            ]
-          },
-          "type": "Select"
-        },
         "position": {
           "config": {
             "label": "Text position",
@@ -512,6 +341,17 @@
               "left",
               "center",
               "right"
+            ]
+          },
+          "type": "Select"
+        },
+        "type": {
+          "config": {
+            "label": "Paragraph type",
+            "placeholder": "",
+            "options": [
+              "default",
+              "list"
             ]
           },
           "type": "Select"
@@ -534,6 +374,81 @@
               "zoom-in-left",
               "zoom-in-right",
               "none"
+            ]
+          },
+          "type": "Select"
+        },
+        "size-xl": {
+          "config": {
+            "label": "1440px - 1920px",
+            "placeholder": "",
+            "options": [
+              "16-px",
+              "21-px",
+              "24-px",
+              "32-px",
+              "40-px",
+              "60-px"
+            ]
+          },
+          "type": "Select"
+        },
+        "size-lg": {
+          "config": {
+            "label": "1200px - 1440px",
+            "placeholder": "",
+            "options": [
+              "16-px",
+              "21-px",
+              "24-px",
+              "32-px",
+              "40-px",
+              "60-px"
+            ]
+          },
+          "type": "Select"
+        },
+        "size-md": {
+          "config": {
+            "label": "1024px - 1200px",
+            "placeholder": "",
+            "options": [
+              "16-px",
+              "21-px",
+              "24-px",
+              "32-px",
+              "40-px",
+              "60-px"
+            ]
+          },
+          "type": "Select"
+        },
+        "size-sm": {
+          "config": {
+            "label": "768px - 1024px",
+            "placeholder": "",
+            "options": [
+              "16-px",
+              "21-px",
+              "24-px",
+              "32-px",
+              "40-px",
+              "60-px"
+            ]
+          },
+          "type": "Select"
+        },
+        "size-xs": {
+          "config": {
+            "label": "320px - 768px",
+            "placeholder": "",
+            "options": [
+              "16-px",
+              "21-px",
+              "24-px",
+              "32-px",
+              "40-px",
+              "60-px"
             ]
           },
           "type": "Select"

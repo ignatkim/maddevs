@@ -4,6 +4,8 @@
       Tell Us About <br> Your Project
     </h3>
     <BaseForm
+      id="contacts-slice-form"
+      ref="baseForm"
       :use-company="true"
       :use-description="true"
       :use-labels="false"
@@ -15,17 +17,50 @@
       description-placeholder="How we can help you?"
       button-class-name="contacts-slice-form__button"
       button-label="Order a project now"
+      @submit="handleSubmit"
+    />
+    <ModalSuccess
+      id="contacts-slice-modal"
+      ref="successModal"
     />
   </div>
 </template>
 
 <script>
 import BaseForm from '@/components/core/forms/BaseForm'
+import ModalSuccess from '@/components/core/modals/ModalSuccess'
+import createLeadMixin from '@/mixins/createLeadMixin'
+import scrollOnBody from '@/mixins/scrollOnBody'
+
+import exceptKeys from '@/helpers/exceptKeys'
 
 export default {
   name: 'OrderForm',
   components: {
     BaseForm,
+    ModalSuccess,
+  },
+
+  mixins: [createLeadMixin(304632, 'Tell Us About Your Project'), scrollOnBody],
+
+  methods: {
+    handleSubmit(formData) {
+      const variables = {
+        ...exceptKeys(formData, 'description'),
+        projectDescription: formData.description,
+        formLocation: '\'Order a project now\' button, prismic ContactsSlice component',
+      }
+
+      // from mixin
+      this.submitLead(variables)
+
+      this.disableScrollOnBody()
+      this.$refs.successModal.show()
+    },
+
+    reset() {
+      this.$refs.baseForm.reset()
+    },
   },
 }
 </script>
@@ -69,8 +104,8 @@ export default {
 
   .form {
     /deep/ .entry-field {
-      color: #848484;
       border: 1px solid $border-color--grey-form;
+      color: $text-color--black-oil;
       background: transparent;
       padding: 13px 20px;
       border-radius: 6px;
@@ -97,6 +132,7 @@ export default {
     /deep/ .v-placeholder-asterisk {
       @media screen and (max-width: 1024px) {
         font-size: 14px;
+        color: #848484;
       }
     }
 
@@ -121,6 +157,10 @@ export default {
 
     /deep/ .textarea {
       height: 192px;
+      color: $text-color--black-oil;
+      &::placeholder {
+        color: #848484;
+      }
       @media screen and (max-width: 1024px) {
         height: 92px;
       }
@@ -148,13 +188,20 @@ export default {
     }
 
     /deep/ .contacts-slice-form__button {
-      font-size: 16px;
+      @include font('Inter', 16px, 400);
       line-height: 24px;
-      font-weight: 400;
-      color: $text-color--black-lighter;
       padding: 18px;
       background-color: transparent;
+      color: $text-color--black-lighter;
       border: 1px solid $border-color--red-opacity;
+      &:hover {
+        background-color: $bgcolor--red;
+        color: $text-color--white-primary;
+        &:disabled {
+          background-color: transparent;
+          color: $text-color--black-lighter;
+        }
+      }
     }
   }
 }

@@ -1,7 +1,7 @@
 <template>
   <CustomerTestimonials
     :title="slice.primary.title"
-    :data-aos="slice.primary.animation"
+    :aos="slice.primary.animation"
   />
 </template>
 
