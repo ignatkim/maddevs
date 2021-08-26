@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const extractIPInfo = data => {
+export const extractIPInfo = data => {
   const ipInfo = {}
 
   ipInfo.ip = data.ip || data.query
@@ -11,18 +11,20 @@ const extractIPInfo = data => {
 }
 
 export const getIPInfo = async () => {
+  const ipInfo = {}
+  let response = {}
+
   try {
-    let ipInfo = {}
-    let response = {}
-
-    response = await axios.get('https://ipapi.co/json')
-    if (response.data.ip) ipInfo = extractIPInfo(response.data)
-
-    response = await axios.get('http://ip-api.com/json')
-    if (response.data.query) ipInfo = (extractIPInfo(response.data))
+    try {
+      response = await axios.get('https://ipapi.co/json')
+      if (response.data.ip) return extractIPInfo(response.data)
+    } catch (error) {
+      response = await axios.get('http://ip-api.com/json')
+      if (response.data.query) return extractIPInfo(response.data)
+    }
 
     return ipInfo
   } catch (error) {
-    return {}
+    return ipInfo
   }
 }
