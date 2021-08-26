@@ -24,11 +24,11 @@
       >
         <h1
           class="start-screen-slice__title"
-          v-html="formatHtmlText(title)"
+          v-html="title"
         />
         <p
           class="start-screen-slice__subtitle"
-          v-html="formatHtmlText(subtitle)"
+          v-html="subtitle"
         />
       </div>
     </div>
@@ -37,11 +37,10 @@
 
 <script>
 import changeSectionTextOpacityMixin from '@/mixins/changeSectionTextOpacityMixin'
-import prismicSlicesMixin from '@/mixins/prismicSlicesMixin'
 
 export default {
   name: 'StartScreen',
-  mixins: [changeSectionTextOpacityMixin('sectionText'), prismicSlicesMixin],
+  mixins: [changeSectionTextOpacityMixin('sectionText')],
   props: {
     slice: {
       type: Object,

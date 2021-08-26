@@ -1,7 +1,7 @@
 <template>
   <div class="text-slice__content">
     <div class="text-slice__content-text">
-      <h2 v-html="formatHtmlText(title)" />
+      <h2 v-html="title" />
       <p>{{ text }}</p>
     </div>
     <ul class="text-slice__content-list">
@@ -17,12 +17,8 @@
 </template>
 
 <script>
-import prismicSlicesMixin from '@/mixins/prismicSlicesMixin'
-
 export default {
   name: 'TitleTextList',
-
-  mixins: [prismicSlicesMixin],
 
   props: {
     title: {
