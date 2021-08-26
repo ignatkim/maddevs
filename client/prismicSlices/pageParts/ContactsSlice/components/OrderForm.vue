@@ -69,7 +69,7 @@ export default {
 .contacts-slice-form {
   background-color: $bgcolor--white-primary;
   padding: 44px 25px;
-  border-radius: 10px;
+  border-radius: 4px;
   @media screen and (max-width: 1024px) {
     padding: 35px 16px;
   }
@@ -185,6 +185,11 @@ export default {
       @media screen and (max-width: 1024px) {
         font-size: 14px;
       }
+    }
+
+    /deep/ .checkmark {
+      background-color: transparent;
+      border: 1px solid $border-color--grey-form;
     }
 
     /deep/ .contacts-slice-form__button {
