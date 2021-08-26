@@ -102,12 +102,12 @@ export default {
       }
 
       &--lg {
-        @include font('Inter', 60px, 700);
+        @include font('Inter', 60px, 800);
         line-height: 67px;
       }
 
       &--xl {
-        @include font('Inter', 80px, 700);
+        @include font('Inter', 80px, 800);
         line-height: 90px;
       }
     }
