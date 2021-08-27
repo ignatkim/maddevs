@@ -56,30 +56,37 @@ export const headerNavigation = [
     exact: true,
     title: 'About',
     link: '/',
+    names: [],
   },
   {
     title: 'Services',
     link: '/services/',
+    names: [],
   },
   {
     title: 'Case Studies',
     link: '/case-studies/',
+    names: [],
   },
   {
     title: 'Delivery models',
     link: '/delivery-models/',
+    names: [],
   },
   {
     title: 'Open Source',
     link: '/open-source/',
+    names: [],
   },
   {
     title: 'Careers',
     link: '/careers/',
+    names: ['careers___ru', 'careers___en'],
   },
   {
     title: 'Blog',
     link: '/blog/',
+    names: [],
   },
 ]
 

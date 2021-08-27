@@ -156,6 +156,10 @@
     "to": "https://maddevs.io/ru/careers/android-developer/"
   },
   {
+    "from": "/careers/сopywriter",
+    "to": "https://maddevs.io/ru/careers/сopywriter/"
+  },
+  {
     "from": "/careers/golang-developer",
     "to": "https://maddevs.io/ru/careers/golang-developer/"
   }

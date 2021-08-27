@@ -29,10 +29,11 @@
             </NuxtLink>
             <nav class="header__header-routes_links">
               <NuxtLink
-                v-for="{ title, link, exact } in navigation"
+                v-for="{ title, link, exact, names } in navigation"
                 :key="link"
                 :exact="exact"
                 class="header__navigation-link"
+                :class="{ 'nuxt-link-exact-active nuxt-link-active': checkActiveLink(names) }"
                 data-testid="test-navigation-link"
                 :to="link"
                 @click.native="goToTopPage"
@@ -229,6 +230,12 @@ export default {
     onChangePage() {
       this.isActiveMobileMenu = false
       this.enableScrollOnBody()
+    },
+
+    checkActiveLink(names) {
+      const { name: routeName } = this.$nuxt.$route
+      if (names.includes(routeName)) return true
+      return false
     },
 
     setDefaultStateForHeader() {
