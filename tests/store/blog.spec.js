@@ -7,6 +7,7 @@ jest.mock('@/api/blog', () => (
   {
     getHomePageContent: jest.fn(() => 'test'),
     getBlogPosts: jest.fn(() => 'test'),
+    getCUPosts: jest.fn(() => 'test'),
     getCustomerUniversityMaster: jest.fn(() => ({
       featured_cu: {
         uid: '123',
@@ -31,6 +32,7 @@ describe('Blog module state', () => {
     expect(state.customerContent).toEqual({})
     expect(state.featuredCUPost).toBeNull()
     expect(state.posts).toEqual([])
+    expect(state.CUPosts).toEqual([])
     expect(state.featuredPost).toBeNull()
     expect(state.postsCategory).toBeNull()
     expect(state.postsLoaded).toBeFalsy()
@@ -89,6 +91,19 @@ describe('Blog module mutations', () => {
     expect(state).toEqual({
       ...defaultState(),
       customerContent: data,
+    })
+  })
+
+  it('should correct mutate state after calling SET_CU_POSTS mutation', () => {
+    const state = defaultState()
+
+    const posts = 'Data'
+
+    mutations.SET_CU_POSTS(state, posts)
+
+    expect(state).toEqual({
+      ...defaultState(),
+      CUPosts: posts,
     })
   })
 
@@ -258,6 +273,15 @@ describe('Blog module actions', () => {
     expect(store.commit).toHaveBeenCalledWith('SET_FEATURED_CUSTOMER_POST', 'test')
   })
 
+  it('should correctly called getCustomerUniversityPosts', async () => {
+    const store = {
+      commit: jest.fn(),
+    }
+
+    await actions.getCustomerUniversityPosts(store)
+    expect(store.commit).toHaveBeenCalledWith('SET_CU_POSTS', 'test')
+  })
+
   it('should correctly called changeContentLockerDisplay', () => {
     const store = {
       commit: jest.fn(),
@@ -288,6 +312,10 @@ describe('Blog module getters', () => {
 
   it('allPosts', () => {
     expect(getters.allPosts(state)).toBe(state.posts)
+  })
+
+  it('CUPosts', () => {
+    expect(getters.CUPosts(state)).toEqual(state.CUPosts)
   })
 
   it('featuredPost', () => {
