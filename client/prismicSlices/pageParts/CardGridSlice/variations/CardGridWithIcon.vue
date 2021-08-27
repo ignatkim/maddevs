@@ -12,9 +12,9 @@
           class="card-item"
         >
           <Component
-            :is="item.link ? 'a' : 'div'"
-            :href="item.link ? item.link.url : null"
-            :target="item.link ? '_blank' : null"
+            :is="item.link.url ? 'a' : 'div'"
+            :href="item.link.url ? item.link.url : null"
+            :target="item.link.url ? '_blank' : null"
             class="card-item__wrapper"
           >
             <div class="card-item__content">
@@ -156,7 +156,10 @@ export default {
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    padding: 67px 60px 45px;
+    padding: 67px 60px;
+    @media screen and (max-width: 768px) {
+      padding: 67px 45px;
+    }
   }
   &__logo {
     display: block;
