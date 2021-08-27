@@ -7,7 +7,8 @@
     "primary": {
       "title": "Quick Project Start",
       "background": "black",
-      "colorTheme": "white"
+      "colorTheme": "white",
+      "animation": "none"
     }
   }
 ]

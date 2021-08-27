@@ -17,6 +17,7 @@
           'button-slice__button--normal',
         ]"
         :style="{ maxWidth }"
+        :data-aos="slice.primary.animation"
       >
         {{ text }}
       </UIButton>
@@ -31,6 +32,7 @@
           'button-slice__button--outlined',
         ]"
         :style="{ maxWidth }"
+        :data-aos="slice.primary.animation"
       >
         {{ text }}
       </UIOutlinedButton>
@@ -45,6 +47,7 @@
           'button-slice__button--link',
         ]"
         :style="{ maxWidth }"
+        :data-aos="slice.primary.animation"
       >
         {{ text }}
       </UILinkButton>
@@ -56,6 +59,7 @@
 import UIButton from '@/components/shared/UIButton'
 import UIOutlinedButton from '@/components/shared/UIOutlinedButton'
 import UILinkButton from '@/components/shared/UILinkButton'
+import animateOnScrollMixin from '@/mixins/animateOnScrollMixin'
 
 export default {
   name: 'ButtonSlice',
@@ -64,6 +68,14 @@ export default {
     UIOutlinedButton,
     UILinkButton,
   },
+
+  mixins: [animateOnScrollMixin({
+    offset: 200,
+    delay: 50,
+    anchorPlacement: 'top-center',
+    duration: 1000,
+    once: true,
+  })],
 
   props: {
     slice: {

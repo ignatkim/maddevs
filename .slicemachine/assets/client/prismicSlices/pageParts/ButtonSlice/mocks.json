@@ -5,15 +5,16 @@
     "slice_type": "button_slice",
     "items": [],
     "primary": {
-      "fullWidth": true,
+      "fullWidth": false,
       "alignment": "left",
       "text": "Default red button",
       "link": {
         "link_type": "Web",
-        "url": "https://slicemachine.dev"
+        "url": "https://prismic.io"
       },
       "background": "black",
-      "maxWidth": "leverage killer e-business"
+      "maxWidth": "synergize seamless systems",
+      "animation": "none"
     }
   },
   {
@@ -22,8 +23,8 @@
     "slice_type": "button_slice",
     "items": [],
     "primary": {
-      "fullWidth": false,
-      "alignment": "right",
+      "fullWidth": true,
+      "alignment": "left",
       "color": "red",
       "text": "Outlined button",
       "link": {
@@ -31,7 +32,8 @@
         "url": "http://twitter.com"
       },
       "background": "grey",
-      "maxWidth": "incubate world-class applications"
+      "maxWidth": "reintermediate sexy methodologies",
+      "animation": "none"
     }
   },
   {
@@ -40,16 +42,17 @@
     "slice_type": "button_slice",
     "items": [],
     "primary": {
-      "fullWidth": true,
+      "fullWidth": false,
       "alignment": "left",
-      "color": "grey",
+      "color": "black",
       "text": "Link button",
       "link": {
         "link_type": "Web",
-        "url": "https://slicemachine.dev"
+        "url": "https://prismic.io"
       },
-      "background": "grey",
-      "maxWidth": "integrate frictionless mindshare"
+      "background": "black",
+      "maxWidth": "drive end-to-end partnerships",
+      "animation": "none"
     }
   }
 ]
