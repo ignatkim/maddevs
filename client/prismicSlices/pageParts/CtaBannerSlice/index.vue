@@ -3,15 +3,17 @@
     <div class="container">
       <div
         class="cta-banner-slice_content"
-        :data-aos="slice.primary.animation"
+        :data-aos="animation"
       >
         <div class="cta-banner-slice__info">
-          <h2 class="cta-banner-slice_title">
-            {{ slice.primary.title }}
-          </h2>
-          <p class="cta-banner-slice_description">
-            {{ slice.primary.description }}
-          </p>
+          <h2
+            class="cta-banner-slice_title"
+            v-html="title"
+          />
+          <p
+            class="cta-banner-slice_description"
+            v-html="description"
+          />
           <UIButton
             link
             :to="slice.primary.btnLink.url"
@@ -29,15 +31,15 @@
           width="395"
           height="490"
           class="cta-banner-slice__image"
-          :src="slice.primary.image.url"
-          :alt="slice.primary.image.alt"
+          :src="image.url"
+          :alt="image.alt"
         >
         <div class="cta-banner-slice__man">
           <h6 class="cta-banner-slice__man-name">
-            {{ slice.primary.name }}
+            {{ name }}
           </h6>
           <span class="cta-banner-slice__man-position">
-            {{ slice.primary.position }}
+            {{ position }}
           </span>
         </div>
       </div>
@@ -71,6 +73,17 @@ export default {
         return {}
       },
     },
+  },
+
+  data() {
+    return {
+      animation: this.slice?.primary?.animation,
+      title: this.slice?.primary?.title,
+      image: this.slice?.primary?.image,
+      name: this.slice?.primary?.name,
+      position: this.slice?.primary?.position,
+      description: this.slice?.primary?.description,
+    }
   },
 }
 </script>
@@ -190,10 +203,11 @@ export default {
       width: 90%;
       height: auto;
       position: static;
+      margin-top: 20px;
     }
     @media screen and (max-width: 375px) {
       width: calc(100% + 50px);
-      margin: auto -25px 0;
+      margin: 20px -25px 0;
     }
   }
 
