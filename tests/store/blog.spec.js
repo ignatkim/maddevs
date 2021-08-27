@@ -35,7 +35,7 @@ describe('Blog module state', () => {
     expect(state.postsCategory).toBeNull()
     expect(state.postsLoaded).toBeFalsy()
     expect(state.postsPage).toBe(1)
-    expect(state.showContentLocker).toBe(true)
+    expect(state.showContentLocker).toBeTruthy()
   })
 })
 
