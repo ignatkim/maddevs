@@ -104,10 +104,6 @@ export default {
   computed: {
     ...mapGetters(['vacancy']),
   },
-
-  created() {
-    this.$i18n.setLocale('ru')
-  },
 }
 </script>
 
