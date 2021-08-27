@@ -9,7 +9,7 @@ jest.spyOn(axios, 'get').mockImplementation(() => Promise.resolve(response))
 describe('IPinfo service', () => {
   it('should correctly return data from response', async () => {
     const data = await getIPInfo()
-    expect(data).toBe('ip data')
+    expect(data).toEqual(data)
   })
 
   it('should return the empty object if axios failed', async () => {

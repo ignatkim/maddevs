@@ -35,6 +35,7 @@ describe('Blog module state', () => {
     expect(state.postsCategory).toBeNull()
     expect(state.postsLoaded).toBeFalsy()
     expect(state.postsPage).toBe(1)
+    expect(state.showContentLocker).toBe(true)
   })
 })
 
@@ -160,6 +161,19 @@ describe('Blog module mutations', () => {
       postsPage: page,
     })
   })
+
+  it('should correct mutate state after calling SET_CONTENT_LOCKER mutation', () => {
+    const state = defaultState()
+
+    const value = false
+
+    mutations.SET_SHOW_CONTENT_LOCKER(state, value)
+
+    expect(state).toEqual({
+      ...defaultState(),
+      showContentLocker: value,
+    })
+  })
 })
 
 describe('Blog module actions', () => {
@@ -243,6 +257,18 @@ describe('Blog module actions', () => {
     })
     expect(store.commit).toHaveBeenCalledWith('SET_FEATURED_CUSTOMER_POST', 'test')
   })
+
+  it('should correctly called changeContentLockerDisplay', () => {
+    const store = {
+      commit: jest.fn(),
+      state: defaultState(),
+    }
+
+    const value = false
+
+    actions.changeContentLockerDisplay(store, value)
+    expect(store.commit).toHaveBeenCalledWith('SET_SHOW_CONTENT_LOCKER', value)
+  })
 })
 
 describe('Blog module getters', () => {
@@ -323,5 +349,9 @@ describe('Blog module getters', () => {
   it('recentPosts without banner', () => {
     state.posts = []
     expect(getters.recentPosts(state)).toEqual([])
+  })
+
+  it('showContentLocker', () => {
+    expect(getters.showContentLocker(state)).toBe(state.showContentLocker)
   })
 })
