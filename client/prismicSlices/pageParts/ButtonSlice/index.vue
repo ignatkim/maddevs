@@ -1,15 +1,11 @@
 <template>
   <div
     class="button-slice"
-    :style="{
-      backgroundColor: sliceBackground,
-    }"
+    :style="{ backgroundColor: sliceBackground }"
   >
     <div
-      :class="[
-        'container',
-        `button-slice__content--align-${alignment}`,
-      ]"
+      class="container"
+      :class="sliceAlignmentClass"
     >
       <UIButton
         v-if="variation === 'default-slice'"
@@ -97,6 +93,12 @@ export default {
       if (this.slice.primary.background === 'grey') return '#f5f7f9'
       return '#111213' // black
     },
+
+    sliceAlignmentClass() {
+      if (this.alignment === 'center') return 'button-slice__content--align-center'
+      if (this.alignment === 'right') return 'button-slice__content--align-right'
+      return 'button-slice__content--align-left'
+    },
   },
 }
 </script>
@@ -117,6 +119,7 @@ export default {
   }
 
   &__button {
+    box-sizing: border-box;
     padding: 16px 24px;
     line-height: 20px;
     &--normal:hover {
