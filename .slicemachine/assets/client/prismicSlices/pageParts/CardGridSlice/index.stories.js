@@ -18,7 +18,7 @@ export const _DefaultSlice = () => ({
   },
   data() {
     return {
-      mock: {"variation":"default-slice","name":"Default slice","slice_type":"card_grid_slice","items":[{"title":"extend one-to-one web-readiness","description":"aggregate mission-critical portals","btnLink":{"link_type":"Web","url":"https://prismic.io"},"image":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1589321599763-d66926c29613?w=900&h=500&fit=crop"},"fullWidth":false},{"title":"scale transparent schemas","description":"strategize revolutionary schemas","btnLink":{"link_type":"Web","url":"https://prismic.io"},"image":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1494173853739-c21f58b16055?w=900&h=500&fit=crop"},"fullWidth":true},{"title":"monetize cutting-edge content","description":"optimize compelling supply-chains","btnLink":{"link_type":"Web","url":"http://google.com"},"image":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1587840171670-8b850147754e?w=900&h=500&fit=crop"},"fullWidth":true},{"title":"harness robust action-items","description":"facilitate ubiquitous deliverables","btnLink":{"link_type":"Web","url":"https://slicemachine.dev"},"image":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1589321599763-d66926c29613?w=900&h=500&fit=crop"},"fullWidth":false}],"primary":{"colorTheme":"black","animation":"none"},"id":"_DefaultSlice"}
+      mock: {"variation":"default-slice","name":"Default slice","slice_type":"card_grid_slice","items":[{"title":"mesh revolutionary convergence","description":"utilize mission-critical interfaces","btnLink":{"link_type":"Web","url":"https://prismic.io"},"image":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=900&h=500&fit=crop"},"fullWidth":false},{"title":"grow proactive ROI","description":"orchestrate seamless technologies","btnLink":{"link_type":"Web","url":"http://google.com"},"image":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1547394765-185e1e68f34e?w=900&h=500&fit=crop"},"fullWidth":false},{"title":"generate bricks-and-clicks web services","description":"unleash global architectures","btnLink":{"link_type":"Web","url":"http://twitter.com"},"image":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?w=900&h=500&fit=crop"},"fullWidth":false}],"primary":{"colorTheme":"white","animation":"none"},"id":"_DefaultSlice"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -37,9 +37,28 @@ export const _CardGridWithList = () => ({
   },
   data() {
     return {
-      mock: {"variation":"cardGridWithList","name":"Card Grid With List","slice_type":"card_grid_slice","items":[{"title":"exploit customized portals","description":[{"type":"paragraph","text":"Esse ex ipsum fugiat ea aliqua laborum incididunt esse ex consectetur eu occaecat aliqua. Nulla irure dolore nulla proident magna nostrud magna sunt est. Cillum duis est deserunt ea.","spans":[]}],"list":"morph distributed paradigms","fullWidth":true},{"title":"monetize cross-media supply-chains","description":[{"type":"paragraph","text":"Minim irure ad laborum eu sint qui.","spans":[]}],"list":"leverage global portals","fullWidth":false},{"title":"benchmark bricks-and-clicks web services","description":[{"type":"paragraph","text":"Reprehenderit consectetur eiusmod adipisicing cillum eiusmod adipisicing quis minim dolor esse ut. Velit aliqua cillum eiusmod velit magna veniam sit esse laboris eu irure commodo incididunt reprehenderit. Ut ad excepteur quis deserunt qui mollit officia veniam velit excepteur.","spans":[]}],"list":"matrix sexy metrics","fullWidth":true},{"title":"orchestrate robust supply-chains","description":[{"type":"paragraph","text":"Tempor pariatur esse mollit laborum id. Magna ipsum nulla qui dolore est do deserunt minim Lorem voluptate excepteur adipisicing occaecat nostrud et.","spans":[]}],"list":"implement rich action-items","fullWidth":true}],"primary":{"colorTheme":"black","animation":"none"},"id":"_CardGridWithList"}
+      mock: {"variation":"cardGridWithList","name":"Card Grid With List","slice_type":"card_grid_slice","items":[{"title":"innovate dot-com vortals","description":[{"type":"paragraph","text":"Velit voluptate voluptate do commodo. Ipsum nostrud ea occaecat laboris ipsum. Occaecat consectetur nostrud nisi non ex nostrud minim veniam.","spans":[]}],"list":"incentivize visionary users","fullWidth":true},{"title":"aggregate plug-and-play niches","description":[{"type":"paragraph","text":"Dolore est consequat exercitation esse sunt dolor commodo minim officia anim ea veniam ad laboris aliqua. Occaecat veniam anim consectetur excepteur fugiat.","spans":[]}],"list":"empower compelling interfaces","fullWidth":true},{"title":"utilize seamless schemas","description":[{"type":"paragraph","text":"Voluptate pariatur Lorem incididunt ad duis irure ea aliquip eiusmod.","spans":[]}],"list":"iterate interactive content","fullWidth":true}],"primary":{"colorTheme":"white","animation":"none"},"id":"_CardGridWithList"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
 })
 _CardGridWithList.storyName = 'Card Grid With List'
+
+export const _CardGridWithIcon = () => ({
+  components: {
+    MyComponent,
+    SliceZone
+  },
+  methods: {
+    resolve() {
+      return MyComponent
+    }
+  },
+  data() {
+    return {
+      mock: {"variation":"cardGridWithIcon","name":"Card Grid With Icon","slice_type":"card_grid_slice","items":[{"link":{"link_type":"Web","url":"https://slicemachine.dev"},"icon":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=900&h=500&fit=crop"},"title":"implement virtual convergence","description":"recontextualize strategic communities"},{"link":{"link_type":"Web","url":"http://google.com"},"icon":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1593642532973-d31b6557fa68?w=900&h=500&fit=crop"},"title":"grow virtual users","description":"expedite killer mindshare"}],"primary":{"displayButtons":true,"background":"black","colorTheme":"white"},"id":"_CardGridWithIcon"}
+    }
+  },
+  template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
+})
+_CardGridWithIcon.storyName = 'Card Grid With Icon'
