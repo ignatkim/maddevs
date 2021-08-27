@@ -15,16 +15,23 @@
             v-html="description"
           />
           <UIButton
+            v-if="button.link"
             link
-            :to="slice.primary.btnLink.url"
+            :to="button.link"
           >
-            {{ slice.primary.btnText }}
+            {{ button.text }}
             <img
               width="20"
               height="20"
               src="@/assets/img/common/arrow-up-right.svg"
               alt="arrow"
             >
+          </UIButton>
+          <UIButton
+            v-else
+            @click="show"
+          >
+            {{ button.text }}
           </UIButton>
         </div>
         <img
@@ -44,6 +51,11 @@
         </div>
       </div>
     </div>
+    <ModalContactMe
+      id="contact-me-cta-slice"
+      ref="modalContactMe"
+      :location="`\'${button.text}\' button, cta banner slice`"
+    />
   </section>
 </template>
 
@@ -55,6 +67,7 @@ export default {
   name: 'CtaBannerSlice',
   components: {
     UIButton,
+    ModalContactMe: () => import('@/components/core/modals/ModalContactMe'),
   },
 
   mixins: [animateOnScrollMixin({
@@ -83,7 +96,18 @@ export default {
       name: this.slice?.primary?.name,
       position: this.slice?.primary?.position,
       description: this.slice?.primary?.description,
+      button: {
+        link: this.slice?.primary?.btnLink?.url,
+        text: this.slice?.primary?.btnText,
+      },
     }
+  },
+
+  methods: {
+    show() {
+      if (!this.$refs?.modalContactMe?.show) return
+      this.$refs.modalContactMe.show()
+    },
   },
 }
 </script>
