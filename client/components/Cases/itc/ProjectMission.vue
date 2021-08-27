@@ -67,9 +67,8 @@
         <div class="case_statistics-item">
           <h5 class="case_statistics-item_title">
             <span
-              data-purecounter-start="0"
-              data-purecounter-end="40"
-              class="purecounter"
+              id="itc-aim-1"
+              data-end-value="40"
             >
               40
             </span>
@@ -84,9 +83,8 @@
         <div class="case_statistics-item">
           <h5 class="case_statistics-item_title">
             <span
-              data-purecounter-start="0"
-              data-purecounter-end="50"
-              class="purecounter"
+              id="itc-aim-2"
+              data-end-value="50"
             >
               50
             </span>
@@ -101,9 +99,8 @@
         <div class="case_statistics-item">
           <h5 class="case_statistics-item_title">
             <span
-              data-purecounter-start="0"
-              data-purecounter-end="200"
-              class="purecounter"
+              id="itc-aim-3"
+              data-end-value="200"
             >
               200
             </span>

@@ -25,6 +25,8 @@ import CollectingDataForAnalysis from '@/components/Cases/itc/CollectingDataForA
 import DevelopingTheInnovation from '@/components/Cases/itc/DevelopingTheInnovation'
 import FuturePlans from '@/components/Cases/itc/FuturePlans'
 import Partnership from '@/components/Cases/itc/Partnership'
+import IntersectionObserverMixin from '@/mixins/IntersectionObserverMixin'
+import countUp from '@/helpers/count-up'
 
 export default {
   name: 'Main',
@@ -40,5 +42,12 @@ export default {
     FuturePlans,
     Partnership,
   },
+
+  mixins: [
+    IntersectionObserverMixin(
+      ['itc-aim-1', 'itc-aim-2', 'itc-aim-3', 'reams', 'sheets-of-paper'],
+      countUp,
+    ),
+  ],
 }
 </script>
