@@ -125,7 +125,7 @@ export default {
 
       &--40-px {
         @include font('Inter', 40px, 700);
-        line-height: 67px;
+        line-height: 48px;
       }
 
       &--60-px {

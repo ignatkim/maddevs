@@ -8,7 +8,10 @@
       backgroundColor: sliceBackground,
     }"
   >
-    <div class="container">
+    <div
+      class="container"
+      :data-aos="slice.primary.animation"
+    >
       <h2 class="project-start-slice__title">
         {{ slice.primary.title || 'Quick Project Start' }}
       </h2>
@@ -67,6 +70,7 @@
 <script>
 import { steps } from '@/data/quickProjectStart'
 import UIOutlinedButton from '@/components/shared/UIOutlinedButton'
+import animateOnScrollMixin from '@/mixins/animateOnScrollMixin'
 
 export default {
   name: 'ProjectStartSlice',
@@ -74,6 +78,14 @@ export default {
     UIOutlinedButton,
     ModalOrderProjectFromUs: () => import('@/components/core/modals/ModalOrderProjectFromUs'),
   },
+
+  mixins: [animateOnScrollMixin({
+    offset: 200,
+    delay: 50,
+    anchorPlacement: 'top-center',
+    duration: 1000,
+    once: true,
+  })],
 
   props: {
     slice: {

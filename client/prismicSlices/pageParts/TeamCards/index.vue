@@ -83,7 +83,7 @@ export default {
 
 <style lang="scss" scoped>
 .meet-our-experts {
-  background-color: $bgcolor--white-darken;
+  background-color: $bgcolor--white-primary;
 
   &__main-title {
     @include h3-title;

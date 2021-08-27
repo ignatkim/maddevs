@@ -18,7 +18,7 @@ export const _DefaultSlice = () => ({
   },
   data() {
     return {
-      mock: {"variation":"default-slice","name":"Default slice","slice_type":"project_start_slice","items":[],"primary":{"title":"Quick Project Start","background":"black","colorTheme":"white"},"id":"_DefaultSlice"}
+      mock: {"variation":"default-slice","name":"Default slice","slice_type":"project_start_slice","items":[],"primary":{"title":"Quick Project Start","background":"black","colorTheme":"white","animation":"none"},"id":"_DefaultSlice"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'

@@ -245,6 +245,9 @@
         "primary": {
           "displayCardButton": {
             "content": true
+          },
+          "animation": {
+            "content": "none"
           }
         },
         "items": {
@@ -262,7 +265,11 @@
     },
     "KeyMetricsSlice": {
       "default-slice": {
-        "primary": {},
+        "primary": {
+          "animation": {
+            "content": "none"
+          }
+        },
         "items": {
           "title": {
             "content": "10M+"
@@ -330,6 +337,9 @@
           },
           "background": {
             "content": "black"
+          },
+          "animation": {
+            "content": "none"
           }
         }
       },
@@ -337,6 +347,9 @@
         "primary": {
           "text": {
             "content": "Outlined button"
+          },
+          "animation": {
+            "content": "none"
           }
         }
       },
@@ -344,6 +357,9 @@
         "primary": {
           "text": {
             "content": "Link button"
+          },
+          "animation": {
+            "content": "none"
           }
         }
       }
@@ -353,6 +369,9 @@
         "primary": {
           "title": {
             "content": "Technologies & Tools"
+          },
+          "animation": {
+            "content": "none"
           }
         }
       }
@@ -386,6 +405,9 @@
           },
           "title": {
             "content": "Quick Project Start"
+          },
+          "animation": {
+            "content": "none"
           }
         }
       }
