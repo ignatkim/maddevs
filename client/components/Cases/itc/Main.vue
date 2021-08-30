@@ -26,7 +26,7 @@ import DevelopingTheInnovation from '@/components/Cases/itc/DevelopingTheInnovat
 import FuturePlans from '@/components/Cases/itc/FuturePlans'
 import Partnership from '@/components/Cases/itc/Partnership'
 import IntersectionObserverMixin from '@/mixins/IntersectionObserverMixin'
-import countUp from '@/helpers/count-up'
+import countUp from '@/helpers/countUp'
 
 export default {
   name: 'Main',
