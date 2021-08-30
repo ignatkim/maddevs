@@ -169,9 +169,8 @@ exports[`Challenges component should render correctly 1`] = `
         class="case_title-statistics case_text-align-center"
       >
         <span
-          class="purecounter"
-          data-purecounter-end="400"
-          data-purecounter-start="0"
+          data-end-value="400"
+          id="reams"
         >
           
         ~400
@@ -186,10 +185,8 @@ exports[`Challenges component should render correctly 1`] = `
         </span>
          
         <span
-          class="purecounter"
-          data-purecounter-decimals="3"
-          data-purecounter-end="200"
-          data-purecounter-start="0"
+          data-end-value="200000"
+          id="sheets-of-paper"
         >
           
         200,000

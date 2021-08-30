@@ -74,18 +74,15 @@
       </TextQuoteBox>
       <h4 class="case_title-statistics case_text-align-center">
         <span
-          data-purecounter-start="0"
-          data-purecounter-end="400"
-          class="purecounter"
+          id="reams"
+          data-end-value="400"
         >
           ~400
         </span>
         reams <span class="case_black">or</span>
         <span
-          data-purecounter-start="0"
-          data-purecounter-end="200"
-          data-purecounter-decimals="3"
-          class="purecounter"
+          id="sheets-of-paper"
+          data-end-value="200000"
         >
           200,000
         </span>
