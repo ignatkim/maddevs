@@ -9,8 +9,9 @@
     >
       <UIButton
         v-if="variation === 'default-slice'"
-        link
         :full-width="fullWidth"
+        is-link
+        :to="link.url"
         target="_blank"
         :class="[
           'button-slice__button',
@@ -23,9 +24,10 @@
       </UIButton>
       <UIOutlinedButton
         v-else-if="variation === 'outlinedButton'"
-        link
         :full-width="fullWidth"
         :color="color"
+        is-link
+        :to="link.url"
         target="_blank"
         :class="[
           'button-slice__button',
@@ -38,9 +40,10 @@
       </UIOutlinedButton>
       <UILinkButton
         v-else-if="variation === 'linkButton'"
-        link
         :full-width="fullWidth"
         :color="color"
+        is-link
+        :to="link.url"
         target="_blank"
         :class="[
           'button-slice__button',

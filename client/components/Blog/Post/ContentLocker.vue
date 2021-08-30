@@ -6,6 +6,7 @@
 </template>
 
 <script>
+import { mapGetters, mapActions } from 'vuex'
 import ModalContentLocker from '@/components/core/modals/ModalContentLocker'
 
 const TIME_TO_LOCK_CONTENT = 15000 // in ms
@@ -21,9 +22,13 @@ export default {
     }
   },
 
+  computed: {
+    ...mapGetters(['showContentLocker']),
+  },
+
   watch: {
     isScrolled() {
-      this.startTimeout()
+      if (this.showContentLocker) this.startTimeout()
     },
 
     isShowLocker() {
@@ -40,6 +45,8 @@ export default {
   },
 
   methods: {
+    ...mapActions(['changeContentLockerDisplay']),
+
     handleScroll() {
       this.isScrolled = true
       this.removeScrollListener()
@@ -56,6 +63,7 @@ export default {
     startTimeout() {
       setTimeout(() => {
         this.isShowLocker = true
+        this.changeContentLockerDisplay(false)
       }, TIME_TO_LOCK_CONTENT)
     },
   },
