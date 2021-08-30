@@ -80,6 +80,7 @@ async function sendApplication(req) {
 
     // Uploading CV file to huntflow
     const cvFile = await uploadFile(req.file.path)
+    console.log(cvFile)
 
     // Applicant creation
     const candidate = await createCandidate(cvFile.id, req.body)
