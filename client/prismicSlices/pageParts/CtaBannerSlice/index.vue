@@ -16,7 +16,7 @@
           />
           <UIButton
             v-if="button.link"
-            link
+            is-link
             :to="button.link"
           >
             {{ button.text }}
