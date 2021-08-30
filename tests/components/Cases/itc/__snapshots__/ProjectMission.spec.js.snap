@@ -251,9 +251,8 @@ exports[`ProjectMission component should render correctly 1`] = `
             class="case_statistics-item_title"
           >
             <span
-              class="purecounter"
-              data-purecounter-end="40"
-              data-purecounter-start="0"
+              data-end-value="40"
+              id="itc-aim-1"
             >
               
             40
@@ -278,9 +277,8 @@ exports[`ProjectMission component should render correctly 1`] = `
             class="case_statistics-item_title"
           >
             <span
-              class="purecounter"
-              data-purecounter-end="50"
-              data-purecounter-start="0"
+              data-end-value="50"
+              id="itc-aim-2"
             >
               
             50
@@ -305,9 +303,8 @@ exports[`ProjectMission component should render correctly 1`] = `
             class="case_statistics-item_title"
           >
             <span
-              class="purecounter"
-              data-purecounter-end="200"
-              data-purecounter-start="0"
+              data-end-value="200"
+              id="itc-aim-3"
             >
               
             200
