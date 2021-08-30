@@ -39,7 +39,6 @@
         />
       </NuxtLink>
       <div class="post-card__meta">
-        <span class="post-card__date">{{ formattedDate }}</span>
         <PostTag
           v-if="post.tags && post.tags.length"
           :tag="tag || post.tags[0]"
@@ -51,6 +50,7 @@
         v-bind="author"
         :disabled="disableAuthorLink"
         theme="light"
+        :date="formattedDate"
       />
     </div>
   </div>
@@ -220,7 +220,7 @@ export default {
     @include font('Inter', 13px, 400);
     display: flex;
     align-items: center;
-    margin: 20px 0;
+    margin: 16px 0;
   }
   &__date {
     margin-right: 5px;

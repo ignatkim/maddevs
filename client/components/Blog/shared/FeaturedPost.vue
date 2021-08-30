@@ -24,9 +24,9 @@
           <PostAuthor
             v-bind="author"
             :theme="theme"
+            :date="formattedDate"
           />
           <div class="featured-post__meta">
-            <span class="featured-post__date">{{ formattedDate }}</span>
             <PostTag
               v-if="post.tags && post.tags.length"
               :tag="tag || post.tags[0]"

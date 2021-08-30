@@ -32,16 +32,8 @@ exports[`header Blog is a Vue instance 1`] = `
       <!---->
        
       <div
-        class="blog-post__date-tag"
+        class="blog-post__tag"
       >
-        <div
-          class="blog-post__date"
-        >
-          
-          Mar 23, 2021
-        
-        </div>
-         
         <nuxtlink-stub
           class="post-tag post-tag--dark-theme"
           data-testid="test-tag"

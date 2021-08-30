@@ -150,6 +150,11 @@ exports[`customer university header component should render correctly with defau
         </div>
       </div>
     </div>
+    <div
+      class="post-info"
+    >
+      <!---->
+    </div>
   </commonheader-stub>
 </div>
 `;

@@ -1,6 +1,10 @@
 import { render, screen } from '@testing-library/vue'
-import { mount } from '@vue/test-utils'
+import { mount, createLocalVue } from '@vue/test-utils'
+import Vuex from 'vuex'
 import CustomerUniversity from '@/components/Blog/header/CustomerUniversity'
+
+const localVue = createLocalVue()
+localVue.use(Vuex)
 
 describe('customer university header component', () => {
   const postList = [
@@ -73,11 +77,18 @@ describe('customer university header component', () => {
 
   const stubs = ['PrismicImage', 'CommonHeader', 'NuxtLink']
 
+  const store = {
+    getters: {
+      blogAuthor: () => {},
+    },
+  }
+
   it('should render correctly with default props', () => {
     const { container } = render(CustomerUniversity, {
       props,
       mocks,
       stubs,
+      store,
     })
     expect(container).toMatchSnapshot()
   })
@@ -92,6 +103,7 @@ describe('customer university header component', () => {
       },
       mocks,
       stubs,
+      store,
     })
     expect(screen.getByText(clusterName)).not.toBeNull()
   })
@@ -106,6 +118,7 @@ describe('customer university header component', () => {
       },
       mocks,
       stubs,
+      store,
     })
 
     expect(screen.getByText(clusterName)).not.toBeNull()
@@ -113,6 +126,7 @@ describe('customer university header component', () => {
 
   it('should correctly called $router.push after calling handleChange', () => {
     const wrapper = mount(CustomerUniversity, {
+      localVue,
       propsData: {
         ...props,
         clusterName,
@@ -120,6 +134,7 @@ describe('customer university header component', () => {
       },
       mocks,
       stubs,
+      store,
     })
 
     wrapper.vm.handleChange({ value: 'cu-test-2', label: 'CUTest' })

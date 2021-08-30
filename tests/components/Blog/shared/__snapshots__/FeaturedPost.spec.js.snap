@@ -41,12 +41,6 @@ exports[`featured post component is a Vue instance 1`] = `
           <div
             class="featured-post__meta"
           >
-            <span
-              class="featured-post__date"
-            >
-              Aug 25, 2020
-            </span>
-             
             <nuxtlink-stub
               class="post-tag post-tag--dark-theme"
               data-testid="test-tag"
