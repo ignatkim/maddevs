@@ -9,6 +9,7 @@ jest.mock('@/api/blogTags', () => (
   {
     getPostsByTag: jest.fn(() => 'test'),
     getBlogTag: jest.fn(() => 'tag'),
+    getBlogTags: jest.fn(() => 'tag'),
   }
 ))
 
@@ -42,6 +43,18 @@ describe('BlogTags module mutations', () => {
     expect(state).toEqual({
       ...defaultState(),
       tag,
+    })
+  })
+
+  it('should correct mutate state after calling SET_TAGS mutation', () => {
+    const state = defaultState()
+    const tags = []
+
+    mutations.SET_TAGS(state, tags)
+
+    expect(state).toEqual({
+      ...defaultState(),
+      tagPosts: tags,
     })
   })
 
@@ -95,6 +108,18 @@ describe('BlogTags module actions', () => {
     expect(store.commit).toHaveBeenCalledWith('SET_TAG', 'tag')
   })
 
+  it('should correctly called getBlogTags', async () => {
+    const store = {
+      commit: jest.fn(),
+      state: {
+        tags: [],
+      },
+    }
+
+    await actions.getBlogTags(store, 'tag')
+    expect(store.commit).toHaveBeenCalledWith('SET_TAGS', 'tag')
+  })
+
   it('should correctly called getPostsByTag', async () => {
     const store = {
       commit: jest.fn(),
@@ -128,6 +153,10 @@ describe('BlogTags module getters', () => {
 
   it('blogTag', () => {
     expect(getters.blogTag(state)).toBe(state.tag)
+  })
+
+  it('blogTags', () => {
+    expect(getters.blogTags(state)).toBe(state.tags)
   })
 
   it('tagPosts', () => {
