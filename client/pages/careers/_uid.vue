@@ -67,14 +67,12 @@ export default {
     PositionForm,
   },
 
-  nuxtI18n: false,
-
   async asyncData({ store, params, error }) {
     const { uid } = params
-    const openGraphUrl = `${process.env.domain}${uid === 'сopywriter' ? '' : '/ru'}/careers/${uid}/`
+    const openGraphUrl = `${process.env.domain}/careers/${uid}/`
 
     try {
-      await store.dispatch('getVacancy', params.uid)
+      await store.dispatch('getVacancy', uid)
       return {
         openGraphUrl,
       }
@@ -105,10 +103,6 @@ export default {
 
   computed: {
     ...mapGetters(['vacancy']),
-  },
-
-  created() {
-    this.$i18n.setLocale('ru')
   },
 }
 </script>
