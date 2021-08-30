@@ -10,7 +10,7 @@ jest.mock('../../config/env', () => ({
   HUNTFLOW_API_URL: 'https://api.huntflow.ru',
 }))
 
-const response = { data: {} }
+const response = { data: 'some data' }
 jest.spyOn(axios, 'post').mockImplementation(() => Promise.resolve(response))
 
 describe('Huntflow service', () => {
@@ -36,8 +36,7 @@ describe('Huntflow service', () => {
 
   it('should correctly return data from response', async () => {
     const data = await sendApplication(req)
-    const expected = { application: {}, cvFile: {} }
-    expect(data).toEqual(expected)
+    expect(data).toEqual('some data')
   })
 
   it('should correctly return error if axios failed', async () => {
