@@ -100,6 +100,12 @@ export default {
     }
   }
   &--text-center {
+    .card-item__title {
+      text-align: center;
+      @media screen and (max-width: 1024px) {
+        text-align: left;
+      }
+    }
     /deep/ p {
       text-align: center;
       @media screen and (max-width: 1024px) {
@@ -129,30 +135,31 @@ export default {
       font-size: 20px;
       line-height: 30px;
     }
-  }
 
-  /deep/ p {
-    margin-top: 40px;
-  }
-
-  /deep/ li {
-    font-weight: 400;
-    margin-top: 7px;
-    &:last-child {
-      margin-bottom: 0;
+    /deep/ p {
+      margin-top: 40px;
     }
-  }
 
-  /deep/ ul {
-    li {
-      &:before {
-        content: '';
-        display: inline-block;
-        width: 20px;
-        height: 1.5px;
-        background-color: $border-color--red;
-        vertical-align: top;
-        margin: 18px 12px 0 0;
+    /deep/ li {
+      display: flex;
+      font-weight: 400;
+      margin-top: 7px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    /deep/ ul {
+      li {
+        &:before {
+          content: '';
+          display: inline-block;
+          width: 20px;
+          height: 1.5px;
+          background-color: $border-color--red;
+          vertical-align: top;
+          margin: 18px 12px 0 0;
+        }
       }
     }
   }
