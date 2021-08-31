@@ -141,7 +141,6 @@ export default {
     }
 
     /deep/ li {
-      display: flex;
       font-weight: 400;
       margin-top: 7px;
       &:last-child {
@@ -155,6 +154,7 @@ export default {
           content: '';
           display: inline-block;
           width: 20px;
+          min-width: 20px;
           height: 1.5px;
           background-color: $border-color--red;
           vertical-align: top;
