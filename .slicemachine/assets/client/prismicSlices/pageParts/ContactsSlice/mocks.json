@@ -4,6 +4,8 @@
     "name": "Default slice",
     "slice_type": "contacts_slice",
     "items": [],
-    "primary": {}
+    "primary": {
+      "animation": "2"
+    }
   }
 ]
