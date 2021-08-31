@@ -5,8 +5,8 @@
     "slice_type": "text_slice",
     "items": [],
     "primary": {
+      "animation": "fade-down",
       "colorTheme": "white",
-      "animation": "zoom-in-left",
       "maxWidth": "1028px",
       "text": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies."
     }
@@ -17,12 +17,12 @@
     "slice_type": "text_slice",
     "items": [],
     "primary": {
+      "animation": "zoom-in",
       "colorTheme": "white",
-      "position": "left",
-      "animation": "fade-down-righ",
+      "position": "center",
       "title": "Featured projects",
       "maxWidth": "1028px",
-      "tag": "h2",
+      "tag": "h4",
       "size-xl": "80-px",
       "size-lg": "40-px",
       "size-md": "33-px",
@@ -36,8 +36,8 @@
     "slice_type": "text_slice",
     "items": [],
     "primary": {
+      "animation": "fade-right",
       "colorTheme": "white",
-      "animation": "fade-up",
       "title": "Featured projects",
       "text": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.",
       "maxWidth": "1028px"
@@ -49,8 +49,8 @@
     "slice_type": "text_slice",
     "items": [],
     "primary": {
+      "animation": "zoom-in-right",
       "colorTheme": "white",
-      "animation": "fade-down-righ",
       "title": "Featured projects",
       "text": "A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.",
       "buttonText": "Get presentation",
@@ -67,12 +67,12 @@
     "slice_type": "text_slice",
     "items": [],
     "primary": {
+      "animation": "fade-up",
       "colorTheme": "black",
-      "animation": "fade-down-righ",
       "type": "default",
       "position": "center",
-      "text": "target end-to-end bandwidth",
-      "maxWidth": "revolutionize turn-key deliverables",
+      "text": "iterate dot-com e-services",
+      "maxWidth": "orchestrate open-source functionalities",
       "size-xl": "40-px",
       "size-lg": "24-px",
       "size-md": "21-px",
