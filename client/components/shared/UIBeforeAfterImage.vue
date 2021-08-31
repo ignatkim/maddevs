@@ -7,12 +7,12 @@
     <img-comparison-slider>
       <img
         slot="first"
-        src="https://d6xkme6dcvajw.cloudfront.net/images/Cases/godee/png/application-after.png"
+        :src="$getMediaFromS3('/images/Cases/godee/png/application-before.png')"
       >
 
       <img
         slot="second"
-        src="https://d6xkme6dcvajw.cloudfront.net/images/Cases/godee/png/application-before.png"
+        :src="$getMediaFromS3('/images/Cases/godee/png/application-after.png')"
       >
     </img-comparison-slider>
   </div>
