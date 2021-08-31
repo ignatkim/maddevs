@@ -35,6 +35,17 @@
       "cardGridWithIcon": {
         "primary": {},
         "items": {}
+      },
+      "richTextCards": {
+        "primary": {},
+        "items": {
+          "content": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
       }
     },
     "CtaBannerSlice": {

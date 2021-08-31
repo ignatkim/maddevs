@@ -13,6 +13,11 @@
       v-bind="slice.primary"
       :items="slice.items"
     />
+    <RichTextCards
+      v-else-if="slice.variation === 'richTextCards'"
+      v-bind="slice.primary"
+      :items="slice.items"
+    />
   </section>
 </template>
 
@@ -20,6 +25,7 @@
 import CardGrid from './variations/CardGrid'
 import CardGridWithList from './variations/CardGridWithList'
 import CardGridWithIcon from './variations/CardGridWithIcon'
+import RichTextCards from './variations/RichTextCards'
 
 export default {
   name: 'CardGridMain',
@@ -27,6 +33,7 @@ export default {
     CardGrid,
     CardGridWithList,
     CardGridWithIcon,
+    RichTextCards,
   },
 
   props: {

@@ -108,7 +108,7 @@ export default {
   }
   &__title {
     @include font('Inter', 64px, 700);
-    line-height: 105px;
+    line-height: 79px;
     letter-spacing: -2px;
     color: $text-color--white-primary;
     @media screen and (max-width: 768px) {
@@ -128,7 +128,7 @@ export default {
     @include font('Inter', 32px, 600);
     line-height: 44px;
     letter-spacing: -1px;
-    margin-top: 5px;
+    margin-top: 10px;
     color: $text-color--white-primary;
     @media screen and (max-width: 1024px) {
       font-size: 32px;
@@ -138,6 +138,11 @@ export default {
       margin-top: 8px;
       font-size: 21px;
       line-height: 30px;
+    }
+  }
+  /deep/ br {
+    @media only screen and (max-width: 520px) {
+      display: none;
     }
   }
 }
