@@ -212,6 +212,7 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
         >
           <postcard-stub
             post="[object Object]"
+            theme="light"
           />
         </section>
         <section
@@ -221,6 +222,7 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
         >
           <postcard-stub
             post="[object Object]"
+            theme="light"
           />
         </section>
         <section
@@ -230,6 +232,7 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
         >
           <postcard-stub
             post="[object Object]"
+            theme="light"
           />
         </section>
         <section
@@ -239,6 +242,7 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
         >
           <postcard-stub
             post="[object Object]"
+            theme="light"
           />
         </section>
         <section
@@ -248,6 +252,7 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
         >
           <postcard-stub
             post="[object Object]"
+            theme="light"
           />
         </section>
         <section
@@ -257,6 +262,7 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
         >
           <postcard-stub
             post="[object Object]"
+            theme="light"
           />
         </section>
         <section
@@ -266,6 +272,7 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
         >
           <postcard-stub
             post="[object Object]"
+            theme="light"
           />
         </section>
         <section
@@ -275,6 +282,7 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
         >
           <postcard-stub
             post="[object Object]"
+            theme="light"
           />
         </section>
         <section
@@ -284,6 +292,7 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
         >
           <postcard-stub
             post="[object Object]"
+            theme="light"
           />
         </section>
         <section
@@ -293,6 +302,7 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
         >
           <postcard-stub
             post="[object Object]"
+            theme="light"
           />
         </section>
         <section
@@ -302,6 +312,7 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
         >
           <postcard-stub
             post="[object Object]"
+            theme="light"
           />
         </section>
         <section
@@ -311,6 +322,7 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
         >
           <postcard-stub
             post="[object Object]"
+            theme="light"
           />
         </section>
         <section
@@ -320,6 +332,7 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
         >
           <postcard-stub
             post="[object Object]"
+            theme="light"
           />
         </section>
         <section
@@ -329,6 +342,7 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
         >
           <postcard-stub
             post="[object Object]"
+            theme="light"
           />
         </section>
       </div>

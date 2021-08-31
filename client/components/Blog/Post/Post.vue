@@ -81,6 +81,7 @@
           >
             <PostCard
               :post="post"
+              theme="white"
               :author="findAuthor(post.data.post_author.id, allAuthors)"
             />
           </section>

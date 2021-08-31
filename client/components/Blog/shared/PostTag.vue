@@ -45,18 +45,23 @@ export default {
 <style scoped lang="scss">
 .post-tag {
   white-space: nowrap;
-  font-size: 13px;
-  line-height: 22px;
-  padding: 4px 16px;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.4px;
+  padding: 8px 16px;
   border-radius: 2px;
   transition: 0.2s;
+  &--white-theme {
+    background-color: $bgcolor--white-primary !important;
+    color: $text-color--black !important;
+  }
   &--light-theme {
-    background-color: $bgcolor--silver;
-    color: $text-color--black;
+    background-color: $bgcolor--silver !important;
+    color: $text-color--black !important;
   }
   &--dark-theme {
-    background-color: $text-color--quote-box;
-    color: $bgcolor--silver;
+    background-color: $text-color--quote-box !important;
+    color: $text-color--black !important;
   }
 }
 </style>

@@ -183,15 +183,6 @@ export default {
         }
       }
     }
-
-    /deep/ .post-tag {
-      padding: 8px 16px;
-      background-color: #f4f4f4;
-      color: #000;
-      font-size: 14px;
-      line-height: 18px;
-      letter-spacing: -0.4px;
-    }
   }
 
   &__date {
