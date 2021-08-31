@@ -193,11 +193,6 @@ export default {
     /deep/ .featured-post__title {
       color: #fff;
     }
-
-    /deep/ .featured-post__meta .post-tag {
-      background-color: #707072 !important;
-      color: #101113 !important;
-    }
   }
 }
 </style>

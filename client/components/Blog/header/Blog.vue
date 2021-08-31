@@ -78,7 +78,7 @@ export default {
   &__post-info {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 7px;
     margin-bottom: 43px;
     text-decoration: none;

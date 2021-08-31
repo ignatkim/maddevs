@@ -43,7 +43,7 @@
           v-if="post.tags && post.tags.length"
           :tag="tag || post.tags[0]"
           :disabled="disableTagLink"
-          class="light"
+          :theme="theme"
         />
       </div>
       <PostAuthor
@@ -85,6 +85,11 @@ export default {
     tag: {
       type: String,
       default: null,
+    },
+
+    theme: {
+      type: String,
+      default: 'light',
     },
 
     disableAuthorLink: {

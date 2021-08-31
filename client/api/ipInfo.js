@@ -17,13 +17,13 @@ export const getIPInfo = async () => {
   try {
     try {
       response = await axios.get('https://ipapi.co/json')
-      if (response.data.ip) return extractIPInfo(response.data)
+      if (!response.data.ip) throw new Error('IP key is not defined')
+      return extractIPInfo(response.data)
     } catch (error) {
       response = await axios.get('http://ip-api.com/json')
-      if (response.data.query) return extractIPInfo(response.data)
+      if (!response.data.query) throw new Error('Query key is not defined')
+      return extractIPInfo(response.data)
     }
-
-    return ipInfo
   } catch (error) {
     return ipInfo
   }
