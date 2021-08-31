@@ -68,7 +68,7 @@ exports[`post card component render with very long title 1`] = `
         </span>
          
         <nuxtlink-stub
-          class="post-tag light post-tag--light-theme"
+          class="post-tag post-tag--light-theme"
           data-testid="test-tag"
           event="click"
           to="/blog/tag/markup/"
@@ -153,7 +153,7 @@ exports[`post card component should render correctly with slot 1`] = `
         </span>
          
         <nuxtlink-stub
-          class="post-tag light post-tag--light-theme"
+          class="post-tag post-tag--light-theme"
           data-testid="test-tag"
           event="click"
           to="/blog/tag/markup/"
