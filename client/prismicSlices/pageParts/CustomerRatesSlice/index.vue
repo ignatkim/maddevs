@@ -1,6 +1,9 @@
 <template>
   <section class="customer-rates-slice">
-    <div class="container">
+    <div
+      class="container"
+      :data-aos="animation"
+    >
       <h2 class="customer-rates-slice__title">
         <span>Fantastic</span> <br>
         customer&nbsp;&nbsp;&nbsp;<span class="customer-rates-slice__title-icon">rates:</span>
@@ -24,8 +27,19 @@
 </template>
 
 <script>
+import animateOnScrollMixin from '@/mixins/animateOnScrollMixin'
+
 export default {
   name: 'CustomerRatesSlice',
+
+  mixins: [animateOnScrollMixin({
+    offset: 200,
+    delay: 50,
+    anchorPlacement: 'top-center',
+    duration: 1000,
+    once: true,
+  })],
+
   props: {
     slice: {
       type: Object,
@@ -38,6 +52,7 @@ export default {
 
   data() {
     return {
+      animation: this.slice.primary.animation,
       ratesList: this.slice.items,
     }
   },

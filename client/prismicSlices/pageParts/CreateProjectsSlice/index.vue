@@ -1,14 +1,12 @@
 <template>
   <section
     class="create-projects-slice"
-    :style="{
-      backgroundColor: sliceBackground,
-    }"
+    :style="{ backgroundColor: sliceBackground }"
   >
     <div class="container">
       <div
         class="create-projects-slice__content"
-        :data-aos="slice.primary.animation"
+        :data-aos="animation"
       >
         <h2 class="create-projects-slice__title">
           We create <br> IT projects for:
@@ -74,6 +72,7 @@ export default {
     return {
       countries,
       industriesEntries,
+      animation: this.slice.primary.animation,
     }
   },
 

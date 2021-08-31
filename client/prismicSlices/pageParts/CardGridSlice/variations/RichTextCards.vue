@@ -1,10 +1,7 @@
 <template>
   <div class="rich-text-cards">
     <div class="container">
-      <ul
-        class="rich-text-cards__grid"
-        :data-aos="animation"
-      >
+      <ul class="rich-text-cards__grid">
         <li
           v-for="item in items"
           :key="item.title"
@@ -30,25 +27,10 @@
 </template>
 
 <script>
-import animateOnScrollMixin from '@/mixins/animateOnScrollMixin'
-
 export default {
   name: 'RichTextCards',
 
-  mixins: [animateOnScrollMixin({
-    offset: 200,
-    delay: 50,
-    anchorPlacement: 'top-center',
-    duration: 1000,
-    once: true,
-  })],
-
   props: {
-    animation: {
-      type: String,
-      default: null,
-    },
-
     items: {
       type: Array,
       default: () => ([]),

@@ -1,9 +1,7 @@
 <template>
   <section
     class="key-metrics-slice"
-    :style="{
-      backgroundColor: sliceBackground,
-    }"
+    :style="{ backgroundColor: sliceBackground }"
   >
     <div class="container">
       <FirstVariation
@@ -32,6 +30,7 @@
 import FirstVariation from './variations/FirstVariation'
 import SecondVariation from './variations/SecondVariation'
 import ThirdVariation from './variations/ThirdVariation'
+
 import animateOnScrollMixin from '@/mixins/animateOnScrollMixin'
 
 export default {

@@ -18,7 +18,7 @@
           'button-slice__button--normal',
         ]"
         :style="{ maxWidth }"
-        :data-aos="slice.primary.animation"
+        :data-aos="animation"
       >
         {{ text }}
       </UIButton>
@@ -34,7 +34,7 @@
           'button-slice__button--outlined',
         ]"
         :style="{ maxWidth }"
-        :data-aos="slice.primary.animation"
+        :data-aos="animation"
       >
         {{ text }}
       </UIOutlinedButton>
@@ -50,7 +50,7 @@
           'button-slice__button--link',
         ]"
         :style="{ maxWidth }"
-        :data-aos="slice.primary.animation"
+        :data-aos="animation"
       >
         {{ text }}
       </UILinkButton>
@@ -99,6 +99,7 @@ export default {
       link: this.slice.primary.link,
       text: this.slice.primary.text,
       color: this.slice.primary.color,
+      animation: this.slice.primary.animation,
     }
   },
 

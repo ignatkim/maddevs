@@ -6,7 +6,7 @@
     <div class="container">
       <div
         class="meet-our-experts__experts-list"
-        :data-aos="slice.primary.animation"
+        :data-aos="animation"
       >
         <div
           v-for="expert in slice.items"
@@ -76,6 +76,7 @@ export default {
   data() {
     return {
       experts,
+      animation: this.slice.primary.animation,
     }
   },
 }
