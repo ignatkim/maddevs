@@ -2,7 +2,7 @@
   <section class="contacts-slice">
     <FirstVariation
       v-if="slice.variation === 'default-slice'"
-      v-bind="slice"
+      v-bind="slice.primary"
     />
   </section>
 </template>
