@@ -27,11 +27,22 @@
         :title="name"
       >
         {{ shortTitle }}
+        <span
+          class="post-author__divider"
+        > / </span>
+        <span
+          class="post-author__position"
+          :title="position"
+        >
+          {{ position }}
+        </span>
       </p>
       <span
-        class="post-author__position"
-        :title="position"
-      >{{ position }}</span>
+        v-if="date"
+        class="post-author__date"
+      >
+        {{ date }}
+      </span>
     </div>
   </NuxtLink>
 </template>
@@ -58,6 +69,11 @@ export default {
     },
 
     position: {
+      type: String,
+      default: '',
+    },
+
+    date: {
       type: String,
       default: '',
     },
@@ -141,7 +157,7 @@ export default {
     width: 40px;
     min-width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: 9.4px;
     overflow: hidden;
     img {
       display: block;
@@ -159,21 +175,28 @@ export default {
 
   &__name,
   &__position {
-    @include font('Inter', 13px, 400);
+    @include font('Inter', 15px, 400);
     display: block;
-    line-height: 129%;
-    letter-spacing: -0.02em;
+    line-height: 166%;
+    letter-spacing: -0.1px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
   }
 
-  &__name {
-    margin-bottom: 4px;
+  &__divider {
+    color: #ff0029;
   }
 
   &__position {
+    display: inline;
     color: $text-color--grey-pale;
+  }
+
+  &__date {
+    color: $text-color--grey-pale;
+    font-size: 12px;
+    line-height: 166%;
   }
 }
 </style>
