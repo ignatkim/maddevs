@@ -17,7 +17,6 @@ export const getIPInfo = async () => {
   try {
     try {
       response = await axios.get('https://ipapi.co/json')
-      response.data.ip = null
       if (!response.data.ip) throw new Error('IP key is not defined')
       return extractIPInfo(response.data)
     } catch (error) {
