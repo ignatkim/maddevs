@@ -8,7 +8,7 @@ jest.mock('@/api/ipInfo', () => (
   {
     getIPInfo: () => ({
       ip: 'ip',
-      country_name: 'country',
+      country: 'country',
       city: 'city',
     }),
   }

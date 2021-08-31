@@ -20,6 +20,7 @@ export const state = () => ({
   postsCategory: null,
   postsLoaded: false,
   postsPage: 1,
+  showContentLocker: true,
 })
 
 export const mutations = {
@@ -63,6 +64,9 @@ export const mutations = {
   SET_POSTS_PAGE(state, page) {
     state.postsPage = page
   },
+  SET_SHOW_CONTENT_LOCKER(state, value) {
+    state.showContentLocker = value
+  },
 }
 
 export const actions = {
@@ -96,6 +100,9 @@ export const actions = {
   changePostsCategory({ commit }, filter) {
     commit('SET_POSTS_PAGE', 1)
     commit('SET_POSTS_CATEGORY', filter)
+  },
+  changeContentLockerDisplay({ commit }, value) {
+    commit('SET_SHOW_CONTENT_LOCKER', value)
   },
 }
 
@@ -145,5 +152,8 @@ export const getters = {
   },
   postsPage(state) {
     return state.postsPage
+  },
+  showContentLocker(state) {
+    return state.showContentLocker
   },
 }

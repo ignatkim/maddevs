@@ -13,11 +13,11 @@ function IntersectionObserverMixin(idList, callbackFn, observerOptions = observe
     methods: {
       initIntersectionObserver() {
         idList.forEach(id => {
-          const callback = entries => {
+          const callback = (entries, observer) => {
             entries.forEach(entry => {
               if (entry.target.id === id) {
                 if (entry.isIntersecting) {
-                  callbackFn(entry)
+                  callbackFn(entry, observer)
                 }
               }
             })

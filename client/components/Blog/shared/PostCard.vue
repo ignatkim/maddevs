@@ -39,18 +39,18 @@
         />
       </NuxtLink>
       <div class="post-card__meta">
-        <span class="post-card__date">{{ formattedDate }}</span>
         <PostTag
           v-if="post.tags && post.tags.length"
           :tag="tag || post.tags[0]"
           :disabled="disableTagLink"
-          class="light"
+          :theme="theme"
         />
       </div>
       <PostAuthor
         v-bind="author"
         :disabled="disableAuthorLink"
         theme="light"
+        :date="formattedDate"
       />
     </div>
   </div>
@@ -85,6 +85,11 @@ export default {
     tag: {
       type: String,
       default: null,
+    },
+
+    theme: {
+      type: String,
+      default: 'light',
     },
 
     disableAuthorLink: {
@@ -220,7 +225,7 @@ export default {
     @include font('Inter', 13px, 400);
     display: flex;
     align-items: center;
-    margin: 20px 0;
+    margin: 16px 0;
   }
   &__date {
     margin-right: 5px;

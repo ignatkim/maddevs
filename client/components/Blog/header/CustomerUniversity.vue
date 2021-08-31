@@ -59,18 +59,30 @@
         </div>
       </div>
     </template>
+    <template #afterTitle>
+      <div class="post-info">
+        <PostAuthor
+          v-bind="blogAuthor"
+          theme="dark"
+          :date="date"
+        />
+      </div>
+    </template>
   </CommonHeader>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import VueSelect from 'vue-select'
 import CommonHeader from '@/components/Blog/header/Common'
+import PostAuthor from '@/components/Blog/shared/PostAuthor'
 import 'vue-select/dist/vue-select.css'
 
 export default {
   name: 'CustomerUniversity',
   components: {
     CommonHeader,
+    PostAuthor,
     VueSelect,
   },
 
@@ -104,6 +116,11 @@ export default {
       type: String,
       default: () => '',
     },
+
+    date: {
+      type: String,
+      default: '',
+    },
   },
 
   data() {
@@ -124,6 +141,8 @@ export default {
   },
 
   computed: {
+    ...mapGetters(['blogAuthor']),
+
     postOptions() {
       return this.postList.map(post => ({
         label: this.$prismic.asText(post.chapter_name),
@@ -318,6 +337,26 @@ export default {
     vertical-align: middle;
     margin: 0 40px;
   }
+}
+
+.post-info {
+    margin-top: 7px;
+    margin-bottom: 43px;
+    text-decoration: none;
+
+    a {
+      text-decoration: none;
+    }
+
+    /deep/ .blog-post__author-image {
+      width: 30px;
+      min-width: 30px;
+      height: 30px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      padding-left: 24px;
+    }
 }
 
 .mt-0 {

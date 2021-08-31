@@ -92,9 +92,9 @@ async function sendApplication(req) {
     }
 
     // Creating a vacancy application
-    const application = await createApplication(vacancyId, candidate.id, cvFile.id)
+    await createApplication(vacancyId, candidate.id, cvFile.id)
 
-    return application
+    return cvFile
   } catch (error) {
     return error
   }

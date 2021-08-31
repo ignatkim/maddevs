@@ -1,7 +1,10 @@
 <template>
   <section class="technologies-slice">
     <div class="container">
-      <h2 class="technologies-slice__title">
+      <h2
+        class="technologies-slice__title"
+        :data-aos="slice.primary.animation"
+      >
         {{ slice.primary.title || 'Technologies & Tools' }}
       </h2>
       <div
@@ -9,6 +12,7 @@
           'technologies-slice__categories',
           `technologies-slice__categories--${categoryToClass(activeCategory)}`
         ]"
+        :data-aos="slice.primary.animation"
       >
         <div
           v-for="category in categories"
@@ -27,6 +31,7 @@
           'technologies-slice__grid',
           `technologies-slice__grid--${categoryToClass(activeCategory)}`
         ]"
+        :data-aos="slice.primary.animation"
       >
         <div
           v-for="technology in technologies"
@@ -53,9 +58,19 @@
 <script>
 import { categories, technologies } from '@/data/technologiesAndTools'
 import refreshLazyImages from '@/helpers/refreshLazyImages'
+import animateOnScrollMixin from '@/mixins/animateOnScrollMixin'
 
 export default {
   name: 'TechnologiesAndTools',
+
+  mixins: [animateOnScrollMixin({
+    offset: 200,
+    delay: 50,
+    anchorPlacement: 'top-center',
+    duration: 1000,
+    once: true,
+  })],
+
   props: {
     slice: {
       type: Object,

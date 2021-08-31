@@ -36,7 +36,7 @@ export default {
       default: false,
     },
 
-    link: {
+    isLink: {
       type: Boolean,
       default: false,
     },
@@ -54,12 +54,12 @@ export default {
 
   computed: {
     isTag() {
-      if (this.link) return 'a'
+      if (this.isLink) return 'a'
       return 'button'
     },
 
     linkTo() {
-      if (this.link) return this.to
+      if (this.isLink) return this.to
       return null
     },
   },

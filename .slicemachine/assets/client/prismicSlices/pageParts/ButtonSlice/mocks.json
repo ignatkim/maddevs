@@ -5,14 +5,16 @@
     "slice_type": "button_slice",
     "items": [],
     "primary": {
-      "fullWidth": true,
+      "fullWidth": false,
       "alignment": "left",
       "text": "Default red button",
       "link": {
         "link_type": "Web",
-        "url": "http://google.com"
+        "url": "https://prismic.io"
       },
-      "background": "black"
+      "background": "black",
+      "maxWidth": "synergize seamless systems",
+      "animation": "none"
     }
   },
   {
@@ -22,14 +24,16 @@
     "items": [],
     "primary": {
       "fullWidth": true,
-      "alignment": "right",
-      "color": "grey",
+      "alignment": "left",
+      "color": "red",
       "text": "Outlined button",
       "link": {
         "link_type": "Web",
-        "url": "https://slicemachine.dev"
+        "url": "http://twitter.com"
       },
-      "background": "white"
+      "background": "grey",
+      "maxWidth": "reintermediate sexy methodologies",
+      "animation": "none"
     }
   },
   {
@@ -39,14 +43,16 @@
     "items": [],
     "primary": {
       "fullWidth": false,
-      "alignment": "right",
-      "color": "grey",
+      "alignment": "left",
+      "color": "black",
       "text": "Link button",
       "link": {
         "link_type": "Web",
-        "url": "https://slicemachine.dev"
+        "url": "https://prismic.io"
       },
-      "background": "black"
+      "background": "black",
+      "maxWidth": "drive end-to-end partnerships",
+      "animation": "none"
     }
   }
 ]

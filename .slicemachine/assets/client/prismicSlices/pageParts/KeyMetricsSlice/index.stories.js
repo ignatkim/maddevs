@@ -18,7 +18,7 @@ export const _DefaultSlice = () => ({
   },
   data() {
     return {
-      mock: {"variation":"default-slice","name":"Default slice","slice_type":"key_metrics_slice","items":[{"title":"enhance viral functionalities","subtitle":"transition dot-com functionalities"},{"title":"envisioneer value-added interfaces","subtitle":"streamline e-business e-business"},{"title":"deliver frictionless methodologies","subtitle":"deliver cutting-edge deliverables"}],"primary":{"background":"black"},"id":"_DefaultSlice"}
+      mock: {"variation":"default-slice","name":"Default slice","slice_type":"key_metrics_slice","items":[{"title":"implement 24/365 channels","subtitle":"disintermediate 24/7 infrastructures"},{"title":"productize sexy portals","subtitle":"productize robust channels"},{"title":"generate impactful partnerships","subtitle":"implement real-time bandwidth"},{"title":"architect back-end relationships","subtitle":"incentivize cross-platform technologies"},{"title":"exploit granular channels","subtitle":"productize collaborative metrics"}],"primary":{"background":"black","animation":"none"},"id":"_DefaultSlice"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -37,7 +37,7 @@ export const _SecondVariation = () => ({
   },
   data() {
     return {
-      mock: {"variation":"secondVariation","name":"Second variation","slice_type":"key_metrics_slice","items":[{"title":"syndicate back-end bandwidth","subtitle":"generate efficient e-services"},{"title":"orchestrate world-class infomediaries","subtitle":"integrate virtual bandwidth"},{"title":"innovate bleeding-edge functionalities","subtitle":"enhance mission-critical eyeballs"},{"title":"expedite customized ROI","subtitle":"streamline turn-key portals"}],"primary":{"colorTheme":"white","background":"black"},"id":"_SecondVariation"}
+      mock: {"variation":"secondVariation","name":"Second variation","slice_type":"key_metrics_slice","items":[{"title":"facilitate sexy networks","subtitle":"streamline impactful ROI"},{"title":"strategize clicks-and-mortar bandwidth","subtitle":"unleash cutting-edge channels"},{"title":"generate turn-key e-markets","subtitle":"envisioneer 24/365 architectures"},{"title":"target viral supply-chains","subtitle":"iterate compelling mindshare"}],"primary":{"colorTheme":"white","background":"black"},"id":"_SecondVariation"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
@@ -56,7 +56,7 @@ export const _ThirdVariation = () => ({
   },
   data() {
     return {
-      mock: {"variation":"thirdVariation","name":"Third variation","slice_type":"key_metrics_slice","items":[{"title":"deliver compelling web services","subtitle":"matrix back-end bandwidth"},{"title":"deploy enterprise interfaces","subtitle":"deliver real-time initiatives"},{"title":"incubate web-enabled solutions","subtitle":"embrace sexy deliverables"}],"primary":{"colorTheme":"white","background":"white"},"id":"_ThirdVariation"}
+      mock: {"variation":"thirdVariation","name":"Third variation","slice_type":"key_metrics_slice","items":[{"title":"redefine out-of-the-box e-tailers","subtitle":"disintermediate 24/365 portals"},{"title":"disintermediate efficient models","subtitle":"e-enable viral vortals"},{"title":"harness real-time supply-chains","subtitle":"maximize customized metrics"}],"primary":{"colorTheme":"white","background":"black"},"id":"_ThirdVariation"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'

@@ -17,6 +17,7 @@ const extractVacancyData = post => ({
     remote: post.data.remote_label,
     relocation: post.data.relocation_label,
   },
+  alternate_languages: post.data.alternate_languages,
   tags: post.tags,
   slices: post.data.body,
   metaTitle: post.data.meta_title,

@@ -5,6 +5,11 @@ const storage = multer.diskStorage({
   destination(req, file, cb) {
     cb(null, '/tmp')
   },
+  filename(req, file, cb) {
+    const { originalname } = file
+    const fileExtension = (originalname.match(/\.+[\S]+$/) || [])[0]
+    cb(null, `${file.fieldname}${Date.now()}${fileExtension}`)
+  },
 })
 
 // controllers

@@ -24,9 +24,9 @@
           <PostAuthor
             v-bind="author"
             :theme="theme"
+            :date="formattedDate"
           />
           <div class="featured-post__meta">
-            <span class="featured-post__date">{{ formattedDate }}</span>
             <PostTag
               v-if="post.tags && post.tags.length"
               :tag="tag || post.tags[0]"
@@ -182,15 +182,6 @@ export default {
           height: 40px;
         }
       }
-    }
-
-    /deep/ .post-tag {
-      padding: 8px 16px;
-      background-color: #f4f4f4;
-      color: #000;
-      font-size: 14px;
-      line-height: 18px;
-      letter-spacing: -0.4px;
     }
   }
 

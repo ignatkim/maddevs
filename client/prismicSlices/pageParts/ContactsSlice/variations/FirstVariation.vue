@@ -1,5 +1,8 @@
 <template>
-  <div class="container contacts-slice__content">
+  <div
+    class="container contacts-slice__content"
+    :data-aos="animation"
+  >
     <div class="contacts-slice__content-info">
       <ContactFields class="contacts-slice__content-fields" />
       <Messengers class="contacts-slice__content-messengers" />
@@ -15,6 +18,8 @@ import Messengers from '../components/Messengers'
 import Socials from '../components/Socials'
 import OrderForm from '../components/OrderForm'
 
+import animateOnScrollMixin from '@/mixins/animateOnScrollMixin'
+
 export default {
   name: 'FirstVariation',
   components: {
@@ -22,6 +27,21 @@ export default {
     Messengers,
     Socials,
     OrderForm,
+  },
+
+  mixins: [animateOnScrollMixin({
+    offset: 200,
+    delay: 50,
+    anchorPlacement: 'top-center',
+    duration: 1000,
+    once: true,
+  })],
+
+  props: {
+    animation: {
+      type: String,
+      default: '',
+    },
   },
 }
 </script>

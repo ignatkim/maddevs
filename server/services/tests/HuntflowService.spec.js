@@ -36,7 +36,7 @@ describe('Huntflow service', () => {
 
   it('should correctly return data from response', async () => {
     const data = await sendApplication(req)
-    expect(data).toBe('some data')
+    expect(data).toEqual('some data')
   })
 
   it('should correctly return error if axios failed', async () => {

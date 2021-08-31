@@ -46,6 +46,7 @@
         :featured-image="featuredImage"
         :post-list="clusterPosts || []"
         :cluster-name="cluster ? $prismic.asText(cluster.primary.cluster_name) : ''"
+        :date="date"
       />
       <BlogHeader
         v-else
@@ -80,6 +81,7 @@
           >
             <PostCard
               :post="post"
+              theme="white"
               :author="findAuthor(post.data.post_author.id, allAuthors)"
             />
           </section>
@@ -90,6 +92,7 @@
         :id="id"
         :cluster="cluster"
         :cluster-posts="clusterPosts"
+        :date="date"
       />
     </div>
     <button

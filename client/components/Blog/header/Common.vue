@@ -35,7 +35,7 @@ import mainMixins from '@/mixins/mainMixins'
 import extractFileExtension from '@/helpers/extractFileExtension'
 
 export default {
-  name: 'Common',
+  name: 'CommonHeader',
 
   mixins: [mainMixins],
 
@@ -101,7 +101,7 @@ export default {
 
   &__blog-sub-title {
     @include font('Inter', 17px, 300);
-    margin-bottom: 36px;
+    margin: 15px 0 36px 0;
     color: $text-color--white-primary;
     letter-spacing: 0.2px;
     font-size: 17px;
