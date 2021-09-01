@@ -8,7 +8,7 @@
       ref="header"
       data-testid="test-header"
       :class="{
-        'is-transparent-bg': !isActiveMobileMenu && isTransparentBG && hasTransparentHeaderArea,
+        'is-transparent-bg': !isActiveMobileMenu && headerTransparent,
       }"
       class="header"
     >
@@ -146,6 +146,7 @@
 </template>
 
 <script>
+import { mapGetters, mapActions } from 'vuex'
 import scrollOnBody from '@/mixins/scrollOnBody'
 import UIModalTriggerButton from '@/components/shared/UIModalTriggerButton'
 import HeaderMobile from '@/components/core/Header/HeaderMobile'
@@ -170,13 +171,13 @@ export default {
       navigation,
       showLogoText: true,
       isActiveMobileMenu: false,
-      hasTransparentHeaderArea: false,
-      isTransparentBG: true,
       searchActive: false,
     }
   },
 
   computed: {
+    ...mapGetters(['headerTransparentArea', 'headerTransparent']),
+
     logoTextIsActive() {
       return this.showLogoText
     },
@@ -187,10 +188,6 @@ export default {
   },
 
   watch: {
-    $route() {
-      this.setDefaultStateForHeader()
-    },
-
     searchActive(opened) {
       if (opened) {
         this.disableScrollOnBody()
@@ -200,10 +197,6 @@ export default {
         }, 300)
       }
     },
-  },
-
-  created() {
-    this.setDefaultStateForHeader()
   },
 
   mounted() {
@@ -216,6 +209,8 @@ export default {
   },
 
   methods: {
+    ...mapActions(['setHeaderTransparent']),
+
     // Base methods
     goToTopPage() {
       window.scrollTo(0, 0)
@@ -238,27 +233,17 @@ export default {
       return false
     },
 
-    setDefaultStateForHeader() {
-      const pagesWithTransparentHeaderArea = [
-        'delivery-models',
-        'open-source',
-        'blog',
-        'careers___en',
-        'careers___ru',
-        'uid___en',
-        'uid___ru',
-      ]
-      const { name: routeName } = this.$nuxt.$route
-      if (routeName) this.hasTransparentHeaderArea = routeName.includes('case-studies-') || pagesWithTransparentHeaderArea.includes(routeName)
-    },
-
-    changeLogoState(scrollTop) {
-      this.showLogoText = Boolean(scrollTop < 10)
+    handleLogo(scrollTop) {
+      if (this.headerTransparent) {
+        this.showLogoText = true
+      } else {
+        this.showLogoText = Boolean(scrollTop < 10)
+      }
     },
 
     handleMobileMenuScroll(e) {
       e.stopImmediatePropagation()
-      this.changeLogoState(this.mobileHeaderScrollbar.scrollTop)
+      this.handleLogo(this.mobileHeaderScrollbar.scrollTop)
     },
 
     toggleMobileMenu() {
@@ -279,34 +264,26 @@ export default {
 
     setStylesForHeader() {
       const scrollTop = window.scrollY
-      const area = document.querySelector('#transparent-header-area')
+      const area = document.querySelector(this.headerTransparentArea)
       const headerHeight = this.$refs.header.clientHeight
       const earlyStartBGChange = 30 // For an earlier start change background header
+
+      this.handleLogo(scrollTop)
 
       if (!area) return
 
       const areaHeight = (area.offsetTop + area.offsetHeight) - headerHeight
-      // const isAfterTopPointSection = scrollTop >= area.offsetTop // After Top point of the section
       const isBeforeBottomPointSection = scrollTop <= areaHeight - earlyStartBGChange // Before Bottom point of the section
 
-      this.isTransparentBG = isBeforeBottomPointSection
-      this.showLogoText = isBeforeBottomPointSection
-    },
-
-    scrollHandler() {
-      if (this.hasTransparentHeaderArea) {
-        this.setStylesForHeader()
-      } else {
-        this.changeLogoState(window.pageYOffset)
-      }
+      this.setHeaderTransparent(isBeforeBottomPointSection)
     },
 
     addEventListeners() {
-      window.addEventListener('scroll', this.scrollHandler)
+      window.addEventListener('scroll', this.setStylesForHeader)
     },
 
     removeEventListeners() {
-      window.removeEventListener('scroll', this.scrollHandler)
+      window.removeEventListener('scroll', this.setStylesForHeader)
     },
   },
 }

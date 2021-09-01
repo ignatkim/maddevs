@@ -98,6 +98,7 @@ module.exports = {
     '~/plugins/vuelidate.js',
     '~/plugins/vue-social-sharing.js',
     '~/plugins/get-media-from-s3.js',
+    '~/plugins/header-handler.js',
     '~/plugins/feature-flags.js',
     '~/plugins/vue-prlx.js',
     { src: '~/plugins/sentry.js', mode: 'client' },
