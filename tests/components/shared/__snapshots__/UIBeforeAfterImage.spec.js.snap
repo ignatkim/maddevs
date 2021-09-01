@@ -8,13 +8,17 @@ exports[`UIBeforeAfterImage component should render correctly with slot 1`] = `
   >
     <img-comparison-slider>
       <img
+        height=""
         slot="first"
         src="img.jpg"
+        width=""
       />
        
       <img
+        height=""
         slot="second"
         src="img.jpg"
+        width=""
       />
     </img-comparison-slider>
   </div>

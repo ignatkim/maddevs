@@ -23,13 +23,17 @@ exports[`BeforeAfter component should render correctly 1`] = `
         >
           <img-comparison-slider>
             <img
+              height="578.47"
               slot="first"
               src="img.jpg"
+              width="1000"
             />
              
             <img
+              height="578.47"
               slot="second"
               src="img.jpg"
+              width="1000"
             />
           </img-comparison-slider>
         </div>

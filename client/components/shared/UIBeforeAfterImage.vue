@@ -7,11 +7,15 @@
     <img-comparison-slider>
       <img
         slot="first"
+        :width="baseWidth"
+        :height="baseHeight"
         :src="$getMediaFromS3(beforeImage)"
       >
 
       <img
         slot="second"
+        :width="baseWidth"
+        :height="baseHeight"
         :src="$getMediaFromS3(afterImage)"
       >
     </img-comparison-slider>
@@ -37,6 +41,16 @@ export default {
       type: String,
       default: '',
     },
+
+    baseWidth: {
+      type: String,
+      default: '',
+    },
+
+    baseHeight: {
+      type: String,
+      default: '',
+    },
   },
 }
 </script>
@@ -53,7 +67,7 @@ export default {
       width: 100%;
       height: auto;
       display: block;
-      margin: 0 auto;
+      margin-left: auto;
     }
   }
 
