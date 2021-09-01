@@ -9,14 +9,14 @@
         slot="first"
         :width="baseWidth"
         :height="baseHeight"
-        :src="$getMediaFromS3(beforeImage)"
+        :src="beforeImage"
       >
 
       <img
         slot="second"
         :width="baseWidth"
         :height="baseHeight"
-        :src="$getMediaFromS3(afterImage)"
+        :src="afterImage"
       >
     </img-comparison-slider>
   </div>
@@ -67,7 +67,7 @@ export default {
       width: 100%;
       height: auto;
       display: block;
-      margin-left: auto;
+      margin: 0 auto;
     }
   }
 
