@@ -1,5 +1,8 @@
 <template>
-  <section class="card-grid-main">
+  <section
+    class="card-grid-main"
+    :style="{ backgroundColor: sliceBackground }"
+  >
     <CardGrid
       v-if="slice.variation === 'default-slice'"
       v-bind="slice"
@@ -52,6 +55,15 @@ export default {
       default() {
         return {}
       },
+    },
+  },
+
+  computed: {
+    sliceBackground() {
+      if (this.background === 'white') return '#fff'
+      if (this.background === 'grey') return '#f5f7f9'
+      if (this.background === 'black') return '#111213'
+      return null
     },
   },
 }

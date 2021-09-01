@@ -10,7 +10,6 @@
 
 <script>
 import FirstVariation from './variations/FirstVariation'
-
 import animateOnScrollMixin from '@/mixins/animateOnScrollMixin'
 
 export default {
