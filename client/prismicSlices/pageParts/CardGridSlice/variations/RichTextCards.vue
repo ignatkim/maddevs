@@ -141,6 +141,9 @@ export default {
           background-color: $border-color--red;
           vertical-align: top;
           margin: 18px 12px 0 0;
+          @media screen and (max-width: 1260px) {
+            margin-top: 14px;
+          }
         }
       }
     }
