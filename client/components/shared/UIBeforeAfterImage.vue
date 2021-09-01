@@ -23,16 +23,6 @@ export default {
   name: 'BeforeAfterImage',
 
   props: {
-    beforeImage: {
-      type: String,
-      default: '',
-    },
-
-    afterImage: {
-      type: String,
-      default: '',
-    },
-
     alt: {
       type: String,
       default: '',
@@ -80,5 +70,11 @@ export default {
       padding: 20px 3px;
     }
   }
+}
+
+img-comparison-slider {
+  --divider-width: 2px;
+  --divider-color: #ec1c24;
+  --default-handle-opacity: 0;
 }
 </style>
