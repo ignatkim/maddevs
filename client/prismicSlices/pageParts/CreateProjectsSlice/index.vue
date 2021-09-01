@@ -80,14 +80,14 @@ export default {
     sliceBackground() {
       if (this.slice.primary.background === 'white') return '#fff'
       if (this.slice.primary.background === 'grey') return '#f5f7f9'
-      return '#111213' // black
+      if (this.slice.primary.background === 'black') return '#111213'
+      return null
     },
   },
 }
 </script>
 
 <style lang="scss" scoped>
-
 .create-projects-slice {
   @media screen and (max-width: 576px) {
     background-color: $bgcolor--white !important;

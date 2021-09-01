@@ -52,8 +52,8 @@ export default {
 
   data() {
     return {
-      animation: this.slice.primary.animation,
       ratesList: this.slice.items,
+      animation: this.slice.primary.animation,
     }
   },
 }

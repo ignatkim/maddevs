@@ -1,9 +1,7 @@
 <template>
   <div
-    :class="[
-      'key-metrics-slice__content',
-      colorTheme ? `key-metrics-slice__content--${colorTheme}-theme` : null
-    ]"
+    class="key-metrics-slice__content"
+    :class="colorThemeClass"
   >
     <h2 class="key-metrics-slice__title">
       Mad Devs’ key metrics
@@ -38,6 +36,13 @@ export default {
       type: Array,
       required: true,
       default: () => ([]),
+    },
+  },
+
+  computed: {
+    colorThemeClass() {
+      if (this.colorTheme === 'black') return 'key-metrics-slice__content--black-theme'
+      return 'key-metrics-slice__content--white-theme'
     },
   },
 }

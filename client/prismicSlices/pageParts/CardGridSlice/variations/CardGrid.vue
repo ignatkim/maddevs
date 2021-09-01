@@ -1,8 +1,5 @@
 <template>
-  <section
-    class="container"
-    :class="colorThemeClass"
-  >
+  <div class="container">
     <ul class="card-grid-slice">
       <li
         v-for="(item, i) of items"
@@ -33,7 +30,7 @@
         </a>
       </li>
     </ul>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -47,21 +44,9 @@ export default {
   },
 
   props: {
-    colorTheme: {
-      type: String,
-      default: 'white',
-    },
-
     items: {
       type: Array,
       default: () => [],
-    },
-  },
-
-  computed: {
-    colorThemeClass() {
-      if (this.colorTheme === 'white') return 'card-grid-slice--white-theme'
-      return 'card-grid-slice--black-theme'
     },
   },
 }

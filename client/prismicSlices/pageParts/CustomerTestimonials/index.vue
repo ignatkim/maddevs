@@ -35,7 +35,7 @@ export default {
 
   data() {
     return {
-      aniamtion: this.slice.primary.animation,
+      animation: this.slice.primary.animation,
       title: this.slice.primary.title,
     }
   },
