@@ -60,9 +60,9 @@ export default {
 
   computed: {
     sliceBackground() {
-      if (this.background === 'white') return '#fff'
-      if (this.background === 'grey') return '#f5f7f9'
-      if (this.background === 'black') return '#111213'
+      if (this.slice.primary.background === 'white') return '#fff'
+      if (this.slice.primary.background === 'grey') return '#f5f7f9'
+      if (this.slice.primary.background === 'black') return '#111213'
       return null
     },
   },
