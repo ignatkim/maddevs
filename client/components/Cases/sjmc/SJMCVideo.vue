@@ -83,12 +83,33 @@ export default {
     },
 
     exitFullscreen() {
-      document.exitFullscreen()
-      this.fullscreenModIsActive = false
+      if (document.exitFullscreen) {
+        document.exitFullscreen()
+        this.fullscreenModIsActive = false
+      } else if (document.webkitCancelFullScreen) {
+        document.webkitCancelFullScreen()
+        this.fullscreenModIsActive = false
+      } else if (document.mozCancelFullScreen) {
+        document.mozCancelFullScreen()
+        this.fullscreenModIsActive = false
+      } else if (document.msExitFullscreen) {
+        document.msExitFullscreen()
+        this.fullscreenModIsActive = false
+      }
     },
 
     emitHandler() {
-      this.$refs.videoContainer.requestFullscreen()
+      if (this.$refs.videoContainer.requestFullscreen) {
+        this.$refs.videoContainer.requestFullscreen()
+      } else if (this.$refs.videoContainer.webkitRequestFullScreen) {
+        this.$refs.videoContainer.webkitRequestFullScreen()
+      } else if (this.$refs.videoContainer.mozRequestFullScreen) {
+        this.$refs.videoContainer.mozRequestFullScreen()
+      } else if (this.$refs.videoContainer.msRequestFullscreen) {
+        // IE11
+        this.$refs.videoContainer.msRequestFullscreen()
+      }
+
       this.fullscreenModIsActive = true
 
       if (this.flagFirstStartVideo) {
