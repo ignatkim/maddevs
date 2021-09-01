@@ -6,6 +6,8 @@
       </h2>
       <div class="container_regular">
         <UIBeforeAfterImage
+          before-image="/images/Cases/godee/png/application-before.png"
+          after-image="/images/Cases/godee/png/application-after.png"
           :alt="'GoDee Public Transportation App at 2018 and now.'"
         />
       </div>

@@ -7,12 +7,12 @@
     <img-comparison-slider>
       <img
         slot="first"
-        :src="$getMediaFromS3('/images/Cases/godee/png/application-before.png')"
+        :src="$getMediaFromS3(beforeImage)"
       >
 
       <img
         slot="second"
-        :src="$getMediaFromS3('/images/Cases/godee/png/application-after.png')"
+        :src="$getMediaFromS3(afterImage)"
       >
     </img-comparison-slider>
   </div>
@@ -23,6 +23,16 @@ export default {
   name: 'BeforeAfterImage',
 
   props: {
+    beforeImage: {
+      type: String,
+      default: '',
+    },
+
+    afterImage: {
+      type: String,
+      default: '',
+    },
+
     alt: {
       type: String,
       default: '',
