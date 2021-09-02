@@ -3,7 +3,7 @@
     data-testid="track-img"
     class="comparsion-container"
   >
-    <img-comparison-slider>
+    <img-comparison-slider hover="true">
       <img
         slot="first"
         :width="baseWidth"
