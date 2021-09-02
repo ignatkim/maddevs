@@ -1,9 +1,9 @@
 import { mapActions } from 'vuex'
 
 const headerMixin = selector => ({
-  asyncData({ store }) {
-    store.dispatch('setHeaderTransparentArea', selector)
-    store.dispatch('setHeaderTransparent', true)
+  created() {
+    this.setHeaderTransparentArea(selector)
+    this.setHeaderTransparent(true)
   },
 
   destroyed() {

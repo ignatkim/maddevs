@@ -7,9 +7,7 @@
     <header
       ref="header"
       data-testid="test-header"
-      :class="{
-        'is-transparent-bg': !isActiveMobileMenu && headerTransparent,
-      }"
+      :class="{ 'is-transparent-bg': !isActiveMobileMenu && headerTransparent }"
       class="header"
     >
       <div
@@ -296,6 +294,7 @@ export default {
   padding: 11px 0;
   z-index: 3;
   background-color: $bgcolor--black;
+  transition: all 0.3s ease;
 
   &__content {
     display: flex;
