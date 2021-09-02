@@ -6,6 +6,7 @@ import * as blogSearch from './modules/blogSearch'
 import * as leads from './modules/leads'
 import * as careers from './modules/careers'
 import * as header from './modules/header'
+import * as footer from './modules/footer'
 
 export default {
   modules: {
@@ -17,5 +18,6 @@ export default {
     leads,
     careers,
     header,
+    footer,
   },
 }

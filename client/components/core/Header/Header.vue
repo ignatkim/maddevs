@@ -263,7 +263,7 @@ export default {
     setStylesForHeader() {
       const scrollTop = window.scrollY
       const area = document.querySelector(this.headerTransparentArea)
-      const headerHeight = this.$refs.header.clientHeight
+      const headerHeight = this.$refs?.header?.clientHeight
       const earlyStartBGChange = 30 // For an earlier start change background header
 
       this.handleLogo(scrollTop)
