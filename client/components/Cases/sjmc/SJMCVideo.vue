@@ -85,17 +85,15 @@ export default {
     exitFullscreen() {
       if (document.exitFullscreen) {
         document.exitFullscreen()
-        this.fullscreenModIsActive = false
       } else if (document.webkitCancelFullScreen) {
         document.webkitCancelFullScreen()
-        this.fullscreenModIsActive = false
       } else if (document.mozCancelFullScreen) {
         document.mozCancelFullScreen()
-        this.fullscreenModIsActive = false
       } else if (document.msExitFullscreen) {
         document.msExitFullscreen()
-        this.fullscreenModIsActive = false
       }
+
+      this.fullscreenModIsActive = false
     },
 
     emitHandler() {
