@@ -6,7 +6,9 @@ exports[`UIBeforeAfterImage component should render correctly with slot 1`] = `
     class="comparsion-container"
     data-testid="track-img"
   >
-    <img-comparison-slider>
+    <img-comparison-slider
+      hover="true"
+    >
       <img
         height=""
         slot="first"

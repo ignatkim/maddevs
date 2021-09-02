@@ -21,7 +21,9 @@ exports[`BeforeAfter component should render correctly 1`] = `
           class="comparsion-container"
           data-testid="track-img"
         >
-          <img-comparison-slider>
+          <img-comparison-slider
+            hover="true"
+          >
             <img
               height="578.47"
               slot="first"
