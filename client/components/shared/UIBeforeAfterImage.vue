@@ -1,6 +1,5 @@
 <template>
   <div
-    ref="trackContainer"
     data-testid="track-img"
     class="comparsion-container"
   >
