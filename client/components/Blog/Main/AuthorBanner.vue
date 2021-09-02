@@ -2,20 +2,13 @@
   <div class="container">
     <div class="current-author">
       <div class="current-author__image">
-        <picture>
-          <source
-            v-lazy-load
-            :data-src="`${authorImage.url}&w=256&h=256`"
-            media="(max-width: 991px)"
-          >
-          <img
-            v-lazy-load
-            :data-src="`${authorImage.url}&w=330&h=330`"
-            :alt="authorImage.alt"
-            width="165"
-            height="165"
-          >
-        </picture>
+        <img
+          v-lazy-load
+          :data-src="authorImage.url"
+          :alt="authorImage.alt"
+          width="165"
+          height="165"
+        >
       </div>
       <h1 class="current-author__name">
         {{ blogAuthor.name }}
@@ -37,14 +30,8 @@ export default {
     ...mapGetters(['blogAuthor']),
 
     authorImage() {
-      let urlWithoutSizeParams = ''
-      const { image } = this.blogAuthor
-      if (image && image.header) {
-        // eslint-disable-next-line
-        if (image.header.url) urlWithoutSizeParams = image.header.url.split('&w=')[0]
-        return { ...image.header, url: urlWithoutSizeParams }
-      }
-      return {}
+      const { header = {} } = this.blogAuthor?.image
+      return header
     },
   },
 }
