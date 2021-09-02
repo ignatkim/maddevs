@@ -166,7 +166,7 @@ export default {
   &__meta {
     @include font('Inter', 13px, 400);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 
     &-wrapper {
       display: flex;
