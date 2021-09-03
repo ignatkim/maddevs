@@ -101,6 +101,7 @@ module.exports = {
     '~/plugins/feature-flags.js',
     '~/plugins/vue-prlx.js',
     { src: '~/plugins/sentry.js', mode: 'client' },
+    { src: '~/plugins/img-comparison-slider.js', mode: 'client' },
     { src: '~/plugins/vue-parallax', mode: 'client' },
   ],
   /*

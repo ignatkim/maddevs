@@ -27,7 +27,7 @@
     </div>
     <button
       class="exit"
-      @click="exitFullscreen"
+      @click="closeFullscreen"
     >
       <img
         src="@/assets/img/Studies/svg/close-icon.svg"
@@ -41,19 +41,21 @@
 
 <script>
 import mainMixins from '@/mixins/mainMixins'
+import checkBrowserMixin from '@/mixins/checkBrowserMixin'
 
 export default {
   name: 'SJMCVideo',
-  mixins: [mainMixins],
+  mixins: [mainMixins, checkBrowserMixin],
   data() {
     return {
-      fullscreenModIsActive: false,
       showIcon: false,
       flagFirstStartVideo: true,
+      fullscreenModIsActive: false,
     }
   },
 
   mounted() {
+    this.closeFullscreen()
     // event bus handler
     this.$nuxt.$on('open-fullscreen', () => this.emitHandler())
 
@@ -82,34 +84,14 @@ export default {
       this.showIcon = true
     },
 
-    exitFullscreen() {
-      if (document.exitFullscreen) {
-        document.exitFullscreen()
-      } else if (document.webkitCancelFullScreen) {
-        document.webkitCancelFullScreen()
-      } else if (document.mozCancelFullScreen) {
-        document.mozCancelFullScreen()
-      } else if (document.msExitFullscreen) {
-        document.msExitFullscreen()
-      }
-
+    closeFullscreen() {
+      this.checkBrowserExitFullscreen()
       this.fullscreenModIsActive = false
     },
 
     emitHandler() {
-      if (this.$refs.videoContainer.requestFullscreen) {
-        this.$refs.videoContainer.requestFullscreen()
-      } else if (this.$refs.videoContainer.webkitRequestFullScreen) {
-        this.$refs.videoContainer.webkitRequestFullScreen()
-      } else if (this.$refs.videoContainer.mozRequestFullScreen) {
-        this.$refs.videoContainer.mozRequestFullScreen()
-      } else if (this.$refs.videoContainer.msRequestFullscreen) {
-        // IE11
-        this.$refs.videoContainer.msRequestFullscreen()
-      }
-
+      this.checkBrowserReqFullscreen(this.$refs.videoContainer)
       this.fullscreenModIsActive = true
-
       if (this.flagFirstStartVideo) {
         try {
           this.MixinPlayVideo(this.$refs.video)
