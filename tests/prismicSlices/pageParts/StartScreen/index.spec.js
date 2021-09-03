@@ -3,14 +3,14 @@ import { render, screen } from '@testing-library/vue'
 import StartScreen from '@/prismicSlices/pageParts/StartScreen'
 
 const backgrounds = {
-  white: '#fff',
+  white: '#ffffff',
   black: '#111213',
   grey: '#f5f7f9',
 }
 
 const gradients = {
   black: 'linear-gradient(180deg, rgba(17, 18, 19, 0) 60%, #111213)',
-  white: 'linear-gradient(180deg, rgba(17, 18, 19, 0) 60%, #fff)',
+  white: 'linear-gradient(180deg, rgba(17, 18, 19, 0) 60%, #ffffff)',
   grey: 'linear-gradient(180deg, rgba(17, 18, 19, 0) 60%, #f5f7f9)',
 }
 
@@ -56,7 +56,7 @@ describe('StartScreen slice', () => {
   })
 
   describe('sliceBackground computed method', () => {
-    it('should return #fff (white)', () => {
+    it('should return #ffffff (white)', () => {
       const wrapper = shallowMount(StartScreen, {
         propsData: getProps({
           ...apiData,
@@ -102,7 +102,7 @@ describe('StartScreen slice', () => {
   })
 
   describe('sliceGradient computed method', () => {
-    it('should return linear-gradient(180deg, rgba(17, 18, 19, 0) 60%, #fff) (white gradient)', () => {
+    it('should return linear-gradient(180deg, rgba(17, 18, 19, 0) 60%, #ffffff) (white gradient)', () => {
       const wrapper = shallowMount(StartScreen, {
         propsData: getProps({
           ...apiData,
@@ -113,7 +113,7 @@ describe('StartScreen slice', () => {
       expect(wrapper.vm.sliceGradient).toBe(gradients.white)
     })
 
-    it('should return #f5f7f9 (grey gradient)', () => {
+    it('should return linear-gradient(180deg, rgba(17, 18, 19, 0) 60%, #f5f7f9) (grey gradient)', () => {
       const wrapper = shallowMount(StartScreen, {
         propsData: getProps({
           ...apiData,
@@ -124,7 +124,7 @@ describe('StartScreen slice', () => {
       expect(wrapper.vm.sliceGradient).toBe(gradients.grey)
     })
 
-    it('should return #111213 (black gradient)', () => {
+    it('should return linear-gradient(180deg, rgba(17, 18, 19, 0) 60%, #111213) (black gradient)', () => {
       const wrapper = shallowMount(StartScreen, {
         propsData: getProps({
           ...apiData,

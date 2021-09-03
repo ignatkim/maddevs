@@ -65,14 +65,14 @@ export default {
 
   computed: {
     sliceBackground() {
-      if (this.slice?.primary?.background === 'white') return '#fff'
+      if (this.slice?.primary?.background === 'white') return '#ffffff'
       if (this.slice?.primary?.background === 'grey') return '#f5f7f9'
       if (this.slice?.primary?.background === 'black') return '#111213'
       return null
     },
 
     sliceGradient() {
-      if (this.slice?.primary?.gradientColor === 'white') return 'linear-gradient(180deg, rgba(17, 18, 19, 0) 60%, #fff)'
+      if (this.slice?.primary?.gradientColor === 'white') return 'linear-gradient(180deg, rgba(17, 18, 19, 0) 60%, #ffffff)'
       if (this.slice?.primary?.gradientColor === 'grey') return 'linear-gradient(180deg, rgba(17, 18, 19, 0) 60%, #f5f7f9)'
       if (this.slice?.primary?.gradientColor === 'black') return 'linear-gradient(180deg, rgba(17, 18, 19, 0) 60%, #111213)'
       return null
