@@ -6,6 +6,7 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 import SliceZone from 'vue-slicezone'
 
 export default {
@@ -14,24 +15,29 @@ export default {
   },
 
   beforeRouteLeave(to, from, next) {
-    this.$nuxt.$emit('showFooter', true)
+    this.showFooter(true)
     next()
   },
 
-  async asyncData({ error, params, $prismic }) {
+  async asyncData({
+    error,
+    params,
+    $prismic,
+    store,
+  }) {
     const response = await $prismic.api.getByUID('custom_page', params.uid)
     if (!response?.data?.body) return error({ statusCode: 404, message: 'Page not found' })
     if (!response.data.released && process.env.ffEnvironment === 'production') {
       return error({ statusCode: 404, message: 'Page not found' })
     }
+    store.dispatch('showFooter', response.data.show_footer)
     return {
       slices: response.data.body,
-      showFooter: response.data.show_footer,
     }
   },
 
-  created() {
-    this.$nuxt.$emit('showFooter', this.showFooter)
+  methods: {
+    ...mapActions(['showFooter']),
   },
 }
 </script>
