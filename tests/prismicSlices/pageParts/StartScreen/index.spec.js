@@ -56,7 +56,7 @@ describe('StartScreen slice', () => {
   })
 
   describe('sliceBackground computed method', () => {
-    it('should return #ffffff (white)', () => {
+    it(`should return ${backgrounds.white} (white)`, () => {
       const wrapper = shallowMount(StartScreen, {
         propsData: getProps({
           ...apiData,
@@ -67,7 +67,7 @@ describe('StartScreen slice', () => {
       expect(wrapper.vm.sliceBackground).toBe(backgrounds.white)
     })
 
-    it('should return #f5f7f9 (grey)', () => {
+    it(`should return ${backgrounds.grey} (grey)`, () => {
       const wrapper = shallowMount(StartScreen, {
         propsData: getProps({
           ...apiData,
@@ -78,7 +78,7 @@ describe('StartScreen slice', () => {
       expect(wrapper.vm.sliceBackground).toBe(backgrounds.grey)
     })
 
-    it('should return #111213 (black)', () => {
+    it(`should return ${backgrounds.black} (black)`, () => {
       const wrapper = shallowMount(StartScreen, {
         propsData: getProps({
           ...apiData,
@@ -102,7 +102,7 @@ describe('StartScreen slice', () => {
   })
 
   describe('sliceGradient computed method', () => {
-    it('should return linear-gradient(180deg, rgba(17, 18, 19, 0) 60%, #ffffff) (white gradient)', () => {
+    it(`should return ${gradients.white} (white gradient)`, () => {
       const wrapper = shallowMount(StartScreen, {
         propsData: getProps({
           ...apiData,
@@ -113,7 +113,7 @@ describe('StartScreen slice', () => {
       expect(wrapper.vm.sliceGradient).toBe(gradients.white)
     })
 
-    it('should return linear-gradient(180deg, rgba(17, 18, 19, 0) 60%, #f5f7f9) (grey gradient)', () => {
+    it(`should return ${gradients.grey} (grey gradient)`, () => {
       const wrapper = shallowMount(StartScreen, {
         propsData: getProps({
           ...apiData,
@@ -124,7 +124,7 @@ describe('StartScreen slice', () => {
       expect(wrapper.vm.sliceGradient).toBe(gradients.grey)
     })
 
-    it('should return linear-gradient(180deg, rgba(17, 18, 19, 0) 60%, #111213) (black gradient)', () => {
+    it(`should return ${gradients.black} (black gradient)`, () => {
       const wrapper = shallowMount(StartScreen, {
         propsData: getProps({
           ...apiData,
