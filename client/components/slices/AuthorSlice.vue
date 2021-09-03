@@ -5,20 +5,13 @@
   >
     <div class="author-slice__info">
       <div class="author-slice__image">
-        <picture>
-          <source
-            v-lazy-load
-            :data-src="`${authorImage.url}&w=128&h=128`"
-            media="(max-width: 1024px)"
-          >
-          <img
-            v-lazy-load
-            :data-src="`${authorImage.url}&w=136&h=136`"
-            :alt="authorImage.alt"
-            width="68"
-            height="68"
-          >
-        </picture>
+        <img
+          v-lazy-load
+          :data-src="authorImage.url"
+          :alt="authorImage.alt"
+          width="68"
+          height="68"
+        >
       </div>
       <div>
         <p class="author-slice__name">
@@ -115,14 +108,8 @@ export default {
     ...mapGetters(['blogAuthor']),
 
     authorImage() {
-      let urlWithoutSizeParams = ''
-      const { image } = this.blogAuthor
-      if (image && image.author_slice) {
-        // eslint-disable-next-line
-        if (image.author_slice.url) urlWithoutSizeParams = image.author_slice.url.split('&w=')[0]
-        return { ...image.author_slice, url: urlWithoutSizeParams }
-      }
-      return {}
+      const { author_slice: authorSlice = {} } = this.blogAuthor?.image
+      return authorSlice
     },
   },
 
