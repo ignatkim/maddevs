@@ -60,7 +60,7 @@ describe('WeCreateProjectsFor slice', () => {
   })
 
   describe('data-aos animation attribute', () => {
-    it('should be \'fade-up\'', () => {
+    it(`should be '${apiData.animation}'`, () => {
       render(WeCreateProjectsFor, {
         data,
         props: getProps(apiData),
@@ -80,7 +80,7 @@ describe('WeCreateProjectsFor slice', () => {
   })
 
   describe('sliceBackground computed method', () => {
-    it('should return #ffffff (white)', () => {
+    it(`should return ${backgrounds.white} (white)`, () => {
       const wrapper = shallowMount(WeCreateProjectsFor, {
         propsData: getProps({
           ...apiData,
@@ -91,7 +91,7 @@ describe('WeCreateProjectsFor slice', () => {
       expect(wrapper.vm.sliceBackground).toBe(backgrounds.white)
     })
 
-    it('should return #f5f7f9 (grey)', () => {
+    it(`should return ${backgrounds.grey} (grey)`, () => {
       const wrapper = shallowMount(WeCreateProjectsFor, {
         propsData: getProps({
           ...apiData,
@@ -102,7 +102,7 @@ describe('WeCreateProjectsFor slice', () => {
       expect(wrapper.vm.sliceBackground).toBe(backgrounds.grey)
     })
 
-    it('should return #111213 (black)', () => {
+    it(`should return ${backgrounds.black} (black)`, () => {
       const wrapper = shallowMount(WeCreateProjectsFor, {
         propsData: getProps({
           ...apiData,
