@@ -1,21 +1,6 @@
 import { render, screen } from '@testing-library/vue'
 import CustomerRatesSlice from '@/prismicSlices/pageParts/CustomerRatesSlice'
 
-const items = [
-  {
-    title: 'CustomerRates title one',
-    subtitle: 'CustomerRatesSlice subtitle one',
-  },
-  {
-    title: 'CustomerRates title one',
-    subtitle: 'CustomerRatesSlice subtitle one',
-  },
-  {
-    title: 'CustomerRates title two',
-    subtitle: 'CustomerRatesSlice subtitle two',
-  },
-]
-
 const apiData = {
   animation: 'zoom-in',
   items: [
@@ -48,15 +33,9 @@ describe('CustomerRates slice', () => {
     const { container } = render(CustomerRatesSlice, {
       propsData: getProps(apiData),
     })
-
-    items.forEach(item => {
-      expect(screen.getByText(item.title))
-        .not
-        .toBeNull()
-      expect(screen.getByText(item.subtitle))
-        .not
-        .toBeNull()
-    })
+    expect(screen.getByTestId('container').getAttribute('data-aos')).toBe(apiData.animation)
+    expect(screen.getAllByTestId('title')).toHaveLength(apiData.items.length)
+    expect(screen.getAllByTestId('subtitle')).toHaveLength(apiData.items.length)
     expect(container)
       .toMatchSnapshot()
   })
